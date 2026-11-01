@@ -1,0 +1,95 @@
+name: Comparator resource check
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/comparator-resources.yml]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: comparator-resources-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  dirichlet:
+    name: Check Dirichlet compactness with resource measurements
+    runs-on: ubuntu-22.04
+    timeout-minutes: 90
+    defaults:
+      run:
+        working-directory: lean
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Free runner disk space
+        run: |
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL
+          df -h .
+      - uses: actions/cache/restore@v6
+        id: cache
+        with:
+          path: |
+            lean/.elan/toolchains
+            lean/.lake
+          key: comparator-linux-4.35.0-v2
+          fail-on-cache-miss: true
+      - name: Prepare Lean and verify sandbox support
+        env:
+          COMPARATOR_CACHE_HIT: ${{ steps.cache.outputs.cache-hit }}
+        run: bash Verification/ci_setup.sh
+      - name: Add swap for the expensive kernel check
+        run: |
+          available_kib=$(df --output=avail / | tail -1)
+          if (( available_kib < 18 * 1024 * 1024 )); then
+            echo "Insufficient disk space for swap and proof exports" >&2
+            exit 1
+          fi
+          sudo fallocate -l 12G /swapfile-comparator
+          sudo chmod 600 /swapfile-comparator
+          sudo mkswap /swapfile-comparator
+          sudo swapon /swapfile-comparator
+          free -m
+          df -h .
+      - name: Run sandboxed paranoid Comparator and measure resources
+        run: |
+          mkdir -p Verification/results
+          resource_monitor() {
+            while true; do
+              {
+                date -u
+                free -m
+                df -h .
+                ps -eo pid,ppid,rss,pcpu,comm --sort=-rss | sed -n '1,11p'
+                cat /proc/pressure/memory
+              } | tee -a Verification/results/resources.log
+              sleep 60
+            done
+          }
+          resource_monitor &
+          monitor_pid=$!
+          trap 'kill "$monitor_pid" 2>/dev/null || true' EXIT
+          /usr/bin/time -v -o Verification/results/resource-time.log \
+            python3 Verification/verify.py comparator --config dirichlet_compactness
+      - name: Record final resource state
+        if: always()
+        run: |
+          mkdir -p Verification/results
+          {
+            free -m
+            df -h .
+            sudo dmesg --ctime | tail -60
+          } > Verification/results/resources-final.log
+          tail -60 Verification/results/resources.log || true
+      - name: Preserve result and resource measurements
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: comparator-dirichlet-resources
+          path: |
+            lean/Verification/results/comparator-*
+            lean/Verification/results/resource*.log
+          retention-days: 14
