@@ -10,14 +10,14 @@ permissions:
   contents: read
 
 concurrency:
-  group: comparator-resources-${{ github.ref }}
-  cancel-in-progress: true
+  group: comparator-resources-${{ github.run_id }}
+  cancel-in-progress: false
 
 jobs:
   dirichlet:
-    name: Check Dirichlet compactness with resource measurements
+    name: Sample Dirichlet compactness resource use for fifteen minutes
     runs-on: ubuntu-22.04
-    timeout-minutes: 90
+    timeout-minutes: 25
     defaults:
       run:
         working-directory: lean
@@ -72,7 +72,7 @@ jobs:
           resource_monitor &
           monitor_pid=$!
           trap 'kill "$monitor_pid" 2>/dev/null || true' EXIT
-          /usr/bin/time -v -o Verification/results/resource-time.log \
+          timeout --kill-after=30s 15m /usr/bin/time -v -o Verification/results/resource-time.log \
             python3 Verification/verify.py comparator --config dirichlet_compactness
       - name: Record final resource state
         if: always()
