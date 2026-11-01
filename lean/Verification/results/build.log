@@ -1,25 +1,25 @@
-⚠ [3261/3447] Replayed KVApproximation.Analysis.TimeSobolevProperties
+⚠ [3261/3296] Replayed KVApproximation.Analysis.TimeSobolevProperties
 warning: KVApproximation/Analysis/TimeSobolevProperties.lean:19:0: automatically included section variable(s) unused in theorem `KVApproximation.Analysis.TimeH1.value_memLp`:
   [CompleteSpace H]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [CompleteSpace H] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3289/3447] Replayed KVApproximation.Analysis.TimeSobolevNorms
+⚠ [3284/3296] Replayed KVApproximation.Analysis.TimeSobolevNorms
 warning: KVApproximation/Analysis/TimeSobolevNorms.lean:19:0: automatically included section variable(s) unused in theorem `KVApproximation.Analysis.TimeH1.valueL2_apply`:
   [CompleteSpace H]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [CompleteSpace H] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3516/3646] Replayed KVApproximation.Analysis.TimeSobolevMaps
+⚠ [3513/3594] Replayed KVApproximation.Analysis.TimeSobolevMaps
 warning: KVApproximation/Analysis/TimeSobolevMaps.lean:20:0: automatically included section variable(s) unused in theorem `KVApproximation.Analysis.TimeH1.eq_of_value_ae`:
   [CompleteSpace H]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [CompleteSpace H] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3518/3646] Replayed KVApproximation.Analysis.VolterraUniqueness
+⚠ [3515/3594] Replayed KVApproximation.Analysis.VolterraUniqueness
 warning: KVApproximation/Analysis/VolterraUniqueness.lean:29:0: automatically included section variable(s) unused in theorem `KVApproximation.Analysis.eqOn_zero_of_integrated_memory_eq_zero`:
   [CompleteSpace H]
   [CompleteSpace G]
@@ -27,7 +27,7 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [CompleteSpace H] [CompleteSpace G] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3557/3646] Replayed ForTauCeti.Analysis.InnerProductSpace.ProjValMeasure.Basic
+⚠ [3549/3594] Replayed ForTauCeti.Analysis.InnerProductSpace.ProjValMeasure.Basic
 warning: Vendor/ForTauCeti/Analysis/InnerProductSpace/ProjValMeasure/Basic.lean:16:0: 'Mathlib.MeasureTheory.Measure.MeasureSpace' has been deprecated: please replace this import by
 
 import Mathlib.MeasureTheory.Measure.Basic
@@ -38,20 +38,7 @@ import Mathlib.MeasureTheory.Measure.Interval
 import Mathlib.MeasureTheory.Measure.Module
 import Mathlib.MeasureTheory.Measure.OuterMeasure
 import Mathlib.MeasureTheory.Measure.Sum
-⚠ [3624/3809] Replayed KVApproximation.KelvinVoigt.Homogenization
-warning: KVApproximation/KelvinVoigt/Homogenization.lean:29:45: Variable name `hd` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hd
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: KVApproximation/KelvinVoigt/Homogenization.lean:32:5: Variable name `hΩlipschitz` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hΩlipschitz
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [3659/3809] Replayed KVApproximation.Dynamics.DampedResponseProperties
+⚠ [3640/3702] Replayed KVApproximation.Dynamics.DampedResponseProperties
 warning: KVApproximation/Dynamics/DampedResponseProperties.lean:24:8: automatically included section variable(s) unused in theorem `_private.KVApproximation.Dynamics.DampedResponseProperties.0.KVApproximation.Dynamics.dampedResponse_factor`:
   [CompleteSpace E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
@@ -64,28 +51,28 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [CompleteSpace E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3660/3809] Replayed KVApproximation.Dynamics.PronyTrajectory
+⚠ [3641/3702] Replayed KVApproximation.Dynamics.PronyTrajectory
 warning: KVApproximation/Dynamics/PronyTrajectory.lean:23:0: automatically included section variable(s) unused in theorem `KVApproximation.Dynamics.pronyState_isKineticSolution`:
   [FiniteDimensional ℝ E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [FiniteDimensional ℝ E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3665/3809] Replayed KVApproximation.Dynamics.PronyStateBounds
+⚠ [3644/3702] Replayed KVApproximation.Dynamics.PronyStateBounds
 warning: KVApproximation/Dynamics/PronyStateBounds.lean:24:0: automatically included section variable(s) unused in theorem `KVApproximation.Dynamics.prony_state_bound`:
   [TopologicalSpace M]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [TopologicalSpace M] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3690/3809] Replayed KVApproximation.Dynamics.PronyConvolution
+⚠ [3666/3702] Replayed KVApproximation.Dynamics.PronyConvolution
 warning: KVApproximation/Dynamics/PronyConvolution.lean:21:0: automatically included section variable(s) unused in theorem `KVApproximation.Dynamics.pronyStress_eq_kernel_convolution`:
   [FiniteDimensional ℝ E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [FiniteDimensional ℝ E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3691/3809] Replayed KVApproximation.KelvinVoigt.PronySingleton
+⚠ [3667/3702] Replayed KVApproximation.KelvinVoigt.PronySingleton
 warning: KVApproximation/KelvinVoigt/PronySingleton.lean:26:0: automatically included section variable(s) unused in theorem `KVApproximation.KelvinVoigt.singleton_prony_exact`:
   hVorder
   hEorder
@@ -93,13 +80,13 @@ consider restructuring your `variable` declarations so that the variables are no
   omit hVorder hEorder in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3734/3809] Replayed LeanCert.Core.Interval
+⚠ [3711/3818] Replayed LeanCert.Core.Interval
 warning: LeanCert/Core/Interval.lean: imports `Mathlib.Analysis.SpecialFunctions.Integrals.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/Interval.lean: imports `Mathlib.Topology.Order.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3735/3809] Replayed LeanCert.Core.IntervalRat.Basic
+⚠ [3712/3818] Replayed LeanCert.Core.IntervalRat.Basic
 warning: LeanCert/Core/IntervalRat/Basic.lean: imports `Mathlib.Data.Rat.Cast.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRat/Basic.lean: imports `Mathlib.Algebra.Order.Field.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3747/3809] Replayed LeanCert.Core.Expr
+⚠ [3724/3818] Replayed LeanCert.Core.Expr
 warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Sinc` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
@@ -110,17 +97,17 @@ warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow
 warning: LeanCert/Core/Expr.lean: imports `Mathlib.NumberTheory.Harmonic.EulerMascheroni` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/Expr.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3754/3809] Replayed LeanCert.Core.IntervalRat.Transcendental
+⚠ [3731/3818] Replayed LeanCert.Core.IntervalRat.Transcendental
 warning: LeanCert/Core/IntervalRat/Transcendental.lean: imports `Mathlib.Algebra.Order.Floor.Defs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRat/Transcendental.lean: imports `Mathlib.Algebra.Order.Floor.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRat/Transcendental.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3755/3809] Replayed LeanCert.Core.IntervalRat.LogReduction
+⚠ [3732/3818] Replayed LeanCert.Core.IntervalRat.LogReduction
 warning: LeanCert/Core/IntervalRat/LogReduction.lean: imports `Mathlib.Data.Rat.Defs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRat/LogReduction.lean: imports `Mathlib.Data.Nat.Log` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRat/LogReduction.lean: imports `Mathlib.Basic.Real.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRat/LogReduction.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRat/LogReduction.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3759/3809] Replayed LeanCert.Core.DerivativeIntervals
+⚠ [3736/3818] Replayed LeanCert.Core.DerivativeIntervals
 warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.ExpDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
@@ -128,45 +115,45 @@ warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.Speci
 warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.Arsinh` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.Calculus.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3760/3809] Replayed LeanCert.Core.Taylor
+⚠ [3737/3818] Replayed LeanCert.Core.Taylor
 warning: LeanCert/Core/Taylor.lean: imports `Mathlib.Analysis.Calculus.Taylor` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/Taylor.lean: imports `Mathlib.Analysis.SpecialFunctions.ExpDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/Taylor.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/Taylor.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3762/3809] Replayed LeanCert.Core.IntervalRat.Taylor
+⚠ [3739/3818] Replayed LeanCert.Core.IntervalRat.Taylor
 warning: LeanCert/Core/IntervalRat/Taylor.lean: imports `Mathlib.Analysis.Complex.ExponentialBounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRat/Taylor.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRat/Taylor.lean: imports `Mathlib.Analysis.SpecificLimits.Normed` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRat/Taylor.lean: imports `Mathlib.Analysis.Real.Pi.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRat/Taylor.lean: imports `Mathlib.Data.List.Range` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3764/3809] Replayed LeanCert.Core.IntervalRealEndpoints
+⚠ [3741/3818] Replayed LeanCert.Core.IntervalRealEndpoints
 warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.SpecialFunctions.ExpDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.SpecialFunctions.Arsinh` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.Real.Pi.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.Calculus.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3765/3809] Replayed LeanCert.Core.TrigReduction
+⚠ [3742/3818] Replayed LeanCert.Core.TrigReduction
 warning: LeanCert/Core/TrigReduction.lean: imports `Mathlib.Analysis.Real.Pi.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/TrigReduction.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/TrigReduction.lean: imports `Mathlib.Tactic.Linarith` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/TrigReduction.lean: imports `Mathlib.Tactic.NormNum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3767/3809] Replayed LeanCert.Engine.Eval.Core
+⚠ [3744/3818] Replayed LeanCert.Engine.Eval.Core
 warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Sinc` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.Complex.ExponentialBounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.Real.Pi.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3773/3809] Replayed LeanCert.Engine.AD.Transcendental
+⚠ [3750/3818] Replayed LeanCert.Engine.AD.Transcendental
 warning: LeanCert/Engine/AD/Transcendental.lean: imports `Mathlib.Analysis.SpecialFunctions.Sqrt` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3775/3809] Replayed LeanCert.Engine.AD.Correctness
+⚠ [3752/3818] Replayed LeanCert.Engine.AD.Correctness
 warning: LeanCert/Engine/AD/Correctness.lean: imports `Mathlib.Analysis.Calculus.Deriv.Add` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/AD/Correctness.lean: imports `Mathlib.Analysis.Calculus.Deriv.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/AD/Correctness.lean: imports `Mathlib.Analysis.Calculus.Deriv.Comp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/AD/Correctness.lean: imports `Mathlib.Analysis.Calculus.Deriv.Inv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/AD/Correctness.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3778/3809] Replayed LeanCert.Contrib.Sinc
+⚠ [3755/3818] Replayed LeanCert.Contrib.Sinc
 warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Sinc` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.Calculus.Deriv.Slope` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
@@ -176,66 +163,66 @@ warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.Calculus.Parametr
 warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.SpecialFunctions.Integrals.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.Analytic.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3779/3809] Replayed LeanCert.Engine.AD.PartialCorrectness
+⚠ [3756/3818] Replayed LeanCert.Engine.AD.PartialCorrectness
 warning: LeanCert/Engine/AD/PartialCorrectness.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/AD/PartialCorrectness.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/AD/PartialCorrectness.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Sinc` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/AD/PartialCorrectness.lean: imports `Mathlib.Analysis.SpecialFunctions.Arsinh` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/AD/PartialCorrectness.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3782/3809] Replayed LeanCert.Core.Dyadic
+⚠ [3759/3818] Replayed LeanCert.Core.Dyadic
 warning: LeanCert/Core/Dyadic.lean: imports `Mathlib.Data.Rat.Cast.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/Dyadic.lean: imports `Mathlib.Algebra.Order.Field.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Core/Dyadic.lean: imports `Mathlib.Basic.Real.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3783/3809] Replayed LeanCert.Core.IntervalDyadic
+⚠ [3760/3818] Replayed LeanCert.Core.IntervalDyadic
 warning: LeanCert/Core/IntervalDyadic.lean: imports `Mathlib.Data.Rat.Cast.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3790/3809] Replayed LeanCert.Tactic.LeanCert.Normalize
+⚠ [3767/3818] Replayed LeanCert.Tactic.LeanCert.Normalize
 warning: LeanCert/Tactic/LeanCert/Normalize.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3794/3809] Replayed LeanCert.Engine.TaylorModel.Core
+⚠ [3771/3818] Replayed LeanCert.Engine.TaylorModel.Core
 warning: LeanCert/Engine/TaylorModel/Core.lean: imports `Mathlib.RingTheory.Polynomial.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/TaylorModel/Core.lean: imports `Mathlib.Algebra.Polynomial.Degree.Defs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/TaylorModel/Core.lean: imports `Mathlib.Data.Nat.Choose.Sum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/TaylorModel/Core.lean: imports `Mathlib.Data.Nat.Choose.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/TaylorModel/Core.lean: imports `Mathlib.Data.List.GetD` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3796/3809] Replayed LeanCert.Engine.TaylorModel.Trig
+⚠ [3773/3818] Replayed LeanCert.Engine.TaylorModel.Trig
 warning: LeanCert/Engine/TaylorModel/Trig.lean: imports `Mathlib.Analysis.Complex.ExponentialBounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/TaylorModel/Trig.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Series` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/TaylorModel/Trig.lean: imports `Mathlib.Analysis.Calculus.IteratedDeriv.Defs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/TaylorModel/Trig.lean: imports `Mathlib.Analysis.Analytic.Uniqueness` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3797/3809] Replayed LeanCert.Engine.TaylorModel.ExpLog
+⚠ [3774/3818] Replayed LeanCert.Engine.TaylorModel.ExpLog
 warning: LeanCert/Engine/TaylorModel/ExpLog.lean: imports `Mathlib.Analysis.Complex.ExponentialBounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/TaylorModel/ExpLog.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3815/4018] Replayed LeanCert.Engine.TaylorModel.Hyperbolic
+⚠ [3792/3958] Replayed LeanCert.Engine.TaylorModel.Hyperbolic
 warning: LeanCert/Engine/TaylorModel/Hyperbolic.lean: imports `Mathlib.Analysis.Analytic.Binomial` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/TaylorModel/Hyperbolic.lean: imports `Mathlib.Analysis.Analytic.Uniqueness` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/TaylorModel/Hyperbolic.lean: imports `Mathlib.Analysis.Complex.ExponentialBounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3819/4018] Replayed LeanCert.Engine.Integrate
+⚠ [3796/3958] Replayed LeanCert.Engine.Integrate
 warning: LeanCert/Engine/Integrate.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/Integrate.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/Integrate.lean: imports `Mathlib.MeasureTheory.Integral.Bochner.Set` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3829/4018] Replayed LeanCert.Engine.Optimize
+⚠ [3806/3958] Replayed LeanCert.Engine.Optimize
 warning: LeanCert/Engine/Optimize.lean: imports `Mathlib.Analysis.Calculus.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3832/4018] Replayed LeanCert.Engine.RootFinding.Basic
+⚠ [3809/3958] Replayed LeanCert.Engine.RootFinding.Basic
 warning: LeanCert/Engine/RootFinding/Basic.lean: imports `Mathlib.Topology.Order.IntermediateValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3834/4018] Replayed LeanCert.Engine.RootFinding.Newton
+⚠ [3811/3958] Replayed LeanCert.Engine.RootFinding.Newton
 warning: LeanCert/Engine/RootFinding/Newton.lean: imports `Mathlib.Analysis.Calculus.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3836/4018] Replayed LeanCert.Engine.RootFinding.Contraction
+⚠ [3813/3958] Replayed LeanCert.Engine.RootFinding.Contraction
 warning: LeanCert/Engine/RootFinding/Contraction.lean: imports `Mathlib.Topology.Order.IntermediateValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3839/4018] Replayed LeanCert.Engine.RootFinding.Krawczyk
+⚠ [3816/3958] Replayed LeanCert.Engine.RootFinding.Krawczyk
 warning: LeanCert/Engine/RootFinding/Krawczyk.lean: imports `Mathlib.Analysis.Matrix.Normed` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/RootFinding/Krawczyk.lean: imports `Mathlib.Analysis.Calculus.Deriv.Pi` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Engine/RootFinding/Krawczyk.lean: imports `Mathlib.Topology.MetricSpace.Contracting` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3841/4018] Replayed LeanCert.Meta.ProveContinuous
+⚠ [3818/3958] Replayed LeanCert.Meta.ProveContinuous
 warning: LeanCert/Meta/ProveContinuous.lean: imports `Mathlib.Topology.ContinuousOn` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Meta/ProveContinuous.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: LeanCert/Meta/ProveContinuous.lean: imports `Mathlib.Analysis.SpecialFunctions.ExpDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [3896/4018] Replayed KVApproximation.KelvinVoigt.SpectralEdgeDiscontinuity
+⚠ [3870/3958] Replayed KVApproximation.KelvinVoigt.SpectralEdgeDiscontinuity
 warning: KVApproximation/KelvinVoigt/SpectralEdgeDiscontinuity.lean:24:45: Variable name `hd` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hd
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [3932/4018] Replayed KVApproximation.NeuralOperators.FourierMappingAffine
+⚠ [3903/3958] Replayed KVApproximation.NeuralOperators.FourierMappingAffine
 warning: KVApproximation/NeuralOperators/FourierMappingAffine.lean:69:15: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
 
 Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
@@ -268,7 +255,7 @@ Hint: Omit it from the simp argument list.
     Finset.sum_mul, Complex.re_sum]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [3935/4018] Replayed KVApproximation.NeuralOperators.FourierMappingProjection
+⚠ [3906/3958] Replayed KVApproximation.NeuralOperators.FourierMappingProjection
 warning: KVApproximation/NeuralOperators/FourierMappingProjection.lean:41:16: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
 
 Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
@@ -281,7 +268,7 @@ Note: The updated constant is in a different namespace. Dot notation may need to
 
 Hint: Replace the deprecated name:
   C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
-⚠ [3940/4018] Replayed KVApproximation.NeuralOperators.FourierFeatureLayer
+⚠ [3911/3958] Replayed KVApproximation.NeuralOperators.FourierFeatureLayer
 warning: KVApproximation/NeuralOperators/FourierFeatureLayer.lean:86:33: This simp argument is unused:
   fourier_eval_zero
 
@@ -289,12 +276,12 @@ Hint: Omit it from the simp argument list.
   [apply] simp [UnitAddTorus.mFourier]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [3944/4018] Replayed NeuralNetworkProofs.UniversalApproximation.Leshno.ClassM
+⚠ [3915/3958] Replayed NeuralNetworkProofs.UniversalApproximation.Leshno.ClassM
 warning: Vendor/NeuralNetworkProofs/UniversalApproximation/Leshno/ClassM.lean:49:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
 
 Hint: Replace the deprecated name:
   S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
-⚠ [3946/4018] Replayed NeuralNetworkProofs.UniversalApproximation.Leshno.SmoothEngine
+⚠ [3917/3958] Replayed NeuralNetworkProofs.UniversalApproximation.Leshno.SmoothEngine
 warning: Vendor/NeuralNetworkProofs/UniversalApproximation/Leshno/SmoothEngine.lean:130:2: Try this: 
   haveI̵
 
@@ -311,7 +298,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [3955/4018] Replayed NeuralNetworkProofs.UniversalApproximation.Leshno.Family
+⚠ [3929/4018] Replayed NeuralNetworkProofs.UniversalApproximation.Leshno.Family
 warning: Vendor/NeuralNetworkProofs/UniversalApproximation/Leshno/Family.lean:104:2: Try this: 
   haveI̵
 
@@ -320,47 +307,7 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [3963/4018] Replayed KVApproximation.Approximation.VectorFiniteFeatures
-warning: KVApproximation/Approximation/VectorFiniteFeatures.lean:23:45: This simp argument is unused:
-  PiLp.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [WithLp.ofLp_sum, Finset.sum_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [3968/4018] Replayed KVApproximation.Examples.LinearSurrogateCoordinates
-warning: KVApproximation/Examples/LinearSurrogateCoordinates.lean:118:0: automatically included section variable(s) unused in theorem `KVApproximation.Examples.LinearSurrogate.transformed_kinetics`:
-  [FiniteDimensional ℝ E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [FiniteDimensional ℝ E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: KVApproximation/Examples/LinearSurrogateCoordinates.lean:128:0: automatically included section variable(s) unused in theorem `KVApproximation.Examples.LinearSurrogate.transformed_kinetic_blocks`:
-  [FiniteDimensional ℝ E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [FiniteDimensional ℝ E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-warning: KVApproximation/Examples/LinearSurrogateCoordinates.lean:149:0: automatically included section variable(s) unused in theorem `KVApproximation.Examples.LinearSurrogate.transformed_stress`:
-  [FiniteDimensional ℝ E]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [FiniteDimensional ℝ E] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [3973/4018] Replayed KVApproximation.NeuralOperators.FourierMappingReality
-warning: KVApproximation/NeuralOperators/FourierMappingReality.lean:66:43: Variable name `hh` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hh
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: KVApproximation/NeuralOperators/FourierMappingReality.lean:82:5: Variable name `hh` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hh
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [3992/4018] Replayed NeuralNetworkProofs.ForMathlib.RidgePowersSpan
+⚠ [3939/4018] Replayed NeuralNetworkProofs.ForMathlib.RidgePowersSpan
 warning: Vendor/NeuralNetworkProofs/ForMathlib/RidgePowersSpan.lean:115:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
 
 Hint: Replace the deprecated name:
@@ -381,7 +328,7 @@ warning: Vendor/NeuralNetworkProofs/ForMathlib/RidgePowersSpan.lean:216:43: `if_
 
 Hint: Replace the deprecated name:
   i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
-⚠ [3993/4018] Replayed NeuralNetworkProofs.UniversalApproximation.Leshno.Ridge
+⚠ [3940/4018] Replayed NeuralNetworkProofs.UniversalApproximation.Leshno.Ridge
 warning: Vendor/NeuralNetworkProofs/UniversalApproximation/Leshno/Ridge.lean:197:2: Try this: 
   haveI̵
 
@@ -390,7 +337,47 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [3995/4018] Replayed KVApproximation.Approximation.VectorRidgeApproximation
+⚠ [3942/4018] Replayed KVApproximation.Approximation.VectorFiniteFeatures
+warning: KVApproximation/Approximation/VectorFiniteFeatures.lean:23:45: This simp argument is unused:
+  PiLp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [WithLp.ofLp_sum, Finset.sum_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3947/4018] Replayed KVApproximation.Examples.LinearSurrogateCoordinates
+warning: KVApproximation/Examples/LinearSurrogateCoordinates.lean:118:0: automatically included section variable(s) unused in theorem `KVApproximation.Examples.LinearSurrogate.transformed_kinetics`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: KVApproximation/Examples/LinearSurrogateCoordinates.lean:128:0: automatically included section variable(s) unused in theorem `KVApproximation.Examples.LinearSurrogate.transformed_kinetic_blocks`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: KVApproximation/Examples/LinearSurrogateCoordinates.lean:149:0: automatically included section variable(s) unused in theorem `KVApproximation.Examples.LinearSurrogate.transformed_stress`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3955/4018] Replayed KVApproximation.NeuralOperators.FourierMappingReality
+warning: KVApproximation/NeuralOperators/FourierMappingReality.lean:66:43: Variable name `hh` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hh
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: KVApproximation/NeuralOperators/FourierMappingReality.lean:82:5: Variable name `hh` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hh
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3976/4018] Replayed KVApproximation.Approximation.VectorRidgeApproximation
 warning: KVApproximation/Approximation/VectorRidgeApproximation.lean:29:45: This simp argument is unused:
   PiLp.single_apply
 
@@ -398,7 +385,7 @@ Hint: Omit it from the simp argument list.
   [apply] simp [WithLp.ofLp_sum, Finset.sum_apply]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [3996/4018] Replayed KVApproximation.NeuralOperators.FourierMappingApproximation
+⚠ [3977/4018] Replayed KVApproximation.NeuralOperators.FourierMappingApproximation
 warning: KVApproximation/NeuralOperators/FourierMappingApproximation.lean:47:2: Try this: 
   letI̵
 
@@ -422,14 +409,14 @@ open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-⚠ [4017/4281] Replayed Challenges.MatrixExponential
+⚠ [3982/4281] Replayed Challenges.MatrixExponential
 warning: Comparator/Challenges/MatrixExponential.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/MatrixExponential.lean:24:8: declaration uses `sorry`
 warning: Comparator/Challenges/MatrixExponential.lean:31:8: declaration uses `sorry`
-⚠ [4018/4281] Replayed Challenges.MaterialResponseApproximation
+⚠ [3983/4281] Replayed Challenges.MaterialResponseApproximation
 warning: Comparator/Challenges/MaterialResponseApproximation.lean:34:8: declaration uses `sorry`
 warning: Comparator/Challenges/MaterialResponseApproximation.lean:58:8: declaration uses `sorry`
-⚠ [4019/4281] Replayed Challenges.MemoryKernel
+⚠ [3984/4281] Replayed Challenges.MemoryKernel
 warning: Comparator/Challenges/MemoryKernel.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/MemoryKernel.lean:26:8: declaration uses `sorry`
 warning: Comparator/Challenges/MemoryKernel.lean:31:8: declaration uses `sorry`
@@ -442,50 +429,50 @@ warning: Comparator/Challenges/MemoryKernel.lean:73:8: declaration uses `sorry`
 warning: Comparator/Challenges/MemoryKernel.lean:80:8: declaration uses `sorry`
 warning: Comparator/Challenges/MemoryKernel.lean:86:8: declaration uses `sorry`
 warning: Comparator/Challenges/MemoryKernel.lean:91:8: declaration uses `sorry`
-⚠ [4020/4281] Replayed Challenges.PeriodicCompactness
+⚠ [3985/4281] Replayed Challenges.PeriodicCompactness
 warning: Comparator/Challenges/PeriodicCompactness.lean:19:8: declaration uses `sorry`
-⚠ [4021/4281] Replayed Challenges.SpatialLoad
+⚠ [3986/4281] Replayed Challenges.SpatialLoad
 warning: Comparator/Challenges/SpatialLoad.lean:28:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpatialLoad.lean:34:8: declaration uses `sorry`
-⚠ [4022/4281] Replayed Challenges.StaticStressIdentification
+⚠ [3987/4281] Replayed Challenges.StaticStressIdentification
 warning: Comparator/Challenges/StaticStressIdentification.lean:19:8: declaration uses `sorry`
-⚠ [4023/4281] Replayed Challenges.MicroscopicGreen
+⚠ [3988/4281] Replayed Challenges.MicroscopicGreen
 warning: Comparator/Challenges/MicroscopicGreen.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/MicroscopicGreen.lean:29:8: declaration uses `sorry`
-⚠ [4024/4281] Replayed Challenges.MicroscopicTimeBounds
+⚠ [3989/4281] Replayed Challenges.MicroscopicTimeBounds
 warning: Comparator/Challenges/MicroscopicTimeBounds.lean:25:8: declaration uses `sorry`
 warning: Comparator/Challenges/MicroscopicTimeBounds.lean:35:8: declaration uses `sorry`
-⚠ [4025/4281] Replayed Challenges.TimeSobolevMaps
+⚠ [3990/4281] Replayed Challenges.TimeSobolevMaps
 warning: Comparator/Challenges/TimeSobolevMaps.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/TimeSobolevMaps.lean:26:8: declaration uses `sorry`
 warning: Comparator/Challenges/TimeSobolevMaps.lean:34:8: declaration uses `sorry`
-⚠ [4026/4281] Replayed Challenges.MicroscopicEvolution
+⚠ [3991/4281] Replayed Challenges.MicroscopicEvolution
 warning: Comparator/Challenges/MicroscopicEvolution.lean:32:8: declaration uses `sorry`
 warning: Comparator/Challenges/MicroscopicEvolution.lean:47:8: declaration uses `sorry`
 warning: Comparator/Challenges/MicroscopicEvolution.lean:58:8: declaration uses `sorry`
-⚠ [4027/4281] Replayed Challenges.SobolevCutoff
+⚠ [3992/4281] Replayed Challenges.SobolevCutoff
 warning: Comparator/Challenges/SobolevCutoff.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/SobolevCutoff.lean:26:8: declaration uses `sorry`
 warning: Comparator/Challenges/SobolevCutoff.lean:37:8: declaration uses `sorry`
-⚠ [4028/4281] Replayed Challenges.HomogenizedGreen
-warning: Comparator/Challenges/HomogenizedGreen.lean:23:8: declaration uses `sorry`
-warning: Comparator/Challenges/HomogenizedGreen.lean:47:8: declaration uses `sorry`
-⚠ [4029/4281] Replayed Challenges.Compression
+⚠ [3993/4281] Replayed Challenges.HomogenizedGreen
+warning: Comparator/Challenges/HomogenizedGreen.lean:33:8: declaration uses `sorry`
+warning: Comparator/Challenges/HomogenizedGreen.lean:67:8: declaration uses `sorry`
+⚠ [3994/4281] Replayed Challenges.Compression
 warning: Comparator/Challenges/Compression.lean:23:8: declaration uses `sorry`
 warning: Comparator/Challenges/Compression.lean:30:8: declaration uses `sorry`
 warning: Comparator/Challenges/Compression.lean:51:8: declaration uses `sorry`
 warning: Comparator/Challenges/Compression.lean:58:8: declaration uses `sorry`
 warning: Comparator/Challenges/Compression.lean:67:8: declaration uses `sorry`
 warning: Comparator/Challenges/Compression.lean:75:8: declaration uses `sorry`
-⚠ [4030/4281] Replayed Challenges.DirichletWeakCompactness
+⚠ [3995/4281] Replayed Challenges.DirichletWeakCompactness
 warning: Comparator/Challenges/DirichletWeakCompactness.lean:19:8: declaration uses `sorry`
-⚠ [4031/4281] Replayed Challenges.PronyResponses
+⚠ [3996/4281] Replayed Challenges.PronyResponses
 warning: Comparator/Challenges/PronyResponses.lean:21:8: declaration uses `sorry`
 warning: Comparator/Challenges/PronyResponses.lean:31:8: declaration uses `sorry`
 warning: Comparator/Challenges/PronyResponses.lean:50:8: declaration uses `sorry`
-⚠ [4032/4281] Replayed Challenges.VectorMeasureDensity
+⚠ [3997/4281] Replayed Challenges.VectorMeasureDensity
 warning: Comparator/Challenges/VectorMeasureDensity.lean:13:8: declaration uses `sorry`
-⚠ [4033/4281] Replayed Challenges.FourierMapping
+⚠ [3998/4281] Replayed Challenges.FourierMapping
 warning: Comparator/Challenges/FourierMapping.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/FourierMapping.lean:27:8: declaration uses `sorry`
 warning: Comparator/Challenges/FourierMapping.lean:33:8: declaration uses `sorry`
@@ -496,209 +483,209 @@ warning: Comparator/Challenges/FourierMapping.lean:60:8: declaration uses `sorry
 warning: Comparator/Challenges/FourierMapping.lean:70:8: declaration uses `sorry`
 warning: Comparator/Challenges/FourierMapping.lean:78:8: declaration uses `sorry`
 warning: Comparator/Challenges/FourierMapping.lean:87:8: declaration uses `sorry`
-⚠ [4034/4281] Replayed Challenges.DrivenField
+⚠ [3999/4281] Replayed Challenges.DrivenField
 warning: Comparator/Challenges/DrivenField.lean:20:8: declaration uses `sorry`
-⚠ [4035/4281] Replayed Challenges.VectorMeasureIntegral
+⚠ [4000/4281] Replayed Challenges.VectorMeasureIntegral
 warning: Comparator/Challenges/VectorMeasureIntegral.lean:17:8: declaration uses `sorry`
-⚠ [4036/4281] Replayed Challenges.VolterraUniqueness
+⚠ [4001/4281] Replayed Challenges.VolterraUniqueness
 warning: Comparator/Challenges/VolterraUniqueness.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/VolterraUniqueness.lean:33:8: declaration uses `sorry`
-⚠ [4037/4281] Replayed Challenges.CoordinateClasses
+⚠ [4002/4281] Replayed Challenges.CoordinateClasses
 warning: Comparator/Challenges/CoordinateClasses.lean:21:8: declaration uses `sorry`
 warning: Comparator/Challenges/CoordinateClasses.lean:29:8: declaration uses `sorry`
-⚠ [4038/4281] Replayed Challenges.FourierProjectionFeatures
+⚠ [4003/4281] Replayed Challenges.FourierProjectionFeatures
 warning: Comparator/Challenges/FourierProjectionFeatures.lean:13:8: declaration uses `sorry`
 warning: Comparator/Challenges/FourierProjectionFeatures.lean:21:8: declaration uses `sorry`
-⚠ [4039/4281] Replayed Challenges.PeriodicRescalingLp
+⚠ [4004/4281] Replayed Challenges.PeriodicRescalingLp
 warning: Comparator/Challenges/PeriodicRescalingLp.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicRescalingLp.lean:30:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicRescalingLp.lean:40:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicRescalingLp.lean:51:8: declaration uses `sorry`
-⚠ [4040/4281] Replayed Challenges.PeriodicAveragingReal
+⚠ [4005/4281] Replayed Challenges.PeriodicAveragingReal
 warning: Comparator/Challenges/PeriodicAveragingReal.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicAveragingReal.lean:33:8: declaration uses `sorry`
-⚠ [4041/4281] Replayed Challenges.LpFiniteCoordinates
+⚠ [4006/4281] Replayed Challenges.LpFiniteCoordinates
 warning: Comparator/Challenges/LpFiniteCoordinates.lean:19:8: declaration uses `sorry`
-⚠ [4042/4281] Replayed Challenges.HalfLineLaplaceUniqueness
+⚠ [4007/4281] Replayed Challenges.HalfLineLaplaceUniqueness
 warning: Comparator/Challenges/HalfLineLaplaceUniqueness.lean:12:8: declaration uses `sorry`
 warning: Comparator/Challenges/HalfLineLaplaceUniqueness.lean:22:8: declaration uses `sorry`
-⚠ [4043/4281] Replayed Challenges.PeriodicBVCompactness
+⚠ [4008/4281] Replayed Challenges.PeriodicBVCompactness
 warning: Comparator/Challenges/PeriodicBVCompactness.lean:21:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicBVCompactness.lean:31:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicBVCompactness.lean:39:8: declaration uses `sorry`
-⚠ [4044/4281] Replayed Challenges.PeriodicFourierAveraging
+⚠ [4009/4281] Replayed Challenges.PeriodicFourierAveraging
 warning: Comparator/Challenges/PeriodicFourierAveraging.lean:20:8: declaration uses `sorry`
-⚠ [4045/4281] Replayed Challenges.MandelResponses
+⚠ [4010/4281] Replayed Challenges.MandelResponses
 warning: Comparator/Challenges/MandelResponses.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/MandelResponses.lean:24:8: declaration uses `sorry`
 warning: Comparator/Challenges/MandelResponses.lean:31:8: declaration uses `sorry`
 warning: Comparator/Challenges/MandelResponses.lean:39:8: declaration uses `sorry`
 warning: Comparator/Challenges/MandelResponses.lean:48:8: declaration uses `sorry`
-⚠ [4046/4281] Replayed Challenges.PeriodicFourierFunctionals
+⚠ [4011/4281] Replayed Challenges.PeriodicFourierFunctionals
 warning: Comparator/Challenges/PeriodicFourierFunctionals.lean:17:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicFourierFunctionals.lean:26:8: declaration uses `sorry`
-⚠ [4047/4281] Replayed Challenges.RescaledFields
+⚠ [4012/4281] Replayed Challenges.RescaledFields
 warning: Comparator/Challenges/RescaledFields.lean:21:8: declaration uses `sorry`
 warning: Comparator/Challenges/RescaledFields.lean:28:8: declaration uses `sorry`
 warning: Comparator/Challenges/RescaledFields.lean:35:8: declaration uses `sorry`
 warning: Comparator/Challenges/RescaledFields.lean:42:8: declaration uses `sorry`
-⚠ [4048/4281] Replayed Challenges.TimeSobolevMemoryUniqueness
+⚠ [4013/4281] Replayed Challenges.TimeSobolevMemoryUniqueness
 warning: Comparator/Challenges/TimeSobolevMemoryUniqueness.lean:20:8: declaration uses `sorry`
-⚠ [4049/4281] Replayed Challenges.PeriodicStrongTests
+⚠ [4014/4281] Replayed Challenges.PeriodicStrongTests
 warning: Comparator/Challenges/PeriodicStrongTests.lean:16:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicStrongTests.lean:32:8: declaration uses `sorry`
-⚠ [4050/4281] Replayed Challenges.HilbertWeakLimits
+⚠ [4015/4281] Replayed Challenges.HilbertWeakLimits
 warning: Comparator/Challenges/HilbertWeakLimits.lean:14:8: declaration uses `sorry`
 warning: Comparator/Challenges/HilbertWeakLimits.lean:24:8: declaration uses `sorry`
 warning: Comparator/Challenges/HilbertWeakLimits.lean:38:8: declaration uses `sorry`
-⚠ [4051/4281] Replayed Challenges.Caratheodory
-warning: Comparator/Challenges/Caratheodory.lean:19:8: declaration uses `sorry`
-warning: Comparator/Challenges/Caratheodory.lean:31:8: declaration uses `sorry`
-⚠ [4052/4281] Replayed Challenges.PronyDynamics
+⚠ [4016/4281] Replayed Challenges.Caratheodory
+warning: Comparator/Challenges/Caratheodory.lean:21:8: declaration uses `sorry`
+warning: Comparator/Challenges/Caratheodory.lean:33:8: declaration uses `sorry`
+⚠ [4017/4281] Replayed Challenges.PronyDynamics
 warning: Comparator/Challenges/PronyDynamics.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/PronyDynamics.lean:28:8: declaration uses `sorry`
 warning: Comparator/Challenges/PronyDynamics.lean:37:8: declaration uses `sorry`
-warning: Comparator/Challenges/PronyDynamics.lean:58:8: declaration uses `sorry`
-⚠ [4053/4281] Replayed Challenges.Homogenization
+warning: Comparator/Challenges/PronyDynamics.lean:59:8: declaration uses `sorry`
+⚠ [4018/4281] Replayed Challenges.Homogenization
 warning: Comparator/Challenges/Homogenization.lean:23:8: declaration uses `sorry`
-⚠ [4054/4281] Replayed Challenges.ConstantSpatialForm
-warning: Comparator/Challenges/ConstantSpatialForm.lean:40:8: declaration uses `sorry`
-warning: Comparator/Challenges/ConstantSpatialForm.lean:46:8: declaration uses `sorry`
-⚠ [4055/4281] Replayed Challenges.CellDisplacement
+⚠ [4019/4281] Replayed Challenges.ConstantSpatialForm
+warning: Comparator/Challenges/ConstantSpatialForm.lean:57:8: declaration uses `sorry`
+warning: Comparator/Challenges/ConstantSpatialForm.lean:63:8: declaration uses `sorry`
+⚠ [4020/4281] Replayed Challenges.CellDisplacement
 warning: Comparator/Challenges/CellDisplacement.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellDisplacement.lean:27:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellDisplacement.lean:41:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellDisplacement.lean:54:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellDisplacement.lean:62:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellDisplacement.lean:75:8: declaration uses `sorry`
-⚠ [4056/4281] Replayed Challenges.Interpolation
+⚠ [4021/4281] Replayed Challenges.Interpolation
 warning: Comparator/Challenges/Interpolation.lean:16:8: declaration uses `sorry`
 warning: Comparator/Challenges/Interpolation.lean:27:8: declaration uses `sorry`
 warning: Comparator/Challenges/Interpolation.lean:32:8: declaration uses `sorry`
 warning: Comparator/Challenges/Interpolation.lean:38:8: declaration uses `sorry`
-⚠ [4057/4281] Replayed Challenges.FieldCombinations
+⚠ [4022/4281] Replayed Challenges.FieldCombinations
 warning: Comparator/Challenges/FieldCombinations.lean:11:8: declaration uses `sorry`
 warning: Comparator/Challenges/FieldCombinations.lean:18:8: declaration uses `sorry`
-⚠ [4058/4281] Replayed Challenges.SpatialFields
+⚠ [4023/4281] Replayed Challenges.SpatialFields
 warning: Comparator/Challenges/SpatialFields.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpatialFields.lean:29:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpatialFields.lean:35:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpatialFields.lean:41:8: declaration uses `sorry`
-⚠ [4059/4281] Replayed Challenges.StaticEquilibriumLimit
+⚠ [4024/4281] Replayed Challenges.StaticEquilibriumLimit
 warning: Comparator/Challenges/StaticEquilibriumLimit.lean:18:8: declaration uses `sorry`
-⚠ [4060/4281] Replayed Challenges.DampedResponse
+⚠ [4025/4281] Replayed Challenges.DampedResponse
 warning: Comparator/Challenges/DampedResponse.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/DampedResponse.lean:27:8: declaration uses `sorry`
 warning: Comparator/Challenges/DampedResponse.lean:34:8: declaration uses `sorry`
 warning: Comparator/Challenges/DampedResponse.lean:43:8: declaration uses `sorry`
-⚠ [4061/4281] Replayed Challenges.DirichletCompactness
+⚠ [4026/4281] Replayed Challenges.DirichletCompactness
 warning: Comparator/Challenges/DirichletCompactness.lean:21:8: declaration uses `sorry`
 warning: Comparator/Challenges/DirichletCompactness.lean:28:8: declaration uses `sorry`
 warning: Comparator/Challenges/DirichletCompactness.lean:36:8: declaration uses `sorry`
 warning: Comparator/Challenges/DirichletCompactness.lean:46:8: declaration uses `sorry`
-⚠ [4062/4281] Replayed Challenges.GlobalPositiveSpan
+⚠ [4027/4281] Replayed Challenges.GlobalPositiveSpan
 warning: Comparator/Challenges/GlobalPositiveSpan.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/GlobalPositiveSpan.lean:30:8: declaration uses `sorry`
 warning: Comparator/Challenges/GlobalPositiveSpan.lean:46:8: declaration uses `sorry`
 warning: Comparator/Challenges/GlobalPositiveSpan.lean:60:8: declaration uses `sorry`
 warning: Comparator/Challenges/GlobalPositiveSpan.lean:78:8: declaration uses `sorry`
 warning: Comparator/Challenges/GlobalPositiveSpan.lean:98:8: declaration uses `sorry`
-⚠ [4063/4281] Replayed Challenges.CompressionApproximation
+⚠ [4028/4281] Replayed Challenges.CompressionApproximation
 warning: Comparator/Challenges/CompressionApproximation.lean:15:8: declaration uses `sorry`
-⚠ [4064/4281] Replayed Challenges.HilbertWeakDiagonal
+⚠ [4029/4281] Replayed Challenges.HilbertWeakDiagonal
 warning: Comparator/Challenges/HilbertWeakDiagonal.lean:15:8: declaration uses `sorry`
-⚠ [4065/4281] Replayed Challenges.CoerciveCombinations
+⚠ [4030/4281] Replayed Challenges.CoerciveCombinations
 warning: Comparator/Challenges/CoerciveCombinations.lean:11:8: declaration uses `sorry`
-⚠ [4066/4281] Replayed Challenges.LpInterpolation
+⚠ [4031/4281] Replayed Challenges.LpInterpolation
 warning: Comparator/Challenges/LpInterpolation.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/LpInterpolation.lean:28:8: declaration uses `sorry`
-⚠ [4067/4281] Replayed Challenges.PeriodicCoordinateUpdate
+⚠ [4032/4281] Replayed Challenges.PeriodicCoordinateUpdate
 warning: Comparator/Challenges/PeriodicCoordinateUpdate.lean:18:8: declaration uses `sorry`
-⚠ [4068/4281] Replayed Challenges.PositiveScalarization
+⚠ [4033/4281] Replayed Challenges.PositiveScalarization
 warning: Comparator/Challenges/PositiveScalarization.lean:18:8: declaration uses `sorry`
-⚠ [4069/4281] Replayed Challenges.DivergenceTests
+⚠ [4034/4281] Replayed Challenges.DivergenceTests
 warning: Comparator/Challenges/DivergenceTests.lean:15:8: declaration uses `sorry`
-⚠ [4070/4281] Replayed Challenges.LpConvergence
+⚠ [4035/4281] Replayed Challenges.LpConvergence
 warning: Comparator/Challenges/LpConvergence.lean:19:8: declaration uses `sorry`
-⚠ [4071/4281] Replayed Challenges.CorrectorDisplacement
+⚠ [4036/4281] Replayed Challenges.CorrectorDisplacement
 warning: Comparator/Challenges/CorrectorDisplacement.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/CorrectorDisplacement.lean:25:8: declaration uses `sorry`
-⚠ [4072/4281] Replayed Challenges.FiniteLaplace
+⚠ [4037/4281] Replayed Challenges.FiniteLaplace
 warning: Comparator/Challenges/FiniteLaplace.lean:14:8: declaration uses `sorry`
-⚠ [4073/4281] Replayed Challenges.HalfLineLaplaceConvolution
+⚠ [4038/4281] Replayed Challenges.HalfLineLaplaceConvolution
 warning: Comparator/Challenges/HalfLineLaplaceConvolution.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/HalfLineLaplaceConvolution.lean:30:8: declaration uses `sorry`
-⚠ [4074/4281] Replayed Challenges.FeedforwardFourierMapping
+⚠ [4039/4281] Replayed Challenges.FeedforwardFourierMapping
 warning: Comparator/Challenges/FeedforwardFourierMapping.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/FeedforwardFourierMapping.lean:32:8: declaration uses `sorry`
 warning: Comparator/Challenges/FeedforwardFourierMapping.lean:47:8: declaration uses `sorry`
 warning: Comparator/Challenges/FeedforwardFourierMapping.lean:58:8: declaration uses `sorry`
 warning: Comparator/Challenges/FeedforwardFourierMapping.lean:66:8: declaration uses `sorry`
 warning: Comparator/Challenges/FeedforwardFourierMapping.lean:77:8: declaration uses `sorry`
-⚠ [4075/4281] Replayed Challenges.HalfLineConvolution
+⚠ [4040/4281] Replayed Challenges.HalfLineConvolution
 warning: Comparator/Challenges/HalfLineConvolution.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/HalfLineConvolution.lean:29:8: declaration uses `sorry`
-⚠ [4076/4281] Replayed Challenges.FieldForm
+⚠ [4041/4281] Replayed Challenges.FieldForm
 warning: Comparator/Challenges/FieldForm.lean:15:8: declaration uses `sorry`
 warning: Comparator/Challenges/FieldForm.lean:21:8: declaration uses `sorry`
 warning: Comparator/Challenges/FieldForm.lean:27:8: declaration uses `sorry`
 warning: Comparator/Challenges/FieldForm.lean:34:8: declaration uses `sorry`
-⚠ [4077/4281] Replayed Challenges.PeriodicNonconstantStrain
+⚠ [4042/4281] Replayed Challenges.PeriodicNonconstantStrain
 warning: Comparator/Challenges/PeriodicNonconstantStrain.lean:17:8: declaration uses `sorry`
-⚠ [4078/4281] Replayed Challenges.HalfLineLaplaceDerivative
+⚠ [4043/4281] Replayed Challenges.HalfLineLaplaceDerivative
 warning: Comparator/Challenges/HalfLineLaplaceDerivative.lean:13:8: declaration uses `sorry`
-⚠ [4079/4281] Replayed Challenges.TimeSobolevHalfLine
+⚠ [4044/4281] Replayed Challenges.TimeSobolevHalfLine
 warning: Comparator/Challenges/TimeSobolevHalfLine.lean:17:8: declaration uses `sorry`
-⚠ [4080/4281] Replayed Challenges.DirichletKorn
+⚠ [4045/4281] Replayed Challenges.DirichletKorn
 warning: Comparator/Challenges/DirichletKorn.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/DirichletKorn.lean:29:8: declaration uses `sorry`
 warning: Comparator/Challenges/DirichletKorn.lean:36:8: declaration uses `sorry`
 warning: Comparator/Challenges/DirichletKorn.lean:44:8: declaration uses `sorry`
-⚠ [4081/4281] Replayed Challenges.VariationalSemigroup
+⚠ [4046/4281] Replayed Challenges.VariationalSemigroup
 warning: Comparator/Challenges/VariationalSemigroup.lean:14:8: declaration uses `sorry`
 warning: Comparator/Challenges/VariationalSemigroup.lean:21:8: declaration uses `sorry`
 warning: Comparator/Challenges/VariationalSemigroup.lean:29:8: declaration uses `sorry`
-⚠ [4082/4281] Replayed Challenges.Approximation
+⚠ [4047/4281] Replayed Challenges.Approximation
 warning: Comparator/Challenges/Approximation.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/Approximation.lean:23:8: declaration uses `sorry`
 warning: Comparator/Challenges/Approximation.lean:28:8: declaration uses `sorry`
 warning: Comparator/Challenges/Approximation.lean:34:8: declaration uses `sorry`
 warning: Comparator/Challenges/Approximation.lean:39:8: declaration uses `sorry`
-⚠ [4083/4281] Replayed Challenges.TimeSobolev
+⚠ [4048/4281] Replayed Challenges.TimeSobolev
 warning: Comparator/Challenges/TimeSobolev.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/TimeSobolev.lean:24:8: declaration uses `sorry`
 warning: Comparator/Challenges/TimeSobolev.lean:30:8: declaration uses `sorry`
 warning: Comparator/Challenges/TimeSobolev.lean:37:8: declaration uses `sorry`
 warning: Comparator/Challenges/TimeSobolev.lean:44:8: declaration uses `sorry`
 warning: Comparator/Challenges/TimeSobolev.lean:52:8: declaration uses `sorry`
-⚠ [4084/4281] Replayed Challenges.PeriodicSmoothSobolev
+⚠ [4049/4281] Replayed Challenges.PeriodicSmoothSobolev
 warning: Comparator/Challenges/PeriodicSmoothSobolev.lean:13:8: declaration uses `sorry`
-⚠ [4085/4281] Replayed Challenges.StripConvergence
+⚠ [4050/4281] Replayed Challenges.StripConvergence
 warning: Comparator/Challenges/StripConvergence.lean:23:8: declaration uses `sorry`
 warning: Comparator/Challenges/StripConvergence.lean:33:8: declaration uses `sorry`
-⚠ [4086/4281] Replayed Challenges.ChebyshevNodes
+⚠ [4051/4281] Replayed Challenges.ChebyshevNodes
 warning: Comparator/Challenges/ChebyshevNodes.lean:11:8: declaration uses `sorry`
 warning: Comparator/Challenges/ChebyshevNodes.lean:16:8: declaration uses `sorry`
 warning: Comparator/Challenges/ChebyshevNodes.lean:21:8: declaration uses `sorry`
 warning: Comparator/Challenges/ChebyshevNodes.lean:26:8: declaration uses `sorry`
 warning: Comparator/Challenges/ChebyshevNodes.lean:34:8: declaration uses `sorry`
 warning: Comparator/Challenges/ChebyshevNodes.lean:44:8: declaration uses `sorry`
-⚠ [4087/4281] Replayed Challenges.ChebyshevSeries
+⚠ [4052/4281] Replayed Challenges.ChebyshevSeries
 warning: Comparator/Challenges/ChebyshevSeries.lean:12:8: declaration uses `sorry`
-⚠ [4088/4281] Replayed Challenges.PeriodicSobolevBV
+⚠ [4053/4281] Replayed Challenges.PeriodicSobolevBV
 warning: Comparator/Challenges/PeriodicSobolevBV.lean:17:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicSobolevBV.lean:27:8: declaration uses `sorry`
-⚠ [4089/4281] Replayed Challenges.FiniteFeatures
+⚠ [4054/4281] Replayed Challenges.FiniteFeatures
 warning: Comparator/Challenges/FiniteFeatures.lean:16:8: declaration uses `sorry`
-⚠ [4090/4281] Replayed Challenges.DissipativeStability
+⚠ [4055/4281] Replayed Challenges.DissipativeStability
 warning: Comparator/Challenges/DissipativeStability.lean:22:8: declaration uses `sorry`
-⚠ [4091/4281] Replayed Challenges.PronyDissipation
+⚠ [4056/4281] Replayed Challenges.PronyDissipation
 warning: Comparator/Challenges/PronyDissipation.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/PronyDissipation.lean:29:8: declaration uses `sorry`
-⚠ [4092/4281] Replayed Challenges.ResponseDomains
+⚠ [4057/4281] Replayed Challenges.ResponseDomains
 warning: Comparator/Challenges/ResponseDomains.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/ResponseDomains.lean:25:8: declaration uses `sorry`
-⚠ [4093/4281] Replayed Challenges.SpectralPartition
+⚠ [4058/4281] Replayed Challenges.SpectralPartition
 warning: Comparator/Challenges/SpectralPartition.lean:16:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpectralPartition.lean:23:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpectralPartition.lean:29:8: declaration uses `sorry`
@@ -707,17 +694,17 @@ warning: Comparator/Challenges/SpectralPartition.lean:44:8: declaration uses `so
 warning: Comparator/Challenges/SpectralPartition.lean:56:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpectralPartition.lean:64:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpectralPartition.lean:71:8: declaration uses `sorry`
-⚠ [4094/4281] Replayed Challenges.DirichletCutoff
+⚠ [4059/4281] Replayed Challenges.DirichletCutoff
 warning: Comparator/Challenges/DirichletCutoff.lean:16:8: declaration uses `sorry`
-⚠ [4095/4281] Replayed Challenges.AlternativePronyContinuity
+⚠ [4060/4281] Replayed Challenges.AlternativePronyContinuity
 warning: Comparator/Challenges/AlternativePronyContinuity.lean:16:8: declaration uses `sorry`
 warning: Comparator/Challenges/AlternativePronyContinuity.lean:36:8: declaration uses `sorry`
 warning: Comparator/Challenges/AlternativePronyContinuity.lean:45:8: declaration uses `sorry`
-⚠ [4096/4281] Replayed Challenges.PartitionResponse
+⚠ [4061/4281] Replayed Challenges.PartitionResponse
 warning: Comparator/Challenges/PartitionResponse.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/PartitionResponse.lean:27:8: declaration uses `sorry`
 warning: Comparator/Challenges/PartitionResponse.lean:40:8: declaration uses `sorry`
-⚠ [4097/4281] Replayed Challenges.CrystalPlasticity
+⚠ [4062/4281] Replayed Challenges.CrystalPlasticity
 warning: Comparator/Challenges/CrystalPlasticity.lean:15:8: declaration uses `sorry`
 warning: Comparator/Challenges/CrystalPlasticity.lean:24:8: declaration uses `sorry`
 warning: Comparator/Challenges/CrystalPlasticity.lean:30:8: declaration uses `sorry`
@@ -728,11 +715,11 @@ warning: Comparator/Challenges/CrystalPlasticity.lean:51:8: declaration uses `so
 warning: Comparator/Challenges/CrystalPlasticity.lean:60:8: declaration uses `sorry`
 warning: Comparator/Challenges/CrystalPlasticity.lean:71:8: declaration uses `sorry`
 warning: Comparator/Challenges/CrystalPlasticity.lean:79:8: declaration uses `sorry`
-⚠ [4098/4281] Replayed Challenges.RidgeApproximation
+⚠ [4063/4281] Replayed Challenges.RidgeApproximation
 warning: Comparator/Challenges/RidgeApproximation.lean:21:8: declaration uses `sorry`
-⚠ [4099/4281] Replayed Challenges.UniformLocalAverage
+⚠ [4064/4281] Replayed Challenges.UniformLocalAverage
 warning: Comparator/Challenges/UniformLocalAverage.lean:20:8: declaration uses `sorry`
-⚠ [4100/4281] Replayed Challenges.LogPatchGeometry
+⚠ [4065/4281] Replayed Challenges.LogPatchGeometry
 warning: Comparator/Challenges/LogPatchGeometry.lean:10:8: declaration uses `sorry`
 warning: Comparator/Challenges/LogPatchGeometry.lean:16:8: declaration uses `sorry`
 warning: Comparator/Challenges/LogPatchGeometry.lean:21:8: declaration uses `sorry`
@@ -740,115 +727,115 @@ warning: Comparator/Challenges/LogPatchGeometry.lean:27:8: declaration uses `sor
 warning: Comparator/Challenges/LogPatchGeometry.lean:35:8: declaration uses `sorry`
 warning: Comparator/Challenges/LogPatchGeometry.lean:43:8: declaration uses `sorry`
 warning: Comparator/Challenges/LogPatchGeometry.lean:52:8: declaration uses `sorry`
-⚠ [4101/4281] Replayed Challenges.StripSpectralEdges
+⚠ [4066/4281] Replayed Challenges.StripSpectralEdges
 warning: Comparator/Challenges/StripSpectralEdges.lean:17:8: declaration uses `sorry`
 warning: Comparator/Challenges/StripSpectralEdges.lean:27:8: declaration uses `sorry`
-⚠ [4102/4281] Replayed Challenges.Complexity
+⚠ [4067/4281] Replayed Challenges.Complexity
 warning: Comparator/Challenges/Complexity.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/Complexity.lean:27:8: declaration uses `sorry`
 warning: Comparator/Challenges/Complexity.lean:35:8: declaration uses `sorry`
 warning: Comparator/Challenges/Complexity.lean:44:8: declaration uses `sorry`
-⚠ [4103/4281] Replayed Challenges.StaticCellFlux
+⚠ [4068/4281] Replayed Challenges.StaticCellFlux
 warning: Comparator/Challenges/StaticCellFlux.lean:15:8: declaration uses `sorry`
 warning: Comparator/Challenges/StaticCellFlux.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/StaticCellFlux.lean:29:8: declaration uses `sorry`
 warning: Comparator/Challenges/StaticCellFlux.lean:36:8: declaration uses `sorry`
-⚠ [4104/4281] Replayed Challenges.CircleFourier
+⚠ [4069/4281] Replayed Challenges.CircleFourier
 warning: Comparator/Challenges/CircleFourier.lean:14:8: declaration uses `sorry`
 warning: Comparator/Challenges/CircleFourier.lean:23:8: declaration uses `sorry`
-⚠ [4105/4281] Replayed Challenges.ProjectionMeasure
-warning: Comparator/Challenges/ProjectionMeasure.lean:21:8: declaration uses `sorry`
-warning: Comparator/Challenges/ProjectionMeasure.lean:30:8: declaration uses `sorry`
-warning: Comparator/Challenges/ProjectionMeasure.lean:39:8: declaration uses `sorry`
-⚠ [4106/4281] Replayed Challenges.SpectralBounds
+⚠ [4070/4281] Replayed Challenges.ProjectionMeasure
+warning: Comparator/Challenges/ProjectionMeasure.lean:23:8: declaration uses `sorry`
+warning: Comparator/Challenges/ProjectionMeasure.lean:32:8: declaration uses `sorry`
+warning: Comparator/Challenges/ProjectionMeasure.lean:41:8: declaration uses `sorry`
+⚠ [4071/4281] Replayed Challenges.SpectralBounds
 warning: Comparator/Challenges/SpectralBounds.lean:15:8: declaration uses `sorry`
-⚠ [4107/4281] Replayed Challenges.HilbertWeakCompactness
+⚠ [4072/4281] Replayed Challenges.HilbertWeakCompactness
 warning: Comparator/Challenges/HilbertWeakCompactness.lean:19:8: declaration uses `sorry`
-⚠ [4108/4281] Replayed Challenges.VariationalStability
+⚠ [4073/4281] Replayed Challenges.VariationalStability
 warning: Comparator/Challenges/VariationalStability.lean:17:8: declaration uses `sorry`
 warning: Comparator/Challenges/VariationalStability.lean:25:8: declaration uses `sorry`
 warning: Comparator/Challenges/VariationalStability.lean:33:8: declaration uses `sorry`
 warning: Comparator/Challenges/VariationalStability.lean:44:8: declaration uses `sorry`
-⚠ [4109/4281] Replayed Challenges.FieldCompactness
+⚠ [4074/4281] Replayed Challenges.FieldCompactness
 warning: Comparator/Challenges/FieldCompactness.lean:19:8: declaration uses `sorry`
-⚠ [4110/4281] Replayed Challenges.WeakStrongPairing
+⚠ [4075/4281] Replayed Challenges.WeakStrongPairing
 warning: Comparator/Challenges/WeakStrongPairing.lean:14:8: declaration uses `sorry`
 warning: Comparator/Challenges/WeakStrongPairing.lean:26:8: declaration uses `sorry`
-⚠ [4111/4281] Replayed Challenges.Material
+⚠ [4076/4281] Replayed Challenges.Material
 warning: Comparator/Challenges/Material.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/Material.lean:29:8: declaration uses `sorry`
-⚠ [4112/4281] Replayed Challenges.MandelBlocks
+⚠ [4077/4281] Replayed Challenges.MandelBlocks
 warning: Comparator/Challenges/MandelBlocks.lean:15:8: declaration uses `sorry`
 warning: Comparator/Challenges/MandelBlocks.lean:22:8: declaration uses `sorry`
-⚠ [4113/4281] Replayed Challenges.HomogenizedSuperposition
-warning: Comparator/Challenges/HomogenizedSuperposition.lean:19:8: declaration uses `sorry`
-warning: Comparator/Challenges/HomogenizedSuperposition.lean:31:8: declaration uses `sorry`
-⚠ [4114/4281] Replayed Challenges.CellResolvent
-warning: Comparator/Challenges/CellResolvent.lean:14:8: declaration uses `sorry`
-⚠ [4115/4281] Replayed Challenges.OperatorConvolutionBalance
+⚠ [4078/4281] Replayed Challenges.HomogenizedSuperposition
+warning: Comparator/Challenges/HomogenizedSuperposition.lean:28:8: declaration uses `sorry`
+warning: Comparator/Challenges/HomogenizedSuperposition.lean:40:8: declaration uses `sorry`
+⚠ [4079/4281] Replayed Challenges.CellResolvent
+warning: Comparator/Challenges/CellResolvent.lean:16:8: declaration uses `sorry`
+⚠ [4080/4281] Replayed Challenges.OperatorConvolutionBalance
 warning: Comparator/Challenges/OperatorConvolutionBalance.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/OperatorConvolutionBalance.lean:31:8: declaration uses `sorry`
-⚠ [4116/4281] Replayed Challenges.PeriodicAveraging
+⚠ [4081/4281] Replayed Challenges.PeriodicAveraging
 warning: Comparator/Challenges/PeriodicAveraging.lean:21:8: declaration uses `sorry`
-⚠ [4117/4281] Replayed Challenges.FieldStability
-warning: Comparator/Challenges/FieldStability.lean:20:8: declaration uses `sorry`
-⚠ [4121/4281] Replayed Challenges.ForcedHomogenization
-warning: Comparator/Challenges/ForcedHomogenization.lean:22:8: declaration uses `sorry`
-⚠ [4122/4281] Replayed Challenges.StripFields
+⚠ [4082/4281] Replayed Challenges.ForcedHomogenization
+warning: Comparator/Challenges/ForcedHomogenization.lean:31:8: declaration uses `sorry`
+⚠ [4083/4281] Replayed Challenges.StripFields
 warning: Comparator/Challenges/StripFields.lean:23:8: declaration uses `sorry`
 warning: Comparator/Challenges/StripFields.lean:30:8: declaration uses `sorry`
 warning: Comparator/Challenges/StripFields.lean:36:8: declaration uses `sorry`
 warning: Comparator/Challenges/StripFields.lean:42:8: declaration uses `sorry`
 warning: Comparator/Challenges/StripFields.lean:48:8: declaration uses `sorry`
-⚠ [4123/4281] Replayed Challenges.CellContinuity
+⚠ [4084/4281] Replayed Challenges.CellContinuity
 warning: Comparator/Challenges/CellContinuity.lean:34:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellContinuity.lean:52:8: declaration uses `sorry`
-⚠ [4124/4281] Replayed Challenges.FieldConvergence
+⚠ [4085/4281] Replayed Challenges.FieldStability
+warning: Comparator/Challenges/FieldStability.lean:20:8: declaration uses `sorry`
+⚠ [4086/4281] Replayed Challenges.FieldConvergence
 warning: Comparator/Challenges/FieldConvergence.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/FieldConvergence.lean:28:8: declaration uses `sorry`
-⚠ [4125/4281] Replayed Challenges.PeriodicSlicing
+⚠ [4087/4281] Replayed Challenges.PeriodicSlicing
 warning: Comparator/Challenges/PeriodicSlicing.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicSlicing.lean:37:8: declaration uses `sorry`
-⚠ [4126/4281] Replayed Challenges.WeightedSpace
+⚠ [4088/4281] Replayed Challenges.WeightedSpace
 warning: Comparator/Challenges/WeightedSpace.lean:18:8: declaration uses `sorry`
-⚠ [4127/4281] Replayed Challenges.MemoryResponse
+⚠ [4089/4281] Replayed Challenges.MemoryResponse
 warning: Comparator/Challenges/MemoryResponse.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/MemoryResponse.lean:29:8: declaration uses `sorry`
-⚠ [4128/4281] Replayed Challenges.HomogeneousSubsequence
+⚠ [4090/4281] Replayed Challenges.HomogeneousSubsequence
 warning: Comparator/Challenges/HomogeneousSubsequence.lean:21:8: declaration uses `sorry`
-⚠ [4129/4281] Replayed Challenges.HomogenizedLaplace
+⚠ [4091/4281] Replayed Challenges.HomogenizedLaplace
 warning: Comparator/Challenges/HomogenizedLaplace.lean:30:8: declaration uses `sorry`
 warning: Comparator/Challenges/HomogenizedLaplace.lean:53:8: declaration uses `sorry`
-⚠ [4130/4281] Replayed Challenges.PeriodicVariation
+⚠ [4092/4281] Replayed Challenges.PeriodicVariation
 warning: Comparator/Challenges/PeriodicVariation.lean:21:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicVariation.lean:28:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicVariation.lean:36:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicVariation.lean:42:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicVariation.lean:48:8: declaration uses `sorry`
-⚠ [4131/4281] Replayed Challenges.MicroscopicCompactness
+⚠ [4093/4281] Replayed Challenges.MicroscopicCompactness
 warning: Comparator/Challenges/MicroscopicCompactness.lean:29:8: declaration uses `sorry`
-⚠ [4132/4281] Replayed Challenges.TimeSobolevLaplaceMemory
+⚠ [4094/4281] Replayed Challenges.TimeSobolevLaplaceMemory
 warning: Comparator/Challenges/TimeSobolevLaplaceMemory.lean:17:8: declaration uses `sorry`
-⚠ [4133/4281] Replayed Challenges.LpCoordinates
+⚠ [4095/4281] Replayed Challenges.LpCoordinates
 warning: Comparator/Challenges/LpCoordinates.lean:19:8: declaration uses `sorry`
-⚠ [4134/4281] Replayed Challenges.PeriodicCorrectorTests
+⚠ [4096/4281] Replayed Challenges.PeriodicCorrectorTests
 warning: Comparator/Challenges/PeriodicCorrectorTests.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicCorrectorTests.lean:37:8: declaration uses `sorry`
-⚠ [4135/4281] Replayed Challenges.Mandel
+⚠ [4097/4281] Replayed Challenges.Mandel
 warning: Comparator/Challenges/Mandel.lean:14:8: declaration uses `sorry`
 warning: Comparator/Challenges/Mandel.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/Mandel.lean:24:8: declaration uses `sorry`
 warning: Comparator/Challenges/Mandel.lean:30:8: declaration uses `sorry`
 warning: Comparator/Challenges/Mandel.lean:37:8: declaration uses `sorry`
-⚠ [4136/4281] Replayed Challenges.HalfLineLaplaceDamping
+⚠ [4098/4281] Replayed Challenges.HalfLineLaplaceDamping
 warning: Comparator/Challenges/HalfLineLaplaceDamping.lean:13:8: declaration uses `sorry`
 warning: Comparator/Challenges/HalfLineLaplaceDamping.lean:20:8: declaration uses `sorry`
-⚠ [4137/4281] Replayed Challenges.PeriodicDivergenceFourier
+⚠ [4099/4281] Replayed Challenges.PeriodicDivergenceFourier
 warning: Comparator/Challenges/PeriodicDivergenceFourier.lean:13:8: declaration uses `sorry`
-⚠ [4138/4281] Replayed Challenges.PeriodicCoordinates
+⚠ [4100/4281] Replayed Challenges.PeriodicCoordinates
 warning: Comparator/Challenges/PeriodicCoordinates.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicCoordinates.lean:28:8: declaration uses `sorry`
-⚠ [4139/4281] Replayed Challenges.CausalConvolution
+⚠ [4101/4281] Replayed Challenges.CausalConvolution
 warning: Comparator/Challenges/CausalConvolution.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/CausalConvolution.lean:28:8: declaration uses `sorry`
 warning: Comparator/Challenges/CausalConvolution.lean:37:8: declaration uses `sorry`
@@ -856,63 +843,63 @@ warning: Comparator/Challenges/CausalConvolution.lean:45:8: declaration uses `so
 warning: Comparator/Challenges/CausalConvolution.lean:54:8: declaration uses `sorry`
 warning: Comparator/Challenges/CausalConvolution.lean:64:8: declaration uses `sorry`
 warning: Comparator/Challenges/CausalConvolution.lean:74:8: declaration uses `sorry`
-⚠ [4140/4281] Replayed Challenges.AnnulusCoefficients
+⚠ [4102/4281] Replayed Challenges.AnnulusCoefficients
 warning: Comparator/Challenges/AnnulusCoefficients.lean:11:8: declaration uses `sorry`
 warning: Comparator/Challenges/AnnulusCoefficients.lean:20:8: declaration uses `sorry`
-⚠ [4141/4281] Replayed Challenges.TensorBounds
+⚠ [4106/4281] Replayed Challenges.TensorBounds
 warning: Comparator/Challenges/TensorBounds.lean:15:8: declaration uses `sorry`
 warning: Comparator/Challenges/TensorBounds.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/TensorBounds.lean:28:8: declaration uses `sorry`
 warning: Comparator/Challenges/TensorBounds.lean:35:8: declaration uses `sorry`
-⚠ [4142/4281] Replayed Challenges.TensorMeasureIntegration
+⚠ [4107/4281] Replayed Challenges.TensorMeasureIntegration
 warning: Comparator/Challenges/TensorMeasureIntegration.lean:24:8: declaration uses `sorry`
 warning: Comparator/Challenges/TensorMeasureIntegration.lean:30:8: declaration uses `sorry`
-⚠ [4143/4281] Replayed Challenges.NonlinearChannelLifting
+⚠ [4108/4281] Replayed Challenges.NonlinearChannelLifting
 warning: Comparator/Challenges/NonlinearChannelLifting.lean:19:8: declaration uses `sorry`
-⚠ [4144/4281] Replayed Challenges.SpectralEdge
+⚠ [4109/4281] Replayed Challenges.SpectralEdge
 warning: Comparator/Challenges/SpectralEdge.lean:21:8: declaration uses `sorry`
-⚠ [4145/4281] Replayed Challenges.FourierMappingLayers
+⚠ [4110/4281] Replayed Challenges.FourierMappingLayers
 warning: Comparator/Challenges/FourierMappingLayers.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/FourierMappingLayers.lean:30:8: declaration uses `sorry`
 warning: Comparator/Challenges/FourierMappingLayers.lean:40:8: declaration uses `sorry`
-⚠ [4146/4281] Replayed Challenges.ContinuousPronyApproximation
+⚠ [4111/4281] Replayed Challenges.ContinuousPronyApproximation
 warning: Comparator/Challenges/ContinuousPronyApproximation.lean:19:8: declaration uses `sorry`
-⚠ [4147/4281] Replayed Challenges.EffectiveElliptic
+⚠ [4112/4281] Replayed Challenges.EffectiveElliptic
 warning: Comparator/Challenges/EffectiveElliptic.lean:15:8: declaration uses `sorry`
-⚠ [4148/4281] Replayed Challenges.PeriodicStripVariation
+⚠ [4113/4281] Replayed Challenges.PeriodicStripVariation
 warning: Comparator/Challenges/PeriodicStripVariation.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicStripVariation.lean:27:8: declaration uses `sorry`
-⚠ [4149/4281] Replayed Challenges.CutoffPairing
+⚠ [4114/4281] Replayed Challenges.CutoffPairing
 warning: Comparator/Challenges/CutoffPairing.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/CutoffPairing.lean:26:8: declaration uses `sorry`
 warning: Comparator/Challenges/CutoffPairing.lean:36:8: declaration uses `sorry`
 warning: Comparator/Challenges/CutoffPairing.lean:51:8: declaration uses `sorry`
-⚠ [4150/4281] Replayed Challenges.ChebyshevAnalytic
+⚠ [4115/4281] Replayed Challenges.ChebyshevAnalytic
 warning: Comparator/Challenges/ChebyshevAnalytic.lean:13:8: declaration uses `sorry`
 warning: Comparator/Challenges/ChebyshevAnalytic.lean:22:8: declaration uses `sorry`
-⚠ [4151/4281] Replayed Challenges.ForcedSubsequence
+⚠ [4116/4281] Replayed Challenges.ForcedSubsequence
 warning: Comparator/Challenges/ForcedSubsequence.lean:31:8: declaration uses `sorry`
-⚠ [4152/4281] Replayed Challenges.CompactLaplaceUniqueness
+⚠ [4117/4281] Replayed Challenges.CompactLaplaceUniqueness
 warning: Comparator/Challenges/CompactLaplaceUniqueness.lean:20:8: declaration uses `sorry`
-⚠ [4153/4281] Replayed Challenges.LocalizedCorrectors
+⚠ [4118/4281] Replayed Challenges.LocalizedCorrectors
 warning: Comparator/Challenges/LocalizedCorrectors.lean:17:8: declaration uses `sorry`
-⚠ [4154/4281] Replayed Challenges.InterpolationPolynomial
+⚠ [4119/4281] Replayed Challenges.InterpolationPolynomial
 warning: Comparator/Challenges/InterpolationPolynomial.lean:16:8: declaration uses `sorry`
-⚠ [4155/4281] Replayed Challenges.CfcLaplace
+⚠ [4120/4281] Replayed Challenges.CfcLaplace
 warning: Comparator/Challenges/CfcLaplace.lean:15:8: declaration uses `sorry`
 warning: Comparator/Challenges/CfcLaplace.lean:26:8: declaration uses `sorry`
-⚠ [4156/4281] Replayed Challenges.Isotropic
+⚠ [4121/4281] Replayed Challenges.Isotropic
 warning: Comparator/Challenges/Isotropic.lean:15:8: declaration uses `sorry`
 warning: Comparator/Challenges/Isotropic.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/Isotropic.lean:28:8: declaration uses `sorry`
 warning: Comparator/Challenges/Isotropic.lean:35:8: declaration uses `sorry`
-⚠ [4157/4281] Replayed Challenges.PeriodicFourierSynthesis
+⚠ [4122/4281] Replayed Challenges.PeriodicFourierSynthesis
 warning: Comparator/Challenges/PeriodicFourierSynthesis.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicFourierSynthesis.lean:25:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicFourierSynthesis.lean:36:8: declaration uses `sorry`
-⚠ [4158/4281] Replayed Challenges.PrimitiveIntegrationByParts
+⚠ [4123/4281] Replayed Challenges.PrimitiveIntegrationByParts
 warning: Comparator/Challenges/PrimitiveIntegrationByParts.lean:16:8: declaration uses `sorry`
-⚠ [4159/4281] Replayed Challenges.GlobalResponse
+⚠ [4124/4281] Replayed Challenges.GlobalResponse
 warning: Comparator/Challenges/GlobalResponse.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/GlobalResponse.lean:24:8: declaration uses `sorry`
 warning: Comparator/Challenges/GlobalResponse.lean:30:8: declaration uses `sorry`
@@ -922,28 +909,28 @@ warning: Comparator/Challenges/GlobalResponse.lean:63:8: declaration uses `sorry
 warning: Comparator/Challenges/GlobalResponse.lean:77:8: declaration uses `sorry`
 warning: Comparator/Challenges/GlobalResponse.lean:85:8: declaration uses `sorry`
 warning: Comparator/Challenges/GlobalResponse.lean:102:8: declaration uses `sorry`
-⚠ [4160/4281] Replayed Challenges.PeriodicBump
+⚠ [4125/4281] Replayed Challenges.PeriodicBump
 warning: Comparator/Challenges/PeriodicBump.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicBump.lean:28:8: declaration uses `sorry`
-⚠ [4161/4281] Replayed Challenges.ResponseMeasurability
+⚠ [4126/4281] Replayed Challenges.ResponseMeasurability
 warning: Comparator/Challenges/ResponseMeasurability.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/ResponseMeasurability.lean:33:8: declaration uses `sorry`
-⚠ [4162/4281] Replayed Challenges.LinearTimeSobolev
+⚠ [4127/4281] Replayed Challenges.LinearTimeSobolev
 warning: Comparator/Challenges/LinearTimeSobolev.lean:21:8: declaration uses `sorry`
 warning: Comparator/Challenges/LinearTimeSobolev.lean:31:8: declaration uses `sorry`
-⚠ [4163/4281] Replayed Challenges.ForcedMemory
+⚠ [4128/4281] Replayed Challenges.ForcedMemory
 warning: Comparator/Challenges/ForcedMemory.lean:30:8: declaration uses `sorry`
-⚠ [4164/4281] Replayed Challenges.CellRelaxationIdentities
+⚠ [4129/4281] Replayed Challenges.CellRelaxationIdentities
 warning: Comparator/Challenges/CellRelaxationIdentities.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellRelaxationIdentities.lean:26:8: declaration uses `sorry`
-⚠ [4165/4281] Replayed Challenges.StripMaterials
+⚠ [4130/4281] Replayed Challenges.StripMaterials
 warning: Comparator/Challenges/StripMaterials.lean:23:8: declaration uses `sorry`
-⚠ [4166/4281] Replayed Challenges.TimeSobolevTraceCompactness
+⚠ [4131/4281] Replayed Challenges.TimeSobolevTraceCompactness
 warning: Comparator/Challenges/TimeSobolevTraceCompactness.lean:15:8: declaration uses `sorry`
-⚠ [4167/4281] Replayed Challenges.VariationalEvolution
+⚠ [4132/4281] Replayed Challenges.VariationalEvolution
 warning: Comparator/Challenges/VariationalEvolution.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/VariationalEvolution.lean:30:8: declaration uses `sorry`
-⚠ [4168/4281] Replayed Challenges.SpatialCoercivity
+⚠ [4133/4281] Replayed Challenges.SpatialCoercivity
 warning: Comparator/Challenges/SpatialCoercivity.lean:23:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpatialCoercivity.lean:31:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpatialCoercivity.lean:37:8: declaration uses `sorry`
@@ -951,89 +938,89 @@ warning: Comparator/Challenges/SpatialCoercivity.lean:43:8: declaration uses `so
 warning: Comparator/Challenges/SpatialCoercivity.lean:52:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpatialCoercivity.lean:62:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpatialCoercivity.lean:74:8: declaration uses `sorry`
-⚠ [4169/4281] Replayed Challenges.Feedforward
+⚠ [4134/4281] Replayed Challenges.Feedforward
 warning: Comparator/Challenges/Feedforward.lean:16:8: declaration uses `sorry`
 warning: Comparator/Challenges/Feedforward.lean:24:8: declaration uses `sorry`
-⚠ [4170/4281] Replayed Challenges.HalfLineLaplacePrimitive
+⚠ [4135/4281] Replayed Challenges.HalfLineLaplacePrimitive
 warning: Comparator/Challenges/HalfLineLaplacePrimitive.lean:16:8: declaration uses `sorry`
 warning: Comparator/Challenges/HalfLineLaplacePrimitive.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/HalfLineLaplacePrimitive.lean:28:8: declaration uses `sorry`
 warning: Comparator/Challenges/HalfLineLaplacePrimitive.lean:36:8: declaration uses `sorry`
-⚠ [4171/4281] Replayed Challenges.SobolevMaterialCompactness
+⚠ [4136/4281] Replayed Challenges.SobolevMaterialCompactness
 warning: Comparator/Challenges/SobolevMaterialCompactness.lean:21:8: declaration uses `sorry`
 warning: Comparator/Challenges/SobolevMaterialCompactness.lean:39:8: declaration uses `sorry`
-⚠ [4172/4281] Replayed Challenges.TimeSobolevMemory
+⚠ [4137/4281] Replayed Challenges.TimeSobolevMemory
 warning: Comparator/Challenges/TimeSobolevMemory.lean:21:8: declaration uses `sorry`
-⚠ [4173/4281] Replayed Challenges.PeriodicCorrectorRescaling
+⚠ [4138/4281] Replayed Challenges.PeriodicCorrectorRescaling
 warning: Comparator/Challenges/PeriodicCorrectorRescaling.lean:17:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicCorrectorRescaling.lean:29:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicCorrectorRescaling.lean:41:8: declaration uses `sorry`
-⚠ [4174/4281] Replayed Challenges.InternalStateBound
+⚠ [4139/4281] Replayed Challenges.InternalStateBound
 warning: Comparator/Challenges/InternalStateBound.lean:28:8: declaration uses `sorry`
 warning: Comparator/Challenges/InternalStateBound.lean:40:8: declaration uses `sorry`
-⚠ [4175/4281] Replayed Challenges.EnergyTrapping
+⚠ [4140/4281] Replayed Challenges.EnergyTrapping
 warning: Comparator/Challenges/EnergyTrapping.lean:21:8: declaration uses `sorry`
-⚠ [4176/4281] Replayed Challenges.FourierProjectionEvaluation
+⚠ [4141/4281] Replayed Challenges.FourierProjectionEvaluation
 warning: Comparator/Challenges/FourierProjectionEvaluation.lean:16:8: declaration uses `sorry`
-⚠ [4177/4281] Replayed Challenges.SpectralContinuity
+⚠ [4142/4281] Replayed Challenges.SpectralContinuity
 warning: Comparator/Challenges/SpectralContinuity.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpectralContinuity.lean:51:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpectralContinuity.lean:59:8: declaration uses `sorry`
-⚠ [4178/4281] Replayed Challenges.MaterialResponseContinuity
+⚠ [4143/4281] Replayed Challenges.MaterialResponseContinuity
 warning: Comparator/Challenges/MaterialResponseContinuity.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/MaterialResponseContinuity.lean:26:8: declaration uses `sorry`
 warning: Comparator/Challenges/MaterialResponseContinuity.lean:33:8: declaration uses `sorry`
 warning: Comparator/Challenges/MaterialResponseContinuity.lean:42:8: declaration uses `sorry`
-⚠ [4179/4281] Replayed Challenges.VectorRidgeApproximation
+⚠ [4144/4281] Replayed Challenges.VectorRidgeApproximation
 warning: Comparator/Challenges/VectorRidgeApproximation.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/VectorRidgeApproximation.lean:32:8: declaration uses `sorry`
-⚠ [4180/4281] Replayed Challenges.LaplaceMemory
+⚠ [4145/4281] Replayed Challenges.LaplaceMemory
 warning: Comparator/Challenges/LaplaceMemory.lean:15:8: declaration uses `sorry`
 warning: Comparator/Challenges/LaplaceMemory.lean:37:8: declaration uses `sorry`
-⚠ [4181/4281] Replayed Challenges.StaticHomogenization
+⚠ [4146/4281] Replayed Challenges.StaticHomogenization
 warning: Comparator/Challenges/StaticHomogenization.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/StaticHomogenization.lean:41:8: declaration uses `sorry`
-⚠ [4182/4281] Replayed Challenges.ConstantSpatialCoercivity
+⚠ [4147/4281] Replayed Challenges.ConstantSpatialCoercivity
 warning: Comparator/Challenges/ConstantSpatialCoercivity.lean:30:8: declaration uses `sorry`
 warning: Comparator/Challenges/ConstantSpatialCoercivity.lean:37:8: declaration uses `sorry`
-⚠ [4183/4281] Replayed Challenges.OperatorConvolutionLimits
+⚠ [4148/4281] Replayed Challenges.OperatorConvolutionLimits
 warning: Comparator/Challenges/OperatorConvolutionLimits.lean:16:8: declaration uses `sorry`
-⚠ [4184/4281] Replayed Challenges.EnergyComparison
+⚠ [4149/4281] Replayed Challenges.EnergyComparison
 warning: Comparator/Challenges/EnergyComparison.lean:21:8: declaration uses `sorry`
 warning: Comparator/Challenges/EnergyComparison.lean:36:8: declaration uses `sorry`
-⚠ [4185/4281] Replayed Challenges.RescaledFieldCombinations
+⚠ [4150/4281] Replayed Challenges.RescaledFieldCombinations
 warning: Comparator/Challenges/RescaledFieldCombinations.lean:14:8: declaration uses `sorry`
 warning: Comparator/Challenges/RescaledFieldCombinations.lean:22:8: declaration uses `sorry`
-⚠ [4186/4281] Replayed Challenges.StripBV
+⚠ [4151/4281] Replayed Challenges.StripBV
 warning: Comparator/Challenges/StripBV.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/StripBV.lean:29:8: declaration uses `sorry`
 warning: Comparator/Challenges/StripBV.lean:35:8: declaration uses `sorry`
 warning: Comparator/Challenges/StripBV.lean:42:8: declaration uses `sorry`
-⚠ [4187/4281] Replayed Challenges.BernsteinGeometry
+⚠ [4152/4281] Replayed Challenges.BernsteinGeometry
 warning: Comparator/Challenges/BernsteinGeometry.lean:11:8: declaration uses `sorry`
 warning: Comparator/Challenges/BernsteinGeometry.lean:16:8: declaration uses `sorry`
 warning: Comparator/Challenges/BernsteinGeometry.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/BernsteinGeometry.lean:28:8: declaration uses `sorry`
 warning: Comparator/Challenges/BernsteinGeometry.lean:34:8: declaration uses `sorry`
-⚠ [4188/4281] Replayed Challenges.TransformedCell
+⚠ [4153/4281] Replayed Challenges.TransformedCell
 warning: Comparator/Challenges/TransformedCell.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/TransformedCell.lean:32:8: declaration uses `sorry`
 warning: Comparator/Challenges/TransformedCell.lean:40:8: declaration uses `sorry`
-⚠ [4189/4281] Replayed Challenges.MicroscopicSolutionFamily
+⚠ [4154/4281] Replayed Challenges.MicroscopicSolutionFamily
 warning: Comparator/Challenges/MicroscopicSolutionFamily.lean:16:8: declaration uses `sorry`
-⚠ [4190/4281] Replayed Challenges.LinearTimeBounds
+⚠ [4155/4281] Replayed Challenges.LinearTimeBounds
 warning: Comparator/Challenges/LinearTimeBounds.lean:17:8: declaration uses `sorry`
 warning: Comparator/Challenges/LinearTimeBounds.lean:30:8: declaration uses `sorry`
-⚠ [4191/4281] Replayed Challenges.HomogeneousLimit
-warning: Comparator/Challenges/HomogeneousLimit.lean:26:8: declaration uses `sorry`
-warning: Comparator/Challenges/HomogeneousLimit.lean:50:8: declaration uses `sorry`
-⚠ [4192/4281] Replayed Challenges.FourierMappingProjection
+⚠ [4156/4281] Replayed Challenges.HomogeneousLimit
+warning: Comparator/Challenges/HomogeneousLimit.lean:35:8: declaration uses `sorry`
+warning: Comparator/Challenges/HomogeneousLimit.lean:59:8: declaration uses `sorry`
+⚠ [4157/4281] Replayed Challenges.FourierMappingProjection
 warning: Comparator/Challenges/FourierMappingProjection.lean:15:8: declaration uses `sorry`
-⚠ [4193/4281] Replayed Challenges.WeakSubsequenceLimit
+⚠ [4158/4281] Replayed Challenges.WeakSubsequenceLimit
 warning: Comparator/Challenges/WeakSubsequenceLimit.lean:17:8: declaration uses `sorry`
 warning: Comparator/Challenges/WeakSubsequenceLimit.lean:30:8: declaration uses `sorry`
 warning: Comparator/Challenges/WeakSubsequenceLimit.lean:44:8: declaration uses `sorry`
-⚠ [4194/4281] Replayed Challenges.PeriodicFourier
+⚠ [4159/4281] Replayed Challenges.PeriodicFourier
 warning: Comparator/Challenges/PeriodicFourier.lean:17:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicFourier.lean:27:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicFourier.lean:34:8: declaration uses `sorry`
@@ -1041,11 +1028,11 @@ warning: Comparator/Challenges/PeriodicFourier.lean:40:8: declaration uses `sorr
 warning: Comparator/Challenges/PeriodicFourier.lean:49:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicFourier.lean:60:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicFourier.lean:68:8: declaration uses `sorry`
-⚠ [4195/4281] Replayed Challenges.CorrectorTrajectory
+⚠ [4160/4281] Replayed Challenges.CorrectorTrajectory
 warning: Comparator/Challenges/CorrectorTrajectory.lean:17:8: declaration uses `sorry`
 warning: Comparator/Challenges/CorrectorTrajectory.lean:25:8: declaration uses `sorry`
 warning: Comparator/Challenges/CorrectorTrajectory.lean:33:8: declaration uses `sorry`
-⚠ [4196/4281] Replayed Challenges.LinearSurrogate
+⚠ [4161/4281] Replayed Challenges.LinearSurrogate
 warning: Comparator/Challenges/LinearSurrogate.lean:23:8: declaration uses `sorry`
 warning: Comparator/Challenges/LinearSurrogate.lean:31:8: declaration uses `sorry`
 warning: Comparator/Challenges/LinearSurrogate.lean:45:8: declaration uses `sorry`
@@ -1054,23 +1041,23 @@ warning: Comparator/Challenges/LinearSurrogate.lean:65:8: declaration uses `sorr
 warning: Comparator/Challenges/LinearSurrogate.lean:74:8: declaration uses `sorry`
 warning: Comparator/Challenges/LinearSurrogate.lean:84:8: declaration uses `sorry`
 warning: Comparator/Challenges/LinearSurrogate.lean:93:8: declaration uses `sorry`
-⚠ [4197/4281] Replayed Challenges.PVMCompression
+⚠ [4162/4281] Replayed Challenges.PVMCompression
 warning: Comparator/Challenges/PVMCompression.lean:27:8: declaration uses `sorry`
 warning: Comparator/Challenges/PVMCompression.lean:35:8: declaration uses `sorry`
 warning: Comparator/Challenges/PVMCompression.lean:46:8: declaration uses `sorry`
-⚠ [4198/4281] Replayed Challenges.MaterialTopology
+⚠ [4163/4281] Replayed Challenges.MaterialTopology
 warning: Comparator/Challenges/MaterialTopology.lean:24:8: declaration uses `sorry`
 warning: Comparator/Challenges/MaterialTopology.lean:33:8: declaration uses `sorry`
-⚠ [4199/4281] Replayed Challenges.Nemytskii
+⚠ [4164/4281] Replayed Challenges.Nemytskii
 warning: Comparator/Challenges/Nemytskii.lean:18:8: declaration uses `sorry`
-⚠ [4200/4281] Replayed Challenges.ZeroBoundaryCoordinates
+⚠ [4165/4281] Replayed Challenges.ZeroBoundaryCoordinates
 warning: Comparator/Challenges/ZeroBoundaryCoordinates.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/ZeroBoundaryCoordinates.lean:26:8: declaration uses `sorry`
-⚠ [4201/4281] Replayed Challenges.PeriodicStressRescaling
+⚠ [4166/4281] Replayed Challenges.PeriodicStressRescaling
 warning: Comparator/Challenges/PeriodicStressRescaling.lean:18:8: declaration uses `sorry`
-⚠ [4202/4281] Replayed Challenges.TimeSobolevGreen
+⚠ [4167/4281] Replayed Challenges.TimeSobolevGreen
 warning: Comparator/Challenges/TimeSobolevGreen.lean:15:8: declaration uses `sorry`
-⚠ [4203/4281] Replayed Challenges.TensorRepresentation
+⚠ [4168/4281] Replayed Challenges.TensorRepresentation
 warning: Comparator/Challenges/TensorRepresentation.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/TensorRepresentation.lean:25:8: declaration uses `sorry`
 warning: Comparator/Challenges/TensorRepresentation.lean:32:8: declaration uses `sorry`
@@ -1079,33 +1066,33 @@ warning: Comparator/Challenges/TensorRepresentation.lean:48:8: declaration uses 
 warning: Comparator/Challenges/TensorRepresentation.lean:56:8: declaration uses `sorry`
 warning: Comparator/Challenges/TensorRepresentation.lean:62:8: declaration uses `sorry`
 warning: Comparator/Challenges/TensorRepresentation.lean:74:8: declaration uses `sorry`
-⚠ [4204/4281] Replayed Challenges.CoordinateResponseApproximation
+⚠ [4169/4281] Replayed Challenges.CoordinateResponseApproximation
 warning: Comparator/Challenges/CoordinateResponseApproximation.lean:18:8: declaration uses `sorry`
-⚠ [4205/4281] Replayed Challenges.SobolevCoefficientCompactness
+⚠ [4170/4281] Replayed Challenges.SobolevCoefficientCompactness
 warning: Comparator/Challenges/SobolevCoefficientCompactness.lean:21:8: declaration uses `sorry`
 warning: Comparator/Challenges/SobolevCoefficientCompactness.lean:33:8: declaration uses `sorry`
-⚠ [4206/4281] Replayed Challenges.AlternativeProny
+⚠ [4171/4281] Replayed Challenges.AlternativeProny
 warning: Comparator/Challenges/AlternativeProny.lean:26:8: declaration uses `sorry`
 warning: Comparator/Challenges/AlternativeProny.lean:37:8: declaration uses `sorry`
 warning: Comparator/Challenges/AlternativeProny.lean:52:8: declaration uses `sorry`
 warning: Comparator/Challenges/AlternativeProny.lean:58:8: declaration uses `sorry`
 warning: Comparator/Challenges/AlternativeProny.lean:66:8: declaration uses `sorry`
 warning: Comparator/Challenges/AlternativeProny.lean:75:8: declaration uses `sorry`
-⚠ [4207/4281] Replayed Challenges.MicroscopicSemigroup
+⚠ [4172/4281] Replayed Challenges.MicroscopicSemigroup
 warning: Comparator/Challenges/MicroscopicSemigroup.lean:28:8: declaration uses `sorry`
 warning: Comparator/Challenges/MicroscopicSemigroup.lean:40:8: declaration uses `sorry`
-⚠ [4208/4281] Replayed Challenges.MaterialResponseStability
+⚠ [4173/4281] Replayed Challenges.MaterialResponseStability
 warning: Comparator/Challenges/MaterialResponseStability.lean:32:8: declaration uses `sorry`
 warning: Comparator/Challenges/MaterialResponseStability.lean:58:8: declaration uses `sorry`
-⚠ [4209/4281] Replayed Challenges.ArchitectureAdmissibility
+⚠ [4174/4281] Replayed Challenges.ArchitectureAdmissibility
 warning: Comparator/Challenges/ArchitectureAdmissibility.lean:16:8: declaration uses `sorry`
-⚠ [4210/4281] Replayed Challenges.DirichletPoincare
+⚠ [4175/4281] Replayed Challenges.DirichletPoincare
 warning: Comparator/Challenges/DirichletPoincare.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/DirichletPoincare.lean:27:8: declaration uses `sorry`
-⚠ [4211/4281] Replayed Challenges.PeriodicStressLimits
+⚠ [4176/4281] Replayed Challenges.PeriodicStressLimits
 warning: Comparator/Challenges/PeriodicStressLimits.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicStressLimits.lean:36:8: declaration uses `sorry`
-⚠ [4212/4281] Replayed Challenges.PeriodicSobolev
+⚠ [4177/4281] Replayed Challenges.PeriodicSobolev
 warning: Comparator/Challenges/PeriodicSobolev.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicSobolev.lean:24:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicSobolev.lean:33:8: declaration uses `sorry`
@@ -1123,42 +1110,42 @@ warning: Comparator/Challenges/PeriodicSobolev.lean:102:8: declaration uses `sor
 warning: Comparator/Challenges/PeriodicSobolev.lean:113:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicSobolev.lean:120:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicSobolev.lean:126:8: declaration uses `sorry`
-⚠ [4213/4281] Replayed Challenges.UniversalApproximation
+⚠ [4178/4281] Replayed Challenges.UniversalApproximation
 warning: Comparator/Challenges/UniversalApproximation.lean:32:8: declaration uses `sorry`
 warning: Comparator/Challenges/UniversalApproximation.lean:42:8: declaration uses `sorry`
-⚠ [4214/4281] Replayed Challenges.PeriodicRescaling
+⚠ [4179/4281] Replayed Challenges.PeriodicRescaling
 warning: Comparator/Challenges/PeriodicRescaling.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicRescaling.lean:25:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicRescaling.lean:32:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicRescaling.lean:40:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicRescaling.lean:48:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicRescaling.lean:56:8: declaration uses `sorry`
-⚠ [4215/4281] Replayed Challenges.PronyResponseStability
+⚠ [4180/4281] Replayed Challenges.PronyResponseStability
 warning: Comparator/Challenges/PronyResponseStability.lean:19:8: declaration uses `sorry`
-⚠ [4216/4281] Replayed Challenges.SpatialStress
+⚠ [4181/4281] Replayed Challenges.SpatialStress
 warning: Comparator/Challenges/SpatialStress.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpatialStress.lean:25:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpatialStress.lean:31:8: declaration uses `sorry`
-⚠ [4217/4281] Replayed Challenges.MicroscopicLaplace
+⚠ [4182/4281] Replayed Challenges.MicroscopicLaplace
 warning: Comparator/Challenges/MicroscopicLaplace.lean:26:8: declaration uses `sorry`
 warning: Comparator/Challenges/MicroscopicLaplace.lean:36:8: declaration uses `sorry`
 warning: Comparator/Challenges/MicroscopicLaplace.lean:50:8: declaration uses `sorry`
-⚠ [4218/4281] Replayed Challenges.HomogenizedUniqueness
-warning: Comparator/Challenges/HomogenizedUniqueness.lean:15:8: declaration uses `sorry`
-⚠ [4219/4281] Replayed Challenges.LpProductCoordinates
+⚠ [4183/4281] Replayed Challenges.HomogenizedUniqueness
+warning: Comparator/Challenges/HomogenizedUniqueness.lean:33:8: declaration uses `sorry`
+⚠ [4184/4281] Replayed Challenges.LpProductCoordinates
 warning: Comparator/Challenges/LpProductCoordinates.lean:19:8: declaration uses `sorry`
-⚠ [4220/4281] Replayed Challenges.HomogenizedMemory
+⚠ [4185/4281] Replayed Challenges.HomogenizedMemory
 warning: Comparator/Challenges/HomogenizedMemory.lean:36:8: declaration uses `sorry`
-⚠ [4221/4281] Replayed Challenges.DuhamelLimit
+⚠ [4186/4281] Replayed Challenges.DuhamelLimit
 warning: Comparator/Challenges/DuhamelLimit.lean:22:8: declaration uses `sorry`
-⚠ [4222/4281] Replayed Challenges.OperatorPrimitive
+⚠ [4187/4281] Replayed Challenges.OperatorPrimitive
 warning: Comparator/Challenges/OperatorPrimitive.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/OperatorPrimitive.lean:30:8: declaration uses `sorry`
-⚠ [4223/4281] Replayed Challenges.RealResponse
+⚠ [4188/4281] Replayed Challenges.RealResponse
 warning: Comparator/Challenges/RealResponse.lean:17:8: declaration uses `sorry`
 warning: Comparator/Challenges/RealResponse.lean:28:8: declaration uses `sorry`
 warning: Comparator/Challenges/RealResponse.lean:36:8: declaration uses `sorry`
-⚠ [4224/4281] Replayed Challenges.UnweightedResponse
+⚠ [4189/4281] Replayed Challenges.UnweightedResponse
 warning: Comparator/Challenges/UnweightedResponse.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/UnweightedResponse.lean:30:8: declaration uses `sorry`
 warning: Comparator/Challenges/UnweightedResponse.lean:45:8: declaration uses `sorry`
@@ -1166,18 +1153,18 @@ warning: Comparator/Challenges/UnweightedResponse.lean:58:8: declaration uses `s
 warning: Comparator/Challenges/UnweightedResponse.lean:69:8: declaration uses `sorry`
 warning: Comparator/Challenges/UnweightedResponse.lean:84:8: declaration uses `sorry`
 warning: Comparator/Challenges/UnweightedResponse.lean:93:8: declaration uses `sorry`
-⚠ [4225/4281] Replayed Challenges.FourierFeatureLayer
+⚠ [4190/4281] Replayed Challenges.FourierFeatureLayer
 warning: Comparator/Challenges/FourierFeatureLayer.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/FourierFeatureLayer.lean:30:8: declaration uses `sorry`
-⚠ [4226/4281] Replayed Challenges.HalfLineLaplace
+⚠ [4191/4281] Replayed Challenges.HalfLineLaplace
 warning: Comparator/Challenges/HalfLineLaplace.lean:15:8: declaration uses `sorry`
 warning: Comparator/Challenges/HalfLineLaplace.lean:24:8: declaration uses `sorry`
-⚠ [4227/4281] Replayed Challenges.StrongConvergence
+⚠ [4192/4281] Replayed Challenges.StrongConvergence
 warning: Comparator/Challenges/StrongConvergence.lean:14:8: declaration uses `sorry`
-⚠ [4228/4281] Replayed Challenges.ExponentialConvolution
+⚠ [4193/4281] Replayed Challenges.ExponentialConvolution
 warning: Comparator/Challenges/ExponentialConvolution.lean:14:8: declaration uses `sorry`
 warning: Comparator/Challenges/ExponentialConvolution.lean:28:8: declaration uses `sorry`
-⚠ [4229/4281] Replayed Challenges.CellConstitutive
+⚠ [4194/4281] Replayed Challenges.CellConstitutive
 warning: Comparator/Challenges/CellConstitutive.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellConstitutive.lean:24:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellConstitutive.lean:29:8: declaration uses `sorry`
@@ -1185,10 +1172,10 @@ warning: Comparator/Challenges/CellConstitutive.lean:35:8: declaration uses `sor
 warning: Comparator/Challenges/CellConstitutive.lean:41:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellConstitutive.lean:47:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellConstitutive.lean:53:8: declaration uses `sorry`
-⚠ [4230/4281] Replayed Challenges.AlternativeApproximation
+⚠ [4195/4281] Replayed Challenges.AlternativeApproximation
 warning: Comparator/Challenges/AlternativeApproximation.lean:31:8: declaration uses `sorry`
 warning: Comparator/Challenges/AlternativeApproximation.lean:44:8: declaration uses `sorry`
-⚠ [4231/4281] Replayed Challenges.VectorSobolevFields
+⚠ [4196/4281] Replayed Challenges.VectorSobolevFields
 warning: Comparator/Challenges/VectorSobolevFields.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/VectorSobolevFields.lean:25:8: declaration uses `sorry`
 warning: Comparator/Challenges/VectorSobolevFields.lean:31:8: declaration uses `sorry`
@@ -1199,43 +1186,43 @@ warning: Comparator/Challenges/VectorSobolevFields.lean:56:8: declaration uses `
 warning: Comparator/Challenges/VectorSobolevFields.lean:62:8: declaration uses `sorry`
 warning: Comparator/Challenges/VectorSobolevFields.lean:68:8: declaration uses `sorry`
 warning: Comparator/Challenges/VectorSobolevFields.lean:74:8: declaration uses `sorry`
-⚠ [4232/4281] Replayed Challenges.TimeSobolevNorms
+⚠ [4197/4281] Replayed Challenges.TimeSobolevNorms
 warning: Comparator/Challenges/TimeSobolevNorms.lean:14:8: declaration uses `sorry`
 warning: Comparator/Challenges/TimeSobolevNorms.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/TimeSobolevNorms.lean:26:8: declaration uses `sorry`
 warning: Comparator/Challenges/TimeSobolevNorms.lean:32:8: declaration uses `sorry`
-⚠ [4233/4281] Replayed Challenges.CaratheodoryHalfLine
+⚠ [4198/4281] Replayed Challenges.CaratheodoryHalfLine
 warning: Comparator/Challenges/CaratheodoryHalfLine.lean:19:8: declaration uses `sorry`
-⚠ [4234/4281] Replayed Challenges.HomogeneousHomogenization
+⚠ [4199/4281] Replayed Challenges.HomogeneousHomogenization
 warning: Comparator/Challenges/HomogeneousHomogenization.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/HomogeneousHomogenization.lean:40:8: declaration uses `sorry`
-⚠ [4235/4281] Replayed Challenges.IntegralCurveRegularity
+⚠ [4200/4281] Replayed Challenges.IntegralCurveRegularity
 warning: Comparator/Challenges/IntegralCurveRegularity.lean:20:8: declaration uses `sorry`
-⚠ [4236/4281] Replayed Challenges.CellSpectralMeasure
+⚠ [4201/4281] Replayed Challenges.CellSpectralMeasure
 warning: Comparator/Challenges/CellSpectralMeasure.lean:15:8: declaration uses `sorry`
-⚠ [4237/4281] Replayed Challenges.FourierProjectionApproximation
+⚠ [4202/4281] Replayed Challenges.FourierProjectionApproximation
 warning: Comparator/Challenges/FourierProjectionApproximation.lean:16:8: declaration uses `sorry`
-⚠ [4238/4281] Replayed Challenges.Symmetrization
+⚠ [4203/4281] Replayed Challenges.Symmetrization
 warning: Comparator/Challenges/Symmetrization.lean:17:8: declaration uses `sorry`
 warning: Comparator/Challenges/Symmetrization.lean:23:8: declaration uses `sorry`
-⚠ [4239/4281] Replayed Challenges.L2TestFunctions
+⚠ [4204/4281] Replayed Challenges.L2TestFunctions
 warning: Comparator/Challenges/L2TestFunctions.lean:15:8: declaration uses `sorry`
-⚠ [4240/4281] Replayed Challenges.WeightedMeasure
+⚠ [4205/4281] Replayed Challenges.WeightedMeasure
 warning: Comparator/Challenges/WeightedMeasure.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/WeightedMeasure.lean:32:8: declaration uses `sorry`
 warning: Comparator/Challenges/WeightedMeasure.lean:44:8: declaration uses `sorry`
 warning: Comparator/Challenges/WeightedMeasure.lean:57:8: declaration uses `sorry`
-⚠ [4241/4281] Replayed Challenges.LocalResponse
+⚠ [4206/4281] Replayed Challenges.LocalResponse
 warning: Comparator/Challenges/LocalResponse.lean:16:8: declaration uses `sorry`
 warning: Comparator/Challenges/LocalResponse.lean:23:8: declaration uses `sorry`
 warning: Comparator/Challenges/LocalResponse.lean:37:8: declaration uses `sorry`
-⚠ [4242/4281] Replayed Challenges.TrajectoryBounds
+⚠ [4207/4281] Replayed Challenges.TrajectoryBounds
 warning: Comparator/Challenges/TrajectoryBounds.lean:16:8: declaration uses `sorry`
 warning: Comparator/Challenges/TrajectoryBounds.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/TrajectoryBounds.lean:29:8: declaration uses `sorry`
 warning: Comparator/Challenges/TrajectoryBounds.lean:36:8: declaration uses `sorry`
 warning: Comparator/Challenges/TrajectoryBounds.lean:42:8: declaration uses `sorry`
-⚠ [4243/4281] Replayed Challenges.CoerciveForm
+⚠ [4208/4281] Replayed Challenges.CoerciveForm
 warning: Comparator/Challenges/CoerciveForm.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/CoerciveForm.lean:24:8: declaration uses `sorry`
 warning: Comparator/Challenges/CoerciveForm.lean:29:8: declaration uses `sorry`
@@ -1259,129 +1246,176 @@ warning: Comparator/Challenges/CoerciveForm.lean:125:8: declaration uses `sorry`
 warning: Comparator/Challenges/CoerciveForm.lean:130:8: declaration uses `sorry`
 warning: Comparator/Challenges/CoerciveForm.lean:140:8: declaration uses `sorry`
 warning: Comparator/Challenges/CoerciveForm.lean:148:8: declaration uses `sorry`
-⚠ [4244/4281] Replayed Challenges.KornSymbol
+⚠ [4209/4281] Replayed Challenges.KornSymbol
 warning: Comparator/Challenges/KornSymbol.lean:16:8: declaration uses `sorry`
 warning: Comparator/Challenges/KornSymbol.lean:24:8: declaration uses `sorry`
-⚠ [4245/4281] Replayed Challenges.PronyNeuralApproximation
+⚠ [4210/4281] Replayed Challenges.PronyNeuralApproximation
 warning: Comparator/Challenges/PronyNeuralApproximation.lean:29:8: declaration uses `sorry`
 warning: Comparator/Challenges/PronyNeuralApproximation.lean:43:8: declaration uses `sorry`
-⚠ [4246/4281] Replayed Challenges.CoerciveSolvers
+⚠ [4211/4281] Replayed Challenges.CoerciveSolvers
 warning: Comparator/Challenges/CoerciveSolvers.lean:13:8: declaration uses `sorry`
 warning: Comparator/Challenges/CoerciveSolvers.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/CoerciveSolvers.lean:25:8: declaration uses `sorry`
 warning: Comparator/Challenges/CoerciveSolvers.lean:32:8: declaration uses `sorry`
 warning: Comparator/Challenges/CoerciveSolvers.lean:39:8: declaration uses `sorry`
-⚠ [4247/4281] Replayed Challenges.ACComparison
+⚠ [4212/4281] Replayed Challenges.ACComparison
 warning: Comparator/Challenges/ACComparison.lean:19:8: declaration uses `sorry`
-⚠ [4248/4281] Replayed Challenges.InverseAction
+⚠ [4213/4281] Replayed Challenges.InverseAction
 warning: Comparator/Challenges/InverseAction.lean:16:8: declaration uses `sorry`
 warning: Comparator/Challenges/InverseAction.lean:23:8: declaration uses `sorry`
-⚠ [4249/4281] Replayed Challenges.WeightedResponse
+⚠ [4214/4281] Replayed Challenges.WeightedResponse
 warning: Comparator/Challenges/WeightedResponse.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/WeightedResponse.lean:29:8: declaration uses `sorry`
-⚠ [4250/4281] Replayed Challenges.DrivenUniqueness
+⚠ [4215/4281] Replayed Challenges.DrivenUniqueness
 warning: Comparator/Challenges/DrivenUniqueness.lean:20:8: declaration uses `sorry`
-⚠ [4251/4281] Replayed Challenges.PeriodicElliptic
+⚠ [4216/4281] Replayed Challenges.PeriodicElliptic
 warning: Comparator/Challenges/PeriodicElliptic.lean:20:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicElliptic.lean:29:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicElliptic.lean:39:8: declaration uses `sorry`
-⚠ [4252/4281] Replayed Challenges.ActivatedFourierChain
+⚠ [4217/4281] Replayed Challenges.ActivatedFourierChain
 warning: Comparator/Challenges/ActivatedFourierChain.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/ActivatedFourierChain.lean:26:8: declaration uses `sorry`
 warning: Comparator/Challenges/ActivatedFourierChain.lean:34:8: declaration uses `sorry`
 warning: Comparator/Challenges/ActivatedFourierChain.lean:43:8: declaration uses `sorry`
-⚠ [4253/4281] Replayed Challenges.SpatialEvolution
+⚠ [4218/4281] Replayed Challenges.SpatialEvolution
 warning: Comparator/Challenges/SpatialEvolution.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpatialEvolution.lean:31:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpatialEvolution.lean:39:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpatialEvolution.lean:48:8: declaration uses `sorry`
 warning: Comparator/Challenges/SpatialEvolution.lean:57:8: declaration uses `sorry`
-⚠ [4254/4281] Replayed Challenges.WeightedRelaxation
+⚠ [4219/4281] Replayed Challenges.WeightedRelaxation
 warning: Comparator/Challenges/WeightedRelaxation.lean:17:8: declaration uses `sorry`
 warning: Comparator/Challenges/WeightedRelaxation.lean:23:8: declaration uses `sorry`
 warning: Comparator/Challenges/WeightedRelaxation.lean:30:8: declaration uses `sorry`
-⚠ [4255/4281] Replayed Challenges.RelativeRieszSpectrum
+⚠ [4220/4281] Replayed Challenges.RelativeRieszSpectrum
 warning: Comparator/Challenges/RelativeRieszSpectrum.lean:15:8: declaration uses `sorry`
-⚠ [4256/4281] Replayed Challenges.PeriodicDivergenceRescaling
+⚠ [4221/4281] Replayed Challenges.PeriodicDivergenceRescaling
 warning: Comparator/Challenges/PeriodicDivergenceRescaling.lean:17:8: declaration uses `sorry`
-⚠ [4257/4281] Replayed Challenges.VectorFiniteFeatures
+⚠ [4222/4281] Replayed Challenges.VectorFiniteFeatures
 warning: Comparator/Challenges/VectorFiniteFeatures.lean:17:8: declaration uses `sorry`
-⚠ [4258/4281] Replayed Challenges.PeriodicRescaledJets
+⚠ [4223/4281] Replayed Challenges.PeriodicCutoff
+warning: Comparator/Challenges/PeriodicCutoff.lean:17:8: declaration uses `sorry`
+⚠ [4224/4281] Replayed Challenges.PeriodicRescaledJets
 warning: Comparator/Challenges/PeriodicRescaledJets.lean:15:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicRescaledJets.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicRescaledJets.lean:33:8: declaration uses `sorry`
-⚠ [4259/4281] Replayed Challenges.MicroscopicSpectrum
+⚠ [4225/4281] Replayed Challenges.MicroscopicSpectrum
 warning: Comparator/Challenges/MicroscopicSpectrum.lean:23:8: declaration uses `sorry`
-⚠ [4260/4281] Replayed Challenges.PeriodicCutoff
-warning: Comparator/Challenges/PeriodicCutoff.lean:17:8: declaration uses `sorry`
-⚠ [4261/4281] Replayed Challenges.FieldInverse
+⚠ [4226/4281] Replayed Challenges.FieldInverse
 warning: Comparator/Challenges/FieldInverse.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/FieldInverse.lean:27:8: declaration uses `sorry`
-⚠ [4262/4281] Replayed Challenges.ChannelLifting
+⚠ [4227/4281] Replayed Challenges.ChannelLifting
 warning: Comparator/Challenges/ChannelLifting.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/ChannelLifting.lean:30:8: declaration uses `sorry`
-⚠ [4263/4281] Replayed Challenges.SpectralRepresentation
+⚠ [4228/4281] Replayed Challenges.SpectralRepresentation
 warning: Comparator/Challenges/SpectralRepresentation.lean:21:8: declaration uses `sorry`
-⚠ [4264/4281] Replayed Challenges.PeriodicMeanRemoval
+⚠ [4229/4281] Replayed Challenges.PeriodicMeanRemoval
 warning: Comparator/Challenges/PeriodicMeanRemoval.lean:17:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicMeanRemoval.lean:25:8: declaration uses `sorry`
-⚠ [4265/4281] Replayed Challenges.DirichletMixedDerivatives
+⚠ [4230/4281] Replayed Challenges.DirichletMixedDerivatives
 warning: Comparator/Challenges/DirichletMixedDerivatives.lean:24:8: declaration uses `sorry`
 warning: Comparator/Challenges/DirichletMixedDerivatives.lean:32:8: declaration uses `sorry`
-⚠ [4266/4281] Replayed Challenges.Fields
+⚠ [4231/4281] Replayed Challenges.Fields
 warning: Comparator/Challenges/Fields.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/Fields.lean:26:8: declaration uses `sorry`
-⚠ [4267/4281] Replayed Challenges.CellEvolution
+⚠ [4232/4281] Replayed Challenges.CellEvolution
 warning: Comparator/Challenges/CellEvolution.lean:23:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellEvolution.lean:35:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellEvolution.lean:41:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellEvolution.lean:53:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellEvolution.lean:64:8: declaration uses `sorry`
 warning: Comparator/Challenges/CellEvolution.lean:78:8: declaration uses `sorry`
-⚠ [4268/4281] Replayed Challenges.UniformPronyStability
+⚠ [4233/4281] Replayed Challenges.UniformPronyStability
 warning: Comparator/Challenges/UniformPronyStability.lean:19:8: declaration uses `sorry`
-⚠ [4269/4281] Replayed Challenges.TensorActionIntegral
+⚠ [4234/4281] Replayed Challenges.TensorActionIntegral
 warning: Comparator/Challenges/TensorActionIntegral.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/TensorActionIntegral.lean:26:8: declaration uses `sorry`
 warning: Comparator/Challenges/TensorActionIntegral.lean:33:8: declaration uses `sorry`
 warning: Comparator/Challenges/TensorActionIntegral.lean:41:8: declaration uses `sorry`
-⚠ [4270/4281] Replayed Challenges.DimensionGrowth
+⚠ [4235/4281] Replayed Challenges.DimensionGrowth
 warning: Comparator/Challenges/DimensionGrowth.lean:15:8: declaration uses `sorry`
 warning: Comparator/Challenges/DimensionGrowth.lean:21:8: declaration uses `sorry`
 warning: Comparator/Challenges/DimensionGrowth.lean:29:8: declaration uses `sorry`
-⚠ [4271/4281] Replayed Challenges.PeriodicTestDuality
+⚠ [4236/4281] Replayed Challenges.PeriodicTestDuality
 warning: Comparator/Challenges/PeriodicTestDuality.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicTestDuality.lean:30:8: declaration uses `sorry`
-⚠ [4272/4281] Replayed Challenges.MandelFiniteIndices
+⚠ [4237/4281] Replayed Challenges.MandelFiniteIndices
 warning: Comparator/Challenges/MandelFiniteIndices.lean:15:8: declaration uses `sorry`
 warning: Comparator/Challenges/MandelFiniteIndices.lean:22:8: declaration uses `sorry`
 warning: Comparator/Challenges/MandelFiniteIndices.lean:29:8: declaration uses `sorry`
 warning: Comparator/Challenges/MandelFiniteIndices.lean:37:8: declaration uses `sorry`
-⚠ [4273/4281] Replayed Challenges.PronyApproximation
+⚠ [4238/4281] Replayed Challenges.PronyApproximation
 warning: Comparator/Challenges/PronyApproximation.lean:19:8: declaration uses `sorry`
 warning: Comparator/Challenges/PronyApproximation.lean:27:8: declaration uses `sorry`
 warning: Comparator/Challenges/PronyApproximation.lean:45:8: declaration uses `sorry`
 warning: Comparator/Challenges/PronyApproximation.lean:55:8: declaration uses `sorry`
 warning: Comparator/Challenges/PronyApproximation.lean:74:8: declaration uses `sorry`
 warning: Comparator/Challenges/PronyApproximation.lean:84:8: declaration uses `sorry`
-⚠ [4274/4281] Replayed Challenges.TensorOperators
+⚠ [4239/4281] Replayed Challenges.MicroscopicTrajectory
+warning: Comparator/Challenges/MicroscopicTrajectory.lean:27:8: declaration uses `sorry`
+warning: Comparator/Challenges/MicroscopicTrajectory.lean:38:8: declaration uses `sorry`
+⚠ [4240/4281] Replayed Challenges.TensorActionFubini
+warning: Comparator/Challenges/TensorActionFubini.lean:19:8: declaration uses `sorry`
+⚠ [4241/4281] Replayed Challenges.TensorOperators
 warning: Comparator/Challenges/TensorOperators.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/TensorOperators.lean:23:8: declaration uses `sorry`
 warning: Comparator/Challenges/TensorOperators.lean:28:8: declaration uses `sorry`
 warning: Comparator/Challenges/TensorOperators.lean:34:8: declaration uses `sorry`
 warning: Comparator/Challenges/TensorOperators.lean:40:8: declaration uses `sorry`
-⚠ [4275/4281] Replayed Challenges.MicroscopicTrajectory
-warning: Comparator/Challenges/MicroscopicTrajectory.lean:27:8: declaration uses `sorry`
-warning: Comparator/Challenges/MicroscopicTrajectory.lean:38:8: declaration uses `sorry`
-⚠ [4276/4281] Replayed Challenges.TensorActionFubini
-warning: Comparator/Challenges/TensorActionFubini.lean:19:8: declaration uses `sorry`
-⚠ [4277/4281] Replayed Challenges.PeriodicFourierEnergy
+⚠ [4242/4281] Replayed Challenges.PeriodicFourierEnergy
 warning: Comparator/Challenges/PeriodicFourierEnergy.lean:18:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicFourierEnergy.lean:27:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicFourierEnergy.lean:36:8: declaration uses `sorry`
 warning: Comparator/Challenges/PeriodicFourierEnergy.lean:46:8: declaration uses `sorry`
-⚠ [4278/4281] Replayed Challenges.TimeSobolevCompactness
+⚠ [4243/4281] Replayed Challenges.TimeSobolevCompactness
 warning: Comparator/Challenges/TimeSobolevCompactness.lean:16:8: declaration uses `sorry`
 warning: Comparator/Challenges/TimeSobolevCompactness.lean:25:8: declaration uses `sorry`
-✔ [4280/4281] Built KVApproximation (147s)
+✔ [4245/4281] Built KVApproximation.Dynamics.CaratheodoryHalfLine (13s)
+✔ [4246/4281] Built KVApproximation.Dynamics.DrivenUniqueness (13s)
+✔ [4247/4281] Built KVApproximation.Dynamics.LinearTimeSobolev (15s)
+✔ [4248/4281] Built KVApproximation.Homogenization.WeightedSpectralBound (16s)
+✔ [4249/4281] Built KVApproximation.Homogenization.TransformedCell (19s)
+✔ [4250/4281] Built KVApproximation.Dynamics.DissipativeStability (6.4s)
+✔ [4251/4281] Built KVApproximation.Dynamics.VariationalEvolution (9.6s)
+✔ [4252/4281] Built KVApproximation.Dynamics.Stability (5.9s)
+✔ [4253/4281] Built KVApproximation.NeuralOperators.PronyResponseStability (7.9s)
+✔ [4254/4281] Built KVApproximation.Dynamics.CellEvolutionExistence (15s)
+✔ [4255/4281] Built KVApproximation.NeuralOperators.UniformPronyStability (5.3s)
+✔ [4256/4281] Built KVApproximation.KelvinVoigt.ContinuousPronyApproximation (10s)
+✔ [4257/4281] Built KVApproximation.KelvinVoigt.MaterialResponseStability (13s)
+✔ [4258/4281] Built KVApproximation.Homogenization.HomogeneousLimit (31s)
+✔ [4259/4281] Built KVApproximation.Homogenization.MicroscopicEvolution (27s)
+✔ [4260/4281] Built KVApproximation.KelvinVoigt.PronyNeuralApproximation (16s)
+✔ [4261/4281] Built KVApproximation.Homogenization.MicroscopicSolutionFamily (7.8s)
+✔ [4262/4281] Built KVApproximation.Homogenization.MicroscopicTrajectoryProperties (13s)
+✔ [4263/4281] Built KVApproximation.Homogenization.CellDisplacementEquivalence (55s)
+✔ [4264/4281] Built KVApproximation.Homogenization.MicroscopicGreenProperties (34s)
+✔ [4265/4281] Built KVApproximation.Homogenization.CellDisplacementConstitutive (25s)
+✔ [4266/4281] Built KVApproximation.Homogenization.DuhamelLimit (29s)
+✔ [4267/4281] Built KVApproximation.KelvinVoigt.PronyError (163s)
+✔ [4268/4281] Built KVApproximation.KelvinVoigt.GlobalPronyError (163s)
+✔ [4269/4281] Built KVApproximation.Homogenization.MicroscopicTimeBounds (158s)
+✔ [4270/4281] Built KVApproximation.KelvinVoigt.UnweightedApproximation (155s)
+✔ [4271/4281] Built KVApproximation.KelvinVoigt.UniversalApproximation (40s)
+✔ [4272/4281] Built KVApproximation.KelvinVoigt.GlobalApproximation (41s)
+✔ [4273/4281] Built KVApproximation.Homogenization.MicroscopicCompactness (95s)
+✔ [4274/4281] Built KVApproximation.Homogenization.HomogeneousSubsequence (5.6s)
+✔ [4275/4281] Built KVApproximation.Homogenization.HomogeneousConvergence (4.0s)
+✔ [4276/4281] Built KVApproximation.Homogenization.HomogeneousHomogenization (3.9s)
+✔ [4277/4281] Built KVApproximation.Homogenization.HomogenizedGreen (16s)
+✔ [4278/4281] Built KVApproximation.Homogenization.ForcedHomogenization (52s)
+⚠ [4279/4281] Built KVApproximation.KelvinVoigt.Homogenization (6.1s)
+warning: KVApproximation/KelvinVoigt/Homogenization.lean:29:45: Variable name `hd` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hd
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: KVApproximation/KelvinVoigt/Homogenization.lean:32:5: Variable name `hΩlipschitz` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hΩlipschitz
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [4280/4281] Built KVApproximation (92s)
 Build completed successfully (4281 jobs).
