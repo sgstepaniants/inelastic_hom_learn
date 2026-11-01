@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.DuhamelLimit",
+  "solution_module": "KVApproximation.Homogenization.DuhamelLimit",
+  "theorem_names": [
+    "KVApproximation.Homogenization.microscopic_forcing_trace_tendsto"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

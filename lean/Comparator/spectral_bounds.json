@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.SpectralBounds",
+  "solution_module": "KVApproximation.Spectral.BoundEstimates",
+  "theorem_names": [
+    "KVApproximation.Spectral.weightedVariationBound_lt"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

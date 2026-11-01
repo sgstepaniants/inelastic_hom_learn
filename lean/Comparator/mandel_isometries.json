@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Challenges.Mandel",
+  "solution_module": "KVApproximation.Tensor.MandelIsometry",
+  "theorem_names": [
+    "KVApproximation.Tensor.strainMandel_isometry",
+    "KVApproximation.Tensor.card_elasticityIndex",
+    "KVApproximation.Tensor.elasticityMandel_isometry"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

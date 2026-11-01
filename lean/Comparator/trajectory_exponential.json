@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.ExponentialConvolution",
+  "solution_module": "KVApproximation.Dynamics.ExponentialConvolution",
+  "theorem_names": [
+    "KVApproximation.Dynamics.BoundedTrajectory.exponential_integral_eq"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

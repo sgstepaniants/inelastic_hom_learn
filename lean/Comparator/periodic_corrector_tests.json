@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.PeriodicCorrectorTests",
+  "solution_module": "KVApproximation.Analysis.PeriodicCorrectorTests",
+  "theorem_names": [
+    "KVApproximation.Analysis.tendsto_integral_cutoff_stress_corrector_zero_along",
+    "KVApproximation.Analysis.tendsto_integral_cutoff_stress_corrector_zero"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

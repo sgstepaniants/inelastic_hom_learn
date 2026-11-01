@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.PeriodicSobolev",
+  "solution_module": "KVApproximation.Homogenization.ConstantStrainIdentities",
+  "theorem_names": ["KVApproximation.Homogenization.norm_constantStrain"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

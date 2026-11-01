@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenges.BernsteinGeometry",
+  "solution_module": "KVApproximation.Approximation.BernsteinGeometry",
+  "theorem_names": [
+    "KVApproximation.Analysis.joukowski_inv",
+    "KVApproximation.Analysis.joukowski_unit",
+    "KVApproximation.Approximation.joukowski_mem_bernsteinEllipse",
+    "KVApproximation.Approximation.real_mem_bernsteinEllipse",
+    "KVApproximation.Approximation.bernsteinEllipse_im_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

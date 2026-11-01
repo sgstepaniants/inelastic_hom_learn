@@ -1,0 +1,11 @@
+{
+  "challenge_module": "Challenges.VariationalStability",
+  "solution_module": "KVApproximation.OperatorTheory.VariationalStability",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.CoerciveForm.riesz_opNorm_le",
+    "KVApproximation.OperatorTheory.projection_sub_norm_le",
+    "KVApproximation.OperatorTheory.relaxation_sub_norm_le",
+    "KVApproximation.OperatorTheory.relaxation_opNorm_le"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

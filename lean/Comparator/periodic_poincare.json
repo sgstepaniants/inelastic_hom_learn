@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PeriodicFourierEnergy",
+  "solution_module": "KVApproximation.Analysis.PeriodicPoincare",
+  "theorem_names": [
+    "KVApproximation.Analysis.HasPeriodicWeakGradient.poincare_sq"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

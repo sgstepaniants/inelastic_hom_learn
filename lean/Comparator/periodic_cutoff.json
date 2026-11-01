@@ -1,0 +1,8 @@
+{
+  "challenge_module": "Challenges.PeriodicCutoff",
+  "solution_module": "KVApproximation.Analysis.PeriodicCutoff",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicH1.exists_rescaled_cutoff"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

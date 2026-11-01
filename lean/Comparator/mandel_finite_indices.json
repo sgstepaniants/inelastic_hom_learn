@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Challenges.MandelFiniteIndices",
+  "solution_module": "KVApproximation.Tensor.MandelFiniteIsometry",
+  "theorem_names": [
+    "KVApproximation.Tensor.scalarBlockStrainMandel_isometry",
+    "KVApproximation.Tensor.scalarBlockStrainMandel_norm",
+    "KVApproximation.Tensor.scalarStrainMandel_isometry",
+    "KVApproximation.Tensor.scalarElasticityMandel_isometry"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

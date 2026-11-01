@@ -1,0 +1,11 @@
+{
+  "challenge_module": "Challenges.PeriodicSobolev",
+  "solution_module": "KVApproximation.Analysis.PeriodicSmoothIdentities",
+  "theorem_names": [
+    "KVApproximation.Analysis.toCell_cellRepresentative",
+    "KVApproximation.Analysis.PeriodicC1.continuous_value",
+    "KVApproximation.Analysis.PeriodicC1.partial_toCell",
+    "KVApproximation.Analysis.PeriodicC1.continuous_partial"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

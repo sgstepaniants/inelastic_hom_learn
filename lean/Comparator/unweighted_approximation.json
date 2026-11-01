@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.AlternativeApproximation",
+  "solution_module": "KVApproximation.KelvinVoigt.UnweightedApproximation",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.unweighted_sufficient_internal_variable_dimension"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

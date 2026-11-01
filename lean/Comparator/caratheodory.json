@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.Caratheodory",
+  "solution_module": "KVApproximation.Dynamics.Caratheodory",
+  "theorem_names": [
+    "KVApproximation.Dynamics.exists_integral_solution_Icc",
+    "KVApproximation.Dynamics.integral_solution_unique_Icc"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PronyDynamics",
+  "solution_module": "KVApproximation.Dynamics.PronyConvolution",
+  "theorem_names": [
+    "KVApproximation.Dynamics.pronyStress_eq_kernel_convolution"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.ForcedSubsequence",
+  "solution_module": "KVApproximation.Homogenization.ForcedSubsequence",
+  "theorem_names": [
+    "KVApproximation.Homogenization.forced_subsequence_of_trace"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

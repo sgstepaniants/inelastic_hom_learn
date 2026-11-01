@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.LpFiniteCoordinates",
+  "solution_module": "KVApproximation.Analysis.LpFiniteCoordinates",
+  "theorem_names": [
+    "KVApproximation.Analysis.lp_finite_coordinates"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

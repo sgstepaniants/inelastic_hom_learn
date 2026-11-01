@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.TensorRepresentation",
+  "solution_module": "KVApproximation.Spectral.TensorVariation",
+  "theorem_names": ["KVApproximation.Spectral.TensorMeasure.variation_le_trace"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

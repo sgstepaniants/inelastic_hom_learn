@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PeriodicFourierEnergy",
+  "solution_module": "KVApproximation.Analysis.PeriodicFourierEnergy",
+  "theorem_names": [
+    "KVApproximation.Analysis.hasSum_fourier_energy"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

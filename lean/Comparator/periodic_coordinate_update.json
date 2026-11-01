@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PeriodicCoordinateUpdate",
+  "solution_module": "KVApproximation.Analysis.PeriodicCoordinateUpdate",
+  "theorem_names": [
+    "KVApproximation.Analysis.measurePreserving_coordinate_update"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

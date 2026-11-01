@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.MemoryResponse",
+  "solution_module": "KVApproximation.Approximation.PronyResponseIntegral",
+  "theorem_names": [
+    "KVApproximation.Approximation.local_prony_stress_eq_partitionIntegral"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

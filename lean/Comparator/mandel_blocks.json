@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.MandelBlocks",
+  "solution_module": "KVApproximation.Tensor.MandelBlockIsometry",
+  "theorem_names": [
+    "KVApproximation.Tensor.blockStrainMandel_isometry",
+    "KVApproximation.Tensor.blockStrainMandel_norm"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

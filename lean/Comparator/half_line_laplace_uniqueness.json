@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.HalfLineLaplaceUniqueness",
+  "solution_module": "KVApproximation.Analysis.HalfLineLaplaceUniqueness",
+  "theorem_names": [
+    "KVApproximation.Analysis.eq_zero_of_halfLineLaplace_nat_eq_zero",
+    "KVApproximation.Analysis.eqOn_of_halfLineLaplace_eq"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.MemoryKernel",
+  "solution_module": "KVApproximation.OperatorTheory.SemigroupDecay",
+  "theorem_names": ["KVApproximation.OperatorTheory.relaxationSemigroup_energy_le"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

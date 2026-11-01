@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.HomogeneousHomogenization",
+  "solution_module": "KVApproximation.Homogenization.HomogeneousHomogenization",
+  "theorem_names": [
+    "KVApproximation.Homogenization.homogeneous_homogenization",
+    "KVApproximation.Homogenization.homogeneous_exists_unique"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.SobolevCutoff",
+  "solution_module": "KVApproximation.Analysis.SobolevCutoff",
+  "theorem_names": [
+    "KVApproximation.Analysis.cutoffJetL_apply_ae",
+    "KVApproximation.Analysis.cutoffJetL_mem_of_smooth",
+    "KVApproximation.Analysis.cutoffJetL_mem_of_zeroBoundary"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

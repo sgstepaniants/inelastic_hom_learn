@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.FourierMappingProjection",
+  "solution_module": "KVApproximation.NeuralOperators.FourierMappingProjection",
+  "theorem_names": ["KVApproximation.NeuralOperators.FourierProjection.exists_evalCLM"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

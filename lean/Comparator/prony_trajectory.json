@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PronyDynamics",
+  "solution_module": "KVApproximation.Dynamics.PronyTrajectory",
+  "theorem_names": [
+    "KVApproximation.Dynamics.pronyState_isKineticSolution"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

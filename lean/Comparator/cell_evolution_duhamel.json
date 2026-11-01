@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.CellEvolution",
+  "solution_module": "KVApproximation.Dynamics.CellEvolutionDuhamel",
+  "theorem_names": [
+    "KVApproximation.Dynamics.cell_evolution_duhamel"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

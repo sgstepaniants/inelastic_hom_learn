@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.DirichletWeakCompactness",
+  "solution_module": "KVApproximation.Analysis.DirichletWeakCompactness",
+  "theorem_names": ["KVApproximation.Analysis.ZeroBoundaryH1.exists_subseq_weak_strong"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

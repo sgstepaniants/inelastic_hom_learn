@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.TimeSobolevMemoryUniqueness",
+  "solution_module": "KVApproximation.Analysis.TimeSobolevMemoryUniqueness",
+  "theorem_names": [
+    "KVApproximation.Analysis.TimeH1.eq_of_memory_equation"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

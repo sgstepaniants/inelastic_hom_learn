@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.Material",
+  "solution_module": "KVApproximation.KelvinVoigt.MaterialLimits",
+  "theorem_names": ["KVApproximation.KelvinVoigt.admissibleMaterials_mem_of_tendsto_L1"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

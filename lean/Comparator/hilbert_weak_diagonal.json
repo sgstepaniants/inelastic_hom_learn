@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.HilbertWeakDiagonal",
+  "solution_module": "KVApproximation.Analysis.HilbertWeakDiagonal",
+  "theorem_names": ["KVApproximation.Analysis.exists_weakly_convergent_diagonal_subsequence"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

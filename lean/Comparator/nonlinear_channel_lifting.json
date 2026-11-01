@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.NonlinearChannelLifting",
+  "solution_module": "KVApproximation.NeuralOperators.NonlinearChannelLifting",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.exists_lipschitz_channel_lifting"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

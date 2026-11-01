@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.PronyApproximation",
+  "solution_module": "KVApproximation.Approximation.PronyIdentities",
+  "theorem_names": [
+    "KVApproximation.Approximation.localPronyRate_mem",
+    "KVApproximation.Approximation.localPronyModel_kernel"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

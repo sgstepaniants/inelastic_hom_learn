@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Challenges.SpatialFields",
+  "solution_module": "KVApproximation.Homogenization.SpatialFields",
+  "theorem_names": [
+    "KVApproximation.Homogenization.symmetricGradientL_apply_ae",
+    "KVApproximation.Homogenization.symmetricGradient_memLp",
+    "KVApproximation.Homogenization.loadPairing_eq_inner",
+    "KVApproximation.Homogenization.abs_loadPairing_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

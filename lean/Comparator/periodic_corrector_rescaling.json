@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.PeriodicCorrectorRescaling",
+  "solution_module": "KVApproximation.Analysis.PeriodicCorrectorRescaling",
+  "theorem_names": [
+    "KVApproximation.Analysis.tendsto_eLpNorm_smul_rescalePeriodic_zero",
+    "KVApproximation.Analysis.PeriodicH1.exists_rescaled",
+    "KVApproximation.Analysis.PeriodicH1.tendsto_integral_rescale_gradient_inner"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

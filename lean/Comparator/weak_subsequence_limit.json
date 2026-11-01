@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Challenges.WeakSubsequenceLimit",
+  "solution_module": "KVApproximation.Analysis.WeakSubsequenceLimit",
+  "theorem_names": [
+    "KVApproximation.Analysis.exists_test_limit_of_unique_test_values",
+    "KVApproximation.Analysis.exists_test_limit_of_unique_subsequences",
+    "KVApproximation.Analysis.exists_weak_limit_of_unique_subsequences"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

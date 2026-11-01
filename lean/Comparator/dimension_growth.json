@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.DimensionGrowth",
+  "solution_module": "KVApproximation.Approximation.DimensionGrowth",
+  "theorem_names": [
+    "KVApproximation.Approximation.logPartitionCount_le",
+    "KVApproximation.Approximation.interpolationOrder_le",
+    "KVApproximation.Approximation.nonsingletonStateDimension_uniform_bound"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

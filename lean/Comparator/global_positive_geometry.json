@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.GlobalPositiveSpan",
+  "solution_module": "KVApproximation.Approximation.GlobalRateGeometry",
+  "theorem_names": [
+    "KVApproximation.Approximation.complexGlobalLogRate_ellipse_of_span_pos"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

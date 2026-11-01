@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.Compression",
+  "solution_module": "KVApproximation.Spectral.CompressionMoments",
+  "theorem_names": [
+    "KVApproximation.Spectral.compressedMeasure_integral",
+    "KVApproximation.Spectral.compressedMeasure_moment",
+    "KVApproximation.Spectral.compressedMeasure_memory"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.TensorMeasureIntegration",
+  "solution_module": "KVApproximation.Spectral.TensorMeasureIntegration",
+  "theorem_names": [
+    "KVApproximation.Spectral.TensorMeasure.integrable_continuousOn",
+    "KVApproximation.Spectral.dist_tensorIntegral_le_of_bound"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

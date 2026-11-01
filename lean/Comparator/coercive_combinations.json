@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.CoerciveCombinations",
+  "solution_module": "KVApproximation.OperatorTheory.CoerciveCombinationBounds",
+  "theorem_names": ["KVApproximation.OperatorTheory.CoerciveForm.addScaled_bounds"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Challenges.UnweightedResponse",
+  "solution_module": "KVApproximation.Approximation.UnweightedInterpolation",
+  "theorem_names": [
+    "KVApproximation.Approximation.local_unweighted_response_error",
+    "KVApproximation.Approximation.real_local_unweighted_response_error",
+    "KVApproximation.Approximation.partition_unweighted_response_error",
+    "KVApproximation.Approximation.norm_integrated_unweighted_partition_error_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

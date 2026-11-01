@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.ConstantSpatialCoercivity",
+  "solution_module": "KVApproximation.Homogenization.ConstantSpatialCoercivity",
+  "theorem_names": [
+    "KVApproximation.Homogenization.constantSpatialFormL_isCoercive",
+    "KVApproximation.Homogenization.exists_constantSpatialFormL_norm_bound"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

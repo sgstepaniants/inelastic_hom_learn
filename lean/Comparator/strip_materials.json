@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.StripMaterials",
+  "solution_module": "KVApproximation.KelvinVoigt.StripMaterials",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.exists_strip_material_family"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

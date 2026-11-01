@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Challenges.MatrixExponential",
+  "solution_module": "KVApproximation.Tensor.MatrixExponential",
+  "theorem_names": [
+    "KVApproximation.Tensor.matrix_exp_det_pos",
+    "KVApproximation.Tensor.matrix_exp_skew_orthogonal",
+    "KVApproximation.Tensor.matrix_exp_symmetric_det"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

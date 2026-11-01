@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.StaticEquilibriumLimit",
+  "solution_module": "KVApproximation.Homogenization.StaticEquilibriumLimit",
+  "theorem_names": ["KVApproximation.Homogenization.effective_equilibrium_of_weak_stress"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

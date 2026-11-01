@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.Compression",
+  "solution_module": "KVApproximation.Spectral.CompressionConstruction",
+  "theorem_names": [
+    "KVApproximation.Spectral.compressedMeasure_exists_unique",
+    "KVApproximation.Spectral.compressedMeasure_positive_trace",
+    "KVApproximation.Spectral.compressedMeasure_supported"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

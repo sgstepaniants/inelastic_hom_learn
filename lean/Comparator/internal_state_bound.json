@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.InternalStateBound",
+  "solution_module": "KVApproximation.KelvinVoigt.InternalStateBound",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.local_prony_state_uniform_bound",
+    "KVApproximation.KelvinVoigt.singleton_prony_state_uniform_bound"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

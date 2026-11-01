@@ -1,0 +1,169 @@
+{
+  "method": "isolated imports using copied source closures and production artifacts",
+  "external_import_paths": [
+    "/Users/georgestepaniants/Research/kv_approximation/lean/.lake/packages/Cli/.lake/build/lib/lean",
+    "/Users/georgestepaniants/Research/kv_approximation/lean/.lake/packages/batteries/.lake/build/lib/lean",
+    "/Users/georgestepaniants/Research/kv_approximation/lean/.lake/packages/Qq/.lake/build/lib/lean",
+    "/Users/georgestepaniants/Research/kv_approximation/lean/.lake/packages/aesop/.lake/build/lib/lean",
+    "/Users/georgestepaniants/Research/kv_approximation/lean/.lake/packages/proofwidgets/.lake/build/lib/lean",
+    "/Users/georgestepaniants/Research/kv_approximation/lean/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/Users/georgestepaniants/Research/kv_approximation/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/Users/georgestepaniants/Research/kv_approximation/lean/.lake/packages/plausible/.lake/build/lib/lean",
+    "/Users/georgestepaniants/Research/kv_approximation/lean/.lake/packages/mathlib/.lake/build/lib/lean",
+    "/Users/georgestepaniants/Research/kv_approximation/lean/.lake/packages/LeanCert/.lake/build/lib/lean",
+    "/Users/georgestepaniants/Research/kv_approximation/lean/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean"
+  ],
+  "consumers": [
+    {
+      "subject": "Analysis",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4096",
+        "--root=/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/Analysis",
+        "/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/Analysis/Consumer.lean"
+      ],
+      "imports": 127,
+      "local_modules": 185,
+      "exit_code": 0,
+      "seconds": 30.1,
+      "passed": true
+    },
+    {
+      "subject": "Approximation",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4096",
+        "--root=/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/Approximation",
+        "/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/Approximation/Consumer.lean"
+      ],
+      "imports": 52,
+      "local_modules": 90,
+      "exit_code": 0,
+      "seconds": 14.9,
+      "passed": true
+    },
+    {
+      "subject": "Dynamics",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4096",
+        "--root=/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/Dynamics",
+        "/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/Dynamics/Consumer.lean"
+      ],
+      "imports": 28,
+      "local_modules": 77,
+      "exit_code": 0,
+      "seconds": 8.0,
+      "passed": true
+    },
+    {
+      "subject": "Examples",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4096",
+        "--root=/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/Examples",
+        "/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/Examples/Consumer.lean"
+      ],
+      "imports": 4,
+      "local_modules": 17,
+      "exit_code": 0,
+      "seconds": 5.5,
+      "passed": true
+    },
+    {
+      "subject": "Homogenization",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4096",
+        "--root=/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/Homogenization",
+        "/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/Homogenization/Consumer.lean"
+      ],
+      "imports": 71,
+      "local_modules": 287,
+      "exit_code": 0,
+      "seconds": 14.9,
+      "passed": true
+    },
+    {
+      "subject": "KelvinVoigt",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4096",
+        "--root=/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/KelvinVoigt",
+        "/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/KelvinVoigt/Consumer.lean"
+      ],
+      "imports": 37,
+      "local_modules": 426,
+      "exit_code": 0,
+      "seconds": 14.6,
+      "passed": true
+    },
+    {
+      "subject": "NeuralOperators",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4096",
+        "--root=/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/NeuralOperators",
+        "/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/NeuralOperators/Consumer.lean"
+      ],
+      "imports": 34,
+      "local_modules": 68,
+      "exit_code": 0,
+      "seconds": 4.8,
+      "passed": true
+    },
+    {
+      "subject": "OperatorTheory",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4096",
+        "--root=/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/OperatorTheory",
+        "/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/OperatorTheory/Consumer.lean"
+      ],
+      "imports": 25,
+      "local_modules": 41,
+      "exit_code": 0,
+      "seconds": 4.4,
+      "passed": true
+    },
+    {
+      "subject": "Spectral",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4096",
+        "--root=/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/Spectral",
+        "/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/Spectral/Consumer.lean"
+      ],
+      "imports": 18,
+      "local_modules": 46,
+      "exit_code": 0,
+      "seconds": 4.2,
+      "passed": true
+    },
+    {
+      "subject": "Tensor",
+      "command": [
+        "lean",
+        "-j1",
+        "-M4096",
+        "--root=/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/Tensor",
+        "/Users/georgestepaniants/Research/kv_approximation/lean/.work/consumers/Tensor/Consumer.lean"
+      ],
+      "imports": 31,
+      "local_modules": 60,
+      "exit_code": 0,
+      "seconds": 5.7,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

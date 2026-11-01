@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.PeriodicCompactness",
+  "solution_module": "KVApproximation.Analysis.PeriodicCompactness",
+  "theorem_names": ["KVApproximation.Analysis.isCompact_closure_of_periodic_translations"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

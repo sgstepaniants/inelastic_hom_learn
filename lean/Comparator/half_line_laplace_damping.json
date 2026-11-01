@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.HalfLineLaplaceDamping",
+  "solution_module": "KVApproximation.Analysis.HalfLineLaplaceDamping",
+  "theorem_names": [
+    "KVApproximation.Analysis.halfLineLaplace_exp_smul",
+    "KVApproximation.Analysis.eq_zero_of_halfLineLaplace_eq_zero_of_damped_bound"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

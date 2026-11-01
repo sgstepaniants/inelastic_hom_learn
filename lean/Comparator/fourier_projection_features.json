@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.FourierProjectionFeatures",
+  "solution_module": "KVApproximation.NeuralOperators.FourierProjectionFeatures",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.exists_scalarFourierProjection",
+    "KVApproximation.NeuralOperators.eq_of_scalarFourierProjections_eq"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

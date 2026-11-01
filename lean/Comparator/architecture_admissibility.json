@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.ArchitectureAdmissibility",
+  "solution_module": "KVApproximation.NeuralOperators.ArchitectureAdmissibility",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.HasUniversalApproximation.locallyLipschitz"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

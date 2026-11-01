@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.CorrectorTrajectory",
+  "solution_module": "KVApproximation.Homogenization.CorrectorTrajectoryMaps",
+  "theorem_names": [
+    "KVApproximation.Homogenization.displacement_strain_exists_unique",
+    "KVApproximation.Homogenization.strain_displacement_exists_unique",
+    "KVApproximation.Homogenization.displacement_strain_trace"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

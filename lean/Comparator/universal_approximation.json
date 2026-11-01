@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.UniversalApproximation",
+  "solution_module": "KVApproximation.KelvinVoigt.UniversalApproximation",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.universal_approximation",
+    "KVApproximation.KelvinVoigt.sufficient_internal_variable_dimension"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

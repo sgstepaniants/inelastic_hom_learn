@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.PronyApproximation",
+  "solution_module": "KVApproximation.KelvinVoigt.PronyContinuity",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.local_prony_coefficient_converges",
+    "KVApproximation.KelvinVoigt.singleton_prony_coefficient_converges"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

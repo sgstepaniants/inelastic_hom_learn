@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.FourierMappingLayers",
+  "solution_module": "KVApproximation.NeuralOperators.FourierMappingAffine",
+  "theorem_names": ["KVApproximation.NeuralOperators.FourierLayer.exists_affineCLM"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

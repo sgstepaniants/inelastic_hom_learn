@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.HalfLineLaplace",
+  "solution_module": "KVApproximation.Analysis.HalfLineLaplaceProperties",
+  "theorem_names": [
+    "KVApproximation.Analysis.integrable_halfLineLaplace",
+    "KVApproximation.Analysis.halfLineLaplace_weak_tendsto"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

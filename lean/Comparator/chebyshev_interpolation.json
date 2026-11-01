@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.Interpolation",
+  "solution_module": "KVApproximation.Approximation.ChebyshevInterpolation",
+  "theorem_names": [
+    "KVApproximation.Approximation.chebyshevInterpolant_error_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.DirichletPoincare",
+  "solution_module": "KVApproximation.Analysis.DirichletPoincare",
+  "theorem_names": [
+    "KVApproximation.Analysis.ZeroBoundaryH1.poincare_of_subset_ball",
+    "KVApproximation.Analysis.ZeroBoundaryH1.exists_poincare_constant"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

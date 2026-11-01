@@ -1,0 +1,8 @@
+{
+  "challenge_module": "Challenges.MicroscopicSolutionFamily",
+  "solution_module": "KVApproximation.Homogenization.MicroscopicSolutionFamily",
+  "theorem_names": [
+    "KVApproximation.Homogenization.exists_microscopic_solution_family"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

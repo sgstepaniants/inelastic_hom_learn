@@ -1,0 +1,19 @@
+{
+  "challenge_module": "Challenges.LinearSurrogate",
+  "solution_module": "KVApproximation.Examples.LinearSurrogateCoordinates",
+  "theorem_names": [
+    "KVApproximation.Examples.LinearSurrogate.exists_sum_coordinates",
+    "KVApproximation.Examples.LinearSurrogate.mandel_sum_coordinates",
+    "KVApproximation.Examples.LinearSurrogate.transformed_kinetics",
+    "KVApproximation.Examples.LinearSurrogate.transformed_kinetic_blocks",
+    "KVApproximation.Examples.LinearSurrogate.transformed_stress",
+    "KVApproximation.Examples.LinearSurrogate.trajectory_coordinates",
+    "KVApproximation.Examples.LinearSurrogate.transformed_charpoly",
+    "KVApproximation.Examples.LinearSurrogate.plane_state_dimension"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

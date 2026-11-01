@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.Fields",
+  "solution_module": "KVApproximation.Tensor.FieldBounds",
+  "theorem_names": ["KVApproximation.Tensor.hasFieldBounds_iff_ae"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

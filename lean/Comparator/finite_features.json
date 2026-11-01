@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.FiniteFeatures",
+  "solution_module": "KVApproximation.Approximation.FiniteFeatures",
+  "theorem_names": ["KVApproximation.Approximation.exists_finite_feature_approximation"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

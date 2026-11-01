@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.MicroscopicSpectrum",
+  "solution_module": "KVApproximation.Homogenization.MicroscopicSpectrum",
+  "theorem_names": ["KVApproximation.Homogenization.exists_uniform_microscopic_spectrum_bounds"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

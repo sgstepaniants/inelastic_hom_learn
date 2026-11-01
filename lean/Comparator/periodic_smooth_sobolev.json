@@ -1,0 +1,8 @@
+{
+  "challenge_module": "Challenges.PeriodicSmoothSobolev",
+  "solution_module": "KVApproximation.Analysis.PeriodicSmoothSobolev",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicC1.exists_periodicH1"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

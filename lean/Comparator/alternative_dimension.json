@@ -1,0 +1,11 @@
+{
+  "challenge_module": "Challenges.AlternativeProny",
+  "solution_module": "KVApproximation.Approximation.AlternativeDimensionEstimates",
+  "theorem_names": [
+    "KVApproximation.Approximation.unweighted_order_error_le",
+    "KVApproximation.Approximation.globalInterpolationOrder_error_le",
+    "KVApproximation.Approximation.unweightedDimension_asymptotic",
+    "KVApproximation.Approximation.globalPronyDimension_asymptotic"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

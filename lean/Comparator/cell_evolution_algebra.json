@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Challenges.CellEvolution",
+  "solution_module": "KVApproximation.Dynamics.CellEvolutionAlgebra",
+  "theorem_names": [
+    "KVApproximation.Dynamics.cell_evolution_iff_ode",
+    "KVApproximation.Dynamics.cell_evolution_shifted_ode",
+    "KVApproximation.Dynamics.cell_evolution_stress_remainder"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.ResponseDomains",
+  "solution_module": "KVApproximation.NeuralOperators.ResponseDomains",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.isCompact_stressInputSet",
+    "KVApproximation.NeuralOperators.isCompact_kineticInputSet"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

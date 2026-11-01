@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.CellSpectralMeasure",
+  "solution_module": "KVApproximation.Homogenization.CellSpectralMeasure",
+  "theorem_names": [
+    "KVApproximation.Spectral.cell_spectral_measure_isCompressed"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "challenge_module": "Challenges.SpatialCoercivity",
+  "solution_module": "KVApproximation.Homogenization.SpatialCoercivity",
+  "theorem_names": [
+    "KVApproximation.Homogenization.integrable_spatialForm",
+    "KVApproximation.Homogenization.boundedSpatialForm_apply",
+    "KVApproximation.Homogenization.boundedSpatialForm_symmetric",
+    "KVApproximation.Homogenization.spatialForm_lower_bound",
+    "KVApproximation.Homogenization.boundedSpatialForm_isCoercive",
+    "KVApproximation.Homogenization.elliptic_exists_unique",
+    "KVApproximation.Homogenization.norm_elliptic_solution_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

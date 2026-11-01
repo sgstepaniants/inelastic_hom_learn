@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.CellDisplacement",
+  "solution_module": "KVApproximation.Homogenization.CellDisplacementEquivalence",
+  "theorem_names": [
+    "KVApproximation.Homogenization.periodicCellSolution_iff_evolution",
+    "KVApproximation.Homogenization.periodicCellSolution_exists_unique"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

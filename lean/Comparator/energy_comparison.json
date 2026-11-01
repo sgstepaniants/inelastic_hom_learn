@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.EnergyComparison",
+  "solution_module": "KVApproximation.Analysis.EnergyComparison",
+  "theorem_names": [
+    "KVApproximation.Analysis.ac_energy_decay_bound",
+    "KVApproximation.Analysis.finite_time_decay_lt_margin"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

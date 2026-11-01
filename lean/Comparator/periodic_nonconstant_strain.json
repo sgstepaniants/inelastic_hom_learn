@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PeriodicNonconstantStrain",
+  "solution_module": "KVApproximation.Analysis.PeriodicNonconstantStrain",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicC1.exists_zeroMean_nonzero_strain"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

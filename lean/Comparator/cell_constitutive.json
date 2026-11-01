@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.CellConstitutive",
+  "solution_module": "KVApproximation.Homogenization.CellConstitutive",
+  "theorem_names": [
+    "KVApproximation.Homogenization.cellConstitutiveModel_exists_unique",
+    "KVApproximation.Homogenization.cellKernel_nonneg",
+    "KVApproximation.Homogenization.cellKernel_continuous",
+    "KVApproximation.Homogenization.cellConstitutiveModel_self",
+    "KVApproximation.Homogenization.cellConstitutiveModel_eq_fields"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

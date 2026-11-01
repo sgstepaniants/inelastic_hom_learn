@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.HalfLineLaplaceConvolution",
+  "solution_module": "KVApproximation.Analysis.HalfLineLaplaceConvolution",
+  "theorem_names": [
+    "KVApproximation.Analysis.integrable_halfLineLaplace_posConvolution",
+    "KVApproximation.Analysis.halfLineLaplace_posConvolution"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

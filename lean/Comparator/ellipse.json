@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.Approximation",
+  "solution_module": "KVApproximation.Approximation.EllipseConstant",
+  "theorem_names": [
+    "KVApproximation.Approximation.cos_three_quarters_lower",
+    "KVApproximation.Approximation.bernsteinImaginarySemiaxis_two"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

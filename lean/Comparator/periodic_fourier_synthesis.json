@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Challenges.PeriodicFourierSynthesis",
+  "solution_module": "KVApproximation.Analysis.PeriodicFourierSynthesis",
+  "theorem_names": [
+    "KVApproximation.Analysis.contDiff_realFourierMode_lift",
+    "KVApproximation.Analysis.fderiv_realFourierMode_lift_apply",
+    "KVApproximation.Analysis.hasSum_realFourier_series"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

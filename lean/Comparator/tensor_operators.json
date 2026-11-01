@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenges.TensorOperators",
+  "solution_module": "KVApproximation.Tensor.MultiplicationIdentities",
+  "theorem_names": [
+    "KVApproximation.Tensor.norm_action_le",
+    "KVApproximation.Tensor.action_symmetric",
+    "KVApproximation.Tensor.multiplication_apply_ae",
+    "KVApproximation.Tensor.integrable_fieldPairing",
+    "KVApproximation.Tensor.boundedFieldForm_apply"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

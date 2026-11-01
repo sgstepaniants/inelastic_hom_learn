@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.CellResolvent",
+  "solution_module": "KVApproximation.OperatorTheory.CellResolvent",
+  "theorem_names": ["KVApproximation.OperatorTheory.homogenizedForm_resolvent"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

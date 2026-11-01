@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.MicroscopicEvolution",
+  "solution_module": "KVApproximation.Homogenization.MicroscopicEvolution",
+  "theorem_names": [
+    "KVApproximation.Homogenization.microscopic_solution_iff_ode",
+    "KVApproximation.Homogenization.microscopic_exists_unique",
+    "KVApproximation.Homogenization.microscopic_duhamel"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

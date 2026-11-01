@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Challenges.GlobalResponse",
+  "solution_module": "KVApproximation.Approximation.GlobalCoordinates",
+  "theorem_names": [
+    "KVApproximation.Approximation.globalLogCoordinate_mem",
+    "KVApproximation.Approximation.globalLogRate_globalLogCoordinate",
+    "KVApproximation.Approximation.continuousOn_globalResponseInterpolant"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

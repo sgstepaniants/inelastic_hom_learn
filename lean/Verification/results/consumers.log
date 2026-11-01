@@ -1,0 +1,10 @@
+Analysis: 127 imports, 185 local modules
+Approximation: 52 imports, 90 local modules
+Dynamics: 28 imports, 77 local modules
+Examples: 4 imports, 17 local modules
+Homogenization: 71 imports, 287 local modules
+KelvinVoigt: 37 imports, 426 local modules
+NeuralOperators: 34 imports, 68 local modules
+OperatorTheory: 25 imports, 41 local modules
+Spectral: 18 imports, 46 local modules
+Tensor: 31 imports, 60 local modules

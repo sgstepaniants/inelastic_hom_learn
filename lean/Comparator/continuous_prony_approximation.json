@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.ContinuousPronyApproximation",
+  "solution_module": "KVApproximation.KelvinVoigt.ContinuousPronyApproximation",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.continuous_prony_neural_approximation"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

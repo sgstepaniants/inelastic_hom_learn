@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.CircleFourier",
+  "solution_module": "KVApproximation.Analysis.CircleFourier",
+  "theorem_names": [
+    "KVApproximation.Analysis.circleCoefficient_eq_fourierCoeff",
+    "KVApproximation.Analysis.fourierCoeff_neg_of_even"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PronyResponseStability",
+  "solution_module": "KVApproximation.NeuralOperators.PronyResponseStability",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.prony_response_stability"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

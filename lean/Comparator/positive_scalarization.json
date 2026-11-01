@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PositiveScalarization",
+  "solution_module": "KVApproximation.Analysis.PositiveScalarization",
+  "theorem_names": [
+    "KVApproximation.Analysis.exists_finite_positive_scalarization"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

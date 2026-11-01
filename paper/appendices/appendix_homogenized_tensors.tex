@@ -1,0 +1,63 @@
+\section{Homogenized Tensors and Memory Kernel}
+
+This appendix proves symmetry and definiteness of the homogenized tensors and memory kernel in \cref{app:homogenized_tensors_kernel_properties}, establishes the spectral representation of the kernel in \cref{app:spectral_rep}, and derives the homogenized model directly from the unit-cell problem in \cref{app:unit_cell_homogenization}.
+
+\subsection{Symmetry and Definiteness of the Homogenized Tensors and Memory Kernel}\label{app:homogenized_tensors_kernel_properties}
+We verify the symmetry and definiteness asserted in \cref{thm:viscoelastic_homogenization}. Let $\bV,\bE\in L^{\infty}_{\mathrm{per}}(\bT^d;\cV^4_{+})$, and let $\bV^{\mathrm{hom}}(\bV)$, $\bE^{\mathrm{hom}}(\bE)$, and $\bK(t;\bV,\bE)$ be defined by \cref{eq:homogenized_tensors,eq:memory_kernel}.
+
+Since $\cV^{2}$ is finite-dimensional, it suffices to verify the symmetry and sign properties of the bilinear forms in \cref{eq:homogenized_tensors,eq:memory_kernel}. For $\bA\in\{\bV,\bE\}$, let $\cB_{\bA}(\overline e_1,\overline e_2)\coloneqq(\overline e_1,\cP_{\bA}^{\perp}\overline e_2)_{\bA}$. Because $\cP_{\bA}^{\perp}$ is the $\bA$-orthogonal projector onto the orthogonal complement of $\cX$, it is self-adjoint and idempotent with respect to $(\cdot,\cdot)_{\bA}$. Therefore $\cB_{\bA}(\overline e_1,\overline e_2)=(\cP_{\bA}^{\perp}\overline e_1,\cP_{\bA}^{\perp}\overline e_2)_{\bA}=\cB_{\bA}(\overline e_2,\overline e_1)$ and $\cB_{\bA}(\overline e,\overline e)=\|\cP_{\bA}^{\perp}\overline e\|_{\bA}^{2}\geq 0$. If $\cB_{\bA}(\overline e,\overline e)=0$, then $\cP_{\bA}^{\perp}\overline e=0$, so $\overline e=\cP_{\bA}\overline e\in \cX$. Since $\overline e$ is constant and $\cX$ contains no nonzero constant tensors, it follows that $\overline e=0$. Thus $\cB_{\bA}$ is positive definite, so $\bV^{\mathrm{hom}}(\bV),\bE^{\mathrm{hom}}(\bE)\in \cV^4_{+}$. For the kernel, set $\cA_t\coloneqq\cR_{\bV,\bE}\exp(-t\cR_{\bV,\bE})$ for $t\ge 0$. Since $\cR_{\bV,\bE}$ is positive and self-adjoint on $(\cX,(\cdot,\cdot)_{\bV})$, the spectral theorem implies that $\cA_t=g_t(\cR_{\bV,\bE})$, with $g_t(\lambda)\coloneqq\lambda \exp(-t\lambda)$, is also positive and self-adjoint. Hence $(\cA_t\cD_{\bV,\bE}\overline e_1,\cD_{\bV,\bE}\overline e_2)_{\bV}=(\cD_{\bV,\bE}\overline e_1,\cA_t\cD_{\bV,\bE}\overline e_2)_{\bV}$ and $(\cA_t\cD_{\bV,\bE}\overline e,\cD_{\bV,\bE}\overline e)_{\bV}\ge 0$, so $\bK(t;\bV,\bE)\in \cV^{4}$ is positive semidefinite for all $t\ge 0$.
+\subsection{Proof of \cref{prop:spectral_rep}}\label{app:spectral_rep}
+
+Write $\cR\coloneqq\cR_{\bV,\bE}$, $\cD\coloneqq\cD_{\bV,\bE}$, $\nu\coloneqq\nu_{\bV,\bE}$, and $\cI\coloneqq \cI_{\bV,\bE}$, and set $\lambda_{\min}\coloneqq \alpha_{\bE}/\beta_{\bV}$ and $\lambda_{\max}\coloneqq \beta_{\bE}/\alpha_{\bV}$, so $\cI=[\lambda_{\min},\lambda_{\max}]$. By the Riesz representation theorem, $\cR\in\cL(\cX)$ is the self-adjoint positive operator on $(\cX,(\cdot,\cdot)_{\bV})$. The coercivity and boundedness assumptions yield, for all $\eta\in\cX$, $\lambda_{\min}\|\eta\|_{\bV}^2
+\leq (\cR\eta,\eta)_{\bV}
+\leq \lambda_{\max}\|\eta\|_{\bV}^2$.
+Thus, the spectrum of $\cR$ is contained in $\cI$. By the spectral theorem, there exists a projection-valued measure $\Pi\coloneqq\Pi_{\bV,\bE}$ supported on $\cI$ such that $\cR\exp(-t\cR)=\int_{\cI} \lambda \exp(-\lambda t)\,\mathrm{d}\Pi(\lambda)$ for all $t\ge 0$. For each Borel set $B\subset\cI$, define a bounded bilinear form on $\cV^{2}$ by
+\begin{equation}\label{eq:nu_def}
+(\overline{e}_1, \nu(B)\overline{e}_2)_F\coloneqq\bigl(\Pi(B)\cD \overline{e}_1,\ \cD \overline{e}_2\bigr)_{\bV}.
+\end{equation}
+Since $\Pi(B)$ is self-adjoint, $\nu(B)$ is symmetric. Since $\cV^{2}$ is finite-dimensional, \cref{eq:nu_def} defines a unique tensor in $\cV^4$, and the strong countable additivity of $\Pi$ implies that $\nu$ is countably additive. Moreover, for every Borel set $B\subset\cI$ and every $\overline e_1,\overline e_2\in\cV^{2}$, we have $|(\overline e_1, \nu(B)\overline e_2)_F|\le \|\Pi(B)\cD\overline e_1\|_{\bV}\,\|\cD\overline e_2\|_{\bV}\le \|\cD\overline e_1\|_{\bV}\,\|\cD\overline e_2\|_{\bV}$, so $\nu$ is finite. Combining \cref{eq:memory_kernel}, the spectral representation of $\cR\exp(-t\cR)$, and \cref{eq:nu_def} gives \cref{eq:K_laplace}.
+
+It remains to prove \cref{eq:uniform_TV_bound_nu_explicit}. First, 
+for any Borel set $B\subset\cI$, the operator $\Pi(B)$ is positive on $\cX$. Consequently, \cref{eq:nu_def} gives, for any $\overline{e} \in \cV^{2}$, $(\overline{e}, \nu(B)\overline{e})_F\geq 0$. Let $\{\overline e_\alpha\}_{\alpha=1}^{d_{\cV^2}}$ be an orthonormal basis of $\cV^2$ with respect to the Frobenius inner product. For any finite Borel partition $B_1,\dots,B_m$ of $\cI$, the inequality $\|\bA\|_F\le \operatorname{tr}(\bA)$ for positive semidefinite $\bA\in\cV^4$ gives $\sum_{i=1}^m \|\nu(B_i)\|_F
+\le \sum_{i=1}^m \operatorname{tr}(\nu(B_i))
+=\operatorname{tr}(\nu(\cI))
+=\sum_{\alpha=1}^{d_{\cV^2}}\|\cD\overline e_\alpha\|_{\bV}^2$, where the last identity follows from \cref{eq:nu_def} and {$\Pi(\cI)=\mathrm{Id}_{\cX}$}. Also, for any $\overline e\in\cV^2$, since $\cP_{\bE}\overline e\in\cX$ and $\cP_{\bV}$ is the $\bV$-orthogonal projector onto $\cX$,
+\begin{equation}\label{eq:mismatch_bound}
+\|\cD\overline e\|_{\bV}^2
+=\|\cP_{\bV}(\overline e-\cP_{\bE}\overline e)\|_{\bV}^2
+\le \|\overline e-\cP_{\bE}\overline e\|_{\bV}^2
+\le \frac{\beta_{\bV}}{\alpha_{\bE}}\|\overline e-\cP_{\bE}\overline e\|_{\bE}^2
+\le \frac{\beta_{\bV}\beta_{\bE}}{\alpha_{\bE}}\|\overline e\|_F^2.
+\end{equation}
+Applying this bound to each basis vector $\overline e_\alpha$ and taking the supremum over all finite Borel partitions gives \cref{eq:uniform_TV_bound_nu_explicit}.
+
+\subsection{Deriving the Homogenized Model from the Unit Cell Problem} \label{app:unit_cell_homogenization}
+
+We derive the homogenized model in \cref{eq:homogenized_model_identified} directly from the unit cell problem \cref{eqns:cell_problem}, complementing the Laplace-transform proof of \cref{thm:viscoelastic_homogenization}. {Let $T>0$ be arbitrary and finite, and write} $\cR\coloneqq\cR_{\bV,\bE}$ and $\cD\coloneqq\cD_{\bV,\bE}$.
+
+Testing the balance law in \cref{eqns:cell_problem} against $\phi\in\mathring{H}^1_{\mathrm{per}}(\bT^d;\bR^d)$ and integrating by parts gives
+\begin{equation}\label{eq:cell_weak}
+(\dot{\overline{e}}(t)+\dot\eta(t),\psi)_{\bV}+(\overline{e}(t)+\eta(t),\psi)_{\bE}=0\quad \text{a.e. }t\in{[0,T]}
+\end{equation}
+where $\psi=\mathrm{sym}(\nabla_y\phi)\in\cX$ and $\eta(0)=-\cP_{\bE}\overline{e}(0)$. Since $\eta(t),\dot\eta(t)\in\cX$ for a.e.\ $t\in{[0,T]}$, the definitions of $\cP_{\bV}$, $\cP_{\bE}$, and $\cR$ give $(\dot{\overline{e}}(t),\psi)_{\bV}=(\cP_{\bV}\dot{\overline{e}}(t),\psi)_{\bV}$, $(\overline{e}(t),\psi)_{\bE}=(\cR\cP_{\bE}\overline{e}(t),\psi)_{\bV}$, and $(\eta(t),\psi)_{\bE}=(\cR\eta(t),\psi)_{\bV}$ for all $\psi\in\cX$ and a.e.\ $t\in{[0,T]}$. Hence \cref{eq:cell_weak} is equivalent to
+\begin{equation}\label{eq:cell_ode}
+\dot\eta(t)+\cR\eta(t)=-\cP_{\bV}\dot{\overline{e}}(t)-\cR\cP_{\bE}\overline{e}(t),\quad\eta(0)=-\cP_{\bE}\overline{e}(0).
+\end{equation}
+Set $\omega(t)\coloneqq\eta(t)+\cP_{\bE}\overline{e}(t)$ for a.e.\ $t\in{[0,T]}$. Then \cref{eq:cell_ode} and $\cD=\cP_{\bV}-\cP_{\bE}$ give $\dot\omega(t)+\cR\omega(t)=-\cD\dot{\overline{e}}(t)$ with $\omega(0)=0$. Integrating in time gives
+\begin{equation}\label{eq:eta_sol}
+\omega(t)=-\int_0^t\exp(-(t-s)\cR)\cD\dot{\overline{e}}(s)\,\mathrm{d}s.
+\end{equation}
+For any $\overline{e}_1\in\cV^2$, the macroscopic stress satisfies $(\overline{e}_1, \overline{\sigma}(t))_F=(\overline{e}_1,\dot{\overline{e}}(t)+\dot\eta(t))_{\bV}+(\overline{e}_1,\overline{e}(t)+\eta(t))_{\bE}$ for a.e.\ $t\in{[0,T]}$. Using $\eta(t)=\omega(t)-\cP_{\bE}\overline{e}(t)$ gives $\overline{e}(t)+\eta(t)=\cP_{\bE}^{\perp}\overline{e}(t)+\omega(t)$ and $\dot{\overline{e}}(t)+\dot\eta(t)=\cP_{\bE}^{\perp}\dot{\overline{e}}(t)+\dot\omega(t)$. Since $\cP_{\bE}^{\perp}=\cP_{\bV}^{\perp}+\cD$, this becomes
+\begin{equation}\label{eq:stress_decomp}
+(\overline{e}_1, \overline{\sigma}(t))_{F}
+=\underbrace{(\overline{e}_1,\cP_{\bV}^{\perp}\dot{\overline{e}}(t))_{\bV}}_{\displaystyle (\overline{e}_1, \bV^{\mathrm{hom}}\dot{\overline{e}}(t))_F}
++\underbrace{(\overline{e}_1,\cP_{\bE}^{\perp}\overline{e}(t))_{\bE}}_{\displaystyle(\overline{e}_1,\bE^{\mathrm{hom}}\overline{e}(t))_F}
++\underbrace{(\overline{e}_1,\cD\dot{\overline{e}}(t)+\dot\omega(t))_{\bV}+(\overline{e}_1,\omega(t))_{\bE}}_{\displaystyle\eqqcolon R},
+\end{equation}
+where the first two terms are identified by \cref{eq:homogenized_tensors}.
+
+Since $\dot\omega(t)+\cR\omega(t)=-\cD\dot{\overline{e}}(t)$, we have $\cD\dot{\overline{e}}(t)+\dot\omega(t)=-\cR\omega(t)$. The definitions of $\cP_{\bV}$, $\cP_{\bE}$, and $\cR$ imply $(\overline{e}_1,\cR\omega(t))_{\bV}=(\cR\cP_{\bV}\overline{e}_1,\omega(t))_{\bV}$ and $(\overline{e}_1,\omega(t))_{\bE}=(\cR\cP_{\bE}\overline{e}_1,\omega(t))_{\bV}$, so $R=-(\cR\cD\overline{e}_1,\omega(t))_{\bV}$. Substituting \cref{eq:eta_sol} and using the self-adjointness and commutativity of $\cR$ and $\exp(-t\cR)$ on $(\cX,(\bullet,\bullet)_{\bV})$ gives
+\begin{equation*}
+    R=\int_0^t\bigl(\cR\exp(-(t-s)\cR)\cD\overline{e}_1,\cD\dot{\overline{e}}(s)\bigr)_{\bV}\,\mathrm{d}s=\int_0^t\left(\overline{e}_1, \bK(t-s;\bV,\bE)\dot{\overline{e}}(s)\right)_F\,\mathrm{d}s
+\end{equation*}
+where the second equality is \cref{eq:memory_kernel}. Substituting into \cref{eq:stress_decomp} yields \cref{eq:homogenized_model_identified}.

@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.LpInterpolation",
+  "solution_module": "KVApproximation.Analysis.LpInterpolation",
+  "theorem_names": [
+    "KVApproximation.Analysis.eLpNorm_two_sq_le_of_ae_bound",
+    "KVApproximation.Analysis.tendsto_eLpNorm_two_of_one_of_ae_bound"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

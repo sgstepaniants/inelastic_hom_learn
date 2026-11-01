@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.DissipativeStability",
+  "solution_module": "KVApproximation.Dynamics.DissipativeStability",
+  "theorem_names": [
+    "KVApproximation.Dynamics.dissipative_driven_stability"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

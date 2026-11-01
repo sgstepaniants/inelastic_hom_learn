@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.ChebyshevAnalytic",
+  "solution_module": "KVApproximation.Approximation.ChebyshevAnalytic",
+  "theorem_names": [
+    "KVApproximation.Approximation.norm_chebyshevCoefficient_le",
+    "KVApproximation.Approximation.hasSum_chebyshevSeries"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

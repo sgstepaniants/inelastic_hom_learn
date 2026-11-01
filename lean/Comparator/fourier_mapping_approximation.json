@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.FourierMapping",
+  "solution_module": "KVApproximation.NeuralOperators.FourierMappingApproximation",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.fourierMappingClass_universal",
+    "KVApproximation.NeuralOperators.fourierMappingClass_locallyLipschitz_universal"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

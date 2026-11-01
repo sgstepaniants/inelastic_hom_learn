@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.GlobalResponse",
+  "solution_module": "KVApproximation.Approximation.GlobalRateGeometry",
+  "theorem_names": [
+    "KVApproximation.Approximation.complexGlobalLogRate_ofReal",
+    "KVApproximation.Approximation.complexGlobalLogRate_ellipse"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

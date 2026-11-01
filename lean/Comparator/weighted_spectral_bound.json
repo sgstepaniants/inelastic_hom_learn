@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.WeightedMeasure",
+  "solution_module": "KVApproximation.Homogenization.WeightedSpectralBound",
+  "theorem_names": ["KVApproximation.Spectral.weightedMeasure_variation_le"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

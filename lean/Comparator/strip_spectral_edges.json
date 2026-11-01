@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.StripSpectralEdges",
+  "solution_module": "KVApproximation.KelvinVoigt.StripSpectralEdges",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.materialSpectralEdge_identity",
+    "KVApproximation.KelvinVoigt.materialSpectralEdge_strip"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

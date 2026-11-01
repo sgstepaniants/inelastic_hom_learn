@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.VectorFiniteFeatures",
+  "solution_module": "KVApproximation.Approximation.VectorFiniteFeatures",
+  "theorem_names": [
+    "KVApproximation.Approximation.exists_vector_finite_feature_approximation"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

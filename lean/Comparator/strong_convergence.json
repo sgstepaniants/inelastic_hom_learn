@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.StrongConvergence",
+  "solution_module": "KVApproximation.OperatorTheory.StrongConvergence",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.tendsto_apply_of_uniform_bound"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

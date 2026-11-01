@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.PeriodicStressLimits",
+  "solution_module": "KVApproximation.Analysis.PeriodicStressLimits",
+  "theorem_names": [
+    "KVApproximation.Analysis.tendsto_integral_cutoff_rescale_stress_strain_along",
+    "KVApproximation.Analysis.tendsto_integral_cutoff_rescale_stress_strain"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

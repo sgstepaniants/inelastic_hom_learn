@@ -1,0 +1,48 @@
+\section{Fractional Hereditary Operators in Dual Materials}
+In the classical text of Milton~\cite[Sec. 3.5 - 3.7]{milton2022theory}, the author shows numerous examples where the stiffness tensor (or typically its inverse; the compliance tensor) is given by
+\begin{equation}
+    S = \sqrt{\mu_1\mu_2}I
+\end{equation}
+for a composite medium consisting of two phases $\mu_1, \mu_2$ which are arranged in a dual pattern: interchanging the phases amounts to rotating the medium by $90^\circ$. An orthotropic two-dimensional viscoelastic material, which is rigid with respect to shears, can be reduced to a $2 \times 2$ stiffness tensor between its normal strains and normal stresses given by
+\begin{equation}\label{eq:stiff}
+    S = \sqrt{(E_1 + s\nu_1)(E_2 + s\nu_2)}I_{2 \times 2}.
+\end{equation}
+Now we can expand
+\begin{align*}
+    \sqrt{(E_1 + s\nu_1)(E_2 + s\nu_2)} = \sqrt{\nu_1\nu_2}\Big((s + \tfrac{E_1}{\nu_1})(s + \tfrac{E_2}{\nu_2})\Big)^\frac{1}{2}.
+\end{align*}
+Setting $a = \tfrac{E_1}{\nu_1}, b = \tfrac{E_2}{\nu_2}$ where wlog $a \leq b$ we note that
+\begin{equation}
+    f(s) = \sqrt{(s + a)(s + b)}
+\end{equation}
+which has two branches; we place the branch cut at $[-b, -a]$. We choose the branch where $f(s) \sim s$ as $s \to \infty$. It can be easily verified that f(z) is analytic in the upper half-plane and maps the upper half-plane back into itself. Hence, it is a Nevanlinna function (also called a Pick or Herglotz function) which, by the integral representation of Nevanlinna functions, takes the form
+\begin{equation}
+    f(z) = \alpha z + \beta + \int_\mathbb{R} \Big(\frac{1}{\lambda - z} - \frac{\lambda}{1 + \lambda^2}\Big)d\mu(\lambda).
+\end{equation}
+which we define as a function $f: \mathbb{C}^+ \to \mathbb{C}^+$ from the upper half-plane to itself. We can now read off the unknown coefficients and measure them in this representation. First, we note that $f(s) \sim s$ as $s \to \infty$ and hence $\alpha = 1$. Next we expand around $s = \infty$ the function
+\begin{align*}
+    \frac{f(s)}{s} = \sqrt{(1 + a/s)(1 + b/s)} = \sqrt{1 + \tfrac{a+b}{s} + \tfrac{ab}{s^2}} = 1 + \frac{a+b}{2}\frac{1}{s} + O(\tfrac{1}{s^2}).
+\end{align*}
+which shows that $\beta - \int_\mathbb{R} \tfrac{\lambda}{1 + \lambda^2}d\mu(\lambda) = \tfrac{a+b}{2}$. Finally, a well-known property of Nevanlinna functions is that the measure $\mu$ can be read off from the imaginary part of $f$ as
+\begin{equation}
+    \mu(\lambda) = \frac{1}{\pi}\Im[f(\lambda)] = \frac{1}{\pi}\chi_{\{\lambda \in [-b, -a]\}}\sqrt{-(\lambda + a)(\lambda + b)}.
+\end{equation}
+where here we have abused notation and denote $\mu$ by its density. Hence, the measure $\mu$ is the classical semicircle law.
+
+Finally, for $z \in \mathbb{C} \setminus [-b, -a]$ we can write
+\begin{equation}
+    f(z) = z + \frac{a + b}{2} - \frac{1}{\pi}\int_{a}^{b} \frac{\sqrt{(b - \lambda)(\lambda - a)}}{z + \lambda}d\lambda.
+\end{equation}
+Hence, in the time domain, taking the inverse Laplace transform, we find that the transfer function is given by the memory-dependent law
+\begin{equation}
+    \mathcal{L}^{-1}[f](t) = \frac{d}{dt} + \frac{a + b}{2}\delta(t) - \int_a^b \frac{\sqrt{(b - \lambda)(\lambda - a)}}{\pi}e^{-\lambda t} d\lambda.
+\end{equation}
+
+Finally, recalling the definition of the stiffness tensor~\cref{eq:stiff} we have
+\begin{equation}
+\begin{aligned}
+    \mathcal{L}^{-1}\Big[\sqrt{(E_1 + s\nu_1)(E_2 + s\nu_2)}\Big](t) &= \sqrt{\nu_1\nu_2}\frac{d}{dt} + \sqrt{\nu_1\nu_2}\frac{\tfrac{E_1}{\nu_1} + \tfrac{E_2}{\nu_2}}{2}\delta(t)\\
+    &\quad- \int_{\tfrac{E_1}{\nu_1}}^{\tfrac{E_2}{\nu_2}} \frac{\sqrt{(E_2 - \lambda\nu_2)(\mathbb{V}_1\lambda - E_1)}}{\pi}e^{-\lambda t} d\lambda.
+\end{aligned}
+\end{equation}
+Hence, we see that a fractional law can only arise in the limit that $E_1, \nu_2 \to 0$ or $E_2, \nu_1 \to 0$.

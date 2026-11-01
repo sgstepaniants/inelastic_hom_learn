@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.VectorMeasureDensity",
+  "solution_module": "KVApproximation.Analysis.VectorMeasureDensity",
+  "theorem_names": [
+    "KVApproximation.Analysis.scalarization_withDensity_apply"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

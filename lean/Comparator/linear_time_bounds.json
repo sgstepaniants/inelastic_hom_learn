@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.LinearTimeBounds",
+  "solution_module": "KVApproximation.Dynamics.LinearTimeBounds",
+  "theorem_names": [
+    "KVApproximation.Dynamics.linear_timeH1_trace_norm_le",
+    "KVApproximation.Dynamics.linear_timeH1_norm_le"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

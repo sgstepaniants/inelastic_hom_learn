@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.MicroscopicLaplace",
+  "solution_module": "KVApproximation.Homogenization.MicroscopicLaplace",
+  "theorem_names": [
+    "KVApproximation.Homogenization.microscopicTrajectory_laplace_equation",
+    "KVApproximation.Homogenization.microscopic_prepared_laplace_form",
+    "KVApproximation.Homogenization.microscopic_viscous_laplace_form"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

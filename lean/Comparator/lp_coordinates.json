@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.LpCoordinates",
+  "solution_module": "KVApproximation.Analysis.LpCoordinates",
+  "theorem_names": [
+    "KVApproximation.Analysis.lp_coordinates"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "challenge_module": "Challenges.LogPatchGeometry",
+  "solution_module": "KVApproximation.Approximation.LogPatchGeometry",
+  "theorem_names": [
+    "KVApproximation.Approximation.logPatch_bounds",
+    "KVApproximation.Approximation.continuous_logHat",
+    "KVApproximation.Approximation.logHat_nonneg",
+    "KVApproximation.Approximation.logHat_eq_zero_of_not_mem",
+    "KVApproximation.Approximation.localRate_mem_patch",
+    "KVApproximation.Approximation.localCoordinate_mem",
+    "KVApproximation.Approximation.localRate_localCoordinate"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

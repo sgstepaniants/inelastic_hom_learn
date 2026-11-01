@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.HomogenizedGreen",
+  "solution_module": "KVApproximation.Homogenization.HomogenizedGreen",
+  "theorem_names": [
+    "KVApproximation.Homogenization.green_balance_unique",
+    "KVApproximation.Homogenization.exists_homogenizedGreen"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

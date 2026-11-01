@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.ExponentialConvolution",
+  "solution_module": "KVApproximation.Analysis.ExponentialIntegralBounds",
+  "theorem_names": [
+    "KVApproximation.Analysis.norm_exponential_integral_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

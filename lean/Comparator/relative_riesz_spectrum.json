@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.RelativeRieszSpectrum",
+  "solution_module": "KVApproximation.OperatorTheory.RelativeRieszSpectrum",
+  "theorem_names": ["KVApproximation.OperatorTheory.relativeRiesz_spectrum_subset"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

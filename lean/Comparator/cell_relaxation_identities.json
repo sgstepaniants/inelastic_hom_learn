@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.CellRelaxationIdentities",
+  "solution_module": "KVApproximation.Homogenization.CellRelaxationIdentities",
+  "theorem_names": [
+    "KVApproximation.Homogenization.cellRelaxation_eq_id_of_field_eq",
+    "KVApproximation.Homogenization.cellRelaxation_eq_add_projection_of_ae_indicator"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

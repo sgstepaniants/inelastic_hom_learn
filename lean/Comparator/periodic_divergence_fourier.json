@@ -1,0 +1,8 @@
+{
+  "challenge_module": "Challenges.PeriodicDivergenceFourier",
+  "solution_module": "KVApproximation.Analysis.PeriodicDivergenceFourier",
+  "theorem_names": [
+    "KVApproximation.Analysis.HasPeriodicZeroDivergence.fourier_coefficient"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

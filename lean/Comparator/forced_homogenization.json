@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.ForcedHomogenization",
+  "solution_module": "KVApproximation.Homogenization.ForcedHomogenization",
+  "theorem_names": [
+    "KVApproximation.Homogenization.forced_homogenization"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

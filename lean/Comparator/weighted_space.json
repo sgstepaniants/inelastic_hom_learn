@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.WeightedSpace",
+  "solution_module": "KVApproximation.OperatorTheory.WeightedRealization",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.weightedSpace_realization"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

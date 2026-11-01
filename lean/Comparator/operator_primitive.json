@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.OperatorPrimitive",
+  "solution_module": "KVApproximation.Analysis.OperatorPrimitive",
+  "theorem_names": [
+    "KVApproximation.Analysis.intervalIntegrable_continuous_clm_apply",
+    "KVApproximation.Analysis.integral_deriv_clm_primitive_eq_sub_of_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.CaratheodoryHalfLine",
+  "solution_module": "KVApproximation.Dynamics.CaratheodoryHalfLine",
+  "theorem_names": [
+    "KVApproximation.Dynamics.exists_integral_solution_Ici"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

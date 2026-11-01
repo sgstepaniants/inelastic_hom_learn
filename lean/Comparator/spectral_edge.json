@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.SpectralEdge",
+  "solution_module": "KVApproximation.KelvinVoigt.SpectralEdgeDiscontinuity",
+  "theorem_names": ["KVApproximation.KelvinVoigt.spectral_edge_discontinuous"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

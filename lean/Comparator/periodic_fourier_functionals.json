@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.PeriodicFourierFunctionals",
+  "solution_module": "KVApproximation.Analysis.PeriodicFourierFunctionals",
+  "theorem_names": [
+    "KVApproximation.Analysis.exists_periodicFourierCoefficientCLM",
+    "KVApproximation.Analysis.euclideanL2_eq_of_fourier_integrals_eq"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

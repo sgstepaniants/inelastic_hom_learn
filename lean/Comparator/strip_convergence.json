@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.StripConvergence",
+  "solution_module": "KVApproximation.KelvinVoigt.StripConvergence",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.eLpNorm_stripElasticity_sub_identity",
+    "KVApproximation.KelvinVoigt.tendsto_eLpNorm_stripElasticity_sub_identity"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.WeightedResponse",
+  "solution_module": "KVApproximation.Approximation.WeightedResponseAnalytic",
+  "theorem_names": [
+    "KVApproximation.Approximation.weightedResponse_entire"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.RidgeApproximation",
+  "solution_module": "KVApproximation.Approximation.RidgeApproximation",
+  "theorem_names": ["KVApproximation.Approximation.exists_ridge_approximation"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

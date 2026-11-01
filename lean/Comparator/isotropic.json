@@ -1,0 +1,11 @@
+{
+  "challenge_module": "Challenges.Isotropic",
+  "solution_module": "KVApproximation.Tensor.IsotropicIdentities",
+  "theorem_names": [
+    "KVApproximation.Tensor.action_identityElasticity",
+    "KVApproximation.Tensor.action_volumetricElasticity",
+    "KVApproximation.Tensor.planeStress_bounds",
+    "KVApproximation.Tensor.planeStress_operatorNorm"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

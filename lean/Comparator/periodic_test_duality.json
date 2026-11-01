@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PeriodicTestDuality",
+  "solution_module": "KVApproximation.Analysis.PeriodicTestDuality",
+  "theorem_names": [
+    "KVApproximation.Analysis.eLpNorm_one_eq_iSup_periodicTestPairing"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

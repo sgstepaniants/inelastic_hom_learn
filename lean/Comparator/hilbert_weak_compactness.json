@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.HilbertWeakCompactness",
+  "solution_module": "KVApproximation.Analysis.HilbertWeakCompactness",
+  "theorem_names": ["KVApproximation.Analysis.exists_weakly_convergent_subsequence"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.FieldStability",
+  "solution_module": "KVApproximation.Tensor.FieldStability",
+  "theorem_names": ["KVApproximation.Tensor.coefficient_constraints_of_tendsto_L1"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

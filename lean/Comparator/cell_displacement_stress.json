@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.CellDisplacement",
+  "solution_module": "KVApproximation.Homogenization.CellDisplacementStress",
+  "theorem_names": [
+    "KVApproximation.Homogenization.periodicCellStress_apply_ae",
+    "KVApproximation.Homogenization.averagedCellStress_pairing"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

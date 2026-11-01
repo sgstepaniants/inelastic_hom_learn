@@ -1,0 +1,437 @@
+\section{\texorpdfstring{{Supporting Results for \cref{thm:ua}}}{Supporting Results for the Universal Approximation Theorem}}\label{app:ua}
+
+{Throughout this appendix, $\cM$ and $\cE$ are the admissible sets in \cref{thm:ua}, and {\color{blue}$\cT=[0,\infty)$}. We first establish the compactness and continuity properties used in \ref{item:ua_proof_s1}.}
+
+\begin{lemma}[{Strong Convergence of Multiplication Operators}]\label{lem:strong_conv_tensor}
+Let $\{\bA_n\}_{n\in\bN}\subset L^\infty_{\rm per}(\bT^d;\cV^4)$ satisfy
+$\sup_{n\in\bN}\ \|\bA_n\|_{L^\infty_{\rm per}}\le \kappa_{\bA}<\infty$ and $\bA_n\to\bA$ in $L^1_{\rm per}(\bT^d;\cV^4)$. Then $\bA\in L^\infty_{\rm per}$ with $\|\bA\|_{L^\infty_{\rm per}}\le \kappa_{\bA}$ and $\| (\bA_n-\bA)e\|_{L^2_{\rm per}}\to 0$ for every $e\in L^2_{\rm per}(\bT^d;\cV^{2})$.
+\end{lemma}
+
+\begin{proof}[\bf Proof]
+Since $\bA_n\to\bA$ in $L^1_{\rm per}(\bT^d;\cV^4)$ and $\bT^d$ has finite measure, a subsequence converges pointwise a.e.\ to $\bA$. Passing to the limit along this subsequence and using $\|\bA_n(y)\|_F\le \kappa_{\bA}$ a.e.\ gives $\|\bA(y)\|_F\le \kappa_{\bA}$ a.e. Hence $\bA\in L^\infty_{\rm per}$ and $\|\bA\|_{L^\infty_{\rm per}}\le \kappa_{\bA}$. Now take $e\in L^2_{\rm per}(\bT^d;\cV^2)$. By the subsequence criterion in $L^2_{\rm per}$, it suffices to show that every subsequence of $\{(\bA_n-\bA)e\}_{n\in\bN}$ has a further subsequence converging to $0$. Let $\bA_{n_j}$ be any subsequence. Since $\bA_{n_j}\to\bA$ in $L^1_{\rm per}$, after passing to a further subsequence we have $\bA_{n_j}(y)\to\bA(y)$ for a.e.\ $y\in\bT^d$. Therefore, $(\bA_{n_j}(y)-\bA(y))e(y)\to0$ for a.e.\ $y\in\bT^d$, and
+$\|((\bA_{n_j}(y)-\bA(y))e(y))\|_F^2
+\le \|\bA_{n_j}(y)-\bA(y)\|_F^2\|e(y)\|_F^2
+\le (2\kappa_{\bA})^2\|e(y)\|_F^2$ for a.e.\ $y\in\bT^d$. The right-hand side belongs to $L^1_{\rm per}(\bT^d)$, so the dominated convergence theorem gives $\|(\bA_{n_j}-\bA)e\|_{L^2_{\rm per}}\to0$ along the further subsequence. The subsequence criterion therefore implies $\|(\bA_n-\bA)e\|_{L^2_{\rm per}}\to0$.
+\end{proof}
+
+\begin{lemma}[Compactness of the Admissible Set $\cM$ in $L^2_{\mathrm{per}}$] \label{lem:bv_compact}
+The admissible set $\cM$ defined in \cref{eq:admissible_microstructure} is compact in $L^2_{\mathrm{per}}(\bT^d;\cV^{4})\times
+L^2_{\mathrm{per}}(\bT^d;\cV^{4})$.
+\end{lemma}
+
+\begin{proof}[\bf Proof]
+Let $\{(\bV_n,\bE_n)\}_{n\in\bN}\subset \cM$. Since $L^2_{\mathrm{per}}\times L^2_{\mathrm{per}}$ is a metric space, it suffices to prove sequential compactness. By \cref{eq:bv_bound_microstructure}, $\{\bV_n\}_{n\in\bN}$ and $\{\bE_n\}_{n\in\bN}$ are bounded in $\mathrm{BV}$. The compact embedding $\mathrm{BV}(\bT^d)\hookrightarrow L^1(\bT^d)$ gives a subsequence (not relabeled) and tensors $\bV,\bE\in L^1_{\mathrm{per}}(\bT^d;\cV^{4})$ such that
+$ \bV_n \to \bV \quad\text{in }L^1_{\mathrm{per}}(\bT^d;\cV^{4})$ and $\bE_n \to \bE \quad\text{in }L^1_{\mathrm{per}}(\bT^d;\cV^{4})$. Applying \cref{lem:strong_conv_tensor} gives $\bV,\bE\in L^\infty_{\mathrm{per}}(\bT^d;\cV^4)$, $\|\bV\|_{L^\infty_{\mathrm{per}}}\le \sqrt{d_{\cV^2}}\,\beta_{\rm visc}$, and $\|\bE\|_{L^\infty_{\mathrm{per}}}\le \sqrt{d_{\cV^2}}\,\beta_{\rm elas}$. Since $\|\bV_n-\bV\|_{L^\infty_{\mathrm{per}}}\le 2\sqrt{d_{\cV^2}}\,\beta_{\rm visc}$ and $\|\bE_n-\bE\|_{L^\infty_{\mathrm{per}}}\le 2\sqrt{d_{\cV^2}}\,\beta_{\rm elas}$, H\"older's inequality gives
+\begin{equation*}
+    \|\bV_n-\bV\|_{L^2_{\mathrm{per}}}^2
+\leq \|\bV_n-\bV\|_{L^\infty_{\mathrm{per}}}\|\bV_n-\bV\|_{L^1_{\mathrm{per}}}
+    \le 2\sqrt{d_{\cV^2}}\,\beta_{\rm visc}\|\bV_n-\bV\|_{L^1_{\mathrm{per}}}\to 0.
+\end{equation*}
+Therefore, $\bV_n\to \bV$ strongly in $L^2_{\mathrm{per}}(\bT^d;\cV^{4})$. The same argument gives $\bE_n\to \bE$ strongly in $L^2_{\mathrm{per}}(\bT^d;\cV^{4})$. Lower semicontinuity of total variation under $L^1$ convergence implies $\|\bV\|_{\mathrm{BV}}\le \liminf_{n\to\infty}\|\bV_n\|_{\mathrm{BV}}\leq \gamma_{\rm visc}$ and $\|\bE\|_{\mathrm{BV}}\le \liminf_{n\to\infty}\|\bE_n\|_{\mathrm{BV}}\leq \gamma_{\rm elas}$, so the BV bounds are preserved. For the uniform ellipticity bounds, \cref{lem:strong_conv_tensor} and Cauchy--Schwarz give, for every $e\in L^2_{\mathrm{per}}(\bT^d;\cV^2)$,
+\begin{equation*}
+    \left|\int_{\bT^d} \left(e(y),(\bV_n(y)-\bV(y))e(y)\right)_F\,\mathrm{d}y\right| \le \|e\|_{L^2_{\mathrm{per}}}\|(\bV_n-\bV)e\|_{L^2_{\mathrm{per}}} \to 0.
+\end{equation*}
+Therefore, $\|e\|_{\bV_n}\to \|e\|_{\bV}$, and passing to the limit in the uniform ellipticity bounds for $\bV_n$ leads to the same bounds for $\bV$. The same argument applies to $\bE$. Therefore $(\bV,\bE)\in \cM$.
+\end{proof}
+
+\begin{proposition}[{Strong Convergence of the Unit-Cell Operators}]\label{prop:strong_conv}
+Let $\{(\bV_n,\bE_n)\}_{n\in\bN}\subset\cM$ and assume that for some pair $(\bV,\bE)$, $\bV_n\to\bV$ and $\bE_n\to\bE$ in $L^1_{\rm per}(\bT^d;\cV^4)$. We have
+\begin{gather}
+    \|(\cP_{\bV_n}-\cP_{\bV})e\|_{L^2_{\rm per}}\to0,\quad \|(\cP_{\bE_n}-\cP_{\bE})e\|_{L^2_{\rm per}}\to0\quad\text{for every }e\in L^2_{\rm per}, \label{eq:P_conv}\\
+    \|(\cD_{\bV_n,\bE_n}-\cD_{\bV,\bE})e\|_{L^2_{\rm per}}\to0\quad\text{for every }e\in L^2_{\rm per}, \label{eq:D_conv}\\
+    \|(\cR_{\bV_n,\bE_n}-\cR_{\bV,\bE})\eta\|_{L^2_{\rm per}}\to0\quad\text{for every }\eta\in\cX, \label{eq:R_conv}
+\end{gather}
+Furthermore, for all $k\in\bN$, we have
+\begin{gather}
+\|(\cR^k_{\bV_n,\bE_n}-\cR^k_{\bV,\bE})\eta\|_{L^2_{\rm per}}\to0\quad\text{for every }\eta\in\cX. \label{eq:R_k_conv}
+\end{gather}
+\end{proposition}
+
+\begin{proof}[\bf Proof]
+{By \cref{lem:bv_compact}, the limit pair $(\bV,\bE)$ belongs to $\cM$. Let $e\in L^2_{\rm per}(\bT^d;\cV^2)$ and set $\eta_n\coloneqq\cP_{\bV_n}e$, $\eta\coloneqq\cP_{\bV}e$. By \cref{eqns:operator_P}, $(\eta_n-e,\psi)_{\bV_n}=0$ and $(\eta-e,\psi)_{\bV}=0$ for all $\psi\in\cX$. Choosing $\psi=\eta_n-\eta$, subtracting the two identities, and applying coercivity and Cauchy--Schwarz give
+\begin{equation*}
+    \alpha_{\rm visc}\|\eta_n-\eta\|_{L^2_{\rm per}}^2
+\le \|(\bV_n-\bV)(e-\eta)\|_{L^2_{\rm per}}\|\eta_n-\eta\|_{L^2_{\rm per}}.
+\end{equation*}
+If $\|\eta_n-\eta\|_{L^2_{\rm per}}>0$, we divide by this norm, and otherwise there is nothing to prove. Thus $\alpha_{\rm visc}\|\eta_n-\eta\|_{L^2_{\rm per}}
+\le \|(\bV_n-\bV)(e-\eta)\|_{L^2_{\rm per}}\to 0$ by \cref{lem:strong_conv_tensor}. Hence $\cP_{\bV_n}e\to\cP_{\bV}e$ in $L^2_{\rm per}$. The same argument with $\bE_n\to\bE$ gives $\cP_{\bE_n}e\to\cP_{\bE}e$, and therefore \cref{eq:P_conv,eq:D_conv} follow.}
+
+Now set $\cR_n\coloneqq\cR_{\bV_n,\bE_n}$ and $\cR\coloneqq\cR_{\bV,\bE}$. For $\eta\in\cX$, let $\varrho_n\coloneqq\cR_n\eta$ and $\varrho\coloneqq\cR\eta$. {Using \cref{eq:operator_L} for $\cR_n$ and $\cR$, choosing $\psi=\varrho_n-\varrho$, and arguing as above, we obtain
+\begin{equation}\label{eq:R_strong}
+\alpha_{\rm visc}\|\varrho_n-\varrho\|_{L^2_{\rm per}}
+\le \|(\bE_n-\bE)\eta\|_{L^2_{\rm per}}+\|(\bV_n-\bV)\varrho\|_{L^2_{\rm per}}\to 0,
+\end{equation}
+again by \cref{lem:strong_conv_tensor}. Thus \cref{eq:R_conv} holds.
+
+Testing the identity $(\cR_n\eta,\psi)_{\bV_n}=(\eta,\psi)_{\bE_n}$ from \cref{eq:operator_L} with $\psi=\cR_n\eta$ and using the coercivity of $\bV_n$ together with the upper bound on $\bE_n$ gives
+\begin{equation}\label{eq:R_uniform_bound}
+\sup_{n\in\bN}\|\cR_n\|_{\cL(\cX)} \le \beta_{\rm elas}/\alpha_{\rm visc}.
+\end{equation}
+The convergence of $\cR_n^k$ follows by induction on $k$. The case $k=1$ is \cref{eq:R_strong}. If the claim holds for $k-1$, then $\cR_n^k\eta-\cR^k\eta=\cR_n\bigl(\cR_n^{k-1}\eta-\cR^{k-1}\eta\bigr)+(\cR_n-\cR)\cR^{k-1}\eta$. The first term tends to $0$ by the inductive hypothesis and \cref{eq:R_uniform_bound}, while the second tends to $0$ by \cref{eq:R_strong}. Therefore, \cref{eq:R_k_conv} holds.}
+\end{proof}
+
+
+\begin{corollary}[Continuity of the Homogenized Tensors]\label{cor:continuity_tensors}
+Let $\{(\bV_n,\bE_n)\}_{n\in\bN}\subset\cM$ and assume that for some pair $(\bV,\bE)$, $\bV_n\to\bV$ and $\bE_n\to\bE$ in $L^1_{\rm per}(\bT^d;\cV^4)${.} Then $(\bV,\bE)\in\cM$ and we have $\bV^{\mathrm{hom}}(\bV_n)\to \bV^{\mathrm{hom}}(\bV)$ and $\bE^{\mathrm{hom}}(\bE_n)\to \bE^{\mathrm{hom}}(\bE)$.
+\end{corollary}
+
+\begin{proof}[\bf Proof]
+By \cref{lem:bv_compact}, the limit pair $(\bV,\bE)$ belongs to $\cM$. Let $\overline e_1,\overline e_2\in\cV^2$. Using \cref{eq:homogenized_tensors} and adding and subtracting $(\overline{e}_1,\cP_{\bV}^{\perp}\overline e_2)_{\bV_n}$, we obtain
+\begin{align*}
+    \bigl| \left(\overline e_1, \bV^{\mathrm{hom}}(\bV_n)\overline{e}_2\right)_F-\left(\overline e_1,\bV^{\mathrm{hom}}(\bV)\overline e_2\right)_F\bigr|\le &\bigl|(\overline e_1,(\cP_{\bV_n}^{\perp}-\cP_{\bV}^{\perp})\overline e_2)_{\bV_n}\bigr|\\
+    &+\left|\int_{\bT^d}\left(\overline e_1,(\bV_n-\bV)[\cP_{\bV}^{\perp}\overline e_2](y)\right)_F \,\mathrm{d}y\right|.
+\end{align*}
+The first term is bounded by $\|\bV_n\|_{L^\infty_{\rm per}}\|\overline e_1\|_F\|(\cP_{\bV_n}-\cP_{\bV})\overline e_2\|_{L^2_{\rm per}}$ and therefore converges to $0$ by the uniform $L^\infty_{\rm per}$ bound on $\bV_n$ and \cref{prop:strong_conv}. The second term is bounded by $\|(\bV_n-\bV)\overline e_1\|_{L^2_{\rm per}}\|\cP_{\bV}^{\perp}\overline e_2\|_{L^2_{\rm per}}$ and also converges to $0$ by \cref{lem:strong_conv_tensor}. Therefore, $\left(\overline e_1,\bV^{\mathrm{hom}}(\bV_n)\overline e_2\right)_F\to {\left(\overline e_1,\bV^{\mathrm{hom}}(\bV)\overline e_2\right)_F}$ for all $\overline e_1,\overline e_2\in\cV^2$. Since $\cV^2$ is finite-dimensional, this is equivalent to $\bV^{\mathrm{hom}}(\bV_n)\to \bV^{\mathrm{hom}}(\bV)$ in $\cV^4$. The argument for $\bE^{\mathrm{hom}}$ is identical.
+\end{proof}
+
+\begin{lemma}[Weak Convergence of the Spectral Measure]
+\label{lem:weak_convergence}
+Suppose $\{(\bV_n,\bE_n)\}_{n\in\bN}\subset\cM$ satisfies $\bV_n\to\bV$ and $\bE_n\to\bE$ in $L^1_{\mathrm{per}}(\bT^d;\cV^{4})$. Then the sequence of measures $\nu_{\bV_n,\bE_n}$, as defined by \cref{eq:nu_def}, converges weakly to $\nu_{\bV,\bE}$. That is, for any continuous function $f \in C(\cI)$ with $\cI\coloneqq[\alpha_{\rm elas}/\beta_{\rm visc}, \beta_{\rm elas}/\alpha_{\rm visc}]$ and any $\overline{e}_1, \overline{e}_2 \in \cV^{2}$,
+\begin{equation*}
+    \lim_{n \to \infty} \int_{\cI} f(\lambda) \, \mathrm{d}(\overline{e}_1,\nu_{\bV_n,\bE_n}(\lambda)\overline{e}_2)_F = \int_{\cI} f(\lambda) \, \mathrm{d}(\overline{e}_1,\nu_{\bV,\bE}(\lambda)\overline{e}_2)_F.
+\end{equation*}
+\end{lemma}
+
+\begin{proof}[\bf Proof]
+By \cref{lem:bv_compact}, the limit pair $(\bV,\bE)$ belongs to $\cM$. Write $\nu_n\coloneqq \nu_{\bV_n,\bE_n}$, $\nu\coloneqq \nu_{\bV,\bE}$, $\cR_n\coloneqq \cR_{\bV_n,\bE_n}$, $\cR\coloneqq \cR_{\bV,\bE}$, $\cD_n\coloneqq \cD_{\bV_n,\bE_n}$, and $\cD\coloneqq \cD_{\bV,\bE}$. For $g\in C(\cI)$, let $g(\cR_n)\coloneqq \int_{\cI} g(\lambda)\,\mathrm{d}\Pi_{\bV_n,\bE_n}(\lambda)$, and define $g(\cR)$ analogously. Then \cref{eq:nu_def} gives $\int_{\cI} f(\lambda)\,\mathrm{d}(\overline e_1,\nu_n\overline e_2)_F
+=\Bigl(f(\cR_n)\cD_n\overline e_1,\cD_n\overline e_2\Bigr)_{\bV_n}$,
+and the same identity holds with $n$ replaced by the limit pair $(\bV,\bE)$. Therefore, it suffices to prove
+\begin{equation}\label{eq:weak_converge_g}
+    \Bigl(f(\cR_n)\cD_n\overline e_1,\cD_n\overline e_2\Bigr)_{\bV_n}\to \Bigl(f(\cR)\cD\overline e_1,\cD\overline e_2\Bigr)_{\bV}.
+\end{equation}
+
+{For any $\varepsilon_p>0$, the Weierstrass approximation theorem gives a polynomial $p$ such that
+\begin{equation*}
+\sup_{\lambda\in\cI}|f(\lambda)-p(\lambda)|\le\varepsilon_p.
+\end{equation*}
+}
+Adding and subtracting the polynomial terms gives
+\begin{align}
+&\left|\Bigl(f(\cR_n)\cD_n\overline e_1,\cD_n\overline e_2\Bigr)_{\bV_n}-\Bigl(f(\cR)\cD\overline e_1,\cD\overline e_2\Bigr)_{\bV}\right|\nonumber\\
+&\le \left|\Bigl((f-p)(\cR_n)\cD_n\overline e_1,\cD_n\overline e_2\Bigr)_{\bV_n}\right|
++\left|\Bigl(p(\cR_n)\cD_n\overline e_1,\cD_n\overline e_2\Bigr)_{\bV_n}-\Bigl(p(\cR)\cD\overline e_1,\cD\overline e_2\Bigr)_{\bV}\right|\nonumber\\
+&\qquad +\left|\Bigl((p-f)(\cR)\cD\overline e_1,\cD\overline e_2\Bigr)_{\bV}\right|.\label{eq:weak_converge_decomposed}
+\end{align}
+For any $\eta\in\cX$,
+
+\begin{equation*}
+    \|(f-p)(\cR_n)\eta\|_{\bV_n}^2
+=\int_{\cI}|f(\lambda)-p(\lambda)|^2\,\mathrm{d}(\Pi_{\bV_n,\bE_n}(\lambda)\eta,\eta)_{\bV_n}
+\le \varepsilon_p^2\|\eta\|_{\bV_n}^2,
+\end{equation*}
+and the same estimate holds with $(\cR_n,\bV_n,\Pi_{\bV_n,\bE_n})$ replaced by $(\cR,\bV,\Pi_{\bV,\bE})$. {Cauchy--Schwarz and \cref{eq:mismatch_bound} therefore show} that the first and third terms in \cref{eq:weak_converge_decomposed} are each bounded by $\varepsilon_p\beta_{\rm visc}\beta_{\rm elas}\|\overline e_1\|_F\|\overline e_2\|_F/\alpha_{\rm elas}$.
+
+For the polynomial term, set $\phi_n\coloneqq p(\cR_n)\cD_n\overline e_1$, $\phi\coloneqq p(\cR)\cD\overline e_1$, $\psi_n\coloneqq \cD_n\overline e_2$, and $\psi\coloneqq \cD\overline e_2$. Then the middle term in \cref{eq:weak_converge_decomposed} is $| (\phi_n,\psi_n)_{\bV_n}-(\phi,\psi)_{\bV}|$. By \cref{eq:D_conv}, $\psi_n\to\psi$ strongly in $L^2_{\rm per}$. If $p(\lambda)=\sum_{k=0}^K c_k\lambda^k$, then $\phi_n-\phi=\sum_{k=0}^K c_k\bigl(\cR_n^k\cD_n\overline e_1-\cR^k\cD\overline e_1\bigr)$. For $k=0,\dots,K$,
+\begin{equation*}
+\cR_n^k\cD_n\overline e_1-\cR^k\cD\overline e_1
+=\cR_n^k(\cD_n-\cD)\overline e_1+(\cR_n^k-\cR^k)\cD\overline e_1.
+\end{equation*}
+The first term tends to $0$ because \cref{eq:D_conv} gives $\cD_n\overline e_1\to \cD\overline e_1$ in $L^2_{\rm per}$ and \cref{eq:R_uniform_bound} implies that $\{\cR_n^k\}_n$ is uniformly bounded on $\cX$ for fixed $k$. The second term tends to $0$ by \cref{eq:R_k_conv} with $\eta=\cD\overline e_1\in\cX$. Hence $\phi_n\to\phi$ strongly in $L^2_{\rm per}$. {We now write}
+\begin{align*}
+    (\phi_n,\psi_n)_{\bV_n}-(\phi,\psi)_{\bV}
+    &=((\phi_n-\phi),\psi_n)_{\bV_n}+\int_{\bT^d}\phi(y):(\bV_n(y)-\bV(y)):\psi_n(y)\,\mathrm{d}y\\
+    &\qquad +(\phi,(\psi_n-\psi))_{\bV}.
+\end{align*}
+The first and third terms tend to $0$ by Cauchy--Schwarz, the uniform $L^\infty_{\rm per}$ bounds on $\bV_n$ and $\bV$, and the strong $L^2_{\rm per}$ convergence of $\phi_n$ and $\psi_n$. The integral term tends to $0$ by \cref{lem:strong_conv_tensor}, since $\bV_n\to\bV$ in $L^1_{\rm per}$ and $(\psi_n)$ is bounded in $L^2_{\rm per}$. Consequently, the polynomial term in \cref{eq:weak_converge_decomposed} converges to $0$. Taking $\limsup_{n\to\infty}$ in \cref{eq:weak_converge_decomposed} and then letting $\varepsilon_p\to0$ gives \cref{eq:weak_converge_g}.
+\end{proof}
+
+{\color{blue}
+We next construct the Prony-series approximation used in \ref{item:ua_proof_s2}.
+
+\begin{lemma}[Weighted Spectral Measure]\label{lem:weighted_spectral_measure}
+Set $\lambda_{\min}\coloneqq\alpha_{\rm elas}/\beta_{\rm visc}$, $\lambda_{\max}\coloneqq\beta_{\rm elas}/\alpha_{\rm visc}$, and $\cI\coloneqq[\lambda_{\min},\lambda_{\max}]$. For $(\bV,\bE)\in\cM$, define the positive semidefinite tensor-valued measure
+\begin{equation}\label{eq:weighted_measure_def}
+\mathrm d\mu_{\bV,\bE}(\lambda)\coloneqq\frac{\lambda}{\beta_{\rm elas}/\beta_{\rm visc}+\lambda}\,\mathrm d\nu_{\bV,\bE}(\lambda).
+\end{equation}
+Then
+\begin{equation}\label{eq:weighted_measure_mass}
+\sup_{(\bV,\bE)\in\cM}\|\mu_{\bV,\bE}\|_{\mathrm{TV}(\cI)}<2d_{\cV^2}\beta_{\rm visc}.
+\end{equation}
+Moreover, $(\bV,\bE)\mapsto\mu_{\bV,\bE}$ is weakly continuous under $L^1_{\rm per}$ convergence in $\cM$.
+\end{lemma}
+
+\begin{proof}[\bf Proof]
+By \cref{eq:nu_def}, $\nu_{\bV,\bE}(B)$ is positive semidefinite for every Borel set $B\subset\cI$, so the same holds for $\mu_{\bV,\bE}(B)$. For $s>0$, let $\bA_s=s^{-1}\bE+\bV$, as in the proof of \cref{thm:viscoelastic_homogenization}. The Laplace-transform identity there and \cref{eq:K_laplace} give
+\begin{equation*}
+\int_{\cI}\frac{\lambda}{s+\lambda}\,\mathrm d\nu_{\bV,\bE}(\lambda)
+=\hat{\bK}(s)=\bA_s^{\rm hom}-s^{-1}\bE^{\rm hom}-\bV^{\rm hom}.
+\end{equation*}
+The variational characterization of static homogenization, with a constant trial strain, gives $(\overline e,\bA_s^{\rm hom}\overline e)_F\le(s^{-1}\beta_{\rm elas}+\beta_{\rm visc})\|\overline e\|_F^2$. Since periodic strain correctors have zero mean, the same characterization gives $(\overline e,\bV^{\rm hom}\overline e)_F\ge\alpha_{\rm visc}\|\overline e\|_F^2$ and $(\overline e,\bE^{\rm hom}\overline e)_F\ge\alpha_{\rm elas}\|\overline e\|_F^2$. At $s=\beta_{\rm elas}/\beta_{\rm visc}$, these bounds imply
+\begin{equation*}
+(\overline e,\mu_{\bV,\bE}(\cI)\overline e)_F\le\left(2\beta_{\rm visc}-\alpha_{\rm visc}-\frac{\beta_{\rm visc}\alpha_{\rm elas}}{\beta_{\rm elas}}\right)\|\overline e\|_F^2.
+\end{equation*}
+The inequality $\|\bA\|_F\le\operatorname{tr}\bA$ for positive semidefinite $\bA\in\cV^4$ gives $\|\mu_{\bV,\bE}\|_{\mathrm{TV}(\cI)}\le\operatorname{tr}\mu_{\bV,\bE}(\cI)$, as in the proof of \cref{prop:spectral_rep}. Taking the trace in the preceding bound and using $\alpha_{\rm visc},\alpha_{\rm elas}>0$ proves \cref{eq:weighted_measure_mass}. Finally, for every $f\in C(\cI)$, the function $\lambda\mapsto f(\lambda)\lambda/(\beta_{\rm elas}/\beta_{\rm visc}+\lambda)$ is continuous. Weak continuity follows from \cref{lem:weak_convergence}.
+\end{proof}
+
+\begin{lemma}[Weighted Relaxation Response]\label{lem:weighted_response}
+For $\overline e\in\cE$, $t\ge0$, and $\lambda\in\bC$, define
+\begin{equation}\label{eq:weighted_response_def}
+\cW_{\overline e,t}(\lambda)\coloneqq\left(\frac{\beta_{\rm elas}}{\beta_{\rm visc}}+\lambda\right)\int_0^t\exp(-\lambda(t-s))\dot{\overline e}(s)\,\mathrm ds.
+\end{equation}
+For each fixed $\overline e$ and $t$, every tensor component of $\cW_{\overline e,t}(\lambda)$ is an entire function of $\lambda$. If $\operatorname{Re}\lambda>0$, then
+\begin{equation}\label{eq:weighted_response_bound}
+\sup_{\overline e\in\cE}\sup_{t\ge0}\|\cW_{\overline e,t}(\lambda)\|_F\le\left(1+\frac{|\lambda|}{\operatorname{Re}\lambda}\right)\frac{\delta_{\rm stress}}{\beta_{\rm visc}}.
+\end{equation}
+Here the Frobenius norm for complex tensors is $\|Z\|_F=(\sum_{i,j=1}^d|Z_{ij}|^2)^{1/2}$.
+\end{lemma}
+
+\begin{proof}[\bf Proof]
+For each $t\ge0$, differentiation under the integral on the finite interval $[0,t]$ proves analyticity. Write $r=\operatorname{Re}\lambda>0$, $c=|\lambda|/r\ge1$, and $z(t)=\int_0^t\exp(-\lambda(t-s))\dot{\overline e}(s)\,\mathrm ds$. Integration by parts gives
+\begin{equation*}
+z(t)=\overline e(t)-\exp(-\lambda t)\overline e(0)-\lambda\int_0^t\exp(-\lambda(t-s))\overline e(s)\,\mathrm ds.
+\end{equation*}
+Consequently, $\|z(t)\|_F\le[1+\exp(-rt)+c(1-\exp(-rt))]\|\overline e\|_{L^\infty}\le(1+c)\|\overline e\|_{L^\infty}$. By the definition of $z$, we also have $|\lambda|\|z(t)\|_F\le c\|\dot{\overline e}\|_{L^\infty}$. Hence
+\begin{align*}
+\|\cW_{\overline e,t}(\lambda)\|_F
+\le \frac{\beta_{\rm elas}}{\beta_{\rm visc}}(1+c)\|\overline e\|_{L^\infty}+c\|\dot{\overline e}\|_{L^\infty}\le\frac{1+c}{\beta_{\rm visc}}\left(\beta_{\rm elas}\|\overline e\|_{L^\infty}+\beta_{\rm visc}\|\dot{\overline e}\|_{L^\infty}\right).
+\end{align*}
+The definition of $\cE$ gives \cref{eq:weighted_response_bound}.
+\end{proof}
+
+\begin{definition}[Prony Series by Local Chebyshev Interpolation]\label{def:prony_series_approximation}
+A Prony-series approximation of $\bK(\bullet;\bV,\bE)$ is a kernel
+\begin{equation}\label{eq:Kn_def}
+\bK^{(n)}(t;\bV,\bE)\coloneqq\sum_{k=1}^n\bK_k(\bV,\bE)\exp(-\lambda_k t),
+\end{equation}
+with microstructure-independent rates $\lambda_k\in\cI$. If $\lambda_{\min}=\lambda_{\max}$, set $n=1$, $\lambda_1=\lambda_{\min}$, and
+\begin{equation}\label{eq:Ki_def_degenerate}
+\bK_1(\bV,\bE)\coloneqq\int_{\cI}\lambda\,\mathrm d\nu_{\bV,\bE}(\lambda).
+\end{equation}
+Otherwise, set $\mathsf R=\ln(\lambda_{\max}/\lambda_{\min})$, $L=\lceil\mathsf R\rceil$, $h=\mathsf R/L\le1$, and $J=L+1$. For $j=1,\dots,J$, define
+\begin{gather*}
+\tau_j=(j-1)h,\qquad a_j=\max\{0,\tau_j-h\},\qquad b_j=\min\{\mathsf R,\tau_j+h\},\\
+\theta_j(\lambda)=\max\left\{1-\frac{|\ln(\lambda/\lambda_{\min})-\tau_j|}{h},0\right\},\qquad\lambda\in\cI.
+\end{gather*}
+The functions $\theta_j$ are continuous and nonnegative, satisfy $\sum_{j=1}^J\theta_j=1$ on $\cI$, and are supported on $\cI_j=[\lambda_{\min}\exp(a_j),\lambda_{\min}\exp(b_j)]$. For the reference coordinate $x\in[-1,1]$, define the local changes of variables by
+\begin{equation}\label{eq:log_spectral_coordinate}
+g_j(x)=\lambda_{\min}\exp\left(\frac{a_j+b_j}{2}+\frac{b_j-a_j}{2}x\right),\qquad
+\psi_j(\lambda)=\frac{2\ln(\lambda/\lambda_{\min})-a_j-b_j}{b_j-a_j}.
+\end{equation}
+For $m\in\bN$, let $x_i=\cos((2i-1)\pi/(2m))$, $i=1,\dots,m$, be the Chebyshev nodes, and let $\ell_i$ be the associated Lagrange basis polynomials. Set
+\begin{equation}\label{eq:Ki_def}
+\lambda_{ji}=g_j(x_i),\qquad
+\bK_{ji}(\bV,\bE)=\left(\frac{\beta_{\rm elas}}{\beta_{\rm visc}}+\lambda_{ji}\right)\int_{\cI}\theta_j(\lambda)\ell_i(\psi_j(\lambda))\,\mathrm d\mu_{\bV,\bE}(\lambda).
+\end{equation}
+Use the single index $k=(j-1)m+i$, so that $n=Jm$, $\lambda_k=\lambda_{ji}$, and $\bK_k=\bK_{ji}$.
+\end{definition}
+
+\begin{lemma}[Local Approximation of the Weighted Response]\label{lem:uniform_prony_discretization_beta}
+Suppose $\lambda_{\min}<\lambda_{\max}$, and use the response in \cref{eq:weighted_response_def} and the maps and nodes in \cref{def:prony_series_approximation}. For $\overline e\in\cE$, $t\ge0$, and $j=1,\dots,J$, set $f_j(x)=\cW_{\overline e,t}(g_j(x))$. The interpolant $p_j(x)=\sum_{i=1}^m\ell_i(x)f_j(x_i)$ has degree at most $m-1$ and satisfies
+\begin{equation}\label{eq:chebyshev_interp_bound_iv}
+\sup_{\overline e\in\cE}\sup_{t\ge0}\max_{1\le j\le J}\sup_{x\in[-1,1]}\|f_j(x)-p_j(x)\|_F
+\le\frac{4\delta_{\rm stress}}{\beta_{\rm visc}}\left(1+\sec\frac34\right)2^{-(m-1)}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}[\bf Proof]
+Let $\cB_2$ be the closed Bernstein ellipse with parameter $2$. Its imaginary semiaxis is $3/4$. Since $(b_j-a_j)/2\le h\le1$, \cref{eq:log_spectral_coordinate} gives $|\arg g_j(z)|\le3/4$ on $\cB_2$. In particular, $\operatorname{Re}g_j(z)>0$ and $|g_j(z)|/\operatorname{Re}g_j(z)\le\sec(3/4)$. By \cref{lem:weighted_response}, $f_j$ is analytic on a neighborhood of $\cB_2$ and
+\begin{equation*}
+\sup_{z\in\cB_2}\|f_j(z)\|_F\le\frac{\delta_{\rm stress}}{\beta_{\rm visc}}\left(1+\sec\frac34\right).
+\end{equation*}
+Denote this bound by $M_f$. For any complex linear functional $\varphi$ of norm one, the Chebyshev coefficients $c_k$ of $\varphi\circ f_j$ satisfy $|c_k|\le2M_f2^{-k}$ \cite[Theorem 8.1]{trefethen2019approximation}. Let $I_m$ denote interpolation at the roots of $T_m$. Each Chebyshev polynomial $T_k$ interpolates to zero or to $\pm T_r$ for some $r<m$, so $\|I_mT_k\|_{L^\infty(-1,1)}\le1$. Since interpolation is exact for $k<m$,
+\begin{equation*}
+\|\varphi\circ f_j-I_m(\varphi\circ f_j)\|_{L^\infty(-1,1)}
+\le2\sum_{k=m}^{\infty}|c_k|
+\le4M_f2^{-(m-1)}.
+\end{equation*}
+Taking the supremum over $\varphi$ proves \cref{eq:chebyshev_interp_bound_iv}.
+\end{proof}
+
+\begin{proposition}[Uniform Approximation by the Prony-Series Internal-Variable Model]\label{prop:uniform_prony_homogenized_model}
+Let the rates and coefficients be given by \cref{def:prony_series_approximation}. Each coefficient $\bK_k$ depends continuously on $(\bV,\bE)\in\cM$ in the $L^1_{\rm per}$ topology. For $(\bV,\bE)\in\cM$ and $\overline e\in\cE$, define $q_k\in W^{1,\infty}(\cT;\cV^2)$ by
+\begin{equation}\label{eq:q_i_ode}
+\dot q_k(t)+\lambda_k q_k(t)=\bK_k(\bV,\bE)\dot{\overline e}(t),\qquad q_k(0)=0,\qquad k=1,\dots,n,
+\end{equation}
+and set
+\begin{equation}\label{eq:prony_homogenized_model}
+\overline\sigma_{\rm IV}(t)=\bV^{\rm hom}(\bV)\dot{\overline e}(t)+\bE^{\rm hom}(\bE)\overline e(t)+\sum_{k=1}^n q_k(t).
+\end{equation}
+Denote the resulting constitutive model by $\cH_{\rm IV}$. This is the homogenized constitutive law with $\bK$ replaced by $\bK^{(n)}$. If $\lambda_{\min}=\lambda_{\max}$, the approximation is exact with $n=1$. Otherwise, with $n=Jm$,
+\begin{align}\label{eq:prony_homogenized_error_uniform}
+\sup_{(\bV,\bE)\in\cM}\sup_{\overline e\in\cE}\esssup_{t\in\cT}\|\cH(\{\overline e(s)\}_{s\in[0,t]};\bV,\bE)-\overline\sigma_{\rm IV}(t)\|_F
+&<\kappa_{\rm IV}2^{-(m-1)},\\[-1ex]
+\kappa_{\rm IV}&\coloneqq8d_{\cV^2}\left(1+\sec\frac34\right)\delta_{\rm stress}.\nonumber
+\end{align}
+\end{proposition}
+
+\begin{proof}[\bf Proof]
+For a singleton interval, coefficient continuity follows from \cref{eq:Ki_def_degenerate,lem:weak_convergence}. Otherwise, each function $\lambda\mapsto\theta_j(\lambda)\ell_i(\psi_j(\lambda))$ is continuous on $\cI$, and the rates are independent of $(\bV,\bE)$. Coefficient continuity then follows from \cref{eq:Ki_def,lem:weighted_spectral_measure}.
+
+Duhamel's formula gives
+\begin{equation}\label{eq:q_i_duhamel}
+q_k(t)=\int_0^t\exp(-\lambda_k(t-s))\bK_k(\bV,\bE)\dot{\overline e}(s)\,\mathrm ds.
+\end{equation}
+Since $\lambda_k>0$ and $\dot{\overline e}\in L^\infty$, this solution is bounded, and \cref{eq:q_i_ode} bounds its derivative. Summing \cref{eq:q_i_duhamel} and using \cref{eq:Kn_def} proves the asserted constitutive representation. If $\cI$ is a singleton, \cref{eq:Ki_def_degenerate,eq:K_laplace} give exactness.
+
+For a nondegenerate interval, abbreviate $\mu=\mu_{\bV,\bE}$. By \cref{eq:weighted_measure_def,eq:K_laplace}, the memory contribution to the stress equals $\int_{\cI}\mathrm d\mu(\lambda)\cW_{\overline e,t}(\lambda)$, where the tensor measure acts on the vector-valued integrand. The coefficients in \cref{eq:Ki_def} give the corresponding contribution in the Prony-series model, $\sum_{j=1}^J\int_{\cI}\theta_j(\lambda)\,\mathrm d\mu(\lambda)p_j(\psi_j(\lambda))$. Hence their difference is
+\begin{equation*}
+\sum_{j=1}^J\int_{\cI}\theta_j(\lambda)\,\mathrm d\mu(\lambda)\bigl[f_j(\psi_j(\lambda))-p_j(\psi_j(\lambda))\bigr].
+\end{equation*}
+The interpolation bound applies on the support of $\theta_j$, where $\psi_j(\lambda)\in[-1,1]$. If $|\mu|$ denotes the total variation measure, the norm of this difference is at most
+\begin{align*}
+\frac{4\delta_{\rm stress}}{\beta_{\rm visc}}\left(1+\sec\frac34\right)2^{-(m-1)}\sum_{j=1}^J\int_{\cI}\theta_j(\lambda)\,\mathrm d|\mu|(\lambda)
+&=\frac{4\delta_{\rm stress}}{\beta_{\rm visc}}\left(1+\sec\frac34\right)2^{-(m-1)}\|\mu\|_{\mathrm{TV}(\cI)}\\
+&<\kappa_{\rm IV}2^{-(m-1)},
+\end{align*}
+by the partition of unity and the uniform mass bound \cref{eq:weighted_measure_mass}. The instantaneous terms coincide, so this proves \cref{eq:prony_homogenized_error_uniform}.
+\end{proof}
+
+}
+
+{
+We now approximate the stress and kinetic responses of the Prony-series model and bound the resulting errors in the internal variables and stress, as required in \ref{item:ua_proof_s3}.
+
+\begin{lemma}[Uniform Bound for the Internal Variable]\label{lem:ua_step3_targets}
+{\color{blue}Choose an approximation from \cref{def:prony_series_approximation} with $n$ terms}, and let $\xi_{\rm IV}\coloneqq\mathsf{vec}_2^{(n)}(q_1,\dots,q_n)\in\bR^{nd_{\cV^2}}$, where the $q_k$ solve \cref{eq:q_i_ode} and $\mathsf{vec}_2^{(n)}$ concatenates their Mandel vectors. There is a constant $\delta_{\xi_{\rm IV}}>0$ such that
+\begin{equation*}
+\sup_{(\bV,\bE)\in\cM}\sup_{\overline e\in\cE}\|\xi_{\rm IV}\|_{L^\infty}\le\delta_{\xi_{\rm IV}}.
+\end{equation*}
+\end{lemma}
+
+\begin{proof}[\bf Proof]
+By \cref{eq:q_i_duhamel}, $\lambda_k\ge\lambda_{\min}>0$, and \cref{eq:admissible_strain},
+\begin{equation*}
+\|q_k(t)\|_F\le\frac{\delta_{\rm stress}}{\beta_{\rm visc}\lambda_{\min}}\|\bK_k(\bV,\bE)\|_F,\qquad k=1,\dots,n.
+\end{equation*}
+{\color{blue}Continuity of each coefficient and compactness of $\cM$ (\cref{prop:uniform_prony_homogenized_model,lem:bv_compact}) give $C_k\coloneqq\sup_{(\bV,\bE)\in\cM}\|\bK_k(\bV,\bE)\|_F<\infty$. Since $\mathsf{vec}_2^{(n)}$ is an isometry, one may take
+\begin{equation*}
+\delta_{\xi_{\rm IV}}=1+\frac{\delta_{\rm stress}}{\beta_{\rm visc}\lambda_{\min}}\left(\sum_{k=1}^n C_k^2\right)^{1/2}.
+\end{equation*}}
+\end{proof}
+}
+
+\begin{lemma}[Uniform Approximation by Neural Operator Response Mappings]\label{lem:ua_step3_no}
+{{\color{blue}Consider an approximation from \cref{def:prony_series_approximation} with $n$ terms}. For $\eta_{\xi}>0$, let} $\delta_{\xi_{\mathrm{IV}}}>0$ be given by \cref{lem:ua_step3_targets}. For $\xi\in\bR^{nd_{\cV^2}}$, write $\xi=\mathsf{vec}_2^{(n)}(q_1,\dots,q_n)$ with $q_1,\dots,q_n\in\cV^2$, and define the stress and kinetic responses associated with the Prony-series internal-variable model in \cref{prop:uniform_prony_homogenized_model} by
+\begin{align*}
+\cF_{\mathrm{IV}}(\overline{e},\dot{\overline{e}},\xi;\bV,\bE)
+&\coloneqq
+\bV^{\rm hom}(\bV)\dot{\overline{e}}
++\bE^{\rm hom}(\bE)\overline{e}
++\sum_{i=1}^{n} q_i,\\
+\cG_{\mathrm{IV}}(\dot{\overline{e}},\xi;\bV,\bE)
+&\coloneqq
+\mathsf{vec}_2^{(n)}\big(\bK_1(\bV,\bE)\dot{\overline{e}}-\lambda_1 q_1,\dots,
+\bK_n(\bV,\bE)\dot{\overline{e}}-\lambda_n q_n\big).
+\end{align*}
+{Define the compact input set
+\begin{equation*}
+\begin{aligned}
+\cK_{\rm vec}\coloneqq\bigl\{(\overline e,\dot{\overline e},\xi)\in\cV^2\times\cV^2\times\bR^{nd_{\cV^2}}\ \big|\ &\beta_{\rm elas}\|\overline e\|_F+\beta_{\rm visc}\|\dot{\overline e}\|_F\le\delta_{\rm stress},\|\xi\|\le\delta_{\xi_{\rm IV}}+\eta_\xi\bigr\}.
+\end{aligned}
+\end{equation*}
+}
+Then, for any $\varepsilon_{\cF},\varepsilon_{\cG}>0$, there exist response mappings $(\cF_{\mathrm{NO}},\cG_{\mathrm{NO}})\in \mathfrak{F}(nd_{\cV^2})\times \mathfrak{G}(nd_{\cV^2})$ such that
+    \begin{align}
+    \sup_{\substack{(\overline e,\dot{\overline e},\xi)\in \cK_{\mathrm{vec}}\\(\bV,\bE)\in \cM}}
+    \left\|\cF_{\mathrm{NO}}(\overline e,\dot{\overline e},\xi;\bV,\bE)-\cF_{\mathrm{IV}}(\overline e,\dot{\overline e},\xi;\bV,\bE)\right\|_F
+    &\leq \varepsilon_{\cF},\label{eq:ua_full_F_approx}\\
+    \sup_{\substack{(\overline e,\dot{\overline e},\xi)\in \cK_{\mathrm{vec}}\\(\bV,\bE)\in \cM}}
+    \left\|\cG_{\mathrm{NO}}(\dot{\overline e},\xi;\bV,\bE)-\cG_{\mathrm{IV}}(\dot{\overline e},\xi;\bV,\bE)\right\|
+    &\leq \varepsilon_{\cG}.\label{eq:ua_full_G_approx}
+    \end{align}
+Moreover, for every $(\bV,\bE)\in\cM$, the map $(\dot{\overline e},\xi)\mapsto \cG_{\mathrm{NO}}(\dot{\overline e},\xi;\bV,\bE)$ is locally Lipschitz.
+\end{lemma}
+
+\begin{proof}[\bf Proof]
+The set $\cK_{\mathrm{vec}}$ is compact by definition, and \cref{lem:bv_compact} gives the compactness of $\cM$. By \cref{cor:continuity_tensors,prop:uniform_prony_homogenized_model}, the maps $(\bV,\bE)\mapsto \bV^{\rm hom}(\bV)$, $(\bV,\bE)\mapsto \bE^{\rm hom}(\bE)$, and $(\bV,\bE)\mapsto \bK_i(\bV,\bE)$ are continuous on $\cM$, so $\cF_{\mathrm{IV}}$ and $\cG_{\mathrm{IV}}$ are continuous on $\cK_{\mathrm{vec}}\times\cM$.
+
+Given $\varepsilon_{\cF},\varepsilon_{\cG}>0$, define $\widehat{\cK}_{\cF}\coloneqq
+\{(\mathsf{vec}_2\overline e,\mathsf{vec}_2\dot{\overline e},\xi)\mid (\overline e,\dot{\overline e},\xi)\in \cK_{\mathrm{vec}}\}$,
+$\widehat{\cK}_{\cG}
+\coloneqq
+\{(\mathsf{vec}_2\dot{\overline e},\xi)\mid (\overline e,\dot{\overline e},\xi)\in \cK_{\mathrm{vec}}\}$, and $\widehat{\cM}\coloneqq
+\{(\mathsf{vec}_4\circ\bV,\mathsf{vec}_4\circ\bE)\mid (\bV,\bE)\in\cM\}$.
+These sets are compact as continuous images of $\cK_{\mathrm{vec}}$ and $\cM$ under the relevant vectorization maps. Define
+\begin{align*}
+g_{\cF}\Bigl((\mathsf{vec}_2\overline e,\mathsf{vec}_2\dot{\overline e},\xi),(\mathsf{vec}_4\circ\bV,\mathsf{vec}_4\circ\bE)\Bigr)
+&\coloneqq
+\mathsf{vec}_2\bigl(\cF_{\mathrm{IV}}(\overline e,\dot{\overline e},\xi;\bV,\bE)\bigr),\\
+g_{\cG}\Bigl((\mathsf{vec}_2\dot{\overline e},\xi),(\mathsf{vec}_4\circ\bV,\mathsf{vec}_4\circ\bE)\Bigr)
+&\coloneqq
+\cG_{\mathrm{IV}}(\dot{\overline e},\xi;\bV,\bE).
+\end{align*}
+{Then $g_{\cF}$ and $g_{\cG}$ are continuous on $\widehat{\cK}_{\cF}\times\widehat{\cM}$ and $\widehat{\cK}_{\cG}\times\widehat{\cM}$, respectively. Apply~\ref{no:ua} to $g_{\cF}$ and~\ref{no:lip} to $g_{\cG}$ to obtain maps $\Phi_{\cF}$ and $\Phi_{\cG}$ satisfying
+\begin{equation*}
+\sup_{\widehat{\cK}_{\cF}\times\widehat{\cM}}\|\Phi_{\cF}-g_{\cF}\|\le\varepsilon_{\cF},\qquad
+\sup_{\widehat{\cK}_{\cG}\times\widehat{\cM}}\|\Phi_{\cG}-g_{\cG}\|\le\varepsilon_{\cG},
+\end{equation*}
+with $\Phi_{\cG}$ locally Lipschitz in its vector input for each microstructure. Let $(\cF_{\rm NO},\cG_{\rm NO})\in\mathfrak F(nd_{\cV^2})\times\mathfrak G(nd_{\cV^2})$ be the induced response mappings. The isometry of $\mathsf{vec}_2$ gives \cref{eq:ua_full_F_approx,eq:ua_full_G_approx} and preserves the local Lipschitz property of $\cG_{\rm NO}$.}
+\end{proof}
+
+{\begin{proposition}[Global Existence and Uniform Error Bounds]\label{prop:ua_step3_stability}
+{\color{blue}Consider an approximation from \cref{def:prony_series_approximation} with $n$ terms}. Let $\varepsilon_{\cF},\eta_\xi>0$, let $0<\varepsilon_{\cG}\le\lambda_{\min}\eta_\xi$, and choose $(\cF_{\rm NO},\cG_{\rm NO})$ as in \cref{lem:ua_step3_no}. For every $(\bV,\bE)\in\cM$ and $\overline e\in\cE$, the initial value problem
+\begin{equation*}
+\dot\xi_{\rm NO}(t)=\cG_{\rm NO}(\dot{\overline e}(t),\xi_{\rm NO}(t);\bV,\bE)\quad\text{for a.e.\ }t\in\cT,\qquad\xi_{\rm NO}(0)=0,
+\end{equation*}
+{\color{blue}admits a unique solution $\xi_{\rm NO}\in W^{1,\infty}(\cT;\bR^{nd_{\cV^2}})$}. Let $\overline\sigma_{\rm NO}$ be its stress response in \cref{eq:learned_model_full}. Then
+\begin{equation}\label{eq:ua_err}
+\begin{aligned}
+\sup_{(\bV,\bE)\in\cM}\sup_{\overline e\in\cE}\|\xi_{\rm NO}-\xi_{\rm IV}\|_{L^\infty}&\le\frac{\varepsilon_{\cG}}{\lambda_{\min}},\\
+\sup_{(\bV,\bE)\in\cM}\sup_{\overline e\in\cE}\|\overline\sigma_{\rm NO}-\overline\sigma_{\rm IV}\|_{L^\infty}&\le\varepsilon_{\cF}+\frac{\sqrt n}{\lambda_{\min}}\varepsilon_{\cG},
+\end{aligned}
+\end{equation}
+where $\xi_{\rm IV}$ is the internal variable defined in \cref{lem:ua_step3_targets} and $\overline\sigma_{\rm IV}$ is given by \cref{eq:prony_homogenized_model}.
+\end{proposition}}
+
+\begin{proof}[\bf Proof]
+Let $(\bV,\bE)\in\cM$ and $\overline e\in\cE$. For $j=1,2$, write $\xi_j=\mathsf{vec}_2^{(n)}(q_{j,1},\dots,q_{j,n})$. The definition of $\cG_{\mathrm{IV}}$ in \cref{lem:ua_step3_no} gives
+\begin{equation*}
+\cG_{\mathrm{IV}}(\dot{\overline e},\xi_1;\bV,\bE)-\cG_{\mathrm{IV}}(\dot{\overline e},\xi_2;\bV,\bE)
+=\mathsf{vec}_2^{(n)}\big(-\lambda_1(q_{1,1}-q_{2,1}),\dots,-\lambda_n(q_{1,n}-q_{2,n})\big).
+\end{equation*}
+Since $\mathsf{vec}_2^{(n)}$ is an isometry,
+\begin{equation}\label{eq:G_IV_dissipative}
+\big(\xi_1-\xi_2\big)^{\top}\Big(\cG_{\mathrm{IV}}(\dot{\overline e},\xi_1;\bV,\bE)-\cG_{\mathrm{IV}}(\dot{\overline e},\xi_2;\bV,\bE)\Big)
+\le -\lambda_{\min}\|\xi_1-\xi_2\|^2.
+\end{equation}
+
+By \cref{lem:ua_step3_no}, the map $(\dot{\overline e},\xi)\mapsto \cG_{\mathrm{NO}}(\dot{\overline e},\xi;\bV,\bE)$ is locally Lipschitz. Since $\dot{\overline e}\in L^\infty(\cT;\cV^2)$, Carath\'eodory's theorem gives a unique maximal {locally} absolutely continuous solution $\xi_{\mathrm{NO}}$ on $[0,T_{\max})$, where $T_{\max}$ denotes its maximal existence time. Set $\zeta(t)\coloneqq \xi_{\mathrm{NO}}(t)-\xi_{\mathrm{IV}}(t)$ and define
+\begin{equation*}
+t_*\coloneqq \sup\left\{{0\le\tau<T_{\max}}\ \middle|\ \|\zeta(t)\|\le \eta_\xi\ \text{for all }t\in[0,\tau]\right\}.
+\end{equation*}
+Since $\zeta(0)=0$, we have $t_*>0$. On {$[0,t_*)$}, \cref{lem:ua_step3_targets} and the definition of $\cE$ give $(\overline e(t),\dot{\overline e}(t),\xi_{\mathrm{NO}}(t))\in\cK_{\mathrm{vec}}$ for a.e.\ $t$. Hence \cref{eq:ua_full_G_approx} applies there. For a.e.\ {$t\in[0,t_*)$},
+\begin{align*}
+\dot\zeta(t)
+&=
+\Big(\cG_{\mathrm{NO}}(\dot{\overline e}(t),\xi_{\mathrm{NO}}(t);\bV,\bE)
+-\cG_{\mathrm{IV}}(\dot{\overline e}(t),\xi_{\mathrm{NO}}(t);\bV,\bE)\Big)\\
+&\quad+
+\Big(\cG_{\mathrm{IV}}(\dot{\overline e}(t),\xi_{\mathrm{NO}}(t);\bV,\bE)
+-\cG_{\mathrm{IV}}(\dot{\overline e}(t),\xi_{\mathrm{IV}}(t);\bV,\bE)\Big).
+\end{align*}
+Taking the Euclidean inner product with $\zeta(t)$ and using \cref{eq:ua_full_G_approx,eq:G_IV_dissipative} gives
+\begin{equation*}
+\frac{1}{2}\frac{\mathrm{d}}{\mathrm{d}t}\|\zeta(t)\|^2
+\le \varepsilon_{\cG}\|\zeta(t)\| - \lambda_{\min}\|\zeta(t)\|^2.
+\end{equation*}
+Therefore, for a.e.\ {$t\in[0,t_*)$} such that $\|\zeta(t)\|>0$, $\frac{\mathrm{d}}{\mathrm{d}t}\|\zeta(t)\|\le \varepsilon_{\cG}-\lambda_{\min}\|\zeta(t)\|$. Since $\zeta(0)=0$, comparison yields
+\begin{equation}\label{eq:zeta_uniform_bound}
+\|\zeta(t)\|\le \lambda_{\min}^{-1}\varepsilon_{\cG}\big(1-\exp(-\lambda_{\min}t)\big)\le \lambda_{\min}^{-1}\varepsilon_{\cG}
+\end{equation}
+on {$[0,t_*)$. If $t_*<T_{\max}$, continuity and $\varepsilon_{\cG}\le\lambda_{\min}\eta_\xi$ give $\|\zeta(t_*)\|<\eta_\xi$, contradicting the definition of $t_*$. Thus $t_*=T_{\max}$. Since $\xi_{\mathrm{NO}}$ remains bounded by $\delta_{\xi_{\mathrm{IV}}}+\eta_\xi$ and $\dot{\overline e}$ is bounded, the continuation criterion for Carath\'eodory ODEs gives $T_{\max}=\infty$. Moreover, \cref{eq:ua_full_G_approx} and the boundedness of $\cG_{\mathrm{IV}}$ on $\cK_{\mathrm{vec}}\times\cM$ imply $\dot\xi_{\mathrm{NO}}\in L^\infty$, so $\xi_{\mathrm{NO}}\in W^{1,\infty}(\cT;\bR^{nd_{\cV^2}})$.} Hence \cref{eq:zeta_uniform_bound} holds on $\cT$, and $\|\xi_{\mathrm{NO}}-\xi_{\mathrm{IV}}\|_{L^\infty}\le \lambda_{\min}^{-1}\varepsilon_{\cG}$.
+
+With $(\overline e(t),\dot{\overline e}(t),\xi_{\mathrm{NO}}(t))\in\cK_{\mathrm{vec}}$ for a.e.\ $t\in\cT$, we apply \cref{eq:ua_full_F_approx}. By the definition of $\cF_{\mathrm{IV}}$ in \cref{lem:ua_step3_no},
+\begin{gather*}
+{\overline\sigma_{\rm IV}}(t)=\cF_{\mathrm{IV}}(\overline e(t),\dot{\overline e}(t),\xi_{\mathrm{IV}}(t);\bV,\bE)
+\quad \text{for a.e.\ } t\in\cT.\\
+\|\overline{\sigma}_{\mathrm{NO}}(t)-{\overline\sigma_{\rm IV}}(t)\|_F
+\leq
+\varepsilon_{\cF}+
+\left\|\cF_{\mathrm{IV}}(\overline e(t),\dot{\overline e}(t),\xi_{\mathrm{NO}}(t);\bV,\bE)-\cF_{\mathrm{IV}}(\overline e(t),\dot{\overline e}(t),\xi_{\mathrm{IV}}(t);\bV,\bE)\right\|_F.
+\end{gather*}
+Since $\cF_{\mathrm{IV}}$ is affine in $\xi$ and sums the $n$ tensorial blocks, Cauchy--Schwarz gives
+\begin{equation*}
+\|\cF_{\mathrm{IV}}(\overline e(t),\dot{\overline e}(t),\xi_{\mathrm{NO}}(t);\bV,\bE)-\cF_{\mathrm{IV}}(\overline e(t),\dot{\overline e}(t),\xi_{\mathrm{IV}}(t);\bV,\bE)\|_F
+\le \sqrt{n} \|\xi_{\mathrm{NO}}(t)-\xi_{\mathrm{IV}}(t)\|.
+\end{equation*}
+Therefore, $\|\overline{\sigma}_{\mathrm{NO}}(t)-{\overline\sigma_{\rm IV}}(t)\|_F\leq \varepsilon_{\cF} + \sqrt{n}\lambda_{\min}^{-1}\varepsilon_{\cG}$ for a.e.\ $t\in\cT$. Taking suprema over $(\bV,\bE)\in\cM$ and $\overline e\in\cE$ gives \cref{eq:ua_err}.
+\end{proof}
+
+\begin{proof}[\bf Completion of the Proof of \cref{thm:ua}]
+Let $\varepsilon>0$ and choose $\varepsilon_{\rm IV}\in(0,\varepsilon)$. By \cref{prop:uniform_prony_homogenized_model}, choose a Prony-series model with $n$ terms whose uniform stress error is at most $\varepsilon_{\rm IV}$. Let $\eta_\xi>0$ and set
+\begin{equation}\label{eq:ua_error_tolerances}
+\varepsilon_{\cF}\coloneqq\frac{\varepsilon-\varepsilon_{\rm IV}}{2},\qquad
+\varepsilon_{\cG}\coloneqq\min\left\{\frac{\lambda_{\min}\eta_\xi}{2},\frac{\lambda_{\min}(\varepsilon-\varepsilon_{\rm IV})}{2\sqrt n}\right\}.
+\end{equation}
+Choose the response mappings $(\cF_{\rm NO},\cG_{\rm NO})$ by \cref{lem:ua_step3_no}. These tolerances satisfy the hypothesis of \cref{prop:ua_step3_stability} and $\varepsilon_{\cF}+\sqrt n\varepsilon_{\cG}/\lambda_{\min}\le\varepsilon-\varepsilon_{\rm IV}$, so the neural operator model approximates the Prony-series model with uniform stress error at most $\varepsilon-\varepsilon_{\rm IV}$. The triangle inequality gives \cref{eq:ua} with $n_\xi=nd_{\cV^2}$.
+\end{proof}

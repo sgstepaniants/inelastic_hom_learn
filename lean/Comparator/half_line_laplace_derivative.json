@@ -1,0 +1,8 @@
+{
+  "challenge_module": "Challenges.HalfLineLaplaceDerivative",
+  "solution_module": "KVApproximation.Analysis.HalfLineLaplaceDerivative",
+  "theorem_names": [
+    "KVApproximation.Analysis.halfLineLaplace_derivative"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

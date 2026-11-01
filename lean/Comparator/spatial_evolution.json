@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenges.SpatialEvolution",
+  "solution_module": "KVApproximation.Homogenization.SpatialEvolutionProperties",
+  "theorem_names": [
+    "KVApproximation.Homogenization.periodicSpatialForm_apply",
+    "KVApproximation.Homogenization.exists_uniform_periodicSpatialForm_bounds",
+    "KVApproximation.Homogenization.microscopicRelaxation_spec",
+    "KVApproximation.Homogenization.microscopicLoadL_spec",
+    "KVApproximation.Homogenization.exists_uniform_microscopic_operator_bounds"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

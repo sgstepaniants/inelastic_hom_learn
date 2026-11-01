@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.GlobalPositiveSpan",
+  "solution_module": "KVApproximation.KelvinVoigt.GlobalPronyError",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.global_prony_error_lt_of_span_pos"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

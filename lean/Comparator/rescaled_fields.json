@@ -1,0 +1,11 @@
+{
+  "challenge_module": "Challenges.RescaledFields",
+  "solution_module": "KVApproximation.Homogenization.RescaledFieldProperties",
+  "theorem_names": [
+    "KVApproximation.Homogenization.rescaledCoefficient_apply_ae",
+    "KVApproximation.Homogenization.norm_rescaledCoefficient_le",
+    "KVApproximation.Homogenization.hasBounds_rescaledCoefficient_ae",
+    "KVApproximation.Homogenization.spatialForm_rescaledCoefficient"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

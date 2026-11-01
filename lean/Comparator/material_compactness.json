@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.Material",
+  "solution_module": "KVApproximation.KelvinVoigt.MaterialCompactness",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.isCompact_admissibleMaterials"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

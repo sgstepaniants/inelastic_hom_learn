@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Challenges.Interpolation",
+  "solution_module": "KVApproximation.Approximation.LogPartitionIdentities",
+  "theorem_names": [
+    "KVApproximation.Approximation.sum_logHat",
+    "KVApproximation.Approximation.logPatch_width",
+    "KVApproximation.Approximation.localCoordinate_localRate"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

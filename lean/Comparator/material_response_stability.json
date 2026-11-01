@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.MaterialResponseStability",
+  "solution_module": "KVApproximation.KelvinVoigt.MaterialResponseStability",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.local_prony_responses_stable",
+    "KVApproximation.KelvinVoigt.singleton_prony_responses_stable"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

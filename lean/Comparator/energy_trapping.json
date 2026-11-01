@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.EnergyTrapping",
+  "solution_module": "KVApproximation.Analysis.EnergyTrapping",
+  "theorem_names": [
+    "KVApproximation.Analysis.ac_energy_trapping_bound"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

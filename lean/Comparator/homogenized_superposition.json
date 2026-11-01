@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.HomogenizedSuperposition",
+  "solution_module": "KVApproximation.Homogenization.HomogenizedSuperposition",
+  "theorem_names": [
+    "KVApproximation.Homogenization.IsHomogenizedSolution.add",
+    "KVApproximation.Homogenization.IsHomogenizedSolution.of_sub"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

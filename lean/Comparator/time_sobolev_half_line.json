@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.TimeSobolevHalfLine",
+  "solution_module": "KVApproximation.Analysis.TimeSobolevHalfLine",
+  "theorem_names": ["KVApproximation.Analysis.TimeH1.exists_halfLine_weak_limit"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

@@ -1,0 +1,8 @@
+{
+  "challenge_module": "Challenges.TimeSobolevLaplaceMemory",
+  "solution_module": "KVApproximation.Analysis.TimeSobolevLaplaceMemory",
+  "theorem_names": [
+    "KVApproximation.Analysis.TimeH1.memory_equation_of_halfLineLaplace"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

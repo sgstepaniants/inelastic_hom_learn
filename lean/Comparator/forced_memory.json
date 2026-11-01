@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.ForcedMemory",
+  "solution_module": "KVApproximation.Homogenization.ForcedMemory",
+  "theorem_names": [
+    "KVApproximation.Homogenization.green_trace_isHomogenizedSolution"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

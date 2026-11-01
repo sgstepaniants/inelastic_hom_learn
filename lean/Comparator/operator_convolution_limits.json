@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.OperatorConvolutionLimits",
+  "solution_module": "KVApproximation.Analysis.OperatorConvolutionLimits",
+  "theorem_names": [
+    "KVApproximation.Analysis.tendsto_intervalIntegral_of_weak_operator_tendsto"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

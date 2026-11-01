@@ -1,0 +1,8 @@
+{
+  "challenge_module": "Challenges.PeriodicSobolev",
+  "solution_module": "KVApproximation.Homogenization.CorrectorOrthogonality",
+  "theorem_names": [
+    "KVApproximation.Homogenization.constantStrain_orthogonal_corrector"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

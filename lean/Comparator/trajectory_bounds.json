@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenges.TrajectoryBounds",
+  "solution_module": "KVApproximation.Dynamics.TrajectoryBounds",
+  "theorem_names": [
+    "KVApproximation.Dynamics.BoundedTrajectory.norm_velocity_ae_le",
+    "KVApproximation.Dynamics.BoundedTrajectory.velocity_intervalIntegrable",
+    "KVApproximation.Dynamics.BoundedTrajectory.norm_value_sub_le",
+    "KVApproximation.Dynamics.BoundedTrajectory.continuousOn_value",
+    "KVApproximation.Dynamics.BoundedTrajectory.norm_value_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

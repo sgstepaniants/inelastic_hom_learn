@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Challenges.StripBV",
+  "solution_module": "KVApproximation.KelvinVoigt.StripBV",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.eLpNorm_stripElasticity_le",
+    "KVApproximation.KelvinVoigt.periodicVariation_stripElasticity_le",
+    "KVApproximation.KelvinVoigt.periodicBVNorm_identityElasticity",
+    "KVApproximation.KelvinVoigt.periodicBVNorm_stripElasticity_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

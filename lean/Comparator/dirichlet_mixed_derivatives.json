@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.DirichletMixedDerivatives",
+  "solution_module": "KVApproximation.Analysis.DirichletMixedDerivatives",
+  "theorem_names": [
+    "KVApproximation.Analysis.directionalDerivativeL_apply_ae",
+    "KVApproximation.Analysis.inner_directionalDerivative_swap"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

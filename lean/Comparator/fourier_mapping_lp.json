@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.FourierMapping",
+  "solution_module": "KVApproximation.NeuralOperators.FourierMappingLp",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.FourierLayer.memLp_eval",
+    "KVApproximation.NeuralOperators.FourierChain.memLp_eval"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

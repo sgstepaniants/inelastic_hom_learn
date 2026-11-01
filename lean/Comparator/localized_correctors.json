@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.LocalizedCorrectors",
+  "solution_module": "KVApproximation.Homogenization.LocalizedCorrectors",
+  "theorem_names": [
+    "KVApproximation.Homogenization.exists_unit_corrector_in_coordinate_strip"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

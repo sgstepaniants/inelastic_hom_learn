@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.FieldConvergence",
+  "solution_module": "KVApproximation.Tensor.FieldNormBounds",
+  "theorem_names": ["KVApproximation.Tensor.HasFieldBounds.eLpNorm_top_le"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

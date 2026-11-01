@@ -1,0 +1,18 @@
+{
+  "challenge_module": "Challenges.CausalConvolution",
+  "solution_module": "KVApproximation.Analysis.CausalConvolution",
+  "theorem_names": [
+    "KVApproximation.Analysis.posConvolution_eq_integral_sub",
+    "KVApproximation.Analysis.intervalIntegrable_posConvolution_integrand",
+    "KVApproximation.Analysis.continuousOn_posConvolution",
+    "KVApproximation.Analysis.integral_posConvolution_eq_posConvolution_primitive",
+    "KVApproximation.Analysis.integrable_rectangle_bilinear",
+    "KVApproximation.Analysis.integral_triangle_swap",
+    "KVApproximation.Analysis.integral_posConvolution_eq_integral_kernel"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.Feedforward",
+  "solution_module": "KVApproximation.NeuralOperators.FeedforwardProperties",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.Feedforward.lipschitz",
+    "KVApproximation.NeuralOperators.Feedforward.locallyLipschitz"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

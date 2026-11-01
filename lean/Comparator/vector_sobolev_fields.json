@@ -1,0 +1,21 @@
+{
+  "challenge_module": "Challenges.VectorSobolevFields",
+  "solution_module": "KVApproximation.Analysis.VectorSobolevProperties",
+  "theorem_names": [
+    "KVApproximation.Analysis.VectorH1.valueL_apply_ae",
+    "KVApproximation.Analysis.VectorH1.gradientL_apply_ae",
+    "KVApproximation.Analysis.VectorH1.symmetricGradientL_apply_ae",
+    "KVApproximation.Analysis.VectorH1.norm_sq_eq",
+    "KVApproximation.Analysis.VectorH1.norm_valueL_le",
+    "KVApproximation.Analysis.VectorH1.norm_gradientL_le",
+    "KVApproximation.Analysis.VectorH1.norm_symmetricGradientL_le",
+    "KVApproximation.Analysis.VectorH1.valueL_injective",
+    "KVApproximation.Analysis.VectorH1.norm_valueL_sq",
+    "KVApproximation.Analysis.VectorH1.norm_gradientL_sq"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

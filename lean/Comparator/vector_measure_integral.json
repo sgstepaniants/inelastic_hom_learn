@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.VectorMeasureIntegral",
+  "solution_module": "KVApproximation.Analysis.VectorMeasureIntegral",
+  "theorem_names": ["KVApproximation.Analysis.integral_scalarization"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

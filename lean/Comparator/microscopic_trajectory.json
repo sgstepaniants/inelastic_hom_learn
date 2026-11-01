@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.MicroscopicTrajectory",
+  "solution_module": "KVApproximation.Homogenization.MicroscopicTrajectoryProperties",
+  "theorem_names": [
+    "KVApproximation.Homogenization.microscopic_zero_forcing_trace",
+    "KVApproximation.Homogenization.exists_uniform_microscopicTrajectory_bounds"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

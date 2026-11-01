@@ -1,0 +1,11 @@
+{
+  "challenge_module": "Challenges.Complexity",
+  "solution_module": "KVApproximation.KelvinVoigt.DimensionAsymptotics",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.sufficientDimension_uniform_bound",
+    "KVApproximation.KelvinVoigt.sufficientDimension_small_error",
+    "KVApproximation.KelvinVoigt.sufficientDimension_viscosity_contrast",
+    "KVApproximation.KelvinVoigt.sufficientDimension_elasticity_contrast"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

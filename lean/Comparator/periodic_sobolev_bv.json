@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.PeriodicSobolevBV",
+  "solution_module": "KVApproximation.Analysis.PeriodicSobolevBV",
+  "theorem_names": [
+    "KVApproximation.Analysis.periodicVariation_le_eLpNorm_gradient",
+    "KVApproximation.Analysis.periodicBVNorm_le_sobolevBound"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.UniformPronyStability",
+  "solution_module": "KVApproximation.NeuralOperators.UniformPronyStability",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.uniform_prony_response_stability"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

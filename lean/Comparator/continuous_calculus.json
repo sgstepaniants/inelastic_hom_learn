@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.ProjectionMeasure",
+  "solution_module": "KVApproximation.Spectral.ContinuousCalculus",
+  "theorem_names": [
+    "KVApproximation.Spectral.boundedPVM_supported",
+    "KVApproximation.Spectral.boundedPVM_integral"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

@@ -1,0 +1,8 @@
+{
+  "challenge_module": "Challenges.PeriodicFourierAveraging",
+  "solution_module": "KVApproximation.Analysis.PeriodicFourierAveraging",
+  "theorem_names": [
+    "KVApproximation.Analysis.tendsto_integral_rescale_mFourier_mul"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

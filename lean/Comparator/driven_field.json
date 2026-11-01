@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.DrivenField",
+  "solution_module": "KVApproximation.Dynamics.DrivenField",
+  "theorem_names": [
+    "KVApproximation.Dynamics.integrableOn_lipschitz_driven_field"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

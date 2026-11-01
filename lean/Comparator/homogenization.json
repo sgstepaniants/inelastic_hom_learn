@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.Homogenization",
+  "solution_module": "KVApproximation.KelvinVoigt.Homogenization",
+  "theorem_names": [
+    "KVApproximation.Homogenization.viscoelastic_homogenization"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

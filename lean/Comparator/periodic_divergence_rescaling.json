@@ -1,0 +1,8 @@
+{
+  "challenge_module": "Challenges.PeriodicDivergenceRescaling",
+  "solution_module": "KVApproximation.Analysis.PeriodicDivergenceRescaling",
+  "theorem_names": [
+    "KVApproximation.Analysis.HasPeriodicZeroDivergence.integral_rescale_gradient_eq_zero"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

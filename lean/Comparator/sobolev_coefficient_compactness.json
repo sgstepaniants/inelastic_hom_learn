@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.SobolevCoefficientCompactness",
+  "solution_module": "KVApproximation.Tensor.SobolevCompactness",
+  "theorem_names": [
+    "KVApproximation.Tensor.isCompact_closure_sobolev_coefficients",
+    "KVApproximation.Tensor.isCompact_sobolev_coefficients_of_isClosed"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

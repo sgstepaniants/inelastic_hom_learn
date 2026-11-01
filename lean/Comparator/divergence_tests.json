@@ -1,0 +1,8 @@
+{
+  "challenge_module": "Challenges.DivergenceTests",
+  "solution_module": "KVApproximation.Analysis.DivergenceTests",
+  "theorem_names": [
+    "KVApproximation.Analysis.integral_inner_gradient_eq_zero_of_divergence_eq_zero"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

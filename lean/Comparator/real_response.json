@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.RealResponse",
+  "solution_module": "KVApproximation.Approximation.RealResponseIdentities",
+  "theorem_names": [
+    "KVApproximation.Approximation.map_realWeightedResponse",
+    "KVApproximation.Approximation.continuous_realWeightedResponse"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Challenges.HilbertWeakLimits",
+  "solution_module": "KVApproximation.Analysis.HilbertWeakLimits",
+  "theorem_names": [
+    "KVApproximation.Analysis.norm_le_of_weak_tendsto",
+    "KVApproximation.Analysis.exists_continuousLinearMap_of_weak_tendsto",
+    "KVApproximation.Analysis.lipschitzOnWith_of_weak_tendsto"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

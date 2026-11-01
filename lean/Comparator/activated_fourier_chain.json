@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Challenges.ActivatedFourierChain",
+  "solution_module": "KVApproximation.NeuralOperators.ActivatedFourierChainProperties",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.ActivatedFourierChain.eval_congr_ae",
+    "KVApproximation.NeuralOperators.ActivatedFourierChain.memLp_eval",
+    "KVApproximation.NeuralOperators.ActivatedFourierChain.exists_lipschitz_evalLp",
+    "KVApproximation.NeuralOperators.FourierChain.withActivation_eval"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

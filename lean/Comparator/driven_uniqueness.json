@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.DrivenUniqueness",
+  "solution_module": "KVApproximation.Dynamics.DrivenUniqueness",
+  "theorem_names": [
+    "KVApproximation.Dynamics.locally_lipschitz_driven_unique_Icc"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

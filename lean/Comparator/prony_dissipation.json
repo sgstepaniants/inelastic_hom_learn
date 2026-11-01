@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.PronyDissipation",
+  "solution_module": "KVApproximation.Dynamics.PronyDissipation",
+  "theorem_names": [
+    "KVApproximation.Dynamics.prony_kinetic_dissipative",
+    "KVApproximation.Dynamics.prony_stress_lipschitz"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

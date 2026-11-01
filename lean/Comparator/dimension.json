@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Challenges.Approximation",
+  "solution_module": "KVApproximation.Approximation.DimensionEstimates",
+  "theorem_names": [
+    "KVApproximation.Approximation.logPartitionWidth_bounds",
+    "KVApproximation.Approximation.interpolationOrder_error_le",
+    "KVApproximation.Approximation.interpolationOrder_pos"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

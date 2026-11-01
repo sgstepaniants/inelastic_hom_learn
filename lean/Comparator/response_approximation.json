@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PronyResponses",
+  "solution_module": "KVApproximation.NeuralOperators.ResponseApproximation",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.prony_responses_approximate"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

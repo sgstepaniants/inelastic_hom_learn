@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.LocalResponse",
+  "solution_module": "KVApproximation.Approximation.LocalRateGeometry",
+  "theorem_names": [
+    "KVApproximation.Approximation.complexLocalRate_ofReal",
+    "KVApproximation.Approximation.complexLocalRate_ellipse"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

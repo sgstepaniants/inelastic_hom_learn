@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.GlobalPositiveSpan",
+  "solution_module": "KVApproximation.Approximation.AlternativeDimensionEstimates",
+  "theorem_names": [
+    "KVApproximation.Approximation.globalInterpolationOrder_error_le_of_span_pos"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

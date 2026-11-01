@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.FieldCombinations",
+  "solution_module": "KVApproximation.Tensor.FieldCombinations",
+  "theorem_names": [
+    "KVApproximation.Tensor.fieldPairing_add_smul",
+    "KVApproximation.Tensor.HasFieldBounds.add_smul"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

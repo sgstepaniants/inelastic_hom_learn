@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.RescaledFieldCombinations",
+  "solution_module": "KVApproximation.Homogenization.RescaledFieldCombinations",
+  "theorem_names": [
+    "KVApproximation.Homogenization.rescaledCoefficient_add_smul",
+    "KVApproximation.Homogenization.spatialForm_rescalePeriodic_add_smul"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

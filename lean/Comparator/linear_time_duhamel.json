@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.LinearTimeSobolev",
+  "solution_module": "KVApproximation.Dynamics.LinearTimeDuhamel",
+  "theorem_names": [
+    "KVApproximation.Dynamics.linear_timeH1_duhamel"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

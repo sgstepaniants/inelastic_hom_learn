@@ -1,0 +1,19 @@
+{
+  "challenge_module": "Challenges.SpectralPartition",
+  "solution_module": "KVApproximation.Approximation.SpectralPartition",
+  "theorem_names": [
+    "KVApproximation.Approximation.logarithmicSpan_pos",
+    "KVApproximation.Approximation.continuousOn_spectralWeight",
+    "KVApproximation.Approximation.spectralWeight_nonneg",
+    "KVApproximation.Approximation.sum_spectralWeight",
+    "KVApproximation.Approximation.spectralWeight_eq_zero_of_not_mem",
+    "KVApproximation.Approximation.localRate_mem_interval",
+    "KVApproximation.Approximation.continuousOn_localCoordinate",
+    "KVApproximation.Approximation.continuousOn_localPronyWeight"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

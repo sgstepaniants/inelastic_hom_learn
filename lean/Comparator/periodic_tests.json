@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.CellDisplacement",
+  "solution_module": "KVApproximation.Homogenization.PeriodicTests",
+  "theorem_names": [
+    "KVApproximation.Homogenization.periodic_test_iff_corrector_test"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

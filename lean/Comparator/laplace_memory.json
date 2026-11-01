@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.LaplaceMemory",
+  "solution_module": "KVApproximation.Analysis.LaplaceMemory",
+  "theorem_names": [
+    "KVApproximation.Analysis.integrated_memory_eq_zero_of_halfLineLaplace",
+    "KVApproximation.Analysis.integrated_memory_eq_const_of_halfLineLaplace"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

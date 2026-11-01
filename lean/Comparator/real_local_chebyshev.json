@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.RealResponse",
+  "solution_module": "KVApproximation.Approximation.RealLocalChebyshev",
+  "theorem_names": [
+    "KVApproximation.Approximation.real_local_response_error"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

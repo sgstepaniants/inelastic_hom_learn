@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.WeightedRelaxation",
+  "solution_module": "KVApproximation.OperatorTheory.SpectralBounds",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.weightedRelaxation_spectrum_eq",
+    "KVApproximation.OperatorTheory.weightedRelaxation_lower_bound",
+    "KVApproximation.OperatorTheory.weightedRelaxation_complex_spectrum_subset"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

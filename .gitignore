@@ -1,0 +1,40 @@
+# Lean dependencies, toolchains, caches, and local VM files
+/lean/.lake/
+/lean/.elan/
+/lean/.cache/
+/lean/.vm/
+/lean/.work/
+
+# Lean compiler output outside the Lake build directory
+*.olean
+*.olean.*
+*.ilean
+*.ilean.*
+*.ir
+*.ir.*
+
+# Local VM setup output; keep proof validation logs and results
+/lean/Verification/results/vm.log
+
+# Python environments and bytecode
+.venv/
+__pycache__/
+*.py[cod]
+
+# macOS and editor temporary files
+.DS_Store
+._*
+*.swp
+*.swo
+*~
+
+# LaTeX build intermediates; keep the manuscript PDF and figures
+/paper/**/*.aux
+/paper/**/*.bbl
+/paper/**/*.blg
+/paper/**/*.fdb_latexmk
+/paper/**/*.fls
+/paper/**/*.log
+/paper/**/*.out
+/paper/**/*.synctex.gz
+/paper/**/*.toc

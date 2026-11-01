@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.CoordinateClasses",
+  "solution_module": "KVApproximation.NeuralOperators.CoordinateApproximation",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.HasUniversalApproximation.inducedResponseClass",
+    "KVApproximation.NeuralOperators.HasLocallyLipschitzApproximation.inducedResponseClass"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

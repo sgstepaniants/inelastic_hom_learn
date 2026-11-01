@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.InterpolationPolynomial",
+  "solution_module": "KVApproximation.Approximation.InterpolationPolynomial",
+  "theorem_names": [
+    "KVApproximation.Approximation.chebyshevInterpolant_degree_lt"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

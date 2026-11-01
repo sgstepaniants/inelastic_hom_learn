@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.HomogeneousLimit",
+  "solution_module": "KVApproximation.Homogenization.HomogeneousLimit",
+  "theorem_names": [
+    "KVApproximation.Homogenization.homogeneous_limit_isHomogenizedSolution",
+    "KVApproximation.Homogenization.viscous_limit_green_balance"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

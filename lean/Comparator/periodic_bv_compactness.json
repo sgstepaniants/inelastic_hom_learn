@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PeriodicBVCompactness",
+  "solution_module": "KVApproximation.Analysis.PeriodicBVCompactness",
+  "theorem_names": [
+    "KVApproximation.Analysis.isCompact_periodicBV_sublevel"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

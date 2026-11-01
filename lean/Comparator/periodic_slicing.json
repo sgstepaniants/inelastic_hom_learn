@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.PeriodicSlicing",
+  "solution_module": "KVApproximation.Analysis.PeriodicSlicing",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicC1.integral_coordinate_strip_partial",
+    "KVApproximation.Analysis.PeriodicC1.norm_integral_coordinate_strip_partial_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

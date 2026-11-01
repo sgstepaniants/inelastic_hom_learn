@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.GlobalResponse",
+  "solution_module": "KVApproximation.Approximation.GlobalResponseIntegral",
+  "theorem_names": [
+    "KVApproximation.Approximation.global_prony_stress_eq_responseIntegral"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

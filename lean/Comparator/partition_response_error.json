@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PartitionResponse",
+  "solution_module": "KVApproximation.Approximation.PartitionResponseError",
+  "theorem_names": [
+    "KVApproximation.Approximation.partition_response_error"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

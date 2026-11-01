@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.CfcLaplace",
+  "solution_module": "KVApproximation.OperatorTheory.CfcLaplace",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.integrable_cfc_memory_laplace",
+    "KVApproximation.OperatorTheory.halfLineLaplace_cfc_memory"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

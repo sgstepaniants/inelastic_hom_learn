@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.PeriodicSobolev",
+  "solution_module": "KVApproximation.Analysis.PeriodicSobolevIdentities",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicH1.norm_sq",
+    "KVApproximation.Analysis.cellAverageL_eq_integral",
+    "KVApproximation.Analysis.mem_zeroMeanPeriodicSubmodule_iff"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.HomogeneousSubsequence",
+  "solution_module": "KVApproximation.Homogenization.HomogeneousSubsequence",
+  "theorem_names": [
+    "KVApproximation.Homogenization.prepared_homogeneous_subsequence"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

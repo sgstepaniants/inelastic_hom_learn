@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.OperatorConvolutionBalance",
+  "solution_module": "KVApproximation.Analysis.OperatorConvolutionBalance",
+  "theorem_names": [
+    "KVApproximation.Analysis.integral_operatorConvolution_assoc",
+    "KVApproximation.Analysis.duhamel_integrated_memory_balance"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

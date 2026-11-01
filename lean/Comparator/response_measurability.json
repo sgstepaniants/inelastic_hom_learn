@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.ResponseMeasurability",
+  "solution_module": "KVApproximation.Approximation.ResponseMeasurability",
+  "theorem_names": [
+    "KVApproximation.Approximation.aestronglyMeasurable_responseIntegral"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.VolterraUniqueness",
+  "solution_module": "KVApproximation.Analysis.VolterraUniqueness",
+  "theorem_names": [
+    "KVApproximation.Analysis.eqOn_zero_of_integrated_memory_eq_zero",
+    "KVApproximation.Analysis.eqOn_of_integrated_memory_eq"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

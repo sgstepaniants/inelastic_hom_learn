@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.IntegralCurveRegularity",
+  "solution_module": "KVApproximation.Dynamics.IntegralCurveRegularity",
+  "theorem_names": [
+    "KVApproximation.Dynamics.integral_curve_regularity"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

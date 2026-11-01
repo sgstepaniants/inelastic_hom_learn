@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.SpectralContinuity",
+  "solution_module": "KVApproximation.Homogenization.WeightedSpectralContinuity",
+  "theorem_names": [
+    "KVApproximation.Spectral.weighted_spectral_measures_converge"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

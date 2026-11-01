@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.Fields",
+  "solution_module": "KVApproximation.Analysis.MultiplicationConvergence",
+  "theorem_names": ["KVApproximation.Tensor.multiplication_converges"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

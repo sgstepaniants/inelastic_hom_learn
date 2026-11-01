@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PrimitiveIntegrationByParts",
+  "solution_module": "KVApproximation.Analysis.PrimitiveIntegrationByParts",
+  "theorem_names": [
+    "KVApproximation.Analysis.integral_deriv_smul_primitive_eq_sub_of_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

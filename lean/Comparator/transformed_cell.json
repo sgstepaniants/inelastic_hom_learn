@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.TransformedCell",
+  "solution_module": "KVApproximation.Homogenization.TransformedCell",
+  "theorem_names": [
+    "KVApproximation.Homogenization.effectiveForm_addSMul_resolvent",
+    "KVApproximation.Homogenization.cellKernel_integrable_halfLineLaplace",
+    "KVApproximation.Homogenization.effectiveForm_addSMul_laplace"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.LocalResponse",
+  "solution_module": "KVApproximation.Approximation.LocalChebyshev",
+  "theorem_names": [
+    "KVApproximation.Approximation.local_weighted_response_error"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

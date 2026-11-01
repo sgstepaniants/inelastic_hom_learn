@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.FourierFeatureLayer",
+  "solution_module": "KVApproximation.NeuralOperators.FourierFeatureLayer",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.exists_fourier_feature_layer",
+    "KVApproximation.NeuralOperators.FourierLayer.continuous_eval_of_zero_localWeight"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

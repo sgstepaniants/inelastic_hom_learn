@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenges.StripFields",
+  "solution_module": "KVApproximation.KelvinVoigt.StripFieldProperties",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.measurableSet_thinStrip",
+    "KVApproximation.KelvinVoigt.cellMeasure_thinStrip",
+    "KVApproximation.KelvinVoigt.measurable_stripElasticity",
+    "KVApproximation.KelvinVoigt.memLp_stripElasticity",
+    "KVApproximation.KelvinVoigt.hasFieldBounds_stripElasticity"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

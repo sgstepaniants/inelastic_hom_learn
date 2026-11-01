@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.PVMCompression",
+  "solution_module": "KVApproximation.Spectral.FiniteCompression",
+  "theorem_names": [
+    "KVApproximation.Spectral.pvmCompression_exists_unique",
+    "KVApproximation.Spectral.pvmCompression_positive_trace",
+    "KVApproximation.Spectral.pvmCompression_integral_diag"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

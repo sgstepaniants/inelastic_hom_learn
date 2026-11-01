@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.TimeSobolevGreen",
+  "solution_module": "KVApproximation.Analysis.TimeSobolevGreen",
+  "theorem_names": [
+    "KVApproximation.Analysis.TimeH1.memory_equation_of_green_trace"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.FieldInverse",
+  "solution_module": "KVApproximation.OperatorTheory.FieldInverse",
+  "theorem_names": [
+    "KVApproximation.Tensor.CoerciveField.inverse_apply_ae",
+    "KVApproximation.Tensor.CoerciveField.relativeRiesz_apply_ae"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

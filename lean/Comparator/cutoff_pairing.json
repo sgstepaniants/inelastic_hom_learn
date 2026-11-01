@@ -1,0 +1,11 @@
+{
+  "challenge_module": "Challenges.CutoffPairing",
+  "solution_module": "KVApproximation.Analysis.CutoffPairingProperties",
+  "theorem_names": [
+    "KVApproximation.Analysis.cutoffGradientL_apply_ae",
+    "KVApproximation.Analysis.cutoffPairing_eq_integral",
+    "KVApproximation.Analysis.integral_stress_cutoff_gradient",
+    "KVApproximation.Analysis.integral_cutoff_stress_strain_eq_neg_pairing"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.PeriodicStripVariation",
+  "solution_module": "KVApproximation.Analysis.PeriodicStripVariation",
+  "theorem_names": [
+    "KVApproximation.Analysis.periodicVariation_const",
+    "KVApproximation.Analysis.periodicVariation_const_add_coordinate_strip_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

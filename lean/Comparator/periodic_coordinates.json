@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.PeriodicCoordinates",
+  "solution_module": "KVApproximation.Analysis.PeriodicCoordinates",
+  "theorem_names": [
+    "KVApproximation.Analysis.measurePreserving_cellRepresentative_coordinate",
+    "KVApproximation.Analysis.cellMeasure_coordinate_interval"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

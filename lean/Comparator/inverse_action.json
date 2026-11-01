@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.InverseAction",
+  "solution_module": "KVApproximation.Tensor.InverseAction",
+  "theorem_names": [
+    "KVApproximation.Tensor.HasBounds.action_isInvertible",
+    "KVApproximation.Tensor.HasBounds.inverse_action_norm_le"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

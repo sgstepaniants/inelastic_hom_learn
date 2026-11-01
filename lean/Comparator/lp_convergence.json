@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.LpConvergence",
+  "solution_module": "KVApproximation.Analysis.LpConvergence",
+  "theorem_names": ["KVApproximation.Analysis.tendsto_eLpNorm_of_dominated_zero"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

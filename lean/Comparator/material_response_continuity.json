@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Challenges.MaterialResponseContinuity",
+  "solution_module": "KVApproximation.KelvinVoigt.MaterialResponseContinuity",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.continuous_cell_viscosity",
+    "KVApproximation.KelvinVoigt.continuous_cell_elasticity",
+    "KVApproximation.KelvinVoigt.continuous_local_prony_coefficient",
+    "KVApproximation.KelvinVoigt.continuous_singleton_prony_coefficient"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

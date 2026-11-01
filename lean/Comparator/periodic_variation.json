@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PeriodicVariation",
+  "solution_module": "KVApproximation.Analysis.PeriodicVariationStability",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicC1.continuous_divergence",
+    "KVApproximation.Analysis.continuous_periodicTestPairing",
+    "KVApproximation.Analysis.periodicVariation_congr",
+    "KVApproximation.Analysis.periodicBVNorm_congr",
+    "KVApproximation.Analysis.periodicBVNorm_le_of_tendsto_L1"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

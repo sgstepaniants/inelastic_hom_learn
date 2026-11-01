@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.CellDisplacement",
+  "solution_module": "KVApproximation.Homogenization.CellDisplacementConstitutive",
+  "theorem_names": [
+    "KVApproximation.Homogenization.periodicCellSolution_constitutive"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

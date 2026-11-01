@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.UniformLocalAverage",
+  "solution_module": "KVApproximation.Analysis.UniformLocalAverage",
+  "theorem_names": ["KVApproximation.Analysis.exists_uniform_local_average"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

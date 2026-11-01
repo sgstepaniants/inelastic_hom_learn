@@ -1,0 +1,24 @@
+import KVApproximation.KelvinVoigt.Homogenization
+import KVApproximation.KelvinVoigt.SpectralRepresentation
+import KVApproximation.KelvinVoigt.UniversalApproximation
+import KVApproximation.KelvinVoigt.DimensionAsymptotics
+import KVApproximation.KelvinVoigt.SpectralEdgeDiscontinuity
+import KVApproximation.KelvinVoigt.SobolevMaterialCompactness
+import KVApproximation.KelvinVoigt.MandelResponseApproximation
+import KVApproximation.KelvinVoigt.UnweightedApproximation
+import KVApproximation.KelvinVoigt.GlobalApproximation
+import KVApproximation.Approximation.AlternativeDimensionEstimates
+import KVApproximation.NeuralOperators.ArchitectureAdmissibility
+import KVApproximation.NeuralOperators.FeedforwardFourierProperties
+import KVApproximation.NeuralOperators.FeedforwardFourierApproximation
+import KVApproximation.NeuralOperators.ActivatedFourierChainProperties
+import KVApproximation.Tensor.IsotropicIdentities
+import KVApproximation.Examples.LinearSurrogateCoordinates
+import KVApproximation.Examples.CrystalPlasticityIdentities
+
+/-!
+# Kelvin–Voigt homogenization and approximation
+
+The main theorems, concrete architectures and exact appendix identities.
+Individual subject modules can be imported separately.
+-/

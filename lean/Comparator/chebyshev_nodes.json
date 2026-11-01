@@ -1,0 +1,17 @@
+{
+  "challenge_module": "Challenges.ChebyshevNodes",
+  "solution_module": "KVApproximation.Approximation.ChebyshevNodes",
+  "theorem_names": [
+    "KVApproximation.Approximation.chebyshevNode_mem",
+    "KVApproximation.Approximation.chebyshevNode_injective",
+    "KVApproximation.Approximation.chebyshevNode_isRoot",
+    "KVApproximation.Approximation.chebyshev_interpolation_exact",
+    "KVApproximation.Approximation.chebyshev_root_alias",
+    "KVApproximation.Approximation.chebyshev_interpolation_T_bound"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

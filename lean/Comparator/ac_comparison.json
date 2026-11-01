@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.ACComparison",
+  "solution_module": "KVApproximation.Analysis.ACComparison",
+  "theorem_names": [
+    "KVApproximation.Analysis.ac_linear_decay_bound"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "challenge_module": "Challenges.TimeSobolev",
+  "solution_module": "KVApproximation.Analysis.TimeSobolevProperties",
+  "theorem_names": [
+    "KVApproximation.Analysis.TimeH1.value_memLp",
+    "KVApproximation.Analysis.TimeH1.velocity_memLp",
+    "KVApproximation.Analysis.TimeH1.hasWeakLineDerivOn",
+    "KVApproximation.Analysis.TimeH1.trace_ae",
+    "KVApproximation.Analysis.TimeH1.trace_integral",
+    "KVApproximation.Analysis.TimeH1.exists_of_weak_derivative"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

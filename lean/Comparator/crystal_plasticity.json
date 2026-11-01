@@ -1,0 +1,21 @@
+{
+  "challenge_module": "Challenges.CrystalPlasticity",
+  "solution_module": "KVApproximation.Examples.CrystalPlasticityIdentities",
+  "theorem_names": [
+    "KVApproximation.Examples.CrystalPlasticity.initially_stress_free",
+    "KVApproximation.Examples.CrystalPlasticity.initial_multiplicative_decomposition",
+    "KVApproximation.Examples.CrystalPlasticity.elastic_initial_factor",
+    "KVApproximation.Examples.CrystalPlasticity.resistance_ratio",
+    "KVApproximation.Examples.CrystalPlasticity.skew_mulVec",
+    "KVApproximation.Examples.CrystalPlasticity.rotation_orthogonal",
+    "KVApproximation.Examples.CrystalPlasticity.deviatoric_combination",
+    "KVApproximation.Examples.CrystalPlasticity.deviatoric_coordinate_equivalence",
+    "KVApproximation.Examples.CrystalPlasticity.deformation_determinant",
+    "KVApproximation.Examples.CrystalPlasticity.deformation_zero"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

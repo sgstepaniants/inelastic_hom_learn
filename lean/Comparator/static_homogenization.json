@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.StaticHomogenization",
+  "solution_module": "KVApproximation.Homogenization.StaticHomogenization",
+  "theorem_names": [
+    "KVApproximation.Homogenization.periodic_elliptic_homogenization",
+    "KVApproximation.Homogenization.periodic_elliptic_weak_limit"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

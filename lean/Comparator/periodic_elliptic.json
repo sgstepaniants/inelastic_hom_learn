@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.PeriodicElliptic",
+  "solution_module": "KVApproximation.Homogenization.PeriodicElliptic",
+  "theorem_names": [
+    "KVApproximation.Homogenization.periodic_elliptic_exists_unique",
+    "KVApproximation.Homogenization.periodic_elliptic_uniform_bound",
+    "KVApproximation.Homogenization.exists_preparedInitialFamily"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

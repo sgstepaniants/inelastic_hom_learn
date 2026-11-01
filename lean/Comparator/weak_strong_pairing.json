@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.WeakStrongPairing",
+  "solution_module": "KVApproximation.Analysis.WeakStrongPairing",
+  "theorem_names": [
+    "KVApproximation.Analysis.tendsto_bilinear_zero_of_bounded",
+    "KVApproximation.Analysis.tendsto_bilinear_of_weak_strong"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

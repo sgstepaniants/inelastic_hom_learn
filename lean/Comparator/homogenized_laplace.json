@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.HomogenizedLaplace",
+  "solution_module": "KVApproximation.Homogenization.HomogenizedLaplace",
+  "theorem_names": [
+    "KVApproximation.Homogenization.prepared_laplace_equilibrium",
+    "KVApproximation.Homogenization.viscous_laplace_equilibrium"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

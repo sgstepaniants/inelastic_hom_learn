@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.CoerciveSolvers",
+  "solution_module": "KVApproximation.OperatorTheory.CoerciveSolverProperties",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.CoerciveForm.solveL_spec",
+    "KVApproximation.OperatorTheory.relativeRiesz_spec",
+    "KVApproximation.OperatorTheory.variational_equation_iff",
+    "KVApproximation.OperatorTheory.CoerciveForm.norm_solveL_le",
+    "KVApproximation.OperatorTheory.relativeRiesz_opNorm_le"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

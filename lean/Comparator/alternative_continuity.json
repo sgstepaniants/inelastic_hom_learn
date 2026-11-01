@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.AlternativePronyContinuity",
+  "solution_module": "KVApproximation.KelvinVoigt.AlternativePronyContinuity",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.continuous_unweightedLocalCoefficient",
+    "KVApproximation.KelvinVoigt.continuous_globalPronyCoefficient"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PeriodicBVCompactness",
+  "solution_module": "KVApproximation.Analysis.PeriodicBVTranslation",
+  "theorem_names": [
+    "KVApproximation.Analysis.periodicVariation_translation_bound"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

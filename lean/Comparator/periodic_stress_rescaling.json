@@ -1,0 +1,8 @@
+{
+  "challenge_module": "Challenges.PeriodicStressRescaling",
+  "solution_module": "KVApproximation.Analysis.PeriodicStressRescaling",
+  "theorem_names": [
+    "KVApproximation.Analysis.integral_rescale_stress_strain_eq_zero"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

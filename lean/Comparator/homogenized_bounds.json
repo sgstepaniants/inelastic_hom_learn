@@ -1,0 +1,8 @@
+{
+  "challenge_module": "Challenges.CoerciveForm",
+  "solution_module": "KVApproximation.OperatorTheory.HomogenizedBounds",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.CoerciveForm.homogenizedForm_bounds"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.MemoryKernel",
+  "solution_module": "KVApproximation.OperatorTheory.SpectralBounds",
+  "theorem_names": ["KVApproximation.OperatorTheory.relaxation_spectrum_subset"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

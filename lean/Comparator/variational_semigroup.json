@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.VariationalSemigroup",
+  "solution_module": "KVApproximation.OperatorTheory.VariationalSemigroup",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.relativeSemigroup_hasDerivAt",
+    "KVApproximation.OperatorTheory.relativeSemigroup_energy_le",
+    "KVApproximation.OperatorTheory.relativeSemigroup_norm_le"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

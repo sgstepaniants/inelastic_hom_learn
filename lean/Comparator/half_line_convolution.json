@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.HalfLineConvolution",
+  "solution_module": "KVApproximation.Analysis.HalfLineConvolution",
+  "theorem_names": [
+    "KVApproximation.Analysis.continuousOn_posConvolution_Ici",
+    "KVApproximation.Analysis.norm_exp_smul_posConvolution_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

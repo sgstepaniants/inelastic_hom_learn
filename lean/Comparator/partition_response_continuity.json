@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PartitionResponse",
+  "solution_module": "KVApproximation.Approximation.PartitionResponseContinuity",
+  "theorem_names": [
+    "KVApproximation.Approximation.continuousOn_partitionResponse"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

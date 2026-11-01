@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.MicroscopicGreen",
+  "solution_module": "KVApproximation.Homogenization.MicroscopicGreenProperties",
+  "theorem_names": [
+    "KVApproximation.Homogenization.microscopicGreen_apply",
+    "KVApproximation.Homogenization.exists_uniform_microscopicGreen_bounds"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.PeriodicFourierEnergy",
+  "solution_module": "KVApproximation.Analysis.PeriodicKorn",
+  "theorem_names": [
+    "KVApproximation.Analysis.HasPeriodicWeakGradient.gradient_sq_norm_le_symmetric",
+    "KVApproximation.Analysis.periodic_korn_two"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

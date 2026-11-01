@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.PronyResponses",
+  "solution_module": "KVApproximation.Dynamics.PronyStateBounds",
+  "theorem_names": [
+    "KVApproximation.Dynamics.prony_state_bound",
+    "KVApproximation.Dynamics.prony_state_uniform_bound"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

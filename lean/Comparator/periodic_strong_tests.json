@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.PeriodicStrongTests",
+  "solution_module": "KVApproximation.Analysis.PeriodicStrongTests",
+  "theorem_names": [
+    "KVApproximation.Analysis.tendsto_integral_rescalePeriodic_inner_strong_along",
+    "KVApproximation.Analysis.tendsto_integral_rescalePeriodic_inner_strong"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

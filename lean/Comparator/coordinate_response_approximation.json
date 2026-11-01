@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.CoordinateResponseApproximation",
+  "solution_module": "KVApproximation.NeuralOperators.CoordinateResponseApproximation",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.prony_responses_approximate_in_coordinates"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

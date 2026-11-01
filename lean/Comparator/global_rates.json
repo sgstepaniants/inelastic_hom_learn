@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.AlternativePronyContinuity",
+  "solution_module": "KVApproximation.Approximation.GlobalRates",
+  "theorem_names": [
+    "KVApproximation.Approximation.globalLogRate_mem"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

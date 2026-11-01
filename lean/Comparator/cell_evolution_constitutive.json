@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.CellEvolution",
+  "solution_module": "KVApproximation.Dynamics.CellEvolutionConstitutive",
+  "theorem_names": [
+    "KVApproximation.Dynamics.cell_evolution_constitutive_law"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

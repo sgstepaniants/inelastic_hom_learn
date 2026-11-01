@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.FiniteLaplace",
+  "solution_module": "KVApproximation.Analysis.FiniteLaplace",
+  "theorem_names": [
+    "KVApproximation.Analysis.finiteLaplace_entire"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

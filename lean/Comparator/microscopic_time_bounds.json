@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.MicroscopicTimeBounds",
+  "solution_module": "KVApproximation.Homogenization.MicroscopicTimeBounds",
+  "theorem_names": [
+    "KVApproximation.Homogenization.exists_uniform_microscopic_timeH1_bound",
+    "KVApproximation.Homogenization.exists_uniform_prepared_timeH1_bound"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

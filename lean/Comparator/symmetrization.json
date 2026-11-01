@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.Symmetrization",
+  "solution_module": "KVApproximation.Tensor.SymmetrizationProperties",
+  "theorem_names": [
+    "KVApproximation.Tensor.norm_symmetrize_le",
+    "KVApproximation.Tensor.inner_symmetrize"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

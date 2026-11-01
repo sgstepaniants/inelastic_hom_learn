@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenges.MandelResponses",
+  "solution_module": "KVApproximation.KelvinVoigt.MandelResponseApproximation",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.strainMandelEquiv_apply",
+    "KVApproximation.KelvinVoigt.elasticityMandelEquiv_apply",
+    "KVApproximation.KelvinVoigt.materialMandelCoordinates_ae",
+    "KVApproximation.KelvinVoigt.mandelStressClass_hasUniversalApproximation",
+    "KVApproximation.KelvinVoigt.mandelKineticClass_hasLocallyLipschitzApproximation"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

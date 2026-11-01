@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.L2TestFunctions",
+  "solution_module": "KVApproximation.Analysis.L2TestFunctions",
+  "theorem_names": ["KVApproximation.Analysis.eq_of_integral_testFunction_inner_eq"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

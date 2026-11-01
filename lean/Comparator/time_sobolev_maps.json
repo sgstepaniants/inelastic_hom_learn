@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.TimeSobolevMaps",
+  "solution_module": "KVApproximation.Analysis.TimeSobolevMaps",
+  "theorem_names": [
+    "KVApproximation.Analysis.TimeH1.eq_of_value_ae",
+    "KVApproximation.Analysis.TimeH1.exists_map",
+    "KVApproximation.Analysis.TimeH1.trace_map_of_value_ae"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

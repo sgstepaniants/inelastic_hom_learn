@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.CorrectorDisplacement",
+  "solution_module": "KVApproximation.Homogenization.CorrectorDisplacement",
+  "theorem_names": [
+    "KVApproximation.Homogenization.correctorGradient_injective",
+    "KVApproximation.Homogenization.correctorGradient_equiv_exists"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

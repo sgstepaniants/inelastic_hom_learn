@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.MaterialTopology",
+  "solution_module": "KVApproximation.KelvinVoigt.MaterialTopology",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.material_L1_tendsto",
+    "KVApproximation.KelvinVoigt.material_fields_L1_tendsto"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

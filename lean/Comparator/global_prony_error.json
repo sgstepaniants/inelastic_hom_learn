@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.AlternativeProny",
+  "solution_module": "KVApproximation.KelvinVoigt.GlobalPronyError",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.global_prony_error_lt"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

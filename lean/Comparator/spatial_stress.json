@@ -1,0 +1,10 @@
+{
+  "challenge_module": "Challenges.SpatialStress",
+  "solution_module": "KVApproximation.Homogenization.SpatialStress",
+  "theorem_names": [
+    "KVApproximation.Homogenization.spatialStressL_apply_ae",
+    "KVApproximation.Homogenization.norm_spatialStressL_le",
+    "KVApproximation.Homogenization.integral_spatialStressL_strain"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

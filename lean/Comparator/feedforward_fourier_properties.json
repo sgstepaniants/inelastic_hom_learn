@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Challenges.FeedforwardFourierMapping",
+  "solution_module": "KVApproximation.NeuralOperators.FeedforwardFourierProperties",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.FeedforwardFourierMapping.evalRepresentative_congr",
+    "KVApproximation.NeuralOperators.FeedforwardFourierMapping.exists_lipschitz_hidden",
+    "KVApproximation.NeuralOperators.FeedforwardFourierMapping.locallyLipschitz"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.ChannelLifting",
+  "solution_module": "KVApproximation.NeuralOperators.ChannelLifting",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.exists_channel_liftingCLM",
+    "KVApproximation.NeuralOperators.exists_injective_channel_lifting"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

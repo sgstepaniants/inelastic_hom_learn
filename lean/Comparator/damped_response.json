@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Challenges.DampedResponse",
+  "solution_module": "KVApproximation.Dynamics.DampedResponseProperties",
+  "theorem_names": [
+    "KVApproximation.Dynamics.norm_dampedResponse_le",
+    "KVApproximation.Dynamics.continuousOn_dampedResponse",
+    "KVApproximation.Dynamics.dampedResponse_integral_eq",
+    "KVApproximation.Dynamics.dampedResponse_trajectory"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.PronyDynamics",
+  "solution_module": "KVApproximation.Dynamics.PronyDissipation",
+  "theorem_names": [
+    "KVApproximation.Dynamics.stress_error_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

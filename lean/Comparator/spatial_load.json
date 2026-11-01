@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.SpatialLoad",
+  "solution_module": "KVApproximation.Homogenization.SpatialFormIdentities",
+  "theorem_names": [
+    "KVApproximation.Homogenization.spatialLoadOperator_apply",
+    "KVApproximation.Homogenization.norm_spatialLoadOperator_apply_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.FourierMapping",
+  "solution_module": "KVApproximation.NeuralOperators.FourierMappingLipschitz",
+  "theorem_names": ["KVApproximation.NeuralOperators.FourierMapping.lipschitz"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

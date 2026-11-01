@@ -1,0 +1,11 @@
+{
+  "challenge_module": "Challenges.StaticCellFlux",
+  "solution_module": "KVApproximation.Homogenization.StaticCellFluxProperties",
+  "theorem_names": [
+    "KVApproximation.Homogenization.exists_unique_static_corrector",
+    "KVApproximation.Homogenization.cellFlux_apply_ae",
+    "KVApproximation.Homogenization.cellFlux_orthogonal_periodic",
+    "KVApproximation.Homogenization.cellFlux_mean_pairing"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.PeriodicSobolev",
+  "solution_module": "KVApproximation.Analysis.PeriodicIntegration",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicC1.integral_partial_eq_zero",
+    "KVApproximation.Analysis.PeriodicC1.integral_smul_partial"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

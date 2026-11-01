@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.UnweightedResponse",
+  "solution_module": "KVApproximation.Approximation.UnweightedResponseIntegral",
+  "theorem_names": [
+    "KVApproximation.Approximation.memory_eq_unweightedResponseIntegral",
+    "KVApproximation.Approximation.unweighted_prony_stress_eq_partitionIntegral"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

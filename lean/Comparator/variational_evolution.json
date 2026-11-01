@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.VariationalEvolution",
+  "solution_module": "KVApproximation.Dynamics.VariationalEvolution",
+  "theorem_names": [
+    "KVApproximation.Dynamics.variational_timeH1_exists_unique",
+    "KVApproximation.Dynamics.variational_timeH1_duhamel"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

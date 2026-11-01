@@ -1,0 +1,1315 @@
+/- Transitive axiom dependencies of the proof library. -/
+
+import KVApproximation.NeuralOperators.FeedforwardProperties
+import KVApproximation.NeuralOperators.NonlinearChannelLifting
+import KVApproximation.NeuralOperators.FeedforwardFourierProperties
+import KVApproximation.NeuralOperators.FeedforwardFourierApproximation
+import KVApproximation.NeuralOperators.ActivatedFourierChainProperties
+import KVApproximation.NeuralOperators.ArchitectureAdmissibility
+import KVApproximation.KelvinVoigt.SobolevMaterialCompactness
+import KVApproximation.Homogenization.ForcedSubsequence
+import KVApproximation.Homogenization.MicroscopicSpectrum
+import KVApproximation.OperatorTheory.RelativeRieszSpectrum
+import KVApproximation.NeuralOperators.FourierProjectionFeatures
+import KVApproximation.Approximation.VectorRidgeApproximation
+import KVApproximation.NeuralOperators.FourierProjectionEvaluation
+import KVApproximation.NeuralOperators.FourierProjectionApproximation
+import KVApproximation.Analysis.UniformLocalAverage
+import KVApproximation.Approximation.FiniteFeatures
+import KVApproximation.NeuralOperators.FourierMappingLipschitz
+import KVApproximation.NeuralOperators.FourierMappingLayers
+import KVApproximation.NeuralOperators.FourierMappingAffine
+import KVApproximation.NeuralOperators.FourierMappingProjection
+import KVApproximation.Analysis.PeriodicFourierFunctionals
+import KVApproximation.Analysis.Nemytskii
+import KVApproximation.Approximation.RidgeApproximation
+import KVApproximation.NeuralOperators.FourierMappingLp
+import KVApproximation.NeuralOperators.FourierMappingReality
+import KVApproximation.NeuralOperators.FourierMappingRepresentatives
+import KVApproximation.KelvinVoigt.SpectralEdgeDiscontinuity
+import KVApproximation.Homogenization.CellRelaxationIdentities
+import KVApproximation.Homogenization.LocalizedCorrectors
+import KVApproximation.Analysis.PeriodicNonconstantStrain
+import KVApproximation.Analysis.PeriodicBump
+import KVApproximation.KelvinVoigt.StripBV
+import KVApproximation.KelvinVoigt.StripMaterials
+import KVApproximation.Analysis.PeriodicSlicing
+import KVApproximation.Analysis.PeriodicStripVariation
+import KVApproximation.Analysis.PeriodicCoordinateUpdate
+import KVApproximation.KelvinVoigt.StripConvergence
+import KVApproximation.KelvinVoigt.StripFieldProperties
+import KVApproximation.Analysis.PeriodicCoordinates
+import KVApproximation.Homogenization.HomogeneousSubsequence
+import KVApproximation.Analysis.WeakSubsequenceLimit
+import KVApproximation.KelvinVoigt.Homogenization
+import KVApproximation.Homogenization.ForcedHomogenization
+import KVApproximation.Homogenization.DuhamelLimit
+import KVApproximation.Homogenization.ForcedMemory
+import KVApproximation.Homogenization.HomogenizedSuperposition
+import KVApproximation.Analysis.TimeSobolevGreen
+import KVApproximation.Analysis.TimeSobolevTraceCompactness
+import KVApproximation.Analysis.OperatorConvolutionBalance
+import KVApproximation.Analysis.OperatorConvolutionLimits
+import KVApproximation.Homogenization.HomogenizedGreen
+import KVApproximation.Homogenization.MicroscopicGreenProperties
+import KVApproximation.Homogenization.HomogeneousHomogenization
+import KVApproximation.Homogenization.HomogeneousLimit
+import KVApproximation.Analysis.TimeSobolevLaplaceMemory
+import KVApproximation.Analysis.LaplaceMemory
+import KVApproximation.Analysis.HalfLineLaplaceDamping
+import KVApproximation.Analysis.HalfLineConvolution
+import KVApproximation.Analysis.HalfLineLaplacePrimitive
+import KVApproximation.Homogenization.HomogenizedUniqueness
+import KVApproximation.Homogenization.HomogenizedMemory
+import KVApproximation.Homogenization.ConstantSpatialCoercivity
+import KVApproximation.Analysis.TimeSobolevMemoryUniqueness
+import KVApproximation.Analysis.VolterraUniqueness
+import KVApproximation.Analysis.TimeSobolevMemory
+import KVApproximation.Analysis.CausalConvolution
+import KVApproximation.Homogenization.ConstantSpatialFormProperties
+import KVApproximation.Analysis.HalfLineLaplaceConvolution
+import KVApproximation.Homogenization.HomogenizedLaplace
+import KVApproximation.Analysis.HalfLineLaplaceUniqueness
+import KVApproximation.OperatorTheory.CfcLaplace
+import KVApproximation.Homogenization.TransformedCell
+import KVApproximation.Homogenization.RescaledFieldCombinations
+import KVApproximation.Tensor.FieldCombinations
+import KVApproximation.Analysis.TimeSobolevHalfLine
+import KVApproximation.Analysis.HalfLineLaplaceProperties
+import KVApproximation.Analysis.HalfLineLaplaceDerivative
+import KVApproximation.Homogenization.MicroscopicCompactness
+import KVApproximation.Homogenization.MicroscopicLaplace
+import KVApproximation.Homogenization.MicroscopicEvolution
+import KVApproximation.Homogenization.MicroscopicTimeBounds
+import KVApproximation.Homogenization.MicroscopicSemigroup
+import KVApproximation.Homogenization.StaticHomogenization
+import KVApproximation.Homogenization.StaticEquilibriumLimit
+import KVApproximation.Homogenization.SpatialStress
+import KVApproximation.Analysis.PeriodicCorrectorTests
+import KVApproximation.Analysis.PeriodicStressLimits
+import KVApproximation.Homogenization.EffectiveElliptic
+import KVApproximation.Homogenization.StaticCellFluxProperties
+import KVApproximation.Analysis.WeakStrongPairing
+import KVApproximation.Analysis.PeriodicStressRescaling
+import KVApproximation.Analysis.PeriodicCutoff
+import KVApproximation.Analysis.DirichletCutoff
+import KVApproximation.Analysis.PeriodicCorrectorRescaling
+import KVApproximation.Analysis.PeriodicAveragingReal
+import KVApproximation.Analysis.PeriodicRescalingLp
+import KVApproximation.Analysis.DirichletWeakCompactness
+import KVApproximation.Homogenization.PeriodicElliptic
+import KVApproximation.Homogenization.RescaledFieldProperties
+import KVApproximation.Analysis.PeriodicRescaling
+import KVApproximation.Homogenization.SpatialCoercivity
+import KVApproximation.Analysis.DirichletKorn
+import KVApproximation.Analysis.DirichletMixedDerivatives
+import KVApproximation.Analysis.LpFiniteCoordinates
+import KVApproximation.Analysis.VectorSobolevProperties
+import KVApproximation.Tensor.SymmetrizationProperties
+import KVApproximation.Homogenization.SpatialFields
+import KVApproximation.Analysis.ZeroBoundaryCoordinates
+import KVApproximation.Analysis.DirichletPoincare
+import KVApproximation.Homogenization.CellDisplacementConstitutive
+import KVApproximation.Homogenization.CellDisplacementEquivalence
+import KVApproximation.Homogenization.CellDisplacementStress
+import KVApproximation.Homogenization.PeriodicTests
+import KVApproximation.Analysis.TimeSobolevMaps
+import KVApproximation.Analysis.PeriodicMeanRemoval
+import KVApproximation.Homogenization.CorrectorDisplacement
+import KVApproximation.Homogenization.CorrectorTrajectoryMaps
+import KVApproximation.Dynamics.CellEvolutionConstitutive
+import KVApproximation.Dynamics.CellEvolutionDuhamel
+import KVApproximation.Dynamics.CellEvolutionExistence
+import KVApproximation.Analysis.OperatorPrimitive
+import KVApproximation.Dynamics.LinearTimeDuhamel
+import KVApproximation.Dynamics.LinearTimeSobolev
+import KVApproximation.Analysis.TimeSobolevProperties
+import KVApproximation.Approximation.GlobalRates
+import KVApproximation.KelvinVoigt.AlternativePronyContinuity
+import KVApproximation.KelvinVoigt.ContinuousPronyApproximation
+import KVApproximation.KelvinVoigt.UnweightedApproximation
+import KVApproximation.KelvinVoigt.GlobalApproximation
+import KVApproximation.Dynamics.CellEvolutionAlgebra
+import KVApproximation.Approximation.GlobalCoordinates
+import KVApproximation.Approximation.GlobalRateGeometry
+import KVApproximation.Approximation.GlobalInterpolation
+import KVApproximation.Approximation.GlobalResponseIntegral
+import KVApproximation.KelvinVoigt.GlobalPronyError
+import KVApproximation.KelvinVoigt.UnweightedPronyError
+import KVApproximation.Approximation.UnweightedResponseIntegral
+import KVApproximation.Approximation.UnweightedInterpolation
+import KVApproximation.Approximation.UnweightedResponseBound
+import KVApproximation.Approximation.AlternativeDimensionEstimates
+import KVApproximation.KelvinVoigt.DimensionAsymptotics
+import KVApproximation.Approximation.DimensionGrowth
+import KVApproximation.Tensor.IsotropicIdentities
+import KVApproximation.Examples.LinearSurrogateCoordinates
+import KVApproximation.Examples.CrystalPlasticityIdentities
+import KVApproximation.Tensor.MatrixExponential
+import KVApproximation.KelvinVoigt.UniversalApproximation
+import KVApproximation.KelvinVoigt.PronyNeuralApproximation
+import KVApproximation.KelvinVoigt.MaterialResponseStability
+import KVApproximation.NeuralOperators.UniformPronyStability
+import KVApproximation.NeuralOperators.PronyResponseStability
+import KVApproximation.Dynamics.Stability
+import KVApproximation.Dynamics.DissipativeStability
+import KVApproximation.Dynamics.DrivenUniqueness
+import KVApproximation.Dynamics.IntegralCurveRegularity
+import KVApproximation.Analysis.EnergyTrapping
+import KVApproximation.Dynamics.CaratheodoryHalfLine
+import KVApproximation.Dynamics.DrivenField
+import KVApproximation.Dynamics.Caratheodory
+import KVApproximation.Analysis.EnergyComparison
+import KVApproximation.Analysis.ACComparison
+import KVApproximation.Dynamics.PronyDissipation
+import KVApproximation.KelvinVoigt.MaterialResponseApproximation
+import KVApproximation.NeuralOperators.CoordinateResponseApproximation
+import KVApproximation.KelvinVoigt.MandelResponseApproximation
+import KVApproximation.Analysis.LpProductCoordinates
+import KVApproximation.Analysis.LpCoordinates
+import KVApproximation.NeuralOperators.CoordinateApproximation
+import KVApproximation.Tensor.MandelFiniteIsometry
+import KVApproximation.KelvinVoigt.PronyError
+import KVApproximation.Dynamics.PronyMeasurability
+import KVApproximation.Approximation.ResponseMeasurability
+import KVApproximation.Approximation.PronyResponseIntegral
+import KVApproximation.Approximation.MemoryResponseIntegral
+import KVApproximation.Spectral.TensorActionFubini
+import KVApproximation.Approximation.PartitionResponseIntegration
+import KVApproximation.Approximation.PartitionResponseError
+import KVApproximation.Approximation.PartitionResponseContinuity
+import KVApproximation.Approximation.RealLocalChebyshev
+import KVApproximation.Approximation.RealResponseIdentities
+import KVApproximation.Spectral.TensorActionIntegration
+import KVApproximation.NeuralOperators.ResponseApproximation
+import KVApproximation.NeuralOperators.ResponseDomains
+import KVApproximation.KelvinVoigt.InternalStateBound
+import KVApproximation.Tensor.MandelBlockIsometry
+import KVApproximation.Tensor.MandelIsometry
+import KVApproximation.KelvinVoigt.MaterialResponseContinuity
+import KVApproximation.KelvinVoigt.MaterialTopology
+import KVApproximation.Dynamics.DampedResponseProperties
+import KVApproximation.Dynamics.PronyTrajectory
+import KVApproximation.Dynamics.PronyStateBounds
+
+import KVApproximation.Approximation.SpectralPartition
+import KVApproximation.Approximation.PronyIdentities
+import KVApproximation.KelvinVoigt.PronyContinuity
+import KVApproximation.Dynamics.PronyConvolution
+import KVApproximation.KelvinVoigt.PronySingleton
+
+import KVApproximation.Analysis.CircleFourier
+import KVApproximation.Approximation.ChebyshevAnalytic
+import KVApproximation.Approximation.ChebyshevInterpolation
+import KVApproximation.Approximation.LocalRateGeometry
+import KVApproximation.Approximation.LocalChebyshev
+import KVApproximation.Approximation.InterpolationPolynomial
+
+import KVApproximation.Analysis.AnnulusCoefficientBounds
+
+import KVApproximation.Approximation.BernsteinGeometry
+
+import KVApproximation.Approximation.ChebyshevSeries
+
+import KVApproximation.Approximation.ChebyshevNodes
+
+import KVApproximation.Approximation.LogPatchGeometry
+
+import KVApproximation.Approximation.WeightedResponseAnalytic
+import KVApproximation.Approximation.WeightedResponseBound
+
+import KVApproximation.Homogenization.WeightedSpectralBound
+
+import KVApproximation.Homogenization.WeightedSpectralContinuity
+
+import KVApproximation.Spectral.BoundEstimates
+
+import KVApproximation.Spectral.WeightedMeasureIntegration
+
+import KVApproximation.Analysis.VectorMeasureDensity
+
+import KVApproximation.Homogenization.SpectralContinuity
+
+import KVApproximation.Homogenization.CellSpectralMeasure
+
+import KVApproximation.Spectral.CompressionApproximation
+
+import KVApproximation.OperatorTheory.StrongConvergence
+
+import KVApproximation.Spectral.RepresentationUniqueness
+
+import KVApproximation.Analysis.CompactLaplaceUniqueness
+
+import KVApproximation.Analysis.PositiveScalarization
+
+import KVApproximation.Spectral.TensorMeasureIntegration
+
+import KVApproximation.Analysis.PeriodicVariationStability
+import KVApproximation.KelvinVoigt.MaterialLimits
+import KVApproximation.KelvinVoigt.MaterialCompactness
+import KVApproximation.Analysis.LpInterpolation
+import KVApproximation.Analysis.PeriodicCompactness
+import KVApproximation.Analysis.PeriodicBVCompactness
+
+import KVApproximation.OperatorTheory.FieldInverse
+import KVApproximation.Tensor.ActionBounds
+import KVApproximation.OperatorTheory.VariationalStability
+import KVApproximation.Tensor.FieldNormBounds
+import KVApproximation.Homogenization.CellConvergence
+
+import KVApproximation.Homogenization.CorrectorRange
+
+import KVApproximation.Analysis.PeriodicKorn
+import KVApproximation.Analysis.PeriodicSobolevDensity
+
+import KVApproximation.Tensor.KornSymbol
+import KVApproximation.Spectral.Compression
+import KVApproximation.OperatorTheory.SemigroupDecay
+import KVApproximation.OperatorTheory.WeightedRealization
+import KVApproximation.Spectral.StrongAdditivity
+import KVApproximation.Spectral.ContinuousCalculus
+import KVApproximation.Homogenization.CellConstitutive
+import KVApproximation.Spectral.TensorVariation
+import KVApproximation.Spectral.CompressionConstruction
+import KVApproximation.Spectral.CompressionMoments
+import KVApproximation.KelvinVoigt.SpectralRepresentation
+import KVApproximation.Analysis.MultiplicationConvergence
+import KVApproximation.Analysis.PeriodicSmoothIdentities
+import KVApproximation.Analysis.PeriodicSobolevIdentities
+import KVApproximation.Analysis.PeriodicWeakGradient
+import KVApproximation.Homogenization.CellTensorBounds
+import KVApproximation.Analysis.PeriodicSobolevIdentification
+import KVApproximation.NeuralOperators.ChannelLifting
+import KVApproximation.Approximation.VectorFiniteFeatures
+import KVApproximation.NeuralOperators.FourierFeatureLayer
+import KVApproximation.NeuralOperators.FourierMappingApproximation
+import KVApproximation.Approximation.DimensionEstimates
+import KVApproximation.Approximation.EllipseConstant
+import KVApproximation.Tensor.MultiplicationIdentities
+
+#print axioms KVApproximation.OperatorTheory.CoerciveForm.nonneg
+#print axioms KVApproximation.Analysis.PeriodicC1.continuous_divergence
+#print axioms KVApproximation.Analysis.continuous_periodicTestPairing
+#print axioms KVApproximation.Analysis.periodicVariation_congr
+#print axioms KVApproximation.Analysis.periodicBVNorm_congr
+#print axioms KVApproximation.Analysis.periodicBVNorm_le_of_tendsto_L1
+#print axioms KVApproximation.Tensor.coefficient_constraints_of_tendsto_L1
+#print axioms KVApproximation.KelvinVoigt.admissibleMaterials_mem_of_tendsto_L1
+#print axioms KVApproximation.Analysis.eLpNorm_two_sq_le_of_ae_bound
+#print axioms KVApproximation.Analysis.tendsto_eLpNorm_two_of_one_of_ae_bound
+#print axioms KVApproximation.Analysis.isCompact_closure_of_periodic_translations
+#print axioms KVApproximation.Analysis.exists_periodicC1_eLpNorm_sub_lt
+#print axioms TauCeti.totallyBounded_of_comp_add_sub_of_unifTight
+#print axioms TauCeti.isCompact_closure_of_comp_add_sub_of_unifTight
+#print axioms TauCeti.totallyBounded_of_comp_add_sub_of_isBounded_of_ae_eq_zero_compl
+#print axioms TauCeti.isCompact_closure_of_comp_add_sub_of_isBounded_of_ae_eq_zero_compl
+#print axioms KVApproximation.OperatorTheory.CoerciveForm.energy_eq_zero_iff
+#print axioms KVApproximation.OperatorTheory.CoerciveForm.riesz_spec
+#print axioms KVApproximation.OperatorTheory.form_projection
+#print axioms KVApproximation.OperatorTheory.CoerciveForm.eq_of_form_eq
+#print axioms KVApproximation.OperatorTheory.projection_eq_self
+#print axioms KVApproximation.OperatorTheory.relaxation_spec
+#print axioms KVApproximation.OperatorTheory.relaxation_eq_projection_riesz
+#print axioms KVApproximation.OperatorTheory.complement_apply
+#print axioms KVApproximation.OperatorTheory.form_complement_corrector
+#print axioms KVApproximation.OperatorTheory.projection_complement
+#print axioms KVApproximation.OperatorTheory.complement_idempotent
+#print axioms KVApproximation.OperatorTheory.form_complement
+#print axioms KVApproximation.OperatorTheory.complement_selfAdjoint
+#print axioms KVApproximation.OperatorTheory.form_complement_eq_zero_iff
+#print axioms KVApproximation.OperatorTheory.complement_energy_eq
+#print axioms KVApproximation.OperatorTheory.projection_energy_le
+#print axioms KVApproximation.OperatorTheory.complement_energy_le
+#print axioms KVApproximation.OperatorTheory.relaxation_selfAdjoint
+#print axioms KVApproximation.OperatorTheory.relaxation_energy_bounds
+#print axioms KVApproximation.OperatorTheory.mismatch_eq_projection_complement
+#print axioms KVApproximation.OperatorTheory.mismatch_energy_le
+#print axioms KVApproximation.OperatorTheory.WeightedSpace.innerCore
+#print axioms KVApproximation.OperatorTheory.WeightedSpace.inner_eq
+#print axioms KVApproximation.OperatorTheory.WeightedSpace.norm_eq
+#print axioms KVApproximation.OperatorTheory.WeightedSpace.norm_sq
+#print axioms KVApproximation.OperatorTheory.WeightedSpace.norm_le
+#print axioms KVApproximation.OperatorTheory.WeightedSpace.exists_norm_val_le
+#print axioms KVApproximation.OperatorTheory.WeightedSpace.continuousLinearEquiv
+#print axioms KVApproximation.OperatorTheory.WeightedSpace.continuousLinearEquiv_apply
+#print axioms KVApproximation.OperatorTheory.WeightedSpace.continuousLinearEquiv_symm_apply
+#print axioms KVApproximation.OperatorTheory.WeightedSpace.uniformEquiv
+#print axioms KVApproximation.OperatorTheory.weightedRelaxation_isSelfAdjoint
+#print axioms KVApproximation.Spectral.relaxationPVM
+#print axioms KVApproximation.OperatorTheory.weightedSpace_realization
+#print axioms KVApproximation.OperatorTheory.relaxationSemigroup_zero
+#print axioms KVApproximation.OperatorTheory.relaxationSemigroup_add
+#print axioms KVApproximation.OperatorTheory.relaxationSemigroup_commute
+#print axioms KVApproximation.OperatorTheory.relaxationSemigroup_continuous
+#print axioms KVApproximation.OperatorTheory.mismatch_self
+#print axioms KVApproximation.OperatorTheory.memoryForm_self
+#print axioms KVApproximation.OperatorTheory.weightedRelaxation_spectrum_eq
+#print axioms KVApproximation.OperatorTheory.weightedRelaxation_lower_bound
+#print axioms KVApproximation.OperatorTheory.relaxation_spectrum_subset
+#print axioms KVApproximation.OperatorTheory.weightedRelaxation_complex_spectrum_subset
+#print axioms KVApproximation.OperatorTheory.relaxationSemigroup_conjugate
+#print axioms KVApproximation.OperatorTheory.relaxationSemigroup_selfAdjoint
+#print axioms KVApproximation.OperatorTheory.memoryForm_symmetric
+#print axioms KVApproximation.OperatorTheory.memoryForm_nonneg
+#print axioms KVApproximation.OperatorTheory.relaxationSemigroup_energy_le
+#print axioms KVApproximation.Spectral.projectionMeasure_hasSum
+#print axioms KVApproximation.Spectral.boundedPVM_supported
+#print axioms KVApproximation.Spectral.boundedPVM_integral
+#print axioms KVApproximation.Tensor.CoerciveField.toForm_congr
+#print axioms KVApproximation.Tensor.CoerciveField.riesz_eq_multiplication
+#print axioms KVApproximation.Tensor.CoerciveField.inverse_multiplication
+#print axioms KVApproximation.Tensor.CoerciveField.multiplication_inverse
+#print axioms KVApproximation.Tensor.eq_of_inner_action_eq
+#print axioms KVApproximation.Tensor.continuous_of_inner_action
+#print axioms KVApproximation.Tensor.existsUnique_form_tensor
+#print axioms KVApproximation.Tensor.tensorTrace_eq_sum
+#print axioms KVApproximation.Tensor.norm_le_tensorTrace
+#print axioms KVApproximation.Homogenization.cellConstitutiveModel_exists_unique
+#print axioms KVApproximation.Homogenization.cellKernel_nonneg
+#print axioms KVApproximation.Homogenization.cellKernel_continuous
+#print axioms KVApproximation.Homogenization.cellConstitutiveModel_self
+#print axioms KVApproximation.Homogenization.cellConstitutiveModel_eq_fields
+#print axioms KVApproximation.Spectral.TensorMeasure.variation_le_trace
+#print axioms KVApproximation.Tensor.tendsto_of_inner_action
+#print axioms KVApproximation.Tensor.hasSum_of_inner_action
+#print axioms KVApproximation.Spectral.pvmCompression_exists_unique
+#print axioms KVApproximation.Spectral.pvmCompression_positive_trace
+#print axioms KVApproximation.Spectral.compressedMeasure_exists_unique
+#print axioms KVApproximation.Spectral.compressedMeasure_positive_trace
+#print axioms KVApproximation.Spectral.compressedMeasure_supported
+#print axioms KVApproximation.Analysis.integral_scalarization
+#print axioms KVApproximation.Spectral.pvmCompression_integral_diag
+#print axioms KVApproximation.Spectral.compressedMeasure_integral
+#print axioms KVApproximation.Spectral.compressedMeasure_moment
+#print axioms KVApproximation.Spectral.compressedMeasure_memory
+#print axioms KVApproximation.Tensor.card_strainIndex
+#print axioms KVApproximation.Tensor.finrank_symmetric
+#print axioms KVApproximation.Homogenization.norm_constantStrain
+#print axioms KVApproximation.Spectral.spectral_representation
+#print axioms KVApproximation.Analysis.tendsto_eLpNorm_of_dominated_zero
+#print axioms KVApproximation.Tensor.multiplication_converges
+#print axioms KVApproximation.Analysis.toCell_cellRepresentative
+#print axioms KVApproximation.Analysis.PeriodicC1.partial_toCell
+#print axioms KVApproximation.Analysis.PeriodicC1.continuous_value
+#print axioms KVApproximation.Analysis.PeriodicC1.continuous_partial
+#print axioms KVApproximation.Analysis.PeriodicH1.norm_sq
+#print axioms KVApproximation.Analysis.cellAverageL_eq_integral
+#print axioms KVApproximation.Analysis.mem_zeroMeanPeriodicSubmodule_iff
+#print axioms KVApproximation.Analysis.PeriodicC1.integral_partial_eq_zero
+#print axioms KVApproximation.Analysis.PeriodicC1.integral_smul_partial
+#print axioms KVApproximation.Analysis.PeriodicH1.integral_gradient_eq_zero
+#print axioms KVApproximation.Analysis.PeriodicH1.hasWeakGradient
+#print axioms KVApproximation.Homogenization.constantStrain_orthogonal_corrector
+#print axioms KVApproximation.OperatorTheory.CoerciveForm.homogenizedForm_bounds
+#print axioms KVApproximation.Homogenization.effectiveForm_bounds
+#print axioms KVApproximation.Homogenization.effectiveForm_pos
+#print axioms KVApproximation.Analysis.mFourier_toCell
+#print axioms KVApproximation.Analysis.contDiff_mFourier_lift
+#print axioms KVApproximation.Analysis.fderiv_mFourier_lift_apply
+#print axioms KVApproximation.Analysis.HasPeriodicWeakGradient.integral_complex_test
+#print axioms KVApproximation.Analysis.HasPeriodicWeakGradient.fourier_coefficient
+#print axioms KVApproximation.Analysis.eq_of_fourier_integrals_eq
+#print axioms KVApproximation.Analysis.HasPeriodicWeakGradient.gradient_unique
+#print axioms KVApproximation.Analysis.PeriodicH1.valueL_injective
+
+#print axioms KVApproximation.Tensor.symmetrized_rankOne_sq_norm
+#print axioms KVApproximation.Tensor.rankOne_sq_norm_le_symmetrized
+
+#print axioms KVApproximation.Analysis.hasSum_fourier_energy
+#print axioms KVApproximation.Analysis.HasPeriodicWeakGradient.gradient_sq_norm_le_symmetric
+#print axioms KVApproximation.Analysis.HasPeriodicWeakGradient.poincare_sq
+#print axioms KVApproximation.Analysis.periodic_korn_two
+#print axioms KVApproximation.Analysis.periodic_korn
+#print axioms KVApproximation.Analysis.contDiff_realFourierMode_lift
+#print axioms KVApproximation.Analysis.fderiv_realFourierMode_lift_apply
+#print axioms KVApproximation.Analysis.hasSum_realFourier_series
+#print axioms KVApproximation.Analysis.periodicH1_iff_weakGradient
+
+#print axioms KVApproximation.Homogenization.correctorSubspace_eq_range
+
+#print axioms KVApproximation.Tensor.hasFieldBounds_iff_ae
+#print axioms KVApproximation.Tensor.HasBounds.action_isInvertible
+#print axioms KVApproximation.Tensor.HasBounds.inverse_action_norm_le
+#print axioms KVApproximation.Tensor.CoerciveField.inverse_apply_ae
+#print axioms KVApproximation.Tensor.CoerciveField.relativeRiesz_apply_ae
+
+#print axioms KVApproximation.Tensor.norm_sq_eq_sum_norm_action
+#print axioms KVApproximation.Tensor.HasBounds.action_opNorm_le
+#print axioms KVApproximation.Tensor.HasBounds.norm_action_le
+#print axioms KVApproximation.Tensor.HasBounds.norm_le_sqrt_dimension
+
+#print axioms KVApproximation.OperatorTheory.CoerciveForm.riesz_opNorm_le
+#print axioms KVApproximation.OperatorTheory.projection_sub_norm_le
+#print axioms KVApproximation.OperatorTheory.relaxation_sub_norm_le
+#print axioms KVApproximation.OperatorTheory.relaxation_opNorm_le
+
+#print axioms KVApproximation.Tensor.HasFieldBounds.eLpNorm_top_le
+#print axioms KVApproximation.Tensor.multiplication_strong_tendsto
+
+#print axioms KVApproximation.Homogenization.cell_operators_converge
+#print axioms KVApproximation.Homogenization.effective_tensors_converge
+
+#print axioms KVApproximation.Analysis.eLpNorm_one_eq_iSup_periodicTestPairing
+
+#print axioms KVApproximation.Analysis.exists_periodic_divergence_eq_translate_sub
+#print axioms KVApproximation.Analysis.periodicVariation_translation_bound
+#print axioms KVApproximation.Analysis.isCompact_periodicBV_sublevel
+#print axioms hasFDerivAt_integral_Icc_of_contDiff
+#print axioms contDiff_integral_Icc_of_contDiff
+#print axioms IsCompact.exists_eventually_norm_le
+
+#print axioms KVApproximation.Tensor.isCompact_coefficient_constraints
+#print axioms KVApproximation.KelvinVoigt.isCompact_admissibleMaterials
+#print axioms KVApproximation.Spectral.TensorMeasure.integrable_continuousOn
+#print axioms KVApproximation.Spectral.dist_tensorIntegral_le_of_bound
+#print axioms KVApproximation.Analysis.exists_finite_positive_scalarization
+#print axioms KVApproximation.Analysis.measure_eq_of_weighted_exponential_moments
+#print axioms KVApproximation.Spectral.spectral_representation_unique
+#print axioms KVApproximation.OperatorTheory.tendsto_apply_of_uniform_bound
+#print axioms KVApproximation.Spectral.compressedMeasure_pairing_sub_le
+#print axioms KVApproximation.Spectral.cell_spectral_measure_isCompressed
+#print axioms KVApproximation.Spectral.spectral_measures_converge
+#print axioms KVApproximation.Analysis.scalarization_withDensity_apply
+#print axioms KVApproximation.Spectral.weightedMeasure_properties
+#print axioms KVApproximation.Spectral.weightedMeasure_integral
+#print axioms KVApproximation.Spectral.weighted_variation_sup_lt
+#print axioms KVApproximation.Spectral.weighted_spectral_measures_converge
+#print axioms KVApproximation.OperatorTheory.CoerciveForm.addScaled_bounds
+#print axioms KVApproximation.OperatorTheory.homogenizedForm_resolvent
+#print axioms KVApproximation.Spectral.weightedMeasure_variation_le
+#print axioms KVApproximation.Dynamics.BoundedTrajectory.norm_velocity_ae_le
+#print axioms KVApproximation.Dynamics.BoundedTrajectory.velocity_intervalIntegrable
+#print axioms KVApproximation.Dynamics.BoundedTrajectory.norm_value_sub_le
+#print axioms KVApproximation.Dynamics.BoundedTrajectory.continuousOn_value
+#print axioms KVApproximation.Dynamics.BoundedTrajectory.norm_value_le
+#print axioms KVApproximation.Analysis.finiteLaplace_entire
+#print axioms KVApproximation.Analysis.integral_deriv_smul_primitive_eq_sub_of_le
+#print axioms KVApproximation.Approximation.weightedResponse_entire
+#print axioms KVApproximation.Analysis.norm_exponential_integral_le
+#print axioms KVApproximation.Dynamics.BoundedTrajectory.exponential_integral_eq
+#print axioms KVApproximation.Approximation.norm_weightedResponse_le
+
+#print axioms KVApproximation.Approximation.sum_logHat
+#print axioms KVApproximation.Approximation.logPatch_width
+#print axioms KVApproximation.Approximation.localCoordinate_localRate
+#print axioms KVApproximation.Approximation.logPatch_bounds
+#print axioms KVApproximation.Approximation.continuous_logHat
+#print axioms KVApproximation.Approximation.logHat_nonneg
+#print axioms KVApproximation.Approximation.logHat_eq_zero_of_not_mem
+#print axioms KVApproximation.Approximation.localRate_mem_patch
+#print axioms KVApproximation.Approximation.localCoordinate_mem
+#print axioms KVApproximation.Approximation.localRate_localCoordinate
+
+#print axioms KVApproximation.Approximation.chebyshevNode_mem
+#print axioms KVApproximation.Approximation.chebyshevNode_injective
+#print axioms KVApproximation.Approximation.chebyshevNode_isRoot
+#print axioms KVApproximation.Approximation.chebyshev_interpolation_exact
+#print axioms KVApproximation.Approximation.chebyshev_root_alias
+#print axioms KVApproximation.Approximation.chebyshev_interpolation_T_bound
+#print axioms KVApproximation.Approximation.chebyshev_series_interpolation_error_le
+#print axioms KVApproximation.Analysis.joukowski_inv
+#print axioms KVApproximation.Analysis.joukowski_unit
+#print axioms KVApproximation.Approximation.joukowski_mem_bernsteinEllipse
+#print axioms KVApproximation.Approximation.real_mem_bernsteinEllipse
+#print axioms KVApproximation.Approximation.bernsteinEllipse_im_le
+#print axioms KVApproximation.Analysis.circleCoefficient_eq_of_analyticOnNhd
+#print axioms KVApproximation.Analysis.norm_circleCoefficient_le
+
+#print axioms KVApproximation.Analysis.circleCoefficient_eq_fourierCoeff
+#print axioms KVApproximation.Analysis.fourierCoeff_neg_of_even
+#print axioms KVApproximation.Approximation.norm_chebyshevCoefficient_le
+#print axioms KVApproximation.Approximation.hasSum_chebyshevSeries
+#print axioms KVApproximation.Approximation.chebyshevInterpolant_error_le
+#print axioms KVApproximation.Approximation.complexLocalRate_ofReal
+#print axioms KVApproximation.Approximation.complexLocalRate_ellipse
+#print axioms KVApproximation.Approximation.local_weighted_response_error
+#print axioms KVApproximation.Approximation.chebyshevInterpolant_degree_lt
+
+#print axioms KVApproximation.Approximation.logarithmicSpan_pos
+#print axioms KVApproximation.Approximation.continuousOn_spectralWeight
+#print axioms KVApproximation.Approximation.spectralWeight_nonneg
+#print axioms KVApproximation.Approximation.sum_spectralWeight
+#print axioms KVApproximation.Approximation.spectralWeight_eq_zero_of_not_mem
+#print axioms KVApproximation.Approximation.localRate_mem_interval
+#print axioms KVApproximation.Approximation.continuousOn_localCoordinate
+#print axioms KVApproximation.Approximation.continuousOn_localPronyWeight
+#print axioms KVApproximation.Approximation.localPronyRate_mem
+#print axioms KVApproximation.Approximation.localPronyModel_kernel
+#print axioms KVApproximation.KelvinVoigt.local_prony_coefficient_converges
+#print axioms KVApproximation.KelvinVoigt.singleton_prony_coefficient_converges
+#print axioms KVApproximation.Dynamics.pronyStress_eq_kernel_convolution
+#print axioms KVApproximation.KelvinVoigt.singleton_prony_exact
+
+#print axioms KVApproximation.Dynamics.norm_dampedResponse_le
+#print axioms KVApproximation.Dynamics.continuousOn_dampedResponse
+#print axioms KVApproximation.Dynamics.dampedResponse_integral_eq
+#print axioms KVApproximation.Dynamics.dampedResponse_trajectory
+#print axioms KVApproximation.Dynamics.pronyState_isKineticSolution
+#print axioms KVApproximation.Dynamics.prony_state_bound
+#print axioms KVApproximation.Dynamics.prony_state_uniform_bound
+#print axioms KVApproximation.KelvinVoigt.material_L1_tendsto
+#print axioms KVApproximation.KelvinVoigt.material_fields_L1_tendsto
+#print axioms KVApproximation.KelvinVoigt.continuous_cell_viscosity
+#print axioms KVApproximation.KelvinVoigt.continuous_cell_elasticity
+#print axioms KVApproximation.KelvinVoigt.continuous_local_prony_coefficient
+#print axioms KVApproximation.KelvinVoigt.continuous_singleton_prony_coefficient
+#print axioms KVApproximation.Tensor.strainMandel_isometry
+#print axioms KVApproximation.Tensor.blockStrainMandel_isometry
+#print axioms KVApproximation.Tensor.blockStrainMandel_norm
+#print axioms KVApproximation.KelvinVoigt.local_prony_state_uniform_bound
+#print axioms KVApproximation.KelvinVoigt.singleton_prony_state_uniform_bound
+#print axioms KVApproximation.NeuralOperators.isCompact_stressInputSet
+#print axioms KVApproximation.NeuralOperators.isCompact_kineticInputSet
+#print axioms KVApproximation.NeuralOperators.prony_responses_approximate
+#print axioms KVApproximation.Tensor.card_elasticityIndex
+#print axioms KVApproximation.Tensor.elasticityMandel_isometry
+
+#print axioms KVApproximation.Spectral.TensorMeasure.integrable_continuousOn_vector
+#print axioms KVApproximation.Spectral.tensorActionIntegral_smul
+#print axioms KVApproximation.Spectral.norm_tensorActionIntegral_le
+#print axioms KVApproximation.Spectral.weightedMeasure_actionIntegral
+
+#print axioms KVApproximation.Approximation.map_realWeightedResponse
+
+#print axioms KVApproximation.Approximation.continuous_realWeightedResponse
+
+#print axioms KVApproximation.Approximation.real_local_response_error
+
+#print axioms KVApproximation.Approximation.continuousOn_partitionResponse
+
+#print axioms KVApproximation.Approximation.partition_response_error
+
+#print axioms KVApproximation.Approximation.norm_integrated_partition_error_le
+
+#print axioms KVApproximation.Spectral.integral_tensorActionIntegral_swap
+
+#print axioms KVApproximation.Approximation.memory_eq_weightedResponseIntegral
+
+#print axioms KVApproximation.Approximation.local_prony_stress_eq_partitionIntegral
+
+#print axioms KVApproximation.Approximation.aestronglyMeasurable_responseIntegral
+
+#print axioms KVApproximation.Dynamics.aestronglyMeasurable_pronyStress
+
+#print axioms KVApproximation.KelvinVoigt.local_prony_error_lt
+
+#print axioms KVApproximation.Tensor.scalarBlockStrainMandel_isometry
+
+#print axioms KVApproximation.Tensor.scalarBlockStrainMandel_norm
+
+#print axioms KVApproximation.NeuralOperators.HasUniversalApproximation.inducedResponseClass
+
+#print axioms KVApproximation.NeuralOperators.HasLocallyLipschitzApproximation.inducedResponseClass
+
+#print axioms KVApproximation.Analysis.lp_coordinates
+
+#print axioms KVApproximation.Analysis.lp_product_coordinates
+
+#print axioms KVApproximation.KelvinVoigt.strainMandelEquiv_apply
+
+#print axioms KVApproximation.KelvinVoigt.elasticityMandelEquiv_apply
+
+#print axioms KVApproximation.KelvinVoigt.materialMandelCoordinates_ae
+
+#print axioms KVApproximation.KelvinVoigt.mandelStressClass_hasUniversalApproximation
+
+#print axioms KVApproximation.KelvinVoigt.mandelKineticClass_hasLocallyLipschitzApproximation
+
+#print axioms KVApproximation.NeuralOperators.prony_responses_approximate_in_coordinates
+
+#print axioms KVApproximation.KelvinVoigt.local_prony_responses_approximate
+
+#print axioms KVApproximation.KelvinVoigt.singleton_prony_responses_approximate
+
+#print axioms KVApproximation.Tensor.scalarStrainMandel_isometry
+
+#print axioms KVApproximation.Tensor.scalarElasticityMandel_isometry
+
+#print axioms KVApproximation.Dynamics.prony_kinetic_dissipative
+
+#print axioms KVApproximation.Dynamics.prony_stress_lipschitz
+
+#print axioms KVApproximation.Dynamics.stress_error_le
+
+#print axioms KVApproximation.Analysis.ac_linear_decay_bound
+
+#print axioms KVApproximation.Analysis.ac_energy_decay_bound
+
+#print axioms KVApproximation.Analysis.finite_time_decay_lt_margin
+
+#print axioms KVApproximation.Dynamics.exists_integral_solution_Icc
+
+#print axioms KVApproximation.Dynamics.integral_solution_unique_Icc
+
+#print axioms KVApproximation.Dynamics.integrableOn_lipschitz_driven_field
+
+#print axioms KVApproximation.Dynamics.exists_integral_solution_Ici
+
+#print axioms KVApproximation.Analysis.ac_energy_trapping_bound
+
+#print axioms KVApproximation.Dynamics.integral_curve_regularity
+
+#print axioms KVApproximation.Dynamics.locally_lipschitz_driven_unique_Icc
+
+#print axioms KVApproximation.Dynamics.dissipative_driven_stability
+
+#print axioms KVApproximation.Dynamics.kinetic_stability
+
+#print axioms KVApproximation.NeuralOperators.prony_response_stability
+
+#print axioms KVApproximation.NeuralOperators.uniform_prony_response_stability
+
+#print axioms KVApproximation.KelvinVoigt.local_prony_responses_stable
+
+#print axioms KVApproximation.KelvinVoigt.singleton_prony_responses_stable
+
+#print axioms KVApproximation.KelvinVoigt.local_prony_neural_approximation
+
+#print axioms KVApproximation.KelvinVoigt.singleton_prony_neural_approximation
+
+#print axioms KVApproximation.KelvinVoigt.universal_approximation
+
+#print axioms KVApproximation.KelvinVoigt.sufficient_internal_variable_dimension
+
+#print axioms KVApproximation.Tensor.matrix_exp_det_pos
+
+#print axioms KVApproximation.Tensor.matrix_exp_skew_orthogonal
+
+#print axioms KVApproximation.Tensor.matrix_exp_symmetric_det
+
+#print axioms KVApproximation.Examples.CrystalPlasticity.initially_stress_free
+
+#print axioms KVApproximation.Examples.CrystalPlasticity.initial_multiplicative_decomposition
+
+#print axioms KVApproximation.Examples.CrystalPlasticity.elastic_initial_factor
+
+#print axioms KVApproximation.Examples.CrystalPlasticity.resistance_ratio
+
+#print axioms KVApproximation.Examples.CrystalPlasticity.skew_mulVec
+
+#print axioms KVApproximation.Examples.CrystalPlasticity.rotation_orthogonal
+
+#print axioms KVApproximation.Examples.CrystalPlasticity.deviatoric_combination
+
+#print axioms KVApproximation.Examples.CrystalPlasticity.deviatoric_coordinate_equivalence
+
+#print axioms KVApproximation.Examples.CrystalPlasticity.deformation_determinant
+
+#print axioms KVApproximation.Examples.CrystalPlasticity.deformation_zero
+
+#print axioms KVApproximation.Examples.LinearSurrogate.exists_sum_coordinates
+
+#print axioms KVApproximation.Examples.LinearSurrogate.mandel_sum_coordinates
+
+#print axioms KVApproximation.Examples.LinearSurrogate.transformed_kinetics
+
+#print axioms KVApproximation.Examples.LinearSurrogate.transformed_kinetic_blocks
+
+#print axioms KVApproximation.Examples.LinearSurrogate.transformed_stress
+
+#print axioms KVApproximation.Examples.LinearSurrogate.trajectory_coordinates
+
+#print axioms KVApproximation.Examples.LinearSurrogate.transformed_charpoly
+
+#print axioms KVApproximation.Examples.LinearSurrogate.plane_state_dimension
+
+#print axioms KVApproximation.Tensor.action_identityElasticity
+#print axioms KVApproximation.Tensor.action_volumetricElasticity
+#print axioms KVApproximation.Tensor.planeStress_bounds
+#print axioms KVApproximation.Tensor.planeStress_operatorNorm
+
+#print axioms KVApproximation.Approximation.logPartitionCount_le
+#print axioms KVApproximation.Approximation.interpolationOrder_le
+#print axioms KVApproximation.Approximation.nonsingletonStateDimension_uniform_bound
+
+#print axioms KVApproximation.KelvinVoigt.sufficientDimension_uniform_bound
+#print axioms KVApproximation.KelvinVoigt.sufficientDimension_small_error
+#print axioms KVApproximation.KelvinVoigt.sufficientDimension_viscosity_contrast
+#print axioms KVApproximation.KelvinVoigt.sufficientDimension_elasticity_contrast
+
+#print axioms KVApproximation.Approximation.unweighted_order_error_le
+#print axioms KVApproximation.Approximation.globalInterpolationOrder_error_le
+#print axioms KVApproximation.Approximation.unweightedDimension_asymptotic
+#print axioms KVApproximation.Approximation.globalPronyDimension_asymptotic
+
+#print axioms KVApproximation.Approximation.norm_unweightedResponse_le
+
+#print axioms KVApproximation.Approximation.local_unweighted_response_error
+#print axioms KVApproximation.Approximation.real_local_unweighted_response_error
+#print axioms KVApproximation.Approximation.partition_unweighted_response_error
+#print axioms KVApproximation.Approximation.norm_integrated_unweighted_partition_error_le
+
+#print axioms KVApproximation.Approximation.memory_eq_unweightedResponseIntegral
+#print axioms KVApproximation.Approximation.unweighted_prony_stress_eq_partitionIntegral
+
+#print axioms KVApproximation.KelvinVoigt.unweighted_prony_error_le
+
+#print axioms KVApproximation.Approximation.globalLogCoordinate_mem
+#print axioms KVApproximation.Approximation.globalLogRate_globalLogCoordinate
+#print axioms KVApproximation.Approximation.continuousOn_globalResponseInterpolant
+#print axioms KVApproximation.Approximation.complexGlobalLogRate_ofReal
+#print axioms KVApproximation.Approximation.complexGlobalLogRate_ellipse
+#print axioms KVApproximation.Approximation.global_weighted_response_error
+#print axioms KVApproximation.Approximation.real_global_response_error
+#print axioms KVApproximation.Approximation.norm_integrated_global_response_error_le
+#print axioms KVApproximation.Approximation.global_prony_stress_eq_responseIntegral
+#print axioms KVApproximation.KelvinVoigt.global_prony_error_lt
+
+#print axioms KVApproximation.Approximation.complexGlobalLogRate_ellipse_of_span_pos
+#print axioms KVApproximation.Approximation.global_weighted_response_error_of_span_pos
+#print axioms KVApproximation.Approximation.real_global_response_error_of_span_pos
+#print axioms KVApproximation.Approximation.norm_integrated_global_response_error_le_of_span_pos
+#print axioms KVApproximation.KelvinVoigt.global_prony_error_lt_of_span_pos
+#print axioms KVApproximation.Approximation.globalInterpolationOrder_error_le_of_span_pos
+#print axioms KVApproximation.Approximation.globalLogRate_mem
+#print axioms KVApproximation.KelvinVoigt.continuous_unweightedLocalCoefficient
+#print axioms KVApproximation.KelvinVoigt.continuous_globalPronyCoefficient
+#print axioms KVApproximation.KelvinVoigt.continuous_prony_neural_approximation
+#print axioms KVApproximation.KelvinVoigt.unweighted_sufficient_internal_variable_dimension
+#print axioms KVApproximation.KelvinVoigt.global_sufficient_internal_variable_dimension
+#print axioms KVApproximation.Dynamics.cell_evolution_iff_ode
+#print axioms KVApproximation.Dynamics.cell_evolution_shifted_ode
+#print axioms KVApproximation.Dynamics.cell_evolution_stress_remainder
+
+#print axioms KVApproximation.Analysis.TimeH1.value_memLp
+#print axioms KVApproximation.Analysis.TimeH1.velocity_memLp
+#print axioms KVApproximation.Analysis.TimeH1.hasWeakLineDerivOn
+#print axioms KVApproximation.Analysis.TimeH1.trace_ae
+#print axioms KVApproximation.Analysis.TimeH1.trace_integral
+#print axioms KVApproximation.Analysis.TimeH1.exists_of_weak_derivative
+
+#print axioms KVApproximation.Dynamics.linear_timeH1_exists_unique
+
+#print axioms KVApproximation.Dynamics.linear_timeH1_duhamel
+
+#print axioms KVApproximation.Analysis.intervalIntegrable_continuous_clm_apply
+#print axioms KVApproximation.Analysis.integral_deriv_clm_primitive_eq_sub_of_le
+
+#print axioms KVApproximation.Dynamics.cell_evolution_exists_unique
+
+#print axioms KVApproximation.Dynamics.cell_evolution_duhamel
+
+#print axioms KVApproximation.Dynamics.cell_evolution_constitutive_law
+
+#print axioms KVApproximation.Analysis.TimeH1.eq_of_value_ae
+#print axioms KVApproximation.Analysis.TimeH1.exists_map
+#print axioms KVApproximation.Analysis.TimeH1.trace_map_of_value_ae
+#print axioms KVApproximation.Analysis.PeriodicH1.exists_constant
+#print axioms KVApproximation.Analysis.PeriodicH1.exists_zeroMean_same_gradient
+#print axioms KVApproximation.Homogenization.correctorGradient_injective
+#print axioms KVApproximation.Homogenization.correctorGradient_equiv_exists
+#print axioms KVApproximation.Homogenization.displacement_strain_exists_unique
+#print axioms KVApproximation.Homogenization.strain_displacement_exists_unique
+#print axioms KVApproximation.Homogenization.displacement_strain_trace
+
+#print axioms KVApproximation.Homogenization.periodic_test_iff_corrector_test
+
+#print axioms KVApproximation.Homogenization.periodicCellStress_apply_ae
+
+#print axioms KVApproximation.Homogenization.averagedCellStress_pairing
+
+#print axioms KVApproximation.Homogenization.periodicCellSolution_iff_evolution
+
+#print axioms KVApproximation.Homogenization.periodicCellSolution_exists_unique
+
+#print axioms KVApproximation.Homogenization.periodicCellSolution_constitutive
+
+#print axioms KVApproximation.Analysis.lp_finite_coordinates
+#print axioms KVApproximation.Analysis.VectorH1.valueL_apply_ae
+#print axioms KVApproximation.Analysis.VectorH1.gradientL_apply_ae
+#print axioms KVApproximation.Analysis.VectorH1.symmetricGradientL_apply_ae
+#print axioms KVApproximation.Analysis.VectorH1.norm_sq_eq
+#print axioms KVApproximation.Analysis.VectorH1.norm_valueL_le
+#print axioms KVApproximation.Analysis.VectorH1.norm_gradientL_le
+#print axioms KVApproximation.Analysis.VectorH1.norm_symmetricGradientL_le
+#print axioms KVApproximation.Analysis.VectorH1.valueL_injective
+#print axioms KVApproximation.Analysis.VectorH1.norm_valueL_sq
+#print axioms KVApproximation.Analysis.VectorH1.norm_gradientL_sq
+#print axioms KVApproximation.Tensor.norm_symmetrize_le
+#print axioms KVApproximation.Homogenization.symmetricGradientL_apply_ae
+#print axioms KVApproximation.Homogenization.symmetricGradient_memLp
+#print axioms KVApproximation.Homogenization.loadPairing_eq_inner
+#print axioms KVApproximation.Homogenization.abs_loadPairing_le
+#print axioms KVApproximation.Analysis.mem_zeroBoundary_iff
+#print axioms KVApproximation.Analysis.ZeroBoundaryH1.poincare_of_subset_ball
+#print axioms KVApproximation.Analysis.ZeroBoundaryH1.exists_poincare_constant
+#print axioms KVApproximation.Analysis.ZeroBoundaryH1.exists_ne_zero
+
+#print axioms KVApproximation.Analysis.directionalDerivativeL_apply_ae
+
+#print axioms KVApproximation.Analysis.inner_directionalDerivative_swap
+
+#print axioms KVApproximation.Analysis.ZeroBoundaryH1.korn_identity
+
+#print axioms KVApproximation.Analysis.ZeroBoundaryH1.norm_gradientL_sq_le
+
+#print axioms KVApproximation.Analysis.ZeroBoundaryH1.norm_gradientL_le
+
+#print axioms KVApproximation.Analysis.ZeroBoundaryH1.exists_korn_constant
+
+#print axioms KVApproximation.Homogenization.integrable_spatialForm
+
+#print axioms KVApproximation.Homogenization.boundedSpatialForm_apply
+
+#print axioms KVApproximation.Homogenization.boundedSpatialForm_symmetric
+
+#print axioms KVApproximation.Homogenization.spatialForm_lower_bound
+
+#print axioms KVApproximation.Homogenization.boundedSpatialForm_isCoercive
+
+#print axioms KVApproximation.Homogenization.elliptic_exists_unique
+
+#print axioms KVApproximation.Homogenization.norm_elliptic_solution_le
+
+#print axioms KVApproximation.Analysis.quasiMeasurePreserving_toCell
+
+#print axioms KVApproximation.Analysis.quasiMeasurePreserving_scaledToCell
+
+#print axioms KVApproximation.Analysis.ae_rescalePeriodic
+
+#print axioms KVApproximation.Analysis.aestronglyMeasurable_rescalePeriodic
+
+#print axioms KVApproximation.Analysis.eLpNorm_top_rescalePeriodic_le
+
+#print axioms KVApproximation.Analysis.memLp_top_rescalePeriodic
+
+#print axioms KVApproximation.Homogenization.rescaledCoefficient_apply_ae
+
+#print axioms KVApproximation.Homogenization.norm_rescaledCoefficient_le
+
+#print axioms KVApproximation.Homogenization.hasBounds_rescaledCoefficient_ae
+
+#print axioms KVApproximation.Homogenization.spatialForm_rescaledCoefficient
+
+#print axioms KVApproximation.Homogenization.periodic_elliptic_exists_unique
+
+#print axioms KVApproximation.Homogenization.periodic_elliptic_uniform_bound
+
+#print axioms KVApproximation.Homogenization.exists_preparedInitialFamily
+
+#print axioms KVApproximation.Analysis.ZeroBoundaryH1.isCompactOperator_valueL
+
+#print axioms KVApproximation.Analysis.ZeroBoundaryH1.isCompact_closure_value_image
+
+#print axioms KVApproximation.Analysis.ZeroBoundaryH1.exists_subseq_tendsto_value
+
+#print axioms KVApproximation.Analysis.ZeroBoundaryH1.tendsto_value_of_weak
+
+#print axioms KVApproximation.Analysis.exists_weakly_convergent_subsequence
+
+#print axioms KVApproximation.Analysis.ZeroBoundaryH1.exists_subseq_weak_strong
+
+#print axioms KVApproximation.Analysis.map_scaledToCell_restrict_periodicBox
+
+#print axioms KVApproximation.Analysis.exists_rescaling_measure_bound
+
+#print axioms KVApproximation.Analysis.exists_eLpNorm_two_rescalePeriodic_bound
+
+#print axioms KVApproximation.Analysis.memLp_two_rescalePeriodic
+
+#print axioms KVApproximation.Analysis.tendsto_integral_rescale_mFourier_mul
+
+#print axioms KVApproximation.Analysis.tendsto_integral_rescalePeriodic_mul
+
+#print axioms KVApproximation.Analysis.tendsto_integral_rescalePeriodic_mul_real
+
+#print axioms KVApproximation.Analysis.tendsto_integral_rescalePeriodic_inner
+
+#print axioms KVApproximation.Analysis.tendsto_eLpNorm_smul_rescalePeriodic_zero
+
+#print axioms KVApproximation.Analysis.PeriodicH1.exists_rescaled
+
+#print axioms KVApproximation.Analysis.PeriodicH1.tendsto_integral_rescale_gradient_inner
+
+#print axioms KVApproximation.Analysis.cutoffJetL_apply_ae
+
+#print axioms KVApproximation.Analysis.cutoffJetL_mem_of_smooth
+
+#print axioms KVApproximation.Analysis.cutoffJetL_mem_of_zeroBoundary
+
+#print axioms KVApproximation.Analysis.ZeroBoundaryH1.exists_cutoff
+
+#print axioms KVApproximation.Analysis.PeriodicRescaledJets.jetCoordinate_apply
+
+#print axioms KVApproximation.Analysis.PeriodicRescaledJets.rescaleJet_ae
+
+#print axioms KVApproximation.Analysis.PeriodicRescaledJets.gradient_scaled_component
+
+#print axioms KVApproximation.Analysis.PeriodicH1.exists_rescaled_cutoff
+
+#print axioms KVApproximation.Analysis.HasPeriodicZeroDivergence.fourier_coefficient
+
+#print axioms KVApproximation.Analysis.integral_inner_gradient_eq_zero_of_divergence_eq_zero
+
+#print axioms KVApproximation.Analysis.HasPeriodicZeroDivergence.integral_rescale_gradient_eq_zero
+
+#print axioms KVApproximation.Tensor.inner_symmetrize
+
+#print axioms KVApproximation.Analysis.PeriodicC1.exists_periodicH1
+
+#print axioms KVApproximation.Analysis.integral_rescale_stress_strain_eq_zero
+
+#print axioms KVApproximation.Homogenization.exists_unique_static_corrector
+#print axioms KVApproximation.Homogenization.cellFlux_apply_ae
+#print axioms KVApproximation.Homogenization.cellFlux_orthogonal_periodic
+#print axioms KVApproximation.Homogenization.cellFlux_mean_pairing
+#print axioms KVApproximation.Analysis.tendsto_bilinear_of_weak_strong
+#print axioms KVApproximation.Analysis.tendsto_bilinear_zero_of_bounded
+#print axioms KVApproximation.Analysis.tendsto_integral_rescalePeriodic_inner_strong_along
+#print axioms KVApproximation.Analysis.tendsto_integral_cutoff_rescale_stress_strain_along
+#print axioms KVApproximation.Analysis.tendsto_integral_cutoff_stress_corrector_zero_along
+#print axioms KVApproximation.Analysis.tendsto_integral_cutoff_stress_corrector_zero
+
+#print axioms KVApproximation.Analysis.cutoffGradientL_apply_ae
+#print axioms KVApproximation.Analysis.cutoffPairing_eq_integral
+#print axioms KVApproximation.Analysis.integral_stress_cutoff_gradient
+#print axioms KVApproximation.Analysis.integral_cutoff_stress_strain_eq_neg_pairing
+#print axioms KVApproximation.Homogenization.effective_elliptic_exists_unique
+#print axioms KVApproximation.Analysis.tendsto_integral_rescalePeriodic_inner_strong
+#print axioms KVApproximation.Analysis.tendsto_integral_cutoff_rescale_stress_strain
+
+#print axioms KVApproximation.Homogenization.tendsto_integral_cutoff_microscopic_stress
+#print axioms KVApproximation.Homogenization.spatialStressL_apply_ae
+#print axioms KVApproximation.Homogenization.norm_spatialStressL_le
+#print axioms KVApproximation.Homogenization.integral_spatialStressL_strain
+#print axioms KVApproximation.Analysis.eq_of_integral_testFunction_inner_eq
+#print axioms KVApproximation.Homogenization.effective_equilibrium_of_weak_stress
+#print axioms KVApproximation.Homogenization.periodic_elliptic_homogenization
+
+#print axioms KVApproximation.OperatorTheory.CoerciveForm.solveL_spec
+#print axioms KVApproximation.OperatorTheory.relativeRiesz_spec
+#print axioms KVApproximation.OperatorTheory.variational_equation_iff
+#print axioms KVApproximation.OperatorTheory.CoerciveForm.norm_solveL_le
+#print axioms KVApproximation.OperatorTheory.relativeRiesz_opNorm_le
+#print axioms KVApproximation.Dynamics.variational_timeH1_exists_unique
+#print axioms KVApproximation.Dynamics.variational_timeH1_duhamel
+#print axioms KVApproximation.Homogenization.periodicSpatialForm_apply
+#print axioms KVApproximation.Homogenization.spatialLoadOperator_apply
+#print axioms KVApproximation.Homogenization.norm_spatialLoadOperator_apply_le
+#print axioms KVApproximation.Homogenization.exists_uniform_periodicSpatialForm_bounds
+#print axioms KVApproximation.Homogenization.microscopicRelaxation_spec
+#print axioms KVApproximation.Homogenization.microscopicLoadL_spec
+#print axioms KVApproximation.Homogenization.exists_uniform_microscopic_operator_bounds
+#print axioms KVApproximation.Homogenization.microscopic_solution_iff_ode
+#print axioms KVApproximation.Homogenization.microscopic_exists_unique
+#print axioms KVApproximation.Homogenization.microscopic_duhamel
+
+#print axioms KVApproximation.OperatorTheory.relativeSemigroup_hasDerivAt
+#print axioms KVApproximation.OperatorTheory.relativeSemigroup_energy_le
+#print axioms KVApproximation.OperatorTheory.relativeSemigroup_norm_le
+#print axioms KVApproximation.Homogenization.microscopic_homogeneous_hasDerivAt
+#print axioms KVApproximation.Homogenization.exists_uniform_microscopic_semigroup_bounds
+
+#print axioms KVApproximation.Analysis.TimeH1.valueL2_apply
+#print axioms KVApproximation.Analysis.TimeH1.velocityL2_apply_ae
+#print axioms KVApproximation.Analysis.TimeH1.norm_sq_eq_value_velocity
+#print axioms KVApproximation.Analysis.TimeH1.norm_le_of_ode
+#print axioms KVApproximation.Dynamics.linear_timeH1_trace_norm_le
+#print axioms KVApproximation.Dynamics.linear_timeH1_norm_le
+#print axioms KVApproximation.Homogenization.exists_uniform_microscopic_timeH1_bound
+#print axioms KVApproximation.Homogenization.exists_uniform_prepared_timeH1_bound
+
+#print axioms KVApproximation.Analysis.TimeH1.exists_weakly_convergent_subsequence
+#print axioms KVApproximation.Analysis.TimeH1.weak_trace_tendsto
+#print axioms KVApproximation.Analysis.norm_le_of_weak_tendsto
+#print axioms KVApproximation.Analysis.exists_weakly_convergent_diagonal_subsequence
+#print axioms KVApproximation.Analysis.TimeH1.exists_halfLine_weak_limit
+#print axioms KVApproximation.Analysis.integrable_halfLineLaplace
+#print axioms KVApproximation.Analysis.halfLineLaplace_weak_tendsto
+
+#print axioms KVApproximation.Homogenization.microscopic_zero_forcing_trace
+#print axioms KVApproximation.Homogenization.exists_uniform_microscopicTrajectory_bounds
+#print axioms KVApproximation.Homogenization.microscopic_homogeneous_subsequence
+#print axioms KVApproximation.Analysis.halfLineLaplace_derivative
+#print axioms KVApproximation.Homogenization.microscopicTrajectory_laplace_equation
+#print axioms KVApproximation.Homogenization.microscopic_prepared_laplace_form
+#print axioms KVApproximation.Homogenization.microscopic_viscous_laplace_form
+
+#print axioms KVApproximation.Tensor.fieldPairing_add_smul
+
+#print axioms KVApproximation.Tensor.HasFieldBounds.add_smul
+
+#print axioms KVApproximation.Tensor.CoerciveField.addSMul
+
+#print axioms KVApproximation.Homogenization.rescaledCoefficient_add_smul
+
+#print axioms KVApproximation.Homogenization.spatialForm_rescalePeriodic_add_smul
+
+#print axioms KVApproximation.OperatorTheory.integrable_cfc_memory_laplace
+#print axioms KVApproximation.OperatorTheory.halfLineLaplace_cfc_memory
+#print axioms KVApproximation.Homogenization.effectiveForm_addSMul_resolvent
+#print axioms KVApproximation.Homogenization.cellKernel_integrable_halfLineLaplace
+#print axioms KVApproximation.Homogenization.effectiveForm_addSMul_laplace
+
+#print axioms KVApproximation.Analysis.eq_zero_of_halfLineLaplace_nat_eq_zero
+#print axioms KVApproximation.Analysis.eqOn_of_halfLineLaplace_eq
+
+#print axioms KVApproximation.Homogenization.periodic_elliptic_weak_limit
+
+#print axioms KVApproximation.Homogenization.prepared_laplace_equilibrium
+
+#print axioms KVApproximation.Homogenization.viscous_laplace_equilibrium
+
+#print axioms KVApproximation.Analysis.integrable_halfLineLaplace_posConvolution
+
+#print axioms KVApproximation.Analysis.halfLineLaplace_posConvolution
+
+#print axioms KVApproximation.Homogenization.constantSpatialFormL_apply
+
+#print axioms KVApproximation.Homogenization.norm_constantSpatialFormL_le
+
+#print axioms KVApproximation.Analysis.posConvolution_eq_integral_sub
+#print axioms KVApproximation.Analysis.intervalIntegrable_posConvolution_integrand
+#print axioms KVApproximation.Analysis.continuousOn_posConvolution
+#print axioms KVApproximation.Analysis.integral_posConvolution_eq_posConvolution_primitive
+#print axioms KVApproximation.Analysis.TimeH1.memory_equation_iff_integrated
+#print axioms KVApproximation.Analysis.eqOn_zero_of_integrated_memory_eq_zero
+#print axioms KVApproximation.Analysis.TimeH1.eq_of_memory_equation
+#print axioms KVApproximation.Homogenization.constantSpatialFormL_isCoercive
+#print axioms KVApproximation.Homogenization.exists_constantSpatialFormL_norm_bound
+#print axioms KVApproximation.Homogenization.isHomogenizedSolution_iff_memory_equation
+#print axioms KVApproximation.Homogenization.homogenized_solution_unique
+
+#print axioms KVApproximation.Analysis.integrable_halfLineLaplace_const
+#print axioms KVApproximation.Analysis.halfLineLaplace_const
+#print axioms KVApproximation.Analysis.integrable_halfLineLaplace_primitive
+#print axioms KVApproximation.Analysis.halfLineLaplace_primitive
+
+#print axioms KVApproximation.Analysis.continuousOn_posConvolution_Ici
+#print axioms KVApproximation.Analysis.norm_exp_smul_posConvolution_le
+#print axioms KVApproximation.Analysis.halfLineLaplace_exp_smul
+#print axioms KVApproximation.Analysis.eq_zero_of_halfLineLaplace_eq_zero_of_damped_bound
+#print axioms KVApproximation.Analysis.integrated_memory_eq_zero_of_halfLineLaplace
+#print axioms KVApproximation.Analysis.TimeH1.memory_equation_of_halfLineLaplace
+#print axioms KVApproximation.Homogenization.homogeneous_limit_isHomogenizedSolution
+
+#print axioms KVApproximation.Homogenization.homogeneous_homogenization
+#print axioms KVApproximation.Homogenization.homogeneous_exists_unique
+#print axioms KVApproximation.Analysis.integrated_memory_eq_const_of_halfLineLaplace
+#print axioms KVApproximation.Homogenization.viscous_limit_green_balance
+
+#print axioms KVApproximation.Analysis.eqOn_of_integrated_memory_eq
+
+#print axioms KVApproximation.Analysis.exists_continuousLinearMap_of_weak_tendsto
+
+#print axioms KVApproximation.Analysis.lipschitzOnWith_of_weak_tendsto
+
+#print axioms KVApproximation.Homogenization.microscopicGreen_apply
+#print axioms KVApproximation.Homogenization.exists_uniform_microscopicGreen_bounds
+
+#print axioms KVApproximation.Homogenization.green_balance_unique
+#print axioms KVApproximation.Homogenization.exists_homogenizedGreen
+
+#print axioms KVApproximation.Analysis.tendsto_intervalIntegral_of_weak_operator_tendsto
+
+#print axioms KVApproximation.Analysis.integrable_rectangle_bilinear
+
+#print axioms KVApproximation.Analysis.integral_triangle_swap
+
+#print axioms KVApproximation.Analysis.integral_posConvolution_eq_integral_kernel
+
+#print axioms KVApproximation.Analysis.integral_operatorConvolution_assoc
+
+#print axioms KVApproximation.Analysis.duhamel_integrated_memory_balance
+
+#print axioms KVApproximation.Analysis.TimeH1.exists_weak_subsequence_with_trace
+
+#print axioms KVApproximation.Analysis.TimeH1.memory_equation_of_green_trace
+
+#print axioms KVApproximation.Homogenization.green_trace_isHomogenizedSolution
+#print axioms KVApproximation.Homogenization.IsHomogenizedSolution.add
+
+#print axioms KVApproximation.Homogenization.microscopic_forcing_trace_tendsto
+
+#print axioms KVApproximation.Homogenization.forced_homogenization
+
+#print axioms KVApproximation.Homogenization.viscoelastic_homogenization
+
+#print axioms KVApproximation.Analysis.exists_weak_limit_of_unique_subsequences
+
+#print axioms KVApproximation.Homogenization.prepared_homogeneous_subsequence
+
+#print axioms KVApproximation.Analysis.exists_test_limit_of_unique_subsequences
+
+#print axioms KVApproximation.Homogenization.exists_microscopic_solution_family
+
+#print axioms KVApproximation.Analysis.exists_test_limit_of_unique_test_values
+
+#print axioms KVApproximation.Analysis.measurePreserving_cellRepresentative_coordinate
+#print axioms KVApproximation.Analysis.cellMeasure_coordinate_interval
+
+#print axioms KVApproximation.KelvinVoigt.measurableSet_thinStrip
+
+#print axioms KVApproximation.KelvinVoigt.cellMeasure_thinStrip
+
+#print axioms KVApproximation.KelvinVoigt.measurable_stripElasticity
+
+#print axioms KVApproximation.KelvinVoigt.memLp_stripElasticity
+
+#print axioms KVApproximation.KelvinVoigt.hasFieldBounds_stripElasticity
+
+#print axioms KVApproximation.KelvinVoigt.eLpNorm_stripElasticity_sub_identity
+#print axioms KVApproximation.KelvinVoigt.tendsto_eLpNorm_stripElasticity_sub_identity
+
+#print axioms KVApproximation.Analysis.measurePreserving_coordinate_update
+
+#print axioms KVApproximation.Analysis.PeriodicC1.integral_coordinate_strip_partial
+#print axioms KVApproximation.Analysis.PeriodicC1.norm_integral_coordinate_strip_partial_le
+#print axioms KVApproximation.Analysis.periodicVariation_const
+#print axioms KVApproximation.Analysis.periodicVariation_const_add_coordinate_strip_le
+
+#print axioms KVApproximation.KelvinVoigt.eLpNorm_stripElasticity_le
+#print axioms KVApproximation.KelvinVoigt.periodicVariation_stripElasticity_le
+#print axioms KVApproximation.KelvinVoigt.periodicBVNorm_identityElasticity
+#print axioms KVApproximation.KelvinVoigt.periodicBVNorm_stripElasticity_le
+#print axioms KVApproximation.KelvinVoigt.exists_strip_material_family
+
+#print axioms KVApproximation.Analysis.PeriodicC1.partial_eq_zero_of_notMem_tsupport
+
+#print axioms KVApproximation.Analysis.exists_periodic_strip_bump
+
+#print axioms KVApproximation.Analysis.PeriodicC1.exists_zeroMean_nonzero_strain
+
+#print axioms KVApproximation.Homogenization.exists_unit_corrector_in_coordinate_strip
+
+#print axioms KVApproximation.Homogenization.cellRelaxation_eq_id_of_field_eq
+
+#print axioms KVApproximation.Homogenization.cellRelaxation_eq_add_projection_of_ae_indicator
+
+#print axioms KVApproximation.Homogenization.IsHomogenizedSolution.of_sub
+
+#print axioms KVApproximation.KelvinVoigt.materialSpectralEdge_identity
+
+#print axioms KVApproximation.KelvinVoigt.materialSpectralEdge_strip
+
+#print axioms KVApproximation.KelvinVoigt.spectral_edge_discontinuous
+
+#print axioms KVApproximation.NeuralOperators.FourierLayer.eval_congr_ae
+
+#print axioms KVApproximation.NeuralOperators.FourierChain.eval_congr_ae
+
+#print axioms KVApproximation.NeuralOperators.FourierMapping.evalRepresentative_congr
+
+#print axioms KVApproximation.NeuralOperators.FourierLayer.fourierPart_im
+
+#print axioms KVApproximation.NeuralOperators.FourierProjection.complexValue_im
+
+#print axioms KVApproximation.NeuralOperators.FourierLayer.memLp_eval
+
+#print axioms KVApproximation.NeuralOperators.FourierChain.memLp_eval
+
+#print axioms KVApproximation.Approximation.exists_ridge_approximation
+
+#print axioms KVApproximation.Analysis.exists_lipschitz_compositionLp
+
+#print axioms KVApproximation.Analysis.exists_periodicFourierCoefficientCLM
+
+#print axioms KVApproximation.NeuralOperators.FourierProjection.exists_evalCLM
+
+#print axioms KVApproximation.NeuralOperators.FourierLayer.exists_affineCLM
+
+#print axioms KVApproximation.NeuralOperators.FourierLayer.exists_lipschitz_evalLp
+
+#print axioms KVApproximation.NeuralOperators.FourierChain.exists_lipschitz_evalLp
+
+#print axioms KVApproximation.NeuralOperators.FourierMapping.lipschitz
+
+#print axioms KVApproximation.Approximation.exists_finite_feature_approximation
+
+#print axioms KVApproximation.Analysis.exists_uniform_local_average
+
+#print axioms KVApproximation.Analysis.euclideanL2_eq_of_fourier_integrals_eq
+
+#print axioms KVApproximation.NeuralOperators.exists_fourierProjection_approx_integral
+
+#print axioms KVApproximation.NeuralOperators.exists_fourierProjection_approx_eval
+
+#print axioms KVApproximation.Approximation.exists_vector_ridge_approximation
+
+#print axioms KVApproximation.NeuralOperators.exists_scalarFourierProjection
+
+#print axioms KVApproximation.NeuralOperators.eq_of_scalarFourierProjections_eq
+
+#print axioms KVApproximation.OperatorTheory.relativeRiesz_spectrum_subset
+
+#print axioms KVApproximation.Homogenization.exists_uniform_microscopic_spectrum_bounds
+
+#print axioms KVApproximation.Homogenization.forced_subsequence_of_trace
+
+#print axioms KVApproximation.NeuralOperators.exists_channel_liftingCLM
+
+#print axioms KVApproximation.NeuralOperators.exists_injective_channel_lifting
+
+#print axioms KVApproximation.Approximation.exists_vector_finite_feature_approximation
+
+#print axioms KVApproximation.NeuralOperators.exists_fourier_feature_layer
+
+#print axioms KVApproximation.NeuralOperators.FourierLayer.continuous_eval_of_zero_localWeight
+
+#print axioms KVApproximation.NeuralOperators.fourierMappingClass_universal
+
+#print axioms KVApproximation.NeuralOperators.fourierMappingClass_locallyLipschitz_universal
+
+#print axioms KVApproximation.Approximation.exists_finite_feature_ridge_approximation
+
+#print axioms KVApproximation.Approximation.logPartitionWidth_bounds
+
+#print axioms KVApproximation.Approximation.interpolationOrder_error_le
+
+#print axioms KVApproximation.Approximation.interpolationOrder_pos
+
+#print axioms KVApproximation.Approximation.cos_three_quarters_lower
+
+#print axioms KVApproximation.Approximation.bernsteinImaginarySemiaxis_two
+
+#print axioms KVApproximation.Spectral.weightedVariationBound_lt
+
+#print axioms KVApproximation.Tensor.norm_action_le
+
+#print axioms KVApproximation.Tensor.action_symmetric
+
+#print axioms KVApproximation.Tensor.multiplication_apply_ae
+
+#print axioms KVApproximation.Tensor.integrable_fieldPairing
+
+#print axioms KVApproximation.Tensor.boundedFieldForm_apply
+
+#print axioms KVApproximation.Analysis.periodicVariation_le_eLpNorm_gradient
+
+#print axioms KVApproximation.Analysis.periodicBVNorm_le_sobolevBound
+
+#print axioms KVApproximation.Tensor.isCompact_closure_sobolev_coefficients
+
+#print axioms KVApproximation.Tensor.isCompact_sobolev_coefficients_of_isClosed
+
+#print axioms KVApproximation.KelvinVoigt.isCompact_closure_sobolev_materials
+
+#print axioms KVApproximation.KelvinVoigt.isCompact_sobolev_materials_of_isClosed
+
+#print axioms KVApproximation.NeuralOperators.Feedforward.lipschitz
+
+#print axioms KVApproximation.NeuralOperators.Feedforward.locallyLipschitz
+
+#print axioms KVApproximation.NeuralOperators.exists_lipschitz_channel_lifting
+
+#print axioms KVApproximation.NeuralOperators.FeedforwardFourierMapping.evalRepresentative_congr
+
+#print axioms KVApproximation.NeuralOperators.FeedforwardFourierMapping.exists_lipschitz_hidden
+
+#print axioms KVApproximation.NeuralOperators.FeedforwardFourierMapping.locallyLipschitz
+
+#print axioms KVApproximation.NeuralOperators.fourierMappingClass_subset_feedforward
+
+#print axioms KVApproximation.NeuralOperators.feedforwardFourierMappingClass_universal
+
+#print axioms KVApproximation.NeuralOperators.feedforwardFourierMappingClass_locallyLipschitz_universal
+
+#print axioms KVApproximation.NeuralOperators.ActivatedFourierChain.eval_congr_ae
+
+#print axioms KVApproximation.NeuralOperators.ActivatedFourierChain.memLp_eval
+
+#print axioms KVApproximation.NeuralOperators.ActivatedFourierChain.exists_lipschitz_evalLp
+
+#print axioms KVApproximation.NeuralOperators.FourierChain.withActivation_eval
+
+#print axioms KVApproximation.NeuralOperators.HasUniversalApproximation.locallyLipschitz

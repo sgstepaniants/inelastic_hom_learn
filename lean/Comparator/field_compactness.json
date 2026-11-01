@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.FieldCompactness",
+  "solution_module": "KVApproximation.Tensor.FieldCompactness",
+  "theorem_names": [
+    "KVApproximation.Tensor.isCompact_coefficient_constraints"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

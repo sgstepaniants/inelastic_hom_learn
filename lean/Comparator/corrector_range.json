@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.PeriodicSobolev",
+  "solution_module": "KVApproximation.Homogenization.CorrectorRange",
+  "theorem_names": [
+    "KVApproximation.Analysis.periodic_korn",
+    "KVApproximation.Homogenization.correctorSubspace_eq_range"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.FourierProjectionApproximation",
+  "solution_module": "KVApproximation.NeuralOperators.FourierProjectionApproximation",
+  "theorem_names": ["KVApproximation.NeuralOperators.exists_fourierProjection_approx_integral"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

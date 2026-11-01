@@ -1,0 +1,11 @@
+{
+  "challenge_module": "Challenges.TimeSobolevNorms",
+  "solution_module": "KVApproximation.Analysis.TimeSobolevNorms",
+  "theorem_names": [
+    "KVApproximation.Analysis.TimeH1.valueL2_apply",
+    "KVApproximation.Analysis.TimeH1.velocityL2_apply_ae",
+    "KVApproximation.Analysis.TimeH1.norm_sq_eq_value_velocity",
+    "KVApproximation.Analysis.TimeH1.norm_le_of_ode"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

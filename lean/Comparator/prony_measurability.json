@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.ResponseMeasurability",
+  "solution_module": "KVApproximation.Dynamics.PronyMeasurability",
+  "theorem_names": [
+    "KVApproximation.Dynamics.aestronglyMeasurable_pronyStress"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

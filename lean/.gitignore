@@ -1,0 +1,6 @@
+.lake/
+.elan/
+.cache/
+.vm/
+.work/
+__pycache__/

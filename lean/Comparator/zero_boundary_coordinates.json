@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.ZeroBoundaryCoordinates",
+  "solution_module": "KVApproximation.Analysis.ZeroBoundaryCoordinates",
+  "theorem_names": [
+    "KVApproximation.Analysis.mem_zeroBoundary_iff",
+    "KVApproximation.Analysis.ZeroBoundaryH1.exists_ne_zero"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

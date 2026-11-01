@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.AnnulusCoefficients",
+  "solution_module": "KVApproximation.Analysis.AnnulusCoefficientBounds",
+  "theorem_names": [
+    "KVApproximation.Analysis.circleCoefficient_eq_of_analyticOnNhd",
+    "KVApproximation.Analysis.norm_circleCoefficient_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.CompactLaplaceUniqueness",
+  "solution_module": "KVApproximation.Analysis.CompactLaplaceUniqueness",
+  "theorem_names": [
+    "KVApproximation.Analysis.measure_eq_of_weighted_exponential_moments"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

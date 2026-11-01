@@ -1,0 +1,11 @@
+{
+  "challenge_module": "Challenges.DirichletCompactness",
+  "solution_module": "KVApproximation.Analysis.DirichletCompactness",
+  "theorem_names": [
+    "KVApproximation.Analysis.ZeroBoundaryH1.isCompactOperator_valueL",
+    "KVApproximation.Analysis.ZeroBoundaryH1.isCompact_closure_value_image",
+    "KVApproximation.Analysis.ZeroBoundaryH1.exists_subseq_tendsto_value",
+    "KVApproximation.Analysis.ZeroBoundaryH1.tendsto_value_of_weak"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

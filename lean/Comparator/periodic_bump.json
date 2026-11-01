@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenges.PeriodicBump",
+  "solution_module": "KVApproximation.Analysis.PeriodicBump",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicC1.partial_eq_zero_of_notMem_tsupport",
+    "KVApproximation.Analysis.exists_periodic_strip_bump"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

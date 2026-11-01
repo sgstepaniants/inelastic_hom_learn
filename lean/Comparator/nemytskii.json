@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.Nemytskii",
+  "solution_module": "KVApproximation.Analysis.Nemytskii",
+  "theorem_names": ["KVApproximation.Analysis.exists_lipschitz_compositionLp"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

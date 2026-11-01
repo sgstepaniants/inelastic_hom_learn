@@ -1,0 +1,9 @@
+{
+  "challenge_module": "Challenges.PeriodicAveragingReal",
+  "solution_module": "KVApproximation.Analysis.PeriodicAveragingReal",
+  "theorem_names": [
+    "KVApproximation.Analysis.tendsto_integral_rescalePeriodic_mul_real",
+    "KVApproximation.Analysis.tendsto_integral_rescalePeriodic_inner"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

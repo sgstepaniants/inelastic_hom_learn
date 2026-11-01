@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.TimeSobolevMemory",
+  "solution_module": "KVApproximation.Analysis.TimeSobolevMemory",
+  "theorem_names": [
+    "KVApproximation.Analysis.TimeH1.memory_equation_iff_integrated"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenges.CompressionApproximation",
+  "solution_module": "KVApproximation.Spectral.CompressionApproximation",
+  "theorem_names": [
+    "KVApproximation.Spectral.compressedMeasure_pairing_sub_le"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

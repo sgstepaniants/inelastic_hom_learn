@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenges.EffectiveElliptic",
+  "solution_module": "KVApproximation.Homogenization.EffectiveElliptic",
+  "theorem_names": ["KVApproximation.Homogenization.effective_elliptic_exists_unique"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

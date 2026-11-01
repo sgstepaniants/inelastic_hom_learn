@@ -1,0 +1,14 @@
+{
+  "command": [
+    "lake",
+    "build",
+    "KVApproximation",
+    "Challenges",
+    "TauCeti",
+    "ForTauCeti",
+    "NeuralNetworkProofs"
+  ],
+  "exit_code": 0,
+  "seconds": 158.8,
+  "passed": true
+}
