@@ -20,21 +20,29 @@ jobs:
     timeout-minutes: 180
     strategy:
       fail-fast: false
-      max-parallel: 3
+      max-parallel: 4
       matrix:
         include:
           - batch: 0
             configurations: >-
-              laplace_memory periodic_bump prony_error strong_convergence
-              weighted_spectral_continuity
+              tensor_operators cell_tensor_bounds korn_symbol periodic_fourier_energy
+              spatial_load weighted_space periodic_bv_compactness rescaled_fields
+              variational_semigroup
           - batch: 1
             configurations: >-
-              mandel_finite_indices periodic_fourier_synthesis rescaled_field_combinations
-              time_sobolev_memory
+              uniform_prony_stability dirichlet_cutoff lp_product_coordinates
+              periodic_sobolev_bv strip_spectral_edges linear_surrogate periodic_gradient_mean
+              spectral_continuity weighted_variation_gap
           - batch: 2
             configurations: >-
-              microscopic_semigroup periodic_sobolev_identification spectral_bounds
-              variational_identities
+              volterra_uniqueness feedforward_fourier_approximation microscopic_green
+              prony_convolution time_sobolev_laplace_memory mandel_isometries
+              periodic_sobolev_identities strong_multiplication
+          - batch: 3
+            configurations: >-
+              bernstein_geometry fourier_mapping_affine periodic_averaging relaxation_spectrum
+              unweighted_response_integral microscopic_solution_family prony_identities
+              time_sobolev_memory_uniqueness
     defaults:
       run:
         working-directory: lean
