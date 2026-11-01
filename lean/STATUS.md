@@ -34,13 +34,13 @@ Lean, Mathlib and LeanCert are frozen at **v4.35.0**.
 
 | Check | Actual result |
 | --- | --- |
-| Full proof libraries, challenges and convenience exports | Passed after all interface repairs: **4,281 jobs**, **487.2 seconds** |
-| Production-artifact transitive axiom audit | Passed: **722 distinct queries/results**, **39.0 seconds**, only `propext`, `Classical.choice`, `Quot.sound` |
+| Full proof libraries, challenges and convenience exports | Passed on Linux after all interface repairs: **4,281 jobs**, **1,998.7 seconds** |
+| Production-artifact transitive axiom audit | Passed: **722 distinct queries/results**, **2.7 seconds** on Linux, only `propext`, `Classical.choice`, `Quot.sound` |
 | Comparator selections covered by that audit | **702 declarations in 331 configurations**, plus twenty supporting definitions/ingredients |
 | Isolated subject consumers | **10/10 passed**, including every module in each subject |
 | Metadata | Published **v0.4 schema** passed; referenced local module paths exist |
-| Sandboxed Comparator | **First-run pilot passed: 3 configurations / 9 theorem selections; full suite incomplete** |
-| Paranoid independent kernel checks | **All six kernels accepted the first-run pilot; full coverage pending** |
+| Sandboxed Comparator | **Corrected pilot passed: 7 configurations / 21 theorem selections; full suite running** |
+| Paranoid independent kernel checks | **All six kernels accepted all 7 corrected pilot configurations; full coverage pending** |
 
 The logs and machine-readable results are in [Verification/results/](Verification/results/). Rerun the full build and axiom audit with `python3 Verification/verify.py local`; rerun subject consumers with `python3 Verification/consumers.py`. The root import now exposes the main results, concrete architectures and exact appendix identities.
 
@@ -54,11 +54,11 @@ GitHub Actions is the selected validation host at [sgstepaniants/inelastic_hom_l
 
 [The first Actions run](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41328491124) completed its Linux build in 4,387.6 seconds and its 722-declaration axiom audit in 6.9 seconds. The sandboxed paranoid pilot passed: `dimension_growth` (85.8 seconds), `tensor_bounds` (184.9 seconds), and `tensor_dimensions` (105.6 seconds). These are actual Comparator successes, but do not establish full coverage.
 
-[The corrected Actions run](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41347378153) is running after the interface and cache repairs; its Linux pilot has started. It supersedes the cancelled first run. Full validation is pending.
+[The corrected Actions run](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41347378153) passed its Linux build, 722-declaration axiom audit, shared-cache availability check, and seven-configuration sandboxed paranoid pilot (21 theorem selections). The full matrix has started with eight concurrent jobs across sixteen shards. It supersedes the cancelled first run; complete coverage is still pending.
 
-The shared cache failed to save because the runner exhausted disk space. Several shards later lost their runners, and completed checks exposed statement mismatches. The revised workflow removes unused SDKs from disposable runners, requires a successfully saved shared cache before starting its shards, and streams detailed logs so an interrupted job retains its current checker stage. Its seven-configuration pilot includes the first repaired interfaces.
+In the first run, the shared cache failed to save because the runner exhausted disk space. Several shards later lost their runners, and completed checks exposed statement mismatches. The revised workflow removes unused SDKs from disposable runners, requires a successfully saved shared cache before starting its shards, and streams detailed logs so an interrupted job retains its current checker stage. Its seven-configuration pilot includes the first repaired interfaces. The corrected run saved and verified the cache successfully, with 20 GiB available after its build.
 
-Local compiled-type diagnostics now match all **331 configurations / 702 selections**, including universe-parameter names. Repairs align inferred scalar structures, local instance names, universe labels, and Carathéodory parameter order. The continuous-calculus challenge uses the standard complex-Hilbert-space calculus already used by its solution. The stress-bound challenge drops unused completeness and finite-dimensionality assumptions, retaining the stronger generality of the existing proof. Mathematical bounds and conclusions are unchanged. The full-target local rebuild and 722-declaration axiom audit passed after all edits, and the complete type diagnostic was repeated against the refreshed artifacts. The diagnostic is advisory: the fresh Linux build, axiom audit, and authoritative sandboxed paranoid rerun remain required before claiming completion.
+Local compiled-type diagnostics now match all **331 configurations / 702 selections**, including universe-parameter names. Repairs align inferred scalar structures, local instance names, universe labels, and Carathéodory parameter order. The continuous-calculus challenge uses the standard complex-Hilbert-space calculus already used by its solution. The stress-bound challenge drops unused completeness and finite-dimensionality assumptions, retaining the stronger generality of the existing proof. Mathematical bounds and conclusions are unchanged. The full-target local rebuild and 722-declaration axiom audit passed after all edits, and the complete type diagnostic was repeated against the refreshed artifacts. The diagnostic is advisory: the complete authoritative sandboxed paranoid suite remains required before claiming completion.
 
 The prepared Lima VM and `Verification/vm.sh` remain an alternative for local execution. Earlier VM access from the agent was blocked, and its saved log records package provisioning rather than a Comparator verdict. The runner refreshes its managed source copy, clears stale Comparator records, unsets Lean overrides, and retains the sandbox/paranoid settings. Its source review, syntax checks, and simulated failure-handling check passed; these are runner checks, not proof validation. The active validation now runs on GitHub Actions.
 
