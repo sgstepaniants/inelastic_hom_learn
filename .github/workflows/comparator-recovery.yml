@@ -25,16 +25,16 @@ jobs:
         include:
           - batch: 0
             configurations: >-
-              global_approximation log_patch_geometry periodic_divergence_fourier
-              prony_trajectory tensor_variation
+              laplace_memory periodic_bump prony_error strong_convergence
+              weighted_spectral_continuity
           - batch: 1
             configurations: >-
-              half_line_laplace_primitive matrix_exponential periodic_rescaling_lp
-              sobolev_cutoff universal_approximation
+              mandel_finite_indices periodic_fourier_synthesis rescaled_field_combinations
+              time_sobolev_memory
           - batch: 2
             configurations: >-
-              internal_state_bound operator_convolution_limits periodic_variation
-              static_stress_identification weak_strong_pairing
+              microscopic_semigroup periodic_sobolev_identification spectral_bounds
+              variational_identities
     defaults:
       run:
         working-directory: lean
