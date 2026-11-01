@@ -10,8 +10,8 @@ permissions:
   contents: read
 
 concurrency:
-  group: comparator-recovery-${{ github.ref }}
-  cancel-in-progress: true
+  group: comparator-recovery-${{ github.run_id }}
+  cancel-in-progress: false
 
 jobs:
   remaining:
@@ -20,26 +20,21 @@ jobs:
     timeout-minutes: 180
     strategy:
       fail-fast: false
-      max-parallel: 4
+      max-parallel: 3
       matrix:
         include:
           - batch: 0
             configurations: >-
-              feedforward kinetic_stability periodic_fourier_averaging spatial_fields
-              weighted_response_bound periodic_averaging_real representation_uniqueness
-              variational_evolution
+              global_approximation log_patch_geometry periodic_divergence_fourier
+              prony_trajectory tensor_variation
           - batch: 1
             configurations: >-
-              fourier_feature_layer lp_interpolation periodic_smooth_sobolev strip_materials
-              l2_test_functions periodic_fourier_functionals spatial_stress weighted_spectral_bound
+              half_line_laplace_primitive matrix_exponential periodic_rescaling_lp
+              sobolev_cutoff universal_approximation
           - batch: 2
             configurations: >-
-              global_positive_geometry microscopic_evolution prony_continuity
-              time_sobolev_half_line mandel_blocks periodic_sobolev_density strong_additivity
-          - batch: 3
-            configurations: >-
-              hilbert_weak_limits partition_response_integration relative_riesz_spectrum
-              unweighted_response_bound microscopic_laplace prony_dissipation time_sobolev_maps
+              internal_state_bound operator_convolution_limits periodic_variation
+              static_stress_identification weak_strong_pairing
     defaults:
       run:
         working-directory: lean
