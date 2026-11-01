@@ -1,0 +1,98 @@
+name: Comparator recovery
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/comparator-recovery.yml]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: comparator-recovery-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  remaining:
+    name: Recover interrupted configurations, batch ${{ matrix.batch }}
+    runs-on: ubuntu-22.04
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        include:
+          - batch: 0
+            configurations: >-
+              feedforward kinetic_stability periodic_fourier_averaging spatial_fields
+              weighted_response_bound periodic_averaging_real representation_uniqueness
+              variational_evolution
+          - batch: 1
+            configurations: >-
+              fourier_feature_layer lp_interpolation periodic_smooth_sobolev strip_materials
+              l2_test_functions periodic_fourier_functionals spatial_stress weighted_spectral_bound
+          - batch: 2
+            configurations: >-
+              global_positive_geometry microscopic_evolution prony_continuity
+              time_sobolev_half_line mandel_blocks periodic_sobolev_density strong_additivity
+          - batch: 3
+            configurations: >-
+              hilbert_weak_limits partition_response_integration relative_riesz_spectrum
+              unweighted_response_bound microscopic_laplace prony_dissipation time_sobolev_maps
+    defaults:
+      run:
+        working-directory: lean
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Free runner disk space
+        run: |
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL
+          df -h .
+      - uses: actions/cache/restore@v6
+        id: cache
+        with:
+          path: |
+            lean/.elan/toolchains
+            lean/.lake
+          key: comparator-linux-4.35.0-v2
+          fail-on-cache-miss: true
+      - name: Prepare Lean and verify sandbox support
+        env:
+          COMPARATOR_CACHE_HIT: ${{ steps.cache.outputs.cache-hit }}
+        run: bash Verification/ci_setup.sh
+      - name: Reserve swap for kernel checks
+        run: |
+          available_kib=$(df --output=avail / | tail -1)
+          if (( available_kib < 18 * 1024 * 1024 )); then
+            echo "Insufficient disk space for swap and proof exports" >&2
+            exit 1
+          fi
+          sudo fallocate -l 12G /swapfile-comparator
+          sudo chmod 600 /swapfile-comparator
+          sudo mkswap /swapfile-comparator
+          sudo swapon /swapfile-comparator
+          free -m
+          df -h .
+      - name: Run the remaining sandboxed paranoid checks
+        env:
+          CONFIGURATIONS: ${{ matrix.configurations }}
+        run: |
+          read -r -a configurations <<< "$CONFIGURATIONS"
+          args=()
+          for configuration in "${configurations[@]}"; do
+            args+=(--config "$configuration")
+          done
+          /usr/bin/time -v -o Verification/results/resource-time.log \
+            python3 Verification/verify.py comparator "${args[@]}" --keep-going
+      - name: Preserve recovered evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: comparator-recovery-${{ matrix.batch }}
+          path: |
+            lean/Verification/results/comparator-*
+            lean/Verification/results/resource-time.log
+          retention-days: 14
