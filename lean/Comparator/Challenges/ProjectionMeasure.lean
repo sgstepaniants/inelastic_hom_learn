@@ -1,7 +1,7 @@
 module
 
 public import ForTauCeti.Analysis.InnerProductSpace.BorelCalculus.PVM
-public import TauCeti.Analysis.InnerProductSpace.ContinuousFunctionalCalculus
+public import Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Instances
 
 /-!
 # Strong additivity and continuous spectral integration
@@ -11,6 +11,8 @@ public section
 
 open MeasureTheory
 open scoped InnerProductSpace
+
+attribute [local instance] IsStarNormal.instContinuousFunctionalCalculus
 
 namespace KVApproximation.Spectral
 

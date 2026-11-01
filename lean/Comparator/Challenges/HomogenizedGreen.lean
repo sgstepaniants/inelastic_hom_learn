@@ -17,6 +17,16 @@ namespace KVApproximation.Homogenization
 
 variable {d : ℕ} {Ω : Opens (PhysicalSpace d)}
 
+section GreenUniquenessInterface
+
+local instance GreenUniqueness.instDualNormedGroup :
+    NormedAddCommGroup (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
+  ContinuousLinearMap.toNormedAddCommGroup
+
+local instance GreenUniqueness.instDualNormedSpace :
+    NormedSpace ℝ (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
+  ContinuousLinearMap.toNormedSpace
+
 /-- Theorem 3.1, Duhamel's formula: continuous viscously prepared
 trajectories satisfying the same cell-memory Green balance agree on the
 nonnegative half-line. -/
@@ -38,6 +48,16 @@ theorem green_balance_unique
           spatialLoadOperator (Ω := Ω) g) :
     Set.EqOn v w (Set.Ici (0 : ℝ)) := by
   sorry
+
+end GreenUniquenessInterface
+
+local instance HomogenizedGreen.instDualNormedGroup :
+    NormedAddCommGroup (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
+  ContinuousLinearMap.toNormedAddCommGroup
+
+local instance HomogenizedGreen.instDualNormedSpace :
+    NormedSpace ℝ (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
+  ContinuousLinearMap.toNormedSpace
 
 /-- Theorem 3.1 (`thm:viscoelastic_homogenization`), forcing contribution:
 the actual microscopic Green operators converge weakly at every nonnegative

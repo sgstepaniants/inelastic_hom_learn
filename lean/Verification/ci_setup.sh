@@ -43,6 +43,8 @@ bwrap --unshare-all --ro-bind / / --proc /proc --dev /dev \
   --die-with-parent --new-session -- /bin/true
 
 # Populate dependencies from the committed Lake manifest before isolated builds.
-lake exe cache get
+if [[ "${COMPARATOR_CACHE_HIT:-false}" != true ]]; then
+  lake exe cache get
+fi
 printf '%s\n' "$toolchain_dir/bin" >> "$GITHUB_PATH"
 printf 'MATHLIB_CACHE_DIR=%s\n' "$MATHLIB_CACHE_DIR" >> "$GITHUB_ENV"

@@ -11,6 +11,23 @@ open KVApproximation.Analysis KVApproximation.Tensor
 
 namespace KVApproximation.Homogenization
 
+-- These generic instances fix the names of shared proof fields in the
+-- elaborated norm structure; the theorem statements below are unchanged.
+section TrilinearBound
+
+variable {H : Type*} [NormedAddCommGroup H] [NormedSpace ℝ H]
+
+local instance ConstantSpatialFormProperties.instGenericDualNormedGroup :
+    NormedAddCommGroup (H →L[ℝ] ℝ) := ContinuousLinearMap.toNormedAddCommGroup
+
+local instance ConstantSpatialFormProperties.instGenericDualNormedSpace :
+    NormedSpace ℝ (H →L[ℝ] ℝ) := ContinuousLinearMap.toNormedSpace
+
+local instance ConstantSpatialFormProperties.instGenericFormNormedGroup :
+    NormedAddCommGroup (H →L[ℝ] H →L[ℝ] ℝ) := ContinuousLinearMap.toNormedAddCommGroup
+
+end TrilinearBound
+
 variable {d : ℕ} {Ω : Opens (PhysicalSpace d)}
 
 local instance ConstantSpatialFormProperties.instNormedGroup :

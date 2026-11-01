@@ -14,6 +14,11 @@ open KVApproximation.Dynamics KVApproximation.Tensor KVApproximation.Spectral
 
 namespace KVApproximation.Approximation
 
+-- Keep the complex scalar structure identical to the independent statement.
+-- The C*-algebra imports also provide a definitionally equal ring instance.
+attribute [local instance 2000] NormedField.toNormedCommRing
+attribute [local instance 3000] Real.normedCommRing
+
 /-- Remark 4.6: Chebyshev interpolation on the full logarithmic interval,
 with the explicit linear span factor. -/
 theorem global_weighted_response_error_of_span_pos {E F : Type*}

@@ -26,10 +26,16 @@ def run(command, name):
     print("Running " + shlex.join(command), flush=True)
     started = time.monotonic()
     with log.open("w") as output:
-        result = subprocess.run(command, cwd=ROOT, stdout=output, stderr=subprocess.STDOUT)
+        with subprocess.Popen(command, cwd=ROOT, stdout=subprocess.PIPE,
+                              stderr=subprocess.STDOUT, text=True) as process:
+            for line in process.stdout:
+                output.write(line)
+                output.flush()
+                print(line, end="", flush=True)
+            exit_code = process.wait()
     record = {
         "command": command,
-        "exit_code": result.returncode,
+        "exit_code": exit_code,
         "seconds": round(time.monotonic() - started, 1),
     }
     return record, log

@@ -24,7 +24,7 @@ namespace KVApproximation.Spectral
 
 variable {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H]
 
-local instance : InnerProductSpace ℝ H := InnerProductSpace.rclikeToReal ℂ H
+local instance pvmCompressionRealInnerProduct : InnerProductSpace ℝ H := InnerProductSpace.rclikeToReal ℂ H
 
 omit [CompleteSpace H] in
 /-- Appendix A.2: the real part of the complex inner product is symmetric. -/

@@ -20,7 +20,7 @@ namespace KVApproximation.Spectral
 
 variable {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H]
 
-local instance : InnerProductSpace ℝ H := InnerProductSpace.rclikeToReal ℂ H
+local instance pvmCompressionRealInnerProduct : InnerProductSpace ℝ H := InnerProductSpace.rclikeToReal ℂ H
 
 /-- Appendix A.2 (`eq:nu_def`): finite-dimensional compression of a general PVM
 is a unique countably additive tensor measure. -/

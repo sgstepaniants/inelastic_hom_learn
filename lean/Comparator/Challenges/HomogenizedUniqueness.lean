@@ -4,10 +4,28 @@ public import KVApproximation.Homogenization.WeakProblem
 
 public section
 
+noncomputable section
+
 open TopologicalSpace
 open KVApproximation.Analysis KVApproximation.Tensor
 
 namespace KVApproximation.Homogenization
+
+variable {d : ℕ} {Ω : Opens (PhysicalSpace d)}
+
+local instance HomogenizedUniqueness.instNormedGroup :
+    NormedAddCommGroup (ZeroBoundaryH1 Ω) := inferInstance
+
+local instance HomogenizedUniqueness.instNormedSpace :
+    NormedSpace ℝ (ZeroBoundaryH1 Ω) := inferInstance
+
+local instance HomogenizedUniqueness.instDualNormedGroup :
+    NormedAddCommGroup (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
+  ContinuousLinearMap.toNormedAddCommGroup
+
+local instance HomogenizedUniqueness.instDualNormedSpace :
+    NormedSpace ℝ (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
+  ContinuousLinearMap.toNormedSpace
 
 /-- Theorem 3.1 (`thm:viscoelastic_homogenization`), uniqueness: the
 actual homogenized weak equation and prepared initial condition have at most

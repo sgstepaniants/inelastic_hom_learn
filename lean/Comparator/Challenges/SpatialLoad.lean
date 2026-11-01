@@ -13,13 +13,13 @@ namespace KVApproximation.Homogenization
 
 variable {d : ℕ} {Ω : Opens (PhysicalSpace d)}
 
-local instance SpatialLoad.instNormedGroup :
+local instance SpatialFormIdentities.instLoadNormedGroup :
     NormedAddCommGroup (ZeroBoundaryH1 Ω) := inferInstance
 
-local instance SpatialLoad.instNormedSpace :
+local instance SpatialFormIdentities.instLoadNormedSpace :
     NormedSpace ℝ (ZeroBoundaryH1 Ω) := inferInstance
 
-local instance SpatialLoad.instDualNormedGroup :
+local instance SpatialFormIdentities.instLoadDualNormedGroup :
     NormedAddCommGroup (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
   ContinuousLinearMap.toNormedAddCommGroup
 

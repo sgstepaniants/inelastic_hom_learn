@@ -8,11 +8,13 @@ open scoped InnerProductSpace
 
 namespace KVApproximation.OperatorTheory
 
+universe u v
+
 /-- Theorem 3.1, transformed cell identity, and Lemma B.6: the resolvent
 compression is the difference between the combined effective form and the
 two separate effective forms. -/
 theorem homogenizedForm_resolvent
-    {H F : Type*} [NormedAddCommGroup H] [InnerProductSpace ℝ H] [CompleteSpace H]
+    {H : Type u} {F : Type v} [NormedAddCommGroup H] [InnerProductSpace ℝ H] [CompleteSpace H]
     [NormedAddCommGroup F] [NormedSpace ℝ F]
     (V E A : CoerciveForm H) (X : ClosedSubmodule ℝ H) (ι : F →L[ℝ] H)
     (s : ℝ) (hs : 0 < s)

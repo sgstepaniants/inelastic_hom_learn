@@ -11,6 +11,10 @@ open KVApproximation.Dynamics
 
 namespace KVApproximation.Approximation
 
+-- Use the scalar structures of the independent interpolation interface.
+attribute [local instance 2000] NormedField.toNormedCommRing
+attribute [local instance 3000] Real.normedCommRing
+
 variable {E F : Type*}
   [NormedAddCommGroup E] [NormedSpace ℝ E] [CompleteSpace E]
   [NormedAddCommGroup F] [NormedSpace ℝ F] [NormedSpace ℂ F]

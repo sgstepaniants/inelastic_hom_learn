@@ -43,28 +43,49 @@ jobs:
           persist-credentials: false
       - name: Check sharding and evidence validation
         run: python3 Verification/test_ci.py
+      - name: Free runner disk space for Lean and proof exports
+        run: |
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL
+          df -h .
       - uses: actions/cache/restore@v6
         id: cache
         with:
           path: |
             lean/.elan/toolchains
             lean/.lake
-          key: comparator-linux-4.35.0-v1
+          key: comparator-linux-4.35.0-v2
       - name: Prepare Lean and verify sandbox support
+        env:
+          COMPARATOR_CACHE_HIT: ${{ steps.cache.outputs.cache-hit }}
         run: bash Verification/ci_setup.sh
       - name: Build all libraries and audit axioms
         run: python3 Verification/verify.py local
+      - name: Remove downloaded cache archives before packaging
+        run: |
+          rm -rf .cache/mathlib
+          df -h .
       - uses: actions/cache/save@v6
         if: steps.cache.outputs.cache-hit != 'true'
         with:
           path: |
             lean/.elan/toolchains
             lean/.lake
-          key: comparator-linux-4.35.0-v1
-      - name: Time three representative configurations
+          key: comparator-linux-4.35.0-v2
+      - name: Require the shared build cache to be available
+        uses: actions/cache/restore@v6
+        with:
+          path: |
+            lean/.elan/toolchains
+            lean/.lake
+          key: comparator-linux-4.35.0-v2
+          lookup-only: true
+          fail-on-cache-miss: true
+      - name: Check representative configurations and repaired interfaces
         run: >-
           python3 Verification/verify.py comparator
           --config tensor_dimensions --config tensor_bounds --config dimension_growth
+          --config constant_spatial_form --config global_interpolation
+          --config global_positive_interpolation --config unweighted_interpolation
       - name: Preserve pilot evidence
         if: always()
         uses: actions/upload-artifact@v7
@@ -94,13 +115,21 @@ jobs:
       - uses: actions/checkout@v7
         with:
           persist-credentials: false
+      - name: Free runner disk space for Lean and proof exports
+        run: |
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL
+          df -h .
       - uses: actions/cache/restore@v6
+        id: cache
         with:
           path: |
             lean/.elan/toolchains
             lean/.lake
-          key: comparator-linux-4.35.0-v1
+          key: comparator-linux-4.35.0-v2
+          fail-on-cache-miss: true
       - name: Prepare Lean and verify sandbox support
+        env:
+          COMPARATOR_CACHE_HIT: ${{ steps.cache.outputs.cache-hit }}
         run: bash Verification/ci_setup.sh
       - name: Run sandboxed Comparator with every paranoid checker
         env:

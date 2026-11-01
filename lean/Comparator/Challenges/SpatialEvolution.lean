@@ -13,7 +13,7 @@ namespace KVApproximation.Homogenization
 
 variable {d : ℕ} {Ω : Opens (PhysicalSpace d)}
 
-local instance : NormedAddCommGroup (ZeroBoundaryH1 Ω) :=
+local instance spatialEvolutionNormedGroup : NormedAddCommGroup (ZeroBoundaryH1 Ω) :=
   { (inferInstance : SeminormedAddCommGroup (ZeroBoundaryH1 Ω)) with
     eq_of_dist_eq_zero := eq_of_dist_eq_zero }
 

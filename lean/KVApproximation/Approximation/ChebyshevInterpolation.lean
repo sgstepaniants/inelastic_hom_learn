@@ -12,6 +12,9 @@ public section
 
 namespace KVApproximation.Approximation
 
+-- Match the scalar action used by the independent analytic statement.
+attribute [local instance 2000] NormedField.toNormedSpace
+
 /-- Lemma B.9, proof: the generic Banach-valued root-node interpolation
 estimate on a Bernstein ellipse. -/
 theorem chebyshevInterpolant_error_le

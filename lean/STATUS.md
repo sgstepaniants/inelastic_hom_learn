@@ -34,13 +34,13 @@ Lean, Mathlib and LeanCert are frozen at **v4.35.0**.
 
 | Check | Actual result |
 | --- | --- |
-| Full proof libraries, challenges and convenience exports | Passed: **4,281 jobs**, **158.8 seconds** |
+| Full proof libraries, challenges and convenience exports | Passed: **4,281 jobs** after interface repairs; final universe-label edits also passed their focused build |
 | Production-artifact transitive axiom audit | Passed: **722 distinct queries/results**, **92.1 seconds**, only `propext`, `Classical.choice`, `Quot.sound` |
 | Comparator selections covered by that audit | **702 declarations in 331 configurations**, plus twenty supporting definitions/ingredients |
 | Isolated subject consumers | **10/10 passed**, including every module in each subject |
 | Metadata | Published **v0.4 schema** passed; referenced local module paths exist |
-| Sandboxed Comparator | **Not run** |
-| Paranoid independent kernel checks | **Not run** |
+| Sandboxed Comparator | **Pilot passed: 3 configurations / 9 theorem selections; full suite incomplete** |
+| Paranoid independent kernel checks | **All six kernels accepted the pilot; full coverage pending** |
 
 The logs and machine-readable results are in [Verification/results/](Verification/results/). Rerun the full build and axiom audit with `python3 Verification/verify.py local`; rerun subject consumers with `python3 Verification/consumers.py`. The root import now exposes the main results, concrete architectures and exact appendix identities.
 
@@ -50,19 +50,16 @@ LeanCert proves `7/10 < cos(3/4)` in explicit kernel mode at Taylor depth 3. Sou
 
 ## Remaining validation
 
-GitHub Actions is the selected validation host at [sgstepaniants/inelastic_hom_learn](https://github.com/sgstepaniants/inelastic_hom_learn). The repository has been pushed successfully. The new `Sandboxed Comparator` workflow prepares Ubuntu 22.04 with Lean 4.35.0 and bubblewrap, builds the libraries and audits axioms, then runs three pilot configurations before 16 disjoint Comparator shards with at most eight active jobs. The final coverage check requires all 331 configurations, their 702 theorem selections, and acceptance by all six kernels. Logs and result records are retained as Actions artifacts for 14 days. The workflow is being validated before its first launch; no Comparator success is claimed yet.
+GitHub Actions is the selected validation host at [sgstepaniants/inelastic_hom_learn](https://github.com/sgstepaniants/inelastic_hom_learn). The workflow uses Ubuntu 22.04, Lean 4.35.0, bubblewrap, and all six bundled kernels. It divides the 331 configurations / 702 selections into 16 disjoint shards with at most eight active jobs. Logs and result records are retained for 14 days. Actionlint, Python/Bash syntax checks, and six sharding/evidence regression tests passed.
 
-The user started the Linux VM. Lima's host log confirms a running VM, a working SSH server and completed boot requirements. Its SSH configuration and runtime sockets now exist. Lima's status query still cannot read the macOS boot-session identifier inside the tool sandbox, so that query alone does not describe the running VM correctly.
+[The first Actions run](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41328491124) completed its Linux build in 4,387.6 seconds and its 722-declaration axiom audit in 6.9 seconds. The sandboxed paranoid pilot passed: `dimension_growth` (85.8 seconds), `tensor_bounds` (184.9 seconds), and `tensor_dimensions` (105.6 seconds). These are actual Comparator successes, but do not establish full coverage.
 
-The current obstacle is access from this session: both the SSH control socket and the loopback TCP connection return `Operation not permitted`. The permission system rejected an elevated SSH request because sandbox approvals are disabled. The mathematical sources and all successful local validation results remain unchanged.
+The shared cache failed to save because the runner exhausted disk space. Several shards later lost their runners, and completed checks exposed statement mismatches. The revised workflow removes unused SDKs from disposable runners, requires a successfully saved shared cache before starting its shards, and streams detailed logs so an interrupted job retains its current checker stage. Its seven-configuration pilot includes the first repaired interfaces.
 
-`Verification/vm.sh` prepares the pinned toolchain and bubblewrap in the VM, runs all Comparator configurations with the default sandbox and `--paranoid`, and copies their logs and results back. The runner review identified stale source/configuration files, stale results after interrupted reruns, and inherited toolchain overrides. These have been corrected: the managed VM source trees are refreshed, Comparator records are cleared before reruns, and Lean overrides are unset. The referee's follow-up source review found no remaining blocking runner defect. Bash/Python syntax and an isolated simulated-failure check passed; the latter confirmed early stopping, stale-record removal, unchanged sandbox/paranoid arguments, and preservation of unrelated build evidence. These are runner checks, not Comparator executions. The user has now started the runner in Terminal, and Verification/results/vm.log records actual Debian Linux package provisioning. Comparator has not yet started. Direct SSH and process inspection remain unavailable in the tool sandbox, so progress is observed through the local run log. The launch command is:
+Local compiled-type diagnostics now match all **331 configurations / 702 selections**, including universe-parameter names. Repairs align inferred scalar structures, local instance names, universe labels, and Carathéodory parameter order. The continuous-calculus challenge uses the standard complex-Hilbert-space calculus already used by its solution. The stress-bound challenge drops unused completeness and finite-dimensionality assumptions, retaining the stronger generality of the existing proof. Mathematical bounds and conclusions are unchanged. The full-target local rebuild passed, and the last universe-label edits passed a focused rebuild. The diagnostic is advisory: the fresh Linux build, axiom audit, and authoritative sandboxed paranoid rerun remain required before claiming completion.
 
-```sh
-cd /Users/georgestepaniants/Research/kv_approximation/lean
-bash Verification/vm.sh
-```
+The prepared Lima VM and `Verification/vm.sh` remain an alternative for local execution. Earlier VM access from the agent was blocked, and its saved log records package provisioning rather than a Comparator verdict. The runner refreshes its managed source copy, clears stale Comparator records, unsets Lean overrides, and retains the sandbox/paranoid settings. Its source review, syntax checks, and simulated failure-handling check passed; these are runner checks, not proof validation. The active validation now runs on GitHub Actions.
 
-Inspect the resulting Comparator logs, resolve any findings, and rerun affected checks. No Comparator success is claimed before those executions complete.
+Inspect the Actions results, resolve any findings, and rerun affected checks. No Comparator success is claimed before those executions complete.
 
 Abandoned development probes, reference copies, isolated build artifacts and temporary consumer fixtures have been removed. The consumer script recreates its fixtures when rerun. The proof sources, licenses, required Lake metadata, challenges, verification scripts/results, README, inventory, plan and status remain. Build caches and the prepared VM are retained for the outstanding validation. Do not mark the goal complete while that validation remains outstanding.

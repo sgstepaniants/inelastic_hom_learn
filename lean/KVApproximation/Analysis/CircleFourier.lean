@@ -16,7 +16,7 @@ namespace KVApproximation.Analysis
 
 open MeasureTheory
 
-local instance : Fact (0 < 2 * Real.pi) := ⟨Real.two_pi_pos⟩
+local instance circleFourierPeriodPos : Fact (0 < 2 * Real.pi) := ⟨Real.two_pi_pos⟩
 
 /-- Lemma B.9, analytic coefficient proof: the unit-radius Laurent
 coefficient is the corresponding Fourier coefficient of the circle pullback. -/

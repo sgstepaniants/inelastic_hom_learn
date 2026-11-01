@@ -13,6 +13,15 @@ namespace KVApproximation.Homogenization
 
 variable {d : ℕ} {Ω : Opens (PhysicalSpace d)}
 
+-- Use the same named norm structures in the independent interface.
+local instance HomogenizedSuperposition.instDualNormedGroup :
+    NormedAddCommGroup (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
+  ContinuousLinearMap.toNormedAddCommGroup
+
+local instance HomogenizedSuperposition.instDualNormedSpace :
+    NormedSpace ℝ (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
+  ContinuousLinearMap.toNormedSpace
+
 /-- Theorem 3.1 (`thm:viscoelastic_homogenization`), superposition:
 adding the homogeneous and forced solutions adds their prepared initial
 loads and their L² forcing in the actual weak memory equation. -/

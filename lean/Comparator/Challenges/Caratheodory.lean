@@ -13,10 +13,12 @@ open scoped NNReal
 
 namespace KVApproximation.Dynamics
 
+universe u
+
 /-- Proposition B.13, Carathéodory existence ingredient: a uniformly
 Lipschitz field with integrable evaluations along continuous curves has
 an integral solution on every finite interval in a complete Banach space. -/
-theorem exists_integral_solution_Icc {E : Type*} [NormedAddCommGroup E]
+theorem exists_integral_solution_Icc {E : Type u} [NormedAddCommGroup E]
     [NormedSpace ℝ E] [CompleteSpace E] {f : ℝ → E → E} {a b : ℝ} {K : ℝ≥0}
     (hLip : ∀ᵐ s ∂volume.restrict (Icc a b), LipschitzWith K (f s))
     (hInt : ∀ x : ℝ → E, ContinuousOn x (Icc a b) →
@@ -28,7 +30,7 @@ theorem exists_integral_solution_Icc {E : Type*} [NormedAddCommGroup E]
 /-- Proposition B.13, Carathéodory uniqueness ingredient: two continuous
 integral solutions with the same initial value agree on the interval.
 Completeness is needed for existence, but not for uniqueness. -/
-theorem integral_solution_unique_Icc {E : Type*} [NormedAddCommGroup E]
+theorem integral_solution_unique_Icc {E : Type u} [NormedAddCommGroup E]
     [NormedSpace ℝ E] {f : ℝ → E → E} {a b : ℝ} {K : ℝ≥0}
     (hLip : ∀ᵐ s ∂volume.restrict (Icc a b), LipschitzWith K (f s))
     (hInt : ∀ x : ℝ → E, ContinuousOn x (Icc a b) →

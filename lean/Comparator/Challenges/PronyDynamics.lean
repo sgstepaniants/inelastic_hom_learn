@@ -53,6 +53,7 @@ theorem kinetic_stability {n : ℕ} (P : PronyModel M E n) (a : M)
           (1 - Real.exp (-rateLower * t))) := by
   sorry
 
+omit [CompleteSpace E] [FiniteDimensional ℝ E] in
 /-- Proposition B.13 (`eq:ua_err`), stress estimate: summing `n` tensor
 blocks introduces precisely the factor `√n`. -/
 theorem stress_error_le {n : ℕ} (P : PronyModel M E n) (a : M)

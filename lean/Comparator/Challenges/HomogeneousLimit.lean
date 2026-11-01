@@ -19,6 +19,15 @@ namespace KVApproximation.Homogenization
 
 variable {d : ℕ} {Ω : Opens (PhysicalSpace d)}
 
+-- Use the same named norm structures in the independent interface.
+local instance HomogeneousLimit.instDualNormedGroup :
+    NormedAddCommGroup (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
+  ContinuousLinearMap.toNormedAddCommGroup
+
+local instance HomogeneousLimit.instDualNormedSpace :
+    NormedSpace ℝ (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
+  ContinuousLinearMap.toNormedSpace
+
 /-- Theorem 3.1 (`thm:viscoelastic_homogenization`), identification
 of a homogeneous subsequential limit: weak convergence of prepared initial
 states and their microscopic Laplace transforms gives the actual homogenized

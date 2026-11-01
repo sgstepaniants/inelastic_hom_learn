@@ -15,6 +15,15 @@ namespace KVApproximation.Homogenization
 
 variable {d : ℕ} {Ω : Opens (PhysicalSpace d)}
 
+-- Use the same named norm structures in the independent interface.
+local instance ForcedHomogenization.instDualNormedGroup :
+    NormedAddCommGroup (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
+  ContinuousLinearMap.toNormedAddCommGroup
+
+local instance ForcedHomogenization.instDualNormedSpace :
+    NormedSpace ℝ (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
+  ContinuousLinearMap.toNormedSpace
+
 /-- Theorem 3.1 (`thm:viscoelastic_homogenization`), general forcing:
 the whole microscopic family with elastically prepared initial data and
 L² forcing converges weakly in H¹(0,T;H¹₀) to the unique solution with the

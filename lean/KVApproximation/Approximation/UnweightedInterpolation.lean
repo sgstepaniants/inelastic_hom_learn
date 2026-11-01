@@ -14,6 +14,10 @@ open KVApproximation.Dynamics KVApproximation.Tensor KVApproximation.Spectral
 
 namespace KVApproximation.Approximation
 
+-- Keep the scalar structures identical to the independent statements.
+attribute [local instance 2000] NormedField.toNormedCommRing
+attribute [local instance 3000] Real.normedCommRing
+
 /-- Remark 4.6, local Chebyshev estimate without resolvent reweighting. -/
 theorem local_unweighted_response_error {E F : Type*}
     [NormedAddCommGroup E] [NormedSpace ℝ E] [CompleteSpace E]

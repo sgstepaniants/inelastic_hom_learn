@@ -141,10 +141,13 @@ end Caratheodory
 
 open Caratheodory
 
+universe u
+
 /-- Proposition B.13, Carathéodory existence ingredient: a uniformly
 Lipschitz field with integrable evaluations along continuous curves has
 an integral solution on every finite interval in a complete Banach space. -/
-theorem exists_integral_solution_Icc [CompleteSpace E]
+theorem exists_integral_solution_Icc {E : Type u} [NormedAddCommGroup E]
+    [NormedSpace ℝ E] [CompleteSpace E] {f : ℝ → E → E} {a b : ℝ} {K : ℝ≥0}
     (hLip : ∀ᵐ s ∂volume.restrict (Icc a b), LipschitzWith K (f s))
     (hInt : ∀ x : ℝ → E, ContinuousOn x (Icc a b) →
       IntegrableOn (fun s => f s (x s)) (Icc a b)) (x₀ : E) :
@@ -167,11 +170,12 @@ theorem exists_integral_solution_Icc [CompleteSpace E]
 /-- Proposition B.13, Carathéodory uniqueness ingredient: two continuous
 integral solutions with the same initial value agree on the interval.
 Completeness is needed for existence, but not for uniqueness. -/
-theorem integral_solution_unique_Icc
+theorem integral_solution_unique_Icc {E : Type u} [NormedAddCommGroup E]
+    [NormedSpace ℝ E] {f : ℝ → E → E} {a b : ℝ} {K : ℝ≥0}
     (hLip : ∀ᵐ s ∂volume.restrict (Icc a b), LipschitzWith K (f s))
     (hInt : ∀ x : ℝ → E, ContinuousOn x (Icc a b) →
       IntegrableOn (fun s => f s (x s)) (Icc a b))
-    {x₁ x₂ : ℝ → E}
+    {x₀ : E} {x₁ x₂ : ℝ → E}
     (hx₁ : ContinuousOn x₁ (Icc a b)) (hx₂ : ContinuousOn x₂ (Icc a b))
     (h₁ : ∀ t ∈ Icc a b, x₁ t = x₀ + ∫ s in a..t, f s (x₁ s))
     (h₂ : ∀ t ∈ Icc a b, x₂ t = x₀ + ∫ s in a..t, f s (x₂ s)) :

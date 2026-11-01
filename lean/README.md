@@ -51,7 +51,7 @@ The `build` and `axioms` stages can also be run separately.
 
 The [Sandboxed Comparator workflow](../.github/workflows/comparator.yml) runs on
 Ubuntu 22.04 with the pinned Linux toolchain and bubblewrap. It builds all
-libraries, audits their axioms, and times three pilot configurations before
+libraries, audits their axioms, and checks seven pilot configurations before
 running the complete suite in 16 disjoint shards, with at most eight jobs at
 once. Every configuration uses the default sandbox and `--paranoid`.
 
@@ -62,9 +62,11 @@ and result records for 14 days and verifies that all configurations, theorem
 selections, and six kernel acceptance records are present. A successful pilot
 alone is not complete validation.
 
-The dependency/build cache uses the explicit key `comparator-linux-4.35.0-v1`.
+The dependency/build cache uses the explicit key `comparator-linux-4.35.0-v2`.
 Update this release-labelled key when changing the pinned toolchain or dependency
 set. Lean/Lake still checks source freshness when building restored artifacts.
+The workflow frees unused preinstalled SDKs on its disposable runners and
+requires the shared build cache to exist before starting the shards.
 
 On a prepared Linux system, the same shard selection is available locally:
 
