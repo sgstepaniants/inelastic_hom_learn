@@ -1,0 +1,142 @@
+name: Sandboxed Comparator
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Run the pilot only, or the complete validation
+        type: choice
+        options: [full, pilot]
+        default: full
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/comparator.yml
+      - lean/Verification/*.py
+      - lean/Verification/ci_setup.sh
+      - lean/Comparator/**
+      - lean/KVApproximation/**
+      - lean/KVApproximation.lean
+      - lean/Vendor/**
+      - lean/lakefile.toml
+      - lean/lake-manifest.json
+      - lean/lean-toolchain
+
+permissions:
+  contents: read
+
+concurrency:
+  group: comparator-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pilot:
+    name: Build and time the pilot
+    runs-on: ubuntu-22.04
+    timeout-minutes: 120
+    defaults:
+      run:
+        working-directory: lean
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Check sharding and evidence validation
+        run: python3 Verification/test_ci.py
+      - uses: actions/cache/restore@v6
+        id: cache
+        with:
+          path: |
+            lean/.elan/toolchains
+            lean/.lake
+          key: comparator-linux-4.35.0-v1
+      - name: Prepare Lean and verify sandbox support
+        run: bash Verification/ci_setup.sh
+      - name: Build all libraries and audit axioms
+        run: python3 Verification/verify.py local
+      - uses: actions/cache/save@v6
+        if: steps.cache.outputs.cache-hit != 'true'
+        with:
+          path: |
+            lean/.elan/toolchains
+            lean/.lake
+          key: comparator-linux-4.35.0-v1
+      - name: Time three representative configurations
+        run: >-
+          python3 Verification/verify.py comparator
+          --config tensor_dimensions --config tensor_bounds --config dimension_growth
+      - name: Preserve pilot evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: comparator-pilot
+          path: |
+            lean/Verification/results/build.*
+            lean/Verification/results/axioms.*
+            lean/Verification/results/comparator-*
+          retention-days: 14
+
+  comparator:
+    name: Comparator shard ${{ matrix.shard }} of 16
+    needs: pilot
+    if: github.event_name != 'workflow_dispatch' || inputs.mode == 'full'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 330
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    defaults:
+      run:
+        working-directory: lean
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/cache/restore@v6
+        with:
+          path: |
+            lean/.elan/toolchains
+            lean/.lake
+          key: comparator-linux-4.35.0-v1
+      - name: Prepare Lean and verify sandbox support
+        run: bash Verification/ci_setup.sh
+      - name: Run sandboxed Comparator with every paranoid checker
+        env:
+          SHARD_INDEX: ${{ matrix.shard }}
+        run: >-
+          python3 Verification/verify.py comparator
+          --shard-index "$SHARD_INDEX" --shard-count 16 --keep-going
+      - name: Preserve shard evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: comparator-shard-${{ matrix.shard }}
+          path: lean/Verification/results/comparator-*
+          if-no-files-found: warn
+          retention-days: 14
+
+  coverage:
+    name: Verify complete coverage
+    needs: [pilot, comparator]
+    if: always() && needs.comparator.result != 'skipped'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v8
+        with:
+          pattern: comparator-shard-*
+          path: lean/Verification/results/ci
+      - name: Require all configurations and all six kernels
+        run: python3 lean/Verification/collect_comparator.py lean/Verification/results/ci
+      - name: Preserve complete validation evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: comparator-complete-results
+          path: lean/Verification/results/ci
+          retention-days: 14

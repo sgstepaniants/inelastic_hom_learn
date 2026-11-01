@@ -47,6 +47,38 @@ python3 Verification/verify.py comparator
 
 The `build` and `axioms` stages can also be run separately.
 
+### GitHub Actions
+
+The [Sandboxed Comparator workflow](../.github/workflows/comparator.yml) runs on
+Ubuntu 22.04 with the pinned Linux toolchain and bubblewrap. It builds all
+libraries, audits their axioms, and times three pilot configurations before
+running the complete suite in 16 disjoint shards, with at most eight jobs at
+once. Every configuration uses the default sandbox and `--paranoid`.
+
+Use **Actions → Sandboxed Comparator → Run workflow** to start a full run or
+select `pilot` to measure setup and representative checks. Relevant source and
+runner changes pushed to `main` also start a full run. The workflow retains logs
+and result records for 14 days and verifies that all configurations, theorem
+selections, and six kernel acceptance records are present. A successful pilot
+alone is not complete validation.
+
+The dependency/build cache uses the explicit key `comparator-linux-4.35.0-v1`.
+Update this release-labelled key when changing the pinned toolchain or dependency
+set. Lean/Lake still checks source freshness when building restored artifacts.
+
+On a prepared Linux system, the same shard selection is available locally:
+
+```sh
+python3 Verification/verify.py comparator --shard-index 0 --shard-count 16 --keep-going
+```
+
+Each invocation refreshes the Comparator results in its own working copy. Collect
+the shard result directories and check complete coverage with:
+
+```sh
+python3 Verification/collect_comparator.py path/to/collected-shard-results
+```
+
 For the prepared Lima VM on macOS, start the VM and run this from a normal
 Terminal:
 

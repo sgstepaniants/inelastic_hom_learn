@@ -50,7 +50,7 @@ LeanCert proves `7/10 < cos(3/4)` in explicit kernel mode at Taylor depth 3. Sou
 
 ## Remaining validation
 
-GitHub Actions is now the selected validation host. The parent `.gitignore` excludes local VM images, Lean/toolchain caches, build output and temporary files while retaining the proof sources, Lake manifest, Comparator configurations, proof-validation records and manuscript files. Git's ignore matcher passed all nine exclusion and eighteen retention checks. The current eligible files total **12.51 MiB**; the largest is `paper/main.pdf` at **1.59 MiB**. The GitHub repository URL is pending; no workflow has run yet.
+GitHub Actions is the selected validation host at [sgstepaniants/inelastic_hom_learn](https://github.com/sgstepaniants/inelastic_hom_learn). The repository has been pushed successfully. The new `Sandboxed Comparator` workflow prepares Ubuntu 22.04 with Lean 4.35.0 and bubblewrap, builds the libraries and audits axioms, then runs three pilot configurations before 16 disjoint Comparator shards with at most eight active jobs. The final coverage check requires all 331 configurations, their 702 theorem selections, and acceptance by all six kernels. Logs and result records are retained as Actions artifacts for 14 days. The workflow is being validated before its first launch; no Comparator success is claimed yet.
 
 The user started the Linux VM. Lima's host log confirms a running VM, a working SSH server and completed boot requirements. Its SSH configuration and runtime sockets now exist. Lima's status query still cannot read the macOS boot-session identifier inside the tool sandbox, so that query alone does not describe the running VM correctly.
 

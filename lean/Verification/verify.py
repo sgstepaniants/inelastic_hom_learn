@@ -14,6 +14,9 @@ import time
 ROOT = Path(__file__).resolve().parents[1]
 RESULTS = ROOT / "Verification" / "results"
 STANDARD_AXIOMS = {"propext", "Quot.sound", "Classical.choice"}
+PARANOID_KERNELS = {
+    "Lean default", "Lean paranoid", "lean4lean", "nanoda", "con-leche", "con-ron",
+}
 
 
 def run(command, name):
@@ -90,7 +93,21 @@ def axioms():
         raise SystemExit(1)
 
 
-def comparator():
+def select_configurations(files, shard_index=0, shard_count=1, selected=None):
+    if shard_count < 1 or not 0 <= shard_index < shard_count:
+        raise ValueError("Require 0 <= shard-index < shard-count")
+    if selected:
+        if shard_count != 1 or shard_index != 0:
+            raise ValueError("Use either named configurations or sharding")
+        names = set(selected)
+        unknown = names - {path.stem for path in files}
+        if unknown:
+            raise ValueError("Unknown configurations: " + ", ".join(sorted(unknown)))
+        return [path for path in files if path.stem in names]
+    return files[shard_index::shard_count]
+
+
+def comparator(shard_index=0, shard_count=1, selected=None, keep_going=False):
     if platform.system() != "Linux":
         raise SystemExit("Sandboxed Comparator requires Linux with bubblewrap.")
     RESULTS.mkdir(exist_ok=True)
@@ -98,25 +115,53 @@ def comparator():
         if path.suffix in {".json", ".log"}:
             path.unlink()
     files, _ = configurations()
-    for path in files:
+    files = select_configurations(files, shard_index, shard_count, selected)
+    if not files:
+        raise SystemExit("No configurations selected")
+    failed = []
+    for index, path in enumerate(files, 1):
+        print(f"Comparator {index}/{len(files)}: {path.stem}", flush=True)
         name = "comparator-" + path.stem
-        record, _ = run([
+        record, log = run([
             "lake", "comparator", "--config=" + str(path.relative_to(ROOT)), "--paranoid",
         ], name)
-        record["passed"] = record["exit_code"] == 0
+        config = json.loads(path.read_text())
+        output = log.read_text()
+        kernels = set(re.findall(r"^(.+) kernel accepts the solution$", output, re.M))
+        record.update(configuration=path.name, theorem_names=config["theorem_names"],
+                      challenge_module=config["challenge_module"],
+                      solution_module=config["solution_module"],
+                      kernels_accepted=sorted(kernels))
+        record["passed"] = (record["exit_code"] == 0 and PARANOID_KERNELS <= kernels
+                            and "Your solution is okay!" in output)
         save(name, record)
         if not record["passed"]:
-            raise SystemExit(1)
+            print(output[-12000:], flush=True)
+            failed.append(path.stem)
+            if not keep_going:
+                raise SystemExit(1)
+    if failed:
+        raise SystemExit("Comparator failed: " + ", ".join(failed))
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("stage", choices=["build", "axioms", "local", "comparator"],
                         nargs="?", default="local")
-    stage = parser.parse_args().stage
+    parser.add_argument("--shard-index", type=int, default=0)
+    parser.add_argument("--shard-count", type=int, default=1)
+    parser.add_argument("--config", action="append", dest="selected",
+                        help="Run one named Comparator configuration (repeatable)")
+    parser.add_argument("--keep-going", action="store_true",
+                        help="Continue other configurations after a rejection")
+    args = parser.parse_args()
+    stage = args.stage
+    if stage != "comparator" and (args.selected or args.shard_index != 0
+                                  or args.shard_count != 1 or args.keep_going):
+        parser.error("Configuration selection options require the comparator stage")
     if stage in {"build", "local"}:
         build()
     if stage in {"axioms", "local"}:
         axioms()
     if stage == "comparator":
-        comparator()
+        comparator(args.shard_index, args.shard_count, args.selected, args.keep_going)
