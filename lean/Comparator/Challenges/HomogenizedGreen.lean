@@ -2,6 +2,7 @@ module
 
 public import KVApproximation.Homogenization.CellOperators
 public import KVApproximation.Homogenization.ConstantSpatialForm
+public import KVApproximation.Homogenization.GreenDualSpace
 public import KVApproximation.Homogenization.MicroscopicGreen
 public import Mathlib.Analysis.Convolution
 
@@ -19,13 +20,8 @@ variable {d : ℕ} {Ω : Opens (PhysicalSpace d)}
 
 section GreenUniquenessInterface
 
-local instance GreenUniqueness.instDualNormedGroup :
-    NormedAddCommGroup (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
-  ContinuousLinearMap.toNormedAddCommGroup
-
-local instance GreenUniqueness.instDualNormedSpace :
-    NormedSpace ℝ (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
-  ContinuousLinearMap.toNormedSpace
+attribute [local instance] GreenUniqueness.instDualNormedGroup
+  GreenUniqueness.instDualNormedSpace
 
 /-- Theorem 3.1, Duhamel's formula: continuous viscously prepared
 trajectories satisfying the same cell-memory Green balance agree on the
@@ -51,13 +47,8 @@ theorem green_balance_unique
 
 end GreenUniquenessInterface
 
-local instance HomogenizedGreen.instDualNormedGroup :
-    NormedAddCommGroup (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
-  ContinuousLinearMap.toNormedAddCommGroup
-
-local instance HomogenizedGreen.instDualNormedSpace :
-    NormedSpace ℝ (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
-  ContinuousLinearMap.toNormedSpace
+attribute [local instance] HomogenizedGreen.instDualNormedGroup
+  HomogenizedGreen.instDualNormedSpace
 
 /-- Theorem 3.1 (`thm:viscoelastic_homogenization`), forcing contribution:
 the actual microscopic Green operators converge weakly at every nonnegative

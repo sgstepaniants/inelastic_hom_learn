@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_poincare.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 282.7,
+  "configuration": "periodic_poincare.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.HasPeriodicWeakGradient.poincare_sq"
+  ],
+  "challenge_module": "Challenges.PeriodicFourierEnergy",
+  "solution_module": "KVApproximation.Analysis.PeriodicPoincare",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

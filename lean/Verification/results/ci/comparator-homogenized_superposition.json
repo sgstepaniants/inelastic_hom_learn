@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/homogenized_superposition.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 574.0,
+  "configuration": "homogenized_superposition.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.IsHomogenizedSolution.add",
+    "KVApproximation.Homogenization.IsHomogenizedSolution.of_sub"
+  ],
+  "challenge_module": "Challenges.HomogenizedSuperposition",
+  "solution_module": "KVApproximation.Homogenization.HomogenizedSuperposition",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

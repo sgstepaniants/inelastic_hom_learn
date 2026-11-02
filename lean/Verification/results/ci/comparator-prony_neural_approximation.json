@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/prony_neural_approximation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 611.2,
+  "configuration": "prony_neural_approximation.json",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.local_prony_neural_approximation",
+    "KVApproximation.KelvinVoigt.singleton_prony_neural_approximation"
+  ],
+  "challenge_module": "Challenges.PronyNeuralApproximation",
+  "solution_module": "KVApproximation.KelvinVoigt.PronyNeuralApproximation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

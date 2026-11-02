@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/coordinate_response_approximation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 141.9,
+  "configuration": "coordinate_response_approximation.json",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.prony_responses_approximate_in_coordinates"
+  ],
+  "challenge_module": "Challenges.CoordinateResponseApproximation",
+  "solution_module": "KVApproximation.NeuralOperators.CoordinateResponseApproximation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

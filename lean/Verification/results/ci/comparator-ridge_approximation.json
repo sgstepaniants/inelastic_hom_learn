@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/ridge_approximation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 210.6,
+  "configuration": "ridge_approximation.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.exists_ridge_approximation"
+  ],
+  "challenge_module": "Challenges.RidgeApproximation",
+  "solution_module": "KVApproximation.Approximation.RidgeApproximation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

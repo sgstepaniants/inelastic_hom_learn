@@ -1,0 +1,33 @@
+Resolving dependencies
+Building Challenges.HomogenizedMemory
+⚠ [3232/3232] Replayed Challenges.HomogenizedMemory
+warning: Comparator/Challenges/HomogenizedMemory.lean:36:8: declaration uses `sorry`
+Build completed successfully (3232 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Homogenization.isHomogenizedSolution_iff_memory_equation, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.HomogenizedMemory
+Building KVApproximation.Homogenization.HomogenizedMemory
+⚠ [3238/3240] Replayed KVApproximation.Analysis.TimeSobolevProperties
+warning: KVApproximation/Analysis/TimeSobolevProperties.lean:19:0: automatically included section variable(s) unused in theorem `KVApproximation.Analysis.TimeH1.value_memLp`:
+  [CompleteSpace H]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompleteSpace H] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (3240 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Homogenization.isHomogenizedSolution_iff_memory_equation, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Homogenization.HomogenizedMemory
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+[anonymous]:defnDecl KVApproximation.Homogenization.constantSpatialFormL: lean4lean took 2433
+checked 50455 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 50458 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 50458 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

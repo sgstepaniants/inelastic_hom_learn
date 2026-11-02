@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/local_chebyshev.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 461.4,
+  "configuration": "local_chebyshev.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.local_weighted_response_error"
+  ],
+  "challenge_module": "Challenges.LocalResponse",
+  "solution_module": "KVApproximation.Approximation.LocalChebyshev",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

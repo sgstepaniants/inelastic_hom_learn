@@ -9,7 +9,7 @@
     "Verification/Axioms.lean"
   ],
   "exit_code": 0,
-  "seconds": 10.5,
+  "seconds": 9.8,
   "declarations": 722,
   "results": 722,
   "coverage_matches": true,

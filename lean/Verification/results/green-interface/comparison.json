@@ -1,0 +1,14 @@
+{
+  "diagnostic_only": true,
+  "platform": "macOS arm64",
+  "toolchain": "Lean 4.35.0",
+  "comparison": "Lake.Check.compareAt on compiled challenge and solution environments",
+  "configuration": "homogenized_green.json",
+  "exit_code": 0,
+  "seconds": 44.3,
+  "peak_resident_mib": 4525,
+  "theorem_count": 2,
+  "supporting_declarations_compared": true,
+  "sandboxed": false,
+  "kernel_replay_performed": false
+}

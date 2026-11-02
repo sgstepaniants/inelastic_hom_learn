@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/tensor_bounds.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 151.9,
+  "configuration": "tensor_bounds.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.norm_sq_eq_sum_norm_action",
+    "KVApproximation.Tensor.HasBounds.action_opNorm_le",
+    "KVApproximation.Tensor.HasBounds.norm_action_le",
+    "KVApproximation.Tensor.HasBounds.norm_le_sqrt_dimension"
+  ],
+  "challenge_module": "Challenges.TensorBounds",
+  "solution_module": "KVApproximation.Tensor.ActionBounds",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

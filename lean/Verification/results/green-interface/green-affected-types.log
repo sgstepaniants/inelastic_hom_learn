@@ -1,0 +1,7 @@
+START Challenges.ForcedHomogenization / KVApproximation.Homogenization.ForcedHomogenization
+MATCH KVApproximation.Homogenization.forced_homogenization
+START Challenges.Homogenization / KVApproximation.KelvinVoigt.Homogenization
+MATCH KVApproximation.Homogenization.viscoelastic_homogenization
+START Challenges.HomogenizedGreen / KVApproximation.Homogenization.HomogenizedGreen
+MATCH KVApproximation.Homogenization.green_balance_unique
+MATCH KVApproximation.Homogenization.exists_homogenizedGreen

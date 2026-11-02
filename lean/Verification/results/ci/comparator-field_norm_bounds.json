@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/field_norm_bounds.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 214.9,
+  "configuration": "field_norm_bounds.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.HasFieldBounds.eLpNorm_top_le"
+  ],
+  "challenge_module": "Challenges.FieldConvergence",
+  "solution_module": "KVApproximation.Tensor.FieldNormBounds",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

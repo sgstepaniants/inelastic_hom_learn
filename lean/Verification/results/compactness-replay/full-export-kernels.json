@@ -1,0 +1,89 @@
+{
+  "diagnostic_only": true,
+  "platform": "macOS arm64",
+  "toolchain": "Lean 4.35.0",
+  "configuration": "dirichlet_compactness.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.ZeroBoundaryH1.isCompactOperator_valueL",
+    "KVApproximation.Analysis.ZeroBoundaryH1.isCompact_closure_value_image",
+    "KVApproximation.Analysis.ZeroBoundaryH1.exists_subseq_tendsto_value",
+    "KVApproximation.Analysis.ZeroBoundaryH1.tendsto_value_of_weak"
+  ],
+  "export_includes": "Selected solution declarations, their full transitive dependencies, permitted standard axioms and Comparator primitives",
+  "comparison_performed": false,
+  "sandboxed": false,
+  "records": [
+    {
+      "kernel": "Lean paranoid",
+      "command": [
+        "leanchecker-paranoid",
+        "--from-export",
+        ".work/comparator-diagnostics/dirichlet-repaired-export.jsonl"
+      ],
+      "exit_code": 0,
+      "seconds": 66.6,
+      "peak_resident_mib": 612,
+      "log": "dirichlet-repaired-full-paranoid.log"
+    },
+    {
+      "kernel": "lean4lean",
+      "command": [
+        "lean4lean",
+        "--import",
+        ".work/comparator-diagnostics/dirichlet-repaired-export.jsonl"
+      ],
+      "exit_code": 0,
+      "seconds": 76,
+      "peak_resident_mib": 542,
+      "log": "dirichlet-repaired-full-lean4lean.log",
+      "declarations": 50040
+    },
+    {
+      "kernel": "nanoda",
+      "command": [
+        "nanoda_bin",
+        ".work/comparator-diagnostics/nanoda-dirichlet-repaired.json"
+      ],
+      "exit_code": 0,
+      "seconds": 13.3,
+      "peak_resident_mib": 593,
+      "log": "dirichlet-repaired-full-nanoda.log"
+    },
+    {
+      "kernel": "con-leche",
+      "command": [
+        "con-leche",
+        ".work/comparator-diagnostics/dirichlet-repaired-export.jsonl"
+      ],
+      "exit_code": 0,
+      "seconds": 13.4,
+      "peak_resident_mib": 451,
+      "log": "dirichlet-repaired-full-con-leche.log",
+      "declarations": 50043
+    },
+    {
+      "kernel": "con-ron",
+      "command": [
+        "con-ron",
+        ".work/comparator-diagnostics/dirichlet-repaired-export.jsonl"
+      ],
+      "exit_code": 0,
+      "seconds": 9.3,
+      "peak_resident_mib": 793,
+      "log": "dirichlet-repaired-full-con-ron.log",
+      "declarations": 50043
+    },
+    {
+      "kernel": "Lean default",
+      "command": [
+        "leanchecker",
+        "--from-export",
+        ".work/comparator-diagnostics/dirichlet-repaired-export.jsonl"
+      ],
+      "exit_code": 0,
+      "seconds": 69.8,
+      "peak_resident_mib": 572,
+      "log": "dirichlet-repaired-full-default.log"
+    }
+  ]
+}

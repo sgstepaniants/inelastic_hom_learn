@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_strong_tests.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 263.8,
+  "configuration": "periodic_strong_tests.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.tendsto_integral_rescalePeriodic_inner_strong_along",
+    "KVApproximation.Analysis.tendsto_integral_rescalePeriodic_inner_strong"
+  ],
+  "challenge_module": "Challenges.PeriodicStrongTests",
+  "solution_module": "KVApproximation.Analysis.PeriodicStrongTests",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/vector_finite_features.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 109.7,
+  "configuration": "vector_finite_features.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.exists_vector_finite_feature_approximation"
+  ],
+  "challenge_module": "Challenges.VectorFiniteFeatures",
+  "solution_module": "KVApproximation.Approximation.VectorFiniteFeatures",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

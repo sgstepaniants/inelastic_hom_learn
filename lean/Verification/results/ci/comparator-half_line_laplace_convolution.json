@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/half_line_laplace_convolution.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 190.0,
+  "configuration": "half_line_laplace_convolution.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.integrable_halfLineLaplace_posConvolution",
+    "KVApproximation.Analysis.halfLineLaplace_posConvolution"
+  ],
+  "challenge_module": "Challenges.HalfLineLaplaceConvolution",
+  "solution_module": "KVApproximation.Analysis.HalfLineLaplaceConvolution",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

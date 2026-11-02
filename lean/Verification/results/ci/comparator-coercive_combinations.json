@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/coercive_combinations.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 56.9,
+  "configuration": "coercive_combinations.json",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.CoerciveForm.addScaled_bounds"
+  ],
+  "challenge_module": "Challenges.CoerciveCombinations",
+  "solution_module": "KVApproximation.OperatorTheory.CoerciveCombinationBounds",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

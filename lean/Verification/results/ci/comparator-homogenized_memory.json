@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/homogenized_memory.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 580.0,
+  "configuration": "homogenized_memory.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.isHomogenizedSolution_iff_memory_equation"
+  ],
+  "challenge_module": "Challenges.HomogenizedMemory",
+  "solution_module": "KVApproximation.Homogenization.HomogenizedMemory",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

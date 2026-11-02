@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/time_sobolev_trace_compactness.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 552.8,
+  "configuration": "time_sobolev_trace_compactness.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.TimeH1.exists_weak_subsequence_with_trace"
+  ],
+  "challenge_module": "Challenges.TimeSobolevTraceCompactness",
+  "solution_module": "KVApproximation.Analysis.TimeSobolevTraceCompactness",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

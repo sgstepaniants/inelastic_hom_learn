@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/spectral_transport.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 402.4,
+  "configuration": "spectral_transport.json",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.weightedRelaxation_spectrum_eq",
+    "KVApproximation.OperatorTheory.weightedRelaxation_lower_bound",
+    "KVApproximation.OperatorTheory.weightedRelaxation_complex_spectrum_subset"
+  ],
+  "challenge_module": "Challenges.WeightedRelaxation",
+  "solution_module": "KVApproximation.OperatorTheory.SpectralBounds",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

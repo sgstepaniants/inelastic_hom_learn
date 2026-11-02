@@ -3,6 +3,7 @@ module
 public import KVApproximation.Homogenization.CellConstitutive
 public import KVApproximation.Homogenization.CellTensorBounds
 public import KVApproximation.Homogenization.ConstantSpatialCoercivity
+public import KVApproximation.Homogenization.GreenDualSpace
 public import KVApproximation.Analysis.VolterraUniqueness
 
 /-!
@@ -20,13 +21,8 @@ namespace KVApproximation.Homogenization
 
 variable {d : ℕ} {Ω : Opens (PhysicalSpace d)}
 
-local instance GreenUniqueness.instDualNormedGroup :
-    NormedAddCommGroup (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
-  ContinuousLinearMap.toNormedAddCommGroup
-
-local instance GreenUniqueness.instDualNormedSpace :
-    NormedSpace ℝ (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
-  ContinuousLinearMap.toNormedSpace
+attribute [local instance] GreenUniqueness.instDualNormedGroup
+  GreenUniqueness.instDualNormedSpace
 
 /-- Theorem 3.1, Duhamel's formula: continuous viscously prepared
 trajectories satisfying the same cell-memory Green balance agree on the

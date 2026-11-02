@@ -89,13 +89,8 @@ private theorem lipschitzWith_of_clamped_weak_operator_limit
 
 variable {d : ℕ} {Ω : Opens (PhysicalSpace d)}
 
-local instance HomogenizedGreen.instDualNormedGroup :
-    NormedAddCommGroup (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
-  ContinuousLinearMap.toNormedAddCommGroup
-
-local instance HomogenizedGreen.instDualNormedSpace :
-    NormedSpace ℝ (ZeroBoundaryH1 Ω →L[ℝ] ℝ) :=
-  ContinuousLinearMap.toNormedSpace
+attribute [local instance] HomogenizedGreen.instDualNormedGroup
+  HomogenizedGreen.instDualNormedSpace
 
 /-- Theorem 3.1, viscous preparation: every positive approach sequence
 has a Green subsequence with the actual constant-load memory balance. -/

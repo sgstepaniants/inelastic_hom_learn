@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/circle_fourier.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 223.5,
+  "configuration": "circle_fourier.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.circleCoefficient_eq_fourierCoeff",
+    "KVApproximation.Analysis.fourierCoeff_neg_of_even"
+  ],
+  "challenge_module": "Challenges.CircleFourier",
+  "solution_module": "KVApproximation.Analysis.CircleFourier",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/field_forms.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 216.1,
+  "configuration": "field_forms.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.CoerciveField.toForm_congr",
+    "KVApproximation.Tensor.CoerciveField.riesz_eq_multiplication",
+    "KVApproximation.Tensor.CoerciveField.inverse_multiplication",
+    "KVApproximation.Tensor.CoerciveField.multiplication_inverse"
+  ],
+  "challenge_module": "Challenges.FieldForm",
+  "solution_module": "KVApproximation.OperatorTheory.FieldFormIdentities",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

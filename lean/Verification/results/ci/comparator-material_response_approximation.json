@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/material_response_approximation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 587.0,
+  "configuration": "material_response_approximation.json",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.local_prony_responses_approximate",
+    "KVApproximation.KelvinVoigt.singleton_prony_responses_approximate"
+  ],
+  "challenge_module": "Challenges.MaterialResponseApproximation",
+  "solution_module": "KVApproximation.KelvinVoigt.MaterialResponseApproximation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

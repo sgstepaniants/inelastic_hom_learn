@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_korn.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 321.9,
+  "configuration": "periodic_korn.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.HasPeriodicWeakGradient.gradient_sq_norm_le_symmetric",
+    "KVApproximation.Analysis.periodic_korn_two"
+  ],
+  "challenge_module": "Challenges.PeriodicFourierEnergy",
+  "solution_module": "KVApproximation.Analysis.PeriodicKorn",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}
