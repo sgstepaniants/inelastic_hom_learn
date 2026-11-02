@@ -143,7 +143,7 @@ Resolve substantive findings and record the resolution. Planning reviews are not
 
 Use the current Comparator integrated into the selected Lean/Lake release. Keep independently reviewed challenge statements separate from solution declarations. Challenges must not import their solutions or use definition holes. Only the designated challenge theorem placeholders may remain unproved; they are excluded from the delivered proof library's axiom audit.
 
-Run the authoritative Comparator checks on Linux with its sandbox enabled. GitHub Actions is the selected validation host; the prepared local VM remains available for local execution. Use the supported paranoid mode for independent kernel checking. If the configurations are divided among CI jobs, verify complete coverage across their combined results. Keep VM images and caches under `lean/` as ignored artifacts. Do not use a sandbox-disabled run as the final validation evidence.
+Run the authoritative Comparator checks on Linux with its sandbox enabled. GitHub Actions supplied the preserved partial results; after its allowance was exhausted, the user authorized completing the missing checks in the local Linux VM. Use the supported paranoid mode for independent kernel checking. If the configurations are divided among CI jobs or the local VM, verify complete coverage across their combined results. Keep VM images and caches under `lean/` as ignored artifacts. Do not use a sandbox-disabled run as the final validation evidence.
 
 Compare every reproduced numbered proof statement and every substantive unnumbered exported result, grouped by subject. Comparator checks the Lean statements against one another; source correspondence and completeness still require the paper review.
 

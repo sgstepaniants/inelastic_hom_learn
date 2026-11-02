@@ -4,6 +4,11 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 proof_root="$PWD"
+mode="${1:-run}"
+if [[ "$#" -gt 1 || ( "$mode" != run && "$mode" != --prepare-only ) ]]; then
+  echo "Usage: bash Verification/vm.sh [--prepare-only]" >&2
+  exit 2
+fi
 
 if [[ "$(uname -s)" == Darwin ]]; then
   ssh_config="$proof_root/.vm/lima/proof/ssh.config"
@@ -11,34 +16,41 @@ if [[ "$(uname -s)" == Darwin ]]; then
     echo "Start the prepared Lima proof VM before running this script." >&2
     exit 1
   fi
-  mkdir -p Verification/results
-  rm -f Verification/results/comparator-*.json Verification/results/comparator-*.log
+  mkdir -p Verification/results/vm
   ssh -F "$ssh_config" lima-proof '
     set -eu
     mkdir -p "$HOME/lean/kv_approximation"
     cd "$HOME/lean/kv_approximation"
+    mkdir -p .work
+    flock -n .work/vm.lock true
+    flock -n .work/local-comparator.lock true
     # Refresh the managed source copy, preserving dependency and toolchain caches.
     rm -rf KVApproximation Vendor Comparator
     mkdir -p Verification/results
-    rm -f Verification/results/comparator-*.json Verification/results/comparator-*.log
+    rm -rf Verification/results/ci
   '
   COPYFILE_DISABLE=1 tar -cf - \
     lakefile.toml lake-manifest.json lean-toolchain .gitignore LICENSE \
     README.md PLAN.md STATUS.md formalization.yaml \
     KVApproximation.lean KVApproximation Vendor Comparator \
-    Verification/verify.py Verification/consumers.py Verification/Axioms.lean Verification/vm.sh |
+    Verification/verify.py Verification/consumers.py Verification/Axioms.lean Verification/vm.sh \
+    Verification/collect_comparator.py Verification/resume_comparator.py Verification/test_ci.py \
+    Verification/cache_dependencies.py Verification/results/ci |
     ssh -F "$ssh_config" lima-proof \
       'tar -xf - -C "$HOME/lean/kv_approximation"'
 
   collect_results() {
     ssh -F "$ssh_config" lima-proof \
-      'cd "$HOME/lean/kv_approximation" && tar -cf - Verification/results' |
-      tar -xf - -C "$proof_root"
+      'cd "$HOME/lean/kv_approximation" && tar --exclude=Verification/results/ci -cf - Verification/results' |
+      tar -xf - --strip-components=2 -C "$proof_root/Verification/results/vm"
   }
   trap collect_results EXIT
-  ssh -F "$ssh_config" lima-proof \
-    'cd "$HOME/lean/kv_approximation" && bash Verification/vm.sh' \
-    2>&1 | tee Verification/results/vm.log
+  remote_command='cd "$HOME/lean/kv_approximation" && bash Verification/vm.sh'
+  if [[ "$mode" == --prepare-only ]]; then
+    remote_command+=' --prepare-only'
+  fi
+  ssh -F "$ssh_config" lima-proof "$remote_command" \
+    2>&1 | tee Verification/results/vm/runner.log
   exit
 fi
 
@@ -48,8 +60,11 @@ if [[ "$(uname -s)" != Linux || "$(uname -m)" != aarch64 ]]; then
 fi
 
 mkdir -p Verification/results .vm/toolchains .cache/mathlib .work/tmp
+exec 9>.work/vm.lock
+flock -n 9 || { echo "A VM validation is already running." >&2; exit 1; }
 export TMPDIR="$proof_root/.work/tmp"
 export MATHLIB_CACHE_DIR="$proof_root/.cache/mathlib"
+export MATHLIB_NO_CACHE_ON_UPDATE=1
 unset LEAN_PATH LEAN_SYSROOT LAKE_HOME LAKE_OVERRIDE_LEAN LEAN COMPARATOR_BWRAP
 
 sudo -n apt-get update
@@ -83,5 +98,13 @@ bwrap --unshare-all --ro-bind / / --proc /proc --dev /dev \
 
 # Populate the standard dependency cache before the network-isolated builds.
 # The committed Lake manifest, rather than an update, selects dependencies.
-lake exe cache get
-python3 Verification/verify.py comparator
+lake env true
+python3 Verification/cache_dependencies.py
+# Downloaded cache archives are no longer needed after successful extraction.
+rm -rf .cache/mathlib
+if [[ "$mode" == --prepare-only ]]; then
+  exit
+fi
+python3 Verification/test_ci.py
+python3 Verification/verify.py local
+python3 Verification/resume_comparator.py

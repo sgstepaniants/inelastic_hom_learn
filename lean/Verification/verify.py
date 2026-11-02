@@ -113,13 +113,15 @@ def select_configurations(files, shard_index=0, shard_count=1, selected=None):
     return files[shard_index::shard_count]
 
 
-def comparator(shard_index=0, shard_count=1, selected=None, keep_going=False):
+def comparator(shard_index=0, shard_count=1, selected=None, keep_going=False,
+               clear_existing=True):
     if platform.system() != "Linux":
         raise SystemExit("Sandboxed Comparator requires Linux with bubblewrap.")
     RESULTS.mkdir(exist_ok=True)
-    for path in RESULTS.glob("comparator-*"):
-        if path.suffix in {".json", ".log"}:
-            path.unlink()
+    if clear_existing:
+        for path in RESULTS.glob("comparator-*"):
+            if path.suffix in {".json", ".log"}:
+                path.unlink()
     files, _ = configurations()
     files = select_configurations(files, shard_index, shard_count, selected)
     if not files:

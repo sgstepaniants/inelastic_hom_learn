@@ -24,7 +24,8 @@ lake build KVApproximation Challenges TauCeti ForTauCeti NeuralNetworkProofs
 `KVApproximation` contains the proof library. `Challenges` contains separate
 Comparator statements with designated theorem placeholders. Comparator
 configurations are in `Comparator/`; authoritative sandboxed validation
-requires Linux and has not yet run.
+requires Linux. The preserved CI results cover 251 of 331 configurations;
+the remaining checks are being recovered in the local Linux VM.
 
 ## Verification
 
@@ -88,13 +89,19 @@ Terminal:
 bash Verification/vm.sh
 ```
 
-The script copies the proof sources, installs the pinned Linux toolchain and
-bubblewrap, and runs the same sandboxed Comparator command for every
-configuration. It saves the Terminal output to `Verification/results/vm.log`
-and copies the individual results back when the run ends. Each run refreshes
-the managed VM source copy and clears old Comparator results, while retaining
-dependency caches and local build/axiom evidence. The runner has passed syntax
-and simulated failure-handling checks; its Linux execution remains pending.
+The script copies the proof sources and preserved CI evidence, installs the
+pinned Linux toolchain and bubblewrap, rebuilds every library and audits its
+axioms. It then runs only missing or failed configurations, with the default
+sandbox and all six kernels. The three repaired pilot configurations run first.
+Each local result is retained immediately inside the VM, so an interrupted run
+can resume without repeating successful checks.
+
+Terminal output is saved to `Verification/results/vm/runner.log`; build, audit,
+local and combined result files are copied there when the run ends. The combined
+coverage report must account for all 331 configurations and 702 selections.
+Use `--prepare-only` to install dependencies without starting validation.
+Resume saved evidence only with unchanged proof sources; after a proof edit,
+discard and rerun every affected configuration's earlier result.
 
 Check subject reuse after building:
 

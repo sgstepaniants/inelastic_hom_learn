@@ -2,12 +2,17 @@
 """Checks for Comparator partitioning and complete-evidence validation."""
 
 import json
+import contextlib
+import io
 from pathlib import Path
 import tempfile
 import unittest
 from unittest.mock import patch
 
 import collect_comparator as collector
+import cache_dependencies
+import resume_comparator
+import verify
 from verify import PARANOID_KERNELS, configurations, select_configurations
 
 
@@ -90,6 +95,60 @@ class EvidenceTests(unittest.TestCase):
     def test_missing_kernel_log_fails(self):
         self.record_path.with_suffix(".log").write_text("Your solution is okay!\n")
         self.assertFalse(collector.collect(self.results)["passed"])
+
+    def test_resume_preserves_prior_success_when_next_check_fails(self):
+        second = self.root / "Comparator/second.json"
+        second.write_text(json.dumps(self.config | {"theorem_names": ["second"]}))
+        original_record = self.record_path.read_bytes()
+        original_log = self.record_path.with_suffix(".log").read_bytes()
+
+        def fail_run(command, name):
+            log = self.results / (name + ".log")
+            log.write_text("The next check failed.\n")
+            return {"command": command, "exit_code": 1, "seconds": 1.0}, log
+
+        with patch.object(verify, "ROOT", self.root), \
+             patch.object(verify, "RESULTS", self.results), \
+             patch.object(verify.platform, "system", return_value="Linux"), \
+             patch.object(verify, "configurations", return_value=([self.config_path, second], set())), \
+             patch.object(verify, "run", side_effect=fail_run), \
+             contextlib.redirect_stdout(io.StringIO()):
+            with self.assertRaises(SystemExit):
+                verify.comparator(selected=["second"], clear_existing=False)
+        self.assertEqual(self.record_path.read_bytes(), original_record)
+        self.assertEqual(self.record_path.with_suffix(".log").read_bytes(), original_log)
+        failure = json.loads((self.results / "comparator-second.json").read_text())
+        self.assertFalse(failure["passed"])
+
+    def test_combining_ci_and_local_rejects_duplicate_results(self):
+        local = self.root / "local"
+        local.mkdir()
+        (local / self.record_path.name).write_bytes(self.record_path.read_bytes())
+        with self.assertRaisesRegex(ValueError, "Duplicate evidence"):
+            resume_comparator.combine([self.results, local], self.root / "combined")
+
+
+class CacheSelectionTests(unittest.TestCase):
+    def test_transitive_external_imports_are_included_without_unrelated_modules(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            sources = {
+                "KVApproximation/Example.lean": "module\npublic import LeanCert.Example\n",
+                ".lake/packages/LeanCert/LeanCert/Example.lean":
+                    "module\npublic import LeanCert.Helper\npublic import Mathlib.Required\n",
+                ".lake/packages/LeanCert/LeanCert/Helper.lean": "import Mathlib.Transitive\n",
+                ".lake/packages/LeanCert/LeanCert/Unused.lean": "import Mathlib\n",
+            }
+            for name, source in sources.items():
+                path = root / name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(source)
+            with patch.object(cache_dependencies, "ROOT", root), \
+                 patch.object(cache_dependencies.subprocess, "run") as run, \
+                 contextlib.redirect_stdout(io.StringIO()):
+                cache_dependencies.main()
+            self.assertEqual(run.call_args.args[0],
+                             ["lake", "exe", "cache", "get", "Mathlib.Required", "Mathlib.Transitive"])
 
 
 if __name__ == "__main__":
