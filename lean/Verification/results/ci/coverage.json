@@ -1,6 +1,6 @@
 {
   "configurations_expected": 331,
-  "configurations_received": 169,
+  "configurations_received": 172,
   "theorems_expected": 702,
   "required_kernels": [
     "Lean default",
@@ -12,20 +12,17 @@
   ],
   "missing": [
     "comparator-bernstein_geometry.json",
-    "comparator-cell_constitutive.json",
     "comparator-cell_continuity.json",
     "comparator-cell_displacement_constitutive.json",
     "comparator-cell_displacement_equivalence.json",
     "comparator-cell_displacement_stress.json",
     "comparator-cell_evolution_algebra.json",
     "comparator-cell_tensor_bounds.json",
-    "comparator-chebyshev_interpolation.json",
     "comparator-chebyshev_nodes.json",
     "comparator-chebyshev_series.json",
     "comparator-circle_fourier.json",
     "comparator-coercive_combinations.json",
     "comparator-coercive_solvers.json",
-    "comparator-coordinate_classes.json",
     "comparator-coordinate_response_approximation.json",
     "comparator-corrector_displacement.json",
     "comparator-corrector_orthogonality.json",
@@ -177,6 +174,6 @@
   "unexpected": [],
   "duplicates": [],
   "failed_or_invalid": [],
-  "configuration_seconds": 51934.8,
+  "configuration_seconds": 52593.8,
   "passed": false
 }

@@ -1,0 +1,398 @@
+﻿2026-11-01T23:09:25.8149174Z Current runner version: '2.338.2'
+2026-11-01T23:09:25.8174710Z ##[group]Runner Image Provisioner
+2026-11-01T23:09:25.8175749Z Hosted Compute Agent
+2026-11-01T23:09:25.8176381Z Version: 20261021.618
+2026-11-01T23:09:25.8177108Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-11-01T23:09:25.8177887Z Build Date: 2026-10-21T00:45:21Z
+2026-11-01T23:09:25.8178982Z Worker ID: {651af86e-d2b5-4d76-bd88-4d46c9d587e5}
+2026-11-01T23:09:25.8179919Z Region: westus
+2026-11-01T23:09:25.8180503Z Cloud: Azure
+2026-11-01T23:09:25.8181167Z ##[endgroup]
+2026-11-01T23:09:25.8182696Z ##[group]Operating System
+2026-11-01T23:09:25.8183387Z Ubuntu
+2026-11-01T23:09:25.8184016Z 22.04.5
+2026-11-01T23:09:25.8184558Z LTS
+2026-11-01T23:09:25.8185093Z ##[endgroup]
+2026-11-01T23:09:25.8185740Z ##[group]Runner Image
+2026-11-01T23:09:25.8186375Z Image: ubuntu-22.04
+2026-11-01T23:09:25.8187367Z Version: 20261025.340.1
+2026-11-01T23:09:25.8189105Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20261025.340/images/ubuntu/Ubuntu2204-Readme.md
+2026-11-01T23:09:25.8190827Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20261025.340
+2026-11-01T23:09:25.8191845Z ##[endgroup]
+2026-11-01T23:09:25.8193069Z ##[group]GITHUB_TOKEN Permissions
+2026-11-01T23:09:25.8194985Z Contents: read
+2026-11-01T23:09:25.8195772Z Metadata: read
+2026-11-01T23:09:25.8196392Z ##[endgroup]
+2026-11-01T23:09:25.8199449Z Secret source: Actions
+2026-11-01T23:09:25.8200747Z Cache mode: write
+2026-11-01T23:09:25.8201731Z Prepare workflow directory
+2026-11-01T23:09:25.8682919Z Prepare all required actions
+2026-11-01T23:09:25.8731345Z Getting action download info
+2026-11-01T23:09:26.2031398Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-01T23:09:26.3531034Z Download action repository 'actions/cache@v6' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-01T23:09:26.4891485Z Download action repository 'actions/upload-artifact@v7' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-01T23:09:26.6880351Z Complete job name: Comparator shard 10 of 16
+2026-11-01T23:09:26.8036895Z ##[group]Run actions/checkout@v7
+2026-11-01T23:09:26.8037783Z with:
+2026-11-01T23:09:26.8038233Z   persist-credentials: false
+2026-11-01T23:09:26.8039264Z   repository: sgstepaniants/inelastic_hom_learn
+2026-11-01T23:09:26.8042967Z   token: ***
+2026-11-01T23:09:26.8043404Z   ssh-strict: true
+2026-11-01T23:09:26.8043833Z   ssh-user: git
+2026-11-01T23:09:26.8044244Z   clean: true
+2026-11-01T23:09:26.8044685Z   sparse-checkout-cone-mode: true
+2026-11-01T23:09:26.8045202Z   fetch-depth: 1
+2026-11-01T23:09:26.8045626Z   fetch-tags: false
+2026-11-01T23:09:26.8046068Z   show-progress: true
+2026-11-01T23:09:26.8046532Z   lfs: false
+2026-11-01T23:09:26.8046934Z   submodules: false
+2026-11-01T23:09:26.8047369Z   set-safe-directory: true
+2026-11-01T23:09:26.8047859Z   allow-unsafe-pr-checkout: false
+2026-11-01T23:09:26.8049041Z ##[endgroup]
+2026-11-01T23:09:27.2240579Z Syncing repository: sgstepaniants/inelastic_hom_learn
+2026-11-01T23:09:27.2245126Z ##[group]Getting Git version info
+2026-11-01T23:09:27.2247741Z Working directory is '/home/runner/work/inelastic_hom_learn/inelastic_hom_learn'
+2026-11-01T23:09:27.2251836Z [command]/usr/bin/git version
+2026-11-01T23:09:27.2253535Z git version 2.56.0
+2026-11-01T23:09:27.2260730Z ##[endgroup]
+2026-11-01T23:09:27.2269939Z Temporarily overriding HOME='/home/runner/work/_temp/e169a5ab-25aa-48e5-9a96-045941582649' before making global git config changes
+2026-11-01T23:09:27.2273611Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-01T23:09:27.2276840Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/inelastic_hom_learn/inelastic_hom_learn
+2026-11-01T23:09:27.2283128Z Deleting the contents of '/home/runner/work/inelastic_hom_learn/inelastic_hom_learn'
+2026-11-01T23:09:27.2285882Z ##[group]Determining repository object format
+2026-11-01T23:09:27.2288398Z ##[endgroup]
+2026-11-01T23:09:27.2291187Z ##[group]Initializing the repository
+2026-11-01T23:09:27.2294089Z [command]/usr/bin/git init /home/runner/work/inelastic_hom_learn/inelastic_hom_learn
+2026-11-01T23:09:27.2296516Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-01T23:09:27.2299518Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-01T23:09:27.2302219Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-01T23:09:27.2305031Z hint: call:
+2026-11-01T23:09:27.2306762Z hint:
+2026-11-01T23:09:27.2309236Z hint: 	git config --global init.defaultBranch <name>
+2026-11-01T23:09:27.2310905Z hint:
+2026-11-01T23:09:27.2312899Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-01T23:09:27.2315103Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-01T23:09:27.2317223Z hint:
+2026-11-01T23:09:27.2318369Z hint: 	git branch -m <name>
+2026-11-01T23:09:27.2320724Z hint:
+2026-11-01T23:09:27.2322661Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-01T23:09:27.2325864Z Initialized empty Git repository in /home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git/
+2026-11-01T23:09:27.2331531Z [command]/usr/bin/git remote add origin https://github.com/sgstepaniants/inelastic_hom_learn
+2026-11-01T23:09:27.2336413Z ##[endgroup]
+2026-11-01T23:09:27.2338156Z ##[group]Disabling automatic garbage collection
+2026-11-01T23:09:27.2340500Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-01T23:09:27.2344500Z ##[endgroup]
+2026-11-01T23:09:27.2346855Z ##[group]Setting up auth
+2026-11-01T23:09:27.2348186Z Removing SSH command configuration
+2026-11-01T23:09:27.2350803Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-01T23:09:27.2484167Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-01T23:09:27.3054501Z Removing HTTP extra header
+2026-11-01T23:09:27.3057775Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-01T23:09:27.3064416Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-01T23:09:27.3307424Z Removing includeIf entries pointing to credentials config files
+2026-11-01T23:09:27.3312586Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-01T23:09:27.3371694Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-01T23:09:27.3678920Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-b7d98698-4e55-431d-9b33-c1bd8e1da188.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-01T23:09:27.3722114Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git.path /home/runner/work/_temp/git-credentials-b7d98698-4e55-431d-9b33-c1bd8e1da188.config
+2026-11-01T23:09:27.3776733Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-b7d98698-4e55-431d-9b33-c1bd8e1da188.config
+2026-11-01T23:09:27.3813326Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-b7d98698-4e55-431d-9b33-c1bd8e1da188.config
+2026-11-01T23:09:27.3856105Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-b7d98698-4e55-431d-9b33-c1bd8e1da188.config
+2026-11-01T23:09:27.3901924Z ##[endgroup]
+2026-11-01T23:09:27.3903932Z ##[group]Fetching the repository
+2026-11-01T23:09:27.3910272Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +ae419876cb96cdaeb1efe07dea67c3762c2cb9de:refs/remotes/origin/main
+2026-11-01T23:09:28.0742088Z From https://github.com/sgstepaniants/inelastic_hom_learn
+2026-11-01T23:09:28.0747487Z  * [new ref]         ae419876cb96cdaeb1efe07dea67c3762c2cb9de -> origin/main
+2026-11-01T23:09:28.0753369Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-01T23:09:28.0789490Z   origin/main
+2026-11-01T23:09:28.0813199Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-01T23:09:28.0840414Z ae419876cb96cdaeb1efe07dea67c3762c2cb9de
+2026-11-01T23:09:28.0852768Z ##[endgroup]
+2026-11-01T23:09:28.0854836Z ##[group]Determining the checkout info
+2026-11-01T23:09:28.0856494Z ##[endgroup]
+2026-11-01T23:09:28.0860894Z [command]/usr/bin/git sparse-checkout disable
+2026-11-01T23:09:28.0927651Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-01T23:09:28.0987568Z ##[group]Checking out the ref
+2026-11-01T23:09:28.0991212Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-01T23:09:28.1891899Z Switched to a new branch 'main'
+2026-11-01T23:09:28.1898846Z branch 'main' set up to track 'origin/main'.
+2026-11-01T23:09:28.1911259Z ##[endgroup]
+2026-11-01T23:09:28.1964155Z [command]/usr/bin/git log -1 --format=%H
+2026-11-01T23:09:28.2003372Z ae419876cb96cdaeb1efe07dea67c3762c2cb9de
+2026-11-01T23:09:28.2026894Z ##[group]Removing auth
+2026-11-01T23:09:28.2029373Z Removing SSH command configuration
+2026-11-01T23:09:28.2032840Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-01T23:09:28.2074730Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-01T23:09:28.2356450Z Removing HTTP extra header
+2026-11-01T23:09:28.2361193Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-01T23:09:28.2414772Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-01T23:09:28.2710759Z Removing includeIf entries pointing to credentials config files
+2026-11-01T23:09:28.2727294Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-01T23:09:28.2747326Z includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git.path
+2026-11-01T23:09:28.2757893Z includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git/worktrees/*.path
+2026-11-01T23:09:28.2769780Z includeif.gitdir:/github/workspace/.git.path
+2026-11-01T23:09:28.2772616Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-01T23:09:28.2781151Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git.path
+2026-11-01T23:09:28.2797786Z /home/runner/work/_temp/git-credentials-b7d98698-4e55-431d-9b33-c1bd8e1da188.config
+2026-11-01T23:09:28.2826134Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-b7d98698\-4e55\-431d\-9b33\-c1bd8e1da188\.config
+2026-11-01T23:09:28.2876947Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git/worktrees/*.path
+2026-11-01T23:09:28.2910101Z /home/runner/work/_temp/git-credentials-b7d98698-4e55-431d-9b33-c1bd8e1da188.config
+2026-11-01T23:09:28.2936780Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-b7d98698\-4e55\-431d\-9b33\-c1bd8e1da188\.config
+2026-11-01T23:09:28.2981033Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-01T23:09:28.3016873Z /github/runner_temp/git-credentials-b7d98698-4e55-431d-9b33-c1bd8e1da188.config
+2026-11-01T23:09:28.3031885Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-b7d98698\-4e55\-431d\-9b33\-c1bd8e1da188\.config
+2026-11-01T23:09:28.3084189Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-01T23:09:28.3118962Z /github/runner_temp/git-credentials-b7d98698-4e55-431d-9b33-c1bd8e1da188.config
+2026-11-01T23:09:28.3137010Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-b7d98698\-4e55\-431d\-9b33\-c1bd8e1da188\.config
+2026-11-01T23:09:28.3186411Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-01T23:09:28.3472950Z Removing credentials config '/home/runner/work/_temp/git-credentials-b7d98698-4e55-431d-9b33-c1bd8e1da188.config'
+2026-11-01T23:09:28.3486553Z ##[endgroup]
+2026-11-01T23:09:28.3767177Z ##[group]Run sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL
+2026-11-01T23:09:28.3770711Z [36;1msudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL[0m
+2026-11-01T23:09:28.3772827Z [36;1mdf -h .[0m
+2026-11-01T23:09:28.3858862Z shell: /usr/bin/bash -e {0}
+2026-11-01T23:09:28.3860028Z ##[endgroup]
+2026-11-01T23:11:20.7272781Z Filesystem      Size  Used Avail Use% Mounted on
+2026-11-01T23:11:20.7275762Z /dev/root        73G   41G   32G  56% /
+2026-11-01T23:11:20.7354542Z ##[group]Run actions/cache/restore@v6
+2026-11-01T23:11:20.7354843Z with:
+2026-11-01T23:11:20.7355066Z   path: lean/.elan/toolchains
+lean/.lake
+
+2026-11-01T23:11:20.7355359Z   key: comparator-linux-4.35.0-v2
+2026-11-01T23:11:20.7355629Z   fail-on-cache-miss: true
+2026-11-01T23:11:20.7355877Z   enableCrossOsArchive: false
+2026-11-01T23:11:20.7356144Z   lookup-only: false
+2026-11-01T23:11:20.7356354Z ##[endgroup]
+2026-11-01T23:11:21.1569317Z Cache hit for: comparator-linux-4.35.0-v2
+2026-11-01T23:11:22.4819946Z Received 0 of 2975290823 (0.0%), 0.0 MBs/sec
+2026-11-01T23:11:23.4813398Z Received 117440512 of 2975290823 (3.9%), 55.9 MBs/sec
+2026-11-01T23:11:24.4873895Z Received 234881024 of 2975290823 (7.9%), 74.4 MBs/sec
+2026-11-01T23:11:25.4959953Z Received 360710144 of 2975290823 (12.1%), 85.8 MBs/sec
+2026-11-01T23:11:26.4907389Z Received 490733568 of 2975290823 (16.5%), 93.4 MBs/sec
+2026-11-01T23:11:27.4931083Z Received 624951296 of 2975290823 (21.0%), 99.1 MBs/sec
+2026-11-01T23:11:28.5013047Z Received 775946240 of 2975290823 (26.1%), 105.4 MBs/sec
+2026-11-01T23:11:29.5022858Z Received 931135488 of 2975290823 (31.3%), 110.7 MBs/sec
+2026-11-01T23:11:30.6105610Z Received 1073741824 of 2975290823 (36.1%), 112.1 MBs/sec
+2026-11-01T23:11:31.6102657Z Received 1207959552 of 2975290823 (40.6%), 113.7 MBs/sec
+2026-11-01T23:11:32.6242904Z Received 1342177280 of 2975290823 (45.1%), 114.8 MBs/sec
+2026-11-01T23:11:33.6246011Z Received 1476395008 of 2975290823 (49.6%), 115.9 MBs/sec
+2026-11-01T23:11:34.6253206Z Received 1610612736 of 2975290823 (54.1%), 116.8 MBs/sec
+2026-11-01T23:11:35.6261258Z Received 1749024768 of 2975290823 (58.8%), 117.9 MBs/sec
+2026-11-01T23:11:36.6299860Z Received 1879048192 of 2975290823 (63.2%), 118.3 MBs/sec
+2026-11-01T23:11:37.6296675Z Received 2013265920 of 2975290823 (67.7%), 118.9 MBs/sec
+2026-11-01T23:11:38.6490208Z Received 2147483648 of 2975290823 (72.2%), 119.3 MBs/sec
+2026-11-01T23:11:39.7261476Z Received 2281701376 of 2975290823 (76.7%), 119.2 MBs/sec
+2026-11-01T23:11:40.7899413Z Received 2415919104 of 2975290823 (81.2%), 119.3 MBs/sec
+2026-11-01T23:11:41.9252473Z Received 2550136832 of 2975290823 (85.7%), 119.0 MBs/sec
+2026-11-01T23:11:42.9249652Z Received 2680160256 of 2975290823 (90.1%), 119.2 MBs/sec
+2026-11-01T23:11:43.9248003Z Received 2805989376 of 2975290823 (94.3%), 119.2 MBs/sec
+2026-11-01T23:11:44.9280118Z Received 2923429888 of 2975290823 (98.3%), 118.9 MBs/sec
+2026-11-01T23:11:45.5677142Z Received 2975290823 of 2975290823 (100.0%), 117.8 MBs/sec
+2026-11-01T23:11:45.5815320Z Cache Size: ~2837 MB (2975290823 B)
+2026-11-01T23:11:45.5950224Z [command]/usr/bin/tar -xf /home/runner/work/_temp/856e245e-6d5f-4e4c-9f25-26cb366afae8/cache.tzst -P -C /home/runner/work/inelastic_hom_learn/inelastic_hom_learn --use-compress-program unzstd
+2026-11-01T23:13:00.7272188Z Cache restored successfully
+2026-11-01T23:13:00.9522798Z Cache restored from key: comparator-linux-4.35.0-v2
+2026-11-01T23:13:00.9754454Z ##[group]Run bash Verification/ci_setup.sh
+2026-11-01T23:13:00.9754825Z [36;1mbash Verification/ci_setup.sh[0m
+2026-11-01T23:13:01.0483241Z shell: /usr/bin/bash -e {0}
+2026-11-01T23:13:01.0483537Z env:
+2026-11-01T23:13:01.0483761Z   COMPARATOR_CACHE_HIT: true
+2026-11-01T23:13:01.0484028Z ##[endgroup]
+2026-11-01T23:13:01.2199235Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-01T23:13:01.3046034Z Hit:2 http://azure.archive.ubuntu.com/ubuntu jammy InRelease
+2026-11-01T23:13:01.3081113Z Get:6 https://packages.microsoft.com/ubuntu/22.04/prod jammy InRelease [3632 B]
+2026-11-01T23:13:01.3082559Z Get:3 http://azure.archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+2026-11-01T23:13:01.3144436Z Get:4 http://azure.archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+2026-11-01T23:13:01.3209410Z Get:5 http://azure.archive.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+2026-11-01T23:13:01.6099918Z Get:7 https://packages.microsoft.com/ubuntu/22.04/prod jammy/main arm64 Packages [709 kB]
+2026-11-01T23:13:01.6289645Z Get:8 https://packages.microsoft.com/ubuntu/22.04/prod jammy/main amd64 Packages [974 kB]
+2026-11-01T23:13:01.7400330Z Get:9 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [3939 kB]
+2026-11-01T23:13:01.7892675Z Get:10 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [579 kB]
+2026-11-01T23:13:01.7940250Z Get:11 http://azure.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [6778 kB]
+2026-11-01T23:13:01.8370646Z Get:12 http://azure.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [1303 kB]
+2026-11-01T23:13:01.8573395Z Get:13 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1290 kB]
+2026-11-01T23:13:01.8689752Z Get:14 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [326 kB]
+2026-11-01T23:13:02.0419921Z Get:15 http://azure.archive.ubuntu.com/ubuntu jammy-security/main amd64 Packages [3670 kB]
+2026-11-01T23:13:02.1110438Z Get:16 http://azure.archive.ubuntu.com/ubuntu jammy-security/main Translation-en [511 kB]
+2026-11-01T23:13:02.1139420Z Get:17 http://azure.archive.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [6545 kB]
+2026-11-01T23:13:02.1630167Z Get:18 http://azure.archive.ubuntu.com/ubuntu jammy-security/restricted Translation-en [1260 kB]
+2026-11-01T23:13:02.2162431Z Get:19 http://azure.archive.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1055 kB]
+2026-11-01T23:13:02.2250867Z Get:20 http://azure.archive.ubuntu.com/ubuntu jammy-security/universe Translation-en [238 kB]
+2026-11-01T23:13:08.4421055Z Fetched 29.6 MB in 4s (7788 kB/s)
+2026-11-01T23:13:10.0518232Z Reading package lists...
+2026-11-01T23:13:10.1290631Z Reading package lists...
+2026-11-01T23:13:10.4700864Z Building dependency tree...
+2026-11-01T23:13:10.4714891Z Reading state information...
+2026-11-01T23:13:10.6799995Z build-essential is already the newest version (12.9ubuntu3).
+2026-11-01T23:13:10.6801031Z build-essential set to manually installed.
+2026-11-01T23:13:10.6802004Z zstd is already the newest version (1.4.8+dfsg-3build1).
+2026-11-01T23:13:10.6803142Z zstd set to manually installed.
+2026-11-01T23:13:10.6804216Z ca-certificates is already the newest version (20260816ubuntu0.22.04.1).
+2026-11-01T23:13:10.6805233Z curl is already the newest version (7.81.0-1ubuntu1.30).
+2026-11-01T23:13:10.6806130Z python3 is already the newest version (3.10.6-1~22.04.1).
+2026-11-01T23:13:10.6807567Z git is already the newest version (1:2.56.0-0ppa1~ubuntu22.04.2).
+2026-11-01T23:13:10.6809235Z The following NEW packages will be installed:
+2026-11-01T23:13:10.6810498Z   bubblewrap
+2026-11-01T23:13:10.7001109Z 0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
+2026-11-01T23:13:10.7002036Z Need to get 46.3 kB of archives.
+2026-11-01T23:13:10.7002960Z After this operation, 132 kB of additional disk space will be used.
+2026-11-01T23:13:10.7003961Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-01T23:13:10.9753024Z Get:2 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 bubblewrap amd64 0.6.1-1ubuntu0.3 [46.3 kB]
+2026-11-01T23:13:11.4660551Z Fetched 46.3 kB in 0s (113 kB/s)
+2026-11-01T23:13:11.5009940Z Selecting previously unselected package bubblewrap.
+2026-11-01T23:13:11.5522102Z (Reading database ... 
+2026-11-01T23:13:11.5522814Z (Reading database ... 5%
+2026-11-01T23:13:11.5523254Z (Reading database ... 10%
+2026-11-01T23:13:11.5523911Z (Reading database ... 15%
+2026-11-01T23:13:11.5524402Z (Reading database ... 20%
+2026-11-01T23:13:11.5525131Z (Reading database ... 25%
+2026-11-01T23:13:11.5525514Z (Reading database ... 30%
+2026-11-01T23:13:11.5525936Z (Reading database ... 35%
+2026-11-01T23:13:11.5526311Z (Reading database ... 40%
+2026-11-01T23:13:11.5526754Z (Reading database ... 45%
+2026-11-01T23:13:11.5527156Z (Reading database ... 50%
+2026-11-01T23:13:11.6343973Z (Reading database ... 55%
+2026-11-01T23:13:11.8465606Z (Reading database ... 60%
+2026-11-01T23:13:12.0706892Z (Reading database ... 65%
+2026-11-01T23:13:12.1830630Z (Reading database ... 70%
+2026-11-01T23:13:12.3527695Z (Reading database ... 75%
+2026-11-01T23:13:12.4833483Z (Reading database ... 80%
+2026-11-01T23:13:12.6113253Z (Reading database ... 85%
+2026-11-01T23:13:12.7414496Z (Reading database ... 90%
+2026-11-01T23:13:12.9459765Z (Reading database ... 95%
+2026-11-01T23:13:12.9460631Z (Reading database ... 100%
+2026-11-01T23:13:12.9461459Z (Reading database ... 263322 files and directories currently installed.)
+2026-11-01T23:13:12.9517602Z Preparing to unpack .../bubblewrap_0.6.1-1ubuntu0.3_amd64.deb ...
+2026-11-01T23:13:12.9541839Z Unpacking bubblewrap (0.6.1-1ubuntu0.3) ...
+2026-11-01T23:13:13.0149535Z Setting up bubblewrap (0.6.1-1ubuntu0.3) ...
+2026-11-01T23:13:13.0263971Z Processing triggers for man-db (2.10.2-1) ...
+2026-11-01T23:13:13.0286123Z Not building database; man-db/auto-update is not 'true'.
+2026-11-01T23:13:13.8858478Z 
+2026-11-01T23:13:13.8859708Z Running kernel seems to be up-to-date.
+2026-11-01T23:13:13.8860414Z 
+2026-11-01T23:13:13.8860894Z No services need to be restarted.
+2026-11-01T23:13:13.8861542Z 
+2026-11-01T23:13:13.8861967Z No containers need to be restarted.
+2026-11-01T23:13:13.8862589Z 
+2026-11-01T23:13:13.8863011Z No user sessions are running outdated binaries.
+2026-11-01T23:13:13.8863680Z 
+2026-11-01T23:13:13.8864222Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-11-01T23:13:15.6210265Z Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+2026-11-01T23:13:15.7474842Z Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)
+2026-11-01T23:13:15.7561713Z bubblewrap 0.6.1
+2026-11-01T23:13:15.7676189Z ##[group]Run python3 Verification/verify.py comparator --shard-index "$SHARD_INDEX" --shard-count 16 --keep-going
+2026-11-01T23:13:15.7677041Z [36;1mpython3 Verification/verify.py comparator --shard-index "$SHARD_INDEX" --shard-count 16 --keep-going[0m
+2026-11-01T23:13:15.7745475Z shell: /usr/bin/bash -e {0}
+2026-11-01T23:13:15.7745759Z env:
+2026-11-01T23:13:15.7746162Z   MATHLIB_CACHE_DIR: /home/runner/work/inelastic_hom_learn/inelastic_hom_learn/lean/.cache/mathlib
+2026-11-01T23:13:15.7746632Z   SHARD_INDEX: 10
+2026-11-01T23:13:15.7746836Z ##[endgroup]
+2026-11-01T23:13:15.8905945Z Comparator 1/21: cell_constitutive
+2026-11-01T23:13:15.8906999Z Running lake comparator --config=Comparator/cell_constitutive.json --paranoid
+2026-11-01T23:13:25.3706342Z Resolving dependencies
+2026-11-01T23:13:25.3722646Z Building Challenges.CellConstitutive
+2026-11-01T23:13:29.0367424Z ⚠ [3088/3088] Replayed Challenges.CellConstitutive
+2026-11-01T23:13:29.0370274Z warning: Comparator/Challenges/CellConstitutive.lean:18:8: declaration uses `sorry`
+2026-11-01T23:13:29.0371485Z warning: Comparator/Challenges/CellConstitutive.lean:24:8: declaration uses `sorry`
+2026-11-01T23:13:29.0372714Z warning: Comparator/Challenges/CellConstitutive.lean:29:8: declaration uses `sorry`
+2026-11-01T23:13:29.0373827Z warning: Comparator/Challenges/CellConstitutive.lean:35:8: declaration uses `sorry`
+2026-11-01T23:13:29.0374813Z warning: Comparator/Challenges/CellConstitutive.lean:41:8: declaration uses `sorry`
+2026-11-01T23:13:29.0399402Z warning: Comparator/Challenges/CellConstitutive.lean:47:8: declaration uses `sorry`
+2026-11-01T23:13:29.0419388Z warning: Comparator/Challenges/CellConstitutive.lean:53:8: declaration uses `sorry`
+2026-11-01T23:13:29.0440077Z Build completed successfully (3088 jobs).
+2026-11-01T23:13:55.4258131Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Homogenization.cellConstitutiveModel_exists_unique, KVApproximation.Homogenization.cellKernel_nonneg, KVApproximation.Homogenization.cellKernel_continuous, KVApproximation.Homogenization.cellConstitutiveModel_self, KVApproximation.Homogenization.cellConstitutiveModel_eq_fields, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.CellConstitutive
+2026-11-01T23:13:55.4269636Z Building KVApproximation.Homogenization.CellConstitutive
+2026-11-01T23:13:58.2678033Z Build completed successfully (3096 jobs).
+2026-11-01T23:14:31.6339376Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Homogenization.cellConstitutiveModel_exists_unique, KVApproximation.Homogenization.cellKernel_nonneg, KVApproximation.Homogenization.cellKernel_continuous, KVApproximation.Homogenization.cellConstitutiveModel_self, KVApproximation.Homogenization.cellConstitutiveModel_eq_fields, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Homogenization.CellConstitutive
+2026-11-01T23:14:31.6345101Z Running Lean paranoid kernel on solution
+2026-11-01T23:15:22.1161590Z Lean paranoid kernel accepts the solution
+2026-11-01T23:15:22.1163288Z Running lean4lean kernel on solution
+2026-11-01T23:16:09.2989769Z checked 37931 declarations
+2026-11-01T23:16:09.3068350Z lean4lean kernel accepts the solution
+2026-11-01T23:16:09.3075080Z Running nanoda kernel on solution
+2026-11-01T23:16:26.6243027Z nanoda kernel accepts the solution
+2026-11-01T23:16:26.6262261Z Running con-leche kernel on solution
+2026-11-01T23:16:56.7710831Z con-leche: accepted 37934 declarations (--verified)
+2026-11-01T23:16:56.7805208Z con-leche kernel accepts the solution
+2026-11-01T23:16:56.7808932Z Running con-ron kernel on solution
+2026-11-01T23:17:10.5220347Z con-ron: accepted 37934 declarations (--verified)
+2026-11-01T23:17:10.5437265Z con-ron kernel accepts the solution
+2026-11-01T23:17:10.5438288Z Running Lean default kernel on solution
+2026-11-01T23:17:52.4090491Z Lean default kernel accepts the solution
+2026-11-01T23:17:52.4113075Z Your solution is okay!
+2026-11-01T23:17:52.4185072Z {"command": ["lake", "comparator", "--config=Comparator/cell_constitutive.json", "--paranoid"], "exit_code": 0, "seconds": 276.5, "configuration": "cell_constitutive.json", "theorem_names": ["KVApproximation.Homogenization.cellConstitutiveModel_exists_unique", "KVApproximation.Homogenization.cellKernel_nonneg", "KVApproximation.Homogenization.cellKernel_continuous", "KVApproximation.Homogenization.cellConstitutiveModel_self", "KVApproximation.Homogenization.cellConstitutiveModel_eq_fields"], "challenge_module": "Challenges.CellConstitutive", "solution_module": "KVApproximation.Homogenization.CellConstitutive", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T23:17:52.4199830Z Comparator 2/21: chebyshev_interpolation
+2026-11-01T23:17:52.4200871Z Running lake comparator --config=Comparator/chebyshev_interpolation.json --paranoid
+2026-11-01T23:17:53.2740906Z Resolving dependencies
+2026-11-01T23:17:53.2741717Z Building Challenges.Interpolation
+2026-11-01T23:17:55.3430276Z ⚠ [2385/2385] Replayed Challenges.Interpolation
+2026-11-01T23:17:55.3431128Z warning: Comparator/Challenges/Interpolation.lean:16:8: declaration uses `sorry`
+2026-11-01T23:17:55.3432120Z warning: Comparator/Challenges/Interpolation.lean:27:8: declaration uses `sorry`
+2026-11-01T23:17:55.3433067Z warning: Comparator/Challenges/Interpolation.lean:32:8: declaration uses `sorry`
+2026-11-01T23:17:55.3434079Z warning: Comparator/Challenges/Interpolation.lean:38:8: declaration uses `sorry`
+2026-11-01T23:17:55.3491025Z Build completed successfully (2385 jobs).
+2026-11-01T23:18:01.2182780Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.chebyshevInterpolant_error_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.Interpolation
+2026-11-01T23:18:01.2186215Z Building KVApproximation.Approximation.ChebyshevInterpolation
+2026-11-01T23:18:03.5918894Z Build completed successfully (3152 jobs).
+2026-11-01T23:18:39.8982359Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.chebyshevInterpolant_error_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Approximation.ChebyshevInterpolation
+2026-11-01T23:18:39.8993943Z Running Lean paranoid kernel on solution
+2026-11-01T23:19:47.7068428Z Lean paranoid kernel accepts the solution
+2026-11-01T23:19:47.7089503Z Running lean4lean kernel on solution
+2026-11-01T23:20:57.2030798Z checked 48675 declarations
+2026-11-01T23:20:57.2130286Z lean4lean kernel accepts the solution
+2026-11-01T23:20:57.2131594Z Running nanoda kernel on solution
+2026-11-01T23:21:20.7865532Z nanoda kernel accepts the solution
+2026-11-01T23:21:20.7866288Z Running con-leche kernel on solution
+2026-11-01T23:22:03.9383428Z con-leche: accepted 48678 declarations (--verified)
+2026-11-01T23:22:03.9461002Z con-leche kernel accepts the solution
+2026-11-01T23:22:03.9461659Z Running con-ron kernel on solution
+2026-11-01T23:22:25.4687407Z con-ron: accepted 48678 declarations (--verified)
+2026-11-01T23:22:25.4905505Z con-ron kernel accepts the solution
+2026-11-01T23:22:25.4906797Z Running Lean default kernel on solution
+2026-11-01T23:23:23.5239934Z Lean default kernel accepts the solution
+2026-11-01T23:23:23.5240731Z Your solution is okay!
+2026-11-01T23:23:23.5302335Z {"command": ["lake", "comparator", "--config=Comparator/chebyshev_interpolation.json", "--paranoid"], "exit_code": 0, "seconds": 331.1, "configuration": "chebyshev_interpolation.json", "theorem_names": ["KVApproximation.Approximation.chebyshevInterpolant_error_le"], "challenge_module": "Challenges.Interpolation", "solution_module": "KVApproximation.Approximation.ChebyshevInterpolation", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T23:23:23.5306051Z Comparator 3/21: coordinate_classes
+2026-11-01T23:23:23.5306991Z Running lake comparator --config=Comparator/coordinate_classes.json --paranoid
+2026-11-01T23:23:24.4510021Z Resolving dependencies
+2026-11-01T23:23:24.4510892Z Building Challenges.CoordinateClasses
+2026-11-01T23:23:26.0559961Z ⚠ [1750/1750] Replayed Challenges.CoordinateClasses
+2026-11-01T23:23:26.0560890Z warning: Comparator/Challenges/CoordinateClasses.lean:21:8: declaration uses `sorry`
+2026-11-01T23:23:26.0561781Z warning: Comparator/Challenges/CoordinateClasses.lean:29:8: declaration uses `sorry`
+2026-11-01T23:23:26.0629543Z Build completed successfully (1750 jobs).
+2026-11-01T23:23:30.3942020Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.NeuralOperators.HasUniversalApproximation.inducedResponseClass, KVApproximation.NeuralOperators.HasLocallyLipschitzApproximation.inducedResponseClass, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.CoordinateClasses
+2026-11-01T23:23:30.3946481Z Building KVApproximation.NeuralOperators.CoordinateApproximation
+2026-11-01T23:23:31.9778026Z Build completed successfully (1750 jobs).
+2026-11-01T23:23:40.5341438Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.NeuralOperators.HasUniversalApproximation.inducedResponseClass, KVApproximation.NeuralOperators.HasLocallyLipschitzApproximation.inducedResponseClass, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.NeuralOperators.CoordinateApproximation
+2026-11-01T23:23:40.5346408Z Running Lean paranoid kernel on solution
+2026-11-01T23:23:48.2863816Z Lean paranoid kernel accepts the solution
+2026-11-01T23:23:48.2869334Z Running lean4lean kernel on solution
+2026-11-01T23:23:56.2037880Z checked 11706 declarations
+2026-11-01T23:23:56.2113361Z lean4lean kernel accepts the solution
+2026-11-01T23:23:56.2114240Z Running nanoda kernel on solution
+2026-11-01T23:23:58.7974919Z nanoda kernel accepts the solution
+2026-11-01T23:23:58.7975478Z Running con-leche kernel on solution
+2026-11-01T23:24:05.5769368Z con-leche: accepted 11709 declarations (--verified)
+2026-11-01T23:24:05.5832944Z con-leche kernel accepts the solution
+2026-11-01T23:24:05.5833863Z Running con-ron kernel on solution
+2026-11-01T23:24:08.4458135Z con-ron: accepted 11709 declarations (--verified)
+2026-11-01T23:24:08.4565421Z con-ron kernel accepts the solution
+2026-11-01T23:24:08.4566328Z Running Lean default kernel on solution
+2026-11-01T23:24:14.9714681Z Lean default kernel accepts the solution
+2026-11-01T23:24:14.9718322Z Your solution is okay!
+2026-11-01T23:24:14.9773324Z {"command": ["lake", "comparator", "--config=Comparator/coordinate_classes.json", "--paranoid"], "exit_code": 0, "seconds": 51.4, "configuration": "coordinate_classes.json", "theorem_names": ["KVApproximation.NeuralOperators.HasUniversalApproximation.inducedResponseClass", "KVApproximation.NeuralOperators.HasLocallyLipschitzApproximation.inducedResponseClass"], "challenge_module": "Challenges.CoordinateClasses", "solution_module": "KVApproximation.NeuralOperators.CoordinateApproximation", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T23:24:14.9778044Z Comparator 4/21: dirichlet_weak_compactness
+2026-11-01T23:24:14.9779474Z Running lake comparator --config=Comparator/dirichlet_weak_compactness.json --paranoid
+2026-11-01T23:24:15.9454424Z Resolving dependencies
+2026-11-01T23:24:15.9455405Z Building Challenges.DirichletWeakCompactness
+2026-11-01T23:24:18.5342814Z ⚠ [3172/3172] Replayed Challenges.DirichletWeakCompactness
+2026-11-01T23:24:18.5345085Z warning: Comparator/Challenges/DirichletWeakCompactness.lean:19:8: declaration uses `sorry`
+2026-11-01T23:24:18.5419715Z Build completed successfully (3172 jobs).
+2026-11-01T23:24:35.2862987Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.ZeroBoundaryH1.exists_subseq_weak_strong, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.DirichletWeakCompactness
+2026-11-01T23:24:35.2866771Z Building KVApproximation.Analysis.DirichletWeakCompactness
+2026-11-01T23:24:37.6859770Z Build completed successfully (3210 jobs).
+2026-11-01T23:25:26.5222513Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.ZeroBoundaryH1.exists_subseq_weak_strong, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.DirichletWeakCompactness
+2026-11-01T23:25:26.5226633Z Running Lean paranoid kernel on solution
+2026-11-01T23:44:05.2719777Z ##[error]The runner has received a shutdown signal. This can happen when the runner service is stopped, or a manually started runner is canceled.
+2026-11-01T23:44:05.2722777Z ##[error]Process completed with exit code 143.
+2026-11-01T23:44:05.4549864Z Cleaning up orphan processes

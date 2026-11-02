@@ -1,0 +1,29 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/cell_constitutive.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 276.5,
+  "configuration": "cell_constitutive.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.cellConstitutiveModel_exists_unique",
+    "KVApproximation.Homogenization.cellKernel_nonneg",
+    "KVApproximation.Homogenization.cellKernel_continuous",
+    "KVApproximation.Homogenization.cellConstitutiveModel_self",
+    "KVApproximation.Homogenization.cellConstitutiveModel_eq_fields"
+  ],
+  "challenge_module": "Challenges.CellConstitutive",
+  "solution_module": "KVApproximation.Homogenization.CellConstitutive",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}
