@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/uniform_local_average.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 77.9,
+  "configuration": "uniform_local_average.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.exists_uniform_local_average"
+  ],
+  "challenge_module": "Challenges.UniformLocalAverage",
+  "solution_module": "KVApproximation.Analysis.UniformLocalAverage",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

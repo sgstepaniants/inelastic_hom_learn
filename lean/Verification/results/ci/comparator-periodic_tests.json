@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_tests.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 205.0,
+  "configuration": "periodic_tests.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.periodic_test_iff_corrector_test"
+  ],
+  "challenge_module": "Challenges.CellDisplacement",
+  "solution_module": "KVApproximation.Homogenization.PeriodicTests",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

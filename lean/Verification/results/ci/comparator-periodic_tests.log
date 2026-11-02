@@ -1,0 +1,30 @@
+Resolving dependencies
+Building Challenges.CellDisplacement
+⚠ [3231/3231] Replayed Challenges.CellDisplacement
+warning: Comparator/Challenges/CellDisplacement.lean:20:8: declaration uses `sorry`
+warning: Comparator/Challenges/CellDisplacement.lean:27:8: declaration uses `sorry`
+warning: Comparator/Challenges/CellDisplacement.lean:41:8: declaration uses `sorry`
+warning: Comparator/Challenges/CellDisplacement.lean:54:8: declaration uses `sorry`
+warning: Comparator/Challenges/CellDisplacement.lean:62:8: declaration uses `sorry`
+warning: Comparator/Challenges/CellDisplacement.lean:75:8: declaration uses `sorry`
+Build completed successfully (3231 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Homogenization.periodic_test_iff_corrector_test, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.CellDisplacement
+Building KVApproximation.Homogenization.PeriodicTests
+Build completed successfully (3136 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Homogenization.periodic_test_iff_corrector_test, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Homogenization.PeriodicTests
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 44608 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 44611 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 44611 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

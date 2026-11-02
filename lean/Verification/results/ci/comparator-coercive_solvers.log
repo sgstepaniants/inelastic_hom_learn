@@ -1,0 +1,29 @@
+Resolving dependencies
+Building Challenges.CoerciveSolvers
+⚠ [2489/2489] Replayed Challenges.CoerciveSolvers
+warning: Comparator/Challenges/CoerciveSolvers.lean:13:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveSolvers.lean:19:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveSolvers.lean:25:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveSolvers.lean:32:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveSolvers.lean:39:8: declaration uses `sorry`
+Build completed successfully (2489 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.OperatorTheory.CoerciveForm.solveL_spec, KVApproximation.OperatorTheory.relativeRiesz_spec, KVApproximation.OperatorTheory.variational_equation_iff, KVApproximation.OperatorTheory.CoerciveForm.norm_solveL_le, KVApproximation.OperatorTheory.relativeRiesz_opNorm_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.CoerciveSolvers
+Building KVApproximation.OperatorTheory.CoerciveSolverProperties
+Build completed successfully (2702 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.OperatorTheory.CoerciveForm.solveL_spec, KVApproximation.OperatorTheory.relativeRiesz_spec, KVApproximation.OperatorTheory.variational_equation_iff, KVApproximation.OperatorTheory.CoerciveForm.norm_solveL_le, KVApproximation.OperatorTheory.relativeRiesz_opNorm_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.OperatorTheory.CoerciveSolverProperties
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 19276 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 19279 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 19279 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

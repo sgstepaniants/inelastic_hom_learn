@@ -1,0 +1,34 @@
+Resolving dependencies
+Building Challenges.VectorSobolevFields
+⚠ [3171/3171] Replayed Challenges.VectorSobolevFields
+warning: Comparator/Challenges/VectorSobolevFields.lean:19:8: declaration uses `sorry`
+warning: Comparator/Challenges/VectorSobolevFields.lean:25:8: declaration uses `sorry`
+warning: Comparator/Challenges/VectorSobolevFields.lean:31:8: declaration uses `sorry`
+warning: Comparator/Challenges/VectorSobolevFields.lean:38:8: declaration uses `sorry`
+warning: Comparator/Challenges/VectorSobolevFields.lean:44:8: declaration uses `sorry`
+warning: Comparator/Challenges/VectorSobolevFields.lean:50:8: declaration uses `sorry`
+warning: Comparator/Challenges/VectorSobolevFields.lean:56:8: declaration uses `sorry`
+warning: Comparator/Challenges/VectorSobolevFields.lean:62:8: declaration uses `sorry`
+warning: Comparator/Challenges/VectorSobolevFields.lean:68:8: declaration uses `sorry`
+warning: Comparator/Challenges/VectorSobolevFields.lean:74:8: declaration uses `sorry`
+Build completed successfully (3171 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.VectorH1.valueL_apply_ae, KVApproximation.Analysis.VectorH1.gradientL_apply_ae, KVApproximation.Analysis.VectorH1.symmetricGradientL_apply_ae, KVApproximation.Analysis.VectorH1.norm_sq_eq, KVApproximation.Analysis.VectorH1.norm_valueL_le, KVApproximation.Analysis.VectorH1.norm_gradientL_le, KVApproximation.Analysis.VectorH1.norm_symmetricGradientL_le, KVApproximation.Analysis.VectorH1.valueL_injective, KVApproximation.Analysis.VectorH1.norm_valueL_sq, KVApproximation.Analysis.VectorH1.norm_gradientL_sq, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.VectorSobolevFields
+Building KVApproximation.Analysis.VectorSobolevProperties
+Build completed successfully (3172 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.VectorH1.valueL_apply_ae, KVApproximation.Analysis.VectorH1.gradientL_apply_ae, KVApproximation.Analysis.VectorH1.symmetricGradientL_apply_ae, KVApproximation.Analysis.VectorH1.norm_sq_eq, KVApproximation.Analysis.VectorH1.norm_valueL_le, KVApproximation.Analysis.VectorH1.norm_gradientL_le, KVApproximation.Analysis.VectorH1.norm_symmetricGradientL_le, KVApproximation.Analysis.VectorH1.valueL_injective, KVApproximation.Analysis.VectorH1.norm_valueL_sq, KVApproximation.Analysis.VectorH1.norm_gradientL_sq, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.VectorSobolevProperties
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 47964 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 47967 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 47967 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

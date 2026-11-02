@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/half_line_laplace_damping.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 150.0,
+  "configuration": "half_line_laplace_damping.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.halfLineLaplace_exp_smul",
+    "KVApproximation.Analysis.eq_zero_of_halfLineLaplace_eq_zero_of_damped_bound"
+  ],
+  "challenge_module": "Challenges.HalfLineLaplaceDamping",
+  "solution_module": "KVApproximation.Analysis.HalfLineLaplaceDamping",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

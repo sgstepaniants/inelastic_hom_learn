@@ -51,6 +51,27 @@ namespace TauCeti
 open Bornology MeasureTheory Metric Set TopologicalSpace
 open scoped ENNReal
 
+/-- Transport the vector itself, rather than an entire isometry structure, so independent
+kernel replay does not have to normalize computed structure projections through the cast. -/
+private def castLpL {α : Type*} [MeasurableSpace α] {p : ENNReal} [Fact (1 ≤ p)]
+    {μ ν : Measure α} (h : μ = ν) : Lp ℝ p μ →L[ℝ] Lp ℝ p ν :=
+  { toFun := fun f => cast (congrArg (fun m : Measure α => (Lp ℝ p m : Type _)) h) f
+    map_add' := by subst ν; intro f g; rfl
+    map_smul' := by subst ν; intro r f; rfl
+    cont := by subst ν; exact continuous_id }
+
+private theorem norm_castLpL {α : Type*} [MeasurableSpace α] {p : ENNReal}
+    [Fact (1 ≤ p)] {μ ν : Measure α} (h : μ = ν) (f : Lp ℝ p μ) :
+    ‖castLpL h f‖ = ‖f‖ := by
+  subst ν
+  rfl
+
+private theorem coeFn_castLpL {α : Type*} [MeasurableSpace α] {p : ENNReal}
+    [Fact (1 ≤ p)] {μ ν : Measure α} (h : μ = ν) (f : Lp ℝ p μ) (x : α) :
+    (castLpL h f : α → ℝ) x = (f : α → ℝ) x := by
+  subst ν
+  rfl
+
 variable {E : Type*} [MeasurableSpace E] [NormedAddCommGroup E] [InnerProductSpace ℝ E]
   [FiniteDimensional ℝ E] [BorelSpace E] {mu : Measure E} [mu.IsAddHaarMeasure]
   {Omega : Opens E} {p : ENNReal} [Fact (1 ≤ p)]
@@ -64,12 +85,12 @@ private theorem restrict_coe_top (nu : Measure E) :
 
 /-- The value of a zero-boundary Sobolev function, extended by zero to the whole space. -/
 private def W1p0.valueExtendByZeroL : W1p0 mu Omega p →L[ℝ] Lp ℝ p mu :=
-  (castLpₗᵢ (𝕜 := ℝ) (restrict_coe_top mu)).toLinearIsometry.toContinuousLinearMap.comp <|
+  (castLpL (restrict_coe_top mu)).comp <|
     (W1p0.valueL (Omega := ⊤)).comp (W1p0.extendByZeroL le_top)
 
 private theorem W1p0.valueExtendByZeroL_apply (u : W1p0 mu Omega p) :
     W1p0.valueExtendByZeroL u =
-      castLpₗᵢ (𝕜 := ℝ) (restrict_coe_top mu)
+      castLpL (restrict_coe_top mu)
         (W1p0.valueL (W1p0.extendByZeroL le_top u)) :=
   rfl
 
@@ -78,7 +99,7 @@ private theorem W1p0.norm_valueExtendByZeroL_le (u : W1p0 mu Omega p) :
   calc
     ‖W1p0.valueExtendByZeroL u‖
         = ‖W1p.value (W1p0.extendByZeroL le_top u : W1p mu (⊤ : Opens E) p)‖ := by
-      rw [W1p0.valueExtendByZeroL_apply, LinearIsometryEquiv.norm_map, W1p0.valueL_apply]
+      rw [W1p0.valueExtendByZeroL_apply, norm_castLpL, W1p0.valueL_apply]
     _ ≤ ‖W1p0.extendByZeroL le_top u‖ := W1p.norm_value_le _
     _ = ‖u‖ := W1p0.norm_extendByZeroL le_top u
 
@@ -87,7 +108,7 @@ by the value of the whole-space Sobolev extension. -/
 private theorem W1p0.coeFn_valueExtendByZeroL_eq_value (u : W1p0 mu Omega p) :
     (W1p0.valueExtendByZeroL u : E → ℝ) =
       (W1p.value (W1p0.extendByZeroL le_top u : W1p mu (⊤ : Opens E) p) : E → ℝ) :=
-  funext fun _ => by rw [W1p0.valueExtendByZeroL_apply, coeFn_castLpₗᵢ, W1p0.valueL_apply]
+  funext fun _ => by rw [W1p0.valueExtendByZeroL_apply, coeFn_castLpL, W1p0.valueL_apply]
 
 private theorem W1p0.isCompactOperator_valueExtendByZeroL (hp : p ≠ ∞)
     (hOmega : IsBounded (Omega : Set E)) :

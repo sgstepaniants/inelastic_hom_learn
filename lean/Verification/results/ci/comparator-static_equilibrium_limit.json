@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/static_equilibrium_limit.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 341.6,
+  "configuration": "static_equilibrium_limit.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.effective_equilibrium_of_weak_stress"
+  ],
+  "challenge_module": "Challenges.StaticEquilibriumLimit",
+  "solution_module": "KVApproximation.Homogenization.StaticEquilibriumLimit",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

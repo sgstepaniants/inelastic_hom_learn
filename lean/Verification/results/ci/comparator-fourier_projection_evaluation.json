@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/fourier_projection_evaluation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 142.6,
+  "configuration": "fourier_projection_evaluation.json",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.exists_fourierProjection_approx_eval"
+  ],
+  "challenge_module": "Challenges.FourierProjectionEvaluation",
+  "solution_module": "KVApproximation.NeuralOperators.FourierProjectionEvaluation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/homogenized_uniqueness.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 427.7,
+  "configuration": "homogenized_uniqueness.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.homogenized_solution_unique"
+  ],
+  "challenge_module": "Challenges.HomogenizedUniqueness",
+  "solution_module": "KVApproximation.Homogenization.HomogenizedUniqueness",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}
