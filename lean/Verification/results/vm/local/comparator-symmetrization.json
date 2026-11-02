@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/symmetrization.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 109.3,
+  "configuration": "symmetrization.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.norm_symmetrize_le",
+    "KVApproximation.Tensor.inner_symmetrize"
+  ],
+  "challenge_module": "Challenges.Symmetrization",
+  "solution_module": "KVApproximation.Tensor.SymmetrizationProperties",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

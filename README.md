@@ -65,10 +65,12 @@ After building, check isolated subject reuse with:
 python3 Verification/consumers.py
 ```
 
-Recorded local validation reports successful compilation, a passing axiom audit
-limited to `propext`, `Classical.choice`, and `Quot.sound`, and passing checks for
-all ten subject consumers. **Sandboxed Comparator validation and its paranoid
-independent kernel checks remain outstanding.** See
+Validation passed the full build, the 722-declaration transitive axiom audit
+limited to `propext`, `Classical.choice`, and `Quot.sound`, and all ten subject
+consumers. **All 331 Comparator configurations / 702 selected declarations passed
+the sandboxed Linux comparison and all six bundled kernels.** The
+[complete coverage report](lean/Verification/results/vm/combined/coverage.json)
+combines 251 GitHub Actions successes with 80 local Linux successes. See
 [`lean/STATUS.md`](lean/STATUS.md) for the precise scope, qualifications, and
 validation evidence.
 

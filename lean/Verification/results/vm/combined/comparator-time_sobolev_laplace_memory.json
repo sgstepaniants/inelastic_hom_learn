@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/time_sobolev_laplace_memory.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 584.4,
+  "configuration": "time_sobolev_laplace_memory.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.TimeH1.memory_equation_of_halfLineLaplace"
+  ],
+  "challenge_module": "Challenges.TimeSobolevLaplaceMemory",
+  "solution_module": "KVApproximation.Analysis.TimeSobolevLaplaceMemory",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

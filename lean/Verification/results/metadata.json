@@ -2,8 +2,10 @@
   "schema": "v0.4",
   "schema_checker": "fastjsonschema 2.21.2",
   "referenced_modules_missing": [],
+  "referenced_paths_missing": [],
   "comparator_configurations": 331,
   "selected_declarations": 702,
   "challenges_importing_solutions": [],
+  "preserved_ci_importing_repaired_modules": [],
   "passed": true
 }

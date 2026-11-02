@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/variational_stability.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 63.5,
+  "configuration": "variational_stability.json",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.CoerciveForm.riesz_opNorm_le",
+    "KVApproximation.OperatorTheory.projection_sub_norm_le",
+    "KVApproximation.OperatorTheory.relaxation_sub_norm_le",
+    "KVApproximation.OperatorTheory.relaxation_opNorm_le"
+  ],
+  "challenge_module": "Challenges.VariationalStability",
+  "solution_module": "KVApproximation.OperatorTheory.VariationalStability",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

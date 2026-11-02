@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/static_homogenization.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 577.0,
+  "configuration": "static_homogenization.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.periodic_elliptic_homogenization",
+    "KVApproximation.Homogenization.periodic_elliptic_weak_limit"
+  ],
+  "challenge_module": "Challenges.StaticHomogenization",
+  "solution_module": "KVApproximation.Homogenization.StaticHomogenization",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

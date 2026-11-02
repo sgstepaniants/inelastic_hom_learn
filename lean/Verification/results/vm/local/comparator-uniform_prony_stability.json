@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/uniform_prony_stability.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 353.6,
+  "configuration": "uniform_prony_stability.json",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.uniform_prony_response_stability"
+  ],
+  "challenge_module": "Challenges.UniformPronyStability",
+  "solution_module": "KVApproximation.NeuralOperators.UniformPronyStability",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

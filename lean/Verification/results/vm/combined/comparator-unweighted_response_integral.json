@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/unweighted_response_integral.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 225.9,
+  "configuration": "unweighted_response_integral.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.memory_eq_unweightedResponseIntegral",
+    "KVApproximation.Approximation.unweighted_prony_stress_eq_partitionIntegral"
+  ],
+  "challenge_module": "Challenges.UnweightedResponse",
+  "solution_module": "KVApproximation.Approximation.UnweightedResponseIntegral",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

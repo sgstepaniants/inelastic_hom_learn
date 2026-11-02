@@ -2,7 +2,7 @@
 
 Updated: 2026-11-02.
 
-[PLAN.md](PLAN.md) controls the scope; [formalization.yaml](formalization.yaml) records source correspondence. All 17 numbered proof statements and the included unnumbered theory have compiled implementations. The project remains incomplete until sandboxed Comparator and its paranoid independent checkers have run successfully.
+[PLAN.md](PLAN.md) controls the scope; [formalization.yaml](formalization.yaml) records source correspondence. All 17 numbered proof statements and the included unnumbered theory have compiled implementations. All 331 Comparator configurations and 702 selected declarations have passed the sandboxed Linux comparison and all six bundled kernels.
 
 All outputs remain under `lean/`; `paper/` is unchanged. No project checksums, hash manifests, digest scripts or optional provenance hashes are permitted. Lean/Lake’s required internal metadata is the sole exception.
 
@@ -30,54 +30,58 @@ Earlier findings about C∞ versus analytic generators, Frobenius norms, signed 
 
 ## Validation
 
-Lean, Mathlib and LeanCert are frozen at **v4.35.0**.
+Lean, Mathlib and LeanCert are pinned to **v4.35.0**. Verification completed on November 2, 2026.
 
-| Check | Actual result |
-| --- | --- |
-| Full proof libraries, challenges and convenience exports | After both repairs, the full Linux VM build passed: **4,282 jobs**, **1,527.0 seconds** |
-| Production-artifact transitive axiom audit | **722 distinct queries/results**, only `propext`, `Classical.choice`, `Quot.sound`. The Linux VM audit after both repairs passed in **9.2 seconds** |
-| Comparator selections covered by that audit | **702 declarations in 331 configurations**, plus twenty supporting definitions/ingredients |
-| Isolated subject consumers | **10/10 passed**, including every module in each subject |
-| Metadata | Published **v0.4 schema** passed; referenced local module paths exist |
-| Sandboxed Comparator | **311 configurations / 657 theorem selections validated and preserved; full coverage pending** |
-| Paranoid independent kernel checks | **All six kernels accepted every preserved configuration; 20 configurations still missing** |
+| Check | Actual result | Evidence |
+| --- | --- | --- |
+| Full proof libraries, challenges and convenience exports | **4,282 build jobs passed** in 1,527.0 seconds on Linux, after the repairs | [Build record](Verification/results/vm/build.json), [log](Verification/results/vm/build.log) |
+| Transitive axiom audit | **722 distinct queries/results**, including all 702 Comparator selections; only `propext`, `Classical.choice`, `Quot.sound`; 9.2 seconds | [Audit record](Verification/results/vm/axioms.json), [log](Verification/results/vm/axioms.log) |
+| Sandboxed Comparator | **331/331 configurations; 702/702 selected declarations; no missing, duplicate, unexpected or invalid records** | [Combined coverage](Verification/results/vm/combined/coverage.json) |
+| Independent kernels | Every configuration accepted by **Lean default, Lean paranoid, lean4lean, nanoda, con-leche and con-ron** | Per-configuration records and complete logs in [combined/](Verification/results/vm/combined/) |
+| Isolated subject consumers | **10/10 passed** after the repairs, in 86.8 seconds total | [Consumer record](Verification/results/consumers.json), [log](Verification/results/consumers.log) |
+| Metadata and challenge separation | Published **v0.4 schema** passed; referenced paths exist; no challenge transitively imports its solution module | [Metadata record](Verification/results/metadata.json) |
 
-The logs and machine-readable results are in [Verification/results/](Verification/results/). Rerun the full build and axiom audit with `python3 Verification/verify.py local`; rerun subject consumers with `python3 Verification/consumers.py`. The root import now exposes the main results, concrete architectures and exact appendix identities.
+The combined Comparator evidence consists of **251 preserved GitHub Actions successes and 80 local Linux successes**. Every record was checked against the current configuration's exact command, challenge and solution modules, selected declarations, six acceptance messages and final Comparator success message. All commands use `lake comparator --config=Comparator/<name>.json --paranoid` with the default Linux sandbox.
 
-The consumer checks copy only a subject’s recursive source closure and licenses, then compile an importing file using only the corresponding production artifacts and external dependency/toolchain paths. They are import/reuse checks, not a second clean compilation of dependencies. Both referees’ path-isolation findings were fixed. All ten consumers were rerun successfully after the compactness and Green repairs, taking 86.8 seconds in total. **Homogenization imports all 72 subject modules through a 288-module local closure with no NeuralOperators, Approximation, KelvinVoigt or Examples dependency.** The other subjects passed the same check.
+The local run used Debian ARM Linux in the Lima `proof` VM, with four CPUs and 8 GiB RAM. The bubblewrap isolation probe passed. The runner rebuilt all libraries and audited their axioms, ran the three repaired pilots serially, then used two concurrent comparisons. Direct byte comparison confirmed that all 1,085 proof and configuration files in the VM matched the workspace. No project hashes or checksum manifests were generated.
 
-LeanCert proves `7/10 < cos(3/4)` in explicit kernel mode at Taylor depth 3. Source inspection finds no proof-library placeholders, custom axiom declarations or native-trust shortcuts. Designated challenge theorem placeholders remain separate from the proof library and its axiom audit.
+Consumer checks copy each subject's recursive source closure and licenses, then compile its importing file using only the corresponding production artifacts and external dependency/toolchain paths. They test dependency closure and reuse; the full build compiles all dependencies. **Homogenization imports all 72 subject modules through a 288-module local closure with no NeuralOperators, Approximation, KelvinVoigt or Examples dependency.** Both reviewers' path-isolation findings were fixed before the successful rerun.
 
-## Remaining validation
+LeanCert proves `7/10 < cos(3/4)` in explicit kernel mode at Taylor depth 3. Proof-library source inspection found no placeholders, custom axiom declarations or native-trust shortcuts. Designated challenge theorem placeholders remain separate from the proof library and its axiom audit.
 
-GitHub Actions is the selected validation host at [sgstepaniants/inelastic_hom_learn](https://github.com/sgstepaniants/inelastic_hom_learn). The workflow uses Ubuntu 22.04, Lean 4.35.0, bubblewrap, and all six bundled kernels. It divides the 331 configurations / 702 selections into 16 disjoint shards with at most eight active jobs. Logs and result records are retained for 14 days. Actionlint, Python/Bash syntax checks, and six sharding/evidence regression tests passed.
+## Resolved validation findings
 
-[The first Actions run](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41328491124) completed its Linux build in 4,387.6 seconds and its 722-declaration axiom audit in 6.9 seconds. The sandboxed paranoid pilot passed: `dimension_growth` (85.8 seconds), `tensor_bounds` (184.9 seconds), and `tensor_dimensions` (105.6 seconds). These are actual Comparator successes, but do not establish full coverage.
+- **Statement and supporting-definition mismatches:** challenges were aligned with the reviewed production contracts, including scalar structures, local instances, universe labels and Carathéodory parameter order. The continuous-calculus challenge uses the existing complex-Hilbert-space calculus; the stress-bound challenge retains the solution's stronger generality by omitting unused assumptions. Main mathematical bounds and conclusions are unchanged.
+- **Compactness replay performance:** a private measure cast in the vendored Rellich–Kondrachov implementation forced expensive conversion while checking the extension-by-zero operator. It now transports the Lp vector directly through a continuous linear map, with proved norm and representative identities. Public statements and the compactness argument are unchanged. All ten affected configurations passed the full sandboxed six-kernel checks.
+- **Green dual-space interface:** the challenge and solution had different supporting definitions for a local normed-space instance. Four shared instance definitions now live in an interface-only module, with no solution theorem imported by its challenge. All three affected configurations passed.
+- **Interrupted GitHub runners and exhausted allowance:** completed checks were recovered from artifacts and full streamed logs. The user authorized local completion after the Actions allowance was exhausted. No failed or unexecuted check was counted as a pass. The preserved CI configurations do not import the repaired compactness or Green modules.
 
-[The corrected Actions run](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41347378153) passed its Linux build, 722-declaration axiom audit, shared-cache availability check, and seven-configuration sandboxed paranoid pilot (21 theorem selections). Its sixteen-shard matrix has now ended without complete coverage. It supersedes the cancelled first run; the remaining checks require recovery.
+The [CI evidence notes](Verification/results/ci/README.md) identify the source Actions runs and explain recovered logs. The CI-only report remains incomplete by design; the [combined report](Verification/results/vm/combined/coverage.json) is the complete coverage record. The [local evidence notes](Verification/results/vm/README.md) describe the VM run.
 
-Several shards lost their runners during the Lean paranoid check of Dirichlet compactness or a result that depends on it. Their available logs end with a runner shutdown signal and exit 143, without a checker rejection. Completed shards 2, 3, 4, 13, 14 and 15, nineteen successes from shard 11, successful recovery jobs, recovered console-log results and two pilot results now provide **251 configurations / 549 selections**. The checked records, logs, original interrupted-job logs and an explicitly incomplete coverage report are preserved in [Verification/results/ci/](Verification/results/ci/). None of these configurations imports the compactness or Green modules changed by the repairs. Shards 6 and 12 have no downloadable job log or result artifact; no missing result is inferred to have passed.
+## Reproduce validation
 
-A [15-minute resource sample](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41361668464) confirmed severe memory pressure: nearly all 8 GiB of RAM and about 6.7 GiB of swap were in use while the first kernel was still running. A [longer run with 12 GiB of extra swap](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41357483181) reached its time limit without completing the configuration. Local diagnostics isolated an expensive conversion in the private `W1p0.valueExtendByZeroL_apply` proof. The private measure cast now transports the vector directly as a continuous linear map, with proved norm and representative identities. All public statements and the compactness argument are unchanged.
+Run these commands from `lean/` with the pinned toolchain:
 
-After this repair, the helper checks in 52 milliseconds in the declaration diagnostic, and the bundled paranoid kernel completes module-only replay in **21.6 seconds**, using approximately **2.9 GiB** of resident memory. The full local rebuild, 722-declaration axiom audit and compiled-type comparisons for all **18 selections in ten affected configurations** passed. A subsequent local export of the four `dirichlet_compactness` selections and their full proof dependencies passed all six bundled kernels: Lean paranoid in **66.6 seconds**, Lean default in **69.8 seconds**, lean4lean in **76.0 seconds**, and the other three in under fourteen seconds each. These macOS preflights do not perform the sandboxed challenge comparison and are diagnostic evidence. Their records are in [Verification/results/compactness-replay/](Verification/results/compactness-replay/). None of the 251 preserved CI successes imports the changed module. Nine of the ten affected configurations have now passed the authoritative Linux recovery with all six kernels; `static_homogenization` remains in progress.
+```sh
+python3 Verification/verify.py local
+python3 Verification/consumers.py
+python3 Verification/test_ci.py
+```
 
-Shard 11 exposed a separate supporting-definition mismatch in `HomogenizedGreen.instDualNormedSpace`, before kernel checking began. The four Green dual-space instances now live in a shared interface-only module imported by both the independent challenge and the solution. No solution theorem is imported into its challenge, and all four selected theorem types in the three affected configurations still match. Comparator's own comparison function also accepts both Green statements and their complete supporting-declaration closure in a local diagnostic. The repaired Green configuration has now passed the authoritative sandboxed Linux comparison and all six kernels in **1,701.4 seconds**.
+On Linux with bubblewrap, run the full Comparator suite:
 
-The repair checkpoint skipped the automatic full-suite push trigger. The published targeted recovery workflow is configured to rebuild and audit the updated libraries, check both compactness configurations and the Green interface, then run the other **77 missing configurations in eight disjoint batches**. Its final coverage job combines the preserved and new evidence and requires all **331 configurations / 702 selections** with all six kernels. Actionlint 1.7.12 and the six CI tests passed; its selection and aggregation scripts were exercised on the actual 251 preserved results.
+```sh
+python3 Verification/verify.py comparator
+```
 
-The [earlier 34-configuration recovery run](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41363120309) failed before any job started, including on one retry. The user subsequently confirmed that the GitHub Actions allowance had been exhausted.
+The full runner succeeds only after every configured comparison passes. For collected evidence, use a directory containing exactly one result pair per configuration; historical copies in descendant directories are deliberately rejected as duplicates. To check the preserved complete evidence:
 
-The [repaired 80-configuration recovery run](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41372452886) encountered the same startup block on November 2 at 01:25 UTC. Its pilot and coverage jobs failed with no steps executed, and the eight-batch matrix was skipped. This run executed no proof checks. GitHub retries have stopped; the repository retains the recovery workflow and 251 valid saved results.
+```sh
+python3 Verification/collect_comparator.py Verification/results/vm/combined
+```
 
-In the first run, the shared cache failed to save because the runner exhausted disk space. Several shards later lost their runners, and completed checks exposed statement mismatches. The revised workflow removes unused SDKs from disposable runners, requires a successfully saved shared cache before starting its shards, and streams detailed logs so an interrupted job retains its current checker stage. Its seven-configuration pilot includes the first repaired interfaces. The corrected run saved and verified the cache successfully, with 20 GiB available after its build.
+On the prepared macOS/Lima setup, `bash Verification/vm.sh` copies current sources, rebuilds and audits them, then resumes missing or failed comparisons. Preserve saved evidence only while proof sources remain unchanged; after an edit, rerun every affected configuration. The README documents GitHub and local execution options.
 
-Local compiled-type diagnostics now match all **331 configurations / 702 selections**, including universe-parameter names. Repairs align inferred scalar structures, local instance names, universe labels, and Carathéodory parameter order. The continuous-calculus challenge uses the standard complex-Hilbert-space calculus already used by its solution. The stress-bound challenge drops unused completeness and finite-dimensionality assumptions, retaining the stronger generality of the existing proof. Mathematical bounds and conclusions are unchanged. The full-target local rebuild and 722-declaration axiom audit passed after all edits, and the complete type diagnostic was repeated against the refreshed artifacts. The diagnostic is advisory: the complete authoritative sandboxed paranoid suite remains required before claiming completion.
+The [ten runner/evidence tests](Verification/results/runner-tests.json) passed on both macOS and Linux. They cover complete shard selection, rejection of missing, duplicate, stale or weakened evidence, preservation of earlier successes after a failure, separate parallel logs and the required external dependency-cache closure.
 
-On November 2 the user authorized local completion. The prepared Lima VM now runs Debian ARM Linux with four CPUs and 8 GiB RAM. Its relocated paths were repaired, the pinned Lean 4.35.0 toolchain and all six checker binaries installed, and the bubblewrap isolation probe passed. The full Linux rebuild and 722-query axiom audit passed. All three repaired pilot comparisons passed: `dirichlet_compactness` in **439.2 seconds**, `dirichlet_weak_compactness` in **405.8 seconds**, and `homogenized_green` in **1,701.4 seconds**. The runner then selected two concurrent checks. The latest saved checkpoint contains **60 local successes**, bringing the validated total to **311 configurations / 657 selections**. The remaining 20 checks are in progress, with no local failures; this checkpoint is not complete coverage.
-
-`Verification/vm.sh` now preserves the CI results, fetches only the required Mathlib dependency closure, and invokes a resumable local recovery after the full build and axiom audit. After the serial pilot it permits up to two concurrent checks if their measured memory use fits the VM. Each successful local result is retained; the combined collector still requires every configuration and all six kernels. Ten runner/evidence tests passed, including preserving an earlier success when the next check fails, keeping parallel result logs separate, rejecting duplicate CI/local evidence and selecting transitive external cache dependencies. Local results and the combined report are copied into `Verification/results/vm/` when execution ends. No additional Comparator pass is claimed until its actual result is available.
-
-Finish the local recovery, resolve any findings, and require the combined coverage report to pass before claiming complete Comparator validation.
-
-Abandoned development probes, reference copies, isolated build artifacts and temporary consumer fixtures have been removed. The consumer script recreates its fixtures when rerun. The proof sources, licenses, required Lake metadata, challenges, verification scripts/results, README, inventory, plan and status remain. Build caches and the prepared VM are retained for the outstanding validation. Do not mark the goal complete while that validation remains outstanding.
+No validation remains outstanding for the agreed scope. Proof sources, licensed upstream closures, required Lake metadata, independent challenges, rerun tools and verification evidence are retained. Development probes and superseded diagnostic reports have been removed; ignored build caches and the prepared VM remain available for reproducibility.

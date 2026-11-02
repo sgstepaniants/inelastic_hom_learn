@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/time_sobolev_norms.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 369.5,
+  "configuration": "time_sobolev_norms.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.TimeH1.valueL2_apply",
+    "KVApproximation.Analysis.TimeH1.velocityL2_apply_ae",
+    "KVApproximation.Analysis.TimeH1.norm_sq_eq_value_velocity",
+    "KVApproximation.Analysis.TimeH1.norm_le_of_ode"
+  ],
+  "challenge_module": "Challenges.TimeSobolevNorms",
+  "solution_module": "KVApproximation.Analysis.TimeSobolevNorms",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/strong_multiplication.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 218.0,
+  "configuration": "strong_multiplication.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.multiplication_strong_tendsto"
+  ],
+  "challenge_module": "Challenges.FieldConvergence",
+  "solution_module": "KVApproximation.Analysis.MultiplicationConvergence",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

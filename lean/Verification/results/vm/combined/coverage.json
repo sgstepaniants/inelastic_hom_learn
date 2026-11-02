@@ -1,6 +1,6 @@
 {
   "configurations_expected": 331,
-  "configurations_received": 311,
+  "configurations_received": 331,
   "theorems_expected": 702,
   "required_kernels": [
     "Lean default",
@@ -10,31 +10,10 @@
     "lean4lean",
     "nanoda"
   ],
-  "missing": [
-    "comparator-spectral_representation.json",
-    "comparator-static_homogenization.json",
-    "comparator-strip_spectral_edges.json",
-    "comparator-strong_multiplication.json",
-    "comparator-symmetrization.json",
-    "comparator-tensor_action_integral.json",
-    "comparator-tensor_operators.json",
-    "comparator-time_sobolev_laplace_memory.json",
-    "comparator-time_sobolev_memory_uniqueness.json",
-    "comparator-time_sobolev_norms.json",
-    "comparator-trajectory_bounds.json",
-    "comparator-uniform_prony_stability.json",
-    "comparator-unweighted_response_integral.json",
-    "comparator-variational_semigroup.json",
-    "comparator-variational_stability.json",
-    "comparator-vector_measure_density.json",
-    "comparator-volterra_uniqueness.json",
-    "comparator-weighted_space.json",
-    "comparator-weighted_variation_gap.json",
-    "comparator-zero_boundary_coordinates.json"
-  ],
+  "missing": [],
   "unexpected": [],
   "duplicates": [],
   "failed_or_invalid": [],
-  "configuration_seconds": 103222.0,
-  "passed": false
+  "configuration_seconds": 108601.0,
+  "passed": true
 }

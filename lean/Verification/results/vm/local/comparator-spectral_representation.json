@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/spectral_representation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 382.8,
+  "configuration": "spectral_representation.json",
+  "theorem_names": [
+    "KVApproximation.Spectral.spectral_representation"
+  ],
+  "challenge_module": "Challenges.SpectralRepresentation",
+  "solution_module": "KVApproximation.KelvinVoigt.SpectralRepresentation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

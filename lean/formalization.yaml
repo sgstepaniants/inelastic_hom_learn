@@ -14,7 +14,7 @@ sources:
     location: "Main text and compiled Appendices A–D"
     relationship: "formalizes"
 status:
-  state: "in-progress"
+  state: "complete"
   scope: "All mathematical theory in the compiled paper; empirical claims and inactive drafts excluded."
   numbered_proof_statements: 17
   numbered_proof_statements_completed: 17
@@ -52,7 +52,7 @@ automation:
       tool_setup: "Lean 4, Mathlib, LeanCert, independent review, and integrated Lean Comparator."
 review:
   status: "agent-reviewed"
-  notes: "All numbered and included unnumbered claims passed statement-first and independent source reviews. Three referees covered mathematical fidelity, interfaces/reuse, and proof/reproducibility. The final coverage review found no further substantive theorem omission in the agreed compiled-paper scope. The smoother-class compact-closure correction and globally Lipschitz nonlinear lifting qualification are explicit. Mandel response specializations and all nonempirical active-appendix identities are implemented. Independently activated Fourier chains are represented as reusable components; universal approximation uses the exact shared-activation subfamily. The formal two-scale ansatz is motivation rather than a proved remainder expansion. Review here records independent source analysis; authoritative sandboxed Comparator and external kernel validation remain outstanding."
+  notes: "All numbered and included unnumbered claims passed statement-first and independent source reviews. Three referees covered mathematical fidelity, interfaces/reuse, and proof/reproducibility. The final coverage review found no further substantive theorem omission in the agreed compiled-paper scope. The smoother-class compact-closure correction and globally Lipschitz nonlinear lifting qualification are explicit. Mandel response specializations and all nonempirical active-appendix identities are implemented. Independently activated Fourier chains are represented as reusable components; universal approximation uses the exact shared-activation subfamily. The formal two-scale ansatz is motivation rather than a proved remainder expansion. Review here records independent source analysis; execution evidence and current sandboxed Comparator coverage are recorded in STATUS.md."
 fidelity:
   divergences: "Subsidiary paper corrections are identified in PLAN.md and the alignment notes. A separate formalization error in the smoothness parameter has been repaired: compact and periodic generators and smooth-activation challenges now use explicit C∞ instead of analytic order. The former Dirichlet definition was trivial in positive dimension; the corrected definition is identified with the scalar zero-boundary spaces and admits nonzero displacements. The full rebuild and expanded axiom audit passed with the corrected definitions, including the periodic Sobolev identification, corrector-range bridges and downstream spectral and approximation results."
 alignment:
@@ -66,7 +66,7 @@ alignment:
       status: "formalized"
       challenge_module: "Challenges.Homogenization"
       challenge_declarations: ["KVApproximation.Homogenization.viscoelastic_homogenization"]
-      note: "The actual microscopic and homogenized PDEs have unique solutions, and the entire positive-scale family converges weakly in H¹(0,T;H₀¹(Ω;ℝᵈ)) for admissible elliptic preparation and L² forcing. The proof follows the paper’s Laplace-domain route: periodic Korn and Dirichlet compactness; physical rescaling and weak averaging; oscillating tests for static elasticity homogenization; microscopic semigroup and transformed equations; the actual cell resolvent and tensor-memory identities; Laplace injectivity and Sobolev realization; Green/Duhamel forcing and uniqueness. ForcedSubsequence isolates the reusable compactness-and-identification argument. Norms, boundary conditions, initial preparation and whole-family quantifiers match the reviewed original contract. The production build and transitive standard-axiom audit passed. The independent subject consumer also imports every homogenization module without neural, approximation, example or KelvinVoigt assembly dependencies. Sandboxed Comparator remains outstanding."
+      note: "The actual microscopic and homogenized PDEs have unique solutions, and the entire positive-scale family converges weakly in H¹(0,T;H₀¹(Ω;ℝᵈ)) for admissible elliptic preparation and L² forcing. The proof follows the paper’s Laplace-domain route: periodic Korn and Dirichlet compactness; physical rescaling and weak averaging; oscillating tests for static elasticity homogenization; microscopic semigroup and transformed equations; the actual cell resolvent and tensor-memory identities; Laplace injectivity and Sobolev realization; Green/Duhamel forcing and uniqueness. ForcedSubsequence isolates the reusable compactness-and-identification argument. Norms, boundary conditions, initial preparation and whole-family quantifiers match the reviewed original contract. The production build and transitive standard-axiom audit passed. The independent subject consumer also imports every homogenization module without neural, approximation, example or KelvinVoigt assembly dependencies. Comparator execution status is recorded in STATUS.md."
     - source: "Proposition 3.3"
       tex_label: "prop:spectral_rep"
       location: "../paper/main.tex:419"
@@ -76,7 +76,7 @@ alignment:
       comparator_config: "Comparator/spectral_representation.json"
       challenge_module: "Challenges.SpectralRepresentation"
       challenge_declarations: ["KVApproximation.Spectral.spectral_representation"]
-      note: "The complete Lean contract and periodic Sobolev/Korn/range bridges compile, passed independent reviews and the standard-axiom audit. Authoritative Comparator validation remains outstanding."
+      note: "The complete Lean contract and periodic Sobolev/Korn/range bridges compile, passed independent reviews and the standard-axiom audit. Comparator execution status is recorded in STATUS.md."
     - source: "Theorem 4.4"
       tex_label: "thm:ua"
       location: "../paper/main.tex:530"
@@ -86,7 +86,7 @@ alignment:
       challenge_declarations: ["KVApproximation.KelvinVoigt.universal_approximation"]
       completed_modules: ["KVApproximation.KelvinVoigt.UniversalApproximation", "KVApproximation.KelvinVoigt.PronyNeuralApproximation"]
       comparator_configs: ["Comparator/universal_approximation.json", "Comparator/prony_neural_approximation.json"]
-      note: "Proved under A1/A2 for the actual material and strain classes. The cell and spectral families are chosen before the tolerance, using the periodic cell forms and proved spectral representation. A positive intermediate Prony budget and the paper's response tolerances give uniform neural approximation, class membership and original-equation uniqueness. The material class may be empty. Compiled, independently reviewed and standard-axiom audited; Comparator remains unrun."
+      note: "Proved under A1/A2 for the actual material and strain classes. The cell and spectral families are chosen before the tolerance, using the periodic cell forms and proved spectral representation. A positive intermediate Prony budget and the paper's response tolerances give uniform neural approximation, class membership and original-equation uniqueness. The material class may be empty. Compiled, independently reviewed and standard-axiom audited; Comparator execution status is recorded in STATUS.md."
     - source: "Theorem 4.5"
       tex_label: "thm:sufficient_dimension"
       location: "../paper/main.tex:631"
@@ -95,7 +95,7 @@ alignment:
       challenge_module: "Challenges.UniversalApproximation"
       challenge_declarations: ["KVApproximation.KelvinVoigt.sufficient_internal_variable_dimension"]
       comparator_config: "Comparator/universal_approximation.json"
-      note: "The exact sufficient dimension is proved. The chosen interpolation order yields strict uniform Prony error below the target, leaving a positive neural response budget without adding states. Shared rates, scalar Mandel dimension, empty classes and the exact one-term singleton model are retained. The following asymptotic estimates are tracked separately. Compiled, independently reviewed and standard-axiom audited; Comparator remains unrun."
+      note: "The exact sufficient dimension is proved. The chosen interpolation order yields strict uniform Prony error below the target, leaving a positive neural response budget without adding states. Shared rates, scalar Mandel dimension, empty classes and the exact one-term singleton model are retained. The following asymptotic estimates are tracked separately. Compiled, independently reviewed and standard-axiom audited; Comparator execution status is recorded in STATUS.md."
     - source: "Proposition 4.7"
       tex_label: "prop:no_spectral_stability"
       location: "../paper/main.tex:700"
@@ -114,7 +114,7 @@ alignment:
       comparator_config: "Comparator/multiplication_convergence.json"
       challenge_declarations: ["KVApproximation.Tensor.multiplication_converges"]
       challenge_module: "Challenges.Fields"
-      note: "The paper’s subsequence and dominated-convergence proof compiles, passed two independent reviews and the standard-axiom audit. Comparator remains unrun."
+      note: "The paper’s subsequence and dominated-convergence proof compiles, passed two independent reviews and the standard-axiom audit. Comparator execution status is recorded in STATUS.md."
     - source: "Lemma B.2"
       tex_label: "lem:bv_compact"
       location: "../paper/appendices/appendix_ua.tex:17"
@@ -127,7 +127,7 @@ alignment:
       supporting_challenges: ["KVApproximation.KelvinVoigt.admissibleMaterials_mem_of_tendsto_L1"]
       supporting_module: "KVApproximation.KelvinVoigt.MaterialLimits"
       supporting_comparator_config: "Comparator/material_limits.json"
-      note: "The full compactness proof compiles, passed two independent reviews and the standard-axiom audit. Periodic BV compactness supplies an L¹ subsequence, coefficient closedness preserves all constraints, exact interpolation gives L² convergence, and the material class is the product of the two compact coefficient classes. Comparator remains unrun."
+      note: "The full compactness proof compiles, passed two independent reviews and the standard-axiom audit. Periodic BV compactness supplies an L¹ subsequence, coefficient closedness preserves all constraints, exact interpolation gives L² convergence, and the material class is the product of the two compact coefficient classes. Comparator execution status is recorded in STATUS.md."
     - source: "Proposition B.3"
       tex_label: "prop:strong_conv"
       location: "../paper/appendices/appendix_ua.tex:37"
@@ -138,7 +138,7 @@ alignment:
       challenge_declarations: ["KVApproximation.Homogenization.cell_operators_converge"]
       supporting_declarations: ["KVApproximation.KelvinVoigt.admissibleMaterials_mem_of_tendsto_L1"]
       supporting_comparator_config: "Comparator/material_limits.json"
-      note: "The full operator-convergence contract, including all powers, and the B.2 material-limit-membership bridge compile, passed independent review, and passed the standard-axiom audit. Comparator is unrun."
+      note: "The full operator-convergence contract, including all powers, and the B.2 material-limit-membership bridge compile, passed independent review, and passed the standard-axiom audit. Comparator execution status is recorded in STATUS.md."
     - source: "Corollary B.4"
       tex_label: "cor:continuity_tensors"
       location: "../paper/appendices/appendix_ua.tex:74"
@@ -150,7 +150,7 @@ alignment:
       supporting_challenges: ["KVApproximation.KelvinVoigt.admissibleMaterials_mem_of_tendsto_L1"]
       supporting_module: "KVApproximation.KelvinVoigt.MaterialLimits"
       supporting_comparator_config: "Comparator/material_limits.json"
-      note: "Frobenius convergence of both tensor representatives and the material-limit-membership conclusion compile, passed independent review, and passed the standard-axiom audit. The corollary is split between these two modules. Comparator is unrun."
+      note: "Frobenius convergence of both tensor representatives and the material-limit-membership conclusion compile, passed independent review, and passed the standard-axiom audit. The corollary is split between these two modules. Comparator execution status is recorded in STATUS.md."
     - source: "Lemma B.5"
       tex_label: "lem:weak_convergence"
       location: "../paper/appendices/appendix_ua.tex:87"
@@ -161,7 +161,7 @@ alignment:
       challenge_declarations: ["KVApproximation.Spectral.spectral_measures_converge"]
       supporting_module: "KVApproximation.KelvinVoigt.MaterialLimits"
       supporting_comparator_config: "Comparator/material_limits.json"
-      note: "Compiled, independently reviewed and audited. The PVM/CFC remainder estimate retains the exact mismatch constant; monomial pairings converge on the original corrector space, with both moving arguments and the varying viscous form. Polynomial approximation gives all continuous tests. The separately proved material-limit bridge supplies admissibility. Comparator remains unrun."
+      note: "Compiled, independently reviewed and audited. The PVM/CFC remainder estimate retains the exact mismatch constant; monomial pairings converge on the original corrector space, with both moving arguments and the varying viscous form. Polynomial approximation gives all continuous tests. The separately proved material-limit bridge supplies admissibility. Comparator execution status is recorded in STATUS.md."
     - source: "Lemma B.6"
       tex_label: "lem:weighted_spectral_measure"
       location: "../paper/appendices/appendix_ua.tex:141"
@@ -171,7 +171,7 @@ alignment:
       comparator_configs: ["Comparator/weighted_measure_integration.json", "Comparator/weighted_spectral_continuity.json", "Comparator/weighted_variation_gap.json", "Comparator/weighted_spectral_bound.json"]
       challenge_modules: ["Challenges.WeightedMeasure", "Challenges.SpectralContinuity"]
       challenge_declarations: ["KVApproximation.Spectral.weightedMeasure_properties", "KVApproximation.Spectral.weightedMeasure_variation_le", "KVApproximation.Spectral.weighted_variation_sup_lt", "KVApproximation.Spectral.weighted_spectral_measures_converge"]
-      note: "Positivity, support, weighted-test association, weak continuity, the exact pointwise variation estimate and the strict uniform supremum are proved. The transformed cell identity and static energy bounds give the sharp quadratic estimate; positivity and the orthonormal trace give the exact Frobenius dimension factor. Compiled, independently reviewed and audited; Comparator remains unrun."
+      note: "Positivity, support, weighted-test association, weak continuity, the exact pointwise variation estimate and the strict uniform supremum are proved. The transformed cell identity and static energy bounds give the sharp quadratic estimate; positivity and the orthonormal trace give the exact Frobenius dimension factor. Compiled, independently reviewed and audited; Comparator execution status is recorded in STATUS.md."
     - source: "Lemma B.7"
       tex_label: "lem:weighted_response"
       location: "../paper/appendices/appendix_ua.tex:166"
@@ -181,7 +181,7 @@ alignment:
       comparator_configs: ["Comparator/weighted_response_analytic.json", "Comparator/weighted_response_bound.json"]
       challenge_declarations: ["KVApproximation.Approximation.weightedResponse_entire", "KVApproximation.Approximation.norm_weightedResponse_le"]
       challenge_module: "Challenges.WeightedResponse"
-      note: "Entire parameter dependence follows by dominated complex differentiation on each finite time interval. Integration by parts and the two amplitude bounds give the exact stress-scaled right-half-plane estimate. The integral representative supplies endpoint value bounds; velocities remain merely measurable and essentially bounded. Compiled, independently reviewed and audited; Comparator remains unrun."
+      note: "Entire parameter dependence follows by dominated complex differentiation on each finite time interval. Integration by parts and the two amplitude bounds give the exact stress-scaled right-half-plane estimate. The integral representative supplies endpoint value bounds; velocities remain merely measurable and essentially bounded. Compiled, independently reviewed and audited; Comparator execution status is recorded in STATUS.md."
     - source: "Definition B.8"
       tex_label: "def:prony_series_approximation"
       location: "../paper/appendices/appendix_ua.tex:191"
@@ -190,7 +190,7 @@ alignment:
       definition_modules: ["KVApproximation.Approximation.LogPartition", "KVApproximation.Approximation.Interpolation", "KVApproximation.Approximation.LogProny", "KVApproximation.Approximation.PronyModels", "KVApproximation.Dynamics.PronyModel"]
       completed_modules: ["KVApproximation.Approximation.DimensionEstimates", "KVApproximation.Approximation.LogPartitionIdentities", "KVApproximation.Approximation.LogPatchGeometry", "KVApproximation.Approximation.ChebyshevNodes", "KVApproximation.Approximation.SpectralPartition", "KVApproximation.Approximation.PronyIdentities"]
       comparator_configs: ["Comparator/dimension.json", "Comparator/log_partition_identities.json", "Comparator/log_patch_geometry.json", "Comparator/chebyshev_nodes.json", "Comparator/spectral_partition.json", "Comparator/prony_identities.json"]
-      note: "The logarithmic and spectral weights form continuous nonnegative partitions with the stated patch support and coordinate inverses. Chebyshev nodes are distinct roots, all local rates belong to the common interval, and flattening the indices preserves the kernel exactly. The singleton construction is separate and coefficient tensors may be signed. The definitions and supporting identities are compiled, reviewed and audited; Comparator remains unrun."
+      note: "The logarithmic and spectral weights form continuous nonnegative partitions with the stated patch support and coordinate inverses. Chebyshev nodes are distinct roots, all local rates belong to the common interval, and flattening the indices preserves the kernel exactly. The singleton construction is separate and coefficient tensors may be signed. The definitions and supporting identities are compiled, reviewed and audited; Comparator execution status is recorded in STATUS.md."
     - source: "Lemma B.9"
       tex_label: "lem:uniform_prony_discretization_beta"
       location: "../paper/appendices/appendix_ua.tex:218"
@@ -200,7 +200,7 @@ alignment:
       comparator_configs: ["Comparator/annulus_coefficient_bounds.json", "Comparator/circle_fourier.json", "Comparator/bernstein_geometry.json", "Comparator/chebyshev_nodes.json", "Comparator/chebyshev_analytic.json", "Comparator/chebyshev_series.json", "Comparator/chebyshev_interpolation.json", "Comparator/interpolation_polynomial.json", "Comparator/local_rate_geometry.json", "Comparator/local_chebyshev.json"]
       challenge_modules: ["Challenges.LocalResponse", "Challenges.InterpolationPolynomial", "Challenges.Interpolation", "Challenges.ChebyshevNodes", "Challenges.ChebyshevSeries", "Challenges.BernsteinGeometry", "Challenges.AnnulusCoefficients", "Challenges.CircleFourier", "Challenges.ChebyshevAnalytic"]
       challenge_declarations: ["KVApproximation.Approximation.local_weighted_response_error", "KVApproximation.Approximation.chebyshevInterpolant_degree_lt", "KVApproximation.Approximation.chebyshevInterpolant_error_le"]
-      note: "The Joukowski pullback, annular coefficient deformation, even Fourier expansion, root-node aliasing, exact geometric tail and Banach-space duality prove the generic estimate. The local rate map and the kernel-certified cosine positivity give the exact radius-two specialization. A separate vector-coefficient identity proves the polynomial degree assertion. The error bound includes m=1, time zero, zero stress bound and zero target spaces. All proof stages compiled, independently reviewed and passed the standard-axiom audit. Comparator remains unrun."
+      note: "The Joukowski pullback, annular coefficient deformation, even Fourier expansion, root-node aliasing, exact geometric tail and Banach-space duality prove the generic estimate. The local rate map and the kernel-certified cosine positivity give the exact radius-two specialization. A separate vector-coefficient identity proves the polynomial degree assertion. The error bound includes m=1, time zero, zero stress bound and zero target spaces. All proof stages compiled, independently reviewed and passed the standard-axiom audit. Comparator execution status is recorded in STATUS.md."
     - source: "Proposition B.10"
       tex_label: "prop:uniform_prony_homogenized_model"
       location: "../paper/appendices/appendix_ua.tex:240"
@@ -210,7 +210,7 @@ alignment:
       challenge_declarations: ["KVApproximation.KelvinVoigt.local_prony_error_lt", "KVApproximation.KelvinVoigt.singleton_prony_exact", "KVApproximation.KelvinVoigt.local_prony_coefficient_converges", "KVApproximation.KelvinVoigt.singleton_prony_coefficient_converges", "KVApproximation.Dynamics.pronyState_isKineticSolution", "KVApproximation.Dynamics.pronyStress_eq_kernel_convolution"]
       completed_modules: ["KVApproximation.KelvinVoigt.PronyContinuity", "KVApproximation.Dynamics.PronyConvolution", "KVApproximation.KelvinVoigt.PronySingleton", "KVApproximation.Dynamics.DampedResponseProperties", "KVApproximation.Dynamics.PronyTrajectory", "KVApproximation.KelvinVoigt.MaterialTopology", "KVApproximation.KelvinVoigt.MaterialResponseContinuity", "KVApproximation.Spectral.TensorActionIntegration", "KVApproximation.Spectral.TensorActionFubini", "KVApproximation.Approximation.RealResponseIdentities", "KVApproximation.Approximation.RealLocalChebyshev", "KVApproximation.Approximation.PartitionResponseContinuity", "KVApproximation.Approximation.PartitionResponseError", "KVApproximation.Approximation.PartitionResponseIntegration", "KVApproximation.Approximation.MemoryResponseIntegral", "KVApproximation.Approximation.PronyResponseIntegral", "KVApproximation.Approximation.ResponseMeasurability", "KVApproximation.Dynamics.PronyMeasurability", "KVApproximation.KelvinVoigt.PronyError"]
       comparator_configs: ["Comparator/prony_continuity.json", "Comparator/prony_convolution.json", "Comparator/prony_singleton.json", "Comparator/damped_response.json", "Comparator/prony_trajectory.json", "Comparator/material_topology.json", "Comparator/material_response_continuity.json", "Comparator/tensor_action_integral.json", "Comparator/tensor_action_fubini.json", "Comparator/real_response.json", "Comparator/real_local_chebyshev.json", "Comparator/partition_response_continuity.json", "Comparator/partition_response_error.json", "Comparator/partition_response_integration.json", "Comparator/memory_response.json", "Comparator/prony_response_integral.json", "Comparator/response_measurability.json", "Comparator/prony_measurability.json", "Comparator/prony_error.json"]
-      note: "The full proposition is proved, compiled, independently reviewed and standard-axiom audited. The real response bridge preserves the complex estimate, the nonnegative partition preserves its constant, and tensor-action Fubini identifies the exact memory. Finite signed-coefficient assembly identifies the Prony memory. The common sharp variation bound is applied before all supremums, giving the strict estimate even for empty material classes. Time measurability uses actual interval integrability and a clamped-time representative. One-node interpolation, time zero, singleton spectra and zero measures are retained. Comparator remains unrun."
+      note: "The full proposition is proved, compiled, independently reviewed and standard-axiom audited. The real response bridge preserves the complex estimate, the nonnegative partition preserves its constant, and tensor-action Fubini identifies the exact memory. Finite signed-coefficient assembly identifies the Prony memory. The common sharp variation bound is applied before all supremums, giving the strict estimate even for empty material classes. Time measurability uses actual interval integrability and a clamped-time representative. One-node interpolation, time zero, singleton spectra and zero measures are retained. Comparator execution status is recorded in STATUS.md."
     - source: "Lemma B.11"
       tex_label: "lem:ua_step3_targets"
       location: "../paper/appendices/appendix_ua.tex:284"
@@ -220,7 +220,7 @@ alignment:
       challenge_declarations: ["KVApproximation.KelvinVoigt.local_prony_state_uniform_bound", "KVApproximation.KelvinVoigt.singleton_prony_state_uniform_bound", "KVApproximation.Dynamics.prony_state_bound", "KVApproximation.Dynamics.prony_state_uniform_bound"]
       completed_modules: ["KVApproximation.Dynamics.PronyStateBounds", "KVApproximation.KelvinVoigt.InternalStateBound", "KVApproximation.Tensor.MandelBlockIsometry"]
       comparator_configs: ["Comparator/prony_state_bounds.json", "Comparator/internal_state_bound.json", "Comparator/mandel_blocks.json"]
-      note: "Both concrete Prony branches use compact material classes, continuous Frobenius coefficient bounds, the exact common lower rate, and the prescribed Mandel isometry. Measurability follows from the proved ODE trajectory before taking the full-half-line essential supremum and all material/strain supremums. Empty classes remain included. Compiled, independently reviewed and standard-axiom audited; Comparator unrun."
+      note: "Both concrete Prony branches use compact material classes, continuous Frobenius coefficient bounds, the exact common lower rate, and the prescribed Mandel isometry. Measurability follows from the proved ODE trajectory before taking the full-half-line essential supremum and all material/strain supremums. Empty classes remain included. Compiled, independently reviewed and standard-axiom audited; Comparator execution status is recorded in STATUS.md."
     - source: "Lemma B.12"
       tex_label: "lem:ua_step3_no"
       location: "../paper/appendices/appendix_ua.tex:303"
@@ -230,7 +230,7 @@ alignment:
       challenge_declarations: ["KVApproximation.KelvinVoigt.local_prony_responses_approximate", "KVApproximation.KelvinVoigt.singleton_prony_responses_approximate", "KVApproximation.KelvinVoigt.mandelStressClass_hasUniversalApproximation", "KVApproximation.KelvinVoigt.mandelKineticClass_hasLocallyLipschitzApproximation"]
       completed_modules: ["KVApproximation.NeuralOperators.ResponseDomains", "KVApproximation.NeuralOperators.ResponseApproximation", "KVApproximation.NeuralOperators.CoordinateResponseApproximation", "KVApproximation.NeuralOperators.CoordinateApproximation", "KVApproximation.Analysis.LpCoordinates", "KVApproximation.Analysis.LpProductCoordinates", "KVApproximation.Tensor.MandelFiniteIsometry", "KVApproximation.KelvinVoigt.MaterialResponseApproximation", "KVApproximation.KelvinVoigt.MandelResponseApproximation"]
       comparator_configs: ["Comparator/response_domains.json", "Comparator/response_approximation.json", "Comparator/coordinate_response_approximation.json", "Comparator/material_response_approximation.json", "Comparator/coordinate_classes.json", "Comparator/lp_coordinates.json", "Comparator/lp_product_coordinates.json", "Comparator/mandel_finite_indices.json", "Comparator/mandel_responses.json"]
-      note: "Both concrete material-dependent Prony branches are proved. Applying the two concrete response theorems to mandelStressClass and mandelKineticClass, using their proved A1/A2 transport, gives the paper's scalar-network conclusion and retains original class membership. The compact domains have radius delta_IV + eta and exact scalar dimensions. The material homeomorphism agrees almost everywhere with the prescribed two Mandel coefficient vectors in one L2 channel field; pairing the original maximum-norm material product into a Euclidean-valued field uses a continuous equivalence. State input and derivative output use the same Mandel isometry. Empty classes, zero-dimensional coordinate spaces and signed coefficients are retained. Compiled, independently reviewed and standard-axiom audited; Comparator remains unrun."
+      note: "Both concrete material-dependent Prony branches are proved. Applying the two concrete response theorems to mandelStressClass and mandelKineticClass, using their proved A1/A2 transport, gives the paper's scalar-network conclusion and retains original class membership. The compact domains have radius delta_IV + eta and exact scalar dimensions. The material homeomorphism agrees almost everywhere with the prescribed two Mandel coefficient vectors in one L2 channel field; pairing the original maximum-norm material product into a Euclidean-valued field uses a continuous equivalence. State input and derivative output use the same Mandel isometry. Empty classes, zero-dimensional coordinate spaces and signed coefficients are retained. Compiled, independently reviewed and standard-axiom audited; Comparator execution status is recorded in STATUS.md."
     - source: "Proposition B.13"
       tex_label: "prop:ua_step3_stability"
       location: "../paper/appendices/appendix_ua.tex:361"
@@ -240,7 +240,7 @@ alignment:
       challenge_modules: ["Challenges.PronyDynamics", "Challenges.PronyResponseStability", "Challenges.UniformPronyStability", "Challenges.MaterialResponseStability", "Challenges.DrivenUniqueness", "Challenges.DissipativeStability"]
       completed_modules: ["KVApproximation.Dynamics.PronyDissipation", "KVApproximation.Analysis.ACComparison", "KVApproximation.Analysis.EnergyComparison", "KVApproximation.Analysis.EnergyTrapping", "KVApproximation.Dynamics.Caratheodory", "KVApproximation.Dynamics.CaratheodoryHalfLine", "KVApproximation.Dynamics.DrivenField", "KVApproximation.Dynamics.IntegralCurveRegularity", "KVApproximation.Dynamics.DrivenUniqueness", "KVApproximation.Dynamics.DissipativeStability", "KVApproximation.Dynamics.Stability", "KVApproximation.Dynamics.TrajectoryMaps", "KVApproximation.NeuralOperators.PronyResponseStability", "KVApproximation.NeuralOperators.UniformPronyStability", "KVApproximation.KelvinVoigt.MaterialResponseStability"]
       comparator_configs: ["Comparator/prony_dissipation.json", "Comparator/prony_stress_error.json", "Comparator/ac_comparison.json", "Comparator/energy_comparison.json", "Comparator/energy_trapping.json", "Comparator/caratheodory.json", "Comparator/caratheodory_halfline.json", "Comparator/driven_field.json", "Comparator/integral_curve_regularity.json", "Comparator/driven_uniqueness.json", "Comparator/dissipative_stability.json", "Comparator/kinetic_stability.json", "Comparator/prony_response_stability.json", "Comparator/uniform_prony_stability.json", "Comparator/material_response_stability.json"]
-      note: "Complete for arbitrary qualifying approximators and for both concrete B.11–B.12 Prony constructions. Nonlinear measurable-time existence, original-equation uniqueness, bounded Sobolev regularity and exact finite-time trapping are proved. The two uniform material/strain supremums retain epsilon_G/lambda_min and epsilon_F+sqrt(n)*epsilon_G/lambda_min. Prescribed scalar Mandel coordinates, signed coefficients, empty classes and equality in the margin are preserved. Compact-region Lipschitz extension implements the classical continuation ingredient; its constant never enters the sharp estimates. The nonlinear Picard argument adapts the licensed Tau Ceti v4.35.0 affine construction. Compiled, independently reviewed and standard-axiom audited; Comparator remains unrun."
+      note: "Complete for arbitrary qualifying approximators and for both concrete B.11–B.12 Prony constructions. Nonlinear measurable-time existence, original-equation uniqueness, bounded Sobolev regularity and exact finite-time trapping are proved. The two uniform material/strain supremums retain epsilon_G/lambda_min and epsilon_F+sqrt(n)*epsilon_G/lambda_min. Prescribed scalar Mandel coordinates, signed coefficients, empty classes and equality in the margin are preserved. Compact-region Lipschitz extension implements the classical continuation ingredient; its constant never enters the sharp estimates. The nonlinear Picard argument adapts the licensed Tau Ceti v4.35.0 affine construction. Compiled, independently reviewed and standard-axiom audited; Comparator execution status is recorded in STATUS.md."
     - source: "Results 1–3"
       tex_label: "res:homogenized_model; res:ua; res:complexity"
       location: "../paper/main.tex:104"
@@ -1101,7 +1101,7 @@ alignment:
     - source: "Section 3.1–3.2 and Remark 1.2, coefficient forms and multiplication inverses"
       module: "KVApproximation.OperatorTheory.FieldFormIdentities"
       comparator_config: "Comparator/field_forms.json"
-      note: "Four compiled identities, independently reviewed and audited for standard axioms; Comparator unrun."
+      note: "Four compiled identities, independently reviewed and audited for standard axioms; Comparator execution status is recorded in STATUS.md."
     - source: "Appendix A.1–A.2, finite-dimensional tensor representation and trace"
       module: "KVApproximation.Tensor.FormRepresentation"
       comparator_config: "Comparator/form_representation.json"
@@ -1178,11 +1178,11 @@ alignment:
       declaration: "KVApproximation.OperatorTheory.weightedSpace_realization"
       module: "KVApproximation.OperatorTheory.WeightedRealization"
       comparator_config: "Comparator/weighted_space.json"
-      note: "Compiled, independently reviewed, and audited for standard axioms; Comparator unrun."
+      note: "Compiled, independently reviewed, and audited for standard axioms; Comparator execution status is recorded in STATUS.md."
     - source: "Section 3.2, Appendix A.3, and Remark 1.2, semigroup and zero-memory identities"
       module: "KVApproximation.OperatorTheory.SemigroupIdentities"
       comparator_config: "Comparator/semigroup.json"
-      note: "Six compiled identities, independently reviewed and audited for standard axioms; Comparator unrun."
+      note: "Six compiled identities, independently reviewed and audited for standard axioms; Comparator execution status is recorded in STATUS.md."
     - source: "Appendix A.2, relaxation spectrum and viscous-norm transport"
       module: "KVApproximation.OperatorTheory.SpectralBounds"
       comparator_configs: ["Comparator/relaxation_spectrum.json", "Comparator/spectral_transport.json"]
@@ -1190,7 +1190,7 @@ alignment:
     - source: "Appendix A.1–A.3, memory symmetry and positivity"
       module: "KVApproximation.OperatorTheory.MemoryIdentities"
       comparator_config: "Comparator/memory_identities.json"
-      note: "Four compiled identities, independently reviewed and audited for standard axioms; Comparator unrun."
+      note: "Four compiled identities, independently reviewed and audited for standard axioms; Comparator execution status is recorded in STATUS.md."
     - source: "Section 3.2, exponential decay of the viscous energy"
       declaration: "KVApproximation.OperatorTheory.relaxationSemigroup_energy_le"
       module: "KVApproximation.OperatorTheory.SemigroupDecay"
@@ -1235,11 +1235,11 @@ alignment:
       declaration: "KVApproximation.Spectral.projectionMeasure_hasSum"
       module: "KVApproximation.Spectral.StrongAdditivity"
       comparator_config: "Comparator/strong_additivity.json"
-      note: "Compiled, independently reviewed, and audited for standard axioms; Comparator unrun."
+      note: "Compiled, independently reviewed, and audited for standard axioms; Comparator execution status is recorded in STATUS.md."
     - source: "Appendix A.2 and Lemma B.5, PVM support and continuous integration"
       module: "KVApproximation.Spectral.ContinuousCalculus"
       comparator_config: "Comparator/continuous_calculus.json"
-      note: "Two compiled results, independently reviewed and audited for standard axioms; Comparator unrun."
+      note: "Two compiled results, independently reviewed and audited for standard axioms; Comparator execution status is recorded in STATUS.md."
     - source: "Section 2.1, Frobenius contraction bound"
       declaration: "KVApproximation.Tensor.norm_action_le"
       module: "KVApproximation.Tensor.LinearActionIdentities"
@@ -1273,4 +1273,4 @@ alignment:
     - source: "Section 3.1, bounded energy form"
       declaration: "KVApproximation.Tensor.boundedFieldForm_apply"
       module: "KVApproximation.Tensor.MultiplicationIdentities"
-  supporting_validation: "The final full proof-library and independent-challenge build, including the convenience-root exports, passed 4281 jobs in 158.8 seconds. All 17 numbered proof statements and the included unnumbered claims compile. The production-artifact 722-declaration axiom audit passed in 92.1 seconds with exact query/result coverage and only propext, Classical.choice and Quot.sound. It covers all 702 selected declarations across 331 Comparator configurations and twenty additional definitions or upstream ingredients. All ten isolated subject consumers passed, using copied source closures and only their production artifacts plus external dependency/toolchain paths. The corrected runner rejects external paths exposing any local proof namespace and records the retained paths. These are consumer/import checks; the full library build compiles the dependencies. LeanCert proves the cosine bound in explicit kernel mode. Independent source review found no further substantive omission in the agreed paper scope. Actual evidence is in Verification/results/. Comparator executions and paranoid independent checks remain zero. The user has started the Linux VM, but this session’s sandbox blocks SSH access and its permission policy rejects elevation. Verification/vm.sh is prepared for a normal Terminal run. Referee findings about stale VM sources, stale Comparator records and inherited Lean overrides have been addressed. Syntax, configuration inventory and isolated simulated-failure checks passed. The user has started the VM runner, and Verification/results/vm.log records Linux package provisioning; Comparator itself has not yet started."
+  supporting_validation: "The full Linux proof-library and independent-challenge build, including convenience-root exports, passed 4282 jobs in 1527.0 seconds after the compactness and Green interface repairs. The transitive axiom audit passed all 722 distinct queries in 9.2 seconds, covering all 702 Comparator selections and twenty additional definitions or ingredients, with only propext, Classical.choice and Quot.sound. All ten isolated subject consumers passed after the repairs in 86.8 seconds, using copied source closures and production artifacts with external dependency paths. These are consumer/import checks; the full build compiles the dependencies. LeanCert proves the cosine bound in explicit kernel mode. Independent source review found no further substantive omission in the agreed paper scope. Authoritative sandboxed Comparator uses the pinned Linux toolchain and --paranoid with Lean default, Lean paranoid, lean4lean, nanoda, con-leche and con-ron. GitHub Actions provided 251 preserved successful configurations; the user authorized local Linux completion after exhausting the Actions allowance. All 331 configurations and 702 selected declarations passed the sandboxed comparison and all six kernels: 251 preserved GitHub Actions successes plus 80 local Linux successes. Verification/results/vm/combined/coverage.json records complete coverage with no missing, duplicate, unexpected or invalid results. STATUS.md summarizes the final evidence and resolved findings. Build and audit evidence is in Verification/results/vm/; consumer and metadata records are in Verification/results/."

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/vector_measure_density.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 92.1,
+  "configuration": "vector_measure_density.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.scalarization_withDensity_apply"
+  ],
+  "challenge_module": "Challenges.VectorMeasureDensity",
+  "solution_module": "KVApproximation.Analysis.VectorMeasureDensity",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

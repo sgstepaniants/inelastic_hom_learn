@@ -1,0 +1,28 @@
+Resolving dependencies
+Building Challenges.VariationalStability
+⚠ [2488/2488] Replayed Challenges.VariationalStability
+warning: Comparator/Challenges/VariationalStability.lean:17:8: declaration uses `sorry`
+warning: Comparator/Challenges/VariationalStability.lean:25:8: declaration uses `sorry`
+warning: Comparator/Challenges/VariationalStability.lean:33:8: declaration uses `sorry`
+warning: Comparator/Challenges/VariationalStability.lean:44:8: declaration uses `sorry`
+Build completed successfully (2488 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.OperatorTheory.CoerciveForm.riesz_opNorm_le, KVApproximation.OperatorTheory.projection_sub_norm_le, KVApproximation.OperatorTheory.relaxation_sub_norm_le, KVApproximation.OperatorTheory.relaxation_opNorm_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.VariationalStability
+Building KVApproximation.OperatorTheory.VariationalStability
+Build completed successfully (2700 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.OperatorTheory.CoerciveForm.riesz_opNorm_le, KVApproximation.OperatorTheory.projection_sub_norm_le, KVApproximation.OperatorTheory.relaxation_sub_norm_le, KVApproximation.OperatorTheory.relaxation_opNorm_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.OperatorTheory.VariationalStability
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 19473 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 19476 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 19476 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

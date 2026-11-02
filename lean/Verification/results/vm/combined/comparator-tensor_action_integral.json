@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/tensor_action_integral.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 228.1,
+  "configuration": "tensor_action_integral.json",
+  "theorem_names": [
+    "KVApproximation.Spectral.TensorMeasure.integrable_continuousOn_vector",
+    "KVApproximation.Spectral.tensorActionIntegral_smul",
+    "KVApproximation.Spectral.norm_tensorActionIntegral_le",
+    "KVApproximation.Spectral.weightedMeasure_actionIntegral"
+  ],
+  "challenge_module": "Challenges.TensorActionIntegral",
+  "solution_module": "KVApproximation.Spectral.TensorActionIntegration",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

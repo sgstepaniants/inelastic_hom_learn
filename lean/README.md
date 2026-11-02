@@ -5,8 +5,9 @@ Internal-Variable Models for Inelastic Homogenization: Approximation and
 Complexity*, by Lianghao Cao, George Stepaniants and Andrew M. Stuart.
 The source paper is in [`paper/`](../paper/).
 
-The paper proofs compile and pass the transitive axiom audit. Sandboxed
-Comparator validation is still outstanding. [STATUS.md](STATUS.md) records
+The paper proofs compile and pass the transitive axiom audit. All **331
+Comparator configurations / 702 selected declarations** have passed the
+sandboxed Linux comparison and all six bundled kernels. [STATUS.md](STATUS.md) records
 the source reviews and actual validation outcomes.
 [formalization.yaml](formalization.yaml) maps the paper to Lean declarations;
 [PLAN.md](PLAN.md) specifies the full scope and completion criteria.
@@ -17,15 +18,14 @@ Lean, Mathlib and LeanCert are pinned to **v4.35.0**. With Elan installed,
 run from this directory:
 
 ```sh
-lake update
 lake build KVApproximation Challenges TauCeti ForTauCeti NeuralNetworkProofs
 ```
 
 `KVApproximation` contains the proof library. `Challenges` contains separate
 Comparator statements with designated theorem placeholders. Comparator
 configurations are in `Comparator/`; authoritative sandboxed validation
-requires Linux. The preserved CI results cover 251 of 331 configurations;
-the remaining checks are being recovered in the local Linux VM.
+requires Linux. The complete evidence combines 251 GitHub Actions successes
+with 80 local Linux successes. See the [coverage report](Verification/results/vm/combined/coverage.json).
 
 ## Verification
 

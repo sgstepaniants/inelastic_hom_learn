@@ -1,0 +1,29 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/trajectory_bounds.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 172.6,
+  "configuration": "trajectory_bounds.json",
+  "theorem_names": [
+    "KVApproximation.Dynamics.BoundedTrajectory.norm_velocity_ae_le",
+    "KVApproximation.Dynamics.BoundedTrajectory.velocity_intervalIntegrable",
+    "KVApproximation.Dynamics.BoundedTrajectory.norm_value_sub_le",
+    "KVApproximation.Dynamics.BoundedTrajectory.continuousOn_value",
+    "KVApproximation.Dynamics.BoundedTrajectory.norm_value_le"
+  ],
+  "challenge_module": "Challenges.TrajectoryBounds",
+  "solution_module": "KVApproximation.Dynamics.TrajectoryBounds",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

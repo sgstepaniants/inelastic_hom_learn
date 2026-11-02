@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/volterra_uniqueness.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 134.4,
+  "configuration": "volterra_uniqueness.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.eqOn_zero_of_integrated_memory_eq_zero",
+    "KVApproximation.Analysis.eqOn_of_integrated_memory_eq"
+  ],
+  "challenge_module": "Challenges.VolterraUniqueness",
+  "solution_module": "KVApproximation.Analysis.VolterraUniqueness",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

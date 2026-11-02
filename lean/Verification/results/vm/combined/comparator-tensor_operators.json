@@ -1,0 +1,29 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/tensor_operators.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 208.4,
+  "configuration": "tensor_operators.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.norm_action_le",
+    "KVApproximation.Tensor.action_symmetric",
+    "KVApproximation.Tensor.multiplication_apply_ae",
+    "KVApproximation.Tensor.integrable_fieldPairing",
+    "KVApproximation.Tensor.boundedFieldForm_apply"
+  ],
+  "challenge_module": "Challenges.TensorOperators",
+  "solution_module": "KVApproximation.Tensor.MultiplicationIdentities",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

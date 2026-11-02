@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/weighted_variation_gap.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 26.3,
+  "configuration": "weighted_variation_gap.json",
+  "theorem_names": [
+    "KVApproximation.Spectral.weighted_variation_sup_lt"
+  ],
+  "challenge_module": "Challenges.WeightedMeasure",
+  "solution_module": "KVApproximation.Spectral.BoundEstimates",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

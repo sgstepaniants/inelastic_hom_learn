@@ -1,0 +1,27 @@
+{
+  "runs": [
+    {
+      "platform": "macos",
+      "command": [
+        "python3",
+        "Verification/test_ci.py"
+      ],
+      "tests": 10,
+      "seconds": 0.137,
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "platform": "linux",
+      "command": [
+        "python3",
+        "Verification/test_ci.py"
+      ],
+      "tests": 10,
+      "seconds": 0.032,
+      "exit_code": 0,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

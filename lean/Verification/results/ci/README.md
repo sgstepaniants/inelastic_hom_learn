@@ -1,6 +1,6 @@
-# Partial Comparator evidence
+# Preserved GitHub Actions evidence
 
-As of November 2, 2026, this directory contains **251 configurations / 549 theorem selections** with successful sandboxed Comparator results and acceptance from all six kernels. `coverage.json` deliberately reports incomplete coverage: **80 configurations remain missing**.
+As of November 2, 2026, this directory contains **251 configurations / 549 theorem selections** with successful sandboxed Comparator results and acceptance from all six kernels. `coverage.json` reports this CI subset only, with 80 configurations absent. All 80 subsequently passed in the local Linux VM; the [combined report](../vm/combined/coverage.json) proves complete coverage of 331 configurations and 702 selections.
 
 The evidence comes from these GitHub Actions runs:
 
@@ -11,12 +11,12 @@ The evidence comes from these GitHub Actions runs:
 
 Recovered records include the complete per-configuration output and final JSON result from the original streamed job logs. Their standalone logs omit GitHub's timestamp prefixes; the original job logs are retained under `job-logs/`.
 
-Every saved result has been checked against the current configuration's exact command, challenge module, solution module and theorem selections, with all six acceptance messages and the final Comparator success message. These configurations do not import the Sobolev compactness module or Green modules changed by the pending repairs.
+Every saved result has been checked against the current configuration's exact command, challenge module, solution module and theorem selections, with all six acceptance messages and the final Comparator success message. These configurations do not import the Sobolev compactness module or Green modules changed by the completed repairs.
 
-From `lean/`, inspect complete coverage with:
+From `lean/`, inspect this CI-only subset with:
 
 ```sh
 python3 Verification/collect_comparator.py Verification/results/ci
 ```
 
-The command currently exits unsuccessfully because coverage is incomplete. None of these partial results establishes completion of the full suite.
+This subset command exits unsuccessfully because 80 configurations were completed locally. Check the complete suite with `python3 Verification/collect_comparator.py Verification/results/vm/combined`.
