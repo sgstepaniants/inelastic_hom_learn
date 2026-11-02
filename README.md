@@ -1,6 +1,6 @@
 # Operator Learning for Inelastic Homogenization
 
-Manuscript and Lean formalization for **Operator Learning of
+Lean formalization for **Operator Learning of
 Microstructure-Dependent Internal-Variable Models for Inelastic Homogenization:
 Approximation and Complexity**, by **Lianghao Cao, George Stepaniants, and
 Andrew M. Stuart**.
@@ -13,14 +13,14 @@ approximation guarantees and explicit bounds on the required internal-variable
 dimension. The manuscript also presents numerical experiments on viscoelasticity
 and finite-deformation crystal plasticity.
 
-[Read the manuscript](paper/main.pdf) · [Lean documentation](lean/README.md) ·
+[Reader's guide](lean/READER_GUIDE.md) · [Lean documentation](lean/README.md) ·
 [Formalization status](lean/STATUS.md)
 
 ## Repository contents
 
 | Path | Contents |
 | --- | --- |
-| [`paper/`](paper/) | LaTeX manuscript, bibliography, appendices, figures, and compiled PDF. |
+| `paper/` | Reserved for the final paper. |
 | [`lean/KVApproximation/`](lean/KVApproximation/) | Proof library for analysis, tensors, operator and spectral theory, homogenization, approximation, dynamics, neural operators, and examples. |
 | [`lean/Comparator/`](lean/Comparator/) | Separate challenge statements and Comparator configurations. |
 | [`lean/Verification/`](lean/Verification/) | Build, axiom-audit, and reuse checks, with recorded validation results. |
@@ -53,6 +53,9 @@ Individual modules can also be imported; see the
 
 ## Verification
 
+The [reader's guide](lean/READER_GUIDE.md) describes the mathematical review:
+the statements and definitions, together with the recorded proof checks.
+
 From `lean/`, use Python 3 to run the full build and transitive axiom audit:
 
 ```sh
@@ -84,14 +87,7 @@ Validation logs and machine-readable results are stored in
 
 ## Manuscript
 
-The compiled paper is available as [`paper/main.pdf`](paper/main.pdf). To rebuild
-it with a LaTeX distribution that provides the `elsarticle` class, the packages
-listed in [`paper/package.tex`](paper/package.tex), and `latexmk`:
-
-```sh
-cd paper
-latexmk -pdf main.tex
-```
+The final paper will be added to `paper/`. The folder is currently empty.
 
 ## Licensing
 
