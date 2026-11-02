@@ -14,35 +14,12 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  remaining:
-    name: Recover interrupted configurations, batch ${{ matrix.batch }}
+  pilot:
+    name: Rebuild and validate repaired proofs
     runs-on: ubuntu-22.04
-    timeout-minutes: 180
-    strategy:
-      fail-fast: false
-      max-parallel: 4
-      matrix:
-        include:
-          - batch: 0
-            configurations: >-
-              tensor_operators cell_tensor_bounds korn_symbol periodic_fourier_energy
-              spatial_load weighted_space periodic_bv_compactness rescaled_fields
-              variational_semigroup
-          - batch: 1
-            configurations: >-
-              uniform_prony_stability dirichlet_cutoff lp_product_coordinates
-              periodic_sobolev_bv strip_spectral_edges linear_surrogate periodic_gradient_mean
-              spectral_continuity weighted_variation_gap
-          - batch: 2
-            configurations: >-
-              volterra_uniqueness feedforward_fourier_approximation microscopic_green
-              prony_convolution time_sobolev_laplace_memory mandel_isometries
-              periodic_sobolev_identities strong_multiplication
-          - batch: 3
-            configurations: >-
-              bernstein_geometry fourier_mapping_affine periodic_averaging relaxation_spectrum
-              unweighted_response_integral microscopic_solution_family prony_identities
-              time_sobolev_memory_uniqueness
+    timeout-minutes: 120
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
     defaults:
       run:
         working-directory: lean
@@ -50,6 +27,41 @@ jobs:
       - uses: actions/checkout@v7
         with:
           persist-credentials: false
+      - name: Validate preserved evidence and plan missing checks
+        id: plan
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          import sys
+          sys.path.insert(0, 'Verification')
+          from collect_comparator import collect
+          result = collect(Path('Verification/results/ci'))
+          assert not result['duplicates'] and not result['unexpected']
+          assert not result['failed_or_invalid']
+          missing = {Path(n).stem.removeprefix('comparator-') for n in result['missing']}
+          pilot = {'dirichlet_compactness', 'dirichlet_weak_compactness', 'homogenized_green'}
+          assert pilot <= missing, 'Every repaired pilot configuration must still be missing'
+          remaining = sorted(missing - pilot)
+          assert remaining, 'No matrix recovery checks remain'
+          batches = [remaining[i::min(8, len(remaining))] for i in range(min(8, len(remaining)))]
+          assert set().union(*(set(batch) for batch in batches), pilot) == missing
+          assert sum(map(len, batches)) + len(pilot) == len(missing)
+          matrix = {'include': [{'batch': i, 'configurations': ' '.join(batch)}
+                                for i, batch in enumerate(batches)]}
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('matrix=' + json.dumps(matrix, separators=(',', ':')) + '\n')
+          print(f"Preserved {result['configurations_received']} configurations; "
+                f"running {len(pilot)} pilot and {len(remaining)} recovery checks")
+          root = Path('Verification/results')
+          for pattern in ['build.*', 'axioms.*', 'comparator-*', 'resource-time.log']:
+              for path in root.glob(pattern):
+                  if path.is_file():
+                      path.unlink()
+          PY
+      - name: Check evidence validation
+        run: python3 Verification/test_ci.py
       - name: Free runner disk space
         run: |
           sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL
@@ -60,7 +72,92 @@ jobs:
           path: |
             lean/.elan/toolchains
             lean/.lake
-          key: comparator-linux-4.35.0-v2
+          key: comparator-linux-4.35.0-v3
+          restore-keys: comparator-linux-4.35.0-v2
+      - name: Prepare Lean and verify sandbox support
+        env:
+          COMPARATOR_CACHE_HIT: ${{ steps.cache.outputs.cache-matched-key != '' }}
+        run: bash Verification/ci_setup.sh
+      - name: Build every library and audit axioms after the repair
+        run: python3 Verification/verify.py local
+      - name: Remove downloaded cache archives
+        run: rm -rf .cache/mathlib
+      - uses: actions/cache/save@v6
+        if: steps.cache.outputs.cache-hit != 'true'
+        with:
+          path: |
+            lean/.elan/toolchains
+            lean/.lake
+          key: comparator-linux-4.35.0-v3
+      - name: Require the refreshed shared build cache
+        uses: actions/cache/restore@v6
+        with:
+          path: |
+            lean/.elan/toolchains
+            lean/.lake
+          key: comparator-linux-4.35.0-v3
+          lookup-only: true
+          fail-on-cache-miss: true
+      - name: Reserve swap for kernel checks
+        run: |
+          available_kib=$(df --output=avail / | tail -1)
+          if (( available_kib < 18 * 1024 * 1024 )); then
+            echo "Insufficient disk space for swap and proof exports" >&2
+            exit 1
+          fi
+          sudo fallocate -l 12G /swapfile-comparator
+          sudo chmod 600 /swapfile-comparator
+          sudo mkswap /swapfile-comparator
+          sudo swapon /swapfile-comparator
+          free -m
+      - name: Check compactness and Green interfaces with sandbox and all six kernels
+        run: |
+          /usr/bin/time -v -o Verification/results/resource-time.log \
+            python3 Verification/verify.py comparator \
+              --config dirichlet_compactness --config dirichlet_weak_compactness \
+              --config homogenized_green
+      - name: Preserve repaired pilot evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: comparator-recovery-pilot
+          path: |
+            lean/Verification/results/build.*
+            lean/Verification/results/axioms.*
+            lean/Verification/results/comparator-*
+            lean/Verification/results/resource-time.log
+          retention-days: 14
+
+  remaining:
+    name: Recover missing configurations, batch ${{ matrix.batch }}
+    needs: pilot
+    runs-on: ubuntu-22.04
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix: ${{ fromJSON(needs.pilot.outputs.matrix) }}
+    defaults:
+      run:
+        working-directory: lean
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Clear previous generated outputs
+        run: |
+          rm -f Verification/results/comparator-* Verification/results/resource-time.log
+      - name: Free runner disk space
+        run: |
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL
+          df -h .
+      - uses: actions/cache/restore@v6
+        id: cache
+        with:
+          path: |
+            lean/.elan/toolchains
+            lean/.lake
+          key: comparator-linux-4.35.0-v3
           fail-on-cache-miss: true
       - name: Prepare Lean and verify sandbox support
         env:
@@ -78,8 +175,7 @@ jobs:
           sudo mkswap /swapfile-comparator
           sudo swapon /swapfile-comparator
           free -m
-          df -h .
-      - name: Run the remaining sandboxed paranoid checks
+      - name: Run remaining sandboxed paranoid checks
         env:
           CONFIGURATIONS: ${{ matrix.configurations }}
         run: |
@@ -94,8 +190,50 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: comparator-recovery-${{ matrix.batch }}
+          name: comparator-recovery-batch-${{ matrix.batch }}
           path: |
             lean/Verification/results/comparator-*
             lean/Verification/results/resource-time.log
+          retention-days: 14
+
+  coverage:
+    name: Verify all 331 configurations across saved and recovered results
+    needs: [pilot, remaining]
+    if: always()
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: lean
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v8
+        with:
+          pattern: comparator-recovery-*
+          path: lean/Verification/recovery-uploads
+      - name: Combine evidence without duplicates
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import shutil
+          combined = Path('Verification/recovery-combined')
+          combined.mkdir()
+          sources = [Path('Verification/results/ci'), Path('Verification/recovery-uploads')]
+          for source in sources:
+              for path in sorted(source.rglob('comparator-*.json')):
+                  for item in [path, path.with_suffix('.log')]:
+                      target = combined / item.name
+                      assert not target.exists(), f'Duplicate evidence: {item.name}'
+                      shutil.copyfile(item, target)
+          PY
+      - name: Require complete coverage and all six kernels
+        run: python3 Verification/collect_comparator.py Verification/recovery-combined
+      - name: Preserve combined validation evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: comparator-complete-results
+          path: lean/Verification/recovery-combined
           retention-days: 14
