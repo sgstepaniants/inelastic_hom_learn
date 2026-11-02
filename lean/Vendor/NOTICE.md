@@ -18,10 +18,10 @@ The sources in `ForTauCeti/` come from [AIQ–Kitware's Davis–Kahan formalizat
 
 `BorelCalculus/Polarization.lean` supplies an explicit measurability hypothesis required by Mathlib 4.35's L¹ norm identity.
 
-`ForTauCeti/Analysis/InnerProductSpace/ProjValMeasure/Basic.lean` includes code adapted from [Spectra](https://github.com/adambornemann-glitch/Spectra). Copyright © 2026 Spectra Formalization Project. Author: Adam Bornemann. Apache-2.0. The upstream adaptation changes the namespace to `TauCeti`; its local module documentation has been shortened.
+`ForTauCeti/Analysis/InnerProductSpace/ProjValMeasure/Basic.lean` includes code adapted from [Spectra](https://github.com/adambornemann-glitch/Spectra). Copyright © 2026 Spectra Formalization Project. Author: Adam Bornemann. Apache-2.0. The upstream adaptation changes the namespace to `TauCeti`.
 
 The original copyright and license notices are retained in each source. The license text is in [LICENSE](../LICENSE).
 
-Tau Ceti's `Analysis/Calculus/SegmentIncrement.lean` adapts a result from [DeGiorgi](https://github.com/scottnarmstrong/DeGiorgi), by Scott Armstrong and Julia Kempe, under Apache-2.0. Its local source citation has been shortened.
+Tau Ceti's `Analysis/Calculus/SegmentIncrement.lean` adapts a result from [DeGiorgi](https://github.com/scottnarmstrong/DeGiorgi), by Scott Armstrong and Julia Kempe, under Apache-2.0.
 
-The six selected sources in `NeuralNetworkProofs/` come from [Neural Network Proofs](https://github.com/davorrunje/neural-network-proofs), retrieved on 31 October 2026 from its Lean 4.32.0-rc1 development. Copyright © 2026 Davor Runje. Apache-2.0. They are `ForMathlib/IteratedDerivPolynomial.lean`, `ForMathlib/RidgePowersSpan.lean`, and `UniversalApproximation/Leshno/{ClassM,Family,SmoothEngine,Ridge}.lean`. Only the smooth-activation and ridge-approximation dependency set is included. Module declarations and imports are adapted for Lean 4.35.0; module documentation is shortened. Original copyright and license notices are retained.
+The six selected sources in `NeuralNetworkProofs/` come from [Neural Network Proofs](https://github.com/davorrunje/neural-network-proofs), retrieved on 31 October 2026 from its Lean 4.32.0-rc1 development. Copyright © 2026 Davor Runje. Apache-2.0. They are `ForMathlib/IteratedDerivPolynomial.lean`, `ForMathlib/RidgePowersSpan.lean`, and `UniversalApproximation/Leshno/{ClassM,Family,SmoothEngine,Ridge}.lean`. Only the smooth-activation and ridge-approximation dependency set is included. Module declarations and imports are adapted for Lean 4.35.0. Original copyright and license notices are retained.

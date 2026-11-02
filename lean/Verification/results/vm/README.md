@@ -1,24 +1,29 @@
-# Local Linux validation
+# Local Linux results
 
-All **80 local Comparator configurations** passed with the default Linux
-sandbox and `--paranoid`. Combined with the **251 preserved GitHub Actions
-successes**, the suite covers **331 configurations and 702 selected
-declarations**, with acceptance from all six kernels: Lean default, Lean
-paranoid, lean4lean, nanoda, con-leche and con-ron.
+All **80 local Comparator configurations** passed with the default Linux sandbox
+and `--paranoid`. Together with the 251 GitHub Actions results, they cover
+**331 configurations and 702 selected declarations**. Every configuration was
+accepted by Lean default, Lean paranoid, lean4lean, nanoda, con-leche and con-ron.
 
-The complete evidence is in `combined/`; `combined/coverage.json` reports
-`passed: true`, with no missing, duplicate, unexpected or invalid records.
-Each result has its complete per-configuration log. Original local results
-are in `local/`, and the preserved CI inputs are in `../ci/`.
+## Records
 
-The Lima VM used Debian ARM Linux, four CPUs, 8 GiB RAM and the pinned Lean
-4.35.0 toolchain. The bubblewrap isolation probe passed. On November 2,
-2026, the full build passed all 4,282 jobs in 1,527.0 seconds; the transitive
-axiom audit passed all 722 queries in 9.2 seconds, with only
-`Classical.choice`, `Quot.sound` and `propext`. Complete records and logs are
-`build.json`, `build.log`, `axioms.json` and `axioms.log`.
+| Path | Contents |
+| --- | --- |
+| `combined/` | The 331 result/log pairs and complete `coverage.json`. |
+| `local/` | The 80 local result/log pairs. |
+| `../ci/` | The 251 GitHub Actions inputs. |
+| `build.json`, `build.log` | Full build record and output. |
+| `axioms.json`, `axioms.log` | Transitive axiom audit record and output. |
+| `runner.log` | Local execution transcript. |
 
-Three repaired pilot configurations ran serially:
+## Environment and execution
+
+The Lima VM used Debian ARM Linux, four CPUs, 8 GiB RAM and Lean 4.35.0.
+On November 2, 2026, the build passed 4,282 jobs in 1,527.0 seconds. The axiom
+audit passed 722 queries in 9.2 seconds, reporting `Classical.choice`,
+`Quot.sound` and `propext`.
+
+The bubblewrap isolation probe passed. Three pilot configurations ran serially:
 
 | Configuration | Seconds | Selections |
 | --- | ---: | ---: |
@@ -26,16 +31,11 @@ Three repaired pilot configurations ran serially:
 | `dirichlet_weak_compactness` | 405.8 | 1 |
 | `homogenized_green` | 1,701.4 | 2 |
 
-The other 77 comparisons ran with two concurrent workers. The full local
-execution transcript is `runner.log`. Direct byte comparison confirmed
-that all 1,085 proof and configuration files matched the workspace.
+The other 77 comparisons used two concurrent workers. Direct byte comparison
+confirmed that the VM's 1,085 proof and configuration files matched the workspace.
 
-From `lean/`, validate the complete preserved evidence with:
+From `lean/`, validate the combined collection with:
 
 ```sh
 python3 Verification/collect_comparator.py Verification/results/vm/combined
 ```
-
-The complete suite passed without weakening the sandbox or omitting any
-kernel. GitHub's earlier interrupted runs remain historical partial runs;
-the combined evidence records the final successful validation.

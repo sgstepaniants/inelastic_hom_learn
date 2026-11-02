@@ -51,7 +51,7 @@ import KVApproximation
 Individual modules can also be imported; see the
 [Lean README](lean/README.md) for examples and module organization.
 
-## Verification and status
+## Verification
 
 From `lean/`, use Python 3 to run the full build and transitive axiom audit:
 
@@ -71,8 +71,7 @@ consumers. **All 331 Comparator configurations / 702 selected declarations passe
 the sandboxed Linux comparison and all six bundled kernels.** The
 [complete coverage report](lean/Verification/results/vm/combined/coverage.json)
 combines 251 GitHub Actions successes with 80 local Linux successes. See
-[`lean/STATUS.md`](lean/STATUS.md) for the precise scope, qualifications, and
-validation evidence.
+[`lean/STATUS.md`](lean/STATUS.md) for proof coverage and verification methods.
 
 On Linux with bubblewrap, run the sandboxed checks from `lean/`:
 
@@ -96,6 +95,6 @@ latexmk -pdf main.tex
 
 ## Licensing
 
-The new Lean code is licensed under [Apache-2.0](lean/LICENSE). Vendored sources
+The project Lean code is licensed under [Apache-2.0](lean/LICENSE). Vendored sources
 retain their upstream licenses and attribution; see
 [`lean/Vendor/NOTICE.md`](lean/Vendor/NOTICE.md).

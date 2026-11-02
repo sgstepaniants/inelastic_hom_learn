@@ -5,12 +5,12 @@ Internal-Variable Models for Inelastic Homogenization: Approximation and
 Complexity*, by Lianghao Cao, George Stepaniants and Andrew M. Stuart.
 The source paper is in [`paper/`](../paper/).
 
-The paper proofs compile and pass the transitive axiom audit. All **331
-Comparator configurations / 702 selected declarations** have passed the
-sandboxed Linux comparison and all six bundled kernels. [STATUS.md](STATUS.md) records
-the source reviews and actual validation outcomes.
+All **331 Comparator configurations and 702 selected declarations** passed
+the sandboxed Linux comparison and all six bundled kernels. The build,
+transitive axiom audit and subject consumer checks also passed.
+[STATUS.md](STATUS.md) summarizes the coverage and verification results.
 [formalization.yaml](formalization.yaml) maps the paper to Lean declarations;
-[PLAN.md](PLAN.md) specifies the full scope and completion criteria.
+[PLAN.md](PLAN.md) describes the scope and proof structure.
 
 ## Build
 
@@ -23,9 +23,9 @@ lake build KVApproximation Challenges TauCeti ForTauCeti NeuralNetworkProofs
 
 `KVApproximation` contains the proof library. `Challenges` contains separate
 Comparator statements with designated theorem placeholders. Comparator
-configurations are in `Comparator/`; authoritative sandboxed validation
-requires Linux. The complete evidence combines 251 GitHub Actions successes
-with 80 local Linux successes. See the [coverage report](Verification/results/vm/combined/coverage.json).
+configurations are in `Comparator/`. Sandboxed validation runs on Linux.
+The [coverage report](Verification/results/vm/combined/coverage.json) combines
+251 GitHub Actions results with 80 local Linux results.
 
 ## Verification
 
@@ -60,12 +60,11 @@ Use **Actions → Sandboxed Comparator → Run workflow** to start a full run or
 select `pilot` to measure setup and representative checks. Relevant source and
 runner changes pushed to `main` also start a full run. The workflow retains logs
 and result records for 14 days and verifies that all configurations, theorem
-selections, and six kernel acceptance records are present. A successful pilot
-alone is not complete validation.
+selections, and six kernel acceptance records are present.
 
-The dependency/build cache uses the explicit key `comparator-linux-4.35.0-v2`.
+The dependency/build cache uses the key `comparator-linux-4.35.0-v2`.
 Update this release-labelled key when changing the pinned toolchain or dependency
-set. Lean/Lake still checks source freshness when building restored artifacts.
+set. Lean/Lake checks source freshness when building restored artifacts.
 The workflow frees unused preinstalled SDKs on its disposable runners and
 requires the shared build cache to exist before starting the shards.
 
@@ -82,8 +81,7 @@ the shard result directories and check complete coverage with:
 python3 Verification/collect_comparator.py path/to/collected-shard-results
 ```
 
-For the prepared Lima VM on macOS, start the VM and run this from a normal
-Terminal:
+For the prepared Lima VM on macOS, start the VM and run:
 
 ```sh
 bash Verification/vm.sh
@@ -92,9 +90,9 @@ bash Verification/vm.sh
 The script copies the proof sources and preserved CI evidence, installs the
 pinned Linux toolchain and bubblewrap, rebuilds every library and audits its
 axioms. It then runs only missing or failed configurations, with the default
-sandbox and all six kernels. The three repaired pilot configurations run first.
-Each local result is retained immediately inside the VM, so an interrupted run
-can resume without repeating successful checks. After the serial pilot, the
+sandbox and all six kernels. The compactness and Green pilot configurations
+run first. Each local result is retained immediately inside the VM, so an
+interrupted run can resume without repeating successful checks. After the serial pilot, the
 runner allows at most two concurrent checks when its measured memory use fits
 the VM; otherwise it continues serially.
 
@@ -102,8 +100,8 @@ Terminal output is saved to `Verification/results/vm/runner.log`; build, audit,
 local and combined result files are copied there when the run ends. The combined
 coverage report must account for all 331 configurations and 702 selections.
 Use `--prepare-only` to install dependencies without starting validation.
-Resume saved evidence only with unchanged proof sources; after a proof edit,
-discard and rerun every affected configuration's earlier result.
+Saved results apply to the proof sources used in their run. After a proof edit,
+rerun the affected configurations.
 
 Check subject reuse after building:
 

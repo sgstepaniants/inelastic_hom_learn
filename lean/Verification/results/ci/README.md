@@ -1,22 +1,37 @@
-# Preserved GitHub Actions evidence
+# GitHub Actions results
 
-As of November 2, 2026, this directory contains **251 configurations / 549 theorem selections** with successful sandboxed Comparator results and acceptance from all six kernels. `coverage.json` reports this CI subset only, with 80 configurations absent. All 80 subsequently passed in the local Linux VM; the [combined report](../vm/combined/coverage.json) proves complete coverage of 331 configurations and 702 selections.
+This directory contains **251 configurations and 549 selected declarations**
+that passed sandboxed Comparator and all six kernel checks. The remaining 80
+configurations were completed in the local Linux VM. The
+[combined coverage report](../vm/combined/coverage.json) contains all 331
+configurations and 702 declarations.
 
-The evidence comes from these GitHub Actions runs:
+## Source runs
 
-- [Main run](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41347378153): completed shards 2, 3, 4, 13, 14 and 15; 19 successful checks from shard 11; 49 completed checks recovered from interrupted shards 0, 1, 5, 7, 8, 9 and 10; and two corrected-pilot checks (`constant_spatial_form` and `global_positive_interpolation`) whose full-shard logs were unavailable. The main run has ended without complete coverage. Shard 11's unsuccessful Green comparison is excluded.
-- [First recovery](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41359484670): 30 configurations.
-- [Second recovery](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41360863053): 15 configurations.
-- [Third recovery](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41361562095): 13 configurations.
+| Run | Configurations |
+| --- | ---: |
+| [Main run](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41347378153) | 193 |
+| [First recovery](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41359484670) | 30 |
+| [Second recovery](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41360863053) | 15 |
+| [Third recovery](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41361562095) | 13 |
 
-Recovered records include the complete per-configuration output and final JSON result from the original streamed job logs. Their standalone logs omit GitHub's timestamp prefixes; the original job logs are retained under `job-logs/`.
+The main run supplied the completed shards 2, 3, 4, 13, 14 and 15; nineteen
+results from shard 11; forty-nine results from the streamed logs of interrupted
+shards 0, 1, 5, 7, 8, 9 and 10; and the pilot results for
+`constant_spatial_form` and `global_positive_interpolation`.
 
-Every saved result has been checked against the current configuration's exact command, challenge module, solution module and theorem selections, with all six acceptance messages and the final Comparator success message. These configurations do not import the Sobolev compactness module or Green modules changed by the completed repairs.
+Recovered records contain the per-configuration output and final JSON result
+from the streamed job logs. Standalone logs omit GitHub's timestamp prefixes;
+the original logs are retained under `job-logs/`.
 
-From `lean/`, inspect this CI-only subset with:
+The collector checks each record's command, challenge and solution modules,
+selected declarations, six kernel acceptance messages and Comparator success
+message. These CI configurations are independent of the compactness and Green
+modules modified during validation.
+
+`coverage.json` describes this 251-configuration CI subset. From `lean/`, check
+the complete combined collection with:
 
 ```sh
-python3 Verification/collect_comparator.py Verification/results/ci
+python3 Verification/collect_comparator.py Verification/results/vm/combined
 ```
-
-This subset command exits unsuccessfully because 80 configurations were completed locally. Check the complete suite with `python3 Verification/collect_comparator.py Verification/results/vm/combined`.
