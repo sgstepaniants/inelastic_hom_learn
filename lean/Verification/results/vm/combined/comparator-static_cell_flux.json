@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/static_cell_flux.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 345.2,
+  "configuration": "static_cell_flux.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.exists_unique_static_corrector",
+    "KVApproximation.Homogenization.cellFlux_apply_ae",
+    "KVApproximation.Homogenization.cellFlux_orthogonal_periodic",
+    "KVApproximation.Homogenization.cellFlux_mean_pairing"
+  ],
+  "challenge_module": "Challenges.StaticCellFlux",
+  "solution_module": "KVApproximation.Homogenization.StaticCellFluxProperties",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,31 @@
+Resolving dependencies
+Building Challenges.PeriodicFourier
+⚠ [3075/3075] Replayed Challenges.PeriodicFourier
+warning: Comparator/Challenges/PeriodicFourier.lean:17:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicFourier.lean:27:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicFourier.lean:34:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicFourier.lean:40:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicFourier.lean:49:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicFourier.lean:60:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicFourier.lean:68:8: declaration uses `sorry`
+Build completed successfully (3075 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.mFourier_toCell, KVApproximation.Analysis.contDiff_mFourier_lift, KVApproximation.Analysis.fderiv_mFourier_lift_apply, KVApproximation.Analysis.HasPeriodicWeakGradient.integral_complex_test, KVApproximation.Analysis.HasPeriodicWeakGradient.fourier_coefficient, KVApproximation.Analysis.eq_of_fourier_integrals_eq, KVApproximation.Analysis.HasPeriodicWeakGradient.gradient_unique, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.PeriodicFourier
+Building KVApproximation.Analysis.PeriodicFourierCoefficients
+Build completed successfully (3123 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.mFourier_toCell, KVApproximation.Analysis.contDiff_mFourier_lift, KVApproximation.Analysis.fderiv_mFourier_lift_apply, KVApproximation.Analysis.HasPeriodicWeakGradient.integral_complex_test, KVApproximation.Analysis.HasPeriodicWeakGradient.fourier_coefficient, KVApproximation.Analysis.eq_of_fourier_integrals_eq, KVApproximation.Analysis.HasPeriodicWeakGradient.gradient_unique, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.PeriodicFourierCoefficients
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 43142 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 43145 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 43145 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

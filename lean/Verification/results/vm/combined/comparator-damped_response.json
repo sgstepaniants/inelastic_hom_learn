@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/damped_response.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 290.4,
+  "configuration": "damped_response.json",
+  "theorem_names": [
+    "KVApproximation.Dynamics.norm_dampedResponse_le",
+    "KVApproximation.Dynamics.continuousOn_dampedResponse",
+    "KVApproximation.Dynamics.dampedResponse_integral_eq",
+    "KVApproximation.Dynamics.dampedResponse_trajectory"
+  ],
+  "challenge_module": "Challenges.DampedResponse",
+  "solution_module": "KVApproximation.Dynamics.DampedResponseProperties",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

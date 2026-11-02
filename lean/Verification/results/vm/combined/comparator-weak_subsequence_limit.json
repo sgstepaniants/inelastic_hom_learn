@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/weak_subsequence_limit.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 54.2,
+  "configuration": "weak_subsequence_limit.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.exists_test_limit_of_unique_test_values",
+    "KVApproximation.Analysis.exists_test_limit_of_unique_subsequences",
+    "KVApproximation.Analysis.exists_weak_limit_of_unique_subsequences"
+  ],
+  "challenge_module": "Challenges.WeakSubsequenceLimit",
+  "solution_module": "KVApproximation.Analysis.WeakSubsequenceLimit",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

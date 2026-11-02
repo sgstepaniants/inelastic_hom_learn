@@ -1,0 +1,103 @@
+Resolving dependencies
+Building Challenges.VectorRidgeApproximation
+⚠ [2548/2548] Replayed Challenges.VectorRidgeApproximation
+warning: Comparator/Challenges/VectorRidgeApproximation.lean:18:8: declaration uses `sorry`
+warning: Comparator/Challenges/VectorRidgeApproximation.lean:32:8: declaration uses `sorry`
+Build completed successfully (2548 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.exists_vector_ridge_approximation, KVApproximation.Approximation.exists_finite_feature_ridge_approximation, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.VectorRidgeApproximation
+Building KVApproximation.Approximation.VectorRidgeApproximation
+⚠ [2650/2680] Replayed NeuralNetworkProofs.UniversalApproximation.Leshno.ClassM
+warning: Vendor/NeuralNetworkProofs/UniversalApproximation/Leshno/ClassM.lean:49:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+⚠ [2724/2838] Replayed NeuralNetworkProofs.UniversalApproximation.Leshno.SmoothEngine
+warning: Vendor/NeuralNetworkProofs/UniversalApproximation/Leshno/SmoothEngine.lean:130:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Vendor/NeuralNetworkProofs/UniversalApproximation/Leshno/SmoothEngine.lean:309:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [2751/2838] Replayed NeuralNetworkProofs.UniversalApproximation.Leshno.Family
+warning: Vendor/NeuralNetworkProofs/UniversalApproximation/Leshno/Family.lean:104:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [2833/2838] Replayed NeuralNetworkProofs.ForMathlib.RidgePowersSpan
+warning: Vendor/NeuralNetworkProofs/ForMathlib/RidgePowersSpan.lean:115:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Vendor/NeuralNetworkProofs/ForMathlib/RidgePowersSpan.lean:117:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: Vendor/NeuralNetworkProofs/ForMathlib/RidgePowersSpan.lean:198:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: Vendor/NeuralNetworkProofs/ForMathlib/RidgePowersSpan.lean:215:28: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Vendor/NeuralNetworkProofs/ForMathlib/RidgePowersSpan.lean:216:43: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [2834/2838] Replayed NeuralNetworkProofs.UniversalApproximation.Leshno.Ridge
+warning: Vendor/NeuralNetworkProofs/UniversalApproximation/Leshno/Ridge.lean:197:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [2837/2838] Replayed KVApproximation.Approximation.VectorFiniteFeatures
+warning: KVApproximation/Approximation/VectorFiniteFeatures.lean:23:45: This simp argument is unused:
+  PiLp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [WithLp.ofLp_sum, Finset.sum_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2838/2838] Replayed KVApproximation.Approximation.VectorRidgeApproximation
+warning: KVApproximation/Approximation/VectorRidgeApproximation.lean:29:45: This simp argument is unused:
+  PiLp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [WithLp.ofLp_sum, Finset.sum_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (2838 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.exists_vector_ridge_approximation, KVApproximation.Approximation.exists_finite_feature_ridge_approximation, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Approximation.VectorRidgeApproximation
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 32259 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 32262 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 32262 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

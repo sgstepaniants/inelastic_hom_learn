@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/material_response_continuity.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 488.0,
+  "configuration": "material_response_continuity.json",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.continuous_cell_viscosity",
+    "KVApproximation.KelvinVoigt.continuous_cell_elasticity",
+    "KVApproximation.KelvinVoigt.continuous_local_prony_coefficient",
+    "KVApproximation.KelvinVoigt.continuous_singleton_prony_coefficient"
+  ],
+  "challenge_module": "Challenges.MaterialResponseContinuity",
+  "solution_module": "KVApproximation.KelvinVoigt.MaterialResponseContinuity",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,29 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/coercive_solvers.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 58.0,
+  "configuration": "coercive_solvers.json",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.CoerciveForm.solveL_spec",
+    "KVApproximation.OperatorTheory.relativeRiesz_spec",
+    "KVApproximation.OperatorTheory.variational_equation_iff",
+    "KVApproximation.OperatorTheory.CoerciveForm.norm_solveL_le",
+    "KVApproximation.OperatorTheory.relativeRiesz_opNorm_le"
+  ],
+  "challenge_module": "Challenges.CoerciveSolvers",
+  "solution_module": "KVApproximation.OperatorTheory.CoerciveSolverProperties",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

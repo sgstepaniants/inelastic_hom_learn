@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/field_bounds.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 198.9,
+  "configuration": "field_bounds.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.hasFieldBounds_iff_ae"
+  ],
+  "challenge_module": "Challenges.Fields",
+  "solution_module": "KVApproximation.Tensor.FieldBounds",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,30 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/semigroup.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 118.0,
+  "configuration": "semigroup.json",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.relaxationSemigroup_zero",
+    "KVApproximation.OperatorTheory.relaxationSemigroup_add",
+    "KVApproximation.OperatorTheory.relaxationSemigroup_commute",
+    "KVApproximation.OperatorTheory.relaxationSemigroup_continuous",
+    "KVApproximation.OperatorTheory.mismatch_self",
+    "KVApproximation.OperatorTheory.memoryForm_self"
+  ],
+  "challenge_module": "Challenges.MemoryKernel",
+  "solution_module": "KVApproximation.OperatorTheory.SemigroupIdentities",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/constant_strain.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 138.5,
+  "configuration": "constant_strain.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.norm_constantStrain"
+  ],
+  "challenge_module": "Challenges.PeriodicSobolev",
+  "solution_module": "KVApproximation.Homogenization.ConstantStrainIdentities",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

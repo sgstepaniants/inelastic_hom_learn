@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/cfc_laplace.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 415.3,
+  "configuration": "cfc_laplace.json",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.integrable_cfc_memory_laplace",
+    "KVApproximation.OperatorTheory.halfLineLaplace_cfc_memory"
+  ],
+  "challenge_module": "Challenges.CfcLaplace",
+  "solution_module": "KVApproximation.OperatorTheory.CfcLaplace",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

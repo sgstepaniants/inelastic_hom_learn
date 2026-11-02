@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/tensor_variation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 86.1,
+  "configuration": "tensor_variation.json",
+  "theorem_names": [
+    "KVApproximation.Spectral.TensorMeasure.variation_le_trace"
+  ],
+  "challenge_module": "Challenges.TensorRepresentation",
+  "solution_module": "KVApproximation.Spectral.TensorVariation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,29 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/bernstein_geometry.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 74.9,
+  "configuration": "bernstein_geometry.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.joukowski_inv",
+    "KVApproximation.Analysis.joukowski_unit",
+    "KVApproximation.Approximation.joukowski_mem_bernsteinEllipse",
+    "KVApproximation.Approximation.real_mem_bernsteinEllipse",
+    "KVApproximation.Approximation.bernsteinEllipse_im_le"
+  ],
+  "challenge_module": "Challenges.BernsteinGeometry",
+  "solution_module": "KVApproximation.Approximation.BernsteinGeometry",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

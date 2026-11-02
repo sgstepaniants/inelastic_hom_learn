@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_rescaling_lp.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 133.7,
+  "configuration": "periodic_rescaling_lp.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.map_scaledToCell_restrict_periodicBox",
+    "KVApproximation.Analysis.exists_rescaling_measure_bound",
+    "KVApproximation.Analysis.exists_eLpNorm_two_rescalePeriodic_bound",
+    "KVApproximation.Analysis.memLp_two_rescalePeriodic"
+  ],
+  "challenge_module": "Challenges.PeriodicRescalingLp",
+  "solution_module": "KVApproximation.Analysis.PeriodicRescalingLp",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

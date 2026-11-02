@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/cell_continuity.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 290.2,
+  "configuration": "cell_continuity.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.cell_operators_converge",
+    "KVApproximation.Homogenization.effective_tensors_converge"
+  ],
+  "challenge_module": "Challenges.CellContinuity",
+  "solution_module": "KVApproximation.Homogenization.CellConvergence",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

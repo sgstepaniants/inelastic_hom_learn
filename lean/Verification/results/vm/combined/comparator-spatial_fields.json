@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/spatial_fields.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 307.0,
+  "configuration": "spatial_fields.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.symmetricGradientL_apply_ae",
+    "KVApproximation.Homogenization.symmetricGradient_memLp",
+    "KVApproximation.Homogenization.loadPairing_eq_inner",
+    "KVApproximation.Homogenization.abs_loadPairing_le"
+  ],
+  "challenge_module": "Challenges.SpatialFields",
+  "solution_module": "KVApproximation.Homogenization.SpatialFields",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

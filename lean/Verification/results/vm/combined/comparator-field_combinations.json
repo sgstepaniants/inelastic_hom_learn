@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/field_combinations.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 190.7,
+  "configuration": "field_combinations.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.fieldPairing_add_smul",
+    "KVApproximation.Tensor.HasFieldBounds.add_smul"
+  ],
+  "challenge_module": "Challenges.FieldCombinations",
+  "solution_module": "KVApproximation.Tensor.FieldCombinations",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/activated_fourier_chain.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 250.5,
+  "configuration": "activated_fourier_chain.json",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.ActivatedFourierChain.eval_congr_ae",
+    "KVApproximation.NeuralOperators.ActivatedFourierChain.memLp_eval",
+    "KVApproximation.NeuralOperators.ActivatedFourierChain.exists_lipschitz_evalLp",
+    "KVApproximation.NeuralOperators.FourierChain.withActivation_eval"
+  ],
+  "challenge_module": "Challenges.ActivatedFourierChain",
+  "solution_module": "KVApproximation.NeuralOperators.ActivatedFourierChainProperties",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

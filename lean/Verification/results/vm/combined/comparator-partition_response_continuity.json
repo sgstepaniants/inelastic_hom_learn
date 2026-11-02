@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/partition_response_continuity.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 169.9,
+  "configuration": "partition_response_continuity.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.continuousOn_partitionResponse"
+  ],
+  "challenge_module": "Challenges.PartitionResponse",
+  "solution_module": "KVApproximation.Approximation.PartitionResponseContinuity",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

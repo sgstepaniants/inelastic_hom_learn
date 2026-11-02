@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/strip_bv.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 293.0,
+  "configuration": "strip_bv.json",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.eLpNorm_stripElasticity_le",
+    "KVApproximation.KelvinVoigt.periodicVariation_stripElasticity_le",
+    "KVApproximation.KelvinVoigt.periodicBVNorm_identityElasticity",
+    "KVApproximation.KelvinVoigt.periodicBVNorm_stripElasticity_le"
+  ],
+  "challenge_module": "Challenges.StripBV",
+  "solution_module": "KVApproximation.KelvinVoigt.StripBV",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

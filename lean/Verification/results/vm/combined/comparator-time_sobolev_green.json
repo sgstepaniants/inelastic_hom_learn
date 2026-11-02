@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/time_sobolev_green.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 534.8,
+  "configuration": "time_sobolev_green.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.TimeH1.memory_equation_of_green_trace"
+  ],
+  "challenge_module": "Challenges.TimeSobolevGreen",
+  "solution_module": "KVApproximation.Analysis.TimeSobolevGreen",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

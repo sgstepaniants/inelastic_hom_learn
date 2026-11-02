@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/hilbert_weak_compactness.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 93.8,
+  "configuration": "hilbert_weak_compactness.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.exists_weakly_convergent_subsequence"
+  ],
+  "challenge_module": "Challenges.HilbertWeakCompactness",
+  "solution_module": "KVApproximation.Analysis.HilbertWeakCompactness",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

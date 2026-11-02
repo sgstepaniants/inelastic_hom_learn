@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/pvm_compression.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 214.2,
+  "configuration": "pvm_compression.json",
+  "theorem_names": [
+    "KVApproximation.Spectral.pvmCompression_exists_unique",
+    "KVApproximation.Spectral.pvmCompression_positive_trace",
+    "KVApproximation.Spectral.pvmCompression_integral_diag"
+  ],
+  "challenge_module": "Challenges.PVMCompression",
+  "solution_module": "KVApproximation.Spectral.FiniteCompression",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

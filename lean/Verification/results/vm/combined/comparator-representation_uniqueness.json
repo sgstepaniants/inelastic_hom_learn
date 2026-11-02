@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/representation_uniqueness.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 202.4,
+  "configuration": "representation_uniqueness.json",
+  "theorem_names": [
+    "KVApproximation.Spectral.spectral_representation_unique"
+  ],
+  "challenge_module": "Challenges.SpectralContinuity",
+  "solution_module": "KVApproximation.Spectral.RepresentationUniqueness",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

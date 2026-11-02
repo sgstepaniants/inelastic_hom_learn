@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_compactness.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 196.1,
+  "configuration": "periodic_compactness.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.isCompact_closure_of_periodic_translations"
+  ],
+  "challenge_module": "Challenges.PeriodicCompactness",
+  "solution_module": "KVApproximation.Analysis.PeriodicCompactness",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

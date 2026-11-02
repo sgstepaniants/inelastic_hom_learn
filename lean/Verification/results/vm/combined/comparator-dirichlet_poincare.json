@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/dirichlet_poincare.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 445.7,
+  "configuration": "dirichlet_poincare.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.ZeroBoundaryH1.poincare_of_subset_ball",
+    "KVApproximation.Analysis.ZeroBoundaryH1.exists_poincare_constant"
+  ],
+  "challenge_module": "Challenges.DirichletPoincare",
+  "solution_module": "KVApproximation.Analysis.DirichletPoincare",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

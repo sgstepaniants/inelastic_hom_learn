@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/cell_displacement_stress.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 409.0,
+  "configuration": "cell_displacement_stress.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.periodicCellStress_apply_ae",
+    "KVApproximation.Homogenization.averagedCellStress_pairing"
+  ],
+  "challenge_module": "Challenges.CellDisplacement",
+  "solution_module": "KVApproximation.Homogenization.CellDisplacementStress",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/memory_response.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 337.4,
+  "configuration": "memory_response.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.memory_eq_weightedResponseIntegral"
+  ],
+  "challenge_module": "Challenges.MemoryResponse",
+  "solution_module": "KVApproximation.Approximation.MemoryResponseIntegral",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

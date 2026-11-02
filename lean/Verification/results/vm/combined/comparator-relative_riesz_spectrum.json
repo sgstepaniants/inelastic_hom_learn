@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/relative_riesz_spectrum.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 322.6,
+  "configuration": "relative_riesz_spectrum.json",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.relativeRiesz_spectrum_subset"
+  ],
+  "challenge_module": "Challenges.RelativeRieszSpectrum",
+  "solution_module": "KVApproximation.OperatorTheory.RelativeRieszSpectrum",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

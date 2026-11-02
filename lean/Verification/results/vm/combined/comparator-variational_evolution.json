@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/variational_evolution.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 562.8,
+  "configuration": "variational_evolution.json",
+  "theorem_names": [
+    "KVApproximation.Dynamics.variational_timeH1_exists_unique",
+    "KVApproximation.Dynamics.variational_timeH1_duhamel"
+  ],
+  "challenge_module": "Challenges.VariationalEvolution",
+  "solution_module": "KVApproximation.Dynamics.VariationalEvolution",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

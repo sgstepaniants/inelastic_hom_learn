@@ -1,0 +1,41 @@
+Resolving dependencies
+Building Challenges.TimeSobolevMaps
+⚠ [3189/3189] Replayed Challenges.TimeSobolevMaps
+warning: Comparator/Challenges/TimeSobolevMaps.lean:20:8: declaration uses `sorry`
+warning: Comparator/Challenges/TimeSobolevMaps.lean:26:8: declaration uses `sorry`
+warning: Comparator/Challenges/TimeSobolevMaps.lean:34:8: declaration uses `sorry`
+Build completed successfully (3189 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.TimeH1.eq_of_value_ae, KVApproximation.Analysis.TimeH1.exists_map, KVApproximation.Analysis.TimeH1.trace_map_of_value_ae, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.TimeSobolevMaps
+Building KVApproximation.Analysis.TimeSobolevMaps
+⚠ [3189/3190] Replayed KVApproximation.Analysis.TimeSobolevProperties
+warning: KVApproximation/Analysis/TimeSobolevProperties.lean:19:0: automatically included section variable(s) unused in theorem `KVApproximation.Analysis.TimeH1.value_memLp`:
+  [CompleteSpace H]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompleteSpace H] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3190/3190] Replayed KVApproximation.Analysis.TimeSobolevMaps
+warning: KVApproximation/Analysis/TimeSobolevMaps.lean:20:0: automatically included section variable(s) unused in theorem `KVApproximation.Analysis.TimeH1.eq_of_value_ae`:
+  [CompleteSpace H]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompleteSpace H] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (3190 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.TimeH1.eq_of_value_ae, KVApproximation.Analysis.TimeH1.exists_map, KVApproximation.Analysis.TimeH1.trace_map_of_value_ae, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.TimeSobolevMaps
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 49899 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 49902 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 49902 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

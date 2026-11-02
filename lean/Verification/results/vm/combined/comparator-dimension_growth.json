@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/dimension_growth.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 70.3,
+  "configuration": "dimension_growth.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.logPartitionCount_le",
+    "KVApproximation.Approximation.interpolationOrder_le",
+    "KVApproximation.Approximation.nonsingletonStateDimension_uniform_bound"
+  ],
+  "challenge_module": "Challenges.DimensionGrowth",
+  "solution_module": "KVApproximation.Approximation.DimensionGrowth",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

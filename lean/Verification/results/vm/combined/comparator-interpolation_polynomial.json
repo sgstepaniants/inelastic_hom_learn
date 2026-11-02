@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/interpolation_polynomial.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 79.4,
+  "configuration": "interpolation_polynomial.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.chebyshevInterpolant_degree_lt"
+  ],
+  "challenge_module": "Challenges.InterpolationPolynomial",
+  "solution_module": "KVApproximation.Approximation.InterpolationPolynomial",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

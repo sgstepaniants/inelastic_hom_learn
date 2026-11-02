@@ -1,0 +1,47 @@
+Resolving dependencies
+Building Challenges.CellSpectralMeasure
+⚠ [3230/3242] Replayed ForTauCeti.Analysis.InnerProductSpace.ProjValMeasure.Basic
+warning: Vendor/ForTauCeti/Analysis/InnerProductSpace/ProjValMeasure/Basic.lean:16:0: 'Mathlib.MeasureTheory.Measure.MeasureSpace' has been deprecated: please replace this import by
+
+import Mathlib.MeasureTheory.Measure.Basic
+import Mathlib.MeasureTheory.Measure.CompleteLattice
+import Mathlib.MeasureTheory.Measure.Continuity
+import Mathlib.MeasureTheory.Measure.Filter
+import Mathlib.MeasureTheory.Measure.Interval
+import Mathlib.MeasureTheory.Measure.Module
+import Mathlib.MeasureTheory.Measure.OuterMeasure
+import Mathlib.MeasureTheory.Measure.Sum
+⚠ [3242/3242] Replayed Challenges.CellSpectralMeasure
+warning: Comparator/Challenges/CellSpectralMeasure.lean:15:8: declaration uses `sorry`
+Build completed successfully (3242 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Spectral.cell_spectral_measure_isCompressed, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.CellSpectralMeasure
+Building KVApproximation.Homogenization.CellSpectralMeasure
+⚠ [3230/3265] Replayed ForTauCeti.Analysis.InnerProductSpace.ProjValMeasure.Basic
+warning: Vendor/ForTauCeti/Analysis/InnerProductSpace/ProjValMeasure/Basic.lean:16:0: 'Mathlib.MeasureTheory.Measure.MeasureSpace' has been deprecated: please replace this import by
+
+import Mathlib.MeasureTheory.Measure.Basic
+import Mathlib.MeasureTheory.Measure.CompleteLattice
+import Mathlib.MeasureTheory.Measure.Continuity
+import Mathlib.MeasureTheory.Measure.Filter
+import Mathlib.MeasureTheory.Measure.Interval
+import Mathlib.MeasureTheory.Measure.Module
+import Mathlib.MeasureTheory.Measure.OuterMeasure
+import Mathlib.MeasureTheory.Measure.Sum
+Build completed successfully (3265 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Spectral.cell_spectral_measure_isCompressed, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Homogenization.CellSpectralMeasure
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 54429 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 54432 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 54432 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

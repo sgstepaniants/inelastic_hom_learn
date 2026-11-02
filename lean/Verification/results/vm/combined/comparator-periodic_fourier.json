@@ -1,0 +1,31 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_fourier.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 286.2,
+  "configuration": "periodic_fourier.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.mFourier_toCell",
+    "KVApproximation.Analysis.contDiff_mFourier_lift",
+    "KVApproximation.Analysis.fderiv_mFourier_lift_apply",
+    "KVApproximation.Analysis.HasPeriodicWeakGradient.integral_complex_test",
+    "KVApproximation.Analysis.HasPeriodicWeakGradient.fourier_coefficient",
+    "KVApproximation.Analysis.eq_of_fourier_integrals_eq",
+    "KVApproximation.Analysis.HasPeriodicWeakGradient.gradient_unique"
+  ],
+  "challenge_module": "Challenges.PeriodicFourier",
+  "solution_module": "KVApproximation.Analysis.PeriodicFourierCoefficients",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

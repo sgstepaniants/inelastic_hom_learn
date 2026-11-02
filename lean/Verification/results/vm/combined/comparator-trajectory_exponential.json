@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/trajectory_exponential.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 279.9,
+  "configuration": "trajectory_exponential.json",
+  "theorem_names": [
+    "KVApproximation.Dynamics.BoundedTrajectory.exponential_integral_eq"
+  ],
+  "challenge_module": "Challenges.ExponentialConvolution",
+  "solution_module": "KVApproximation.Dynamics.ExponentialConvolution",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

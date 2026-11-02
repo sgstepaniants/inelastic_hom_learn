@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/prony_stress_error.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 74.7,
+  "configuration": "prony_stress_error.json",
+  "theorem_names": [
+    "KVApproximation.Dynamics.stress_error_le"
+  ],
+  "challenge_module": "Challenges.PronyDynamics",
+  "solution_module": "KVApproximation.Dynamics.PronyDissipation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

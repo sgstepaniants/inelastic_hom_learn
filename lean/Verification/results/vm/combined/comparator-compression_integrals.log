@@ -1,0 +1,52 @@
+Resolving dependencies
+Building Challenges.Compression
+⚠ [3116/3175] Replayed ForTauCeti.Analysis.InnerProductSpace.ProjValMeasure.Basic
+warning: Vendor/ForTauCeti/Analysis/InnerProductSpace/ProjValMeasure/Basic.lean:16:0: 'Mathlib.MeasureTheory.Measure.MeasureSpace' has been deprecated: please replace this import by
+
+import Mathlib.MeasureTheory.Measure.Basic
+import Mathlib.MeasureTheory.Measure.CompleteLattice
+import Mathlib.MeasureTheory.Measure.Continuity
+import Mathlib.MeasureTheory.Measure.Filter
+import Mathlib.MeasureTheory.Measure.Interval
+import Mathlib.MeasureTheory.Measure.Module
+import Mathlib.MeasureTheory.Measure.OuterMeasure
+import Mathlib.MeasureTheory.Measure.Sum
+⚠ [3175/3175] Replayed Challenges.Compression
+warning: Comparator/Challenges/Compression.lean:23:8: declaration uses `sorry`
+warning: Comparator/Challenges/Compression.lean:30:8: declaration uses `sorry`
+warning: Comparator/Challenges/Compression.lean:51:8: declaration uses `sorry`
+warning: Comparator/Challenges/Compression.lean:58:8: declaration uses `sorry`
+warning: Comparator/Challenges/Compression.lean:67:8: declaration uses `sorry`
+warning: Comparator/Challenges/Compression.lean:75:8: declaration uses `sorry`
+Build completed successfully (3175 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Spectral.compressedMeasure_integral, KVApproximation.Spectral.compressedMeasure_moment, KVApproximation.Spectral.compressedMeasure_memory, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.Compression
+Building KVApproximation.Spectral.CompressionMoments
+⚠ [3116/3192] Replayed ForTauCeti.Analysis.InnerProductSpace.ProjValMeasure.Basic
+warning: Vendor/ForTauCeti/Analysis/InnerProductSpace/ProjValMeasure/Basic.lean:16:0: 'Mathlib.MeasureTheory.Measure.MeasureSpace' has been deprecated: please replace this import by
+
+import Mathlib.MeasureTheory.Measure.Basic
+import Mathlib.MeasureTheory.Measure.CompleteLattice
+import Mathlib.MeasureTheory.Measure.Continuity
+import Mathlib.MeasureTheory.Measure.Filter
+import Mathlib.MeasureTheory.Measure.Interval
+import Mathlib.MeasureTheory.Measure.Module
+import Mathlib.MeasureTheory.Measure.OuterMeasure
+import Mathlib.MeasureTheory.Measure.Sum
+Build completed successfully (3192 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Spectral.compressedMeasure_integral, KVApproximation.Spectral.compressedMeasure_moment, KVApproximation.Spectral.compressedMeasure_memory, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Spectral.CompressionMoments
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 53101 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 53104 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 53104 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

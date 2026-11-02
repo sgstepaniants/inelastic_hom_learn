@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/effective_elliptic.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 494.3,
+  "configuration": "effective_elliptic.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.effective_elliptic_exists_unique"
+  ],
+  "challenge_module": "Challenges.EffectiveElliptic",
+  "solution_module": "KVApproximation.Homogenization.EffectiveElliptic",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

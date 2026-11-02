@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/semigroup_decay.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 237.8,
+  "configuration": "semigroup_decay.json",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.relaxationSemigroup_energy_le"
+  ],
+  "challenge_module": "Challenges.MemoryKernel",
+  "solution_module": "KVApproximation.OperatorTheory.SemigroupDecay",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

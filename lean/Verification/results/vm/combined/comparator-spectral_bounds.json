@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/spectral_bounds.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 30.8,
+  "configuration": "spectral_bounds.json",
+  "theorem_names": [
+    "KVApproximation.Spectral.weightedVariationBound_lt"
+  ],
+  "challenge_module": "Challenges.SpectralBounds",
+  "solution_module": "KVApproximation.Spectral.BoundEstimates",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

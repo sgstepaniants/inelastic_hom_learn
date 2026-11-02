@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/primitive_integration_by_parts.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 249.8,
+  "configuration": "primitive_integration_by_parts.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.integral_deriv_smul_primitive_eq_sub_of_le"
+  ],
+  "challenge_module": "Challenges.PrimitiveIntegrationByParts",
+  "solution_module": "KVApproximation.Analysis.PrimitiveIntegrationByParts",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

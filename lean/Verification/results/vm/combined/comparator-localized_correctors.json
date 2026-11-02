@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/localized_correctors.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 250.0,
+  "configuration": "localized_correctors.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.exists_unit_corrector_in_coordinate_strip"
+  ],
+  "challenge_module": "Challenges.LocalizedCorrectors",
+  "solution_module": "KVApproximation.Homogenization.LocalizedCorrectors",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

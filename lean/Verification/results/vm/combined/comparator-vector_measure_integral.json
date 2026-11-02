@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/vector_measure_integral.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 139.0,
+  "configuration": "vector_measure_integral.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.integral_scalarization"
+  ],
+  "challenge_module": "Challenges.VectorMeasureIntegral",
+  "solution_module": "KVApproximation.Analysis.VectorMeasureIntegral",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/unweighted_response_bound.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 172.3,
+  "configuration": "unweighted_response_bound.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.norm_unweightedResponse_le"
+  ],
+  "challenge_module": "Challenges.UnweightedResponse",
+  "solution_module": "KVApproximation.Approximation.UnweightedResponseBound",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

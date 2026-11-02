@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/nonlinear_channel_lifting.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 82.0,
+  "configuration": "nonlinear_channel_lifting.json",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.exists_lipschitz_channel_lifting"
+  ],
+  "challenge_module": "Challenges.NonlinearChannelLifting",
+  "solution_module": "KVApproximation.NeuralOperators.NonlinearChannelLifting",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/field_stability.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 251.8,
+  "configuration": "field_stability.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.coefficient_constraints_of_tendsto_L1"
+  ],
+  "challenge_module": "Challenges.FieldStability",
+  "solution_module": "KVApproximation.Tensor.FieldStability",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

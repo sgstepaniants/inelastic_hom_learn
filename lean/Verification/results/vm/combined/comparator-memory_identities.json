@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/memory_identities.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 143.1,
+  "configuration": "memory_identities.json",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.relaxationSemigroup_conjugate",
+    "KVApproximation.OperatorTheory.relaxationSemigroup_selfAdjoint",
+    "KVApproximation.OperatorTheory.memoryForm_symmetric",
+    "KVApproximation.OperatorTheory.memoryForm_nonneg"
+  ],
+  "challenge_module": "Challenges.MemoryKernel",
+  "solution_module": "KVApproximation.OperatorTheory.MemoryIdentities",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

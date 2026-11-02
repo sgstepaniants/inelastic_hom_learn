@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/forced_memory.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 634.1,
+  "configuration": "forced_memory.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.green_trace_isHomogenizedSolution"
+  ],
+  "challenge_module": "Challenges.ForcedMemory",
+  "solution_module": "KVApproximation.Homogenization.ForcedMemory",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

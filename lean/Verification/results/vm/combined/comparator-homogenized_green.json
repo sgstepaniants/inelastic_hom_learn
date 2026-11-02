@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/homogenized_green.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 1701.4,
+  "configuration": "homogenized_green.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.green_balance_unique",
+    "KVApproximation.Homogenization.exists_homogenizedGreen"
+  ],
+  "challenge_module": "Challenges.HomogenizedGreen",
+  "solution_module": "KVApproximation.Homogenization.HomogenizedGreen",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

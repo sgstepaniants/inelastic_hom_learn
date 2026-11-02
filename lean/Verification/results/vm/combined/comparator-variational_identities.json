@@ -1,0 +1,46 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/variational_identities.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 100.0,
+  "configuration": "variational_identities.json",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.CoerciveForm.nonneg",
+    "KVApproximation.OperatorTheory.CoerciveForm.energy_eq_zero_iff",
+    "KVApproximation.OperatorTheory.CoerciveForm.riesz_spec",
+    "KVApproximation.OperatorTheory.CoerciveForm.eq_of_form_eq",
+    "KVApproximation.OperatorTheory.complement_apply",
+    "KVApproximation.OperatorTheory.form_complement_corrector",
+    "KVApproximation.OperatorTheory.projection_complement",
+    "KVApproximation.OperatorTheory.complement_energy_eq",
+    "KVApproximation.OperatorTheory.mismatch_eq_projection_complement",
+    "KVApproximation.OperatorTheory.form_projection",
+    "KVApproximation.OperatorTheory.projection_eq_self",
+    "KVApproximation.OperatorTheory.relaxation_spec",
+    "KVApproximation.OperatorTheory.relaxation_eq_projection_riesz",
+    "KVApproximation.OperatorTheory.complement_idempotent",
+    "KVApproximation.OperatorTheory.complement_selfAdjoint",
+    "KVApproximation.OperatorTheory.form_complement",
+    "KVApproximation.OperatorTheory.form_complement_eq_zero_iff",
+    "KVApproximation.OperatorTheory.projection_energy_le",
+    "KVApproximation.OperatorTheory.complement_energy_le",
+    "KVApproximation.OperatorTheory.relaxation_selfAdjoint",
+    "KVApproximation.OperatorTheory.relaxation_energy_bounds",
+    "KVApproximation.OperatorTheory.mismatch_energy_le"
+  ],
+  "challenge_module": "Challenges.CoerciveForm",
+  "solution_module": "KVApproximation.OperatorTheory.VariationalIdentities",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

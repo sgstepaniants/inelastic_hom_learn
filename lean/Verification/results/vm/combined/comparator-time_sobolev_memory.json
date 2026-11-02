@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/time_sobolev_memory.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 596.6,
+  "configuration": "time_sobolev_memory.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.TimeH1.memory_equation_iff_integrated"
+  ],
+  "challenge_module": "Challenges.TimeSobolevMemory",
+  "solution_module": "KVApproximation.Analysis.TimeSobolevMemory",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

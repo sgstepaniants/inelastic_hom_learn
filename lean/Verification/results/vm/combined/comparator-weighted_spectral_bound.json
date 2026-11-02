@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/weighted_spectral_bound.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 508.8,
+  "configuration": "weighted_spectral_bound.json",
+  "theorem_names": [
+    "KVApproximation.Spectral.weightedMeasure_variation_le"
+  ],
+  "challenge_module": "Challenges.WeightedMeasure",
+  "solution_module": "KVApproximation.Homogenization.WeightedSpectralBound",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

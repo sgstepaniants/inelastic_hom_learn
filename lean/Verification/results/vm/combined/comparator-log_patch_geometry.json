@@ -1,0 +1,31 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/log_patch_geometry.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 44.3,
+  "configuration": "log_patch_geometry.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.logPatch_bounds",
+    "KVApproximation.Approximation.continuous_logHat",
+    "KVApproximation.Approximation.logHat_nonneg",
+    "KVApproximation.Approximation.logHat_eq_zero_of_not_mem",
+    "KVApproximation.Approximation.localRate_mem_patch",
+    "KVApproximation.Approximation.localCoordinate_mem",
+    "KVApproximation.Approximation.localRate_localCoordinate"
+  ],
+  "challenge_module": "Challenges.LogPatchGeometry",
+  "solution_module": "KVApproximation.Approximation.LogPatchGeometry",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/dirichlet_weak_compactness.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 405.8,
+  "configuration": "dirichlet_weak_compactness.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.ZeroBoundaryH1.exists_subseq_weak_strong"
+  ],
+  "challenge_module": "Challenges.DirichletWeakCompactness",
+  "solution_module": "KVApproximation.Analysis.DirichletWeakCompactness",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

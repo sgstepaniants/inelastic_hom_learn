@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/dirichlet_compactness.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 439.2,
+  "configuration": "dirichlet_compactness.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.ZeroBoundaryH1.isCompactOperator_valueL",
+    "KVApproximation.Analysis.ZeroBoundaryH1.isCompact_closure_value_image",
+    "KVApproximation.Analysis.ZeroBoundaryH1.exists_subseq_tendsto_value",
+    "KVApproximation.Analysis.ZeroBoundaryH1.tendsto_value_of_weak"
+  ],
+  "challenge_module": "Challenges.DirichletCompactness",
+  "solution_module": "KVApproximation.Analysis.DirichletCompactness",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

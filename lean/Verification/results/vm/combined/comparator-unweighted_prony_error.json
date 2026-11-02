@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/unweighted_prony_error.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 607.9,
+  "configuration": "unweighted_prony_error.json",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.unweighted_prony_error_le"
+  ],
+  "challenge_module": "Challenges.AlternativeProny",
+  "solution_module": "KVApproximation.KelvinVoigt.UnweightedPronyError",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

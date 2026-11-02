@@ -1,0 +1,168 @@
+Resolving dependencies
+Building Challenges.GlobalResponse
+⚠ [3173/3173] Replayed Challenges.GlobalResponse
+warning: Comparator/Challenges/GlobalResponse.lean:18:8: declaration uses `sorry`
+warning: Comparator/Challenges/GlobalResponse.lean:24:8: declaration uses `sorry`
+warning: Comparator/Challenges/GlobalResponse.lean:30:8: declaration uses `sorry`
+warning: Comparator/Challenges/GlobalResponse.lean:37:8: declaration uses `sorry`
+warning: Comparator/Challenges/GlobalResponse.lean:47:8: declaration uses `sorry`
+warning: Comparator/Challenges/GlobalResponse.lean:63:8: declaration uses `sorry`
+warning: Comparator/Challenges/GlobalResponse.lean:77:8: declaration uses `sorry`
+warning: Comparator/Challenges/GlobalResponse.lean:85:8: declaration uses `sorry`
+warning: Comparator/Challenges/GlobalResponse.lean:102:8: declaration uses `sorry`
+Build completed successfully (3173 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.complexGlobalLogRate_ofReal, KVApproximation.Approximation.complexGlobalLogRate_ellipse, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.GlobalResponse
+Building KVApproximation.Approximation.GlobalRateGeometry
+⚠ [3180/3191] Replayed LeanCert.Core.Interval
+warning: LeanCert/Core/Interval.lean: imports `Mathlib.Analysis.SpecialFunctions.Integrals.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/Interval.lean: imports `Mathlib.Topology.Order.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3181/3191] Replayed LeanCert.Core.IntervalRat.Basic
+warning: LeanCert/Core/IntervalRat/Basic.lean: imports `Mathlib.Data.Rat.Cast.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRat/Basic.lean: imports `Mathlib.Algebra.Order.Field.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3207/3309] Replayed LeanCert.Core.Expr
+warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Sinc` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.ExpDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Arsinh` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/Expr.lean: imports `Mathlib.NumberTheory.Harmonic.EulerMascheroni` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/Expr.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3214/3309] Replayed LeanCert.Core.IntervalRat.Transcendental
+warning: LeanCert/Core/IntervalRat/Transcendental.lean: imports `Mathlib.Algebra.Order.Floor.Defs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRat/Transcendental.lean: imports `Mathlib.Algebra.Order.Floor.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRat/Transcendental.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3215/3309] Replayed LeanCert.Core.IntervalRat.LogReduction
+warning: LeanCert/Core/IntervalRat/LogReduction.lean: imports `Mathlib.Data.Rat.Defs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRat/LogReduction.lean: imports `Mathlib.Data.Nat.Log` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRat/LogReduction.lean: imports `Mathlib.Basic.Real.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRat/LogReduction.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRat/LogReduction.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3235/3309] Replayed LeanCert.Core.DerivativeIntervals
+warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.ExpDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.Arsinh` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.Calculus.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3236/3309] Replayed LeanCert.Core.Taylor
+warning: LeanCert/Core/Taylor.lean: imports `Mathlib.Analysis.Calculus.Taylor` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/Taylor.lean: imports `Mathlib.Analysis.SpecialFunctions.ExpDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/Taylor.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/Taylor.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3238/3309] Replayed LeanCert.Core.IntervalRat.Taylor
+warning: LeanCert/Core/IntervalRat/Taylor.lean: imports `Mathlib.Analysis.Complex.ExponentialBounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRat/Taylor.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRat/Taylor.lean: imports `Mathlib.Analysis.SpecificLimits.Normed` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRat/Taylor.lean: imports `Mathlib.Analysis.Real.Pi.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRat/Taylor.lean: imports `Mathlib.Data.List.Range` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3240/3309] Replayed LeanCert.Core.IntervalRealEndpoints
+warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.SpecialFunctions.ExpDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.SpecialFunctions.Arsinh` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.Real.Pi.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.Calculus.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3241/3309] Replayed LeanCert.Core.TrigReduction
+warning: LeanCert/Core/TrigReduction.lean: imports `Mathlib.Analysis.Real.Pi.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/TrigReduction.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/TrigReduction.lean: imports `Mathlib.Tactic.Linarith` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/TrigReduction.lean: imports `Mathlib.Tactic.NormNum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3243/3309] Replayed LeanCert.Engine.Eval.Core
+warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Sinc` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.Complex.ExponentialBounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.Real.Pi.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3249/3309] Replayed LeanCert.Engine.AD.Transcendental
+warning: LeanCert/Engine/AD/Transcendental.lean: imports `Mathlib.Analysis.SpecialFunctions.Sqrt` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3251/3309] Replayed LeanCert.Engine.AD.Correctness
+warning: LeanCert/Engine/AD/Correctness.lean: imports `Mathlib.Analysis.Calculus.Deriv.Add` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/AD/Correctness.lean: imports `Mathlib.Analysis.Calculus.Deriv.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/AD/Correctness.lean: imports `Mathlib.Analysis.Calculus.Deriv.Comp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/AD/Correctness.lean: imports `Mathlib.Analysis.Calculus.Deriv.Inv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/AD/Correctness.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3254/3309] Replayed LeanCert.Contrib.Sinc
+warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Sinc` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.Calculus.Deriv.Slope` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.Calculus.ContDiff.Defs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.Calculus.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.Calculus.ParametricIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.SpecialFunctions.Integrals.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.Analytic.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3255/3309] Replayed LeanCert.Engine.AD.PartialCorrectness
+warning: LeanCert/Engine/AD/PartialCorrectness.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/AD/PartialCorrectness.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/AD/PartialCorrectness.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Sinc` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/AD/PartialCorrectness.lean: imports `Mathlib.Analysis.SpecialFunctions.Arsinh` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/AD/PartialCorrectness.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3258/3309] Replayed LeanCert.Core.Dyadic
+warning: LeanCert/Core/Dyadic.lean: imports `Mathlib.Data.Rat.Cast.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/Dyadic.lean: imports `Mathlib.Algebra.Order.Field.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Core/Dyadic.lean: imports `Mathlib.Basic.Real.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3259/3309] Replayed LeanCert.Core.IntervalDyadic
+warning: LeanCert/Core/IntervalDyadic.lean: imports `Mathlib.Data.Rat.Cast.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3266/3309] Replayed LeanCert.Tactic.LeanCert.Normalize
+warning: LeanCert/Tactic/LeanCert/Normalize.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3271/3309] Replayed LeanCert.Engine.TaylorModel.Core
+warning: LeanCert/Engine/TaylorModel/Core.lean: imports `Mathlib.RingTheory.Polynomial.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/TaylorModel/Core.lean: imports `Mathlib.Algebra.Polynomial.Degree.Defs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/TaylorModel/Core.lean: imports `Mathlib.Data.Nat.Choose.Sum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/TaylorModel/Core.lean: imports `Mathlib.Data.Nat.Choose.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/TaylorModel/Core.lean: imports `Mathlib.Data.List.GetD` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3273/3309] Replayed LeanCert.Engine.TaylorModel.Trig
+warning: LeanCert/Engine/TaylorModel/Trig.lean: imports `Mathlib.Analysis.Complex.ExponentialBounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/TaylorModel/Trig.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Series` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/TaylorModel/Trig.lean: imports `Mathlib.Analysis.Calculus.IteratedDeriv.Defs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/TaylorModel/Trig.lean: imports `Mathlib.Analysis.Analytic.Uniqueness` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3274/3309] Replayed LeanCert.Engine.TaylorModel.ExpLog
+warning: LeanCert/Engine/TaylorModel/ExpLog.lean: imports `Mathlib.Analysis.Complex.ExponentialBounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/TaylorModel/ExpLog.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3292/3309] Replayed LeanCert.Engine.TaylorModel.Hyperbolic
+warning: LeanCert/Engine/TaylorModel/Hyperbolic.lean: imports `Mathlib.Analysis.Analytic.Binomial` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/TaylorModel/Hyperbolic.lean: imports `Mathlib.Analysis.Analytic.Uniqueness` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/TaylorModel/Hyperbolic.lean: imports `Mathlib.Analysis.Complex.ExponentialBounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3296/3309] Replayed LeanCert.Engine.Integrate
+warning: LeanCert/Engine/Integrate.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/Integrate.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/Integrate.lean: imports `Mathlib.MeasureTheory.Integral.Bochner.Set` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3306/3309] Replayed LeanCert.Engine.Optimize
+warning: LeanCert/Engine/Optimize.lean: imports `Mathlib.Analysis.Calculus.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3310/3334] Replayed LeanCert.Engine.RootFinding.Basic
+warning: LeanCert/Engine/RootFinding/Basic.lean: imports `Mathlib.Topology.Order.IntermediateValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3312/3334] Replayed LeanCert.Engine.RootFinding.Newton
+warning: LeanCert/Engine/RootFinding/Newton.lean: imports `Mathlib.Analysis.Calculus.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3314/3334] Replayed LeanCert.Engine.RootFinding.Contraction
+warning: LeanCert/Engine/RootFinding/Contraction.lean: imports `Mathlib.Topology.Order.IntermediateValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3319/3334] Replayed LeanCert.Engine.RootFinding.Krawczyk
+warning: LeanCert/Engine/RootFinding/Krawczyk.lean: imports `Mathlib.Analysis.Matrix.Normed` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/RootFinding/Krawczyk.lean: imports `Mathlib.Analysis.Calculus.Deriv.Pi` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Engine/RootFinding/Krawczyk.lean: imports `Mathlib.Topology.MetricSpace.Contracting` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3321/3334] Replayed LeanCert.Meta.ProveContinuous
+warning: LeanCert/Meta/ProveContinuous.lean: imports `Mathlib.Topology.ContinuousOn` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Meta/ProveContinuous.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: LeanCert/Meta/ProveContinuous.lean: imports `Mathlib.Analysis.SpecialFunctions.ExpDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3334 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.complexGlobalLogRate_ofReal, KVApproximation.Approximation.complexGlobalLogRate_ellipse, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Approximation.GlobalRateGeometry
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 48727 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 48730 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 48730 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

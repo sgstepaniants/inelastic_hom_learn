@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/energy_trapping.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 318.5,
+  "configuration": "energy_trapping.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.ac_energy_trapping_bound"
+  ],
+  "challenge_module": "Challenges.EnergyTrapping",
+  "solution_module": "KVApproximation.Analysis.EnergyTrapping",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/positive_scalarization.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 72.0,
+  "configuration": "positive_scalarization.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.exists_finite_positive_scalarization"
+  ],
+  "challenge_module": "Challenges.PositiveScalarization",
+  "solution_module": "KVApproximation.Analysis.PositiveScalarization",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

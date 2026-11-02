@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/fourier_mapping_representatives.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 141.0,
+  "configuration": "fourier_mapping_representatives.json",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.FourierLayer.eval_congr_ae",
+    "KVApproximation.NeuralOperators.FourierChain.eval_congr_ae",
+    "KVApproximation.NeuralOperators.FourierMapping.evalRepresentative_congr"
+  ],
+  "challenge_module": "Challenges.FourierMapping",
+  "solution_module": "KVApproximation.NeuralOperators.FourierMappingRepresentatives",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

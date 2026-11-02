@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/material_compactness.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 377.2,
+  "configuration": "material_compactness.json",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.isCompact_admissibleMaterials"
+  ],
+  "challenge_module": "Challenges.Material",
+  "solution_module": "KVApproximation.KelvinVoigt.MaterialCompactness",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

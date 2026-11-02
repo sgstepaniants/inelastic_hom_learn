@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/microscopic_compactness.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 850.9,
+  "configuration": "microscopic_compactness.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.microscopic_homogeneous_subsequence"
+  ],
+  "challenge_module": "Challenges.MicroscopicCompactness",
+  "solution_module": "KVApproximation.Homogenization.MicroscopicCompactness",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

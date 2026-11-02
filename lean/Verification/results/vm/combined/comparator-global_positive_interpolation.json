@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/global_positive_interpolation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 328.1,
+  "configuration": "global_positive_interpolation.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.global_weighted_response_error_of_span_pos",
+    "KVApproximation.Approximation.real_global_response_error_of_span_pos",
+    "KVApproximation.Approximation.norm_integrated_global_response_error_le_of_span_pos"
+  ],
+  "challenge_module": "Challenges.GlobalPositiveSpan",
+  "solution_module": "KVApproximation.Approximation.GlobalInterpolation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/fourier_mapping_lipschitz.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 250.8,
+  "configuration": "fourier_mapping_lipschitz.json",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.FourierMapping.lipschitz"
+  ],
+  "challenge_module": "Challenges.FourierMapping",
+  "solution_module": "KVApproximation.NeuralOperators.FourierMappingLipschitz",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

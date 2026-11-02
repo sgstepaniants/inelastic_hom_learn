@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/lp_interpolation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 86.2,
+  "configuration": "lp_interpolation.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.eLpNorm_two_sq_le_of_ae_bound",
+    "KVApproximation.Analysis.tendsto_eLpNorm_two_of_one_of_ae_bound"
+  ],
+  "challenge_module": "Challenges.LpInterpolation",
+  "solution_module": "KVApproximation.Analysis.LpInterpolation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

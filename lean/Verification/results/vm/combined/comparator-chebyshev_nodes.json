@@ -1,0 +1,30 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/chebyshev_nodes.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 107.2,
+  "configuration": "chebyshev_nodes.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.chebyshevNode_mem",
+    "KVApproximation.Approximation.chebyshevNode_injective",
+    "KVApproximation.Approximation.chebyshevNode_isRoot",
+    "KVApproximation.Approximation.chebyshev_interpolation_exact",
+    "KVApproximation.Approximation.chebyshev_root_alias",
+    "KVApproximation.Approximation.chebyshev_interpolation_T_bound"
+  ],
+  "challenge_module": "Challenges.ChebyshevNodes",
+  "solution_module": "KVApproximation.Approximation.ChebyshevNodes",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

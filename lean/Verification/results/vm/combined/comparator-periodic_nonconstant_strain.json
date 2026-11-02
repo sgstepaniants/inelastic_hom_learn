@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_nonconstant_strain.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 334.5,
+  "configuration": "periodic_nonconstant_strain.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicC1.exists_zeroMean_nonzero_strain"
+  ],
+  "challenge_module": "Challenges.PeriodicNonconstantStrain",
+  "solution_module": "KVApproximation.Analysis.PeriodicNonconstantStrain",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

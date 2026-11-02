@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/complexity.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 70.7,
+  "configuration": "complexity.json",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.sufficientDimension_uniform_bound",
+    "KVApproximation.KelvinVoigt.sufficientDimension_small_error",
+    "KVApproximation.KelvinVoigt.sufficientDimension_viscosity_contrast",
+    "KVApproximation.KelvinVoigt.sufficientDimension_elasticity_contrast"
+  ],
+  "challenge_module": "Challenges.Complexity",
+  "solution_module": "KVApproximation.KelvinVoigt.DimensionAsymptotics",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

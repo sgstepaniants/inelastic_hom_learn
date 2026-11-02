@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_rescaled_jets.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 136.9,
+  "configuration": "periodic_rescaled_jets.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicRescaledJets.jetCoordinate_apply",
+    "KVApproximation.Analysis.PeriodicRescaledJets.rescaleJet_ae",
+    "KVApproximation.Analysis.PeriodicRescaledJets.gradient_scaled_component"
+  ],
+  "challenge_module": "Challenges.PeriodicRescaledJets",
+  "solution_module": "KVApproximation.Analysis.PeriodicRescaledJetProperties",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

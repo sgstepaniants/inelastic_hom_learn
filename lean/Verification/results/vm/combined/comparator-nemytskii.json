@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/nemytskii.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 105.5,
+  "configuration": "nemytskii.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.exists_lipschitz_compositionLp"
+  ],
+  "challenge_module": "Challenges.Nemytskii",
+  "solution_module": "KVApproximation.Analysis.Nemytskii",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}
