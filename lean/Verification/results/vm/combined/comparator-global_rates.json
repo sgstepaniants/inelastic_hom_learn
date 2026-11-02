@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/global_rates.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 90.8,
+  "configuration": "global_rates.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.globalLogRate_mem"
+  ],
+  "challenge_module": "Challenges.AlternativePronyContinuity",
+  "solution_module": "KVApproximation.Approximation.GlobalRates",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

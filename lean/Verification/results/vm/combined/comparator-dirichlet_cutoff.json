@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/dirichlet_cutoff.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 512.8,
+  "configuration": "dirichlet_cutoff.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.ZeroBoundaryH1.exists_cutoff"
+  ],
+  "challenge_module": "Challenges.DirichletCutoff",
+  "solution_module": "KVApproximation.Analysis.DirichletCutoff",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

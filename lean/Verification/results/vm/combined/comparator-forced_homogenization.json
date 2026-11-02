@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/forced_homogenization.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 1499.9,
+  "configuration": "forced_homogenization.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.forced_homogenization"
+  ],
+  "challenge_module": "Challenges.ForcedHomogenization",
+  "solution_module": "KVApproximation.Homogenization.ForcedHomogenization",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

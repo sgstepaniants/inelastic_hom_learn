@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/fourier_mapping_affine.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 276.9,
+  "configuration": "fourier_mapping_affine.json",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.FourierLayer.exists_affineCLM"
+  ],
+  "challenge_module": "Challenges.FourierMappingLayers",
+  "solution_module": "KVApproximation.NeuralOperators.FourierMappingAffine",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

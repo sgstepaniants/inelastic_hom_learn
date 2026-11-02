@@ -1,6 +1,6 @@
 {
   "configurations_expected": 331,
-  "configurations_received": 255,
+  "configurations_received": 270,
   "theorems_expected": 702,
   "required_kernels": [
     "Lean default",
@@ -11,21 +11,6 @@
     "nanoda"
   ],
   "missing": [
-    "comparator-cell_displacement_constitutive.json",
-    "comparator-cell_tensor_bounds.json",
-    "comparator-chebyshev_series.json",
-    "comparator-corrector_displacement.json",
-    "comparator-dirichlet_cutoff.json",
-    "comparator-divergence_tests.json",
-    "comparator-feedforward_fourier_approximation.json",
-    "comparator-field_compactness.json",
-    "comparator-field_inverse.json",
-    "comparator-forced_homogenization.json",
-    "comparator-fourier_mapping_affine.json",
-    "comparator-fourier_mapping_lp.json",
-    "comparator-fourier_mapping_reality.json",
-    "comparator-global_rates.json",
-    "comparator-half_line_convolution.json",
     "comparator-homogeneous_homogenization.json",
     "comparator-homogeneous_limit.json",
     "comparator-homogeneous_subsequence.json",
@@ -91,6 +76,6 @@
   "unexpected": [],
   "duplicates": [],
   "failed_or_invalid": [],
-  "configuration_seconds": 77514.1,
+  "configuration_seconds": 83678.3,
   "passed": false
 }

@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/fourier_mapping_reality.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 135.8,
+  "configuration": "fourier_mapping_reality.json",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.FourierLayer.fourierPart_im",
+    "KVApproximation.NeuralOperators.FourierProjection.complexValue_im"
+  ],
+  "challenge_module": "Challenges.FourierMapping",
+  "solution_module": "KVApproximation.NeuralOperators.FourierMappingReality",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

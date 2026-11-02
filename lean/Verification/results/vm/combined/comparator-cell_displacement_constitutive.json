@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/cell_displacement_constitutive.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 1014.6,
+  "configuration": "cell_displacement_constitutive.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.periodicCellSolution_constitutive"
+  ],
+  "challenge_module": "Challenges.CellDisplacement",
+  "solution_module": "KVApproximation.Homogenization.CellDisplacementConstitutive",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

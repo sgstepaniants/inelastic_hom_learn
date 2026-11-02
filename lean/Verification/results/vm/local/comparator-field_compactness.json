@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/field_compactness.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 444.4,
+  "configuration": "field_compactness.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.isCompact_coefficient_constraints"
+  ],
+  "challenge_module": "Challenges.FieldCompactness",
+  "solution_module": "KVApproximation.Tensor.FieldCompactness",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

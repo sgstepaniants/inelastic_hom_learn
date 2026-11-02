@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/field_inverse.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 210.0,
+  "configuration": "field_inverse.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.CoerciveField.inverse_apply_ae",
+    "KVApproximation.Tensor.CoerciveField.relativeRiesz_apply_ae"
+  ],
+  "challenge_module": "Challenges.FieldInverse",
+  "solution_module": "KVApproximation.OperatorTheory.FieldInverse",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

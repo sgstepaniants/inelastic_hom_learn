@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/divergence_tests.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 413.4,
+  "configuration": "divergence_tests.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.integral_inner_gradient_eq_zero_of_divergence_eq_zero"
+  ],
+  "challenge_module": "Challenges.DivergenceTests",
+  "solution_module": "KVApproximation.Analysis.DivergenceTests",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

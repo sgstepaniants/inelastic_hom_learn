@@ -8,8 +8,8 @@ seconds. The transitive axiom audit passed all 722 queries in 9.2 seconds,
 using only `Classical.choice`, `Quot.sound` and `propext`. The records and
 complete logs are `build.json`, `build.log`, `axioms.json` and `axioms.log`.
 
-Four sandboxed Comparator configurations have passed with `--paranoid`
-and all six kernels:
+The three repaired pilots and the first subsequent configuration passed
+sandboxed Comparator with `--paranoid` and all six kernels:
 
 | Configuration | Seconds | Selections |
 | --- | ---: | ---: |
@@ -18,10 +18,11 @@ and all six kernels:
 | `homogenized_green` | 1,701.4 | 2 |
 | `bernstein_geometry` | 74.9 | 5 |
 
-Their records and complete logs are in `local/`. Combining them with the
-251 preserved CI successes in `../ci/` validates **255 configurations and
-561 selections**. The checked union is in `combined/`; its coverage report
-explicitly records the 76 missing configurations and `passed: false`.
+The latest saved checkpoint contains **19 local successes**, with records
+and complete logs in `local/`. Combining them with the 251 preserved CI
+successes in `../ci/` validates **270 configurations and 584 selections**.
+The checked union is in `combined/`; its coverage report explicitly records
+the 61 missing configurations, no invalid results, and `passed: false`.
 
 The remaining checks are running two at a time. Complete validation requires
 a successful combined coverage report for all 331 configurations, 702

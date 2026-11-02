@@ -1,0 +1,26 @@
+Resolving dependencies
+Building Challenges.HalfLineConvolution
+⚠ [2697/2697] Replayed Challenges.HalfLineConvolution
+warning: Comparator/Challenges/HalfLineConvolution.lean:19:8: declaration uses `sorry`
+warning: Comparator/Challenges/HalfLineConvolution.lean:29:8: declaration uses `sorry`
+Build completed successfully (2697 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.continuousOn_posConvolution_Ici, KVApproximation.Analysis.norm_exp_smul_posConvolution_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.HalfLineConvolution
+Building KVApproximation.Analysis.HalfLineConvolution
+Build completed successfully (2700 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.continuousOn_posConvolution_Ici, KVApproximation.Analysis.norm_exp_smul_posConvolution_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.HalfLineConvolution
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 35109 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 35112 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 35112 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

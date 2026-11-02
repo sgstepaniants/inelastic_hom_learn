@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/cell_tensor_bounds.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 327.7,
+  "configuration": "cell_tensor_bounds.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.effectiveForm_bounds",
+    "KVApproximation.Homogenization.effectiveForm_pos"
+  ],
+  "challenge_module": "Challenges.CellConstitutive",
+  "solution_module": "KVApproximation.Homogenization.CellTensorBounds",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

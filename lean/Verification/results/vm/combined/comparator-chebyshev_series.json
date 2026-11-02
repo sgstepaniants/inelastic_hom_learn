@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/chebyshev_series.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 133.1,
+  "configuration": "chebyshev_series.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.chebyshev_series_interpolation_error_le"
+  ],
+  "challenge_module": "Challenges.ChebyshevSeries",
+  "solution_module": "KVApproximation.Approximation.ChebyshevSeries",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}
