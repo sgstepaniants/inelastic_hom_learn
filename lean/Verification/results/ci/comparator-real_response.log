@@ -1,0 +1,27 @@
+Resolving dependencies
+Building Challenges.RealResponse
+⚠ [2869/2869] Replayed Challenges.RealResponse
+warning: Comparator/Challenges/RealResponse.lean:17:8: declaration uses `sorry`
+warning: Comparator/Challenges/RealResponse.lean:28:8: declaration uses `sorry`
+warning: Comparator/Challenges/RealResponse.lean:36:8: declaration uses `sorry`
+Build completed successfully (2869 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.map_realWeightedResponse, KVApproximation.Approximation.continuous_realWeightedResponse, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.RealResponse
+Building KVApproximation.Approximation.RealResponseIdentities
+Build completed successfully (2877 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.map_realWeightedResponse, KVApproximation.Approximation.continuous_realWeightedResponse, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Approximation.RealResponseIdentities
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 45759 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 45762 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 45762 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

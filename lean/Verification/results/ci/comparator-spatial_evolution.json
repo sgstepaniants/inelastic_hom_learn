@@ -1,0 +1,29 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/spatial_evolution.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 535.8,
+  "configuration": "spatial_evolution.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.periodicSpatialForm_apply",
+    "KVApproximation.Homogenization.exists_uniform_periodicSpatialForm_bounds",
+    "KVApproximation.Homogenization.microscopicRelaxation_spec",
+    "KVApproximation.Homogenization.microscopicLoadL_spec",
+    "KVApproximation.Homogenization.exists_uniform_microscopic_operator_bounds"
+  ],
+  "challenge_module": "Challenges.SpatialEvolution",
+  "solution_module": "KVApproximation.Homogenization.SpatialEvolutionProperties",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

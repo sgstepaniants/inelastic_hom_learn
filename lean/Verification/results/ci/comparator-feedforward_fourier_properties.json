@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/feedforward_fourier_properties.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 235.1,
+  "configuration": "feedforward_fourier_properties.json",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.FeedforwardFourierMapping.evalRepresentative_congr",
+    "KVApproximation.NeuralOperators.FeedforwardFourierMapping.exists_lipschitz_hidden",
+    "KVApproximation.NeuralOperators.FeedforwardFourierMapping.locallyLipschitz"
+  ],
+  "challenge_module": "Challenges.FeedforwardFourierMapping",
+  "solution_module": "KVApproximation.NeuralOperators.FeedforwardFourierProperties",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

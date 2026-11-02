@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/mandel_finite_indices.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 113.1,
+  "configuration": "mandel_finite_indices.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.scalarBlockStrainMandel_isometry",
+    "KVApproximation.Tensor.scalarBlockStrainMandel_norm",
+    "KVApproximation.Tensor.scalarStrainMandel_isometry",
+    "KVApproximation.Tensor.scalarElasticityMandel_isometry"
+  ],
+  "challenge_module": "Challenges.MandelFiniteIndices",
+  "solution_module": "KVApproximation.Tensor.MandelFiniteIsometry",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/finite_laplace.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 302.6,
+  "configuration": "finite_laplace.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.finiteLaplace_entire"
+  ],
+  "challenge_module": "Challenges.FiniteLaplace",
+  "solution_module": "KVApproximation.Analysis.FiniteLaplace",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/static_stress_identification.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 566.3,
+  "configuration": "static_stress_identification.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.tendsto_integral_cutoff_microscopic_stress"
+  ],
+  "challenge_module": "Challenges.StaticStressIdentification",
+  "solution_module": "KVApproximation.Homogenization.StaticStressIdentification",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

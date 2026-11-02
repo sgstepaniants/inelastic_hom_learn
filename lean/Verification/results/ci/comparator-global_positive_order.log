@@ -1,0 +1,30 @@
+Resolving dependencies
+Building Challenges.GlobalPositiveSpan
+⚠ [3189/3189] Replayed Challenges.GlobalPositiveSpan
+warning: Comparator/Challenges/GlobalPositiveSpan.lean:20:8: declaration uses `sorry`
+warning: Comparator/Challenges/GlobalPositiveSpan.lean:30:8: declaration uses `sorry`
+warning: Comparator/Challenges/GlobalPositiveSpan.lean:46:8: declaration uses `sorry`
+warning: Comparator/Challenges/GlobalPositiveSpan.lean:60:8: declaration uses `sorry`
+warning: Comparator/Challenges/GlobalPositiveSpan.lean:78:8: declaration uses `sorry`
+warning: Comparator/Challenges/GlobalPositiveSpan.lean:98:8: declaration uses `sorry`
+Build completed successfully (3189 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.globalInterpolationOrder_error_le_of_span_pos, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.GlobalPositiveSpan
+Building KVApproximation.Approximation.AlternativeDimensionEstimates
+Build completed successfully (2079 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.globalInterpolationOrder_error_le_of_span_pos, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Approximation.AlternativeDimensionEstimates
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 15442 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 15445 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 15445 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

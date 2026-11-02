@@ -1,0 +1,30 @@
+Resolving dependencies
+Building Challenges.PeriodicRescaling
+⚠ [3075/3075] Replayed Challenges.PeriodicRescaling
+warning: Comparator/Challenges/PeriodicRescaling.lean:19:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicRescaling.lean:25:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicRescaling.lean:32:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicRescaling.lean:40:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicRescaling.lean:48:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicRescaling.lean:56:8: declaration uses `sorry`
+Build completed successfully (3075 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.quasiMeasurePreserving_toCell, KVApproximation.Analysis.quasiMeasurePreserving_scaledToCell, KVApproximation.Analysis.ae_rescalePeriodic, KVApproximation.Analysis.aestronglyMeasurable_rescalePeriodic, KVApproximation.Analysis.eLpNorm_top_rescalePeriodic_le, KVApproximation.Analysis.memLp_top_rescalePeriodic, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.PeriodicRescaling
+Building KVApproximation.Analysis.PeriodicRescaling
+Build completed successfully (3075 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.quasiMeasurePreserving_toCell, KVApproximation.Analysis.quasiMeasurePreserving_scaledToCell, KVApproximation.Analysis.ae_rescalePeriodic, KVApproximation.Analysis.aestronglyMeasurable_rescalePeriodic, KVApproximation.Analysis.eLpNorm_top_rescalePeriodic_le, KVApproximation.Analysis.memLp_top_rescalePeriodic, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.PeriodicRescaling
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 36550 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 36553 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 36553 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

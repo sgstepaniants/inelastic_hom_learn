@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/half_line_laplace_primitive.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 176.0,
+  "configuration": "half_line_laplace_primitive.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.integrable_halfLineLaplace_const",
+    "KVApproximation.Analysis.halfLineLaplace_const",
+    "KVApproximation.Analysis.integrable_halfLineLaplace_primitive",
+    "KVApproximation.Analysis.halfLineLaplace_primitive"
+  ],
+  "challenge_module": "Challenges.HalfLineLaplacePrimitive",
+  "solution_module": "KVApproximation.Analysis.HalfLineLaplacePrimitive",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/compression_construction.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 442.9,
+  "configuration": "compression_construction.json",
+  "theorem_names": [
+    "KVApproximation.Spectral.compressedMeasure_exists_unique",
+    "KVApproximation.Spectral.compressedMeasure_positive_trace",
+    "KVApproximation.Spectral.compressedMeasure_supported"
+  ],
+  "challenge_module": "Challenges.Compression",
+  "solution_module": "KVApproximation.Spectral.CompressionConstruction",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

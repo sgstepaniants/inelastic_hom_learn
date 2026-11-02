@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/hilbert_weak_diagonal.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 97.7,
+  "configuration": "hilbert_weak_diagonal.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.exists_weakly_convergent_diagonal_subsequence"
+  ],
+  "challenge_module": "Challenges.HilbertWeakDiagonal",
+  "solution_module": "KVApproximation.Analysis.HilbertWeakDiagonal",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/exponential_integral_bounds.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 212.5,
+  "configuration": "exponential_integral_bounds.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.norm_exponential_integral_le"
+  ],
+  "challenge_module": "Challenges.ExponentialConvolution",
+  "solution_module": "KVApproximation.Analysis.ExponentialIntegralBounds",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

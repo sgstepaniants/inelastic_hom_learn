@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_elliptic.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 475.7,
+  "configuration": "periodic_elliptic.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.periodic_elliptic_exists_unique",
+    "KVApproximation.Homogenization.periodic_elliptic_uniform_bound",
+    "KVApproximation.Homogenization.exists_preparedInitialFamily"
+  ],
+  "challenge_module": "Challenges.PeriodicElliptic",
+  "solution_module": "KVApproximation.Homogenization.PeriodicElliptic",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

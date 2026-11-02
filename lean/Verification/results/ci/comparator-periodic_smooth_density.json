@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_smooth_density.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 280.5,
+  "configuration": "periodic_smooth_density.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.exists_periodicC1_eLpNorm_sub_lt"
+  ],
+  "challenge_module": "Challenges.PeriodicTestDuality",
+  "solution_module": "KVApproximation.Analysis.PeriodicSmoothDensity",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

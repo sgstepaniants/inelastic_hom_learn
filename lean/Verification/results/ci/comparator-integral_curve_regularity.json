@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/integral_curve_regularity.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 213.2,
+  "configuration": "integral_curve_regularity.json",
+  "theorem_names": [
+    "KVApproximation.Dynamics.integral_curve_regularity"
+  ],
+  "challenge_module": "Challenges.IntegralCurveRegularity",
+  "solution_module": "KVApproximation.Dynamics.IntegralCurveRegularity",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

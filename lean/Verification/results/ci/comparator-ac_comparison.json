@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/ac_comparison.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 321.6,
+  "configuration": "ac_comparison.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.ac_linear_decay_bound"
+  ],
+  "challenge_module": "Challenges.ACComparison",
+  "solution_module": "KVApproximation.Analysis.ACComparison",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

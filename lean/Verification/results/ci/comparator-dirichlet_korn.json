@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/dirichlet_korn.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 472.1,
+  "configuration": "dirichlet_korn.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.ZeroBoundaryH1.korn_identity",
+    "KVApproximation.Analysis.ZeroBoundaryH1.norm_gradientL_sq_le",
+    "KVApproximation.Analysis.ZeroBoundaryH1.norm_gradientL_le",
+    "KVApproximation.Analysis.ZeroBoundaryH1.exists_korn_constant"
+  ],
+  "challenge_module": "Challenges.DirichletKorn",
+  "solution_module": "KVApproximation.Analysis.DirichletKorn",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

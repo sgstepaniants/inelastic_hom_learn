@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/prony_trajectory.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 176.0,
+  "configuration": "prony_trajectory.json",
+  "theorem_names": [
+    "KVApproximation.Dynamics.pronyState_isKineticSolution"
+  ],
+  "challenge_module": "Challenges.PronyDynamics",
+  "solution_module": "KVApproximation.Dynamics.PronyTrajectory",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

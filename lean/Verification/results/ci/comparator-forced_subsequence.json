@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/forced_subsequence.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 696.0,
+  "configuration": "forced_subsequence.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.forced_subsequence_of_trace"
+  ],
+  "challenge_module": "Challenges.ForcedSubsequence",
+  "solution_module": "KVApproximation.Homogenization.ForcedSubsequence",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

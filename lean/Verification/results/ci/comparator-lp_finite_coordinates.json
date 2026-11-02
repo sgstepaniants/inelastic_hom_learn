@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/lp_finite_coordinates.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 129.9,
+  "configuration": "lp_finite_coordinates.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.lp_finite_coordinates"
+  ],
+  "challenge_module": "Challenges.LpFiniteCoordinates",
+  "solution_module": "KVApproximation.Analysis.LpFiniteCoordinates",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

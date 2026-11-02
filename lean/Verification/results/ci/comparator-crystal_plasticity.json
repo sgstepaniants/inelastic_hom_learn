@@ -1,0 +1,34 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/crystal_plasticity.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 214.0,
+  "configuration": "crystal_plasticity.json",
+  "theorem_names": [
+    "KVApproximation.Examples.CrystalPlasticity.initially_stress_free",
+    "KVApproximation.Examples.CrystalPlasticity.initial_multiplicative_decomposition",
+    "KVApproximation.Examples.CrystalPlasticity.elastic_initial_factor",
+    "KVApproximation.Examples.CrystalPlasticity.resistance_ratio",
+    "KVApproximation.Examples.CrystalPlasticity.skew_mulVec",
+    "KVApproximation.Examples.CrystalPlasticity.rotation_orthogonal",
+    "KVApproximation.Examples.CrystalPlasticity.deviatoric_combination",
+    "KVApproximation.Examples.CrystalPlasticity.deviatoric_coordinate_equivalence",
+    "KVApproximation.Examples.CrystalPlasticity.deformation_determinant",
+    "KVApproximation.Examples.CrystalPlasticity.deformation_zero"
+  ],
+  "challenge_module": "Challenges.CrystalPlasticity",
+  "solution_module": "KVApproximation.Examples.CrystalPlasticityIdentities",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

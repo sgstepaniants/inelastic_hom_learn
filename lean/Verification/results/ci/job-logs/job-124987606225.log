@@ -1,0 +1,810 @@
+﻿2026-11-01T21:40:16.5655184Z Current runner version: '2.338.2'
+2026-11-01T21:40:16.5690326Z ##[group]Runner Image Provisioner
+2026-11-01T21:40:16.5691691Z Hosted Compute Agent
+2026-11-01T21:40:16.5692679Z Version: 20261021.618
+2026-11-01T21:40:16.5693962Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-11-01T21:40:16.5695191Z Build Date: 2026-10-21T00:45:21Z
+2026-11-01T21:40:16.5696867Z Worker ID: {f32b5011-689a-47d3-bdf3-16b308671fb7}
+2026-11-01T21:40:16.5698111Z Region: eastus
+2026-11-01T21:40:16.5699006Z Cloud: Azure
+2026-11-01T21:40:16.5700087Z ##[endgroup]
+2026-11-01T21:40:16.5702381Z ##[group]Operating System
+2026-11-01T21:40:16.5704046Z Ubuntu
+2026-11-01T21:40:16.5705043Z 22.04.5
+2026-11-01T21:40:16.5706333Z LTS
+2026-11-01T21:40:16.5707429Z ##[endgroup]
+2026-11-01T21:40:16.5708380Z ##[group]Runner Image
+2026-11-01T21:40:16.5709487Z Image: ubuntu-22.04
+2026-11-01T21:40:16.5710559Z Version: 20261025.340.1
+2026-11-01T21:40:16.5712923Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20261025.340/images/ubuntu/Ubuntu2204-Readme.md
+2026-11-01T21:40:16.5716038Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20261025.340
+2026-11-01T21:40:16.5717880Z ##[endgroup]
+2026-11-01T21:40:16.5719723Z ##[group]GITHUB_TOKEN Permissions
+2026-11-01T21:40:16.5722764Z Contents: read
+2026-11-01T21:40:16.5723745Z Metadata: read
+2026-11-01T21:40:16.5724908Z ##[endgroup]
+2026-11-01T21:40:16.5728525Z Secret source: Actions
+2026-11-01T21:40:16.5730276Z Cache mode: write
+2026-11-01T21:40:16.5731782Z Prepare workflow directory
+2026-11-01T21:40:16.6320530Z Prepare all required actions
+2026-11-01T21:40:16.6393178Z Getting action download info
+2026-11-01T21:40:16.8280531Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-01T21:40:16.9978908Z Download action repository 'actions/cache@v6' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-01T21:40:17.1578958Z Download action repository 'actions/upload-artifact@v7' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-01T21:40:17.3557067Z Complete job name: Comparator shard 0 of 16
+2026-11-01T21:40:17.4515140Z ##[group]Run actions/checkout@v7
+2026-11-01T21:40:17.4516572Z with:
+2026-11-01T21:40:17.4517070Z   persist-credentials: false
+2026-11-01T21:40:17.4517671Z   repository: sgstepaniants/inelastic_hom_learn
+2026-11-01T21:40:17.4521533Z   token: ***
+2026-11-01T21:40:17.4521981Z   ssh-strict: true
+2026-11-01T21:40:17.4522425Z   ssh-user: git
+2026-11-01T21:40:17.4522842Z   clean: true
+2026-11-01T21:40:17.4523340Z   sparse-checkout-cone-mode: true
+2026-11-01T21:40:17.4523861Z   fetch-depth: 1
+2026-11-01T21:40:17.4524294Z   fetch-tags: false
+2026-11-01T21:40:17.4524742Z   show-progress: true
+2026-11-01T21:40:17.4525182Z   lfs: false
+2026-11-01T21:40:17.4525907Z   submodules: false
+2026-11-01T21:40:17.4526368Z   set-safe-directory: true
+2026-11-01T21:40:17.4526875Z   allow-unsafe-pr-checkout: false
+2026-11-01T21:40:17.4527696Z ##[endgroup]
+2026-11-01T21:40:17.7531530Z Syncing repository: sgstepaniants/inelastic_hom_learn
+2026-11-01T21:40:17.8870537Z ##[group]Getting Git version info
+2026-11-01T21:40:17.8881864Z Working directory is '/home/runner/work/inelastic_hom_learn/inelastic_hom_learn'
+2026-11-01T21:40:17.8890471Z [command]/usr/bin/git version
+2026-11-01T21:40:17.8891977Z git version 2.56.0
+2026-11-01T21:40:17.8896749Z ##[endgroup]
+2026-11-01T21:40:17.8905750Z Temporarily overriding HOME='/home/runner/work/_temp/9e83d74b-1f10-4b57-b184-301d946840c8' before making global git config changes
+2026-11-01T21:40:17.8909395Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-01T21:40:17.8913414Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/inelastic_hom_learn/inelastic_hom_learn
+2026-11-01T21:40:17.8919079Z Deleting the contents of '/home/runner/work/inelastic_hom_learn/inelastic_hom_learn'
+2026-11-01T21:40:17.8921747Z ##[group]Determining repository object format
+2026-11-01T21:40:17.8924034Z ##[endgroup]
+2026-11-01T21:40:17.8926207Z ##[group]Initializing the repository
+2026-11-01T21:40:17.8929628Z [command]/usr/bin/git init /home/runner/work/inelastic_hom_learn/inelastic_hom_learn
+2026-11-01T21:40:17.8932379Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-01T21:40:17.8938463Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-01T21:40:17.8943811Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-01T21:40:17.8946200Z hint: call:
+2026-11-01T21:40:17.8947093Z hint:
+2026-11-01T21:40:17.8948107Z hint: 	git config --global init.defaultBranch <name>
+2026-11-01T21:40:17.8949379Z hint:
+2026-11-01T21:40:17.8950696Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-01T21:40:17.8952639Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-01T21:40:17.8954198Z hint:
+2026-11-01T21:40:17.8955077Z hint: 	git branch -m <name>
+2026-11-01T21:40:17.8956414Z hint:
+2026-11-01T21:40:17.8957727Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-01T21:40:17.8960117Z Initialized empty Git repository in /home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git/
+2026-11-01T21:40:17.8963778Z [command]/usr/bin/git remote add origin https://github.com/sgstepaniants/inelastic_hom_learn
+2026-11-01T21:40:17.8968790Z ##[endgroup]
+2026-11-01T21:40:17.8970931Z ##[group]Disabling automatic garbage collection
+2026-11-01T21:40:17.8972603Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-01T21:40:17.8976734Z ##[endgroup]
+2026-11-01T21:40:17.8978499Z ##[group]Setting up auth
+2026-11-01T21:40:17.8979177Z Removing SSH command configuration
+2026-11-01T21:40:17.8980195Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-01T21:40:17.8983772Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-01T21:40:17.9153376Z Removing HTTP extra header
+2026-11-01T21:40:17.9163561Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-01T21:40:17.9240222Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-01T21:40:17.9618512Z Removing includeIf entries pointing to credentials config files
+2026-11-01T21:40:17.9620691Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-01T21:40:17.9666549Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-01T21:40:17.9962171Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-d0d0e120-1575-4314-b1d2-798ba034e741.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-01T21:40:18.0014167Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git.path /home/runner/work/_temp/git-credentials-d0d0e120-1575-4314-b1d2-798ba034e741.config
+2026-11-01T21:40:18.0058112Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-d0d0e120-1575-4314-b1d2-798ba034e741.config
+2026-11-01T21:40:18.0118490Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-d0d0e120-1575-4314-b1d2-798ba034e741.config
+2026-11-01T21:40:18.0160061Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-d0d0e120-1575-4314-b1d2-798ba034e741.config
+2026-11-01T21:40:18.0206497Z ##[endgroup]
+2026-11-01T21:40:18.0208434Z ##[group]Fetching the repository
+2026-11-01T21:40:18.0215212Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +ae419876cb96cdaeb1efe07dea67c3762c2cb9de:refs/remotes/origin/main
+2026-11-01T21:40:18.3575257Z From https://github.com/sgstepaniants/inelastic_hom_learn
+2026-11-01T21:40:18.3578233Z  * [new ref]         ae419876cb96cdaeb1efe07dea67c3762c2cb9de -> origin/main
+2026-11-01T21:40:18.3588270Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-01T21:40:18.3625984Z   origin/main
+2026-11-01T21:40:18.3634798Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-01T21:40:18.3673265Z ae419876cb96cdaeb1efe07dea67c3762c2cb9de
+2026-11-01T21:40:18.3679629Z ##[endgroup]
+2026-11-01T21:40:18.3682021Z ##[group]Determining the checkout info
+2026-11-01T21:40:18.3684245Z ##[endgroup]
+2026-11-01T21:40:18.3687188Z [command]/usr/bin/git sparse-checkout disable
+2026-11-01T21:40:18.3747556Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-01T21:40:18.3790985Z ##[group]Checking out the ref
+2026-11-01T21:40:18.3794616Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-01T21:40:18.4705253Z Switched to a new branch 'main'
+2026-11-01T21:40:18.4717735Z branch 'main' set up to track 'origin/main'.
+2026-11-01T21:40:18.4723846Z ##[endgroup]
+2026-11-01T21:40:18.4778287Z [command]/usr/bin/git log -1 --format=%H
+2026-11-01T21:40:18.4828328Z ae419876cb96cdaeb1efe07dea67c3762c2cb9de
+2026-11-01T21:40:18.4850336Z ##[group]Removing auth
+2026-11-01T21:40:18.4852104Z Removing SSH command configuration
+2026-11-01T21:40:18.4856991Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-01T21:40:18.4913286Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-01T21:40:18.5420555Z Removing HTTP extra header
+2026-11-01T21:40:18.5424519Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-01T21:40:18.5462251Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-01T21:40:18.5765056Z Removing includeIf entries pointing to credentials config files
+2026-11-01T21:40:18.5769350Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-01T21:40:18.5807892Z includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git.path
+2026-11-01T21:40:18.5812937Z includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git/worktrees/*.path
+2026-11-01T21:40:18.5817906Z includeif.gitdir:/github/workspace/.git.path
+2026-11-01T21:40:18.5821148Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-01T21:40:18.5828839Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git.path
+2026-11-01T21:40:18.5857648Z /home/runner/work/_temp/git-credentials-d0d0e120-1575-4314-b1d2-798ba034e741.config
+2026-11-01T21:40:18.5887766Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-d0d0e120\-1575\-4314\-b1d2\-798ba034e741\.config
+2026-11-01T21:40:18.5934067Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git/worktrees/*.path
+2026-11-01T21:40:18.5968890Z /home/runner/work/_temp/git-credentials-d0d0e120-1575-4314-b1d2-798ba034e741.config
+2026-11-01T21:40:18.6006670Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-d0d0e120\-1575\-4314\-b1d2\-798ba034e741\.config
+2026-11-01T21:40:18.6054037Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-01T21:40:18.6091580Z /github/runner_temp/git-credentials-d0d0e120-1575-4314-b1d2-798ba034e741.config
+2026-11-01T21:40:18.6102709Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-d0d0e120\-1575\-4314\-b1d2\-798ba034e741\.config
+2026-11-01T21:40:18.6154402Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-01T21:40:18.6187864Z /github/runner_temp/git-credentials-d0d0e120-1575-4314-b1d2-798ba034e741.config
+2026-11-01T21:40:18.6203333Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-d0d0e120\-1575\-4314\-b1d2\-798ba034e741\.config
+2026-11-01T21:40:18.6276350Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-01T21:40:18.6702417Z Removing credentials config '/home/runner/work/_temp/git-credentials-d0d0e120-1575-4314-b1d2-798ba034e741.config'
+2026-11-01T21:40:18.6723945Z ##[endgroup]
+2026-11-01T21:40:18.7097953Z ##[group]Run sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL
+2026-11-01T21:40:18.7102591Z [36;1msudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL[0m
+2026-11-01T21:40:18.7106086Z [36;1mdf -h .[0m
+2026-11-01T21:40:18.7210541Z shell: /usr/bin/bash -e {0}
+2026-11-01T21:40:18.7211911Z ##[endgroup]
+2026-11-01T21:42:01.3521785Z Filesystem      Size  Used Avail Use% Mounted on
+2026-11-01T21:42:01.3522959Z /dev/root        73G   41G   32G  56% /
+2026-11-01T21:42:01.3604231Z ##[group]Run actions/cache/restore@v6
+2026-11-01T21:42:01.3604551Z with:
+2026-11-01T21:42:01.3604784Z   path: lean/.elan/toolchains
+lean/.lake
+
+2026-11-01T21:42:01.3605089Z   key: comparator-linux-4.35.0-v2
+2026-11-01T21:42:01.3605372Z   fail-on-cache-miss: true
+2026-11-01T21:42:01.3606132Z   enableCrossOsArchive: false
+2026-11-01T21:42:01.3606419Z   lookup-only: false
+2026-11-01T21:42:01.3606637Z ##[endgroup]
+2026-11-01T21:42:01.5958961Z Cache hit for: comparator-linux-4.35.0-v2
+2026-11-01T21:42:02.7003824Z Received 146800640 of 2975290823 (4.9%), 137.0 MBs/sec
+2026-11-01T21:42:03.7282168Z Received 402653184 of 2975290823 (13.5%), 187.4 MBs/sec
+2026-11-01T21:42:04.8127471Z Received 671088640 of 2975290823 (22.6%), 204.3 MBs/sec
+2026-11-01T21:42:05.8866324Z Received 939524096 of 2975290823 (31.6%), 213.2 MBs/sec
+2026-11-01T21:42:06.8997249Z Received 1174405120 of 2975290823 (39.5%), 214.7 MBs/sec
+2026-11-01T21:42:07.9071519Z Received 1367343104 of 2975290823 (46.0%), 209.4 MBs/sec
+2026-11-01T21:42:08.9556005Z Received 1610612736 of 2975290823 (54.1%), 211.1 MBs/sec
+2026-11-01T21:42:09.9744158Z Received 1849688064 of 2975290823 (62.2%), 213.1 MBs/sec
+2026-11-01T21:42:10.9619666Z Received 2067791872 of 2975290823 (69.5%), 212.4 MBs/sec
+2026-11-01T21:42:11.9622247Z Received 2281701376 of 2975290823 (76.7%), 211.6 MBs/sec
+2026-11-01T21:42:12.9700806Z Received 2520776704 of 2975290823 (84.7%), 212.9 MBs/sec
+2026-11-01T21:42:13.9747062Z Received 2743074816 of 2975290823 (92.2%), 212.8 MBs/sec
+2026-11-01T21:42:14.9786901Z Received 2954319303 of 2975290823 (99.3%), 211.9 MBs/sec
+2026-11-01T21:42:15.0518079Z Received 2975290823 of 2975290823 (100.0%), 212.2 MBs/sec
+2026-11-01T21:42:15.0518804Z Cache Size: ~2837 MB (2975290823 B)
+2026-11-01T21:42:15.0557203Z [command]/usr/bin/tar -xf /home/runner/work/_temp/553da762-885c-40ea-9d22-c94f365d5f94/cache.tzst -P -C /home/runner/work/inelastic_hom_learn/inelastic_hom_learn --use-compress-program unzstd
+2026-11-01T21:43:31.6898724Z Cache restored successfully
+2026-11-01T21:43:32.0615047Z Cache restored from key: comparator-linux-4.35.0-v2
+2026-11-01T21:43:32.1246572Z ##[group]Run bash Verification/ci_setup.sh
+2026-11-01T21:43:32.1247285Z [36;1mbash Verification/ci_setup.sh[0m
+2026-11-01T21:43:32.6327134Z shell: /usr/bin/bash -e {0}
+2026-11-01T21:43:32.6327602Z env:
+2026-11-01T21:43:32.6328350Z   COMPARATOR_CACHE_HIT: true
+2026-11-01T21:43:32.6328798Z ##[endgroup]
+2026-11-01T21:43:32.8006930Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-01T21:43:32.8416984Z Get:6 https://packages.microsoft.com/ubuntu/22.04/prod jammy InRelease [3632 B]
+2026-11-01T21:43:32.8885160Z Hit:2 http://azure.archive.ubuntu.com/ubuntu jammy InRelease
+2026-11-01T21:43:32.8954152Z Get:3 http://azure.archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+2026-11-01T21:43:32.9037196Z Get:4 http://azure.archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+2026-11-01T21:43:32.9086908Z Get:5 http://azure.archive.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+2026-11-01T21:43:33.0438516Z Get:7 https://packages.microsoft.com/ubuntu/22.04/prod jammy/main arm64 Packages [709 kB]
+2026-11-01T21:43:33.2907803Z Get:8 https://packages.microsoft.com/ubuntu/22.04/prod jammy/main amd64 Packages [974 kB]
+2026-11-01T21:43:33.3397221Z Get:9 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [3939 kB]
+2026-11-01T21:43:33.4357178Z Get:10 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [579 kB]
+2026-11-01T21:43:33.4554594Z Get:11 http://azure.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [6778 kB]
+2026-11-01T21:43:33.5314675Z Get:12 http://azure.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [1303 kB]
+2026-11-01T21:43:33.5391069Z Get:13 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1290 kB]
+2026-11-01T21:43:33.5453571Z Get:14 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [326 kB]
+2026-11-01T21:43:33.7156932Z Get:15 http://azure.archive.ubuntu.com/ubuntu jammy-security/main amd64 Packages [3670 kB]
+2026-11-01T21:43:33.7376621Z Get:16 http://azure.archive.ubuntu.com/ubuntu jammy-security/main Translation-en [511 kB]
+2026-11-01T21:43:33.7409641Z Get:17 http://azure.archive.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [6545 kB]
+2026-11-01T21:43:33.7816921Z Get:18 http://azure.archive.ubuntu.com/ubuntu jammy-security/restricted Translation-en [1260 kB]
+2026-11-01T21:43:33.8314110Z Get:19 http://azure.archive.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1055 kB]
+2026-11-01T21:43:33.8390469Z Get:20 http://azure.archive.ubuntu.com/ubuntu jammy-security/universe Translation-en [238 kB]
+2026-11-01T21:43:40.0311397Z Fetched 29.6 MB in 4s (7933 kB/s)
+2026-11-01T21:43:41.6273765Z Reading package lists...
+2026-11-01T21:43:41.7031844Z Reading package lists...
+2026-11-01T21:43:42.0021486Z Building dependency tree...
+2026-11-01T21:43:42.0034562Z Reading state information...
+2026-11-01T21:43:42.2193032Z build-essential is already the newest version (12.9ubuntu3).
+2026-11-01T21:43:42.2198537Z build-essential set to manually installed.
+2026-11-01T21:43:42.2200647Z zstd is already the newest version (1.4.8+dfsg-3build1).
+2026-11-01T21:43:42.2205425Z zstd set to manually installed.
+2026-11-01T21:43:42.2209933Z ca-certificates is already the newest version (20260816ubuntu0.22.04.1).
+2026-11-01T21:43:42.2213189Z curl is already the newest version (7.81.0-1ubuntu1.30).
+2026-11-01T21:43:42.2213898Z python3 is already the newest version (3.10.6-1~22.04.1).
+2026-11-01T21:43:42.2214684Z git is already the newest version (1:2.56.0-0ppa1~ubuntu22.04.2).
+2026-11-01T21:43:42.2217499Z The following NEW packages will be installed:
+2026-11-01T21:43:42.2218030Z   bubblewrap
+2026-11-01T21:43:42.2414126Z 0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
+2026-11-01T21:43:42.2423502Z Need to get 46.3 kB of archives.
+2026-11-01T21:43:42.2436860Z After this operation, 132 kB of additional disk space will be used.
+2026-11-01T21:43:42.2442077Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-01T21:43:42.2801819Z Get:2 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 bubblewrap amd64 0.6.1-1ubuntu0.3 [46.3 kB]
+2026-11-01T21:43:42.6845866Z Fetched 46.3 kB in 0s (801 kB/s)
+2026-11-01T21:43:42.7217039Z Selecting previously unselected package bubblewrap.
+2026-11-01T21:43:42.7736979Z (Reading database ... 
+2026-11-01T21:43:42.7738131Z (Reading database ... 5%
+2026-11-01T21:43:42.7738794Z (Reading database ... 10%
+2026-11-01T21:43:42.7739220Z (Reading database ... 15%
+2026-11-01T21:43:42.7739627Z (Reading database ... 20%
+2026-11-01T21:43:42.7740174Z (Reading database ... 25%
+2026-11-01T21:43:42.7740575Z (Reading database ... 30%
+2026-11-01T21:43:42.7740962Z (Reading database ... 35%
+2026-11-01T21:43:42.7741349Z (Reading database ... 40%
+2026-11-01T21:43:42.7741736Z (Reading database ... 45%
+2026-11-01T21:43:42.7742135Z (Reading database ... 50%
+2026-11-01T21:43:42.8261055Z (Reading database ... 55%
+2026-11-01T21:43:43.0747944Z (Reading database ... 60%
+2026-11-01T21:43:43.2883170Z (Reading database ... 65%
+2026-11-01T21:43:43.3732311Z (Reading database ... 70%
+2026-11-01T21:43:43.5789739Z (Reading database ... 75%
+2026-11-01T21:43:43.6884039Z (Reading database ... 80%
+2026-11-01T21:43:44.2795717Z (Reading database ... 85%
+2026-11-01T21:43:46.1617989Z (Reading database ... 90%
+2026-11-01T21:43:46.3446639Z (Reading database ... 95%
+2026-11-01T21:43:46.3447422Z (Reading database ... 100%
+2026-11-01T21:43:46.3447986Z (Reading database ... 263322 files and directories currently installed.)
+2026-11-01T21:43:46.3489780Z Preparing to unpack .../bubblewrap_0.6.1-1ubuntu0.3_amd64.deb ...
+2026-11-01T21:43:46.3526206Z Unpacking bubblewrap (0.6.1-1ubuntu0.3) ...
+2026-11-01T21:43:46.4163190Z Setting up bubblewrap (0.6.1-1ubuntu0.3) ...
+2026-11-01T21:43:46.4270713Z Processing triggers for man-db (2.10.2-1) ...
+2026-11-01T21:43:46.4299047Z Not building database; man-db/auto-update is not 'true'.
+2026-11-01T21:43:47.0864801Z 
+2026-11-01T21:43:47.0865965Z Running kernel seems to be up-to-date.
+2026-11-01T21:43:47.0866717Z 
+2026-11-01T21:43:47.0867108Z No services need to be restarted.
+2026-11-01T21:43:47.0867594Z 
+2026-11-01T21:43:47.0867971Z No containers need to be restarted.
+2026-11-01T21:43:47.0868485Z 
+2026-11-01T21:43:47.0868879Z No user sessions are running outdated binaries.
+2026-11-01T21:43:47.0869474Z 
+2026-11-01T21:43:47.0870011Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-11-01T21:43:48.8671368Z Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+2026-11-01T21:43:48.9916920Z Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)
+2026-11-01T21:43:48.9973054Z bubblewrap 0.6.1
+2026-11-01T21:43:49.0110650Z ##[group]Run python3 Verification/verify.py comparator --shard-index "$SHARD_INDEX" --shard-count 16 --keep-going
+2026-11-01T21:43:49.0111528Z [36;1mpython3 Verification/verify.py comparator --shard-index "$SHARD_INDEX" --shard-count 16 --keep-going[0m
+2026-11-01T21:43:49.0177442Z shell: /usr/bin/bash -e {0}
+2026-11-01T21:43:49.0177705Z env:
+2026-11-01T21:43:49.0178109Z   MATHLIB_CACHE_DIR: /home/runner/work/inelastic_hom_learn/inelastic_hom_learn/lean/.cache/mathlib
+2026-11-01T21:43:49.0178584Z   SHARD_INDEX: 0
+2026-11-01T21:43:49.0178788Z ##[endgroup]
+2026-11-01T21:43:49.1329325Z Comparator 1/21: ac_comparison
+2026-11-01T21:43:49.1330755Z Running lake comparator --config=Comparator/ac_comparison.json --paranoid
+2026-11-01T21:43:57.5121091Z Resolving dependencies
+2026-11-01T21:43:57.5122232Z Building Challenges.ACComparison
+2026-11-01T21:44:00.7344795Z ⚠ [2798/2798] Replayed Challenges.ACComparison
+2026-11-01T21:44:00.7346955Z warning: Comparator/Challenges/ACComparison.lean:19:8: declaration uses `sorry`
+2026-11-01T21:44:00.7400569Z Build completed successfully (2798 jobs).
+2026-11-01T21:44:23.4154484Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.ac_linear_decay_bound, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.ACComparison
+2026-11-01T21:44:23.4167994Z Building KVApproximation.Analysis.ACComparison
+2026-11-01T21:44:25.8865346Z Build completed successfully (2798 jobs).
+2026-11-01T21:45:02.9837464Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.ac_linear_decay_bound, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.ACComparison
+2026-11-01T21:45:02.9841084Z Running Lean paranoid kernel on solution
+2026-11-01T21:46:04.3351863Z Lean paranoid kernel accepts the solution
+2026-11-01T21:46:04.3356469Z Running lean4lean kernel on solution
+2026-11-01T21:47:04.7987918Z checked 43401 declarations
+2026-11-01T21:47:04.8073974Z lean4lean kernel accepts the solution
+2026-11-01T21:47:04.8075198Z Running nanoda kernel on solution
+2026-11-01T21:47:25.2962136Z nanoda kernel accepts the solution
+2026-11-01T21:47:25.2963456Z Running con-leche kernel on solution
+2026-11-01T21:48:03.0163385Z con-leche: accepted 43404 declarations (--verified)
+2026-11-01T21:48:03.0254574Z con-leche kernel accepts the solution
+2026-11-01T21:48:03.0256214Z Running con-ron kernel on solution
+2026-11-01T21:48:20.4226741Z con-ron: accepted 43404 declarations (--verified)
+2026-11-01T21:48:20.4411953Z con-ron kernel accepts the solution
+2026-11-01T21:48:20.4412937Z Running Lean default kernel on solution
+2026-11-01T21:49:10.6945119Z Lean default kernel accepts the solution
+2026-11-01T21:49:10.6946220Z Your solution is okay!
+2026-11-01T21:49:10.7042377Z {"command": ["lake", "comparator", "--config=Comparator/ac_comparison.json", "--paranoid"], "exit_code": 0, "seconds": 321.6, "configuration": "ac_comparison.json", "theorem_names": ["KVApproximation.Analysis.ac_linear_decay_bound"], "challenge_module": "Challenges.ACComparison", "solution_module": "KVApproximation.Analysis.ACComparison", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T21:49:10.7066394Z Comparator 2/21: cell_evolution_constitutive
+2026-11-01T21:49:10.7086370Z Running lake comparator --config=Comparator/cell_evolution_constitutive.json --paranoid
+2026-11-01T21:49:11.5848985Z Resolving dependencies
+2026-11-01T21:49:11.5849914Z Building Challenges.CellEvolution
+2026-11-01T21:49:14.3566178Z ⚠ [3193/3193] Replayed Challenges.CellEvolution
+2026-11-01T21:49:14.3568338Z warning: Comparator/Challenges/CellEvolution.lean:23:8: declaration uses `sorry`
+2026-11-01T21:49:14.3569605Z warning: Comparator/Challenges/CellEvolution.lean:35:8: declaration uses `sorry`
+2026-11-01T21:49:14.3570765Z warning: Comparator/Challenges/CellEvolution.lean:41:8: declaration uses `sorry`
+2026-11-01T21:49:14.3571990Z warning: Comparator/Challenges/CellEvolution.lean:53:8: declaration uses `sorry`
+2026-11-01T21:49:14.3573051Z warning: Comparator/Challenges/CellEvolution.lean:64:8: declaration uses `sorry`
+2026-11-01T21:49:14.3573917Z warning: Comparator/Challenges/CellEvolution.lean:78:8: declaration uses `sorry`
+2026-11-01T21:49:14.3629132Z Build completed successfully (3193 jobs).
+2026-11-01T21:49:38.4532883Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Dynamics.cell_evolution_constitutive_law, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.CellEvolution
+2026-11-01T21:49:38.4536794Z Building KVApproximation.Dynamics.CellEvolutionConstitutive
+2026-11-01T21:49:40.8523490Z ⚠ [3195/3203] Replayed KVApproximation.Analysis.TimeSobolevProperties
+2026-11-01T21:49:40.8526388Z warning: KVApproximation/Analysis/TimeSobolevProperties.lean:19:0: automatically included section variable(s) unused in theorem `KVApproximation.Analysis.TimeH1.value_memLp`:
+2026-11-01T21:49:40.8529255Z   [CompleteSpace H]
+2026-11-01T21:49:40.8530546Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-11-01T21:49:40.8533371Z   omit [CompleteSpace H] in theorem ...
+2026-11-01T21:49:40.8534071Z 
+2026-11-01T21:49:40.8535105Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-11-01T21:49:40.8591444Z Build completed successfully (3203 jobs).
+2026-11-01T21:50:34.9998414Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Dynamics.cell_evolution_constitutive_law, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Dynamics.CellEvolutionConstitutive
+2026-11-01T21:50:35.0004025Z Running Lean paranoid kernel on solution
+2026-11-01T21:53:06.7364832Z Lean paranoid kernel accepts the solution
+2026-11-01T21:53:06.7386501Z Running lean4lean kernel on solution
+2026-11-01T21:54:40.1668347Z checked 50468 declarations
+2026-11-01T21:54:40.1779498Z lean4lean kernel accepts the solution
+2026-11-01T21:54:40.1780465Z Running nanoda kernel on solution
+2026-11-01T21:55:37.7914811Z nanoda kernel accepts the solution
+2026-11-01T21:55:37.7916210Z Running con-leche kernel on solution
+2026-11-01T21:56:29.5187678Z con-leche: accepted 50471 declarations (--verified)
+2026-11-01T21:56:29.5301951Z con-leche kernel accepts the solution
+2026-11-01T21:56:29.5302954Z Running con-ron kernel on solution
+2026-11-01T21:56:54.0120272Z con-ron: accepted 50471 declarations (--verified)
+2026-11-01T21:56:54.0345148Z con-ron kernel accepts the solution
+2026-11-01T21:56:54.0346737Z Running Lean default kernel on solution
+2026-11-01T21:59:09.7129301Z Lean default kernel accepts the solution
+2026-11-01T21:59:09.7146036Z Your solution is okay!
+2026-11-01T21:59:09.7204386Z {"command": ["lake", "comparator", "--config=Comparator/cell_evolution_constitutive.json", "--paranoid"], "exit_code": 0, "seconds": 599.0, "configuration": "cell_evolution_constitutive.json", "theorem_names": ["KVApproximation.Dynamics.cell_evolution_constitutive_law"], "challenge_module": "Challenges.CellEvolution", "solution_module": "KVApproximation.Dynamics.CellEvolutionConstitutive", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T21:59:09.7208701Z Comparator 3/21: compact_laplace_uniqueness
+2026-11-01T21:59:09.7209769Z Running lake comparator --config=Comparator/compact_laplace_uniqueness.json --paranoid
+2026-11-01T21:59:10.5745940Z Resolving dependencies
+2026-11-01T21:59:10.5747182Z Building Challenges.CompactLaplaceUniqueness
+2026-11-01T21:59:12.5878280Z ⚠ [2613/2613] Replayed Challenges.CompactLaplaceUniqueness
+2026-11-01T21:59:12.5880261Z warning: Comparator/Challenges/CompactLaplaceUniqueness.lean:20:8: declaration uses `sorry`
+2026-11-01T21:59:12.5922800Z Build completed successfully (2613 jobs).
+2026-11-01T21:59:20.9397416Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.measure_eq_of_weighted_exponential_moments, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.CompactLaplaceUniqueness
+2026-11-01T21:59:20.9400910Z Building KVApproximation.Analysis.CompactLaplaceUniqueness
+2026-11-01T21:59:22.9597684Z Build completed successfully (2673 jobs).
+2026-11-01T21:59:44.1544889Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.measure_eq_of_weighted_exponential_moments, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.CompactLaplaceUniqueness
+2026-11-01T21:59:44.1549353Z Running Lean paranoid kernel on solution
+2026-11-01T22:00:10.7012899Z Lean paranoid kernel accepts the solution
+2026-11-01T22:00:10.7026473Z Running lean4lean kernel on solution
+2026-11-01T22:00:37.8160706Z checked 28893 declarations
+2026-11-01T22:00:37.8234094Z lean4lean kernel accepts the solution
+2026-11-01T22:00:37.8234912Z Running nanoda kernel on solution
+2026-11-01T22:00:46.3620339Z nanoda kernel accepts the solution
+2026-11-01T22:00:46.3621161Z Running con-leche kernel on solution
+2026-11-01T22:01:05.7290645Z con-leche: accepted 28896 declarations (--verified)
+2026-11-01T22:01:05.7364811Z con-leche kernel accepts the solution
+2026-11-01T22:01:05.7368218Z Running con-ron kernel on solution
+2026-11-01T22:01:14.3896740Z con-ron: accepted 28896 declarations (--verified)
+2026-11-01T22:01:14.4044009Z con-ron kernel accepts the solution
+2026-11-01T22:01:14.4045010Z Running Lean default kernel on solution
+2026-11-01T22:01:37.1287768Z Lean default kernel accepts the solution
+2026-11-01T22:01:37.1305930Z Your solution is okay!
+2026-11-01T22:01:37.1348004Z {"command": ["lake", "comparator", "--config=Comparator/compact_laplace_uniqueness.json", "--paranoid"], "exit_code": 0, "seconds": 147.4, "configuration": "compact_laplace_uniqueness.json", "theorem_names": ["KVApproximation.Analysis.measure_eq_of_weighted_exponential_moments"], "challenge_module": "Challenges.CompactLaplaceUniqueness", "solution_module": "KVApproximation.Analysis.CompactLaplaceUniqueness", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:01:37.1352021Z Comparator 4/21: crystal_plasticity
+2026-11-01T22:01:37.1353654Z Running lake comparator --config=Comparator/crystal_plasticity.json --paranoid
+2026-11-01T22:01:37.9711969Z Resolving dependencies
+2026-11-01T22:01:37.9736530Z Building Challenges.CrystalPlasticity
+2026-11-01T22:01:39.8907163Z ⚠ [2506/2506] Replayed Challenges.CrystalPlasticity
+2026-11-01T22:01:39.8908424Z warning: Comparator/Challenges/CrystalPlasticity.lean:15:8: declaration uses `sorry`
+2026-11-01T22:01:39.8909681Z warning: Comparator/Challenges/CrystalPlasticity.lean:24:8: declaration uses `sorry`
+2026-11-01T22:01:39.8911176Z warning: Comparator/Challenges/CrystalPlasticity.lean:30:8: declaration uses `sorry`
+2026-11-01T22:01:39.8912350Z warning: Comparator/Challenges/CrystalPlasticity.lean:36:8: declaration uses `sorry`
+2026-11-01T22:01:39.8913517Z warning: Comparator/Challenges/CrystalPlasticity.lean:41:8: declaration uses `sorry`
+2026-11-01T22:01:39.8914553Z warning: Comparator/Challenges/CrystalPlasticity.lean:46:8: declaration uses `sorry`
+2026-11-01T22:01:39.8915781Z warning: Comparator/Challenges/CrystalPlasticity.lean:51:8: declaration uses `sorry`
+2026-11-01T22:01:39.8916910Z warning: Comparator/Challenges/CrystalPlasticity.lean:60:8: declaration uses `sorry`
+2026-11-01T22:01:39.8918206Z warning: Comparator/Challenges/CrystalPlasticity.lean:71:8: declaration uses `sorry`
+2026-11-01T22:01:39.8919359Z warning: Comparator/Challenges/CrystalPlasticity.lean:79:8: declaration uses `sorry`
+2026-11-01T22:01:39.8955932Z Build completed successfully (2506 jobs).
+2026-11-01T22:01:45.8551562Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Examples.CrystalPlasticity.initially_stress_free, KVApproximation.Examples.CrystalPlasticity.initial_multiplicative_decomposition, KVApproximation.Examples.CrystalPlasticity.elastic_initial_factor, KVApproximation.Examples.CrystalPlasticity.resistance_ratio, KVApproximation.Examples.CrystalPlasticity.skew_mulVec, KVApproximation.Examples.CrystalPlasticity.rotation_orthogonal, KVApproximation.Examples.CrystalPlasticity.deviatoric_combination, KVApproximation.Examples.CrystalPlasticity.deviatoric_coordinate_equivalence, KVApproximation.Examples.CrystalPlasticity.deformation_determinant, KVApproximation.Examples.CrystalPlasticity.deformation_zero, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.CrystalPlasticity
+2026-11-01T22:01:45.8560236Z Building KVApproximation.Examples.CrystalPlasticityIdentities
+2026-11-01T22:01:47.8747471Z Build completed successfully (2736 jobs).
+2026-11-01T22:02:13.4447423Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Examples.CrystalPlasticity.initially_stress_free, KVApproximation.Examples.CrystalPlasticity.initial_multiplicative_decomposition, KVApproximation.Examples.CrystalPlasticity.elastic_initial_factor, KVApproximation.Examples.CrystalPlasticity.resistance_ratio, KVApproximation.Examples.CrystalPlasticity.skew_mulVec, KVApproximation.Examples.CrystalPlasticity.rotation_orthogonal, KVApproximation.Examples.CrystalPlasticity.deviatoric_combination, KVApproximation.Examples.CrystalPlasticity.deviatoric_coordinate_equivalence, KVApproximation.Examples.CrystalPlasticity.deformation_determinant, KVApproximation.Examples.CrystalPlasticity.deformation_zero, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Examples.CrystalPlasticityIdentities
+2026-11-01T22:02:13.4456409Z Running Lean paranoid kernel on solution
+2026-11-01T22:02:56.1706683Z Lean paranoid kernel accepts the solution
+2026-11-01T22:02:56.1707491Z Running lean4lean kernel on solution
+2026-11-01T22:03:38.9267932Z checked 35398 declarations
+2026-11-01T22:03:38.9344395Z lean4lean kernel accepts the solution
+2026-11-01T22:03:38.9345879Z Running nanoda kernel on solution
+2026-11-01T22:03:53.0764901Z nanoda kernel accepts the solution
+2026-11-01T22:03:53.0771767Z Running con-leche kernel on solution
+2026-11-01T22:04:21.1718017Z con-leche: accepted 35401 declarations (--verified)
+2026-11-01T22:04:21.1778307Z con-leche kernel accepts the solution
+2026-11-01T22:04:21.1779299Z Running con-ron kernel on solution
+2026-11-01T22:04:34.5986038Z con-ron: accepted 35401 declarations (--verified)
+2026-11-01T22:04:34.6169684Z con-ron kernel accepts the solution
+2026-11-01T22:04:34.6170565Z Running Lean default kernel on solution
+2026-11-01T22:05:11.0968705Z Lean default kernel accepts the solution
+2026-11-01T22:05:11.0969775Z Your solution is okay!
+2026-11-01T22:05:11.1038896Z {"command": ["lake", "comparator", "--config=Comparator/crystal_plasticity.json", "--paranoid"], "exit_code": 0, "seconds": 214.0, "configuration": "crystal_plasticity.json", "theorem_names": ["KVApproximation.Examples.CrystalPlasticity.initially_stress_free", "KVApproximation.Examples.CrystalPlasticity.initial_multiplicative_decomposition", "KVApproximation.Examples.CrystalPlasticity.elastic_initial_factor", "KVApproximation.Examples.CrystalPlasticity.resistance_ratio", "KVApproximation.Examples.CrystalPlasticity.skew_mulVec", "KVApproximation.Examples.CrystalPlasticity.rotation_orthogonal", "KVApproximation.Examples.CrystalPlasticity.deviatoric_combination", "KVApproximation.Examples.CrystalPlasticity.deviatoric_coordinate_equivalence", "KVApproximation.Examples.CrystalPlasticity.deformation_determinant", "KVApproximation.Examples.CrystalPlasticity.deformation_zero"], "challenge_module": "Challenges.CrystalPlasticity", "solution_module": "KVApproximation.Examples.CrystalPlasticityIdentities", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:05:11.1048167Z Comparator 5/21: effective_elliptic
+2026-11-01T22:05:11.1049077Z Running lake comparator --config=Comparator/effective_elliptic.json --paranoid
+2026-11-01T22:05:11.9396877Z Resolving dependencies
+2026-11-01T22:05:11.9400777Z Building Challenges.EffectiveElliptic
+2026-11-01T22:05:14.2699445Z ⚠ [3204/3204] Replayed Challenges.EffectiveElliptic
+2026-11-01T22:05:14.2701318Z warning: Comparator/Challenges/EffectiveElliptic.lean:15:8: declaration uses `sorry`
+2026-11-01T22:05:14.2766661Z Build completed successfully (3204 jobs).
+2026-11-01T22:05:31.0005025Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Homogenization.effective_elliptic_exists_unique, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.EffectiveElliptic
+2026-11-01T22:05:31.0008760Z Building KVApproximation.Homogenization.EffectiveElliptic
+2026-11-01T22:05:33.3511502Z Build completed successfully (3234 jobs).
+2026-11-01T22:06:24.5534396Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Homogenization.effective_elliptic_exists_unique, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Homogenization.EffectiveElliptic
+2026-11-01T22:06:24.5538456Z Running Lean paranoid kernel on solution
+2026-11-01T22:08:13.7922609Z Lean paranoid kernel accepts the solution
+2026-11-01T22:08:13.7924071Z Running lean4lean kernel on solution
+2026-11-01T22:09:56.5116778Z checked 51870 declarations
+2026-11-01T22:09:56.5215797Z lean4lean kernel accepts the solution
+2026-11-01T22:09:56.5216625Z Running nanoda kernel on solution
+2026-11-01T22:10:37.2623635Z nanoda kernel accepts the solution
+2026-11-01T22:10:37.2624476Z Running con-leche kernel on solution
+2026-11-01T22:11:31.1377758Z con-leche: accepted 51873 declarations (--verified)
+2026-11-01T22:11:31.1483651Z con-leche kernel accepts the solution
+2026-11-01T22:11:31.1484578Z Running con-ron kernel on solution
+2026-11-01T22:11:55.8144237Z con-ron: accepted 51873 declarations (--verified)
+2026-11-01T22:11:55.8361378Z con-ron kernel accepts the solution
+2026-11-01T22:11:55.8367100Z Running Lean default kernel on solution
+2026-11-01T22:13:25.3485148Z Lean default kernel accepts the solution
+2026-11-01T22:13:25.3486377Z Your solution is okay!
+2026-11-01T22:13:25.3589199Z {"command": ["lake", "comparator", "--config=Comparator/effective_elliptic.json", "--paranoid"], "exit_code": 0, "seconds": 494.3, "configuration": "effective_elliptic.json", "theorem_names": ["KVApproximation.Homogenization.effective_elliptic_exists_unique"], "challenge_module": "Challenges.EffectiveElliptic", "solution_module": "KVApproximation.Homogenization.EffectiveElliptic", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:13:25.3592594Z Comparator 6/21: finite_laplace
+2026-11-01T22:13:25.3616149Z Running lake comparator --config=Comparator/finite_laplace.json --paranoid
+2026-11-01T22:13:26.1819470Z Resolving dependencies
+2026-11-01T22:13:26.1820514Z Building Challenges.FiniteLaplace
+2026-11-01T22:13:28.2978280Z ⚠ [2843/2843] Replayed Challenges.FiniteLaplace
+2026-11-01T22:13:28.2979098Z warning: Comparator/Challenges/FiniteLaplace.lean:14:8: declaration uses `sorry`
+2026-11-01T22:13:28.3066586Z Build completed successfully (2843 jobs).
+2026-11-01T22:13:39.5744628Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.finiteLaplace_entire, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.FiniteLaplace
+2026-11-01T22:13:39.5748732Z Building KVApproximation.Analysis.FiniteLaplace
+2026-11-01T22:13:41.7068958Z Build completed successfully (2843 jobs).
+2026-11-01T22:14:19.7929395Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.finiteLaplace_entire, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.FiniteLaplace
+2026-11-01T22:14:19.7932699Z Running Lean paranoid kernel on solution
+2026-11-01T22:15:19.9090336Z Lean paranoid kernel accepts the solution
+2026-11-01T22:15:19.9106567Z Running lean4lean kernel on solution
+2026-11-01T22:16:20.2578785Z checked 45474 declarations
+2026-11-01T22:16:20.2673719Z lean4lean kernel accepts the solution
+2026-11-01T22:16:20.2674538Z Running nanoda kernel on solution
+2026-11-01T22:16:40.7644839Z nanoda kernel accepts the solution
+2026-11-01T22:16:40.7660761Z Running con-leche kernel on solution
+2026-11-01T22:17:18.6896890Z con-leche: accepted 45477 declarations (--verified)
+2026-11-01T22:17:18.7002120Z con-leche kernel accepts the solution
+2026-11-01T22:17:18.7002960Z Running con-ron kernel on solution
+2026-11-01T22:17:36.1489856Z con-ron: accepted 45477 declarations (--verified)
+2026-11-01T22:17:36.1671200Z con-ron kernel accepts the solution
+2026-11-01T22:17:36.1672060Z Running Lean default kernel on solution
+2026-11-01T22:18:27.9897667Z Lean default kernel accepts the solution
+2026-11-01T22:18:27.9936590Z Your solution is okay!
+2026-11-01T22:18:27.9963861Z {"command": ["lake", "comparator", "--config=Comparator/finite_laplace.json", "--paranoid"], "exit_code": 0, "seconds": 302.6, "configuration": "finite_laplace.json", "theorem_names": ["KVApproximation.Analysis.finiteLaplace_entire"], "challenge_module": "Challenges.FiniteLaplace", "solution_module": "KVApproximation.Analysis.FiniteLaplace", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:18:27.9990064Z Comparator 7/21: fourier_projection_features
+2026-11-01T22:18:28.0007473Z Running lake comparator --config=Comparator/fourier_projection_features.json --paranoid
+2026-11-01T22:18:28.8273144Z Resolving dependencies
+2026-11-01T22:18:28.8274224Z Building Challenges.FourierProjectionFeatures
+2026-11-01T22:18:31.0405890Z ⚠ [3072/3072] Replayed Challenges.FourierProjectionFeatures
+2026-11-01T22:18:31.0407434Z warning: Comparator/Challenges/FourierProjectionFeatures.lean:13:8: declaration uses `sorry`
+2026-11-01T22:18:31.0408918Z warning: Comparator/Challenges/FourierProjectionFeatures.lean:21:8: declaration uses `sorry`
+2026-11-01T22:18:31.0463330Z Build completed successfully (3072 jobs).
+2026-11-01T22:18:40.3756885Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.NeuralOperators.exists_scalarFourierProjection, KVApproximation.NeuralOperators.eq_of_scalarFourierProjections_eq, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.FourierProjectionFeatures
+2026-11-01T22:18:40.3760979Z Building KVApproximation.NeuralOperators.FourierProjectionFeatures
+2026-11-01T22:18:42.5992205Z Build completed successfully (3073 jobs).
+2026-11-01T22:19:12.2280353Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.NeuralOperators.exists_scalarFourierProjection, KVApproximation.NeuralOperators.eq_of_scalarFourierProjections_eq, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.NeuralOperators.FourierProjectionFeatures
+2026-11-01T22:19:12.2287174Z Running Lean paranoid kernel on solution
+2026-11-01T22:19:54.7787924Z Lean paranoid kernel accepts the solution
+2026-11-01T22:19:54.7789491Z Running lean4lean kernel on solution
+2026-11-01T22:20:37.3846812Z checked 38790 declarations
+2026-11-01T22:20:37.3918992Z lean4lean kernel accepts the solution
+2026-11-01T22:20:37.3921667Z Running nanoda kernel on solution
+2026-11-01T22:20:51.2356075Z nanoda kernel accepts the solution
+2026-11-01T22:20:51.2356701Z Running con-leche kernel on solution
+2026-11-01T22:21:20.3447706Z con-leche: accepted 38793 declarations (--verified)
+2026-11-01T22:21:20.3524355Z con-leche kernel accepts the solution
+2026-11-01T22:21:20.3531667Z Running con-ron kernel on solution
+2026-11-01T22:21:33.6216707Z con-ron: accepted 38793 declarations (--verified)
+2026-11-01T22:21:33.6383995Z con-ron kernel accepts the solution
+2026-11-01T22:21:33.6398357Z Running Lean default kernel on solution
+2026-11-01T22:22:09.9241529Z Lean default kernel accepts the solution
+2026-11-01T22:22:09.9242817Z Your solution is okay!
+2026-11-01T22:22:09.9339864Z {"command": ["lake", "comparator", "--config=Comparator/fourier_projection_features.json", "--paranoid"], "exit_code": 0, "seconds": 221.9, "configuration": "fourier_projection_features.json", "theorem_names": ["KVApproximation.NeuralOperators.exists_scalarFourierProjection", "KVApproximation.NeuralOperators.eq_of_scalarFourierProjections_eq"], "challenge_module": "Challenges.FourierProjectionFeatures", "solution_module": "KVApproximation.NeuralOperators.FourierProjectionFeatures", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:22:09.9366093Z Comparator 8/21: half_line_laplace_derivative
+2026-11-01T22:22:09.9387133Z Running lake comparator --config=Comparator/half_line_laplace_derivative.json --paranoid
+2026-11-01T22:22:10.7853391Z Resolving dependencies
+2026-11-01T22:22:10.7854538Z Building Challenges.HalfLineLaplaceDerivative
+2026-11-01T22:22:12.8014930Z ⚠ [2675/2675] Replayed Challenges.HalfLineLaplaceDerivative
+2026-11-01T22:22:12.8016932Z warning: Comparator/Challenges/HalfLineLaplaceDerivative.lean:13:8: declaration uses `sorry`
+2026-11-01T22:22:12.8097031Z Build completed successfully (2675 jobs).
+2026-11-01T22:22:23.8697412Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.halfLineLaplace_derivative, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.HalfLineLaplaceDerivative
+2026-11-01T22:22:23.8720957Z Building KVApproximation.Analysis.HalfLineLaplaceDerivative
+2026-11-01T22:22:25.9904158Z Build completed successfully (2856 jobs).
+2026-11-01T22:22:58.2982633Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.halfLineLaplace_derivative, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.HalfLineLaplaceDerivative
+2026-11-01T22:22:58.2986539Z Running Lean paranoid kernel on solution
+2026-11-01T22:23:42.4049692Z Lean paranoid kernel accepts the solution
+2026-11-01T22:23:42.4066118Z Running lean4lean kernel on solution
+2026-11-01T22:24:27.1526750Z checked 39790 declarations
+2026-11-01T22:24:27.1594631Z lean4lean kernel accepts the solution
+2026-11-01T22:24:27.1598319Z Running nanoda kernel on solution
+2026-11-01T22:24:41.5866384Z nanoda kernel accepts the solution
+2026-11-01T22:24:41.5867370Z Running con-leche kernel on solution
+2026-11-01T22:25:11.5356780Z con-leche: accepted 39793 declarations (--verified)
+2026-11-01T22:25:11.5448216Z con-leche kernel accepts the solution
+2026-11-01T22:25:11.5449008Z Running con-ron kernel on solution
+2026-11-01T22:25:25.3676877Z con-ron: accepted 39793 declarations (--verified)
+2026-11-01T22:25:25.3850190Z con-ron kernel accepts the solution
+2026-11-01T22:25:25.3850971Z Running Lean default kernel on solution
+2026-11-01T22:26:02.9249642Z Lean default kernel accepts the solution
+2026-11-01T22:26:02.9251375Z Your solution is okay!
+2026-11-01T22:26:02.9329845Z {"command": ["lake", "comparator", "--config=Comparator/half_line_laplace_derivative.json", "--paranoid"], "exit_code": 0, "seconds": 233.0, "configuration": "half_line_laplace_derivative.json", "theorem_names": ["KVApproximation.Analysis.halfLineLaplace_derivative"], "challenge_module": "Challenges.HalfLineLaplaceDerivative", "solution_module": "KVApproximation.Analysis.HalfLineLaplaceDerivative", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:26:02.9356768Z Comparator 9/21: integral_curve_regularity
+2026-11-01T22:26:02.9357859Z Running lake comparator --config=Comparator/integral_curve_regularity.json --paranoid
+2026-11-01T22:26:03.7726698Z Resolving dependencies
+2026-11-01T22:26:03.7727729Z Building Challenges.IntegralCurveRegularity
+2026-11-01T22:26:05.7816698Z ⚠ [2776/2776] Replayed Challenges.IntegralCurveRegularity
+2026-11-01T22:26:05.7818471Z warning: Comparator/Challenges/IntegralCurveRegularity.lean:20:8: declaration uses `sorry`
+2026-11-01T22:26:05.7859674Z Build completed successfully (2776 jobs).
+2026-11-01T22:26:16.9249300Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Dynamics.integral_curve_regularity, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.IntegralCurveRegularity
+2026-11-01T22:26:16.9252822Z Building KVApproximation.Dynamics.IntegralCurveRegularity
+2026-11-01T22:26:19.0583123Z Build completed successfully (2776 jobs).
+2026-11-01T22:26:49.3414432Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Dynamics.integral_curve_regularity, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Dynamics.IntegralCurveRegularity
+2026-11-01T22:26:49.3418239Z Running Lean paranoid kernel on solution
+2026-11-01T22:27:29.3202998Z Lean paranoid kernel accepts the solution
+2026-11-01T22:27:29.3226159Z Running lean4lean kernel on solution
+2026-11-01T22:28:09.5419283Z checked 37838 declarations
+2026-11-01T22:28:09.5512807Z lean4lean kernel accepts the solution
+2026-11-01T22:28:09.5513831Z Running nanoda kernel on solution
+2026-11-01T22:28:22.3584765Z nanoda kernel accepts the solution
+2026-11-01T22:28:22.3585759Z Running con-leche kernel on solution
+2026-11-01T22:28:49.6113417Z con-leche: accepted 37841 declarations (--verified)
+2026-11-01T22:28:49.6201144Z con-leche kernel accepts the solution
+2026-11-01T22:28:49.6201923Z Running con-ron kernel on solution
+2026-11-01T22:29:02.2286598Z con-ron: accepted 37841 declarations (--verified)
+2026-11-01T22:29:02.2442459Z con-ron kernel accepts the solution
+2026-11-01T22:29:02.2443246Z Running Lean default kernel on solution
+2026-11-01T22:29:36.1520029Z Lean default kernel accepts the solution
+2026-11-01T22:29:36.1520844Z Your solution is okay!
+2026-11-01T22:29:36.1606674Z {"command": ["lake", "comparator", "--config=Comparator/integral_curve_regularity.json", "--paranoid"], "exit_code": 0, "seconds": 213.2, "configuration": "integral_curve_regularity.json", "theorem_names": ["KVApproximation.Dynamics.integral_curve_regularity"], "challenge_module": "Challenges.IntegralCurveRegularity", "solution_module": "KVApproximation.Dynamics.IntegralCurveRegularity", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:29:36.1610766Z Comparator 10/21: log_partition_identities
+2026-11-01T22:29:36.1613897Z Running lake comparator --config=Comparator/log_partition_identities.json --paranoid
+2026-11-01T22:29:36.9828927Z Resolving dependencies
+2026-11-01T22:29:36.9829842Z Building Challenges.Interpolation
+2026-11-01T22:29:38.7930373Z ⚠ [2385/2385] Replayed Challenges.Interpolation
+2026-11-01T22:29:38.7932319Z warning: Comparator/Challenges/Interpolation.lean:16:8: declaration uses `sorry`
+2026-11-01T22:29:38.7933724Z warning: Comparator/Challenges/Interpolation.lean:27:8: declaration uses `sorry`
+2026-11-01T22:29:38.7934991Z warning: Comparator/Challenges/Interpolation.lean:32:8: declaration uses `sorry`
+2026-11-01T22:29:38.7936488Z warning: Comparator/Challenges/Interpolation.lean:38:8: declaration uses `sorry`
+2026-11-01T22:29:38.7987428Z Build completed successfully (2385 jobs).
+2026-11-01T22:29:44.2539830Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.sum_logHat, KVApproximation.Approximation.logPatch_width, KVApproximation.Approximation.localCoordinate_localRate, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.Interpolation
+2026-11-01T22:29:44.2543782Z Building KVApproximation.Approximation.LogPartitionIdentities
+2026-11-01T22:29:45.9718945Z Build completed successfully (2078 jobs).
+2026-11-01T22:29:57.2127143Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.sum_logHat, KVApproximation.Approximation.logPatch_width, KVApproximation.Approximation.localCoordinate_localRate, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Approximation.LogPartitionIdentities
+2026-11-01T22:29:57.2133526Z Running Lean paranoid kernel on solution
+2026-11-01T22:30:08.1146813Z Lean paranoid kernel accepts the solution
+2026-11-01T22:30:08.1148325Z Running lean4lean kernel on solution
+2026-11-01T22:30:19.4002204Z checked 15663 declarations
+2026-11-01T22:30:19.4062848Z lean4lean kernel accepts the solution
+2026-11-01T22:30:19.4063659Z Running nanoda kernel on solution
+2026-11-01T22:30:22.8727128Z nanoda kernel accepts the solution
+2026-11-01T22:30:22.8727719Z Running con-leche kernel on solution
+2026-11-01T22:30:31.8922630Z con-leche: accepted 15666 declarations (--verified)
+2026-11-01T22:30:31.8982077Z con-leche kernel accepts the solution
+2026-11-01T22:30:31.8983014Z Running con-ron kernel on solution
+2026-11-01T22:30:35.8149266Z con-ron: accepted 15666 declarations (--verified)
+2026-11-01T22:30:35.8270168Z con-ron kernel accepts the solution
+2026-11-01T22:30:35.8270951Z Running Lean default kernel on solution
+2026-11-01T22:30:45.0347983Z Lean default kernel accepts the solution
+2026-11-01T22:30:45.0362640Z Your solution is okay!
+2026-11-01T22:30:45.0409591Z {"command": ["lake", "comparator", "--config=Comparator/log_partition_identities.json", "--paranoid"], "exit_code": 0, "seconds": 68.9, "configuration": "log_partition_identities.json", "theorem_names": ["KVApproximation.Approximation.sum_logHat", "KVApproximation.Approximation.logPatch_width", "KVApproximation.Approximation.localCoordinate_localRate"], "challenge_module": "Challenges.Interpolation", "solution_module": "KVApproximation.Approximation.LogPartitionIdentities", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:30:45.0416831Z Comparator 11/21: material_topology
+2026-11-01T22:30:45.0428301Z Running lake comparator --config=Comparator/material_topology.json --paranoid
+2026-11-01T22:30:45.8566000Z Resolving dependencies
+2026-11-01T22:30:45.8566767Z Building Challenges.MaterialTopology
+2026-11-01T22:30:48.0693722Z ⚠ [3081/3081] Replayed Challenges.MaterialTopology
+2026-11-01T22:30:48.0695260Z warning: Comparator/Challenges/MaterialTopology.lean:24:8: declaration uses `sorry`
+2026-11-01T22:30:48.0696769Z warning: Comparator/Challenges/MaterialTopology.lean:33:8: declaration uses `sorry`
+2026-11-01T22:30:48.0750704Z Build completed successfully (3081 jobs).
+2026-11-01T22:30:57.6803822Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.KelvinVoigt.material_L1_tendsto, KVApproximation.KelvinVoigt.material_fields_L1_tendsto, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.MaterialTopology
+2026-11-01T22:30:57.6809729Z Building KVApproximation.KelvinVoigt.MaterialTopology
+2026-11-01T22:30:59.9147321Z Build completed successfully (3081 jobs).
+2026-11-01T22:31:21.9260568Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.KelvinVoigt.material_L1_tendsto, KVApproximation.KelvinVoigt.material_fields_L1_tendsto, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.KelvinVoigt.MaterialTopology
+2026-11-01T22:31:21.9264811Z Running Lean paranoid kernel on solution
+2026-11-01T22:31:47.0832284Z Lean paranoid kernel accepts the solution
+2026-11-01T22:31:47.0833735Z Running lean4lean kernel on solution
+2026-11-01T22:32:12.4337461Z checked 28452 declarations
+2026-11-01T22:32:12.4399672Z lean4lean kernel accepts the solution
+2026-11-01T22:32:12.4400751Z Running nanoda kernel on solution
+2026-11-01T22:32:20.6252483Z nanoda kernel accepts the solution
+2026-11-01T22:32:20.6257413Z Running con-leche kernel on solution
+2026-11-01T22:32:39.0677449Z con-leche: accepted 28455 declarations (--verified)
+2026-11-01T22:32:39.0743646Z con-leche kernel accepts the solution
+2026-11-01T22:32:39.0744510Z Running con-ron kernel on solution
+2026-11-01T22:32:47.2647164Z con-ron: accepted 28455 declarations (--verified)
+2026-11-01T22:32:47.2784884Z con-ron kernel accepts the solution
+2026-11-01T22:32:47.2786616Z Running Lean default kernel on solution
+2026-11-01T22:33:08.4853292Z Lean default kernel accepts the solution
+2026-11-01T22:33:08.4854588Z Your solution is okay!
+2026-11-01T22:33:08.4916440Z {"command": ["lake", "comparator", "--config=Comparator/material_topology.json", "--paranoid"], "exit_code": 0, "seconds": 143.4, "configuration": "material_topology.json", "theorem_names": ["KVApproximation.KelvinVoigt.material_L1_tendsto", "KVApproximation.KelvinVoigt.material_fields_L1_tendsto"], "challenge_module": "Challenges.MaterialTopology", "solution_module": "KVApproximation.KelvinVoigt.MaterialTopology", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:33:08.4926450Z Comparator 12/21: operator_convolution_balance
+2026-11-01T22:33:08.4927466Z Running lake comparator --config=Comparator/operator_convolution_balance.json --paranoid
+2026-11-01T22:33:09.3100234Z Resolving dependencies
+2026-11-01T22:33:09.3101081Z Building Challenges.OperatorConvolutionBalance
+2026-11-01T22:33:11.3277107Z ⚠ [2697/2697] Replayed Challenges.OperatorConvolutionBalance
+2026-11-01T22:33:11.3278503Z warning: Comparator/Challenges/OperatorConvolutionBalance.lean:19:8: declaration uses `sorry`
+2026-11-01T22:33:11.3279803Z warning: Comparator/Challenges/OperatorConvolutionBalance.lean:31:8: declaration uses `sorry`
+2026-11-01T22:33:11.3342360Z Build completed successfully (2697 jobs).
+2026-11-01T22:33:22.4601574Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.integral_operatorConvolution_assoc, KVApproximation.Analysis.duhamel_integrated_memory_balance, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.OperatorConvolutionBalance
+2026-11-01T22:33:22.4605274Z Building KVApproximation.Analysis.OperatorConvolutionBalance
+2026-11-01T22:33:24.4807888Z Build completed successfully (2700 jobs).
+2026-11-01T22:33:53.8802458Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.integral_operatorConvolution_assoc, KVApproximation.Analysis.duhamel_integrated_memory_balance, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.OperatorConvolutionBalance
+2026-11-01T22:33:53.8806883Z Running Lean paranoid kernel on solution
+2026-11-01T22:34:32.0055256Z Lean paranoid kernel accepts the solution
+2026-11-01T22:34:32.0057511Z Running lean4lean kernel on solution
+2026-11-01T22:35:10.9426579Z checked 36262 declarations
+2026-11-01T22:35:10.9491617Z lean4lean kernel accepts the solution
+2026-11-01T22:35:10.9492499Z Running nanoda kernel on solution
+2026-11-01T22:35:24.1640112Z nanoda kernel accepts the solution
+2026-11-01T22:35:24.1640924Z Running con-leche kernel on solution
+2026-11-01T22:35:50.3582790Z con-leche: accepted 36265 declarations (--verified)
+2026-11-01T22:35:50.3664146Z con-leche kernel accepts the solution
+2026-11-01T22:35:50.3664853Z Running con-ron kernel on solution
+2026-11-01T22:36:02.4991899Z con-ron: accepted 36265 declarations (--verified)
+2026-11-01T22:36:02.5134826Z con-ron kernel accepts the solution
+2026-11-01T22:36:02.5140469Z Running Lean default kernel on solution
+2026-11-01T22:36:35.3567554Z Lean default kernel accepts the solution
+2026-11-01T22:36:35.3569115Z Your solution is okay!
+2026-11-01T22:36:35.3617358Z {"command": ["lake", "comparator", "--config=Comparator/operator_convolution_balance.json", "--paranoid"], "exit_code": 0, "seconds": 206.9, "configuration": "operator_convolution_balance.json", "theorem_names": ["KVApproximation.Analysis.integral_operatorConvolution_assoc", "KVApproximation.Analysis.duhamel_integrated_memory_balance"], "challenge_module": "Challenges.OperatorConvolutionBalance", "solution_module": "KVApproximation.Analysis.OperatorConvolutionBalance", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:36:35.3622443Z Comparator 13/21: periodic_cutoff
+2026-11-01T22:36:35.3623481Z Running lake comparator --config=Comparator/periodic_cutoff.json --paranoid
+2026-11-01T22:36:36.2062879Z Resolving dependencies
+2026-11-01T22:36:36.2064012Z Building Challenges.PeriodicCutoff
+2026-11-01T22:36:38.4257313Z ⚠ [3199/3199] Replayed Challenges.PeriodicCutoff
+2026-11-01T22:36:38.4258589Z warning: Comparator/Challenges/PeriodicCutoff.lean:17:8: declaration uses `sorry`
+2026-11-01T22:36:38.4316243Z Build completed successfully (3199 jobs).
+2026-11-01T22:36:54.3129254Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.PeriodicH1.exists_rescaled_cutoff, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.PeriodicCutoff
+2026-11-01T22:36:54.3132892Z Building KVApproximation.Analysis.PeriodicCutoff
+2026-11-01T22:36:56.6567523Z Build completed successfully (3207 jobs).
+2026-11-01T22:37:45.2376015Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.PeriodicH1.exists_rescaled_cutoff, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.PeriodicCutoff
+2026-11-01T22:37:45.2379624Z Running Lean paranoid kernel on solution
+2026-11-01T22:39:14.7516188Z Lean paranoid kernel accepts the solution
+2026-11-01T22:39:14.7517534Z Running lean4lean kernel on solution
+2026-11-01T22:40:40.8086778Z checked 50713 declarations
+2026-11-01T22:40:40.8176540Z lean4lean kernel accepts the solution
+2026-11-01T22:40:40.8177366Z Running nanoda kernel on solution
+2026-11-01T22:41:12.6931134Z nanoda kernel accepts the solution
+2026-11-01T22:41:12.6932239Z Running con-leche kernel on solution
+2026-11-01T22:42:02.0109819Z con-leche: accepted 50716 declarations (--verified)
+2026-11-01T22:42:02.0222730Z con-leche kernel accepts the solution
+2026-11-01T22:42:02.0223434Z Running con-ron kernel on solution
+2026-11-01T22:42:24.8276990Z con-ron: accepted 50716 declarations (--verified)
+2026-11-01T22:42:24.8496225Z con-ron kernel accepts the solution
+2026-11-01T22:42:24.8506838Z Running Lean default kernel on solution
+2026-11-01T22:43:43.1146754Z Lean default kernel accepts the solution
+2026-11-01T22:43:43.1166158Z Your solution is okay!
+2026-11-01T22:43:43.1228830Z {"command": ["lake", "comparator", "--config=Comparator/periodic_cutoff.json", "--paranoid"], "exit_code": 0, "seconds": 427.8, "configuration": "periodic_cutoff.json", "theorem_names": ["KVApproximation.Analysis.PeriodicH1.exists_rescaled_cutoff"], "challenge_module": "Challenges.PeriodicCutoff", "solution_module": "KVApproximation.Analysis.PeriodicCutoff", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:43:43.1249849Z Comparator 14/21: periodic_rescaling
+2026-11-01T22:43:43.1266451Z Running lake comparator --config=Comparator/periodic_rescaling.json --paranoid
+2026-11-01T22:43:43.9620243Z Resolving dependencies
+2026-11-01T22:43:43.9621701Z Building Challenges.PeriodicRescaling
+2026-11-01T22:43:46.1814533Z ⚠ [3075/3075] Replayed Challenges.PeriodicRescaling
+2026-11-01T22:43:46.1817117Z warning: Comparator/Challenges/PeriodicRescaling.lean:19:8: declaration uses `sorry`
+2026-11-01T22:43:46.1818824Z warning: Comparator/Challenges/PeriodicRescaling.lean:25:8: declaration uses `sorry`
+2026-11-01T22:43:46.1819915Z warning: Comparator/Challenges/PeriodicRescaling.lean:32:8: declaration uses `sorry`
+2026-11-01T22:43:46.1821047Z warning: Comparator/Challenges/PeriodicRescaling.lean:40:8: declaration uses `sorry`
+2026-11-01T22:43:46.1822154Z warning: Comparator/Challenges/PeriodicRescaling.lean:48:8: declaration uses `sorry`
+2026-11-01T22:43:46.1823113Z warning: Comparator/Challenges/PeriodicRescaling.lean:56:8: declaration uses `sorry`
+2026-11-01T22:43:46.1866883Z Build completed successfully (3075 jobs).
+2026-11-01T22:43:56.9984178Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.quasiMeasurePreserving_toCell, KVApproximation.Analysis.quasiMeasurePreserving_scaledToCell, KVApproximation.Analysis.ae_rescalePeriodic, KVApproximation.Analysis.aestronglyMeasurable_rescalePeriodic, KVApproximation.Analysis.eLpNorm_top_rescalePeriodic_le, KVApproximation.Analysis.memLp_top_rescalePeriodic, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.PeriodicRescaling
+2026-11-01T22:43:56.9990542Z Building KVApproximation.Analysis.PeriodicRescaling
+2026-11-01T22:43:59.2217652Z Build completed successfully (3075 jobs).
+2026-11-01T22:44:28.1362188Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.quasiMeasurePreserving_toCell, KVApproximation.Analysis.quasiMeasurePreserving_scaledToCell, KVApproximation.Analysis.ae_rescalePeriodic, KVApproximation.Analysis.aestronglyMeasurable_rescalePeriodic, KVApproximation.Analysis.eLpNorm_top_rescalePeriodic_le, KVApproximation.Analysis.memLp_top_rescalePeriodic, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.PeriodicRescaling
+2026-11-01T22:44:28.1368452Z Running Lean paranoid kernel on solution
+2026-11-01T22:45:05.1047783Z Lean paranoid kernel accepts the solution
+2026-11-01T22:45:05.1062647Z Running lean4lean kernel on solution
+2026-11-01T22:45:42.3976688Z checked 36550 declarations
+2026-11-01T22:45:42.4067171Z lean4lean kernel accepts the solution
+2026-11-01T22:45:42.4075060Z Running nanoda kernel on solution
+2026-11-01T22:45:55.0073836Z nanoda kernel accepts the solution
+2026-11-01T22:45:55.0074641Z Running con-leche kernel on solution
+2026-11-01T22:46:20.6887754Z con-leche: accepted 36553 declarations (--verified)
+2026-11-01T22:46:20.6973066Z con-leche kernel accepts the solution
+2026-11-01T22:46:20.6973931Z Running con-ron kernel on solution
+2026-11-01T22:46:32.6321429Z con-ron: accepted 36553 declarations (--verified)
+2026-11-01T22:46:32.6495463Z con-ron kernel accepts the solution
+2026-11-01T22:46:32.6506728Z Running Lean default kernel on solution
+2026-11-01T22:47:04.0269620Z Lean default kernel accepts the solution
+2026-11-01T22:47:04.0270446Z Your solution is okay!
+2026-11-01T22:47:04.0363223Z {"command": ["lake", "comparator", "--config=Comparator/periodic_rescaling.json", "--paranoid"], "exit_code": 0, "seconds": 200.9, "configuration": "periodic_rescaling.json", "theorem_names": ["KVApproximation.Analysis.quasiMeasurePreserving_toCell", "KVApproximation.Analysis.quasiMeasurePreserving_scaledToCell", "KVApproximation.Analysis.ae_rescalePeriodic", "KVApproximation.Analysis.aestronglyMeasurable_rescalePeriodic", "KVApproximation.Analysis.eLpNorm_top_rescalePeriodic_le", "KVApproximation.Analysis.memLp_top_rescalePeriodic"], "challenge_module": "Challenges.PeriodicRescaling", "solution_module": "KVApproximation.Analysis.PeriodicRescaling", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:47:04.0370052Z Comparator 15/21: periodic_translation_tests
+2026-11-01T22:47:04.0371092Z Running lake comparator --config=Comparator/periodic_translation_tests.json --paranoid
+2026-11-01T22:47:04.8664931Z Resolving dependencies
+2026-11-01T22:47:04.8666436Z Building Challenges.PeriodicBVCompactness
+2026-11-01T22:47:07.0850563Z ⚠ [3071/3071] Replayed Challenges.PeriodicBVCompactness
+2026-11-01T22:47:07.0851880Z warning: Comparator/Challenges/PeriodicBVCompactness.lean:21:8: declaration uses `sorry`
+2026-11-01T22:47:07.0853369Z warning: Comparator/Challenges/PeriodicBVCompactness.lean:31:8: declaration uses `sorry`
+2026-11-01T22:47:07.0854759Z warning: Comparator/Challenges/PeriodicBVCompactness.lean:39:8: declaration uses `sorry`
+2026-11-01T22:47:07.0906624Z Build completed successfully (3071 jobs).
+2026-11-01T22:47:14.1352207Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.exists_periodic_divergence_eq_translate_sub, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.PeriodicBVCompactness
+2026-11-01T22:47:14.1397901Z Building KVApproximation.Analysis.PeriodicTranslationTests
+2026-11-01T22:47:16.4075362Z Build completed successfully (3079 jobs).
+2026-11-01T22:47:47.4725363Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.exists_periodic_divergence_eq_translate_sub, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.PeriodicTranslationTests
+2026-11-01T22:47:47.4729086Z Running Lean paranoid kernel on solution
+2026-11-01T22:48:42.4802614Z Lean paranoid kernel accepts the solution
+2026-11-01T22:48:42.4803844Z Running lean4lean kernel on solution
+2026-11-01T22:49:36.5936742Z checked 41172 declarations
+2026-11-01T22:49:36.6008468Z lean4lean kernel accepts the solution
+2026-11-01T22:49:36.6014897Z Running nanoda kernel on solution
+2026-11-01T22:49:54.8846540Z nanoda kernel accepts the solution
+2026-11-01T22:49:54.8847438Z Running con-leche kernel on solution
+2026-11-01T22:50:28.8079446Z con-leche: accepted 41175 declarations (--verified)
+2026-11-01T22:50:28.8175178Z con-leche kernel accepts the solution
+2026-11-01T22:50:28.8176681Z Running con-ron kernel on solution
+2026-11-01T22:50:44.6430849Z con-ron: accepted 41175 declarations (--verified)
+2026-11-01T22:50:44.6619396Z con-ron kernel accepts the solution
+2026-11-01T22:50:44.6620615Z Running Lean default kernel on solution
+2026-11-01T22:51:32.8947619Z Lean default kernel accepts the solution
+2026-11-01T22:51:32.8949113Z Your solution is okay!
+2026-11-01T22:51:32.9058095Z {"command": ["lake", "comparator", "--config=Comparator/periodic_translation_tests.json", "--paranoid"], "exit_code": 0, "seconds": 268.9, "configuration": "periodic_translation_tests.json", "theorem_names": ["KVApproximation.Analysis.exists_periodic_divergence_eq_translate_sub"], "challenge_module": "Challenges.PeriodicBVCompactness", "solution_module": "KVApproximation.Analysis.PeriodicTranslationTests", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:51:32.9076729Z Comparator 16/21: prony_stress_error
+2026-11-01T22:51:32.9098111Z Running lake comparator --config=Comparator/prony_stress_error.json --paranoid
+2026-11-01T22:51:33.7853821Z Resolving dependencies
+2026-11-01T22:51:33.7854719Z Building Challenges.PronyDynamics
+2026-11-01T22:51:35.8338476Z ⚠ [2694/2694] Replayed Challenges.PronyDynamics
+2026-11-01T22:51:35.8339758Z warning: Comparator/Challenges/PronyDynamics.lean:19:8: declaration uses `sorry`
+2026-11-01T22:51:35.8341089Z warning: Comparator/Challenges/PronyDynamics.lean:28:8: declaration uses `sorry`
+2026-11-01T22:51:35.8342314Z warning: Comparator/Challenges/PronyDynamics.lean:37:8: declaration uses `sorry`
+2026-11-01T22:51:35.8343325Z warning: Comparator/Challenges/PronyDynamics.lean:59:8: declaration uses `sorry`
+2026-11-01T22:51:35.8427429Z Build completed successfully (2694 jobs).
+2026-11-01T22:51:41.6819738Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Dynamics.stress_error_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.PronyDynamics
+2026-11-01T22:51:41.6822955Z Building KVApproximation.Dynamics.PronyDissipation
+2026-11-01T22:51:43.7563604Z Build completed successfully (2694 jobs).
+2026-11-01T22:51:55.8145131Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Dynamics.stress_error_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Dynamics.PronyDissipation
+2026-11-01T22:51:55.8149297Z Running Lean paranoid kernel on solution
+2026-11-01T22:52:07.6894222Z Lean paranoid kernel accepts the solution
+2026-11-01T22:52:07.6906195Z Running lean4lean kernel on solution
+2026-11-01T22:52:19.8377202Z checked 16308 declarations
+2026-11-01T22:52:19.8436183Z lean4lean kernel accepts the solution
+2026-11-01T22:52:19.8436987Z Running nanoda kernel on solution
+2026-11-01T22:52:23.6596782Z nanoda kernel accepts the solution
+2026-11-01T22:52:23.6598456Z Running con-leche kernel on solution
+2026-11-01T22:52:33.3741184Z con-leche: accepted 16311 declarations (--verified)
+2026-11-01T22:52:33.3815224Z con-leche kernel accepts the solution
+2026-11-01T22:52:33.3816439Z Running con-ron kernel on solution
+2026-11-01T22:52:37.5861690Z con-ron: accepted 16311 declarations (--verified)
+2026-11-01T22:52:37.5976474Z con-ron kernel accepts the solution
+2026-11-01T22:52:37.5977605Z Running Lean default kernel on solution
+2026-11-01T22:52:47.6364670Z Lean default kernel accepts the solution
+2026-11-01T22:52:47.6366408Z Your solution is okay!
+2026-11-01T22:52:47.6426538Z {"command": ["lake", "comparator", "--config=Comparator/prony_stress_error.json", "--paranoid"], "exit_code": 0, "seconds": 74.7, "configuration": "prony_stress_error.json", "theorem_names": ["KVApproximation.Dynamics.stress_error_le"], "challenge_module": "Challenges.PronyDynamics", "solution_module": "KVApproximation.Dynamics.PronyDissipation", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:52:47.6430172Z Comparator 17/21: sobolev_coefficient_compactness
+2026-11-01T22:52:47.6432036Z Running lake comparator --config=Comparator/sobolev_coefficient_compactness.json --paranoid
+2026-11-01T22:52:48.4732357Z Resolving dependencies
+2026-11-01T22:52:48.4733597Z Building Challenges.SobolevCoefficientCompactness
+2026-11-01T22:52:50.6831015Z ⚠ [3075/3075] Replayed Challenges.SobolevCoefficientCompactness
+2026-11-01T22:52:50.6832923Z warning: Comparator/Challenges/SobolevCoefficientCompactness.lean:21:8: declaration uses `sorry`
+2026-11-01T22:52:50.6836971Z warning: Comparator/Challenges/SobolevCoefficientCompactness.lean:33:8: declaration uses `sorry`
+2026-11-01T22:52:50.6889603Z Build completed successfully (3075 jobs).
+2026-11-01T22:53:00.1547479Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Tensor.isCompact_closure_sobolev_coefficients, KVApproximation.Tensor.isCompact_sobolev_coefficients_of_isClosed, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.SobolevCoefficientCompactness
+2026-11-01T22:53:00.1551409Z Building KVApproximation.Tensor.SobolevCompactness
+2026-11-01T22:53:02.4900660Z Build completed successfully (3180 jobs).
+2026-11-01T22:53:41.5657367Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Tensor.isCompact_closure_sobolev_coefficients, KVApproximation.Tensor.isCompact_sobolev_coefficients_of_isClosed, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Tensor.SobolevCompactness
+2026-11-01T22:53:41.5661730Z Running Lean paranoid kernel on solution
+2026-11-01T22:54:54.6799375Z Lean paranoid kernel accepts the solution
+2026-11-01T22:54:54.6801204Z Running lean4lean kernel on solution
+2026-11-01T22:56:06.5958062Z checked 47362 declarations
+2026-11-01T22:56:06.6029579Z lean4lean kernel accepts the solution
+2026-11-01T22:56:06.6034514Z Running nanoda kernel on solution
+2026-11-01T22:56:31.4443814Z nanoda kernel accepts the solution
+2026-11-01T22:56:31.4444670Z Running con-leche kernel on solution
+2026-11-01T22:57:14.8127955Z con-leche: accepted 47365 declarations (--verified)
+2026-11-01T22:57:14.8232336Z con-leche kernel accepts the solution
+2026-11-01T22:57:14.8249472Z Running con-ron kernel on solution
+2026-11-01T22:57:34.6969613Z con-ron: accepted 47365 declarations (--verified)
+2026-11-01T22:57:34.7175274Z con-ron kernel accepts the solution
+2026-11-01T22:57:34.7176422Z Running Lean default kernel on solution
+2026-11-01T22:58:37.8470309Z Lean default kernel accepts the solution
+2026-11-01T22:58:37.8485946Z Your solution is okay!
+2026-11-01T22:58:37.8553071Z {"command": ["lake", "comparator", "--config=Comparator/sobolev_coefficient_compactness.json", "--paranoid"], "exit_code": 0, "seconds": 350.2, "configuration": "sobolev_coefficient_compactness.json", "theorem_names": ["KVApproximation.Tensor.isCompact_closure_sobolev_coefficients", "KVApproximation.Tensor.isCompact_sobolev_coefficients_of_isClosed"], "challenge_module": "Challenges.SobolevCoefficientCompactness", "solution_module": "KVApproximation.Tensor.SobolevCompactness", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:58:37.8576106Z Comparator 18/21: static_homogenization
+2026-11-01T22:58:37.8965230Z Running lake comparator --config=Comparator/static_homogenization.json --paranoid
+2026-11-01T22:58:38.6966670Z Resolving dependencies
+2026-11-01T22:58:38.6967495Z Building Challenges.StaticHomogenization
+2026-11-01T22:58:41.1448459Z ⚠ [3207/3207] Replayed Challenges.StaticHomogenization
+2026-11-01T22:58:41.1450490Z warning: Comparator/Challenges/StaticHomogenization.lean:18:8: declaration uses `sorry`
+2026-11-01T22:58:41.1451987Z warning: Comparator/Challenges/StaticHomogenization.lean:41:8: declaration uses `sorry`
+2026-11-01T22:58:41.1523824Z Build completed successfully (3207 jobs).
+2026-11-01T22:58:57.6236694Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Homogenization.periodic_elliptic_homogenization, KVApproximation.Homogenization.periodic_elliptic_weak_limit, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.StaticHomogenization
+2026-11-01T22:58:57.6240587Z Building KVApproximation.Homogenization.StaticHomogenization
+2026-11-01T22:59:00.0606482Z Build completed successfully (3350 jobs).
+2026-11-01T22:59:56.3871730Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Homogenization.periodic_elliptic_homogenization, KVApproximation.Homogenization.periodic_elliptic_weak_limit, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Homogenization.StaticHomogenization
+2026-11-01T22:59:56.3876179Z Running Lean paranoid kernel on solution
+2026-11-01T23:18:54.3791861Z ##[error]Process completed with exit code 143.
+2026-11-01T23:18:54.3829012Z ##[error]The runner has received a shutdown signal. This can happen when the runner service is stopped, or a manually started runner is canceled.
+2026-11-01T23:18:54.5741647Z Cleaning up orphan processes
+

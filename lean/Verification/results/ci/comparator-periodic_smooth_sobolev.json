@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_smooth_sobolev.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 333.8,
+  "configuration": "periodic_smooth_sobolev.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicC1.exists_periodicH1"
+  ],
+  "challenge_module": "Challenges.PeriodicSmoothSobolev",
+  "solution_module": "KVApproximation.Analysis.PeriodicSmoothSobolev",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/fourier_feature_layer.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 253.5,
+  "configuration": "fourier_feature_layer.json",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.exists_fourier_feature_layer",
+    "KVApproximation.NeuralOperators.FourierLayer.continuous_eval_of_zero_localWeight"
+  ],
+  "challenge_module": "Challenges.FourierFeatureLayer",
+  "solution_module": "KVApproximation.NeuralOperators.FourierFeatureLayer",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

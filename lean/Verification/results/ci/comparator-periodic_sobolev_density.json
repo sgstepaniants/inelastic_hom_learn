@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_sobolev_density.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 319.1,
+  "configuration": "periodic_sobolev_density.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.periodicH1_iff_weakGradient"
+  ],
+  "challenge_module": "Challenges.PeriodicSobolev",
+  "solution_module": "KVApproximation.Analysis.PeriodicSobolevDensity",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/hilbert_weak_limits.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 78.7,
+  "configuration": "hilbert_weak_limits.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.norm_le_of_weak_tendsto",
+    "KVApproximation.Analysis.exists_continuousLinearMap_of_weak_tendsto",
+    "KVApproximation.Analysis.lipschitzOnWith_of_weak_tendsto"
+  ],
+  "challenge_module": "Challenges.HilbertWeakLimits",
+  "solution_module": "KVApproximation.Analysis.HilbertWeakLimits",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

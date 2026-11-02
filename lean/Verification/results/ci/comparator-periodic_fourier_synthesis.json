@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_fourier_synthesis.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 305.2,
+  "configuration": "periodic_fourier_synthesis.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.contDiff_realFourierMode_lift",
+    "KVApproximation.Analysis.fderiv_realFourierMode_lift_apply",
+    "KVApproximation.Analysis.hasSum_realFourier_series"
+  ],
+  "challenge_module": "Challenges.PeriodicFourierSynthesis",
+  "solution_module": "KVApproximation.Analysis.PeriodicFourierSynthesis",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

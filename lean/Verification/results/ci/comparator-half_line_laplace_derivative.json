@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/half_line_laplace_derivative.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 233.0,
+  "configuration": "half_line_laplace_derivative.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.halfLineLaplace_derivative"
+  ],
+  "challenge_module": "Challenges.HalfLineLaplaceDerivative",
+  "solution_module": "KVApproximation.Analysis.HalfLineLaplaceDerivative",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

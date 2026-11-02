@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/compression_approximation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 492.7,
+  "configuration": "compression_approximation.json",
+  "theorem_names": [
+    "KVApproximation.Spectral.compressedMeasure_pairing_sub_le"
+  ],
+  "challenge_module": "Challenges.CompressionApproximation",
+  "solution_module": "KVApproximation.Spectral.CompressionApproximation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

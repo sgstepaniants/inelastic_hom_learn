@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/global_positive_geometry.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 382.0,
+  "configuration": "global_positive_geometry.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.complexGlobalLogRate_ellipse_of_span_pos"
+  ],
+  "challenge_module": "Challenges.GlobalPositiveSpan",
+  "solution_module": "KVApproximation.Approximation.GlobalRateGeometry",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

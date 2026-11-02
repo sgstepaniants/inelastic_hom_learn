@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/time_sobolev_maps.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 458.1,
+  "configuration": "time_sobolev_maps.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.TimeH1.eq_of_value_ae",
+    "KVApproximation.Analysis.TimeH1.exists_map",
+    "KVApproximation.Analysis.TimeH1.trace_map_of_value_ae"
+  ],
+  "challenge_module": "Challenges.TimeSobolevMaps",
+  "solution_module": "KVApproximation.Analysis.TimeSobolevMaps",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

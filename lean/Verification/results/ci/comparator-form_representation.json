@@ -1,0 +1,31 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/form_representation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 143.2,
+  "configuration": "form_representation.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.existsUnique_form_tensor",
+    "KVApproximation.Tensor.eq_of_inner_action_eq",
+    "KVApproximation.Tensor.continuous_of_inner_action",
+    "KVApproximation.Tensor.tendsto_of_inner_action",
+    "KVApproximation.Tensor.hasSum_of_inner_action",
+    "KVApproximation.Tensor.tensorTrace_eq_sum",
+    "KVApproximation.Tensor.norm_le_tensorTrace"
+  ],
+  "challenge_module": "Challenges.TensorRepresentation",
+  "solution_module": "KVApproximation.Tensor.FormRepresentation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

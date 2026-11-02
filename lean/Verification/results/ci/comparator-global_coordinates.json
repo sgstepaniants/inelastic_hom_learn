@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/global_coordinates.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 175.9,
+  "configuration": "global_coordinates.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.globalLogCoordinate_mem",
+    "KVApproximation.Approximation.globalLogRate_globalLogCoordinate",
+    "KVApproximation.Approximation.continuousOn_globalResponseInterpolant"
+  ],
+  "challenge_module": "Challenges.GlobalResponse",
+  "solution_module": "KVApproximation.Approximation.GlobalCoordinates",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

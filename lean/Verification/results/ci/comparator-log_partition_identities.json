@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/log_partition_identities.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 68.9,
+  "configuration": "log_partition_identities.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.sum_logHat",
+    "KVApproximation.Approximation.logPatch_width",
+    "KVApproximation.Approximation.localCoordinate_localRate"
+  ],
+  "challenge_module": "Challenges.Interpolation",
+  "solution_module": "KVApproximation.Approximation.LogPartitionIdentities",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

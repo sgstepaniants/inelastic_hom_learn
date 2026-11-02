@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_divergence_fourier.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 154.4,
+  "configuration": "periodic_divergence_fourier.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.HasPeriodicZeroDivergence.fourier_coefficient"
+  ],
+  "challenge_module": "Challenges.PeriodicDivergenceFourier",
+  "solution_module": "KVApproximation.Analysis.PeriodicDivergenceFourier",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

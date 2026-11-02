@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_fourier_averaging.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 194.6,
+  "configuration": "periodic_fourier_averaging.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.tendsto_integral_rescale_mFourier_mul"
+  ],
+  "challenge_module": "Challenges.PeriodicFourierAveraging",
+  "solution_module": "KVApproximation.Analysis.PeriodicFourierAveraging",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/spatial_stress.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 332.8,
+  "configuration": "spatial_stress.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.spatialStressL_apply_ae",
+    "KVApproximation.Homogenization.norm_spatialStressL_le",
+    "KVApproximation.Homogenization.integral_spatialStressL_strain"
+  ],
+  "challenge_module": "Challenges.SpatialStress",
+  "solution_module": "KVApproximation.Homogenization.SpatialStress",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

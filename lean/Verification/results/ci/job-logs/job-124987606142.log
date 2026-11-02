@@ -1,0 +1,775 @@
+﻿2026-11-01T22:29:25.4416863Z Current runner version: '2.338.2'
+2026-11-01T22:29:25.4497113Z ##[group]Runner Image Provisioner
+2026-11-01T22:29:25.4498665Z Hosted Compute Agent
+2026-11-01T22:29:25.4520697Z Version: 20261021.618
+2026-11-01T22:29:25.4522020Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-11-01T22:29:25.4523339Z Build Date: 2026-10-21T00:45:21Z
+2026-11-01T22:29:25.4524746Z Worker ID: {8dbcf20c-76eb-431c-b998-4f654db9efec}
+2026-11-01T22:29:25.4526090Z Region: eastus
+2026-11-01T22:29:25.4527033Z Cloud: Azure
+2026-11-01T22:29:25.4528127Z ##[endgroup]
+2026-11-01T22:29:25.4531020Z ##[group]Operating System
+2026-11-01T22:29:25.4532264Z Ubuntu
+2026-11-01T22:29:25.4533280Z 22.04.5
+2026-11-01T22:29:25.4534271Z LTS
+2026-11-01T22:29:25.4535345Z ##[endgroup]
+2026-11-01T22:29:25.4536414Z ##[group]Runner Image
+2026-11-01T22:29:25.4537688Z Image: ubuntu-22.04
+2026-11-01T22:29:25.4538855Z Version: 20261025.340.1
+2026-11-01T22:29:25.4561802Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20261025.340/images/ubuntu/Ubuntu2204-Readme.md
+2026-11-01T22:29:25.4564651Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20261025.340
+2026-11-01T22:29:25.4566712Z ##[endgroup]
+2026-11-01T22:29:25.4568663Z ##[group]GITHUB_TOKEN Permissions
+2026-11-01T22:29:25.4572787Z Contents: read
+2026-11-01T22:29:25.4573836Z Metadata: read
+2026-11-01T22:29:25.4575032Z ##[endgroup]
+2026-11-01T22:29:25.4578497Z Secret source: Actions
+2026-11-01T22:29:25.4591061Z Cache mode: write
+2026-11-01T22:29:25.4592655Z Prepare workflow directory
+2026-11-01T22:29:25.5467896Z Prepare all required actions
+2026-11-01T22:29:25.5539730Z Getting action download info
+2026-11-01T22:29:25.7266771Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-01T22:29:25.8712288Z Download action repository 'actions/cache@v6' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-01T22:29:26.0143387Z Download action repository 'actions/upload-artifact@v7' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-01T22:29:26.2152056Z Complete job name: Comparator shard 9 of 16
+2026-11-01T22:29:26.3331701Z ##[group]Run actions/checkout@v7
+2026-11-01T22:29:26.3332602Z with:
+2026-11-01T22:29:26.3333073Z   persist-credentials: false
+2026-11-01T22:29:26.3333659Z   repository: sgstepaniants/inelastic_hom_learn
+2026-11-01T22:29:26.3337723Z   token: ***
+2026-11-01T22:29:26.3338165Z   ssh-strict: true
+2026-11-01T22:29:26.3338608Z   ssh-user: git
+2026-11-01T22:29:26.3339030Z   clean: true
+2026-11-01T22:29:26.3339925Z   sparse-checkout-cone-mode: true
+2026-11-01T22:29:26.3340505Z   fetch-depth: 1
+2026-11-01T22:29:26.3340959Z   fetch-tags: false
+2026-11-01T22:29:26.3341417Z   show-progress: true
+2026-11-01T22:29:26.3341870Z   lfs: false
+2026-11-01T22:29:26.3342289Z   submodules: false
+2026-11-01T22:29:26.3342753Z   set-safe-directory: true
+2026-11-01T22:29:26.3343284Z   allow-unsafe-pr-checkout: false
+2026-11-01T22:29:26.3344261Z ##[endgroup]
+2026-11-01T22:29:26.6180681Z Syncing repository: sgstepaniants/inelastic_hom_learn
+2026-11-01T22:29:26.6184623Z ##[group]Getting Git version info
+2026-11-01T22:29:26.6186291Z Working directory is '/home/runner/work/inelastic_hom_learn/inelastic_hom_learn'
+2026-11-01T22:29:26.6394855Z [command]/usr/bin/git version
+2026-11-01T22:29:26.6395928Z git version 2.56.0
+2026-11-01T22:29:26.6399677Z ##[endgroup]
+2026-11-01T22:29:26.6407231Z Temporarily overriding HOME='/home/runner/work/_temp/8ff89271-32a3-4558-8758-6ace6bd498e8' before making global git config changes
+2026-11-01T22:29:26.6410169Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-01T22:29:26.6412552Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/inelastic_hom_learn/inelastic_hom_learn
+2026-11-01T22:29:26.6471843Z Deleting the contents of '/home/runner/work/inelastic_hom_learn/inelastic_hom_learn'
+2026-11-01T22:29:26.6474724Z ##[group]Determining repository object format
+2026-11-01T22:29:26.6477025Z ##[endgroup]
+2026-11-01T22:29:26.6478780Z ##[group]Initializing the repository
+2026-11-01T22:29:26.6481933Z [command]/usr/bin/git init /home/runner/work/inelastic_hom_learn/inelastic_hom_learn
+2026-11-01T22:29:26.7020361Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-01T22:29:26.7022288Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-01T22:29:26.7023965Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-01T22:29:26.7025311Z hint: call:
+2026-11-01T22:29:26.7026182Z hint:
+2026-11-01T22:29:26.7027388Z hint: 	git config --global init.defaultBranch <name>
+2026-11-01T22:29:26.7028507Z hint:
+2026-11-01T22:29:26.7029161Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-01T22:29:26.7031153Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-01T22:29:26.7032547Z hint:
+2026-11-01T22:29:26.7033317Z hint: 	git branch -m <name>
+2026-11-01T22:29:26.7034191Z hint:
+2026-11-01T22:29:26.7035336Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-01T22:29:26.7037512Z Initialized empty Git repository in /home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git/
+2026-11-01T22:29:26.7045230Z [command]/usr/bin/git remote add origin https://github.com/sgstepaniants/inelastic_hom_learn
+2026-11-01T22:29:26.7048853Z ##[endgroup]
+2026-11-01T22:29:26.7052632Z ##[group]Disabling automatic garbage collection
+2026-11-01T22:29:26.7053888Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-01T22:29:26.7056481Z ##[endgroup]
+2026-11-01T22:29:26.7057982Z ##[group]Setting up auth
+2026-11-01T22:29:26.7058908Z Removing SSH command configuration
+2026-11-01T22:29:26.7062464Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-01T22:29:26.7075282Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-01T22:29:26.7558980Z Removing HTTP extra header
+2026-11-01T22:29:26.7561864Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-01T22:29:26.7597904Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-01T22:29:26.7883243Z Removing includeIf entries pointing to credentials config files
+2026-11-01T22:29:26.7885734Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-01T22:29:26.7942139Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-01T22:29:26.8223790Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-b165d424-226a-4219-8176-60b3631cecfa.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-01T22:29:26.8276916Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git.path /home/runner/work/_temp/git-credentials-b165d424-226a-4219-8176-60b3631cecfa.config
+2026-11-01T22:29:26.8321904Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-b165d424-226a-4219-8176-60b3631cecfa.config
+2026-11-01T22:29:26.8368052Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-b165d424-226a-4219-8176-60b3631cecfa.config
+2026-11-01T22:29:26.8415109Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-b165d424-226a-4219-8176-60b3631cecfa.config
+2026-11-01T22:29:26.8458693Z ##[endgroup]
+2026-11-01T22:29:26.8471598Z ##[group]Fetching the repository
+2026-11-01T22:29:26.8474564Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +ae419876cb96cdaeb1efe07dea67c3762c2cb9de:refs/remotes/origin/main
+2026-11-01T22:29:27.1777835Z From https://github.com/sgstepaniants/inelastic_hom_learn
+2026-11-01T22:29:27.1781153Z  * [new ref]         ae419876cb96cdaeb1efe07dea67c3762c2cb9de -> origin/main
+2026-11-01T22:29:27.1800757Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-01T22:29:27.1830162Z   origin/main
+2026-11-01T22:29:27.1847715Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-01T22:29:27.1878600Z ae419876cb96cdaeb1efe07dea67c3762c2cb9de
+2026-11-01T22:29:27.1903218Z ##[endgroup]
+2026-11-01T22:29:27.1905504Z ##[group]Determining the checkout info
+2026-11-01T22:29:27.1908100Z ##[endgroup]
+2026-11-01T22:29:27.1910164Z [command]/usr/bin/git sparse-checkout disable
+2026-11-01T22:29:27.1952671Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-01T22:29:27.1997063Z ##[group]Checking out the ref
+2026-11-01T22:29:27.2000504Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-01T22:29:27.2921998Z Switched to a new branch 'main'
+2026-11-01T22:29:27.2924965Z branch 'main' set up to track 'origin/main'.
+2026-11-01T22:29:27.2932199Z ##[endgroup]
+2026-11-01T22:29:27.2986732Z [command]/usr/bin/git log -1 --format=%H
+2026-11-01T22:29:27.3043404Z ae419876cb96cdaeb1efe07dea67c3762c2cb9de
+2026-11-01T22:29:27.3322710Z ##[group]Removing auth
+2026-11-01T22:29:27.3325242Z Removing SSH command configuration
+2026-11-01T22:29:27.3331002Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-01T22:29:27.3341527Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-01T22:29:27.3710809Z Removing HTTP extra header
+2026-11-01T22:29:27.3715263Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-01T22:29:27.3730954Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-01T22:29:27.4012259Z Removing includeIf entries pointing to credentials config files
+2026-11-01T22:29:27.4016791Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-01T22:29:27.4027429Z includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git.path
+2026-11-01T22:29:27.4032546Z includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git/worktrees/*.path
+2026-11-01T22:29:27.4039548Z includeif.gitdir:/github/workspace/.git.path
+2026-11-01T22:29:27.4054461Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-01T22:29:27.4063600Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git.path
+2026-11-01T22:29:27.4081131Z /home/runner/work/_temp/git-credentials-b165d424-226a-4219-8176-60b3631cecfa.config
+2026-11-01T22:29:27.4102173Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-b165d424\-226a\-4219\-8176\-60b3631cecfa\.config
+2026-11-01T22:29:27.4171772Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git/worktrees/*.path
+2026-11-01T22:29:27.4198083Z /home/runner/work/_temp/git-credentials-b165d424-226a-4219-8176-60b3631cecfa.config
+2026-11-01T22:29:27.4259250Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/inelastic_hom_learn/inelastic_hom_learn/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-b165d424\-226a\-4219\-8176\-60b3631cecfa\.config
+2026-11-01T22:29:27.4271390Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-01T22:29:27.4299745Z /github/runner_temp/git-credentials-b165d424-226a-4219-8176-60b3631cecfa.config
+2026-11-01T22:29:27.4315337Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-b165d424\-226a\-4219\-8176\-60b3631cecfa\.config
+2026-11-01T22:29:27.4360499Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-01T22:29:27.4398212Z /github/runner_temp/git-credentials-b165d424-226a-4219-8176-60b3631cecfa.config
+2026-11-01T22:29:27.4411524Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-b165d424\-226a\-4219\-8176\-60b3631cecfa\.config
+2026-11-01T22:29:27.4457540Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-01T22:29:27.4804035Z Removing credentials config '/home/runner/work/_temp/git-credentials-b165d424-226a-4219-8176-60b3631cecfa.config'
+2026-11-01T22:29:27.4830724Z ##[endgroup]
+2026-11-01T22:29:27.5086004Z ##[group]Run sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL
+2026-11-01T22:29:27.5089067Z [36;1msudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL[0m
+2026-11-01T22:29:27.5091499Z [36;1mdf -h .[0m
+2026-11-01T22:29:27.5175032Z shell: /usr/bin/bash -e {0}
+2026-11-01T22:29:27.5176242Z ##[endgroup]
+2026-11-01T22:31:00.8390823Z Filesystem      Size  Used Avail Use% Mounted on
+2026-11-01T22:31:00.8391845Z /dev/root        73G   41G   32G  56% /
+2026-11-01T22:31:00.8480973Z ##[group]Run actions/cache/restore@v6
+2026-11-01T22:31:00.8481367Z with:
+2026-11-01T22:31:00.8481723Z   path: lean/.elan/toolchains
+lean/.lake
+
+2026-11-01T22:31:00.8482043Z   key: comparator-linux-4.35.0-v2
+2026-11-01T22:31:00.8482328Z   fail-on-cache-miss: true
+2026-11-01T22:31:00.8482672Z   enableCrossOsArchive: false
+2026-11-01T22:31:00.8483017Z   lookup-only: false
+2026-11-01T22:31:00.8483238Z ##[endgroup]
+2026-11-01T22:31:01.0801610Z Cache hit for: comparator-linux-4.35.0-v2
+2026-11-01T22:31:02.1624752Z Received 130023424 of 2975290823 (4.4%), 123.9 MBs/sec
+2026-11-01T22:31:03.1640659Z Received 130023424 of 2975290823 (4.4%), 61.9 MBs/sec
+2026-11-01T22:31:04.1653023Z Received 130023424 of 2975290823 (4.4%), 41.3 MBs/sec
+2026-11-01T22:31:05.1665440Z Received 130023424 of 2975290823 (4.4%), 31.0 MBs/sec
+2026-11-01T22:31:06.1679044Z Received 130023424 of 2975290823 (4.4%), 24.8 MBs/sec
+2026-11-01T22:31:07.2070458Z Received 268435456 of 2975290823 (9.0%), 42.4 MBs/sec
+2026-11-01T22:31:08.2045119Z Received 448790528 of 2975290823 (15.1%), 60.8 MBs/sec
+2026-11-01T22:31:09.2146813Z Received 633339904 of 2975290823 (21.3%), 75.0 MBs/sec
+2026-11-01T22:31:10.2148862Z Received 805306368 of 2975290823 (27.1%), 84.8 MBs/sec
+2026-11-01T22:31:11.2161027Z Received 939524096 of 2975290823 (31.6%), 89.1 MBs/sec
+2026-11-01T22:31:12.2230995Z Received 1157627904 of 2975290823 (38.9%), 99.9 MBs/sec
+2026-11-01T22:31:13.2170479Z Received 1342177280 of 2975290823 (45.1%), 106.2 MBs/sec
+2026-11-01T22:31:14.2188081Z Received 1556086784 of 2975290823 (52.3%), 113.7 MBs/sec
+2026-11-01T22:31:15.2830163Z Received 1744830464 of 2975290823 (58.6%), 117.9 MBs/sec
+2026-11-01T22:31:16.2831125Z Received 1891631104 of 2975290823 (63.6%), 119.4 MBs/sec
+2026-11-01T22:31:17.2826321Z Received 2071986176 of 2975290823 (69.6%), 122.6 MBs/sec
+2026-11-01T22:31:18.3320391Z Received 2281701376 of 2975290823 (76.7%), 126.7 MBs/sec
+2026-11-01T22:31:19.3390563Z Received 2449473536 of 2975290823 (82.3%), 128.5 MBs/sec
+2026-11-01T22:31:20.3430848Z Received 2625634304 of 2975290823 (88.2%), 130.6 MBs/sec
+2026-11-01T22:31:21.3458883Z Received 2780823552 of 2975290823 (93.5%), 131.4 MBs/sec
+2026-11-01T22:31:22.5252159Z Received 2952790016 of 2975290823 (99.2%), 131.9 MBs/sec
+2026-11-01T22:31:22.7321013Z Received 2975290823 of 2975290823 (100.0%), 131.7 MBs/sec
+2026-11-01T22:31:22.7322880Z Cache Size: ~2837 MB (2975290823 B)
+2026-11-01T22:31:22.7450094Z [command]/usr/bin/tar -xf /home/runner/work/_temp/405825d2-0082-4e40-8a60-a7ee2d9a63d8/cache.tzst -P -C /home/runner/work/inelastic_hom_learn/inelastic_hom_learn --use-compress-program unzstd
+2026-11-01T22:32:37.3436046Z Cache restored successfully
+2026-11-01T22:32:37.7148343Z Cache restored from key: comparator-linux-4.35.0-v2
+2026-11-01T22:32:37.7587393Z ##[group]Run bash Verification/ci_setup.sh
+2026-11-01T22:32:37.7588130Z [36;1mbash Verification/ci_setup.sh[0m
+2026-11-01T22:32:38.4230465Z shell: /usr/bin/bash -e {0}
+2026-11-01T22:32:38.4231178Z env:
+2026-11-01T22:32:38.4231758Z   COMPARATOR_CACHE_HIT: true
+2026-11-01T22:32:38.4232563Z ##[endgroup]
+2026-11-01T22:32:38.6485886Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-01T22:32:38.7031017Z Get:6 https://packages.microsoft.com/ubuntu/22.04/prod jammy InRelease [3632 B]
+2026-11-01T22:32:38.7540977Z Hit:2 http://azure.archive.ubuntu.com/ubuntu jammy InRelease
+2026-11-01T22:32:38.7592030Z Get:3 http://azure.archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+2026-11-01T22:32:38.7780199Z Get:4 http://azure.archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+2026-11-01T22:32:38.7790454Z Get:5 http://azure.archive.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+2026-11-01T22:32:38.9001426Z Get:7 https://packages.microsoft.com/ubuntu/22.04/prod jammy/main amd64 Packages [974 kB]
+2026-11-01T22:32:38.9344224Z Get:8 https://packages.microsoft.com/ubuntu/22.04/prod jammy/main arm64 Packages [709 kB]
+2026-11-01T22:32:39.2181139Z Get:9 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [3939 kB]
+2026-11-01T22:32:39.2561006Z Get:10 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [579 kB]
+2026-11-01T22:32:39.2633422Z Get:11 http://azure.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [6778 kB]
+2026-11-01T22:32:39.3151091Z Get:12 http://azure.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [1303 kB]
+2026-11-01T22:32:39.3301268Z Get:13 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1290 kB]
+2026-11-01T22:32:39.3450887Z Get:14 http://azure.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [326 kB]
+2026-11-01T22:32:39.5021182Z Get:15 http://azure.archive.ubuntu.com/ubuntu jammy-security/main amd64 Packages [3670 kB]
+2026-11-01T22:32:39.5230691Z Get:16 http://azure.archive.ubuntu.com/ubuntu jammy-security/main Translation-en [511 kB]
+2026-11-01T22:32:39.5275992Z Get:17 http://azure.archive.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [6545 kB]
+2026-11-01T22:32:39.5621357Z Get:18 http://azure.archive.ubuntu.com/ubuntu jammy-security/restricted Translation-en [1260 kB]
+2026-11-01T22:32:39.6120734Z Get:19 http://azure.archive.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1055 kB]
+2026-11-01T22:32:39.6187671Z Get:20 http://azure.archive.ubuntu.com/ubuntu jammy-security/universe Translation-en [238 kB]
+2026-11-01T22:32:46.2335364Z Fetched 29.6 MB in 4s (7875 kB/s)
+2026-11-01T22:32:47.9250634Z Reading package lists...
+2026-11-01T22:32:48.0043691Z Reading package lists...
+2026-11-01T22:32:48.3886088Z Building dependency tree...
+2026-11-01T22:32:48.3900009Z Reading state information...
+2026-11-01T22:32:48.6814519Z build-essential is already the newest version (12.9ubuntu3).
+2026-11-01T22:32:48.6815848Z build-essential set to manually installed.
+2026-11-01T22:32:48.6816949Z zstd is already the newest version (1.4.8+dfsg-3build1).
+2026-11-01T22:32:48.6817983Z zstd set to manually installed.
+2026-11-01T22:32:48.6819217Z ca-certificates is already the newest version (20260816ubuntu0.22.04.1).
+2026-11-01T22:32:48.6821160Z curl is already the newest version (7.81.0-1ubuntu1.30).
+2026-11-01T22:32:48.6822607Z python3 is already the newest version (3.10.6-1~22.04.1).
+2026-11-01T22:32:48.6824016Z git is already the newest version (1:2.56.0-0ppa1~ubuntu22.04.2).
+2026-11-01T22:32:48.6825036Z The following NEW packages will be installed:
+2026-11-01T22:32:48.6827725Z   bubblewrap
+2026-11-01T22:32:48.7038543Z 0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
+2026-11-01T22:32:48.7040055Z Need to get 46.3 kB of archives.
+2026-11-01T22:32:48.7041115Z After this operation, 132 kB of additional disk space will be used.
+2026-11-01T22:32:48.7042190Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-01T22:32:48.7416632Z Get:2 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 bubblewrap amd64 0.6.1-1ubuntu0.3 [46.3 kB]
+2026-11-01T22:32:49.1241279Z Fetched 46.3 kB in 0s (860 kB/s)
+2026-11-01T22:32:49.1548806Z Selecting previously unselected package bubblewrap.
+2026-11-01T22:32:49.1952113Z (Reading database ... 
+2026-11-01T22:32:49.1956310Z (Reading database ... 5%
+2026-11-01T22:32:49.1956997Z (Reading database ... 10%
+2026-11-01T22:32:49.1957395Z (Reading database ... 15%
+2026-11-01T22:32:49.1957815Z (Reading database ... 20%
+2026-11-01T22:32:49.1958230Z (Reading database ... 25%
+2026-11-01T22:32:49.1958662Z (Reading database ... 30%
+2026-11-01T22:32:49.1959121Z (Reading database ... 35%
+2026-11-01T22:32:49.1959806Z (Reading database ... 40%
+2026-11-01T22:32:49.1960217Z (Reading database ... 45%
+2026-11-01T22:32:49.1960669Z (Reading database ... 50%
+2026-11-01T22:32:49.2632287Z (Reading database ... 55%
+2026-11-01T22:32:49.4726572Z (Reading database ... 60%
+2026-11-01T22:32:49.7046916Z (Reading database ... 65%
+2026-11-01T22:32:49.8166549Z (Reading database ... 70%
+2026-11-01T22:32:50.8637348Z (Reading database ... 75%
+2026-11-01T22:32:52.2648623Z (Reading database ... 80%
+2026-11-01T22:32:52.3965431Z (Reading database ... 85%
+2026-11-01T22:32:52.5203176Z (Reading database ... 90%
+2026-11-01T22:32:52.7237745Z (Reading database ... 95%
+2026-11-01T22:32:52.7239047Z (Reading database ... 100%
+2026-11-01T22:32:52.7241042Z (Reading database ... 263322 files and directories currently installed.)
+2026-11-01T22:32:52.7317135Z Preparing to unpack .../bubblewrap_0.6.1-1ubuntu0.3_amd64.deb ...
+2026-11-01T22:32:52.7380622Z Unpacking bubblewrap (0.6.1-1ubuntu0.3) ...
+2026-11-01T22:32:52.7995092Z Setting up bubblewrap (0.6.1-1ubuntu0.3) ...
+2026-11-01T22:32:52.8098258Z Processing triggers for man-db (2.10.2-1) ...
+2026-11-01T22:32:52.8123253Z Not building database; man-db/auto-update is not 'true'.
+2026-11-01T22:32:53.4960789Z 
+2026-11-01T22:32:53.4962170Z Running kernel seems to be up-to-date.
+2026-11-01T22:32:53.4962949Z 
+2026-11-01T22:32:53.4963375Z No services need to be restarted.
+2026-11-01T22:32:53.4963873Z 
+2026-11-01T22:32:53.4964209Z No containers need to be restarted.
+2026-11-01T22:32:53.4964728Z 
+2026-11-01T22:32:53.4965089Z No user sessions are running outdated binaries.
+2026-11-01T22:32:53.4965651Z 
+2026-11-01T22:32:53.4976404Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-11-01T22:32:55.6101744Z Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+2026-11-01T22:32:55.7201322Z Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)
+2026-11-01T22:32:55.7310822Z bubblewrap 0.6.1
+2026-11-01T22:32:55.7430399Z ##[group]Run python3 Verification/verify.py comparator --shard-index "$SHARD_INDEX" --shard-count 16 --keep-going
+2026-11-01T22:32:55.7431533Z [36;1mpython3 Verification/verify.py comparator --shard-index "$SHARD_INDEX" --shard-count 16 --keep-going[0m
+2026-11-01T22:32:55.7504094Z shell: /usr/bin/bash -e {0}
+2026-11-01T22:32:55.7504504Z env:
+2026-11-01T22:32:55.7505155Z   MATHLIB_CACHE_DIR: /home/runner/work/inelastic_hom_learn/inelastic_hom_learn/lean/.cache/mathlib
+2026-11-01T22:32:55.7505937Z   SHARD_INDEX: 9
+2026-11-01T22:32:55.7506280Z ##[endgroup]
+2026-11-01T22:32:55.8573160Z Comparator 1/21: causal_convolution
+2026-11-01T22:32:55.8574840Z Running lake comparator --config=Comparator/causal_convolution.json --paranoid
+2026-11-01T22:33:02.5902272Z Resolving dependencies
+2026-11-01T22:33:02.5947926Z Building Challenges.CausalConvolution
+2026-11-01T22:33:05.7791187Z ⚠ [2699/2699] Replayed Challenges.CausalConvolution
+2026-11-01T22:33:05.7793521Z warning: Comparator/Challenges/CausalConvolution.lean:20:8: declaration uses `sorry`
+2026-11-01T22:33:05.7795123Z warning: Comparator/Challenges/CausalConvolution.lean:28:8: declaration uses `sorry`
+2026-11-01T22:33:05.7796652Z warning: Comparator/Challenges/CausalConvolution.lean:37:8: declaration uses `sorry`
+2026-11-01T22:33:05.7798271Z warning: Comparator/Challenges/CausalConvolution.lean:45:8: declaration uses `sorry`
+2026-11-01T22:33:05.7799940Z warning: Comparator/Challenges/CausalConvolution.lean:54:8: declaration uses `sorry`
+2026-11-01T22:33:05.7801428Z warning: Comparator/Challenges/CausalConvolution.lean:64:8: declaration uses `sorry`
+2026-11-01T22:33:05.7802912Z warning: Comparator/Challenges/CausalConvolution.lean:74:8: declaration uses `sorry`
+2026-11-01T22:33:05.7894780Z Build completed successfully (2699 jobs).
+2026-11-01T22:33:27.7642275Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.posConvolution_eq_integral_sub, KVApproximation.Analysis.intervalIntegrable_posConvolution_integrand, KVApproximation.Analysis.continuousOn_posConvolution, KVApproximation.Analysis.integral_posConvolution_eq_posConvolution_primitive, KVApproximation.Analysis.integrable_rectangle_bilinear, KVApproximation.Analysis.integral_triangle_swap, KVApproximation.Analysis.integral_posConvolution_eq_integral_kernel, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.CausalConvolution
+2026-11-01T22:33:27.7649692Z Building KVApproximation.Analysis.CausalConvolution
+2026-11-01T22:33:30.3290981Z Build completed successfully (2699 jobs).
+2026-11-01T22:34:01.1960547Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.posConvolution_eq_integral_sub, KVApproximation.Analysis.intervalIntegrable_posConvolution_integrand, KVApproximation.Analysis.continuousOn_posConvolution, KVApproximation.Analysis.integral_posConvolution_eq_posConvolution_primitive, KVApproximation.Analysis.integrable_rectangle_bilinear, KVApproximation.Analysis.integral_triangle_swap, KVApproximation.Analysis.integral_posConvolution_eq_integral_kernel, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.CausalConvolution
+2026-11-01T22:34:01.1968727Z Running Lean paranoid kernel on solution
+2026-11-01T22:34:41.6105014Z Lean paranoid kernel accepts the solution
+2026-11-01T22:34:41.6120382Z Running lean4lean kernel on solution
+2026-11-01T22:35:20.6851809Z checked 35278 declarations
+2026-11-01T22:35:20.6932159Z lean4lean kernel accepts the solution
+2026-11-01T22:35:20.6933431Z Running nanoda kernel on solution
+2026-11-01T22:35:34.1093143Z nanoda kernel accepts the solution
+2026-11-01T22:35:34.1098967Z Running con-leche kernel on solution
+2026-11-01T22:36:00.4921444Z con-leche: accepted 35281 declarations (--verified)
+2026-11-01T22:36:00.5002297Z con-leche kernel accepts the solution
+2026-11-01T22:36:00.5003528Z Running con-ron kernel on solution
+2026-11-01T22:36:12.8573883Z con-ron: accepted 35281 declarations (--verified)
+2026-11-01T22:36:12.8749145Z con-ron kernel accepts the solution
+2026-11-01T22:36:12.8760560Z Running Lean default kernel on solution
+2026-11-01T22:36:45.6782101Z Lean default kernel accepts the solution
+2026-11-01T22:36:45.6830024Z Your solution is okay!
+2026-11-01T22:36:45.6864781Z {"command": ["lake", "comparator", "--config=Comparator/causal_convolution.json", "--paranoid"], "exit_code": 0, "seconds": 229.8, "configuration": "causal_convolution.json", "theorem_names": ["KVApproximation.Analysis.posConvolution_eq_integral_sub", "KVApproximation.Analysis.intervalIntegrable_posConvolution_integrand", "KVApproximation.Analysis.continuousOn_posConvolution", "KVApproximation.Analysis.integral_posConvolution_eq_posConvolution_primitive", "KVApproximation.Analysis.integrable_rectangle_bilinear", "KVApproximation.Analysis.integral_triangle_swap", "KVApproximation.Analysis.integral_posConvolution_eq_integral_kernel"], "challenge_module": "Challenges.CausalConvolution", "solution_module": "KVApproximation.Analysis.CausalConvolution", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:36:45.6872450Z Comparator 2/21: chebyshev_analytic
+2026-11-01T22:36:45.6873501Z Running lake comparator --config=Comparator/chebyshev_analytic.json --paranoid
+2026-11-01T22:36:46.6168429Z Resolving dependencies
+2026-11-01T22:36:46.6169568Z Building Challenges.ChebyshevAnalytic
+2026-11-01T22:36:49.0363741Z ⚠ [2827/2827] Replayed Challenges.ChebyshevAnalytic
+2026-11-01T22:36:49.0365279Z warning: Comparator/Challenges/ChebyshevAnalytic.lean:13:8: declaration uses `sorry`
+2026-11-01T22:36:49.0366709Z warning: Comparator/Challenges/ChebyshevAnalytic.lean:22:8: declaration uses `sorry`
+2026-11-01T22:36:49.0440096Z Build completed successfully (2827 jobs).
+2026-11-01T22:37:01.2843619Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.norm_chebyshevCoefficient_le, KVApproximation.Approximation.hasSum_chebyshevSeries, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.ChebyshevAnalytic
+2026-11-01T22:37:01.2847714Z Building KVApproximation.Approximation.ChebyshevAnalytic
+2026-11-01T22:37:03.8902505Z Build completed successfully (3125 jobs).
+2026-11-01T22:37:44.4382012Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.norm_chebyshevCoefficient_le, KVApproximation.Approximation.hasSum_chebyshevSeries, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Approximation.ChebyshevAnalytic
+2026-11-01T22:37:44.4386238Z Running Lean paranoid kernel on solution
+2026-11-01T22:38:49.0878073Z Lean paranoid kernel accepts the solution
+2026-11-01T22:38:49.0880855Z Running lean4lean kernel on solution
+2026-11-01T22:39:53.0211463Z checked 46819 declarations
+2026-11-01T22:39:53.0295312Z lean4lean kernel accepts the solution
+2026-11-01T22:39:53.0296517Z Running nanoda kernel on solution
+2026-11-01T22:40:15.5332410Z nanoda kernel accepts the solution
+2026-11-01T22:40:15.5333363Z Running con-leche kernel on solution
+2026-11-01T22:40:55.6232016Z con-leche: accepted 46822 declarations (--verified)
+2026-11-01T22:40:55.6332184Z con-leche kernel accepts the solution
+2026-11-01T22:40:55.6332952Z Running con-ron kernel on solution
+2026-11-01T22:41:14.7084908Z con-ron: accepted 46822 declarations (--verified)
+2026-11-01T22:41:14.7296247Z con-ron kernel accepts the solution
+2026-11-01T22:41:14.7297055Z Running Lean default kernel on solution
+2026-11-01T22:42:07.7698812Z Lean default kernel accepts the solution
+2026-11-01T22:42:07.7700037Z Your solution is okay!
+2026-11-01T22:42:07.7801250Z {"command": ["lake", "comparator", "--config=Comparator/chebyshev_analytic.json", "--paranoid"], "exit_code": 0, "seconds": 322.1, "configuration": "chebyshev_analytic.json", "theorem_names": ["KVApproximation.Approximation.norm_chebyshevCoefficient_le", "KVApproximation.Approximation.hasSum_chebyshevSeries"], "challenge_module": "Challenges.ChebyshevAnalytic", "solution_module": "KVApproximation.Approximation.ChebyshevAnalytic", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:42:07.7820580Z Comparator 3/21: continuous_prony_approximation
+2026-11-01T22:42:07.7840145Z Running lake comparator --config=Comparator/continuous_prony_approximation.json --paranoid
+2026-11-01T22:42:08.7456464Z Resolving dependencies
+2026-11-01T22:42:08.7457649Z Building Challenges.ContinuousPronyApproximation
+2026-11-01T22:42:11.1771134Z ⚠ [3132/3132] Replayed Challenges.ContinuousPronyApproximation
+2026-11-01T22:42:11.1772645Z warning: Comparator/Challenges/ContinuousPronyApproximation.lean:19:8: declaration uses `sorry`
+2026-11-01T22:42:11.1840340Z Build completed successfully (3132 jobs).
+2026-11-01T22:42:25.3783113Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.KelvinVoigt.continuous_prony_neural_approximation, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.ContinuousPronyApproximation
+2026-11-01T22:42:25.3786783Z Building KVApproximation.KelvinVoigt.ContinuousPronyApproximation
+2026-11-01T22:42:27.7613676Z ⚠ [3281/3290] Replayed KVApproximation.Dynamics.DampedResponseProperties
+2026-11-01T22:42:27.7618417Z warning: KVApproximation/Dynamics/DampedResponseProperties.lean:24:8: automatically included section variable(s) unused in theorem `_private.KVApproximation.Dynamics.DampedResponseProperties.0.KVApproximation.Dynamics.dampedResponse_factor`:
+2026-11-01T22:42:27.7620660Z   [CompleteSpace E]
+2026-11-01T22:42:27.7623509Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-11-01T22:42:27.7624883Z   omit [CompleteSpace E] in theorem ...
+2026-11-01T22:42:27.7626406Z 
+2026-11-01T22:42:27.7626886Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-11-01T22:42:27.7628512Z warning: KVApproximation/Dynamics/DampedResponseProperties.lean:51:0: automatically included section variable(s) unused in theorem `KVApproximation.Dynamics.norm_dampedResponse_le`:
+2026-11-01T22:42:27.7638032Z   [CompleteSpace E]
+2026-11-01T22:42:27.7638906Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-11-01T22:42:27.7640123Z   omit [CompleteSpace E] in theorem ...
+2026-11-01T22:42:27.7640499Z 
+2026-11-01T22:42:27.7640934Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-11-01T22:42:27.7642083Z ⚠ [3284/3290] Replayed KVApproximation.Dynamics.PronyTrajectory
+2026-11-01T22:42:27.7643521Z warning: KVApproximation/Dynamics/PronyTrajectory.lean:23:0: automatically included section variable(s) unused in theorem `KVApproximation.Dynamics.pronyState_isKineticSolution`:
+2026-11-01T22:42:27.7644852Z   [FiniteDimensional ℝ E]
+2026-11-01T22:42:27.7646026Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-11-01T22:42:27.7647106Z   omit [FiniteDimensional ℝ E] in theorem ...
+2026-11-01T22:42:27.7647515Z 
+2026-11-01T22:42:27.7647953Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-11-01T22:42:27.7648884Z ⚠ [3289/3290] Replayed KVApproximation.Dynamics.PronyStateBounds
+2026-11-01T22:42:27.7650541Z warning: KVApproximation/Dynamics/PronyStateBounds.lean:24:0: automatically included section variable(s) unused in theorem `KVApproximation.Dynamics.prony_state_bound`:
+2026-11-01T22:42:27.7651758Z   [TopologicalSpace M]
+2026-11-01T22:42:27.7652570Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-11-01T22:42:27.7653502Z   omit [TopologicalSpace M] in theorem ...
+2026-11-01T22:42:27.7653888Z 
+2026-11-01T22:42:27.7654314Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-11-01T22:42:27.8711334Z Build completed successfully (3290 jobs).
+2026-11-01T22:43:17.4002173Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.KelvinVoigt.continuous_prony_neural_approximation, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.KelvinVoigt.ContinuousPronyApproximation
+2026-11-01T22:43:17.4005751Z Running Lean paranoid kernel on solution
+2026-11-01T22:44:51.8815618Z Lean paranoid kernel accepts the solution
+2026-11-01T22:44:51.8830512Z Running lean4lean kernel on solution
+2026-11-01T22:46:25.8980613Z checked 51951 declarations
+2026-11-01T22:46:25.9072093Z lean4lean kernel accepts the solution
+2026-11-01T22:46:25.9073016Z Running nanoda kernel on solution
+2026-11-01T22:47:02.0894769Z nanoda kernel accepts the solution
+2026-11-01T22:47:02.0895600Z Running con-leche kernel on solution
+2026-11-01T22:47:56.0481003Z con-leche: accepted 51954 declarations (--verified)
+2026-11-01T22:47:56.0597338Z con-leche kernel accepts the solution
+2026-11-01T22:47:56.0598549Z Running con-ron kernel on solution
+2026-11-01T22:48:22.7400559Z con-ron: accepted 51954 declarations (--verified)
+2026-11-01T22:48:22.7608490Z con-ron kernel accepts the solution
+2026-11-01T22:48:22.7609677Z Running Lean default kernel on solution
+2026-11-01T22:49:43.8383424Z Lean default kernel accepts the solution
+2026-11-01T22:49:43.8399840Z Your solution is okay!
+2026-11-01T22:49:43.8483739Z {"command": ["lake", "comparator", "--config=Comparator/continuous_prony_approximation.json", "--paranoid"], "exit_code": 0, "seconds": 456.1, "configuration": "continuous_prony_approximation.json", "theorem_names": ["KVApproximation.KelvinVoigt.continuous_prony_neural_approximation"], "challenge_module": "Challenges.ContinuousPronyApproximation", "solution_module": "KVApproximation.KelvinVoigt.ContinuousPronyApproximation", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:49:43.8499937Z Comparator 4/21: dirichlet_poincare
+2026-11-01T22:49:43.8519934Z Running lake comparator --config=Comparator/dirichlet_poincare.json --paranoid
+2026-11-01T22:49:44.8047957Z Resolving dependencies
+2026-11-01T22:49:44.8049182Z Building Challenges.DirichletPoincare
+2026-11-01T22:49:47.1905678Z ⚠ [3171/3171] Replayed Challenges.DirichletPoincare
+2026-11-01T22:49:47.1907464Z warning: Comparator/Challenges/DirichletPoincare.lean:19:8: declaration uses `sorry`
+2026-11-01T22:49:47.1909019Z warning: Comparator/Challenges/DirichletPoincare.lean:27:8: declaration uses `sorry`
+2026-11-01T22:49:47.1981358Z Build completed successfully (3171 jobs).
+2026-11-01T22:50:03.5307216Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.ZeroBoundaryH1.poincare_of_subset_ball, KVApproximation.Analysis.ZeroBoundaryH1.exists_poincare_constant, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.DirichletPoincare
+2026-11-01T22:50:03.5311797Z Building KVApproximation.Analysis.DirichletPoincare
+2026-11-01T22:50:05.8991519Z Build completed successfully (3180 jobs).
+2026-11-01T22:50:53.9732429Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.ZeroBoundaryH1.poincare_of_subset_ball, KVApproximation.Analysis.ZeroBoundaryH1.exists_poincare_constant, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.DirichletPoincare
+2026-11-01T22:50:53.9737471Z Running Lean paranoid kernel on solution
+2026-11-01T22:52:26.3482339Z Lean paranoid kernel accepts the solution
+2026-11-01T22:52:26.3483900Z Running lean4lean kernel on solution
+2026-11-01T22:53:59.4603984Z checked 49771 declarations
+2026-11-01T22:53:59.4700535Z lean4lean kernel accepts the solution
+2026-11-01T22:53:59.4701371Z Running nanoda kernel on solution
+2026-11-01T22:54:34.5316898Z nanoda kernel accepts the solution
+2026-11-01T22:54:34.5328679Z Running con-leche kernel on solution
+2026-11-01T22:55:24.1264333Z con-leche: accepted 49774 declarations (--verified)
+2026-11-01T22:55:24.1381127Z con-leche kernel accepts the solution
+2026-11-01T22:55:24.1385500Z Running con-ron kernel on solution
+2026-11-01T22:55:48.2130520Z con-ron: accepted 49774 declarations (--verified)
+2026-11-01T22:55:48.2352895Z con-ron kernel accepts the solution
+2026-11-01T22:55:48.2353845Z Running Lean default kernel on solution
+2026-11-01T22:57:09.4910654Z Lean default kernel accepts the solution
+2026-11-01T22:57:09.4931589Z Your solution is okay!
+2026-11-01T22:57:09.4986266Z {"command": ["lake", "comparator", "--config=Comparator/dirichlet_poincare.json", "--paranoid"], "exit_code": 0, "seconds": 445.7, "configuration": "dirichlet_poincare.json", "theorem_names": ["KVApproximation.Analysis.ZeroBoundaryH1.poincare_of_subset_ball", "KVApproximation.Analysis.ZeroBoundaryH1.exists_poincare_constant"], "challenge_module": "Challenges.DirichletPoincare", "solution_module": "KVApproximation.Analysis.DirichletPoincare", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T22:57:09.5010658Z Comparator 5/21: field_combinations
+2026-11-01T22:57:09.5031512Z Running lake comparator --config=Comparator/field_combinations.json --paranoid
+2026-11-01T22:57:10.4987589Z Resolving dependencies
+2026-11-01T22:57:10.4988931Z Building Challenges.FieldCombinations
+2026-11-01T22:57:12.8224451Z ⚠ [3077/3077] Replayed Challenges.FieldCombinations
+2026-11-01T22:57:12.8225915Z warning: Comparator/Challenges/FieldCombinations.lean:11:8: declaration uses `sorry`
+2026-11-01T22:57:12.8227222Z warning: Comparator/Challenges/FieldCombinations.lean:18:8: declaration uses `sorry`
+2026-11-01T22:57:12.8321080Z Build completed successfully (3077 jobs).
+2026-11-01T22:57:22.5751156Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Tensor.fieldPairing_add_smul, KVApproximation.Tensor.HasFieldBounds.add_smul, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.FieldCombinations
+2026-11-01T22:57:22.5754480Z Building KVApproximation.Tensor.FieldCombinations
+2026-11-01T22:57:24.8741673Z Build completed successfully (3077 jobs).
+2026-11-01T22:57:51.2281210Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Tensor.fieldPairing_add_smul, KVApproximation.Tensor.HasFieldBounds.add_smul, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Tensor.FieldCombinations
+2026-11-01T22:57:51.2285684Z Running Lean paranoid kernel on solution
+2026-11-01T22:58:26.7180980Z Lean paranoid kernel accepts the solution
+2026-11-01T22:58:26.7182503Z Running lean4lean kernel on solution
+2026-11-01T22:59:01.7736013Z checked 33547 declarations
+2026-11-01T22:59:01.7811745Z lean4lean kernel accepts the solution
+2026-11-01T22:59:01.7812637Z Running nanoda kernel on solution
+2026-11-01T22:59:13.9817199Z nanoda kernel accepts the solution
+2026-11-01T22:59:13.9818403Z Running con-leche kernel on solution
+2026-11-01T22:59:38.2347487Z con-leche: accepted 33550 declarations (--verified)
+2026-11-01T22:59:38.2438557Z con-leche kernel accepts the solution
+2026-11-01T22:59:38.2439801Z Running con-ron kernel on solution
+2026-11-01T22:59:49.7484987Z con-ron: accepted 33550 declarations (--verified)
+2026-11-01T22:59:49.7661623Z con-ron kernel accepts the solution
+2026-11-01T22:59:49.7670679Z Running Lean default kernel on solution
+2026-11-01T23:00:20.2256946Z Lean default kernel accepts the solution
+2026-11-01T23:00:20.2258157Z Your solution is okay!
+2026-11-01T23:00:20.2338240Z {"command": ["lake", "comparator", "--config=Comparator/field_combinations.json", "--paranoid"], "exit_code": 0, "seconds": 190.7, "configuration": "field_combinations.json", "theorem_names": ["KVApproximation.Tensor.fieldPairing_add_smul", "KVApproximation.Tensor.HasFieldBounds.add_smul"], "challenge_module": "Challenges.FieldCombinations", "solution_module": "KVApproximation.Tensor.FieldCombinations", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T23:00:20.2360600Z Comparator 6/21: fourier_mapping_lipschitz
+2026-11-01T23:00:20.2380426Z Running lake comparator --config=Comparator/fourier_mapping_lipschitz.json --paranoid
+2026-11-01T23:00:21.2274413Z Resolving dependencies
+2026-11-01T23:00:21.2275617Z Building Challenges.FourierMapping
+2026-11-01T23:00:23.5890925Z ⚠ [3072/3072] Replayed Challenges.FourierMapping
+2026-11-01T23:00:23.5892235Z warning: Comparator/Challenges/FourierMapping.lean:20:8: declaration uses `sorry`
+2026-11-01T23:00:23.5893362Z warning: Comparator/Challenges/FourierMapping.lean:27:8: declaration uses `sorry`
+2026-11-01T23:00:23.5898717Z warning: Comparator/Challenges/FourierMapping.lean:33:8: declaration uses `sorry`
+2026-11-01T23:00:23.5900325Z warning: Comparator/Challenges/FourierMapping.lean:40:8: declaration uses `sorry`
+2026-11-01T23:00:23.5901363Z warning: Comparator/Challenges/FourierMapping.lean:47:8: declaration uses `sorry`
+2026-11-01T23:00:23.5902411Z warning: Comparator/Challenges/FourierMapping.lean:53:8: declaration uses `sorry`
+2026-11-01T23:00:23.5903676Z warning: Comparator/Challenges/FourierMapping.lean:60:8: declaration uses `sorry`
+2026-11-01T23:00:23.5904825Z warning: Comparator/Challenges/FourierMapping.lean:70:8: declaration uses `sorry`
+2026-11-01T23:00:23.5905810Z warning: Comparator/Challenges/FourierMapping.lean:78:8: declaration uses `sorry`
+2026-11-01T23:00:23.5906771Z warning: Comparator/Challenges/FourierMapping.lean:87:8: declaration uses `sorry`
+2026-11-01T23:00:23.5960648Z Build completed successfully (3072 jobs).
+2026-11-01T23:00:33.6370564Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.NeuralOperators.FourierMapping.lipschitz, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.FourierMapping
+2026-11-01T23:00:33.6375348Z Building KVApproximation.NeuralOperators.FourierMappingLipschitz
+2026-11-01T23:00:36.0597291Z ⚠ [3074/3080] Replayed KVApproximation.NeuralOperators.FourierMappingAffine
+2026-11-01T23:00:36.0599756Z warning: KVApproximation/NeuralOperators/FourierMappingAffine.lean:69:15: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+2026-11-01T23:00:36.0601260Z 
+2026-11-01T23:00:36.0602489Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+2026-11-01T23:00:36.0603615Z 
+2026-11-01T23:00:36.0603963Z Hint: Replace the deprecated name:
+2026-11-01T23:00:36.0613073Z   C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵s̲u̲m̲_̲a̲p̲p̲l̲y̲
+2026-11-01T23:00:36.0614253Z warning: KVApproximation/NeuralOperators/FourierMappingAffine.lean:69:46: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+2026-11-01T23:00:36.0615077Z 
+2026-11-01T23:00:36.0615659Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+2026-11-01T23:00:36.0616728Z 
+2026-11-01T23:00:36.0616872Z Hint: Replace the deprecated name:
+2026-11-01T23:00:36.0617512Z   C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+2026-11-01T23:00:36.0618587Z warning: KVApproximation/NeuralOperators/FourierMappingAffine.lean:88:18: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+2026-11-01T23:00:36.0619657Z 
+2026-11-01T23:00:36.0620211Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+2026-11-01T23:00:36.0620873Z 
+2026-11-01T23:00:36.0621011Z Hint: Replace the deprecated name:
+2026-11-01T23:00:36.0621572Z   C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵s̲u̲m̲_̲a̲p̲p̲l̲y̲
+2026-11-01T23:00:36.0622651Z warning: KVApproximation/NeuralOperators/FourierMappingAffine.lean:101:18: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+2026-11-01T23:00:36.0623471Z 
+2026-11-01T23:00:36.0624002Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+2026-11-01T23:00:36.0624662Z 
+2026-11-01T23:00:36.0624800Z Hint: Replace the deprecated name:
+2026-11-01T23:00:36.0625343Z   C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵s̲u̲m̲_̲a̲p̲p̲l̲y̲
+2026-11-01T23:00:36.0626174Z warning: KVApproximation/NeuralOperators/FourierMappingAffine.lean:132:26: This simp argument is unused:
+2026-11-01T23:00:36.0626854Z   WithLp.ofLp_toLp
+2026-11-01T23:00:36.0627026Z 
+2026-11-01T23:00:36.0627163Z Hint: Omit it from the simp argument list.
+2026-11-01T23:00:36.0659801Z   [apply] simp only [WithLp.ofLp_sum, Finset.sum_apply, realFourierMode, ContinuousMap.coe_mk, FourierLayer.fourierPart,
+2026-11-01T23:00:36.0660646Z     Finset.sum_mul, Complex.re_sum]
+2026-11-01T23:00:36.0660886Z 
+2026-11-01T23:00:36.0661218Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-11-01T23:00:36.0662106Z ⚠ [3078/3080] Replayed KVApproximation.NeuralOperators.FourierMappingProjection
+2026-11-01T23:00:36.0663257Z warning: KVApproximation/NeuralOperators/FourierMappingProjection.lean:41:16: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+2026-11-01T23:00:36.0664073Z 
+2026-11-01T23:00:36.0664610Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+2026-11-01T23:00:36.0665260Z 
+2026-11-01T23:00:36.0665386Z Hint: Replace the deprecated name:
+2026-11-01T23:00:36.0665959Z   C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵s̲u̲m̲_̲a̲p̲p̲l̲y̲
+2026-11-01T23:00:36.0667055Z warning: KVApproximation/NeuralOperators/FourierMappingProjection.lean:41:47: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+2026-11-01T23:00:36.0667876Z 
+2026-11-01T23:00:36.0668941Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+2026-11-01T23:00:36.0670083Z 
+2026-11-01T23:00:36.0670226Z Hint: Replace the deprecated name:
+2026-11-01T23:00:36.0670861Z   C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+2026-11-01T23:00:36.0686691Z Build completed successfully (3080 jobs).
+2026-11-01T23:01:07.4807670Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.NeuralOperators.FourierMapping.lipschitz, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.NeuralOperators.FourierMappingLipschitz
+2026-11-01T23:01:07.4811505Z Running Lean paranoid kernel on solution
+2026-11-01T23:01:56.2230348Z Lean paranoid kernel accepts the solution
+2026-11-01T23:01:56.2233558Z Running lean4lean kernel on solution
+2026-11-01T23:02:44.4281174Z checked 38982 declarations
+2026-11-01T23:02:44.4396133Z lean4lean kernel accepts the solution
+2026-11-01T23:02:44.4397495Z Running nanoda kernel on solution
+2026-11-01T23:03:02.7298516Z nanoda kernel accepts the solution
+2026-11-01T23:03:02.7301751Z Running con-leche kernel on solution
+2026-11-01T23:03:34.7101252Z con-leche: accepted 38985 declarations (--verified)
+2026-11-01T23:03:34.7206502Z con-leche kernel accepts the solution
+2026-11-01T23:03:34.7208083Z Running con-ron kernel on solution
+2026-11-01T23:03:50.2340715Z con-ron: accepted 38985 declarations (--verified)
+2026-11-01T23:03:50.2538335Z con-ron kernel accepts the solution
+2026-11-01T23:03:50.2540120Z Running Lean default kernel on solution
+2026-11-01T23:04:31.0360157Z Lean default kernel accepts the solution
+2026-11-01T23:04:31.0363741Z Your solution is okay!
+2026-11-01T23:04:31.0463562Z {"command": ["lake", "comparator", "--config=Comparator/fourier_mapping_lipschitz.json", "--paranoid"], "exit_code": 0, "seconds": 250.8, "configuration": "fourier_mapping_lipschitz.json", "theorem_names": ["KVApproximation.NeuralOperators.FourierMapping.lipschitz"], "challenge_module": "Challenges.FourierMapping", "solution_module": "KVApproximation.NeuralOperators.FourierMappingLipschitz", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T23:04:31.0489827Z Comparator 7/21: global_rate_geometry
+2026-11-01T23:04:31.0516696Z Running lake comparator --config=Comparator/global_rate_geometry.json --paranoid
+2026-11-01T23:04:32.1170724Z Resolving dependencies
+2026-11-01T23:04:32.1171699Z Building Challenges.GlobalResponse
+2026-11-01T23:04:34.6402457Z ⚠ [3173/3173] Replayed Challenges.GlobalResponse
+2026-11-01T23:04:34.6404126Z warning: Comparator/Challenges/GlobalResponse.lean:18:8: declaration uses `sorry`
+2026-11-01T23:04:34.6406206Z warning: Comparator/Challenges/GlobalResponse.lean:24:8: declaration uses `sorry`
+2026-11-01T23:04:34.6408054Z warning: Comparator/Challenges/GlobalResponse.lean:30:8: declaration uses `sorry`
+2026-11-01T23:04:34.6409663Z warning: Comparator/Challenges/GlobalResponse.lean:37:8: declaration uses `sorry`
+2026-11-01T23:04:34.6411096Z warning: Comparator/Challenges/GlobalResponse.lean:47:8: declaration uses `sorry`
+2026-11-01T23:04:34.6412194Z warning: Comparator/Challenges/GlobalResponse.lean:63:8: declaration uses `sorry`
+2026-11-01T23:04:34.6413288Z warning: Comparator/Challenges/GlobalResponse.lean:77:8: declaration uses `sorry`
+2026-11-01T23:04:34.6414606Z warning: Comparator/Challenges/GlobalResponse.lean:85:8: declaration uses `sorry`
+2026-11-01T23:04:34.6416231Z warning: Comparator/Challenges/GlobalResponse.lean:102:8: declaration uses `sorry`
+2026-11-01T23:04:34.6484881Z Build completed successfully (3173 jobs).
+2026-11-01T23:04:40.9346415Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.complexGlobalLogRate_ofReal, KVApproximation.Approximation.complexGlobalLogRate_ellipse, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.GlobalResponse
+2026-11-01T23:04:40.9351536Z Building KVApproximation.Approximation.GlobalRateGeometry
+2026-11-01T23:04:43.3330942Z ⚠ [3180/3191] Replayed LeanCert.Core.Interval
+2026-11-01T23:04:43.3342725Z warning: LeanCert/Core/Interval.lean: imports `Mathlib.Analysis.SpecialFunctions.Integrals.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.3346025Z warning: LeanCert/Core/Interval.lean: imports `Mathlib.Topology.Order.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.3348463Z ⚠ [3181/3191] Replayed LeanCert.Core.IntervalRat.Basic
+2026-11-01T23:04:43.3350078Z warning: LeanCert/Core/IntervalRat/Basic.lean: imports `Mathlib.Data.Rat.Cast.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.3352806Z warning: LeanCert/Core/IntervalRat/Basic.lean: imports `Mathlib.Algebra.Order.Field.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4330131Z ⚠ [3207/3309] Replayed LeanCert.Core.Expr
+2026-11-01T23:04:43.4343449Z warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4348850Z warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4355595Z warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Sinc` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4361978Z warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.ExpDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4371238Z warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4374543Z warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Arsinh` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4377547Z warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4380446Z warning: LeanCert/Core/Expr.lean: imports `Mathlib.NumberTheory.Harmonic.EulerMascheroni` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4384247Z warning: LeanCert/Core/Expr.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4394544Z warning: LeanCert/Core/Expr.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4397651Z ⚠ [3214/3309] Replayed LeanCert.Core.IntervalRat.Transcendental
+2026-11-01T23:04:43.4403391Z warning: LeanCert/Core/IntervalRat/Transcendental.lean: imports `Mathlib.Algebra.Order.Floor.Defs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4406173Z warning: LeanCert/Core/IntervalRat/Transcendental.lean: imports `Mathlib.Algebra.Order.Floor.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4409850Z warning: LeanCert/Core/IntervalRat/Transcendental.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4412254Z ⚠ [3215/3309] Replayed LeanCert.Core.IntervalRat.LogReduction
+2026-11-01T23:04:43.4414896Z warning: LeanCert/Core/IntervalRat/LogReduction.lean: imports `Mathlib.Data.Rat.Defs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4418110Z warning: LeanCert/Core/IntervalRat/LogReduction.lean: imports `Mathlib.Data.Nat.Log` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4421345Z warning: LeanCert/Core/IntervalRat/LogReduction.lean: imports `Mathlib.Basic.Real.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4424523Z warning: LeanCert/Core/IntervalRat/LogReduction.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4427894Z warning: LeanCert/Core/IntervalRat/LogReduction.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4430361Z ⚠ [3235/3309] Replayed LeanCert.Core.DerivativeIntervals
+2026-11-01T23:04:43.4432374Z warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.ExpDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4435425Z warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4439053Z warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4442941Z warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4446991Z warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4450937Z warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.SpecialFunctions.Arsinh` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4454902Z warning: LeanCert/Core/DerivativeIntervals.lean: imports `Mathlib.Analysis.Calculus.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4457002Z ⚠ [3236/3309] Replayed LeanCert.Core.Taylor
+2026-11-01T23:04:43.4458915Z warning: LeanCert/Core/Taylor.lean: imports `Mathlib.Analysis.Calculus.Taylor` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4468242Z warning: LeanCert/Core/Taylor.lean: imports `Mathlib.Analysis.SpecialFunctions.ExpDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4476449Z warning: LeanCert/Core/Taylor.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4484778Z warning: LeanCert/Core/Taylor.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4491137Z ⚠ [3238/3309] Replayed LeanCert.Core.IntervalRat.Taylor
+2026-11-01T23:04:43.4495237Z warning: LeanCert/Core/IntervalRat/Taylor.lean: imports `Mathlib.Analysis.Complex.ExponentialBounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4510391Z warning: LeanCert/Core/IntervalRat/Taylor.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4521851Z warning: LeanCert/Core/IntervalRat/Taylor.lean: imports `Mathlib.Analysis.SpecificLimits.Normed` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4528159Z warning: LeanCert/Core/IntervalRat/Taylor.lean: imports `Mathlib.Analysis.Real.Pi.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4533594Z warning: LeanCert/Core/IntervalRat/Taylor.lean: imports `Mathlib.Data.List.Range` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4535413Z ⚠ [3240/3309] Replayed LeanCert.Core.IntervalRealEndpoints
+2026-11-01T23:04:43.4537230Z warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.SpecialFunctions.ExpDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4540550Z warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4543620Z warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.SpecialFunctions.Arsinh` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4549067Z warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4552941Z warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.Real.Pi.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4557931Z warning: LeanCert/Core/IntervalRealEndpoints.lean: imports `Mathlib.Analysis.Calculus.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4560106Z ⚠ [3241/3309] Replayed LeanCert.Core.TrigReduction
+2026-11-01T23:04:43.4561424Z warning: LeanCert/Core/TrigReduction.lean: imports `Mathlib.Analysis.Real.Pi.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4563758Z warning: LeanCert/Core/TrigReduction.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4566095Z warning: LeanCert/Core/TrigReduction.lean: imports `Mathlib.Tactic.Linarith` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4568471Z warning: LeanCert/Core/TrigReduction.lean: imports `Mathlib.Tactic.NormNum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4570393Z ⚠ [3243/3309] Replayed LeanCert.Engine.Eval.Core
+2026-11-01T23:04:43.4571741Z warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4574256Z warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4576670Z warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Sinc` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4578891Z warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4581403Z warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.Complex.ExponentialBounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4583598Z warning: LeanCert/Engine/Eval/Core.lean: imports `Mathlib.Analysis.Real.Pi.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4585240Z ⚠ [3249/3309] Replayed LeanCert.Engine.AD.Transcendental
+2026-11-01T23:04:43.4587102Z warning: LeanCert/Engine/AD/Transcendental.lean: imports `Mathlib.Analysis.SpecialFunctions.Sqrt` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4588577Z ⚠ [3251/3309] Replayed LeanCert.Engine.AD.Correctness
+2026-11-01T23:04:43.4590318Z warning: LeanCert/Engine/AD/Correctness.lean: imports `Mathlib.Analysis.Calculus.Deriv.Add` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4592342Z warning: LeanCert/Engine/AD/Correctness.lean: imports `Mathlib.Analysis.Calculus.Deriv.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4594736Z warning: LeanCert/Engine/AD/Correctness.lean: imports `Mathlib.Analysis.Calculus.Deriv.Comp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4596949Z warning: LeanCert/Engine/AD/Correctness.lean: imports `Mathlib.Analysis.Calculus.Deriv.Inv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4599731Z warning: LeanCert/Engine/AD/Correctness.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4601324Z ⚠ [3254/3309] Replayed LeanCert.Contrib.Sinc
+2026-11-01T23:04:43.4602700Z warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Sinc` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4605012Z warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4607233Z warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.Calculus.Deriv.Slope` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4609759Z warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.Calculus.ContDiff.Defs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4611915Z warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.Calculus.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4614050Z warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.Calculus.ParametricIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4616695Z warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4619083Z warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.SpecialFunctions.Integrals.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4621449Z warning: LeanCert/Contrib/Sinc.lean: imports `Mathlib.Analysis.Analytic.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4622872Z ⚠ [3255/3309] Replayed LeanCert.Engine.AD.PartialCorrectness
+2026-11-01T23:04:43.4624520Z warning: LeanCert/Engine/AD/PartialCorrectness.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4627144Z warning: LeanCert/Engine/AD/PartialCorrectness.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4632807Z warning: LeanCert/Engine/AD/PartialCorrectness.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Sinc` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4635340Z warning: LeanCert/Engine/AD/PartialCorrectness.lean: imports `Mathlib.Analysis.SpecialFunctions.Arsinh` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4637881Z warning: LeanCert/Engine/AD/PartialCorrectness.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4639835Z ⚠ [3258/3309] Replayed LeanCert.Core.Dyadic
+2026-11-01T23:04:43.4641298Z warning: LeanCert/Core/Dyadic.lean: imports `Mathlib.Data.Rat.Cast.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4643316Z warning: LeanCert/Core/Dyadic.lean: imports `Mathlib.Algebra.Order.Field.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4645280Z warning: LeanCert/Core/Dyadic.lean: imports `Mathlib.Basic.Real.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4646574Z ⚠ [3259/3309] Replayed LeanCert.Core.IntervalDyadic
+2026-11-01T23:04:43.4647867Z warning: LeanCert/Core/IntervalDyadic.lean: imports `Mathlib.Data.Rat.Cast.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4649748Z ⚠ [3266/3309] Replayed LeanCert.Tactic.LeanCert.Normalize
+2026-11-01T23:04:43.4651345Z warning: LeanCert/Tactic/LeanCert/Normalize.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4652723Z ⚠ [3271/3309] Replayed LeanCert.Engine.TaylorModel.Core
+2026-11-01T23:04:43.4654104Z warning: LeanCert/Engine/TaylorModel/Core.lean: imports `Mathlib.RingTheory.Polynomial.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4656357Z warning: LeanCert/Engine/TaylorModel/Core.lean: imports `Mathlib.Algebra.Polynomial.Degree.Defs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4658536Z warning: LeanCert/Engine/TaylorModel/Core.lean: imports `Mathlib.Data.Nat.Choose.Sum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4660867Z warning: LeanCert/Engine/TaylorModel/Core.lean: imports `Mathlib.Data.Nat.Choose.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4662956Z warning: LeanCert/Engine/TaylorModel/Core.lean: imports `Mathlib.Data.List.GetD` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4664325Z ⚠ [3273/3309] Replayed LeanCert.Engine.TaylorModel.Trig
+2026-11-01T23:04:43.4665746Z warning: LeanCert/Engine/TaylorModel/Trig.lean: imports `Mathlib.Analysis.Complex.ExponentialBounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4668182Z warning: LeanCert/Engine/TaylorModel/Trig.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Series` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4670776Z warning: LeanCert/Engine/TaylorModel/Trig.lean: imports `Mathlib.Analysis.Calculus.IteratedDeriv.Defs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4673060Z warning: LeanCert/Engine/TaylorModel/Trig.lean: imports `Mathlib.Analysis.Analytic.Uniqueness` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4674538Z ⚠ [3274/3309] Replayed LeanCert.Engine.TaylorModel.ExpLog
+2026-11-01T23:04:43.4675993Z warning: LeanCert/Engine/TaylorModel/ExpLog.lean: imports `Mathlib.Analysis.Complex.ExponentialBounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4678583Z warning: LeanCert/Engine/TaylorModel/ExpLog.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4680388Z ⚠ [3292/3309] Replayed LeanCert.Engine.TaylorModel.Hyperbolic
+2026-11-01T23:04:43.4681851Z warning: LeanCert/Engine/TaylorModel/Hyperbolic.lean: imports `Mathlib.Analysis.Analytic.Binomial` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4684155Z warning: LeanCert/Engine/TaylorModel/Hyperbolic.lean: imports `Mathlib.Analysis.Analytic.Uniqueness` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4686518Z warning: LeanCert/Engine/TaylorModel/Hyperbolic.lean: imports `Mathlib.Analysis.Complex.ExponentialBounds` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4688392Z ⚠ [3296/3309] Replayed LeanCert.Engine.Integrate
+2026-11-01T23:04:43.4690038Z warning: LeanCert/Engine/Integrate.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4692539Z warning: LeanCert/Engine/Integrate.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4694928Z warning: LeanCert/Engine/Integrate.lean: imports `Mathlib.MeasureTheory.Integral.Bochner.Set` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.4696391Z ⚠ [3306/3309] Replayed LeanCert.Engine.Optimize
+2026-11-01T23:04:43.4697699Z warning: LeanCert/Engine/Optimize.lean: imports `Mathlib.Analysis.Calculus.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.5327797Z ⚠ [3310/3334] Replayed LeanCert.Engine.RootFinding.Basic
+2026-11-01T23:04:43.5332250Z warning: LeanCert/Engine/RootFinding/Basic.lean: imports `Mathlib.Topology.Order.IntermediateValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.5335331Z ⚠ [3312/3334] Replayed LeanCert.Engine.RootFinding.Newton
+2026-11-01T23:04:43.5338011Z warning: LeanCert/Engine/RootFinding/Newton.lean: imports `Mathlib.Analysis.Calculus.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.5347276Z ⚠ [3314/3334] Replayed LeanCert.Engine.RootFinding.Contraction
+2026-11-01T23:04:43.5349557Z warning: LeanCert/Engine/RootFinding/Contraction.lean: imports `Mathlib.Topology.Order.IntermediateValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.5351761Z ⚠ [3319/3334] Replayed LeanCert.Engine.RootFinding.Krawczyk
+2026-11-01T23:04:43.5353440Z warning: LeanCert/Engine/RootFinding/Krawczyk.lean: imports `Mathlib.Analysis.Matrix.Normed` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.5356003Z warning: LeanCert/Engine/RootFinding/Krawczyk.lean: imports `Mathlib.Analysis.Calculus.Deriv.Pi` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.5358455Z warning: LeanCert/Engine/RootFinding/Krawczyk.lean: imports `Mathlib.Topology.MetricSpace.Contracting` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.5360559Z ⚠ [3321/3334] Replayed LeanCert.Meta.ProveContinuous
+2026-11-01T23:04:43.5362011Z warning: LeanCert/Meta/ProveContinuous.lean: imports `Mathlib.Topology.ContinuousOn` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.5364288Z warning: LeanCert/Meta/ProveContinuous.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.5366679Z warning: LeanCert/Meta/ProveContinuous.lean: imports `Mathlib.Analysis.SpecialFunctions.ExpDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+2026-11-01T23:04:43.5430043Z Build completed successfully (3334 jobs).
+2026-11-01T23:05:25.9403221Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.complexGlobalLogRate_ofReal, KVApproximation.Approximation.complexGlobalLogRate_ellipse, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Approximation.GlobalRateGeometry
+2026-11-01T23:05:25.9408531Z Running Lean paranoid kernel on solution
+2026-11-01T23:06:49.3253138Z Lean paranoid kernel accepts the solution
+2026-11-01T23:06:49.3280970Z Running lean4lean kernel on solution
+2026-11-01T23:08:07.2940633Z checked 48727 declarations
+2026-11-01T23:08:07.3019867Z lean4lean kernel accepts the solution
+2026-11-01T23:08:07.3020616Z Running nanoda kernel on solution
+2026-11-01T23:08:34.9180328Z nanoda kernel accepts the solution
+2026-11-01T23:08:34.9180916Z Running con-leche kernel on solution
+2026-11-01T23:09:21.5778833Z con-leche: accepted 48730 declarations (--verified)
+2026-11-01T23:09:21.5878210Z con-leche kernel accepts the solution
+2026-11-01T23:09:21.5895984Z Running con-ron kernel on solution
+2026-11-01T23:09:44.1510675Z con-ron: accepted 48730 declarations (--verified)
+2026-11-01T23:09:44.1704013Z con-ron kernel accepts the solution
+2026-11-01T23:09:44.1704892Z Running Lean default kernel on solution
+2026-11-01T23:10:51.1225652Z Lean default kernel accepts the solution
+2026-11-01T23:10:51.1226879Z Your solution is okay!
+2026-11-01T23:10:51.1316809Z {"command": ["lake", "comparator", "--config=Comparator/global_rate_geometry.json", "--paranoid"], "exit_code": 0, "seconds": 380.1, "configuration": "global_rate_geometry.json", "theorem_names": ["KVApproximation.Approximation.complexGlobalLogRate_ofReal", "KVApproximation.Approximation.complexGlobalLogRate_ellipse"], "challenge_module": "Challenges.GlobalResponse", "solution_module": "KVApproximation.Approximation.GlobalRateGeometry", "kernels_accepted": ["Lean default", "Lean paranoid", "con-leche", "con-ron", "lean4lean", "nanoda"], "passed": true}
+2026-11-01T23:10:51.1339951Z Comparator 8/21: homogenization
+2026-11-01T23:10:51.1360167Z Running lake comparator --config=Comparator/homogenization.json --paranoid
+2026-11-01T23:10:52.1509705Z Resolving dependencies
+2026-11-01T23:10:52.1510628Z Building Challenges.Homogenization
+2026-11-01T23:10:54.6137333Z ⚠ [3239/3239] Replayed Challenges.Homogenization
+2026-11-01T23:10:54.6139007Z warning: Comparator/Challenges/Homogenization.lean:23:8: declaration uses `sorry`
+2026-11-01T23:10:54.6203381Z Build completed successfully (3239 jobs).
+2026-11-01T23:11:17.6079815Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Homogenization.viscoelastic_homogenization, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.Homogenization
+2026-11-01T23:11:17.6084007Z Building KVApproximation.KelvinVoigt.Homogenization
+2026-11-01T23:11:20.0092696Z ⚠ [3261/3314] Replayed KVApproximation.Analysis.TimeSobolevProperties
+2026-11-01T23:11:20.0096348Z warning: KVApproximation/Analysis/TimeSobolevProperties.lean:19:0: automatically included section variable(s) unused in theorem `KVApproximation.Analysis.TimeH1.value_memLp`:
+2026-11-01T23:11:20.0100613Z   [CompleteSpace H]
+2026-11-01T23:11:20.0101755Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-11-01T23:11:20.0111214Z   omit [CompleteSpace H] in theorem ...
+2026-11-01T23:11:20.0119878Z 
+2026-11-01T23:11:20.0120690Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-11-01T23:11:20.0128257Z ⚠ [3289/3314] Replayed KVApproximation.Analysis.TimeSobolevNorms
+2026-11-01T23:11:20.0130092Z warning: KVApproximation/Analysis/TimeSobolevNorms.lean:19:0: automatically included section variable(s) unused in theorem `KVApproximation.Analysis.TimeH1.valueL2_apply`:
+2026-11-01T23:11:20.0134650Z   [CompleteSpace H]
+2026-11-01T23:11:20.0135837Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-11-01T23:11:20.0136896Z   omit [CompleteSpace H] in theorem ...
+2026-11-01T23:11:20.0137232Z 
+2026-11-01T23:11:20.0137627Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-11-01T23:11:20.2088500Z ⚠ [3521/3531] Replayed KVApproximation.Analysis.TimeSobolevMaps
+2026-11-01T23:11:20.2097309Z warning: KVApproximation/Analysis/TimeSobolevMaps.lean:20:0: automatically included section variable(s) unused in theorem `KVApproximation.Analysis.TimeH1.eq_of_value_ae`:
+2026-11-01T23:11:20.2099233Z   [CompleteSpace H]
+2026-11-01T23:11:20.2100507Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-11-01T23:11:20.2101508Z   omit [CompleteSpace H] in theorem ...
+2026-11-01T23:11:20.2102042Z 
+2026-11-01T23:11:20.2102616Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-11-01T23:11:20.2103883Z ⚠ [3523/3531] Replayed KVApproximation.Analysis.VolterraUniqueness
+2026-11-01T23:11:20.2105797Z warning: KVApproximation/Analysis/VolterraUniqueness.lean:29:0: automatically included section variable(s) unused in theorem `KVApproximation.Analysis.eqOn_zero_of_integrated_memory_eq_zero`:
+2026-11-01T23:11:20.2107486Z   [CompleteSpace H]
+2026-11-01T23:11:20.2107979Z   [CompleteSpace G]
+2026-11-01T23:11:20.2108952Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-11-01T23:11:20.2110194Z   omit [CompleteSpace H] [CompleteSpace G] in theorem ...
+2026-11-01T23:11:20.2110623Z 
+2026-11-01T23:11:20.2111274Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-11-01T23:11:20.3094744Z ⚠ [3544/3544] Replayed KVApproximation.KelvinVoigt.Homogenization
+2026-11-01T23:11:20.3096248Z warning: KVApproximation/KelvinVoigt/Homogenization.lean:29:45: Variable name `hd` is not explicitly referenced.
+2026-11-01T23:11:20.3097271Z 
+2026-11-01T23:11:20.3097995Z Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+2026-11-01T23:11:20.3098992Z   [apply] _hd
+2026-11-01T23:11:20.3099226Z 
+2026-11-01T23:11:20.3099864Z Note: This linter can be disabled with `set_option linter.unusedVariables false`
+2026-11-01T23:11:20.3101396Z warning: KVApproximation/KelvinVoigt/Homogenization.lean:32:5: Variable name `hΩlipschitz` is not explicitly referenced.
+2026-11-01T23:11:20.3119519Z 
+2026-11-01T23:11:20.3140208Z Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+2026-11-01T23:11:20.3150368Z   [apply] _hΩlipschitz
+2026-11-01T23:11:20.3150719Z 
+2026-11-01T23:11:20.3151153Z Note: This linter can be disabled with `set_option linter.unusedVariables false`
+2026-11-01T23:11:20.3164401Z Build completed successfully (3544 jobs).
+2026-11-01T23:12:37.1126395Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Homogenization.viscoelastic_homogenization, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.KelvinVoigt.Homogenization
+2026-11-01T23:12:37.1132707Z Running Lean paranoid kernel on solution
+2026-11-01T23:24:46.3742968Z ##[error]The runner has received a shutdown signal. This can happen when the runner service is stopped, or a manually started runner is canceled.
+2026-11-01T23:24:46.3753016Z ##[error]Process completed with exit code 143.
+2026-11-01T23:24:46.5724136Z Cleaning up orphan processes
+

@@ -1,0 +1,29 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_variation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 203.9,
+  "configuration": "periodic_variation.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicC1.continuous_divergence",
+    "KVApproximation.Analysis.continuous_periodicTestPairing",
+    "KVApproximation.Analysis.periodicVariation_congr",
+    "KVApproximation.Analysis.periodicBVNorm_congr",
+    "KVApproximation.Analysis.periodicBVNorm_le_of_tendsto_L1"
+  ],
+  "challenge_module": "Challenges.PeriodicVariation",
+  "solution_module": "KVApproximation.Analysis.PeriodicVariationStability",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

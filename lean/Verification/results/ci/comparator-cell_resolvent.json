@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/cell_resolvent.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 415.4,
+  "configuration": "cell_resolvent.json",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.homogenizedForm_resolvent"
+  ],
+  "challenge_module": "Challenges.CellResolvent",
+  "solution_module": "KVApproximation.OperatorTheory.CellResolvent",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

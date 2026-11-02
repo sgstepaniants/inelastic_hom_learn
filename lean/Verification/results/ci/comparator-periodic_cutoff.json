@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_cutoff.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 427.8,
+  "configuration": "periodic_cutoff.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicH1.exists_rescaled_cutoff"
+  ],
+  "challenge_module": "Challenges.PeriodicCutoff",
+  "solution_module": "KVApproximation.Analysis.PeriodicCutoff",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

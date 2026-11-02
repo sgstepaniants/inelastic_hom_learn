@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/cutoff_pairing.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 420.0,
+  "configuration": "cutoff_pairing.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.cutoffGradientL_apply_ae",
+    "KVApproximation.Analysis.cutoffPairing_eq_integral",
+    "KVApproximation.Analysis.integral_stress_cutoff_gradient",
+    "KVApproximation.Analysis.integral_cutoff_stress_strain_eq_neg_pairing"
+  ],
+  "challenge_module": "Challenges.CutoffPairing",
+  "solution_module": "KVApproximation.Analysis.CutoffPairingProperties",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

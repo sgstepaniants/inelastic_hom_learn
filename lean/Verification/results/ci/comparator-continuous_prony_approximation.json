@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/continuous_prony_approximation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 456.1,
+  "configuration": "continuous_prony_approximation.json",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.continuous_prony_neural_approximation"
+  ],
+  "challenge_module": "Challenges.ContinuousPronyApproximation",
+  "solution_module": "KVApproximation.KelvinVoigt.ContinuousPronyApproximation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

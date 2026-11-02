@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/global_rate_geometry.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 380.1,
+  "configuration": "global_rate_geometry.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.complexGlobalLogRate_ofReal",
+    "KVApproximation.Approximation.complexGlobalLogRate_ellipse"
+  ],
+  "challenge_module": "Challenges.GlobalResponse",
+  "solution_module": "KVApproximation.Approximation.GlobalRateGeometry",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/fourier_mapping_layers.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 229.7,
+  "configuration": "fourier_mapping_layers.json",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.FourierLayer.exists_lipschitz_evalLp",
+    "KVApproximation.NeuralOperators.FourierChain.exists_lipschitz_evalLp"
+  ],
+  "challenge_module": "Challenges.FourierMappingLayers",
+  "solution_module": "KVApproximation.NeuralOperators.FourierMappingLayers",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

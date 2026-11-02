@@ -1,0 +1,31 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/spatial_coercivity.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 463.7,
+  "configuration": "spatial_coercivity.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.integrable_spatialForm",
+    "KVApproximation.Homogenization.boundedSpatialForm_apply",
+    "KVApproximation.Homogenization.boundedSpatialForm_symmetric",
+    "KVApproximation.Homogenization.spatialForm_lower_bound",
+    "KVApproximation.Homogenization.boundedSpatialForm_isCoercive",
+    "KVApproximation.Homogenization.elliptic_exists_unique",
+    "KVApproximation.Homogenization.norm_elliptic_solution_le"
+  ],
+  "challenge_module": "Challenges.SpatialCoercivity",
+  "solution_module": "KVApproximation.Homogenization.SpatialCoercivity",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,30 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_rescaling.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 200.9,
+  "configuration": "periodic_rescaling.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.quasiMeasurePreserving_toCell",
+    "KVApproximation.Analysis.quasiMeasurePreserving_scaledToCell",
+    "KVApproximation.Analysis.ae_rescalePeriodic",
+    "KVApproximation.Analysis.aestronglyMeasurable_rescalePeriodic",
+    "KVApproximation.Analysis.eLpNorm_top_rescalePeriodic_le",
+    "KVApproximation.Analysis.memLp_top_rescalePeriodic"
+  ],
+  "challenge_module": "Challenges.PeriodicRescaling",
+  "solution_module": "KVApproximation.Analysis.PeriodicRescaling",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

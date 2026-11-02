@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/strip_materials.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 306.9,
+  "configuration": "strip_materials.json",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.exists_strip_material_family"
+  ],
+  "challenge_module": "Challenges.StripMaterials",
+  "solution_module": "KVApproximation.KelvinVoigt.StripMaterials",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

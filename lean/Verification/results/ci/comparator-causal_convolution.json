@@ -1,0 +1,31 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/causal_convolution.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 229.8,
+  "configuration": "causal_convolution.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.posConvolution_eq_integral_sub",
+    "KVApproximation.Analysis.intervalIntegrable_posConvolution_integrand",
+    "KVApproximation.Analysis.continuousOn_posConvolution",
+    "KVApproximation.Analysis.integral_posConvolution_eq_posConvolution_primitive",
+    "KVApproximation.Analysis.integrable_rectangle_bilinear",
+    "KVApproximation.Analysis.integral_triangle_swap",
+    "KVApproximation.Analysis.integral_posConvolution_eq_integral_kernel"
+  ],
+  "challenge_module": "Challenges.CausalConvolution",
+  "solution_module": "KVApproximation.Analysis.CausalConvolution",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

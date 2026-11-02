@@ -1,0 +1,31 @@
+Resolving dependencies
+Building Challenges.LogPatchGeometry
+⚠ [2077/2077] Replayed Challenges.LogPatchGeometry
+warning: Comparator/Challenges/LogPatchGeometry.lean:10:8: declaration uses `sorry`
+warning: Comparator/Challenges/LogPatchGeometry.lean:16:8: declaration uses `sorry`
+warning: Comparator/Challenges/LogPatchGeometry.lean:21:8: declaration uses `sorry`
+warning: Comparator/Challenges/LogPatchGeometry.lean:27:8: declaration uses `sorry`
+warning: Comparator/Challenges/LogPatchGeometry.lean:35:8: declaration uses `sorry`
+warning: Comparator/Challenges/LogPatchGeometry.lean:43:8: declaration uses `sorry`
+warning: Comparator/Challenges/LogPatchGeometry.lean:52:8: declaration uses `sorry`
+Build completed successfully (2077 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.logPatch_bounds, KVApproximation.Approximation.continuous_logHat, KVApproximation.Approximation.logHat_nonneg, KVApproximation.Approximation.logHat_eq_zero_of_not_mem, KVApproximation.Approximation.localRate_mem_patch, KVApproximation.Approximation.localCoordinate_mem, KVApproximation.Approximation.localRate_localCoordinate, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.LogPatchGeometry
+Building KVApproximation.Approximation.LogPatchGeometry
+Build completed successfully (2079 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Approximation.logPatch_bounds, KVApproximation.Approximation.continuous_logHat, KVApproximation.Approximation.logHat_nonneg, KVApproximation.Approximation.logHat_eq_zero_of_not_mem, KVApproximation.Approximation.localRate_mem_patch, KVApproximation.Approximation.localCoordinate_mem, KVApproximation.Approximation.localRate_localCoordinate, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Approximation.LogPatchGeometry
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 15587 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 15590 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 15590 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

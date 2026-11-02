@@ -1,6 +1,6 @@
 # Formalization status
 
-Updated: 2026-11-01.
+Updated: 2026-11-02.
 
 [PLAN.md](PLAN.md) controls the scope; [formalization.yaml](formalization.yaml) records source correspondence. All 17 numbered proof statements and the included unnumbered theory have compiled implementations. The project remains incomplete until sandboxed Comparator and its paranoid independent checkers have run successfully.
 
@@ -34,13 +34,13 @@ Lean, Mathlib and LeanCert are frozen at **v4.35.0**.
 
 | Check | Actual result |
 | --- | --- |
-| Full proof libraries, challenges and convenience exports | Passed on Linux after all interface repairs: **4,281 jobs**, **1,998.7 seconds** |
-| Production-artifact transitive axiom audit | Passed: **722 distinct queries/results**, **2.7 seconds** on Linux, only `propext`, `Classical.choice`, `Quot.sound` |
+| Full proof libraries, challenges and convenience exports | Baseline passed on Linux after interface repairs: **4,281 jobs**, **1,998.7 seconds**; rebuild after the current compactness refactor is pending |
+| Production-artifact transitive axiom audit | Baseline passed: **722 distinct queries/results**, **2.7 seconds** on Linux, only `propext`, `Classical.choice`, `Quot.sound`; rerun after the refactor is pending |
 | Comparator selections covered by that audit | **702 declarations in 331 configurations**, plus twenty supporting definitions/ingredients |
 | Isolated subject consumers | **10/10 passed**, including every module in each subject |
 | Metadata | Published **v0.4 schema** passed; referenced local module paths exist |
-| Sandboxed Comparator | **Corrected pilot passed: 7 configurations / 21 theorem selections; full suite running** |
-| Paranoid independent kernel checks | **All six kernels accepted all 7 corrected pilot configurations; full coverage pending** |
+| Sandboxed Comparator | **169 configurations / 383 theorem selections validated and preserved; full coverage pending** |
+| Paranoid independent kernel checks | **All six kernels accepted every preserved configuration; 162 configurations still missing** |
 
 The logs and machine-readable results are in [Verification/results/](Verification/results/). Rerun the full build and axiom audit with `python3 Verification/verify.py local`; rerun subject consumers with `python3 Verification/consumers.py`. The root import now exposes the main results, concrete architectures and exact appendix identities.
 
@@ -56,7 +56,11 @@ GitHub Actions is the selected validation host at [sgstepaniants/inelastic_hom_l
 
 [The corrected Actions run](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41347378153) passed its Linux build, 722-declaration axiom audit, shared-cache availability check, and seven-configuration sandboxed paranoid pilot (21 theorem selections). The full matrix has started with eight concurrent jobs across sixteen shards. It supersedes the cancelled first run; complete coverage is still pending.
 
-At 22:24 UTC on November 1, shard 5 lost its runner while the Lean paranoid kernel was checking `dirichlet_compactness`; shard 7 later stopped in the same checker on `homogeneous_limit`. Their logs end with a runner shutdown signal and exit 143, without a checker rejection. The other shards continue. Ten completed configuration records and their full six-kernel logs were recovered from the interrupted jobs' console logs and checked against the current configuration files. A [separate resource check](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41357483181) repeats Dirichlet compactness with the same sandbox and six kernels, 12 GiB of additional swap, and memory/process measurements. Memory pressure is under investigation, not yet established as the cause.
+Several shards lost their runners during the Lean paranoid check of Dirichlet compactness or a result that depends on it. Their logs end with a runner shutdown signal and exit 143, without a checker rejection. Completed shards 2, 3 and 4, successful recovery jobs, recovered console-log results and two pilot results now provide **169 configurations / 383 selections**. The checked records, logs, original interrupted-job logs and an explicitly incomplete coverage report are preserved in [Verification/results/ci/](Verification/results/ci/). None of these configurations imports the compactness module being refactored.
+
+A [15-minute resource sample](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41361668464) confirmed severe memory pressure: nearly all 8 GiB of RAM and about 6.7 GiB of swap were in use while the first kernel was still running. A [longer run with 12 GiB of extra swap](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41357483181) reached its time limit without completing the configuration. A bounded local declaration diagnostic identifies the private `W1p0.valueExtendByZeroL_apply` proof in the vendored `RellichKondrachov` module as expensive; its statement checks quickly. A proof refactor is being tested locally. Its affected import closure contains ten Comparator configurations; none of the 169 preserved successes is affected. Full rebuild, axiom audit and authoritative checks of the affected configurations remain required after the repair.
+
+The [next 34-configuration recovery run](https://github.com/sgstepaniants/inelastic_hom_learn/actions/runs/41363120309) failed before any job started, including on one retry. Its reason is in an annotation unavailable through the connected GitHub tools; the user has been asked to provide that message. Existing jobs continue. No billing or runner-capacity cause is assumed without that annotation.
 
 In the first run, the shared cache failed to save because the runner exhausted disk space. Several shards later lost their runners, and completed checks exposed statement mismatches. The revised workflow removes unused SDKs from disposable runners, requires a successfully saved shared cache before starting its shards, and streams detailed logs so an interrupted job retains its current checker stage. Its seven-configuration pilot includes the first repaired interfaces. The corrected run saved and verified the cache successfully, with 20 GiB available after its build.
 

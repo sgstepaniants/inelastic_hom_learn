@@ -1,0 +1,47 @@
+Resolving dependencies
+Building Challenges.CoerciveForm
+⚠ [2488/2488] Replayed Challenges.CoerciveForm
+warning: Comparator/Challenges/CoerciveForm.lean:19:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:24:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:29:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:35:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:40:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:45:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:50:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:55:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:62:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:69:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:75:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:81:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:87:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:93:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:98:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:104:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:110:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:115:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:120:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:125:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:130:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:140:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:148:8: declaration uses `sorry`
+Build completed successfully (2488 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.OperatorTheory.CoerciveForm.nonneg, KVApproximation.OperatorTheory.CoerciveForm.energy_eq_zero_iff, KVApproximation.OperatorTheory.CoerciveForm.riesz_spec, KVApproximation.OperatorTheory.CoerciveForm.eq_of_form_eq, KVApproximation.OperatorTheory.complement_apply, KVApproximation.OperatorTheory.form_complement_corrector, KVApproximation.OperatorTheory.projection_complement, KVApproximation.OperatorTheory.complement_energy_eq, KVApproximation.OperatorTheory.mismatch_eq_projection_complement, KVApproximation.OperatorTheory.form_projection, KVApproximation.OperatorTheory.projection_eq_self, KVApproximation.OperatorTheory.relaxation_spec, KVApproximation.OperatorTheory.relaxation_eq_projection_riesz, KVApproximation.OperatorTheory.complement_idempotent, KVApproximation.OperatorTheory.complement_selfAdjoint, KVApproximation.OperatorTheory.form_complement, KVApproximation.OperatorTheory.form_complement_eq_zero_iff, KVApproximation.OperatorTheory.projection_energy_le, KVApproximation.OperatorTheory.complement_energy_le, KVApproximation.OperatorTheory.relaxation_selfAdjoint, KVApproximation.OperatorTheory.relaxation_energy_bounds, KVApproximation.OperatorTheory.mismatch_energy_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.CoerciveForm
+Building KVApproximation.OperatorTheory.VariationalIdentities
+Build completed successfully (2490 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.OperatorTheory.CoerciveForm.nonneg, KVApproximation.OperatorTheory.CoerciveForm.energy_eq_zero_iff, KVApproximation.OperatorTheory.CoerciveForm.riesz_spec, KVApproximation.OperatorTheory.CoerciveForm.eq_of_form_eq, KVApproximation.OperatorTheory.complement_apply, KVApproximation.OperatorTheory.form_complement_corrector, KVApproximation.OperatorTheory.projection_complement, KVApproximation.OperatorTheory.complement_energy_eq, KVApproximation.OperatorTheory.mismatch_eq_projection_complement, KVApproximation.OperatorTheory.form_projection, KVApproximation.OperatorTheory.projection_eq_self, KVApproximation.OperatorTheory.relaxation_spec, KVApproximation.OperatorTheory.relaxation_eq_projection_riesz, KVApproximation.OperatorTheory.complement_idempotent, KVApproximation.OperatorTheory.complement_selfAdjoint, KVApproximation.OperatorTheory.form_complement, KVApproximation.OperatorTheory.form_complement_eq_zero_iff, KVApproximation.OperatorTheory.projection_energy_le, KVApproximation.OperatorTheory.complement_energy_le, KVApproximation.OperatorTheory.relaxation_selfAdjoint, KVApproximation.OperatorTheory.relaxation_energy_bounds, KVApproximation.OperatorTheory.mismatch_energy_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.OperatorTheory.VariationalIdentities
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 19438 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 19441 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 19441 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

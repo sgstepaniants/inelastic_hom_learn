@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/unweighted_approximation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 763.3,
+  "configuration": "unweighted_approximation.json",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.unweighted_sufficient_internal_variable_dimension"
+  ],
+  "challenge_module": "Challenges.AlternativeApproximation",
+  "solution_module": "KVApproximation.KelvinVoigt.UnweightedApproximation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

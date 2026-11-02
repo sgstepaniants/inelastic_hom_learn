@@ -1,0 +1,30 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/time_sobolev.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 595.9,
+  "configuration": "time_sobolev.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.TimeH1.value_memLp",
+    "KVApproximation.Analysis.TimeH1.velocity_memLp",
+    "KVApproximation.Analysis.TimeH1.hasWeakLineDerivOn",
+    "KVApproximation.Analysis.TimeH1.trace_ae",
+    "KVApproximation.Analysis.TimeH1.trace_integral",
+    "KVApproximation.Analysis.TimeH1.exists_of_weak_derivative"
+  ],
+  "challenge_module": "Challenges.TimeSobolev",
+  "solution_module": "KVApproximation.Analysis.TimeSobolevProperties",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

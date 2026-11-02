@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/microscopic_semigroup.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 551.4,
+  "configuration": "microscopic_semigroup.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.microscopic_homogeneous_hasDerivAt",
+    "KVApproximation.Homogenization.exists_uniform_microscopic_semigroup_bounds"
+  ],
+  "challenge_module": "Challenges.MicroscopicSemigroup",
+  "solution_module": "KVApproximation.Homogenization.MicroscopicSemigroup",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

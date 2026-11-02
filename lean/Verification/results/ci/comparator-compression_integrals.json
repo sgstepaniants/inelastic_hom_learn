@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/compression_integrals.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 478.2,
+  "configuration": "compression_integrals.json",
+  "theorem_names": [
+    "KVApproximation.Spectral.compressedMeasure_integral",
+    "KVApproximation.Spectral.compressedMeasure_moment",
+    "KVApproximation.Spectral.compressedMeasure_memory"
+  ],
+  "challenge_module": "Challenges.Compression",
+  "solution_module": "KVApproximation.Spectral.CompressionMoments",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

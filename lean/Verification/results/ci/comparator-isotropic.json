@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/isotropic.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 145.4,
+  "configuration": "isotropic.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.action_identityElasticity",
+    "KVApproximation.Tensor.action_volumetricElasticity",
+    "KVApproximation.Tensor.planeStress_bounds",
+    "KVApproximation.Tensor.planeStress_operatorNorm"
+  ],
+  "challenge_module": "Challenges.Isotropic",
+  "solution_module": "KVApproximation.Tensor.IsotropicIdentities",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

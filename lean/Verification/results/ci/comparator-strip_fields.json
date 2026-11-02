@@ -1,0 +1,29 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/strip_fields.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 209.6,
+  "configuration": "strip_fields.json",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.measurableSet_thinStrip",
+    "KVApproximation.KelvinVoigt.cellMeasure_thinStrip",
+    "KVApproximation.KelvinVoigt.measurable_stripElasticity",
+    "KVApproximation.KelvinVoigt.memLp_stripElasticity",
+    "KVApproximation.KelvinVoigt.hasFieldBounds_stripElasticity"
+  ],
+  "challenge_module": "Challenges.StripFields",
+  "solution_module": "KVApproximation.KelvinVoigt.StripFieldProperties",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

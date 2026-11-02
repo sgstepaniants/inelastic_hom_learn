@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/energy_comparison.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 338.0,
+  "configuration": "energy_comparison.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.ac_energy_decay_bound",
+    "KVApproximation.Analysis.finite_time_decay_lt_margin"
+  ],
+  "challenge_module": "Challenges.EnergyComparison",
+  "solution_module": "KVApproximation.Analysis.EnergyComparison",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

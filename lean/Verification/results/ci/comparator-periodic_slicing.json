@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_slicing.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 275.3,
+  "configuration": "periodic_slicing.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicC1.integral_coordinate_strip_partial",
+    "KVApproximation.Analysis.PeriodicC1.norm_integral_coordinate_strip_partial_le"
+  ],
+  "challenge_module": "Challenges.PeriodicSlicing",
+  "solution_module": "KVApproximation.Analysis.PeriodicSlicing",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

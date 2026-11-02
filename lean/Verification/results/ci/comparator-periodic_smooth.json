@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_smooth.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 155.4,
+  "configuration": "periodic_smooth.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.toCell_cellRepresentative",
+    "KVApproximation.Analysis.PeriodicC1.continuous_value",
+    "KVApproximation.Analysis.PeriodicC1.partial_toCell",
+    "KVApproximation.Analysis.PeriodicC1.continuous_partial"
+  ],
+  "challenge_module": "Challenges.PeriodicSobolev",
+  "solution_module": "KVApproximation.Analysis.PeriodicSmoothIdentities",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

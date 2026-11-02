@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/architecture_admissibility.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 54.4,
+  "configuration": "architecture_admissibility.json",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.HasUniversalApproximation.locallyLipschitz"
+  ],
+  "challenge_module": "Challenges.ArchitectureAdmissibility",
+  "solution_module": "KVApproximation.NeuralOperators.ArchitectureAdmissibility",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/caratheodory_halfline.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 282.6,
+  "configuration": "caratheodory_halfline.json",
+  "theorem_names": [
+    "KVApproximation.Dynamics.exists_integral_solution_Ici"
+  ],
+  "challenge_module": "Challenges.CaratheodoryHalfLine",
+  "solution_module": "KVApproximation.Dynamics.CaratheodoryHalfLine",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

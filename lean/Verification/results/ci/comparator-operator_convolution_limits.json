@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/operator_convolution_limits.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 186.9,
+  "configuration": "operator_convolution_limits.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.tendsto_intervalIntegral_of_weak_operator_tendsto"
+  ],
+  "challenge_module": "Challenges.OperatorConvolutionLimits",
+  "solution_module": "KVApproximation.Analysis.OperatorConvolutionLimits",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

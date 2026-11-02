@@ -1,0 +1,28 @@
+Resolving dependencies
+Building Challenges.MandelFiniteIndices
+⚠ [2556/2556] Replayed Challenges.MandelFiniteIndices
+warning: Comparator/Challenges/MandelFiniteIndices.lean:15:8: declaration uses `sorry`
+warning: Comparator/Challenges/MandelFiniteIndices.lean:22:8: declaration uses `sorry`
+warning: Comparator/Challenges/MandelFiniteIndices.lean:29:8: declaration uses `sorry`
+warning: Comparator/Challenges/MandelFiniteIndices.lean:37:8: declaration uses `sorry`
+Build completed successfully (2556 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Tensor.scalarBlockStrainMandel_isometry, KVApproximation.Tensor.scalarBlockStrainMandel_norm, KVApproximation.Tensor.scalarStrainMandel_isometry, KVApproximation.Tensor.scalarElasticityMandel_isometry, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.MandelFiniteIndices
+Building KVApproximation.Tensor.MandelFiniteIsometry
+Build completed successfully (2557 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Tensor.scalarBlockStrainMandel_isometry, KVApproximation.Tensor.scalarBlockStrainMandel_norm, KVApproximation.Tensor.scalarStrainMandel_isometry, KVApproximation.Tensor.scalarElasticityMandel_isometry, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Tensor.MandelFiniteIsometry
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 18057 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 18060 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 18060 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
