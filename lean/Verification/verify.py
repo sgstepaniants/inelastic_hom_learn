@@ -42,7 +42,10 @@ def run(command, name):
 
 
 def save(name, record):
-    (RESULTS / f"{name}.json").write_text(json.dumps(record, indent=2) + "\n")
+    path = RESULTS / f"{name}.json"
+    temporary = path.with_suffix(".json.tmp")
+    temporary.write_text(json.dumps(record, indent=2) + "\n")
+    temporary.replace(path)
     print(json.dumps(record), flush=True)
 
 

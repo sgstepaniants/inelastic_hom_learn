@@ -94,7 +94,9 @@ pinned Linux toolchain and bubblewrap, rebuilds every library and audits its
 axioms. It then runs only missing or failed configurations, with the default
 sandbox and all six kernels. The three repaired pilot configurations run first.
 Each local result is retained immediately inside the VM, so an interrupted run
-can resume without repeating successful checks.
+can resume without repeating successful checks. After the serial pilot, the
+runner allows at most two concurrent checks when its measured memory use fits
+the VM; otherwise it continues serially.
 
 Terminal output is saved to `Verification/results/vm/runner.log`; build, audit,
 local and combined result files are copied there when the run ends. The combined

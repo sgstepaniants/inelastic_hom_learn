@@ -29,7 +29,7 @@ if [[ "$(uname -s)" == Darwin ]]; then
     mkdir -p Verification/results
     rm -rf Verification/results/ci
   '
-  COPYFILE_DISABLE=1 tar -cf - \
+  COPYFILE_DISABLE=1 tar --no-xattrs -cf - \
     lakefile.toml lake-manifest.json lean-toolchain .gitignore LICENSE \
     README.md PLAN.md STATUS.md formalization.yaml \
     KVApproximation.lean KVApproximation Vendor Comparator \

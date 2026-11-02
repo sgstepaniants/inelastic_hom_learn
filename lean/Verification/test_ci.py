@@ -4,8 +4,10 @@
 import json
 import contextlib
 import io
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 import tempfile
+import threading
 import unittest
 from unittest.mock import patch
 
@@ -126,6 +128,37 @@ class EvidenceTests(unittest.TestCase):
         (local / self.record_path.name).write_bytes(self.record_path.read_bytes())
         with self.assertRaisesRegex(ValueError, "Duplicate evidence"):
             resume_comparator.combine([self.results, local], self.root / "combined")
+
+    def test_parallel_checks_preserve_separate_logs_and_prior_evidence(self):
+        files = [self.config_path]
+        for name in ["second", "third"]:
+            path = self.root / "Comparator" / (name + ".json")
+            path.write_text(json.dumps(self.config | {"theorem_names": [name]}))
+            files.append(path)
+        barrier = threading.Barrier(2, timeout=5)
+
+        def succeed_run(command, name):
+            barrier.wait()
+            log = self.results / (name + ".log")
+            log.write_text(name + "\n" + self.log)
+            return {"command": command, "exit_code": 0, "seconds": 1.0}, log
+
+        with patch.object(verify, "ROOT", self.root), \
+             patch.object(verify, "RESULTS", self.results), \
+             patch.object(verify.platform, "system", return_value="Linux"), \
+             patch.object(verify, "configurations", return_value=(files, set())), \
+             patch.object(collector, "configurations", return_value=(files, {"example", "second", "third"})), \
+             patch.object(verify, "run", side_effect=succeed_run), \
+             contextlib.redirect_stdout(io.StringIO()):
+            with ThreadPoolExecutor(max_workers=2) as pool:
+                futures = [pool.submit(resume_comparator.run_one, name) for name in ["second", "third"]]
+                self.assertTrue(all(future.result() for future in futures))
+            self.assertTrue(collector.collect(self.results)["passed"])
+        self.assertEqual(self.record_path.with_suffix(".log").read_text(), self.log)
+        for name in ["second", "third"]:
+            self.assertEqual((self.results / f"comparator-{name}.log").read_text(),
+                             f"comparator-{name}\n" + self.log)
+        self.assertFalse(list(self.results.glob("*.tmp")))
 
 
 class CacheSelectionTests(unittest.TestCase):
