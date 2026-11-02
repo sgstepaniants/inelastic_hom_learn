@@ -34,8 +34,8 @@ Lean, Mathlib and LeanCert are frozen at **v4.35.0**.
 
 | Check | Actual result |
 | --- | --- |
-| Full proof libraries, challenges and convenience exports | Linux baseline passed: **4,281 jobs**, **1,998.7 seconds**. After the compactness and Green-interface repairs, the full local rebuild passed: **4,282 jobs**, **123.1 seconds**; Linux refresh pending |
-| Production-artifact transitive axiom audit | **722 distinct queries/results**, only `propext`, `Classical.choice`, `Quot.sound`. Linux baseline passed in **2.7 seconds**; audit after both repairs passed locally in **9.8 seconds** |
+| Full proof libraries, challenges and convenience exports | After both repairs, the full Linux VM build passed: **4,282 jobs**, **1,527.0 seconds** |
+| Production-artifact transitive axiom audit | **722 distinct queries/results**, only `propext`, `Classical.choice`, `Quot.sound`. The Linux VM audit after both repairs passed in **9.2 seconds** |
 | Comparator selections covered by that audit | **702 declarations in 331 configurations**, plus twenty supporting definitions/ingredients |
 | Isolated subject consumers | **10/10 passed**, including every module in each subject |
 | Metadata | Published **v0.4 schema** passed; referenced local module paths exist |
@@ -74,7 +74,7 @@ In the first run, the shared cache failed to save because the runner exhausted d
 
 Local compiled-type diagnostics now match all **331 configurations / 702 selections**, including universe-parameter names. Repairs align inferred scalar structures, local instance names, universe labels, and Carathéodory parameter order. The continuous-calculus challenge uses the standard complex-Hilbert-space calculus already used by its solution. The stress-bound challenge drops unused completeness and finite-dimensionality assumptions, retaining the stronger generality of the existing proof. Mathematical bounds and conclusions are unchanged. The full-target local rebuild and 722-declaration axiom audit passed after all edits, and the complete type diagnostic was repeated against the refreshed artifacts. The diagnostic is advisory: the complete authoritative sandboxed paranoid suite remains required before claiming completion.
 
-On November 2 the user authorized local completion. The prepared Lima VM now runs Debian ARM Linux with four CPUs and 8 GiB RAM. Its relocated paths were repaired, the pinned Lean 4.35.0 toolchain and all six checker binaries installed, and the bubblewrap isolation probe passed. The full Linux rebuild is running before the remaining comparisons.
+On November 2 the user authorized local completion. The prepared Lima VM now runs Debian ARM Linux with four CPUs and 8 GiB RAM. Its relocated paths were repaired, the pinned Lean 4.35.0 toolchain and all six checker binaries installed, and the bubblewrap isolation probe passed. The full Linux rebuild and 722-query axiom audit passed; the repaired pilot comparisons are now running.
 
 `Verification/vm.sh` now preserves the CI results, fetches only the required Mathlib dependency closure, and invokes a resumable local recovery after the full build and axiom audit. After the serial pilot it permits up to two concurrent checks if their measured memory use fits the VM. Each successful local result is retained; the combined collector still requires every configuration and all six kernels. Ten runner/evidence tests passed, including preserving an earlier success when the next check fails, keeping parallel result logs separate, rejecting duplicate CI/local evidence and selecting transitive external cache dependencies. Local results and the combined report are copied into `Verification/results/vm/` when execution ends. No additional Comparator pass is claimed until its actual result is available.
 

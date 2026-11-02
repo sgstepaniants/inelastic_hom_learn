@@ -1,0 +1,1290 @@
+'KVApproximation.OperatorTheory.CoerciveForm.nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.PeriodicC1.continuous_divergence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.continuous_periodicTestPairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.periodicVariation_congr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.periodicBVNorm_congr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.periodicBVNorm_le_of_tendsto_L1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.coefficient_constraints_of_tendsto_L1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.admissibleMaterials_mem_of_tendsto_L1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.eLpNorm_two_sq_le_of_ae_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.tendsto_eLpNorm_two_of_one_of_ae_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.isCompact_closure_of_periodic_translations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.exists_periodicC1_eLpNorm_sub_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TauCeti.totallyBounded_of_comp_add_sub_of_unifTight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TauCeti.isCompact_closure_of_comp_add_sub_of_unifTight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TauCeti.totallyBounded_of_comp_add_sub_of_isBounded_of_ae_eq_zero_compl' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'TauCeti.isCompact_closure_of_comp_add_sub_of_isBounded_of_ae_eq_zero_compl' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.CoerciveForm.energy_eq_zero_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.CoerciveForm.riesz_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.form_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.CoerciveForm.eq_of_form_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.projection_eq_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relaxation_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relaxation_eq_projection_riesz' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.complement_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.form_complement_corrector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.projection_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.complement_idempotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.form_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.complement_selfAdjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.form_complement_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.complement_energy_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.projection_energy_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.complement_energy_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relaxation_selfAdjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relaxation_energy_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.mismatch_eq_projection_complement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.mismatch_energy_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.WeightedSpace.innerCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.WeightedSpace.inner_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.WeightedSpace.norm_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.WeightedSpace.norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.WeightedSpace.norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.WeightedSpace.exists_norm_val_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.WeightedSpace.continuousLinearEquiv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.WeightedSpace.continuousLinearEquiv_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.WeightedSpace.continuousLinearEquiv_symm_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.WeightedSpace.uniformEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.weightedRelaxation_isSelfAdjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Spectral.relaxationPVM' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.weightedSpace_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relaxationSemigroup_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relaxationSemigroup_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relaxationSemigroup_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relaxationSemigroup_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.mismatch_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.memoryForm_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.weightedRelaxation_spectrum_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.weightedRelaxation_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.relaxation_spectrum_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.weightedRelaxation_complex_spectrum_subset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.relaxationSemigroup_conjugate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.relaxationSemigroup_selfAdjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.memoryForm_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.memoryForm_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relaxationSemigroup_energy_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Spectral.projectionMeasure_hasSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.boundedPVM_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.boundedPVM_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.CoerciveField.toForm_congr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.CoerciveField.riesz_eq_multiplication' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Tensor.CoerciveField.inverse_multiplication' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.CoerciveField.multiplication_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.eq_of_inner_action_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.continuous_of_inner_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.existsUnique_form_tensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.tensorTrace_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.norm_le_tensorTrace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.cellConstitutiveModel_exists_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.cellKernel_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.cellKernel_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.cellConstitutiveModel_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.cellConstitutiveModel_eq_fields' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Spectral.TensorMeasure.variation_le_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.tendsto_of_inner_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.hasSum_of_inner_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.pvmCompression_exists_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.pvmCompression_positive_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.compressedMeasure_exists_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.compressedMeasure_positive_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.compressedMeasure_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.integral_scalarization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.pvmCompression_integral_diag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.compressedMeasure_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.compressedMeasure_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.compressedMeasure_memory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.card_strainIndex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.finrank_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.norm_constantStrain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.spectral_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.tendsto_eLpNorm_of_dominated_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.multiplication_converges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.toCell_cellRepresentative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.PeriodicC1.partial_toCell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.PeriodicC1.continuous_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.PeriodicC1.continuous_partial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.PeriodicH1.norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.cellAverageL_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.mem_zeroMeanPeriodicSubmodule_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.PeriodicC1.integral_partial_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.PeriodicC1.integral_smul_partial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.PeriodicH1.integral_gradient_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.PeriodicH1.hasWeakGradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.constantStrain_orthogonal_corrector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.CoerciveForm.homogenizedForm_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.effectiveForm_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.effectiveForm_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.mFourier_toCell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.contDiff_mFourier_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.fderiv_mFourier_lift_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.HasPeriodicWeakGradient.integral_complex_test' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.HasPeriodicWeakGradient.fourier_coefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.eq_of_fourier_integrals_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.HasPeriodicWeakGradient.gradient_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.PeriodicH1.valueL_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.symmetrized_rankOne_sq_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.rankOne_sq_norm_le_symmetrized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.hasSum_fourier_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.HasPeriodicWeakGradient.gradient_sq_norm_le_symmetric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.HasPeriodicWeakGradient.poincare_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.periodic_korn_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.periodic_korn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.contDiff_realFourierMode_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.fderiv_realFourierMode_lift_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.hasSum_realFourier_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.periodicH1_iff_weakGradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.correctorSubspace_eq_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.hasFieldBounds_iff_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.HasBounds.action_isInvertible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.HasBounds.inverse_action_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.CoerciveField.inverse_apply_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.CoerciveField.relativeRiesz_apply_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.norm_sq_eq_sum_norm_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.HasBounds.action_opNorm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.HasBounds.norm_action_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.HasBounds.norm_le_sqrt_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.CoerciveForm.riesz_opNorm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.projection_sub_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relaxation_sub_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relaxation_opNorm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.HasFieldBounds.eLpNorm_top_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.multiplication_strong_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.cell_operators_converge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.effective_tensors_converge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.eLpNorm_one_eq_iSup_periodicTestPairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.exists_periodic_divergence_eq_translate_sub' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.periodicVariation_translation_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.isCompact_periodicBV_sublevel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'hasFDerivAt_integral_Icc_of_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'contDiff_integral_Icc_of_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IsCompact.exists_eventually_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.isCompact_coefficient_constraints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.isCompact_admissibleMaterials' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.TensorMeasure.integrable_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Spectral.dist_tensorIntegral_le_of_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.exists_finite_positive_scalarization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.measure_eq_of_weighted_exponential_moments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Spectral.spectral_representation_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.tendsto_apply_of_uniform_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Spectral.compressedMeasure_pairing_sub_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.cell_spectral_measure_isCompressed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.spectral_measures_converge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.scalarization_withDensity_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.weightedMeasure_properties' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.weightedMeasure_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.weighted_variation_sup_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.weighted_spectral_measures_converge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.CoerciveForm.addScaled_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.homogenizedForm_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.weightedMeasure_variation_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.BoundedTrajectory.norm_velocity_ae_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Dynamics.BoundedTrajectory.velocity_intervalIntegrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Dynamics.BoundedTrajectory.norm_value_sub_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Dynamics.BoundedTrajectory.continuousOn_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Dynamics.BoundedTrajectory.norm_value_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.finiteLaplace_entire' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.integral_deriv_smul_primitive_eq_sub_of_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.weightedResponse_entire' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.norm_exponential_integral_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.BoundedTrajectory.exponential_integral_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.norm_weightedResponse_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.sum_logHat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.logPatch_width' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.localCoordinate_localRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.logPatch_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.continuous_logHat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.logHat_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.logHat_eq_zero_of_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.localRate_mem_patch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.localCoordinate_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.localRate_localCoordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.chebyshevNode_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.chebyshevNode_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.chebyshevNode_isRoot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.chebyshev_interpolation_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.chebyshev_root_alias' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.chebyshev_interpolation_T_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.chebyshev_series_interpolation_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.joukowski_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.joukowski_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.joukowski_mem_bernsteinEllipse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.real_mem_bernsteinEllipse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.bernsteinEllipse_im_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.circleCoefficient_eq_of_analyticOnNhd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.norm_circleCoefficient_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.circleCoefficient_eq_fourierCoeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.fourierCoeff_neg_of_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.norm_chebyshevCoefficient_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.hasSum_chebyshevSeries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.chebyshevInterpolant_error_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.complexLocalRate_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.complexLocalRate_ellipse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.local_weighted_response_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.chebyshevInterpolant_degree_lt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.logarithmicSpan_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.continuousOn_spectralWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.spectralWeight_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.sum_spectralWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.spectralWeight_eq_zero_of_not_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.localRate_mem_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.continuousOn_localCoordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.continuousOn_localPronyWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.localPronyRate_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.localPronyModel_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.local_prony_coefficient_converges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.singleton_prony_coefficient_converges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Dynamics.pronyStress_eq_kernel_convolution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.singleton_prony_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.norm_dampedResponse_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.continuousOn_dampedResponse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.dampedResponse_integral_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.dampedResponse_trajectory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.pronyState_isKineticSolution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.prony_state_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.prony_state_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.material_L1_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.material_fields_L1_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.continuous_cell_viscosity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.continuous_cell_elasticity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.continuous_local_prony_coefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.continuous_singleton_prony_coefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Tensor.strainMandel_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.blockStrainMandel_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.blockStrainMandel_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.local_prony_state_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.singleton_prony_state_uniform_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.isCompact_stressInputSet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.NeuralOperators.isCompact_kineticInputSet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.NeuralOperators.prony_responses_approximate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.card_elasticityIndex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.elasticityMandel_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.TensorMeasure.integrable_continuousOn_vector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Spectral.tensorActionIntegral_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.norm_tensorActionIntegral_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Spectral.weightedMeasure_actionIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.map_realWeightedResponse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.continuous_realWeightedResponse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.real_local_response_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.continuousOn_partitionResponse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.partition_response_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.norm_integrated_partition_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Spectral.integral_tensorActionIntegral_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.memory_eq_weightedResponseIntegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.local_prony_stress_eq_partitionIntegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.aestronglyMeasurable_responseIntegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Dynamics.aestronglyMeasurable_pronyStress' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.local_prony_error_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.scalarBlockStrainMandel_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.scalarBlockStrainMandel_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.NeuralOperators.HasUniversalApproximation.inducedResponseClass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.HasLocallyLipschitzApproximation.inducedResponseClass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.lp_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.lp_product_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.strainMandelEquiv_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.elasticityMandelEquiv_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.materialMandelCoordinates_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.mandelStressClass_hasUniversalApproximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.mandelKineticClass_hasLocallyLipschitzApproximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.prony_responses_approximate_in_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.local_prony_responses_approximate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.singleton_prony_responses_approximate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Tensor.scalarStrainMandel_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.scalarElasticityMandel_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.prony_kinetic_dissipative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.prony_stress_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.stress_error_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.ac_linear_decay_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.ac_energy_decay_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.finite_time_decay_lt_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.exists_integral_solution_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.integral_solution_unique_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.integrableOn_lipschitz_driven_field' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Dynamics.exists_integral_solution_Ici' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.ac_energy_trapping_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.integral_curve_regularity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.locally_lipschitz_driven_unique_Icc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Dynamics.dissipative_driven_stability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.kinetic_stability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.NeuralOperators.prony_response_stability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.NeuralOperators.uniform_prony_response_stability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.local_prony_responses_stable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.singleton_prony_responses_stable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.local_prony_neural_approximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.singleton_prony_neural_approximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.universal_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.sufficient_internal_variable_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Tensor.matrix_exp_det_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.matrix_exp_skew_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.matrix_exp_symmetric_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Examples.CrystalPlasticity.initially_stress_free' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Examples.CrystalPlasticity.initial_multiplicative_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Examples.CrystalPlasticity.elastic_initial_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Examples.CrystalPlasticity.resistance_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Examples.CrystalPlasticity.skew_mulVec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Examples.CrystalPlasticity.rotation_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Examples.CrystalPlasticity.deviatoric_combination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Examples.CrystalPlasticity.deviatoric_coordinate_equivalence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Examples.CrystalPlasticity.deformation_determinant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Examples.CrystalPlasticity.deformation_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Examples.LinearSurrogate.exists_sum_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Examples.LinearSurrogate.mandel_sum_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Examples.LinearSurrogate.transformed_kinetics' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Examples.LinearSurrogate.transformed_kinetic_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Examples.LinearSurrogate.transformed_stress' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Examples.LinearSurrogate.trajectory_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Examples.LinearSurrogate.transformed_charpoly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Examples.LinearSurrogate.plane_state_dimension' depends on axioms: [propext]
+'KVApproximation.Tensor.action_identityElasticity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.action_volumetricElasticity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.planeStress_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.planeStress_operatorNorm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.logPartitionCount_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.interpolationOrder_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.nonsingletonStateDimension_uniform_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.sufficientDimension_uniform_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.sufficientDimension_small_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.sufficientDimension_viscosity_contrast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.sufficientDimension_elasticity_contrast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.unweighted_order_error_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.globalInterpolationOrder_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.unweightedDimension_asymptotic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.globalPronyDimension_asymptotic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.norm_unweightedResponse_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.local_unweighted_response_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.real_local_unweighted_response_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.partition_unweighted_response_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.norm_integrated_unweighted_partition_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.memory_eq_unweightedResponseIntegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.unweighted_prony_stress_eq_partitionIntegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.unweighted_prony_error_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.globalLogCoordinate_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.globalLogRate_globalLogCoordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.continuousOn_globalResponseInterpolant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.complexGlobalLogRate_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.complexGlobalLogRate_ellipse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.global_weighted_response_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.real_global_response_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.norm_integrated_global_response_error_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.global_prony_stress_eq_responseIntegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.global_prony_error_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.complexGlobalLogRate_ellipse_of_span_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.global_weighted_response_error_of_span_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.real_global_response_error_of_span_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.norm_integrated_global_response_error_le_of_span_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.global_prony_error_lt_of_span_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.globalInterpolationOrder_error_le_of_span_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.globalLogRate_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.continuous_unweightedLocalCoefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.continuous_globalPronyCoefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.continuous_prony_neural_approximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.unweighted_sufficient_internal_variable_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.global_sufficient_internal_variable_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Dynamics.cell_evolution_iff_ode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.cell_evolution_shifted_ode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.cell_evolution_stress_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.TimeH1.value_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.TimeH1.velocity_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.TimeH1.hasWeakLineDerivOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.TimeH1.trace_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.TimeH1.trace_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.TimeH1.exists_of_weak_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.linear_timeH1_exists_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.linear_timeH1_duhamel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.intervalIntegrable_continuous_clm_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.integral_deriv_clm_primitive_eq_sub_of_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Dynamics.cell_evolution_exists_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.cell_evolution_duhamel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.cell_evolution_constitutive_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.TimeH1.eq_of_value_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.TimeH1.exists_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.TimeH1.trace_map_of_value_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.PeriodicH1.exists_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.PeriodicH1.exists_zeroMean_same_gradient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.correctorGradient_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.correctorGradient_equiv_exists' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.displacement_strain_exists_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.strain_displacement_exists_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.displacement_strain_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.periodic_test_iff_corrector_test' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.periodicCellStress_apply_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.averagedCellStress_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.periodicCellSolution_iff_evolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.periodicCellSolution_exists_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.periodicCellSolution_constitutive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.lp_finite_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.VectorH1.valueL_apply_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.VectorH1.gradientL_apply_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.VectorH1.symmetricGradientL_apply_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.VectorH1.norm_sq_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.VectorH1.norm_valueL_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.VectorH1.norm_gradientL_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.VectorH1.norm_symmetricGradientL_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.VectorH1.valueL_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.VectorH1.norm_valueL_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.VectorH1.norm_gradientL_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.norm_symmetrize_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.symmetricGradientL_apply_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.symmetricGradient_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.loadPairing_eq_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.abs_loadPairing_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.mem_zeroBoundary_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.ZeroBoundaryH1.poincare_of_subset_ball' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.ZeroBoundaryH1.exists_poincare_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.ZeroBoundaryH1.exists_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.directionalDerivativeL_apply_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.inner_directionalDerivative_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.ZeroBoundaryH1.korn_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.ZeroBoundaryH1.norm_gradientL_sq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.ZeroBoundaryH1.norm_gradientL_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.ZeroBoundaryH1.exists_korn_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.integrable_spatialForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.boundedSpatialForm_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.boundedSpatialForm_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.spatialForm_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.boundedSpatialForm_isCoercive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.elliptic_exists_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.norm_elliptic_solution_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.quasiMeasurePreserving_toCell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.quasiMeasurePreserving_scaledToCell' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.ae_rescalePeriodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.aestronglyMeasurable_rescalePeriodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.eLpNorm_top_rescalePeriodic_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.memLp_top_rescalePeriodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.rescaledCoefficient_apply_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.norm_rescaledCoefficient_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.hasBounds_rescaledCoefficient_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.spatialForm_rescaledCoefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.periodic_elliptic_exists_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.periodic_elliptic_uniform_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.exists_preparedInitialFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.ZeroBoundaryH1.isCompactOperator_valueL' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.ZeroBoundaryH1.isCompact_closure_value_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.ZeroBoundaryH1.exists_subseq_tendsto_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.ZeroBoundaryH1.tendsto_value_of_weak' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.exists_weakly_convergent_subsequence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.ZeroBoundaryH1.exists_subseq_weak_strong' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.map_scaledToCell_restrict_periodicBox' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.exists_rescaling_measure_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.exists_eLpNorm_two_rescalePeriodic_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.memLp_two_rescalePeriodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.tendsto_integral_rescale_mFourier_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.tendsto_integral_rescalePeriodic_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.tendsto_integral_rescalePeriodic_mul_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.tendsto_integral_rescalePeriodic_inner' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.tendsto_eLpNorm_smul_rescalePeriodic_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.PeriodicH1.exists_rescaled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.PeriodicH1.tendsto_integral_rescale_gradient_inner' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.cutoffJetL_apply_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.cutoffJetL_mem_of_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.cutoffJetL_mem_of_zeroBoundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.ZeroBoundaryH1.exists_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.PeriodicRescaledJets.jetCoordinate_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.PeriodicRescaledJets.rescaleJet_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.PeriodicRescaledJets.gradient_scaled_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.PeriodicH1.exists_rescaled_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.HasPeriodicZeroDivergence.fourier_coefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.integral_inner_gradient_eq_zero_of_divergence_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.HasPeriodicZeroDivergence.integral_rescale_gradient_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Tensor.inner_symmetrize' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.PeriodicC1.exists_periodicH1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.integral_rescale_stress_strain_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.exists_unique_static_corrector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.cellFlux_apply_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.cellFlux_orthogonal_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.cellFlux_mean_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.tendsto_bilinear_of_weak_strong' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.tendsto_bilinear_zero_of_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.tendsto_integral_rescalePeriodic_inner_strong_along' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.tendsto_integral_cutoff_rescale_stress_strain_along' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.tendsto_integral_cutoff_stress_corrector_zero_along' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.tendsto_integral_cutoff_stress_corrector_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.cutoffGradientL_apply_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.cutoffPairing_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.integral_stress_cutoff_gradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.integral_cutoff_stress_strain_eq_neg_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.effective_elliptic_exists_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.tendsto_integral_rescalePeriodic_inner_strong' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.tendsto_integral_cutoff_rescale_stress_strain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.tendsto_integral_cutoff_microscopic_stress' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.spatialStressL_apply_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.norm_spatialStressL_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.integral_spatialStressL_strain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.eq_of_integral_testFunction_inner_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.effective_equilibrium_of_weak_stress' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.periodic_elliptic_homogenization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.CoerciveForm.solveL_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relativeRiesz_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.variational_equation_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.CoerciveForm.norm_solveL_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relativeRiesz_opNorm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.variational_timeH1_exists_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.variational_timeH1_duhamel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.periodicSpatialForm_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.spatialLoadOperator_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.norm_spatialLoadOperator_apply_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.exists_uniform_periodicSpatialForm_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.microscopicRelaxation_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.microscopicLoadL_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.exists_uniform_microscopic_operator_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.microscopic_solution_iff_ode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.microscopic_exists_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.microscopic_duhamel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relativeSemigroup_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relativeSemigroup_energy_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.OperatorTheory.relativeSemigroup_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.microscopic_homogeneous_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.exists_uniform_microscopic_semigroup_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.TimeH1.valueL2_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.TimeH1.velocityL2_apply_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.TimeH1.norm_sq_eq_value_velocity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.TimeH1.norm_le_of_ode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.linear_timeH1_trace_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Dynamics.linear_timeH1_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.exists_uniform_microscopic_timeH1_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.exists_uniform_prepared_timeH1_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.TimeH1.exists_weakly_convergent_subsequence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.TimeH1.weak_trace_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.norm_le_of_weak_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.exists_weakly_convergent_diagonal_subsequence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.TimeH1.exists_halfLine_weak_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.integrable_halfLineLaplace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.halfLineLaplace_weak_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.microscopic_zero_forcing_trace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.exists_uniform_microscopicTrajectory_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.microscopic_homogeneous_subsequence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.halfLineLaplace_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.microscopicTrajectory_laplace_equation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.microscopic_prepared_laplace_form' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.microscopic_viscous_laplace_form' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Tensor.fieldPairing_add_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.HasFieldBounds.add_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.CoerciveField.addSMul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.rescaledCoefficient_add_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.spatialForm_rescalePeriodic_add_smul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.integrable_cfc_memory_laplace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.halfLineLaplace_cfc_memory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.effectiveForm_addSMul_resolvent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.cellKernel_integrable_halfLineLaplace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.effectiveForm_addSMul_laplace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.eq_zero_of_halfLineLaplace_nat_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.eqOn_of_halfLineLaplace_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.periodic_elliptic_weak_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.prepared_laplace_equilibrium' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.viscous_laplace_equilibrium' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.integrable_halfLineLaplace_posConvolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.halfLineLaplace_posConvolution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.constantSpatialFormL_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.norm_constantSpatialFormL_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.posConvolution_eq_integral_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.intervalIntegrable_posConvolution_integrand' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.continuousOn_posConvolution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.integral_posConvolution_eq_posConvolution_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.TimeH1.memory_equation_iff_integrated' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.eqOn_zero_of_integrated_memory_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.TimeH1.eq_of_memory_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.constantSpatialFormL_isCoercive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.exists_constantSpatialFormL_norm_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.isHomogenizedSolution_iff_memory_equation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.homogenized_solution_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.integrable_halfLineLaplace_const' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.halfLineLaplace_const' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.integrable_halfLineLaplace_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.halfLineLaplace_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.continuousOn_posConvolution_Ici' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.norm_exp_smul_posConvolution_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.halfLineLaplace_exp_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.eq_zero_of_halfLineLaplace_eq_zero_of_damped_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.integrated_memory_eq_zero_of_halfLineLaplace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.TimeH1.memory_equation_of_halfLineLaplace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.homogeneous_limit_isHomogenizedSolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.homogeneous_homogenization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.homogeneous_exists_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.integrated_memory_eq_const_of_halfLineLaplace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.viscous_limit_green_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.eqOn_of_integrated_memory_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.exists_continuousLinearMap_of_weak_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.lipschitzOnWith_of_weak_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.microscopicGreen_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.exists_uniform_microscopicGreen_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.green_balance_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.exists_homogenizedGreen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.tendsto_intervalIntegral_of_weak_operator_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.integrable_rectangle_bilinear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.integral_triangle_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.integral_posConvolution_eq_integral_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.integral_operatorConvolution_assoc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.duhamel_integrated_memory_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.TimeH1.exists_weak_subsequence_with_trace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.TimeH1.memory_equation_of_green_trace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.green_trace_isHomogenizedSolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.IsHomogenizedSolution.add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.microscopic_forcing_trace_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.forced_homogenization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Homogenization.viscoelastic_homogenization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.exists_weak_limit_of_unique_subsequences' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.prepared_homogeneous_subsequence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.exists_test_limit_of_unique_subsequences' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.exists_microscopic_solution_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.exists_test_limit_of_unique_test_values' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.measurePreserving_cellRepresentative_coordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.cellMeasure_coordinate_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.measurableSet_thinStrip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.cellMeasure_thinStrip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.measurable_stripElasticity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.memLp_stripElasticity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.hasFieldBounds_stripElasticity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.eLpNorm_stripElasticity_sub_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.tendsto_eLpNorm_stripElasticity_sub_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.measurePreserving_coordinate_update' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.PeriodicC1.integral_coordinate_strip_partial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.PeriodicC1.norm_integral_coordinate_strip_partial_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.periodicVariation_const' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.periodicVariation_const_add_coordinate_strip_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.eLpNorm_stripElasticity_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.periodicVariation_stripElasticity_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.periodicBVNorm_identityElasticity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.periodicBVNorm_stripElasticity_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.exists_strip_material_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.PeriodicC1.partial_eq_zero_of_notMem_tsupport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.exists_periodic_strip_bump' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.PeriodicC1.exists_zeroMean_nonzero_strain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.exists_unit_corrector_in_coordinate_strip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.cellRelaxation_eq_id_of_field_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.cellRelaxation_eq_add_projection_of_ae_indicator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.IsHomogenizedSolution.of_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.materialSpectralEdge_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.materialSpectralEdge_strip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.KelvinVoigt.spectral_edge_discontinuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.NeuralOperators.FourierLayer.eval_congr_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.NeuralOperators.FourierChain.eval_congr_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.NeuralOperators.FourierMapping.evalRepresentative_congr' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.FourierLayer.fourierPart_im' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.NeuralOperators.FourierProjection.complexValue_im' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.FourierLayer.memLp_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.NeuralOperators.FourierChain.memLp_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.exists_ridge_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.exists_lipschitz_compositionLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.exists_periodicFourierCoefficientCLM' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.FourierProjection.exists_evalCLM' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.FourierLayer.exists_affineCLM' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.FourierLayer.exists_lipschitz_evalLp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.FourierChain.exists_lipschitz_evalLp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.FourierMapping.lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.exists_finite_feature_approximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.exists_uniform_local_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.euclideanL2_eq_of_fourier_integrals_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.exists_fourierProjection_approx_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.exists_fourierProjection_approx_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.exists_vector_ridge_approximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.exists_scalarFourierProjection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.eq_of_scalarFourierProjections_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.OperatorTheory.relativeRiesz_spectrum_subset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.exists_uniform_microscopic_spectrum_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Homogenization.forced_subsequence_of_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.NeuralOperators.exists_channel_liftingCLM' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.NeuralOperators.exists_injective_channel_lifting' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.exists_vector_finite_feature_approximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.exists_fourier_feature_layer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.FourierLayer.continuous_eval_of_zero_localWeight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.fourierMappingClass_universal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.fourierMappingClass_locallyLipschitz_universal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.exists_finite_feature_ridge_approximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Approximation.logPartitionWidth_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.interpolationOrder_error_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.interpolationOrder_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.cos_three_quarters_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Approximation.bernsteinImaginarySemiaxis_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Spectral.weightedVariationBound_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.norm_action_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.action_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.multiplication_apply_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.integrable_fieldPairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.boundedFieldForm_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Analysis.periodicVariation_le_eLpNorm_gradient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Analysis.periodicBVNorm_le_sobolevBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.Tensor.isCompact_closure_sobolev_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.Tensor.isCompact_sobolev_coefficients_of_isClosed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.isCompact_closure_sobolev_materials' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.KelvinVoigt.isCompact_sobolev_materials_of_isClosed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.Feedforward.lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.NeuralOperators.Feedforward.locallyLipschitz' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.exists_lipschitz_channel_lifting' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.FeedforwardFourierMapping.evalRepresentative_congr' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.FeedforwardFourierMapping.exists_lipschitz_hidden' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.FeedforwardFourierMapping.locallyLipschitz' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.fourierMappingClass_subset_feedforward' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.feedforwardFourierMappingClass_universal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.feedforwardFourierMappingClass_locallyLipschitz_universal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.ActivatedFourierChain.eval_congr_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.ActivatedFourierChain.memLp_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.ActivatedFourierChain.exists_lipschitz_evalLp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.FourierChain.withActivation_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.NeuralOperators.HasUniversalApproximation.locallyLipschitz' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
