@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/microscopic_trajectory.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 931.9,
+  "configuration": "microscopic_trajectory.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.microscopic_zero_forcing_trace",
+    "KVApproximation.Homogenization.exists_uniform_microscopicTrajectory_bounds"
+  ],
+  "challenge_module": "Challenges.MicroscopicTrajectory",
+  "solution_module": "KVApproximation.Homogenization.MicroscopicTrajectoryProperties",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/spectral_continuity.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 546.0,
+  "configuration": "spectral_continuity.json",
+  "theorem_names": [
+    "KVApproximation.Spectral.spectral_measures_converge"
+  ],
+  "challenge_module": "Challenges.SpectralContinuity",
+  "solution_module": "KVApproximation.Homogenization.SpectralContinuity",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

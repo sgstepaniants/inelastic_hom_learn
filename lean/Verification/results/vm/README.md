@@ -18,11 +18,11 @@ sandboxed Comparator with `--paranoid` and all six kernels:
 | `homogenized_green` | 1,701.4 | 2 |
 | `bernstein_geometry` | 74.9 | 5 |
 
-The latest saved checkpoint contains **19 local successes**, with records
+The latest saved checkpoint contains **60 local successes**, with records
 and complete logs in `local/`. Combining them with the 251 preserved CI
-successes in `../ci/` validates **270 configurations and 584 selections**.
+successes in `../ci/` validates **311 configurations and 657 selections**.
 The checked union is in `combined/`; its coverage report explicitly records
-the 61 missing configurations, no invalid results, and `passed: false`.
+the 20 missing configurations, no invalid results, and `passed: false`.
 
 The remaining checks are running two at a time. Complete validation requires
 a successful combined coverage report for all 331 configurations, 702

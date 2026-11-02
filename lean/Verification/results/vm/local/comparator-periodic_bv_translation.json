@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_bv_translation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 438.7,
+  "configuration": "periodic_bv_translation.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.periodicVariation_translation_bound"
+  ],
+  "challenge_module": "Challenges.PeriodicBVCompactness",
+  "solution_module": "KVApproximation.Analysis.PeriodicBVTranslation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

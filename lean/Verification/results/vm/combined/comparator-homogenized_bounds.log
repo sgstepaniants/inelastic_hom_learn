@@ -1,0 +1,47 @@
+Resolving dependencies
+Building Challenges.CoerciveForm
+⚠ [2488/2488] Replayed Challenges.CoerciveForm
+warning: Comparator/Challenges/CoerciveForm.lean:19:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:24:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:29:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:35:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:40:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:45:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:50:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:55:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:62:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:69:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:75:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:81:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:87:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:93:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:98:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:104:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:110:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:115:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:120:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:125:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:130:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:140:8: declaration uses `sorry`
+warning: Comparator/Challenges/CoerciveForm.lean:148:8: declaration uses `sorry`
+Build completed successfully (2488 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.OperatorTheory.CoerciveForm.homogenizedForm_bounds, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.CoerciveForm
+Building KVApproximation.OperatorTheory.HomogenizedBounds
+Build completed successfully (2491 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.OperatorTheory.CoerciveForm.homogenizedForm_bounds, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.OperatorTheory.HomogenizedBounds
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 19424 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 19427 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 19427 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

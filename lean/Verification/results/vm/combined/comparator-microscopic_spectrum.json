@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/microscopic_spectrum.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 727.6,
+  "configuration": "microscopic_spectrum.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.exists_uniform_microscopic_spectrum_bounds"
+  ],
+  "challenge_module": "Challenges.MicroscopicSpectrum",
+  "solution_module": "KVApproximation.Homogenization.MicroscopicSpectrum",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

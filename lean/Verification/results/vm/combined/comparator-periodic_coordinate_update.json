@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_coordinate_update.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 267.0,
+  "configuration": "periodic_coordinate_update.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.measurePreserving_coordinate_update"
+  ],
+  "challenge_module": "Challenges.PeriodicCoordinateUpdate",
+  "solution_module": "KVApproximation.Analysis.PeriodicCoordinateUpdate",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

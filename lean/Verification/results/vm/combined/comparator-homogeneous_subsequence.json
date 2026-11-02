@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/homogeneous_subsequence.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 1358.7,
+  "configuration": "homogeneous_subsequence.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.prepared_homogeneous_subsequence"
+  ],
+  "challenge_module": "Challenges.HomogeneousSubsequence",
+  "solution_module": "KVApproximation.Homogenization.HomogeneousSubsequence",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

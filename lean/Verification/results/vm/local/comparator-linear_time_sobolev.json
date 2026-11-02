@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/linear_time_sobolev.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 676.5,
+  "configuration": "linear_time_sobolev.json",
+  "theorem_names": [
+    "KVApproximation.Dynamics.linear_timeH1_exists_unique"
+  ],
+  "challenge_module": "Challenges.LinearTimeSobolev",
+  "solution_module": "KVApproximation.Dynamics.LinearTimeSobolev",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

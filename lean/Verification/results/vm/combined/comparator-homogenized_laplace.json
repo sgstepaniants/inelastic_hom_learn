@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/homogenized_laplace.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 843.7,
+  "configuration": "homogenized_laplace.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.prepared_laplace_equilibrium",
+    "KVApproximation.Homogenization.viscous_laplace_equilibrium"
+  ],
+  "challenge_module": "Challenges.HomogenizedLaplace",
+  "solution_module": "KVApproximation.Homogenization.HomogenizedLaplace",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

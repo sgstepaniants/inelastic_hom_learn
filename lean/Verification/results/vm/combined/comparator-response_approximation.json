@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/response_approximation.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 108.3,
+  "configuration": "response_approximation.json",
+  "theorem_names": [
+    "KVApproximation.NeuralOperators.prony_responses_approximate"
+  ],
+  "challenge_module": "Challenges.PronyResponses",
+  "solution_module": "KVApproximation.NeuralOperators.ResponseApproximation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

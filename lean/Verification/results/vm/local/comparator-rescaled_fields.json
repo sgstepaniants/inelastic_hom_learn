@@ -1,0 +1,28 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/rescaled_fields.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 262.9,
+  "configuration": "rescaled_fields.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.rescaledCoefficient_apply_ae",
+    "KVApproximation.Homogenization.norm_rescaledCoefficient_le",
+    "KVApproximation.Homogenization.hasBounds_rescaledCoefficient_ae",
+    "KVApproximation.Homogenization.spatialForm_rescaledCoefficient"
+  ],
+  "challenge_module": "Challenges.RescaledFields",
+  "solution_module": "KVApproximation.Homogenization.RescaledFieldProperties",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

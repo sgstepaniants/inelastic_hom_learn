@@ -1,0 +1,41 @@
+Resolving dependencies
+Building Challenges.PeriodicSobolev
+⚠ [3078/3078] Replayed Challenges.PeriodicSobolev
+warning: Comparator/Challenges/PeriodicSobolev.lean:18:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:24:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:33:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:39:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:45:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:52:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:60:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:66:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:74:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:79:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:84:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:90:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:96:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:102:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:113:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:120:8: declaration uses `sorry`
+warning: Comparator/Challenges/PeriodicSobolev.lean:126:8: declaration uses `sorry`
+Build completed successfully (3078 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.PeriodicC1.integral_partial_eq_zero, KVApproximation.Analysis.PeriodicC1.integral_smul_partial, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenges.PeriodicSobolev
+Building KVApproximation.Analysis.PeriodicIntegration
+Build completed successfully (3072 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, KVApproximation.Analysis.PeriodicC1.integral_partial_eq_zero, KVApproximation.Analysis.PeriodicC1.integral_smul_partial, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from KVApproximation.Analysis.PeriodicIntegration
+Running Lean paranoid kernel on solution
+Lean paranoid kernel accepts the solution
+Running lean4lean kernel on solution
+checked 40182 declarations
+lean4lean kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running con-leche kernel on solution
+con-leche: accepted 40185 declarations (--verified)
+con-leche kernel accepts the solution
+Running con-ron kernel on solution
+con-ron: accepted 40185 declarations (--verified)
+con-ron kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

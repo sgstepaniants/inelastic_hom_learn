@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/lp_product_coordinates.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 109.8,
+  "configuration": "lp_product_coordinates.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.lp_product_coordinates"
+  ],
+  "challenge_module": "Challenges.LpProductCoordinates",
+  "solution_module": "KVApproximation.Analysis.LpProductCoordinates",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

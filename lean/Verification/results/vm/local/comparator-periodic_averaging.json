@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_averaging.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 322.8,
+  "configuration": "periodic_averaging.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.tendsto_integral_rescalePeriodic_mul"
+  ],
+  "challenge_module": "Challenges.PeriodicAveraging",
+  "solution_module": "KVApproximation.Analysis.PeriodicAveraging",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/relaxation_spectrum.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 297.8,
+  "configuration": "relaxation_spectrum.json",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.relaxation_spectrum_subset"
+  ],
+  "challenge_module": "Challenges.MemoryKernel",
+  "solution_module": "KVApproximation.OperatorTheory.SpectralBounds",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/spatial_load.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 248.8,
+  "configuration": "spatial_load.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.spatialLoadOperator_apply",
+    "KVApproximation.Homogenization.norm_spatialLoadOperator_apply_le"
+  ],
+  "challenge_module": "Challenges.SpatialLoad",
+  "solution_module": "KVApproximation.Homogenization.SpatialFormIdentities",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_integration.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 349.4,
+  "configuration": "periodic_integration.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicC1.integral_partial_eq_zero",
+    "KVApproximation.Analysis.PeriodicC1.integral_smul_partial"
+  ],
+  "challenge_module": "Challenges.PeriodicSobolev",
+  "solution_module": "KVApproximation.Analysis.PeriodicIntegration",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

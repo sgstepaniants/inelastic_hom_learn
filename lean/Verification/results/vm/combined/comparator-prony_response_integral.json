@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/prony_response_integral.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 242.3,
+  "configuration": "prony_response_integral.json",
+  "theorem_names": [
+    "KVApproximation.Approximation.local_prony_stress_eq_partitionIntegral"
+  ],
+  "challenge_module": "Challenges.MemoryResponse",
+  "solution_module": "KVApproximation.Approximation.PronyResponseIntegral",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

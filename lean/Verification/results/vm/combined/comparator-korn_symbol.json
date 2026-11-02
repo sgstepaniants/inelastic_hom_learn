@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/korn_symbol.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 48.6,
+  "configuration": "korn_symbol.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.symmetrized_rankOne_sq_norm",
+    "KVApproximation.Tensor.rankOne_sq_norm_le_symmetrized"
+  ],
+  "challenge_module": "Challenges.KornSymbol",
+  "solution_module": "KVApproximation.Tensor.KornSymbol",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

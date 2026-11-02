@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/spectral_edge.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 569.9,
+  "configuration": "spectral_edge.json",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.spectral_edge_discontinuous"
+  ],
+  "challenge_module": "Challenges.SpectralEdge",
+  "solution_module": "KVApproximation.KelvinVoigt.SpectralEdgeDiscontinuity",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

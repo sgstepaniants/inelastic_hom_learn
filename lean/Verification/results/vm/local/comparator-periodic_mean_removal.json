@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_mean_removal.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 252.7,
+  "configuration": "periodic_mean_removal.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.PeriodicH1.exists_constant",
+    "KVApproximation.Analysis.PeriodicH1.exists_zeroMean_same_gradient"
+  ],
+  "challenge_module": "Challenges.PeriodicMeanRemoval",
+  "solution_module": "KVApproximation.Analysis.PeriodicMeanRemoval",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

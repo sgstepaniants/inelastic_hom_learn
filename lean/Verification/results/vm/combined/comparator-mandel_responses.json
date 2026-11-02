@@ -1,0 +1,29 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/mandel_responses.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 183.5,
+  "configuration": "mandel_responses.json",
+  "theorem_names": [
+    "KVApproximation.KelvinVoigt.strainMandelEquiv_apply",
+    "KVApproximation.KelvinVoigt.elasticityMandelEquiv_apply",
+    "KVApproximation.KelvinVoigt.materialMandelCoordinates_ae",
+    "KVApproximation.KelvinVoigt.mandelStressClass_hasUniversalApproximation",
+    "KVApproximation.KelvinVoigt.mandelKineticClass_hasLocallyLipschitzApproximation"
+  ],
+  "challenge_module": "Challenges.MandelResponses",
+  "solution_module": "KVApproximation.KelvinVoigt.MandelResponseApproximation",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

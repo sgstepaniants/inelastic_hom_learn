@@ -1,0 +1,26 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/periodic_stress_limits.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 654.5,
+  "configuration": "periodic_stress_limits.json",
+  "theorem_names": [
+    "KVApproximation.Analysis.tendsto_integral_cutoff_rescale_stress_strain_along",
+    "KVApproximation.Analysis.tendsto_integral_cutoff_rescale_stress_strain"
+  ],
+  "challenge_module": "Challenges.PeriodicStressLimits",
+  "solution_module": "KVApproximation.Analysis.PeriodicStressLimits",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

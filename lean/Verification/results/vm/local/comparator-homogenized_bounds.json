@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/homogenized_bounds.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 140.2,
+  "configuration": "homogenized_bounds.json",
+  "theorem_names": [
+    "KVApproximation.OperatorTheory.CoerciveForm.homogenizedForm_bounds"
+  ],
+  "challenge_module": "Challenges.CoerciveForm",
+  "solution_module": "KVApproximation.OperatorTheory.HomogenizedBounds",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/homogenization.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 1586.7,
+  "configuration": "homogenization.json",
+  "theorem_names": [
+    "KVApproximation.Homogenization.viscoelastic_homogenization"
+  ],
+  "challenge_module": "Challenges.Homogenization",
+  "solution_module": "KVApproximation.KelvinVoigt.Homogenization",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}

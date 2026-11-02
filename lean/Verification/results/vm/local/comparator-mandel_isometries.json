@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config=Comparator/mandel_isometries.json",
+    "--paranoid"
+  ],
+  "exit_code": 0,
+  "seconds": 106.6,
+  "configuration": "mandel_isometries.json",
+  "theorem_names": [
+    "KVApproximation.Tensor.strainMandel_isometry",
+    "KVApproximation.Tensor.card_elasticityIndex",
+    "KVApproximation.Tensor.elasticityMandel_isometry"
+  ],
+  "challenge_module": "Challenges.Mandel",
+  "solution_module": "KVApproximation.Tensor.MandelIsometry",
+  "kernels_accepted": [
+    "Lean default",
+    "Lean paranoid",
+    "con-leche",
+    "con-ron",
+    "lean4lean",
+    "nanoda"
+  ],
+  "passed": true
+}
