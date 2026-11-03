@@ -1,50 +1,58 @@
 # Reader's guide
 
-The manual mathematical check is that the Lean statements and the definitions
-they use express the intended mathematics. The recorded kernel checks establish
-that those formal statements follow from the permitted axioms.
+This guide takes Lean, Mathlib and Tau Ceti as trusted foundations. The recorded
+kernel checks establish that the formal theorem statements have valid proofs
+under the permitted axioms, including all the lemmas used in those proofs.
 
-## Required and optional reading
+The manual task is to check that the formal statements express the intended
+mathematics. That requires understanding our definitions in those statements.
 
-For a selected result, the required mathematical review consists of:
+## Manual review of the main statements
 
-1. Its complete [challenge statement](#statements-and-definitions), including
-   hypotheses, quantifiers and implicit parameters.
-2. Every definition-index row whose **Required for** column contains that
-   result's number. These include definitions reached through other definitions,
-   together with the relevant norm and inner-product instances.
-3. Any [existence statement](#definitions-using-existence-results) marked for
-   that result, where a definition uses `.choose` to select an object.
+For each main result, read its complete [challenge statement](#statements-and-definitions)
+and every project definition-index row whose **Read for statement** column
+contains its number. Include hypotheses, quantifiers, implicit parameters,
+structure fields, and the norm or topology chosen by an instance.
 
-Follow the linked declarations, rather than reading their entire source files.
-Read a definition's formula or construction and a structure's fields. Theorem
-proof bodies and proofs of structure-field obligations are checked by the
-kernels and are optional reading for this review.
+The distinction is between definitions that determine **what the theorem says**
+and declarations used only in **how its proof derives that conclusion**:
 
-| Result | Definition/instance entries in its reading list | Additional existence statements |
-| --- | ---: | --- |
-| Theorem 3.1 | 112 | `exists_continuousMap` |
-| Proposition 3.3 | 65 | None |
-| Theorem 4.4 | 85 | None |
-| Theorem 4.5 | 95 | None |
-| Proposition 4.7 | 64 | None |
+| Where a declaration is used | Manual reading needed for the main result |
+| --- | --- |
+| Our definition occurs in the statement, or in another definition used there | Yes: check its formula, construction and hypotheses. |
+| A lemma or helper definition occurs only inside the proof | No: the kernel checks its use and the proof dependencies. |
+| A definition belongs to trusted Mathlib or Tau Ceti | No implementation review: accept its library meaning and check our use of it. |
+| A separate appendix or architecture theorem is itself being compared with the paper | Review that theorem's statement and our definitions in it as a separate task. |
 
-These lists overlap: the five main results together use **167 distinct listed
-definitions/instances and one existence statement**. A shared definition needs
-one review. The counts describe the reading lists, not a number of proofs to
-check or an irreducible number of mathematical facts to learn.
+Follow the linked declarations rather than reading entire source files. Read a
+definition's returned data or formula and a structure's fields; the proofs of
+its property fields are already checked. Our wrappers around trusted libraries,
+such as `VectorH1`, `ZeroBoundaryH1` and `TimeH1`, remain in the reading list:
+they specify which library objects, parameters and norms represent the problem.
 
-Rows without the selected result's number are **optional for that result**.
-The [additional paper claims](#additional-paper-claims) are optional when
-reviewing only the five main results. Their statements and defining dependencies
-become required when reviewing the corresponding appendix, architecture or
-other paper claim. For example, Theorems 4.4–4.5 assume A1/A2; verifying that a
-specific neural architecture satisfies A1/A2 is a separate claim.
+| Main result | Project definition/instance entries to review |
+| --- | ---: |
+| Theorem 3.1 | 82 |
+| Proposition 3.3 | 65 |
+| Theorem 4.4 | 85 |
+| Theorem 4.5 | 95 |
+| Proposition 4.7 | 64 |
 
-This division assumes the [recorded proof verification](#proof-verification)
-and standard Lean/Mathlib definitions are accepted. The vendored Tau Ceti
-definitions are included in the required list for Theorem 3.1. Proof-only helper
-lemmas, tactic implementations and performance logs are optional reading.
+The lists overlap: the five main results together use **137 distinct listed
+project definitions/instances**. Shared entries need one review. None requires
+reading an additional existence theorem once Tau Ceti is trusted. These counts
+include short aliases and instance declarations as well as mathematical formulas.
+
+Reading an appendix lemma is not needed to validate a main theorem's proof,
+even when that proof uses the lemma. The kernel already checks that dependency.
+For example, the Chebyshev estimate used in the approximation proof is checked
+as part of that proof. Reviewing Lemma B.9's statement separately answers a
+further question: whether its formal statement matches Lemma B.9 in the paper.
+
+The [other statement definitions](#additional-paper-claims) and
+[trusted-library implementation links](#trusted-tau-ceti-reference) are outside
+the manual reading list for the five main results. The
+[verification records](#proof-verification) document their proof checks.
 
 ## Statements and definitions
 
@@ -52,7 +60,7 @@ Start with the challenge statement for each result under review:
 
 | Result | Statement | Definition index |
 | --- | --- | --- |
-| Theorem 3.1 | [Homogenization](Comparator/Challenges/Homogenization.lean) | [Shared spaces](#tensor-and-periodic-spaces), [cell operators](#cell-operators-and-memory), [PDE definitions](#homogenization-and-function-spaces), [Sobolev background](#vendored-sobolev-background) |
+| Theorem 3.1 | [Homogenization](Comparator/Challenges/Homogenization.lean) | [Shared spaces](#tensor-and-periodic-spaces), [cell operators](#cell-operators-and-memory), [PDE definitions](#homogenization-and-function-spaces) |
 | Proposition 3.3 | [Spectral representation](Comparator/Challenges/SpectralRepresentation.lean) | [Shared spaces](#tensor-and-periodic-spaces), [cell operators](#cell-operators-and-memory), [spectral measures](#spectral-measures) |
 | Theorems 4.4–4.5 | [Approximation and dimension](Comparator/Challenges/UniversalApproximation.lean) | [Shared spaces](#tensor-and-periodic-spaces), [cell operators](#cell-operators-and-memory), [materials](#material-classes), [responses and dimension](#response-approximation-and-dimension) |
 | Proposition 4.7 | [Spectral-edge discontinuity](Comparator/Challenges/SpectralEdge.lean) | [Shared spaces](#tensor-and-periodic-spaces), [cell operators](#cell-operators-and-memory), [materials](#material-classes), [strip example](#spectral-edge-example) |
@@ -89,20 +97,19 @@ The index covers the five main results and the additional paper claims in
 followed through their definition dependencies, and the relevant norm and
 inner-product instances. Structure fields are part of the linked definition.
 
-The **Required for** column identifies the main statements whose defining
+The **Read for statement** column identifies the main statements whose defining
 dependencies include each group. For one theorem, read the rows bearing its
 number. Shared definitions need one review. The later tables add definitions
 for appendix, coordinate and architecture claims.
 
-Lean and Mathlib supply the standard mathematical background: logic, real and
-complex numbers, finite-dimensional Euclidean spaces, Lᵖ spaces, integrals,
-continuous linear maps, topology and spectra. The index stops at these library
-definitions. The vendored Sobolev constructions are listed separately below
-because they supply additional mathematical definitions.
+The required project-definition chains stop at trusted Lean, Mathlib and Tau
+Ceti interfaces. In particular, Tau Ceti's Sobolev and evolution spaces are
+accepted as library definitions. Their implementation links are retained in the
+[reference section](#trusted-tau-ceti-reference), outside the manual reading list.
 
 ### Tensor and periodic spaces
 
-| Definitions | Meaning to check | Required for |
+| Definitions | Meaning to check | Read for statement |
 | --- | --- | --- |
 | [SecondOrder](KVApproximation/Tensor/Spaces.lean#L20), [symmetricSubmodule](KVApproximation/Tensor/Spaces.lean#L24), [Symmetric](KVApproximation/Tensor/Spaces.lean#L38), [FourthOrder](KVApproximation/Tensor/Spaces.lean#L42), [elasticitySubmodule](KVApproximation/Tensor/Spaces.lean#L47), [Elasticity](KVApproximation/Tensor/Spaces.lean#L68) | Tensor spaces and dimensions: symmetric second-order arrays, major/minor fourth-order symmetries and the inherited Frobenius norms. | 3.1, 3.3, 4.4, 4.5, 4.7 |
 | [strainDimension](KVApproximation/Tensor/Spaces.lean#L71) | The scalar strain dimension d(d+1)/2. | 3.3, 4.5 |
@@ -120,7 +127,7 @@ because they supply additional mathematical definitions.
 
 ### Cell operators and memory
 
-| Definitions | Meaning to check | Required for |
+| Definitions | Meaning to check | Read for statement |
 | --- | --- | --- |
 | [constantStrainL](KVApproximation/Homogenization/CorrectorSpace.lean#L43) | Embedding a macroscopic strain as a constant L² cell field. | 3.1, 3.3, 4.4, 4.5 |
 | [correctorSubspace](KVApproximation/Homogenization/CorrectorSpace.lean#L23), [corrector subtype inner product](KVApproximation/Homogenization/CorrectorSpace.lean#L26), [corrector norm](KVApproximation/Homogenization/CorrectorSpace.lean#L32), [corrector inner product](KVApproximation/Homogenization/CorrectorSpace.lean#L35) | The closure of the symmetric-gradient range and its inherited L² norm and inner product. | 3.1, 3.3, 4.4, 4.5, 4.7 |
@@ -134,7 +141,7 @@ because they supply additional mathematical definitions.
 
 ### Homogenization and function spaces
 
-| Definitions | Meaning to check | Required for |
+| Definitions | Meaning to check | Read for statement |
 | --- | --- | --- |
 | [PhysicalSpace](KVApproximation/Analysis/VectorSobolev.lean#L20), [VectorH1](KVApproximation/Analysis/VectorSobolev.lean#L25), [smoothCompactJets](KVApproximation/Analysis/VectorSobolev.lean#L30), [zeroBoundarySubmodule](KVApproximation/Analysis/VectorSobolev.lean#L37), [ZeroBoundaryH1](KVApproximation/Analysis/VectorSobolev.lean#L42), [ZeroBoundaryH1 norm](KVApproximation/Analysis/VectorSobolev.lean#L46) | Euclidean physical space, componentwise H¹, closure of smooth compactly supported displacements, value/gradient representatives and the inherited H¹₀ norm and inner product. | 3.1 |
 | [ZeroBoundaryH1 inner product](KVApproximation/Analysis/VectorSobolev.lean#L51), [VectorH1.value](KVApproximation/Analysis/VectorSobolev.lean#L60), [VectorH1.gradientEntry](KVApproximation/Analysis/VectorSobolev.lean#L66) | The inherited spatial Hilbert structure and the representatives of displacement values and full weak-gradient entries. | 3.1 |
@@ -145,14 +152,14 @@ because they supply additional mathematical definitions.
 
 ### Spectral measures
 
-| Definitions | Meaning to check | Required for |
+| Definitions | Meaning to check | Read for statement |
 | --- | --- | --- |
 | [TensorMeasure](KVApproximation/Spectral/TensorMeasure.lean#L22), [TensorMeasure.Positive](KVApproximation/Spectral/TensorMeasure.lean#L25), [TensorMeasure.SupportedOn](KVApproximation/Spectral/TensorMeasure.lean#L30), [tensorIntegral](KVApproximation/Spectral/TensorMeasure.lean#L35), [totalVariation](KVApproximation/Spectral/TensorMeasure.lean#L40) | Tensor-valued measures, positivity on Borel sets, support via variation, scalar integration and Frobenius total variation. | 3.3 |
 | [lowerRate](KVApproximation/Spectral/Bounds.lean#L19), [upperRate](KVApproximation/Spectral/Bounds.lean#L23), [spectralVariationBound](KVApproximation/Spectral/Bounds.lean#L28) | The lower and upper relaxation rates and the quantitative spectral-variation bound. | 3.3 |
 
 ### Material classes
 
-| Definitions | Meaning to check | Required for |
+| Definitions | Meaning to check | Read for statement |
 | --- | --- | --- |
 | [PeriodicC1](KVApproximation/Analysis/PeriodicSmooth.lean#L18), [PeriodicC1.partial](KVApproximation/Analysis/PeriodicSmooth.lean#L23) | Periodic C¹ test functions and coordinate derivatives used to define variation. | 4.4, 4.5, 4.7 |
 | [PeriodicC1.divergence](KVApproximation/Analysis/PeriodicVariation.lean#L20), [periodicVariation](KVApproximation/Analysis/PeriodicVariation.lean#L27), [periodicBVNorm](KVApproximation/Analysis/PeriodicVariation.lean#L36) | Divergence of vector-valued tests, the dual total-variation seminorm and the L¹-plus-variation BV norm. | 4.4, 4.5, 4.7 |
@@ -162,7 +169,7 @@ because they supply additional mathematical definitions.
 
 ### Response approximation and dimension
 
-| Definitions | Meaning to check | Required for |
+| Definitions | Meaning to check | Read for statement |
 | --- | --- | --- |
 | [timeMeasure](KVApproximation/Dynamics/Trajectory.lean#L23), [BoundedTrajectory](KVApproximation/Dynamics/Trajectory.lean#L28), [BoundedTrajectory.valueBound](KVApproximation/Dynamics/Trajectory.lean#L40), [BoundedTrajectory.velocityBound](KVApproximation/Dynamics/Trajectory.lean#L45), [BoundedTrajectory.Admissible](KVApproximation/Dynamics/Trajectory.lean#L50), [BoundedTrajectory.Agree](KVApproximation/Dynamics/Trajectory.lean#L56) | Half-line measure; bounded value/velocity representatives with their integral identity; strain admissibility, trajectory equality and the zero-initial kinetic equation. | 4.4, 4.5 |
 | [IsKineticSolution](KVApproximation/Dynamics/Trajectory.lean#L62) | Zero initial internal state and the kinetic ODE almost everywhere on the nonnegative time axis. | 4.4, 4.5 |
@@ -177,43 +184,23 @@ because they supply additional mathematical definitions.
 
 ### Spectral-edge example
 
-| Definitions | Meaning to check | Required for |
+| Definitions | Meaning to check | Read for statement |
 | --- | --- | --- |
 | [delta](KVApproximation/Tensor/Isotropic.lean#L16), [identityElasticity](KVApproximation/Tensor/Isotropic.lean#L28) | Kronecker delta and the identity operator on symmetric strains, including the symmetrization factor. | 4.7 |
 | [thinStrip](KVApproximation/KelvinVoigt/StripFields.lean#L20), [stripElasticity](KVApproximation/KelvinVoigt/StripFields.lean#L25) | The strip width 1/(m+1), its coordinate condition and the piecewise elasticity values one and two. | 4.7 |
 | [upperSpectralEdge](KVApproximation/OperatorTheory/Spectrum.lean#L19) | The supremum of the full real operator spectrum. | 4.7 |
 | [upperSpectralEdge](KVApproximation/KelvinVoigt/SpectralEdge.lean#L23), [materialSpectralEdge](KVApproximation/KelvinVoigt/SpectralEdge.lean#L28) | Specialization of that spectral edge to cell relaxation and then to the admissible material class. | 4.7 |
 
-### Vendored Sobolev background
-
-These definitions are from Tau Ceti, with attribution in
-[Vendor/NOTICE.md](Vendor/NOTICE.md). They underlie Theorem 3.1’s spatial
-and time Sobolev spaces. Read the data, membership predicates, component
-maps and trace choice; the proofs of their properties are kernel-checked.
-
-| Definitions | Meaning to check | Required for |
-| --- | --- | --- |
-| [testFunctionLp](Vendor/TauCeti/Analysis/Sobolev/TestFunctionLp.lean#L51) | Conversion of smooth compactly supported test functions into Lᵖ classes. | 3.1 |
-| [WeakDerivStepJetLp](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L69), [weakDerivStepBaseL](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L77), [weakDerivStepDirectionL](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L89), [weakDerivStepSmulPairing](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L101), [weakDerivStepTestFunctional](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L111), [weakDerivStepSubmodule](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L161) | The value/derivative graph, its test functionals and integration-by-parts constraints, and the projections to its two components. | 3.1 |
-| [WeakDerivStep](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L206), [prevL](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L213), [weakFDerivL](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L231) | The closed weak-derivative space and its value/derivative projections. | 3.1 |
-| [Sobolev1Jet](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L103), [Sobolev1JetLp](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L107), [Sobolev1JetLp.valueL](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L132), [Sobolev1JetLp.gradientL](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L151), [toWeakDerivStepJet](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L291), [w1pSubmodule](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L321) | Scalar Sobolev jets, their value/gradient projections and the closed weak-derivative graph defining W¹,ᵖ. | 3.1 |
-| [W1p](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L366), [W1p.valueL](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L374), [W1p.value](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L378), [W1p.gradientL](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L385), [W1p.gradient](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L389) | The scalar Sobolev subtype and the maps extracting its Lᵖ value and weak gradient. | 3.1 |
-| [gelfandDual](Vendor/TauCeti/Analysis/InnerProductSpace/GelfandTriple.lean#L59) | The pivot-space map to the continuous dual used in the time-derivative definition. | 3.1 |
-| [ContinuousLinearMap.evolutionBaseL](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L56), [EvolutionSpace](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L73), [valueL](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L81), [timeDerivL](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L86), [value](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L94), [timeDeriv](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L97) | The L² value/dual-derivative graph, its projections and the choice of continuous representative used for endpoint traces. | 3.1 |
-| [representativeₗ](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L301), [toContinuousMap](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L344) | Selection of the continuous time representative and its packaging as a bounded linear trace map. | 3.1 |
-
 ### Definitions using existence results
 
-A definition using `.choose` selects an object supplied by an existence theorem.
-The following theorem statements specify the selected objects. Read a statement
-when reviewing a result in its **Required when reviewing** column. Only
-`exists_continuousMap` is needed for the five main results, specifically Theorem
-3.1. The other five statements belong to the additional paper claims. All six
-proof bodies are covered by kernel verification.
+These project existence statements specify objects selected with `.choose`
+when reviewing the other paper statements listed in the final column. They are
+outside the statement-definition chains of the five main results. Their proof
+bodies are already kernel-checked. The main homogenization theorem's time trace
+uses Tau Ceti's trusted continuous-representative construction.
 
-| Statement | Meaning to check | Required when reviewing |
+| Statement | Meaning to check | Other statement review |
 | --- | --- | --- |
-| [exists_continuousMap](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L274) | The continuous representative chosen for the time trace agrees almost everywhere with the trajectory values. | 3.1; Remark 3.2; Appendix A |
 | [lp_finite_coordinates](KVApproximation/Analysis/LpFiniteCoordinates.lean#L22) | The coordinate isometry used to assemble componentwise spatial gradients. | Remark 1.2 |
 | [lp_coordinates](KVApproximation/Analysis/LpCoordinates.lean#L19) | Pointwise transport of Lᵖ fields through a linear isometry, including representative agreement. | Remark 1.2; B.12 |
 | [lp_product_coordinates](KVApproximation/Analysis/LpProductCoordinates.lean#L19) | The continuous linear equivalence between a pair of L² fields and one product-valued L² field. | B.12 |
@@ -227,10 +214,17 @@ These tables extend the preceding lists for the statements identified in
 in the paper, such as the Prony construction and the crystal-plasticity laws,
 even when a definition is not mentioned in a main theorem.
 
-**Optional for the five main results; required for the corresponding additional
-claim.** Use the claim's entry in `alignment.statements` to select its declarations
-and follow their definitions. These tables are a combined index for those claims,
-not a requirement to read every entry for each appendix result.
+**This section is not needed to validate the five main results.** Lemmas and
+helper constructions used inside their proofs are already covered by kernel
+verification. Our definitions that affect the main theorem statements are in
+the preceding numbered lists.
+
+Use the tables below to review what the separate appendix and architecture
+theorems say. For example, Theorems 4.4–4.5 assume A1/A2; the assertion that a
+specified neural architecture satisfies A1/A2 has its own statement to compare
+with the paper. Its statement review is separate from checking the main
+conditional theorems. The corresponding entries in `alignment.statements`
+identify those other statements.
 
 #### Additional analysis and cell definitions
 
@@ -303,6 +297,33 @@ not a requirement to read every entry for each appendix result.
 | [copperHardeningRate](KVApproximation/Examples/CrystalPlasticity.lean#L71), [copperGrainParameters](KVApproximation/Examples/CrystalPlasticity.lean#L77), [skew](KVApproximation/Examples/CrystalPlasticity.lean#L83), [rotation](KVApproximation/Examples/CrystalPlasticity.lean#L87), [logarithmicStrain](KVApproximation/Examples/CrystalPlasticity.lean#L90), [deviatoricFromCoordinates](KVApproximation/Examples/CrystalPlasticity.lean#L95) | Copper hardening parameters and units; skew/rotation matrices, logarithmic strain and the explicit trace-free basis. |
 | [deviatoricCoordinates](KVApproximation/Examples/CrystalPlasticity.lean#L99), [deformation](KVApproximation/Examples/CrystalPlasticity.lean#L104) | Inverse deviatoric coordinates and the rotation/stretch reconstruction of the deformation gradient. |
 
+## Trusted Tau Ceti reference
+
+Tau Ceti is trusted for this review. The links below record the implementation
+behind the Sobolev and time-trace interfaces; they are not manual review tasks.
+The project wrappers that use these interfaces remain in the main definition
+index. Attribution is recorded in [Vendor/NOTICE.md](Vendor/NOTICE.md).
+
+<details>
+<summary>Tau Ceti implementation links — reference only</summary>
+
+| Definitions | Library meaning | Referenced by |
+| --- | --- | --- |
+| [testFunctionLp](Vendor/TauCeti/Analysis/Sobolev/TestFunctionLp.lean#L51) | Conversion of smooth compactly supported test functions into Lᵖ classes. | 3.1 |
+| [WeakDerivStepJetLp](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L69), [weakDerivStepBaseL](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L77), [weakDerivStepDirectionL](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L89), [weakDerivStepSmulPairing](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L101), [weakDerivStepTestFunctional](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L111), [weakDerivStepSubmodule](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L161) | The value/derivative graph, its test functionals and integration-by-parts constraints, and the projections to its two components. | 3.1 |
+| [WeakDerivStep](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L206), [prevL](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L213), [weakFDerivL](Vendor/TauCeti/Analysis/Sobolev/GraphStep.lean#L231) | The closed weak-derivative space and its value/derivative projections. | 3.1 |
+| [Sobolev1Jet](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L103), [Sobolev1JetLp](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L107), [Sobolev1JetLp.valueL](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L132), [Sobolev1JetLp.gradientL](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L151), [toWeakDerivStepJet](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L291), [w1pSubmodule](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L321) | Scalar Sobolev jets, their value/gradient projections and the closed weak-derivative graph defining W¹,ᵖ. | 3.1 |
+| [W1p](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L366), [W1p.valueL](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L374), [W1p.value](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L378), [W1p.gradientL](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L385), [W1p.gradient](Vendor/TauCeti/Analysis/Sobolev/W1p/Basic.lean#L389) | The scalar Sobolev subtype and the maps extracting its Lᵖ value and weak gradient. | 3.1 |
+| [gelfandDual](Vendor/TauCeti/Analysis/InnerProductSpace/GelfandTriple.lean#L59) | The pivot-space map to the continuous dual used in the time-derivative definition. | 3.1 |
+| [ContinuousLinearMap.evolutionBaseL](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L56), [EvolutionSpace](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L73), [valueL](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L81), [timeDerivL](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L86), [value](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L94), [timeDeriv](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L97) | The L² value/dual-derivative graph, its projections and the choice of continuous representative used for endpoint traces. | 3.1 |
+| [representativeₗ](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L301), [toContinuousMap](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L344) | Selection of the continuous time representative and its packaging as a bounded linear trace map. | 3.1 |
+
+| Existence statement | Library meaning | Referenced by |
+| --- | --- | --- |
+| [exists_continuousMap](Vendor/TauCeti/Analysis/Sobolev/EvolutionSpace/Basic.lean#L274) | The continuous representative chosen for the time trace agrees almost everywhere with the trajectory values. | 3.1; Remark 3.2; Appendix A |
+
+</details>
+
 ## Proof verification
 
 Comparator matches each selected solution theorem to its challenge statement
@@ -319,10 +340,12 @@ The existing verification evidence is:
   `passed: true`, covering every selected declaration and reporting only the
   three axioms above.
 
-Theorem proof bodies can be skipped during this review: the kernels check the
-proof terms and their dependencies. The mathematical review concerns the meaning
-and coverage of the statements. This relies on Lean's logic and the verification
-toolchain, as described in the [Lean reference](https://lean-lang.org/doc/reference/latest/ValidatingProofs/).
+The proof checks include the lemmas and helper definitions used to derive each
+selected conclusion. Manual inspection of those proof dependencies is not needed
+for proof validity. Manual statement review establishes that the checked
+conclusion expresses the intended mathematics. This relies on Lean's logic and
+the verification toolchain, as described in the
+[Lean reference](https://lean-lang.org/doc/reference/latest/ValidatingProofs/).
 
 Saved results apply to the sources used in their run. Changes to statements,
 definitions or proofs require the affected checks to be rerun using the
