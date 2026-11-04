@@ -100,7 +100,8 @@ classes, `CellFamily`, `IsResponseSolution` and stress-error norm. Theorems
 4.4–4.5 assume A1/A2; claims that a particular architecture satisfies A1/A2 have
 their own entries in the correspondence record.
 
-The numbering refers to the manuscript used for the recorded verification.
+The numbering refers to the [draft manuscript](../paper/main.pdf) used for the
+recorded verification.
 The final paper will be added to `paper/`; its correspondence with these
 statements must be checked when it is added.
 

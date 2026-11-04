@@ -21,7 +21,7 @@ and finite-deformation crystal plasticity.
 
 | Path | Contents |
 | --- | --- |
-| `paper/` | Reserved for the final paper. |
+| [`paper/main.pdf`](paper/main.pdf) | Draft manuscript used for the formalization. |
 | [`lean/KVApproximation/MainResults.lean`](lean/KVApproximation/MainResults.lean) | The five main statements in paper order, with explicit hypotheses and short proofs invoking the original results. |
 | [`lean/KVApproximation/`](lean/KVApproximation/) | Proof library for analysis, tensors, operator and spectral theory, homogenization, approximation, dynamics, neural operators, and examples. |
 | [`lean/Comparator/`](lean/Comparator/) | Separate challenge statements and Comparator configurations. |
@@ -96,7 +96,8 @@ Validation logs and machine-readable results are stored in
 
 ## Manuscript
 
-The final paper will be added to `paper/`. The folder is currently empty.
+The [draft manuscript](paper/main.pdf) used for the formalization is available in
+`paper/`. The final paper will be added later.
 
 ## Licensing
 

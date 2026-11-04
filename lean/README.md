@@ -3,7 +3,8 @@
 Lean formalization of *Operator Learning of Microstructure-Dependent
 Internal-Variable Models for Inelastic Homogenization: Approximation and
 Complexity*, by Lianghao Cao, George Stepaniants and Andrew M. Stuart.
-The final paper will be added to `paper/` at the repository root.
+The [draft manuscript](../paper/main.pdf) is available in `paper/` at the repository
+root. The final paper will be added later.
 
 [MainResults.lean](KVApproximation/MainResults.lean) collects the five main
 statements in paper order, with all parameters and hypotheses on each
