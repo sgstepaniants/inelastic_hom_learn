@@ -1,3 +1,4 @@
+import KVApproximation.MainResults
 import KVApproximation.KelvinVoigt.Homogenization
 import KVApproximation.KelvinVoigt.SpectralRepresentation
 import KVApproximation.KelvinVoigt.UniversalApproximation
@@ -20,5 +21,6 @@ import KVApproximation.Examples.CrystalPlasticityIdentities
 # Kelvin–Voigt homogenization and approximation
 
 The main theorems, concrete architectures and exact appendix identities.
+`KVApproximation.MainResults` collects the five main statements in manuscript order.
 Individual subject modules can be imported separately.
 -/

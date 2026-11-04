@@ -26,7 +26,8 @@ cell forms define the effective tensors and memory kernel. The unique
 microscopic solutions converge weakly in `H¹(0,T;H¹₀(Ω;ℝᵈ))` along the whole
 positive-scale family. Weak convergence is tested against every continuous
 linear functional on that Sobolev space. -/
-theorem viscoelastic_homogenization {d : ℕ} (hd : d ∈ ({1, 2, 3} : Set ℕ))
+theorem viscoelastic_homogenization {d : ℕ}
+    (hd : d ∈ ({1, 2, 3} : Set ℕ))
     (Ω : Opens (PhysicalSpace d))
     (hΩbounded : Bornology.IsBounded (Ω : Set (PhysicalSpace d)))
     (hΩlipschitz : HasLipschitzBoundary (Ω : Set (PhysicalSpace d)))

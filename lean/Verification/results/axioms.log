@@ -1288,3 +1288,10 @@
 'KVApproximation.NeuralOperators.HasUniversalApproximation.locallyLipschitz' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'KVApproximation.MainResults.viscoelastic_homogenization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.MainResults.spectral_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.MainResults.universal_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KVApproximation.MainResults.sufficient_internal_variable_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'KVApproximation.MainResults.spectral_edge_discontinuous' depends on axioms: [propext, Classical.choice, Quot.sound]

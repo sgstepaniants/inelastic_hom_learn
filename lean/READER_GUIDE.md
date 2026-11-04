@@ -9,8 +9,9 @@ mathematics. That requires understanding our definitions in those statements.
 
 ## Manual review of the main statements
 
-For each main result, read its complete [challenge statement](#statements-and-definitions)
-and every project definition-index row whose **Read for statement** column
+For each main result, read its complete statement in
+[MainResults.lean](KVApproximation/MainResults.lean) and every project
+definition-index row whose **Read for statement** column
 contains its number. Include hypotheses, quantifiers, implicit parameters,
 structure fields, and the norm or topology chosen by an instance.
 
@@ -56,14 +57,27 @@ the manual reading list for the five main results. The
 
 ## Statements and definitions
 
-Start with the challenge statement for each result under review:
+[MainResults.lean](KVApproximation/MainResults.lean) presents all five main
+statements in paper order. Every parameter and hypothesis is written on its
+own theorem declaration, including the A1/A2 assumptions for approximation.
+Each short proof invokes the original theorem in its subject file; those
+original declarations and their detailed proofs are retained.
 
-| Result | Statement | Definition index |
-| --- | --- | --- |
-| Theorem 3.1 | [Homogenization](Comparator/Challenges/Homogenization.lean) | [Shared spaces](#tensor-and-periodic-spaces), [cell operators](#cell-operators-and-memory), [PDE definitions](#homogenization-and-function-spaces) |
-| Proposition 3.3 | [Spectral representation](Comparator/Challenges/SpectralRepresentation.lean) | [Shared spaces](#tensor-and-periodic-spaces), [cell operators](#cell-operators-and-memory), [spectral measures](#spectral-measures) |
-| Theorems 4.4–4.5 | [Approximation and dimension](Comparator/Challenges/UniversalApproximation.lean) | [Shared spaces](#tensor-and-periodic-spaces), [cell operators](#cell-operators-and-memory), [materials](#material-classes), [responses and dimension](#response-approximation-and-dimension) |
-| Proposition 4.7 | [Spectral-edge discontinuity](Comparator/Challenges/SpectralEdge.lean) | [Shared spaces](#tensor-and-periodic-spaces), [cell operators](#cell-operators-and-memory), [materials](#material-classes), [strip example](#spectral-edge-example) |
+Open this file in Cursor or VS Code to check all five declarations together.
+The declaration names are in the namespace `KVApproximation.MainResults`.
+The axiom-audit file also checks that each collected statement has exactly the
+same fully quantified type as its original.
+
+The separate Comparator challenges remain the statements used for the
+independent comparison. The definition index applies to both presentations.
+
+| Result | MainResults statement | Comparator statement | Definition index |
+| --- | --- | --- | --- |
+| Theorem 3.1 | [Homogenization](KVApproximation/MainResults.lean#L35) | [Challenge](Comparator/Challenges/Homogenization.lean) | [Shared spaces](#tensor-and-periodic-spaces), [cell operators](#cell-operators-and-memory), [PDE definitions](#homogenization-and-function-spaces) |
+| Proposition 3.3 | [Spectral representation](KVApproximation/MainResults.lean#L68) | [Challenge](Comparator/Challenges/SpectralRepresentation.lean) | [Shared spaces](#tensor-and-periodic-spaces), [cell operators](#cell-operators-and-memory), [spectral measures](#spectral-measures) |
+| Theorem 4.4 | [Universal approximation](KVApproximation/MainResults.lean#L88) | [Challenge](Comparator/Challenges/UniversalApproximation.lean) | [Shared spaces](#tensor-and-periodic-spaces), [cell operators](#cell-operators-and-memory), [materials](#material-classes), [responses and dimension](#response-approximation-and-dimension) |
+| Theorem 4.5 | [State dimension](KVApproximation/MainResults.lean#L110) | [Challenge](Comparator/Challenges/UniversalApproximation.lean) | [Shared spaces](#tensor-and-periodic-spaces), [cell operators](#cell-operators-and-memory), [materials](#material-classes), [responses and dimension](#response-approximation-and-dimension) |
+| Proposition 4.7 | [Spectral-edge discontinuity](KVApproximation/MainResults.lean#L134) | [Challenge](Comparator/Challenges/SpectralEdge.lean) | [Shared spaces](#tensor-and-periodic-spaces), [cell operators](#cell-operators-and-memory), [materials](#material-classes), [strip example](#spectral-edge-example) |
 
 For the appendix results and other paper claims, use `alignment.statements` in
 [formalization.yaml](formalization.yaml) to locate their declarations and
@@ -336,9 +350,13 @@ The existing verification evidence is:
 - [Combined coverage](Verification/results/vm/combined/coverage.json):
   `passed: true`, 331/331 configurations and 702 selected declarations, with
   every configuration accepted by all six kernels.
-- [Transitive axiom audit](Verification/results/vm/axioms.json):
+- [Recorded Linux axiom audit](Verification/results/vm/axioms.json):
   `passed: true`, covering every selected declaration and reporting only the
   three axioms above.
+- [Current native axiom audit](Verification/results/axioms.json):
+  727 queries, including the five collected main results. The
+  [audit source](Verification/Axioms.lean) also checks exact agreement of their
+  fully quantified types with the original declarations.
 
 The proof checks include the lemmas and helper definitions used to derive each
 selected conclusion. Manual inspection of those proof dependencies is not needed

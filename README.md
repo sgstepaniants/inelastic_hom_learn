@@ -13,6 +13,7 @@ approximation guarantees and explicit bounds on the required internal-variable
 dimension. The manuscript also presents numerical experiments on viscoelasticity
 and finite-deformation crystal plasticity.
 
+[Main results](lean/KVApproximation/MainResults.lean) ·
 [Reader's guide](lean/READER_GUIDE.md) · [Lean documentation](lean/README.md) ·
 [Formalization status](lean/STATUS.md)
 
@@ -21,6 +22,7 @@ and finite-deformation crystal plasticity.
 | Path | Contents |
 | --- | --- |
 | `paper/` | Reserved for the final paper. |
+| [`lean/KVApproximation/MainResults.lean`](lean/KVApproximation/MainResults.lean) | The five main statements in paper order, with explicit hypotheses and short proofs invoking the original results. |
 | [`lean/KVApproximation/`](lean/KVApproximation/) | Proof library for analysis, tensors, operator and spectral theory, homogenization, approximation, dynamics, neural operators, and examples. |
 | [`lean/Comparator/`](lean/Comparator/) | Separate challenge statements and Comparator configurations. |
 | [`lean/Verification/`](lean/Verification/) | Build, axiom-audit, and reuse checks, with recorded validation results. |
@@ -50,6 +52,9 @@ import KVApproximation
 
 Individual modules can also be imported; see the
 [Lean README](lean/README.md) for examples and module organization.
+The five main statements can be read and checked together in
+[MainResults.lean](lean/KVApproximation/MainResults.lean). Their original
+declarations and detailed proofs remain in the subject modules.
 
 ## Verification
 
@@ -68,13 +73,17 @@ After building, check isolated subject reuse with:
 python3 Verification/consumers.py
 ```
 
-Validation passed the full build, the 722-declaration transitive axiom audit
-limited to `propext`, `Classical.choice`, and `Quot.sound`, and all ten subject
-consumers. **All 331 Comparator configurations / 702 selected declarations passed
+The recorded Linux validation passed the full build, the 722-declaration
+transitive axiom audit limited to `propext`, `Classical.choice`, and `Quot.sound`,
+and all ten subject consumers. **All 331 Comparator configurations / 702 selected declarations passed
 the sandboxed Linux comparison and all six bundled kernels.** The
 [complete coverage report](lean/Verification/results/vm/combined/coverage.json)
 combines 251 GitHub Actions successes with 80 local Linux successes. See
 [`lean/STATUS.md`](lean/STATUS.md) for proof coverage and verification methods.
+
+The [current native axiom audit](lean/Verification/results/axioms.json) covers
+727 declarations, including the five collected main results, and checks that
+their statement types agree exactly with the original declarations.
 
 On Linux with bubblewrap, run the sandboxed checks from `lean/`:
 

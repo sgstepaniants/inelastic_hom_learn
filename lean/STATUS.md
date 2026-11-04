@@ -6,6 +6,8 @@ The formalization covers 17 numbered proof statements and the supporting theory
 listed in [PLAN.md](PLAN.md). All **331 Comparator configurations and 702 selected
 declarations** passed the sandboxed Linux comparison and all six bundled kernels.
 [formalization.yaml](formalization.yaml) gives the paper-to-Lean correspondence.
+[MainResults.lean](KVApproximation/MainResults.lean) collects the five main
+statements in paper order, with short proofs invoking the original declarations.
 
 ## Mathematical coverage
 
@@ -72,6 +74,12 @@ reproducibility. Review and automation details are recorded in
 | Subject consumer builds | 10/10 subjects; 86.8 seconds | [Consumers](Verification/results/consumers.json), [log](Verification/results/consumers.log) |
 | Metadata | Published v0.4 schema, referenced paths and challenge import dependencies | [Metadata](Verification/results/metadata.json) |
 | Verification scripts | 10/10 tests on both macOS and Linux | [Runner tests](Verification/results/runner-tests.json) |
+
+The statement collection was checked locally on November 3, 2026. The
+[native axiom audit](Verification/results/axioms.json) covers 727 declarations,
+including the five collected results, and checks that their fully quantified
+statement types agree exactly with the originals. The Comparator records above
+refer to the original subject declarations.
 
 The axiom audit reports `propext`, `Classical.choice` and `Quot.sound`.
 LeanCert proves `7/10 < cos(3/4)` in kernel mode at Taylor depth 3. Comparator

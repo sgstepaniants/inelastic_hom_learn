@@ -9,9 +9,9 @@
     "Verification/Axioms.lean"
   ],
   "exit_code": 0,
-  "seconds": 9.8,
-  "declarations": 722,
-  "results": 722,
+  "seconds": 33.5,
+  "declarations": 727,
+  "results": 727,
   "coverage_matches": true,
   "axioms": [
     "Classical.choice",

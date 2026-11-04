@@ -21,7 +21,8 @@ namespace KVApproximation.KelvinVoigt
 belongs to one BV-bounded material class, converges in both L¹ and L², and has
 spectral edge two while the limit has edge one. The final conclusion is failure
 of continuity on that actual material class. -/
-theorem spectral_edge_discontinuous {d : ℕ} (hd : d = 1 ∨ d = 2 ∨ d = 3) (i : Fin d) :
+theorem spectral_edge_discontinuous {d : ℕ}
+    (hd : d = 1 ∨ d = 2 ∨ d = 3) (i : Fin d) :
     ∃ γV γE : ℝ, 0 < γV ∧ 0 < γE ∧
       ∃ M : admissibleMaterials d 1 1 γV 1 2 γE,
       ∃ Mseq : ℕ → admissibleMaterials d 1 1 γV 1 2 γE,

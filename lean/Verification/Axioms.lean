@@ -1,5 +1,6 @@
 /- Transitive axiom dependencies of the proof library. -/
 
+import KVApproximation.MainResults
 import KVApproximation.NeuralOperators.FeedforwardProperties
 import KVApproximation.NeuralOperators.NonlinearChannelLifting
 import KVApproximation.NeuralOperators.FeedforwardFourierProperties
@@ -1313,3 +1314,26 @@ import KVApproximation.Tensor.MultiplicationIdentities
 #print axioms KVApproximation.NeuralOperators.FourierChain.withActivation_eval
 
 #print axioms KVApproximation.NeuralOperators.HasUniversalApproximation.locallyLipschitz
+
+/- The collected statements must have the same types as their originals,
+including every quantified hypothesis. -/
+example : @KVApproximation.MainResults.viscoelastic_homogenization =
+    @KVApproximation.Homogenization.viscoelastic_homogenization := rfl
+
+example : @KVApproximation.MainResults.spectral_representation =
+    @KVApproximation.Spectral.spectral_representation := rfl
+
+example : @KVApproximation.MainResults.universal_approximation =
+    @KVApproximation.KelvinVoigt.universal_approximation := rfl
+
+example : @KVApproximation.MainResults.sufficient_internal_variable_dimension =
+    @KVApproximation.KelvinVoigt.sufficient_internal_variable_dimension := rfl
+
+example : @KVApproximation.MainResults.spectral_edge_discontinuous =
+    @KVApproximation.KelvinVoigt.spectral_edge_discontinuous := rfl
+
+#print axioms KVApproximation.MainResults.viscoelastic_homogenization
+#print axioms KVApproximation.MainResults.spectral_representation
+#print axioms KVApproximation.MainResults.universal_approximation
+#print axioms KVApproximation.MainResults.sufficient_internal_variable_dimension
+#print axioms KVApproximation.MainResults.spectral_edge_discontinuous

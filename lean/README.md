@@ -5,8 +5,14 @@ Internal-Variable Models for Inelastic Homogenization: Approximation and
 Complexity*, by Lianghao Cao, George Stepaniants and Andrew M. Stuart.
 The final paper will be added to `paper/` at the repository root.
 
-The [reader's guide](READER_GUIDE.md) identifies the statements and definitions
-for mathematical review and the records that verify their proofs.
+[MainResults.lean](KVApproximation/MainResults.lean) collects the five main
+statements in paper order, with all parameters and hypotheses on each
+declaration. Its short proofs invoke the original results, whose declarations
+and detailed proofs remain in the subject modules. Open this file in Cursor or
+VS Code to check all five main results in one place.
+
+The [reader's guide](READER_GUIDE.md) links the definitions used in these
+statements and the records that verify their proofs.
 
 All **331 Comparator configurations and 702 selected declarations** passed
 the sandboxed Linux comparison and all six bundled kernels. The build,
@@ -40,6 +46,8 @@ python3 Verification/verify.py local
 
 The audit covers every Comparator selection and checks that the reported
 axioms are limited to `propext`, `Classical.choice` and `Quot.sound`.
+It includes the five declarations in `MainResults.lean` and checks that their
+fully quantified types agree exactly with the original subject declarations.
 Commands, logs and results are saved in `Verification/results/`.
 
 On Linux with bubblewrap, run the pinned toolchain's built-in Comparator
